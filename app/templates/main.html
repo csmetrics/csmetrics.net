@@ -1,0 +1,42 @@
+{% load staticfiles %}
+
+<html>
+  {% include 'header.html'%}
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation"><a href="/admin">Admin</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">CS Ranking System</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-8">
+          {% include 'rtable.html'%}
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>
+          <a href="http://cm.cecs.anu.edu.au">ANU Computational Media Lab.</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
