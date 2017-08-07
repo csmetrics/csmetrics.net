@@ -1,26 +1,97 @@
-<head>
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['table']});
-    google.charts.setOnLoadCallback(drawTable);
+{% load staticfiles%}
+<div style="float:right; width: 240px;display: inline-block;">
+  <small class="text-muted" style="font-weight: normal;">Combined = &alpha;*papers + (1-&alpha;)*citations</small>
+  <div class="range">
+    <input type="range" min="0" max="10" value="5" onchange="changeValue(this.value)"/>
+    <output>
+      &alpha; = <font color="orange"><span id="alphaValue">0.5</span></font>
+    </output>
+  </div>
+</div>
+<table id="rtable" class="table table-bordered table-hover" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Rank</th>
+      <th>Institution</th>
+      <th>Papers</th>
+      <th>Citations</th>
+      <th>Combined</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ent in data %}
+    <tr>
+      <td class="details-control"></td>
+      <td class="text-right">{{ ent.0 }}</td>
+      <td>{{ ent.1 }}</td>
+      <td>{{ ent.2|floatformat }}</td>
+      <td>{{ ent.3|floatformat }}</td>
+      <td>{{ ent.4|floatformat }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<script type="text/javascript">
+var table = $('#rtable').DataTable({
+  "dom":  "<'row'<'col-sm-12'l>>" +
+          "<'row'<'col-sm-12'tr>>" +
+          "<'row'<'col-sm-4'i><'col-sm-8'p>>",
+  "pageLength": 10,
+  "lengthMenu": [ 10, 25, 50, 75, 100 ],
+  "lengthChange": true,
+  "columnDefs": [ {
+      "targets": 0,
+      "orderable": false
+  }],
+  "paging": true,
+  "pagingType": "simple_numbers",
+  "searching": false,
+  "ordering": true,
+  "order": [[ 1, "asc" ]],
+  "info": true,
+  "autoWidth": false
+});
 
-    function drawTable() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Name');
-      data.addColumn('number', 'Salary');
-      data.addColumn('boolean', 'Full Time Employee');
-      data.addRows([
-        ['Mike',  {v: 10000, f: '$10,000'}, true],
-        ['Jim',   {v:8000,   f: '$8,000'},  false],
-        ['Alice', {v: 12500, f: '$12,500'}, true],
-        ['Bob',   {v: 7000,  f: '$7,000'},  true]
-      ]);
+function updateTable(alpha){
+  table.rows().eq(0).each( function (index) {
+    var row = table.row(index);
+    var data = row.data();
+    combined = alpha*parseFloat(data[3]) + (1-alpha)*parseFloat(data[4]);
+    data[5] = Number((combined).toFixed(1));
+    table.row(index).data(data);
+  });
+  table.draw();
+}
+updateTable(0.5);
+function changeValue(newValue) {
+    document.getElementById("alphaValue").innerHTML = newValue/10;
+    updateTable(newValue/10);
+};
 
-      var table = new google.visualization.Table(document.getElementById('table_div'));
+function format () {
+    // `d` is the original data object for the row
+    return '<table cellpadding="5" cellspacing="0" border="0" style="font-size:14px; padding-left:50px;">'+
+        '<tr>'+
+            '<td>More info: </td>'+
+            '<td>blahblah</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>More info: </td>'+
+            '<td>blahblah</td>'+
+        '</tr>'+
+    '</table>';
+}
 
-      table.draw(data, {showRowNumber: true, width: '100%'});
+$('#rtable tbody').on('click', 'td.details-control', function () {
+    var tr = $(this).closest('tr');
+    var row = table.row( tr );
+    if ( row.child.isShown() ) {
+        row.child.hide();
+        tr.removeClass('shown');
+    } else {
+        row.child(format()).show();
+        tr.addClass('shown');
     }
-  </script>
-</head>
-<body>
-    <div id="table_div"></div>
-</body>
+} );
+</script>
