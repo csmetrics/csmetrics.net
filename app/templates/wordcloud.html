@@ -1,0 +1,19 @@
+{% load staticfiles%}
+<div style="text-align:center; margin-bottom: 20px;">
+  {% for t in tags %}
+    <a href="?keyword={{ t.0 }}" class="btn btn-sm btn-default" style="margin-bottom:5px;" role="button">
+        <span class="text-uppercase">{{ t.0 }}</span>
+        <span class="badge">{{ t.1 }}</span>
+    </a>
+  {% endfor %}
+</div>
+<div style="max-height: 600px; overflow-x: hidden;">
+  <table class="table table-hover">
+    {% for c in conf %}
+      <tr>
+        <td><b>{{ c.0 }}</b></td>
+        <td>{{ c.1 }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

@@ -1,13 +1,4 @@
 {% load staticfiles%}
-<div style="float:right; width: 240px;display: inline-block;">
-  <small class="text-muted" style="font-weight: normal;">Combined = &alpha;*papers + (1-&alpha;)*citations</small>
-  <div class="range">
-    <input type="range" min="0" max="10" value="5" onchange="changeValue(this.value)"/>
-    <output>
-      &alpha; = <font color="orange"><span id="alphaValue">0.5</span></font>
-    </output>
-  </div>
-</div>
 <table id="rtable" class="table table-bordered table-hover" cellspacing="0" width="100%">
   <thead>
     <tr>
@@ -34,11 +25,11 @@
 </table>
 <script type="text/javascript">
 var table = $('#rtable').DataTable({
-  "dom":  "<'row'<'col-sm-12'l>>" +
+  "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'slider'>>>" +
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-4'i><'col-sm-8'p>>",
-  "pageLength": 10,
-  "lengthMenu": [ 10, 25, 50, 75, 100 ],
+  "pageLength": 20,
+  "lengthMenu": [ 10, 20, 50, 100 ],
   "lengthChange": true,
   "columnDefs": [ {
       "targets": [0, 1],
@@ -56,6 +47,14 @@ var table = $('#rtable').DataTable({
   "info": true,
   "autoWidth": false
 });
+
+$("div.slider").html(
+  '<div class="range">'+
+    '<input type="range" min="0" max="10" value="5" onchange="changeValue(this.value)"/>'+
+    '<output>&alpha; = <font color="orange"><span id="alphaValue">0.5</span></font></output>'+
+  '</div>'+
+  '<small class="text-muted">Combined = &alpha;*papers + (1-&alpha;)*citations</small>'
+);
 
 table.on( 'order.dt search.dt', function () {
   table.column(1, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
