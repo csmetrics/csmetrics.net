@@ -3,12 +3,10 @@
 This project is written in python3
 
 ### Install the requirements
-```
-$ pip install -r requirements.txt
-```
+
+1. Install Django and nltk `$ pip install -r requirements.txt`
+2. Download [nltk data](http://www.nltk.org/data.html) on your machine
 
 ### Run local server
-```
-$ ./run_server.sh
-```
-then go to http://localhost:8000
+1. Run the script `$ ./run_server.sh` 
+2. Go to http://localhost:8000
