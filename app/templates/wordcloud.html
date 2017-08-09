@@ -1,19 +1,48 @@
 {% load staticfiles%}
-<div style="text-align:center; margin-bottom: 20px;">
-  {% for t in tags %}
-    <a href="?keyword={{ t.0 }}" class="btn btn-sm btn-default" style="margin-bottom:5px;" role="button">
-        <span class="text-uppercase">{{ t.0 }}</span>
-        <span class="badge">{{ t.1 }}</span>
-    </a>
-  {% endfor %}
+<div class="row" style="margin-bottom: 10px;">
+  <div class="col-lg-2">
+    <div class="float:right">
+      <h4><span class="label label-default">Year</span></h4>
+    </div>
+  </div>
+  <div class="col-lg-10">
+    <div id="double_number_range"></div>
+    <script>
+    $("#double_number_range").rangepicker({
+        type: "double",
+        startValue: 2007,
+        endValue: 2017,
+        translateSelectLabel: function(currentPosition, totalPosition) {
+            return 2007+parseInt(10 * (currentPosition / totalPosition));
+        }
+    });
+    </script>
+  </div>
 </div>
-<div style="max-height: 600px; overflow-x: hidden;">
-  <table class="table table-hover">
-    {% for c in conf %}
-      <tr>
-        <td><b>{{ c.0 }}</b></td>
-        <td>{{ c.1 }}</td>
-      </tr>
-    {% endfor %}
-  </table>
+<div class="row" style="margin-bottom: 10px;">
+  <div class="col-lg-12">
+    <h4><span class="label label-default">Category</span></h4>
+    <div style="text-align:center;">
+      {% for t in tags %}
+        <a href="?keyword={{ t.0 }}" class="btn btn-sm btn-default" style="margin-bottom:3px;" role="button">
+            <span class="text-uppercase">{{ t.0 }}</span>
+            <span class="badge">{{ t.1 }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div style="max-height: 600px; overflow-x: hidden;">
+      <table class="table table-hover">
+        {% for c in conf %}
+          <tr>
+            <td><b>{{ c.0 }}</b></td>
+            <td>{{ c.1 }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
 </div>
