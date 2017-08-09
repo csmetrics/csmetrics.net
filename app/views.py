@@ -1,4 +1,6 @@
 from django.shortcuts import render, render_to_response
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 import os, json
 from random import randint
 from .wordcloud import createWordcloud, getVenueList
@@ -19,13 +21,17 @@ def findInstitution(inst):
     else:
         return inst
 
+@csrf_exempt
+def selectKeyword(request):
+    keywords = request.POST.get("keyword")
+    # print(keywords)
+    conf = []
+    for key in keywords.split(','):
+        conf.extend(getVenueList(key.lower()))
+    set_conf = set(conf)
+    return JsonResponse(list(set_conf), safe=False)
 
 def main(request):
-    conflist = []
-    if "keyword" in request.GET:
-        key = request.GET.get("keyword")
-        conflist = getVenueList(key)
-
     rawdata = open(os.path.join(cur_path, "data/aamas2007affil.txt"))
     lines = rawdata.readlines()
     data = []
@@ -35,4 +41,4 @@ def main(request):
         data.append((findInstitution(uname), randint(10, 400), citation, 0))
 
     tags = createWordcloud()
-    return render(request, "main.html", {"data": data, "tags": tags, "conf": conflist})
+    return render(request, "main.html", {"data": data, "tags": tags})
