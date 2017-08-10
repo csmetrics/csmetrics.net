@@ -25,7 +25,7 @@
 </table>
 <script type="text/javascript">
 var table = $('#rtable').DataTable({
-  "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'slider'>>>" +
+  "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphaslider'>>>" +
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-4'i><'col-sm-8'p>>",
   "pageLength": 20,
@@ -48,10 +48,10 @@ var table = $('#rtable').DataTable({
   "autoWidth": false
 });
 
-$("div.slider").html(
+$("div.alphaslider").html(
   '<div class="range">'+
     '<input type="range" min="0" max="10" value="5" onchange="changeValue(this.value)"/>'+
-    '<output>&alpha; = <font color="orange"><span id="alphaValue">0.5</span></font></output>'+
+    '<output>&alpha; = <span class="text-primary" id="alphaValue">0.5</span></output>'+
   '</div>'+
   '<small class="text-muted">Combined = &alpha;*papers + (1-&alpha;)*citations</small>'
 );

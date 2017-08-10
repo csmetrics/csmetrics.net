@@ -1,23 +1,44 @@
 {% load staticfiles%}
 <div class="row" style="margin-bottom: 10px;">
-  <div class="col-lg-2">
-    <div class="float:right">
-      <h4><span class="label label-default">Year</span></h4>
+  <div class="col-sm-2">
+    <h4><span class="label label-default">Year</span></h4>
+  </div>
+  <div class="col-sm-2" style="padding:7px 15px 0 0">
+    <div class="text-right">
+      <span class="label-as-badge" id="lower-value"></span>
     </div>
   </div>
-  <div class="col-lg-10" style="width:80%">
-    <div id="double_number_range"></div>
-    <script>
-    $("#double_number_range").rangepicker({
-        type: "double",
-        startValue: 2007,
-        endValue: 2017,
-        translateSelectLabel: function(currentPosition, totalPosition) {
-            return 2007+parseInt(10 * (currentPosition / totalPosition));
-        }
-    });
-    </script>
+  <div class="col-sm-6" style="padding:8px">
+    <div id="nonlinear"></div>
   </div>
+  <div class="col-sm-2" style="padding:7px 0 0 15px">
+    <div class="text-left">
+		  <span class="label-as-badge" id="upper-value"></span>
+    </div>
+  </div>
+  <script>
+  var nonLinearSlider = document.getElementById('nonlinear');
+  noUiSlider.create(nonLinearSlider, {
+  	connect: true,
+  	behaviour: 'tap',
+  	start: [ 2000, 2016 ],
+    step: 1,
+  	range: {
+  		'min': [ 2000 ],
+  		'max': [ 2016 ]
+  	}
+  });
+  nonLinearSlider.noUiSlider.on('change', function( values, handle ){
+    console.log(values[handle]);
+  });
+  var nodes = [
+  	document.getElementById('lower-value'), // 0
+  	document.getElementById('upper-value')  // 1
+  ];
+  nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+  	nodes[handle].innerHTML = parseInt(values[handle]);
+  });
+  </script>
 </div>
 <div class="row" style="margin-bottom: 10px;">
   <div class="col-lg-12">

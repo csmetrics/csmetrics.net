@@ -25,7 +25,14 @@ body {
     max-width: 1200px;
 }
 
-.slider {
+.label-as-badge {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #e5e5e5;
+}
+
+.alphaslider {
     float: right;
     width: 240px;
 }
