@@ -3,17 +3,42 @@
   <div class="col-sm-2">
     <h4><span class="label label-default">Year</span></h4>
   </div>
-  <div class="col-sm-2" style="padding:7px 15px 0 0">
-    <div class="text-right">
-      <span class="label-as-badge" id="lower-value"></span>
+  <div class="col-sm-10">
+    <div class="row">
+      <div class="col-sm-2 text-right" style="padding:7px 0">
+        Publication
+      </div>
+      <div class="col-sm-2" style="padding:7px 15px 0 0">
+        <div class="text-right">
+          <span class="label-as-badge" id="pub-lower-value"></span>
+        </div>
+      </div>
+      <div class="col-sm-6" style="padding:8px">
+        <div id="publication"></div>
+      </div>
+      <div class="col-sm-2" style="padding:7px 0 0 15px">
+        <div class="text-left">
+          <span class="label-as-badge" id="pub-upper-value"></span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-sm-6" style="padding:8px">
-    <div id="nonlinear"></div>
-  </div>
-  <div class="col-sm-2" style="padding:7px 0 0 15px">
-    <div class="text-left">
-		  <span class="label-as-badge" id="upper-value"></span>
+    <div class="row">
+      <div class="col-sm-2 text-right" style="padding:7px 0">
+        Citation
+      </div>
+      <div class="col-sm-2" style="padding:7px 15px 0 0">
+        <div class="text-right">
+          <span class="label-as-badge" id="cit-lower-value"></span>
+        </div>
+      </div>
+      <div class="col-sm-6" style="padding:8px">
+        <div id="citation"></div>
+      </div>
+      <div class="col-sm-2" style="padding:7px 0 0 15px">
+        <div class="text-left">
+          <span class="label-as-badge" id="cit-upper-value"></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -40,8 +65,19 @@
 </div>
 <script>
 var activeCategory = [];
-var nonLinearSlider = document.getElementById('nonlinear');
-noUiSlider.create(nonLinearSlider, {
+var pubSlider = document.getElementById('publication');
+noUiSlider.create(pubSlider, {
+  connect: true,
+  behaviour: 'tap',
+  start: [ 2000, 2016 ],
+  step: 1,
+  range: {
+    'min': [ 2000 ],
+    'max': [ 2016 ]
+  }
+});
+var citSlider = document.getElementById('citation');
+noUiSlider.create(citSlider, {
   connect: true,
   behaviour: 'tap',
   start: [ 2000, 2016 ],
@@ -52,12 +88,19 @@ noUiSlider.create(nonLinearSlider, {
   }
 });
 var nodes = [
-  document.getElementById('lower-value'), // 0
-  document.getElementById('upper-value')  // 1
+  document.getElementById('pub-lower-value'),
+  document.getElementById('pub-upper-value'),
+  document.getElementById('cit-lower-value'),
+  document.getElementById('cit-upper-value')
 ];
-nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
-  // console.log("slider update");
+pubSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+  // console.log("pubSlider slider update");
   nodes[handle].innerHTML = parseInt(values[handle]);
+  updateRanking();
+});
+citSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+  // console.log("citSlider slider update");
+  nodes[handle+2].innerHTML = parseInt(values[handle]);
   updateRanking();
 });
 
@@ -65,7 +108,8 @@ function updateInfo(){
   // console.log("updateInfo");
   var infoWell = document.getElementById('rankedby');
   if (infoWell != null) {
-    infoWell.innerText = nodes[0].innerHTML + "~" + nodes[1].innerHTML + "\n";
+    infoWell.innerText = "Publication: " + nodes[0].innerHTML + "~" + nodes[1].innerHTML + "\n";
+    infoWell.innerText += "Citation: " + nodes[2].innerHTML + "~" + nodes[3].innerHTML + "\n";
     var rows = document.getElementById("conflist").rows;
     for (var i = 0; i < rows.length; i++){
       if (rows.item(i).cells[2].children[0].checked) {
