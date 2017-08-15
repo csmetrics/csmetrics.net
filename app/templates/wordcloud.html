@@ -16,29 +16,6 @@
 		  <span class="label-as-badge" id="upper-value"></span>
     </div>
   </div>
-  <script>
-  var nonLinearSlider = document.getElementById('nonlinear');
-  noUiSlider.create(nonLinearSlider, {
-  	connect: true,
-  	behaviour: 'tap',
-  	start: [ 2000, 2016 ],
-    step: 1,
-  	range: {
-  		'min': [ 2000 ],
-  		'max': [ 2016 ]
-  	}
-  });
-  nonLinearSlider.noUiSlider.on('change', function( values, handle ){
-    console.log(values[handle]);
-  });
-  var nodes = [
-  	document.getElementById('lower-value'), // 0
-  	document.getElementById('upper-value')  // 1
-  ];
-  nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
-  	nodes[handle].innerHTML = parseInt(values[handle]);
-  });
-  </script>
 </div>
 <div class="row" style="margin-bottom: 10px;">
   <div class="col-lg-12">
@@ -62,6 +39,78 @@
   </div>
 </div>
 <script>
+var activeCategory = [];
+var nonLinearSlider = document.getElementById('nonlinear');
+noUiSlider.create(nonLinearSlider, {
+  connect: true,
+  behaviour: 'tap',
+  start: [ 2000, 2016 ],
+  step: 1,
+  range: {
+    'min': [ 2000 ],
+    'max': [ 2016 ]
+  }
+});
+var nodes = [
+  document.getElementById('lower-value'), // 0
+  document.getElementById('upper-value')  // 1
+];
+nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+  // console.log("slider update");
+  nodes[handle].innerHTML = parseInt(values[handle]);
+  updateRanking();
+});
+
+function updateInfo(){
+  // console.log("updateInfo");
+  var infoWell = document.getElementById('rankedby');
+  if (infoWell != null) {
+    infoWell.innerText = nodes[0].innerHTML + "~" + nodes[1].innerHTML + "\n";
+    var rows = document.getElementById("conflist").rows;
+    for (var i = 0; i < rows.length; i++){
+      if (rows.item(i).cells[2].children[0].checked) {
+        infoWell.innerHTML += '<span class="label label-default">'
+          + rows.item(i).cells[0].innerText + "</span> ";
+      }
+    }
+  }
+}
+
+function updateRanking(){
+  // console.log("updateRanking");
+  console.log(activeCategory.join());
+  if (activeCategory.length > 0) {
+    $.ajax({
+      type: "POST",
+      url: "/select",
+      async: false,
+      data: {
+        syear: nodes[0].innerHTML,
+        eyear: nodes[1].innerHTML,
+        keyword: activeCategory.join() },
+      success: function (result) {
+        var table = document.getElementById("conflist");
+        $("#conflist tr").remove();
+        for(var i in result) {
+          var row = table.insertRow(i);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          cell1.innerHTML = "<b>"+result[i][0]+"</b>";
+          cell2.innerHTML = result[i][1];
+          var checkbox = document.createElement('input');
+          checkbox.setAttribute("class", "checkbox");
+          checkbox.setAttribute("type", "checkbox");
+          checkbox.setAttribute("checked", true);
+          checkbox.setAttribute("onclick", "updateInfo()");
+          cell3.appendChild(checkbox) ;
+        }
+      }
+    });
+  }
+  updateInfo();
+}
+
 $('.btn').click(function(e) {
   var btn = $(this);
   btn.toggleClass('active');
@@ -74,35 +123,19 @@ $('.btn').click(function(e) {
   }
   e.preventDefault();
 
-  var active = [];
+  activeCategory = [];
   var buttons = document.getElementsByTagName('button');
   for (var i = 0; i < buttons.length; i++) {
     var button = buttons[i];
     if (button.classList.contains('active')) {
-      active.push(button.innerText);
+      activeCategory.push(button.innerText);
     }
   }
-
-  if (active.length == 0) {
+  if (activeCategory.length == 0) {
     $("#conflist tr").remove();
+    updateInfo();
   } else {
-    $.ajax({
-      type: "POST",
-      url: "/select",
-      async: false,
-      data: { keyword: active.join() },
-      success: function (result) {
-        var table = document.getElementById("conflist");
-        $("#conflist tr").remove();
-        for(var i in result) {
-          var row = table.insertRow(i);
-          var cell1 = row.insertCell(0);
-          var cell2 = row.insertCell(1);
-          cell1.innerHTML = result[i][0];
-          cell2.innerHTML = result[i][1];
-        }
-      }
-    });
+    updateRanking();
   }
 });
 </script>

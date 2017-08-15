@@ -8,7 +8,9 @@ from .utils import *
 @csrf_exempt
 def selectKeyword(request):
     keywords = request.POST.get("keyword")
-    # print(keywords)
+    syear = request.POST.get("syear")
+    eyear = request.POST.get("eyear")
+    print(keywords, syear, eyear)
     conf = []
     for key in keywords.split(','):
         conf.extend(getVenueList(key.lower()))

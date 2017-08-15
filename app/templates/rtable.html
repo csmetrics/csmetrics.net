@@ -1,4 +1,6 @@
 {% load staticfiles%}
+<div id="rankedby" class="well well-sm">
+</div>
 <table id="rtable" class="table table-condensed table-hover" cellspacing="0" width="100%">
   <thead>
     <tr>
@@ -73,6 +75,8 @@ function updateTable(alpha){
   table.draw();
 }
 updateTable(0.5);
+updateInfo();
+
 function changeValue(newValue) {
     document.getElementById("alphaValue").innerHTML = newValue/10;
     updateTable(newValue/10);
