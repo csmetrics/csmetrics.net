@@ -27,22 +27,33 @@ def getExampleScore():
         data.append((findInstitution(uname), randint(10, 400), citation, 0))
     return data
 
-def getPaperScore(conflist, syear, eyear):
-    data = {}
+def getPaperScore(conflist, pubrange, citrange):
+    pub = {}
+    cite = {}
     for confname in conflist:
         fpath = os.path.join(cur_path, "../score_data/"+confname+".pkl")
         if not os.path.exists(fpath):
             print(confname + " not exists")
             continue
         cflist = pickle.load(open(fpath, "rb"))
+        # print(cflist.keys())
         for k, v in cflist["count_score"].items():
             # print(k[0], k[1], v)
-            if type(k[0]).__name__ == 'str' and syear <= k[1] and k[1] <= eyear:
-                if k[0] == "stanford university":
-                    print(k, v)
-                if k[0] in data:
-                    data[k[0]] += v
+            if type(k[0]).__name__ == 'str'\
+                and pubrange[0] <= k[1] and k[1] <= pubrange[1]:
+                if k[0] in pub:
+                    pub[k[0]] += v
                 else:
-                    data[k[0]] = v
-    print([(findInstitution(v[0]), v[1], 0, 0) for v in data.items()])
-    return [(findInstitution(v[0]), v[1], 0, 0) for v in data.items()]
+                    pub[k[0]] = v
+
+        for k, v in cflist["cited_score_dict"].items():
+            # print(k[0], k[1], v)
+            if type(k[0]).__name__ == 'str'\
+                and citrange[0] <= k[1] and k[1] <= citrange[1]:
+                if k[0] in cite:
+                    cite[k[0]] += v
+                else:
+                    cite[k[0]] = v
+
+    # print([(findInstitution(v[0]), v[1], cite[v[0]] if v[0] in cite else 0, 0) for v in pub.items()])
+    return [(findInstitution(v[0]), v[1], cite[v[0]] if v[0] in cite else 0, 0) for v in pub.items()]

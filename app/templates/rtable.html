@@ -10,63 +10,17 @@
       </div>
     </div>
     <div class="col-sm-2">
-      <button class="btn btn-primary" id="rankbutton">Rank</button>
+      <button class="btn btn-primary" style="width:100%;" id="rankbutton">Rank</button>
     </div>
   </div>
 </div>
+<div id="spinner" class="invisible">
+  <i class="fa fa-spinner fa-spin" style="font-size:80px"></i>
+</div>
 <table id="rtable" class="table table-condensed table-hover" cellspacing="0" width="100%">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Rank</th>
-      <th>Institution</th>
-      <th>Papers</th>
-      <th>Citations</th>
-      <th>Combined</th>
-    </tr>
-  </thead>
-  <tbody id="rtablebody">
-    {% for ent in data %}
-    <tr>
-      <td class="details-control"></td>
-      <td class="index"></td>
-      <td>{{ ent.0 }}</td>
-      <td>{{ ent.1|floatformat }}</td>
-      <td>{{ ent.2|floatformat }}</td>
-      <td>{{ ent.3|floatformat }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
 </table>
 <script type="text/javascript">
-$('#rankbutton').click(function(e) {
-  $.ajax({
-    type: "POST",
-    url: "/update",
-    async: false,
-    data: {
-      syear: nodes[0].innerHTML,
-      eyear: nodes[1].innerHTML,
-      conflist: document.getElementById("rank-conflist").innerText
-    },
-    success: function (result) {
-      console.log("Rank success");
-      console.log(result);
-      var tablebody = document.getElementById("rtablebody");
-      $("#rtablebody tr").remove();
-      for(var i in result) {
-        var row = tablebody.insertRow(i);
-        row.insertCell(0).setAttribute("class", "details-control");
-        row.insertCell(1).setAttribute("class", "index");
-        row.insertCell(2).innerHTML = result[i][0];
-        row.insertCell(3).innerHTML = result[i][1].toFixed(1);
-        row.insertCell(4).innerHTML = result[i][2].toFixed(1);
-        row.insertCell(5).innerHTML = result[i][3].toFixed(1);
-      }
-    }
-  });
-});
-
+var spinner = document.getElementById("spinner");
 var table = $('#rtable').DataTable({
   "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphaslider'>>>" +
           "<'row'<'col-sm-12'tr>>" +
@@ -74,6 +28,14 @@ var table = $('#rtable').DataTable({
   "pageLength": 20,
   "lengthMenu": [ 10, 20, 50, 100 ],
   "lengthChange": true,
+  "columns": [
+    { className: "details-control" },
+    { title: "Rank", className: "index" },
+    { title: "Institution" },
+    { title: "Papers" },
+    { title: "Citations" },
+    { title: "Combined" }
+  ],
   "columnDefs": [ {
       "targets": [0, 1],
       "orderable": false
@@ -105,7 +67,39 @@ table.on( 'order.dt search.dt', function () {
   } );
 } ).draw();
 
+$('#rankbutton').click(function(e) {
+  spinner.classList.remove("invisible");
+  $.ajax({
+    type: "POST",
+    url: "/update",
+    data: {
+      pub_syear: nodes[0].innerHTML,
+      pub_eyear: nodes[1].innerHTML,
+      cit_syear: nodes[2].innerHTML,
+      cit_eyear: nodes[3].innerHTML,
+      conflist: document.getElementById("rank-conflist").innerText
+    },
+    success: function (result) {
+      // console.log("Rank success");
+      for(var i in result) {
+        // console.log(result[i]);
+        var newRow = {};
+        newRow[0] = null;
+        newRow[1] = null;
+        newRow[2] = result[i][0];
+        newRow[3] = result[i][1].toFixed(1);
+        newRow[4] = result[i][2].toFixed(1);
+        newRow[5] = result[i][3].toFixed(1);
+        table.row.add(newRow).draw();
+      }
+      updateTable(0.5);
+      spinner.classList.add("invisible");
+    }
+  });
+});
+
 function updateTable(alpha){
+  // console.log("updateTable");
   table.rows().eq(0).each( function (index) {
     var row = table.row(index);
     var data = row.data();
@@ -115,7 +109,6 @@ function updateTable(alpha){
   });
   table.draw();
 }
-updateTable(0.5);
 updateInfo();
 
 function changeValue(newValue) {

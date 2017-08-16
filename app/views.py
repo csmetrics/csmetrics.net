@@ -7,11 +7,13 @@ from .utils import *
 
 @csrf_exempt
 def updateTable(request):
-    syear = int(request.POST.get("syear"))
-    eyear = int(request.POST.get("eyear"))
+    pub_s = int(request.POST.get("pub_syear"))
+    pub_e = int(request.POST.get("pub_eyear"))
+    cit_s = int(request.POST.get("cit_syear"))
+    cit_e = int(request.POST.get("cit_eyear"))
     conflist = request.POST.get("conflist")
-    print(conflist, syear, eyear)
-    data = getPaperScore(conflist.split(' '), syear, eyear)
+    # print(conflist, [pub_s, pub_e], [cit_s, cit_e])
+    data = getPaperScore(conflist.split(' '), [pub_s, pub_e], [cit_s, cit_e])
     return JsonResponse(data, safe=False)
 
 @csrf_exempt
@@ -25,6 +27,6 @@ def selectKeyword(request):
     return JsonResponse(set_conf, safe=False)
 
 def main(request):
-    data = getExampleScore()
+    # data = getExampleScore()
     tags = createWordcloud()
-    return render(request, "main.html", {"data": data, "tags": tags})
+    return render(request, "main.html", {"tags": tags})
