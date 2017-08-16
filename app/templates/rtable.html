@@ -1,5 +1,18 @@
 {% load staticfiles%}
-<div id="rankedby" class="well well-sm">
+<div class="well well-sm">
+  <div class="row">
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-sm-12" id="rank-yearrange">
+        </div>
+        <div class="col-sm-12" id="rank-conflist">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <button class="btn btn-primary" id="rankbutton">Rank</button>
+    </div>
+  </div>
 </div>
 <table id="rtable" class="table table-condensed table-hover" cellspacing="0" width="100%">
   <thead>
@@ -12,7 +25,7 @@
       <th>Combined</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="rtablebody">
     {% for ent in data %}
     <tr>
       <td class="details-control"></td>
@@ -26,6 +39,34 @@
   </tbody>
 </table>
 <script type="text/javascript">
+$('#rankbutton').click(function(e) {
+  $.ajax({
+    type: "POST",
+    url: "/update",
+    async: false,
+    data: {
+      syear: nodes[0].innerHTML,
+      eyear: nodes[1].innerHTML,
+      conflist: document.getElementById("rank-conflist").innerText
+    },
+    success: function (result) {
+      console.log("Rank success");
+      console.log(result);
+      var tablebody = document.getElementById("rtablebody");
+      $("#rtablebody tr").remove();
+      for(var i in result) {
+        var row = tablebody.insertRow(i);
+        row.insertCell(0).setAttribute("class", "details-control");
+        row.insertCell(1).setAttribute("class", "index");
+        row.insertCell(2).innerHTML = result[i][0];
+        row.insertCell(3).innerHTML = result[i][1].toFixed(1);
+        row.insertCell(4).innerHTML = result[i][2].toFixed(1);
+        row.insertCell(5).innerHTML = result[i][3].toFixed(1);
+      }
+    }
+  });
+});
+
 var table = $('#rtable').DataTable({
   "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphaslider'>>>" +
           "<'row'<'col-sm-12'tr>>" +

@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.main, name='main'),
+    url(r'^update', views.updateTable, name='update'),
     url(r'^select', views.selectKeyword, name='select'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -69,8 +69,9 @@ var pubSlider = document.getElementById('publication');
 noUiSlider.create(pubSlider, {
   connect: true,
   behaviour: 'tap',
-  start: [ 2000, 2016 ],
+  start: [ 2010, 2016 ],
   step: 1,
+  animate: false,
   range: {
     'min': [ 2000 ],
     'max': [ 2016 ]
@@ -80,13 +81,16 @@ var citSlider = document.getElementById('citation');
 noUiSlider.create(citSlider, {
   connect: true,
   behaviour: 'tap',
-  start: [ 2000, 2016 ],
+  start: [ 2000, 2010 ],
   step: 1,
+  animate: false,
   range: {
     'min': [ 2000 ],
     'max': [ 2016 ]
   }
 });
+var pubLowerHandle = pubSlider.getElementsByClassName('noUi-handle-lower')[0];
+var citUpperHandle = citSlider.getElementsByClassName('noUi-handle-upper')[0];
 var nodes = [
   document.getElementById('pub-lower-value'),
   document.getElementById('pub-upper-value'),
@@ -104,16 +108,82 @@ citSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, p
   updateRanking();
 });
 
+var lockedState = true;
+var sliding = false; //
+var lastMovedSlider = 0; // 1:pubSlider, 2:citSlider
+pubLowerHandle.style.background = "#428bca";
+citUpperHandle.style.background = "#428bca";
+function lockHandle(lastMovedSlider){
+  if (sliding) {
+    sliding = false;
+    return;
+  }
+	lockedState = !lockedState;
+  console.log("locked: ", lockedState);
+  if (lockedState) {
+    pubLowerHandle.style.background = "#428bca";
+    citUpperHandle.style.background = "#428bca";
+    if (lastMovedSlider == 1) {
+      nodes[3].innerHTML = nodes[0].innerHTML;
+      citSlider.noUiSlider.set([nodes[2].innerHTML,nodes[3].innerHTML]);
+    } else {
+      nodes[0].innerHTML = nodes[3].innerHTML;
+      pubSlider.noUiSlider.set([nodes[0].innerHTML,nodes[1].innerHTML]);
+    }
+  } else {
+    pubLowerHandle.style.background = "#FFF";
+    citUpperHandle.style.background = "#FFF";
+  }
+}
+pubLowerHandle.addEventListener('click', function(){
+  lockHandle(1);
+});
+citUpperHandle.addEventListener('click', function(){
+  lockHandle(2);
+});
+
+function crossUpdate ( value, slider ) {
+  // console.log("crossUpdate");
+  // console.log(value, slider);
+	if ( !lockedState ) return;
+  if ( slider == 1 ) { // citSlider
+    nodes[3].innerHTML = value;
+    var r = [nodes[2].innerHTML,nodes[3].innerHTML];
+    citSlider.noUiSlider.set(r);
+  } else { // pubSlider
+    nodes[0].innerHTML = value;
+    var r = [nodes[0].innerHTML,nodes[1].innerHTML];
+    pubSlider.noUiSlider.set(r);
+  }
+}
+
+pubSlider.noUiSlider.on('slide', function( values, handle ){
+  // console.log("pubSlider slider slide", handle);
+  if (handle == 0) {
+    sliding = true;
+    crossUpdate(values[handle], 1);
+  }
+});
+citSlider.noUiSlider.on('slide', function( values, handle ){
+  // console.log("citSlider slider slide", handle);
+  if (handle == 1) {
+    sliding = true;
+    crossUpdate(values[handle], 0);
+  }
+});
+
 function updateInfo(){
   // console.log("updateInfo");
-  var infoWell = document.getElementById('rankedby');
-  if (infoWell != null) {
-    infoWell.innerText = "Publication: " + nodes[0].innerHTML + "~" + nodes[1].innerHTML + "\n";
-    infoWell.innerText += "Citation: " + nodes[2].innerHTML + "~" + nodes[3].innerHTML + "\n";
+  var infoYear = document.getElementById('rank-yearrange');
+  var infoConflist = document.getElementById('rank-conflist');
+  if (infoYear != null) {
+    infoYear.innerText = "Publication: " + nodes[0].innerHTML + "~" + nodes[1].innerHTML + "\n";
+    infoYear.innerText += "Citation: " + nodes[2].innerHTML + "~" + nodes[3].innerHTML + "\n";
     var rows = document.getElementById("conflist").rows;
+    infoConflist.innerHTML = "";
     for (var i = 0; i < rows.length; i++){
       if (rows.item(i).cells[2].children[0].checked) {
-        infoWell.innerHTML += '<span class="label label-default">'
+        infoConflist.innerHTML += '<span class="label label-default">'
           + rows.item(i).cells[0].innerText + "</span> ";
       }
     }
@@ -129,9 +199,8 @@ function updateRanking(){
       url: "/select",
       async: false,
       data: {
-        syear: nodes[0].innerHTML,
-        eyear: nodes[1].innerHTML,
-        keyword: activeCategory.join() },
+        keyword: activeCategory.join()
+      },
       success: function (result) {
         var table = document.getElementById("conflist");
         $("#conflist tr").remove();

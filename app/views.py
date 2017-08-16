@@ -6,16 +6,23 @@ from .wordcloud import createWordcloud, getVenueList
 from .utils import *
 
 @csrf_exempt
+def updateTable(request):
+    syear = int(request.POST.get("syear"))
+    eyear = int(request.POST.get("eyear"))
+    conflist = request.POST.get("conflist")
+    print(conflist, syear, eyear)
+    data = getPaperScore(conflist.split(' '), syear, eyear)
+    return JsonResponse(data, safe=False)
+
+@csrf_exempt
 def selectKeyword(request):
     keywords = request.POST.get("keyword")
-    syear = request.POST.get("syear")
-    eyear = request.POST.get("eyear")
-    print(keywords, syear, eyear)
+
     conf = []
     for key in keywords.split(','):
         conf.extend(getVenueList(key.lower()))
-    set_conf = set(conf)
-    return JsonResponse(list(set_conf), safe=False)
+    set_conf = list(set(conf))
+    return JsonResponse(set_conf, safe=False)
 
 def main(request):
     data = getExampleScore()
