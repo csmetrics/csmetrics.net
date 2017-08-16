@@ -81,6 +81,7 @@ $('#rankbutton').click(function(e) {
     },
     success: function (result) {
       // console.log("Rank success");
+      table.clear();
       for(var i in result) {
         // console.log(result[i]);
         var newRow = {};
@@ -92,14 +93,15 @@ $('#rankbutton').click(function(e) {
         newRow[5] = result[i][3].toFixed(1);
         table.row.add(newRow).draw();
       }
-      updateTable(0.5);
+      updateTable();
       spinner.classList.add("invisible");
     }
   });
 });
 
-function updateTable(alpha){
+function updateTable(){
   // console.log("updateTable");
+  var alpha = document.getElementById("alphaValue").innerText;
   table.rows().eq(0).each( function (index) {
     var row = table.row(index);
     var data = row.data();
