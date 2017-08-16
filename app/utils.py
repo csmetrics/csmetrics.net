@@ -1,7 +1,31 @@
 import os, json, numpy, pickle
+import itertools
 from random import randint
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
+
+paperData = {}
+citationData = {}
+instname = set()
+def loadData():
+    global paperData, citationData, instname
+    fpath = os.path.join(cur_path, "../score_data")
+    try:
+        for cfile in os.listdir(fpath):
+            confname = cfile.split('.')[0]
+            cflist = pickle.load(open(os.path.join(fpath, cfile), "rb"))
+            for k, v in cflist["count_score"].items():
+                if type(k[0]).__name__ == 'str':
+                    paperData[(confname, k[0], k[1])] = v
+                    instname.add(k[0])
+            for k, v in cflist["cited_score_dict"].items():
+                if type(k[0]).__name__ == 'str':
+                    citationData[(confname, k[0], k[1])] = v
+                    instname.add(k[0])
+    except Exception as e:
+        print(e)
+        print(confname, k, v)
+
 
 instmap = None
 def findInstitution(inst):
@@ -28,32 +52,18 @@ def getExampleScore():
     return data
 
 def getPaperScore(conflist, pubrange, citrange):
-    pub = {}
-    cite = {}
-    for confname in conflist:
-        fpath = os.path.join(cur_path, "../score_data/"+confname+".pkl")
-        if not os.path.exists(fpath):
-            print(confname + " not exists")
-            continue
-        cflist = pickle.load(open(fpath, "rb"))
-        # print(cflist.keys())
-        for k, v in cflist["count_score"].items():
-            # print(k[0], k[1], v)
-            if type(k[0]).__name__ == 'str'\
-                and pubrange[0] <= k[1] and k[1] <= pubrange[1]:
-                if k[0] in pub:
-                    pub[k[0]] += v
-                else:
-                    pub[k[0]] = v
+    global paperData, citationData, instname
 
-        for k, v in cflist["cited_score_dict"].items():
-            # print(k[0], k[1], v)
-            if type(k[0]).__name__ == 'str'\
-                and citrange[0] <= k[1] and k[1] <= citrange[1]:
-                if k[0] in cite:
-                    cite[k[0]] += v
-                else:
-                    cite[k[0]] = v
-
-    # print([(findInstitution(v[0]), v[1], cite[v[0]] if v[0] in cite else 0, 0) for v in pub.items()])
-    return [(findInstitution(v[0]), v[1], cite[v[0]] if v[0] in cite else 0, 0) for v in pub.items()]
+    pub = dict(zip(instname, [0 for col in range(len(instname))]))
+    cite = dict(zip(instname, [0 for col in range(len(instname))]))
+    pubyears = range(pubrange[0], pubrange[1]+1, 1)
+    cityears = range(citrange[0], citrange[1]+1, 1)
+    for t in itertools.product(*[conflist, list(instname), pubyears]):
+        if t not in paperData: continue
+        pub[t[1]] += paperData[t]
+    for t in itertools.product(*[conflist, list(instname), cityears]):
+        if t not in citationData: continue
+        cite[t[1]] += citationData[t]
+    # print([(findInstitution(v), pub[v], cite[v], 0) for v in instname if pub[v]>0 or cite[v]>0])
+    print("data return")
+    return [(findInstitution(v), pub[v], cite[v], 0) for v in instname if pub[v]>0 or cite[v]>0]

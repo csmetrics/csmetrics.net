@@ -27,6 +27,7 @@ def selectKeyword(request):
     return JsonResponse(set_conf, safe=False)
 
 def main(request):
+    loadData()
     # data = getExampleScore()
     tags = createWordcloud()
     return render(request, "main.html", {"tags": tags})
