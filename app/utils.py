@@ -65,5 +65,4 @@ def getPaperScore(conflist, pubrange, citrange):
         if t not in citationData: continue
         cite[t[1]] += citationData[t]
     # print([(findInstitution(v), pub[v], cite[v], 0) for v in instname if pub[v]>0 or cite[v]>0])
-    print("data return")
     return [(findInstitution(v), pub[v], cite[v], 0) for v in instname if pub[v]>0 or cite[v]>0]

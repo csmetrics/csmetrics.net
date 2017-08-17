@@ -58,7 +58,7 @@
 <div class="row">
   <div class="col-lg-12">
     <div style="max-height: 600px; overflow-x: hidden;">
-      <table id="conflist" class="table table-hover">
+      <table id="conflist" class="table table-condensed table-hover">
       </table>
     </div>
   </div>
@@ -100,19 +100,19 @@ var nodes = [
 pubSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("pubSlider slider update");
   nodes[handle].innerHTML = parseInt(values[handle]);
-  updateRanking();
+  updateInfoYear();
 });
 citSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("citSlider slider update");
   nodes[handle+2].innerHTML = parseInt(values[handle]);
-  updateRanking();
+  updateInfoYear();
 });
 
 var lockedState = true;
 var sliding = false; //
 var lastMovedSlider = 0; // 1:pubSlider, 2:citSlider
-pubLowerHandle.style.background = "#428bca";
-citUpperHandle.style.background = "#428bca";
+pubLowerHandle.classList.add("noUi-handle-primary");
+citUpperHandle.classList.add("noUi-handle-primary");
 function lockHandle(lastMovedSlider){
   if (sliding) {
     sliding = false;
@@ -121,8 +121,8 @@ function lockHandle(lastMovedSlider){
 	lockedState = !lockedState;
   console.log("locked: ", lockedState);
   if (lockedState) {
-    pubLowerHandle.style.background = "#428bca";
-    citUpperHandle.style.background = "#428bca";
+    pubLowerHandle.classList.add("noUi-handle-primary");
+    citUpperHandle.classList.add("noUi-handle-primary");
     if (lastMovedSlider == 1) {
       nodes[3].innerHTML = nodes[0].innerHTML;
       citSlider.noUiSlider.set([nodes[2].innerHTML,nodes[3].innerHTML]);
@@ -131,8 +131,8 @@ function lockHandle(lastMovedSlider){
       pubSlider.noUiSlider.set([nodes[0].innerHTML,nodes[1].innerHTML]);
     }
   } else {
-    pubLowerHandle.style.background = "#FFF";
-    citUpperHandle.style.background = "#FFF";
+    pubLowerHandle.classList.remove("noUi-handle-primary");
+    citUpperHandle.classList.remove("noUi-handle-primary");
   }
 }
 pubLowerHandle.addEventListener('click', function(){
@@ -172,17 +172,22 @@ citSlider.noUiSlider.on('slide', function( values, handle ){
   }
 });
 
-function updateInfo(){
-  // console.log("updateInfo");
+function updateInfoYear(){
+  // console.log("updateInfoYear");
   var infoYear = document.getElementById('rank-yearrange');
-  var infoConflist = document.getElementById('rank-conflist');
   if (infoYear != null) {
     infoYear.innerText = "Publication: " + nodes[0].innerHTML + "~" + nodes[1].innerHTML + "\n";
     infoYear.innerText += "Citation: " + nodes[2].innerHTML + "~" + nodes[3].innerHTML + "\n";
+  }
+}
+function updateInfoConf(){
+  // console.log("updateInfoConf");
+  var infoConflist = document.getElementById('rank-conflist');
+  if (infoConflist != null) {
     var rows = document.getElementById("conflist").rows;
     infoConflist.innerHTML = "";
     for (var i = 0; i < rows.length; i++){
-      if (rows.item(i).cells[2].children[0].checked) {
+      if (rows.item(i).cells[3].children[0].checked) {
         infoConflist.innerHTML += '<span class="label label-default">'
           + rows.item(i).cells[0].innerText + "</span> ";
       }
@@ -190,14 +195,12 @@ function updateInfo(){
   }
 }
 
-function updateRanking(){
-  // console.log("updateRanking");
+function updateConfList(){
   console.log(activeCategory.join());
   if (activeCategory.length > 0) {
     $.ajax({
       type: "POST",
       url: "/select",
-      async: false,
       data: {
         keyword: activeCategory.join()
       },
@@ -209,19 +212,22 @@ function updateRanking(){
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
           var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
           cell1.innerHTML = "<b>"+result[i][0]+"</b>";
-          cell2.innerHTML = result[i][1];
+          cell2.innerHTML = "<small>"+result[i][1]+"</small>";
+          cell3.innerHTML = 1.0;
+
           var checkbox = document.createElement('input');
           checkbox.setAttribute("class", "checkbox");
           checkbox.setAttribute("type", "checkbox");
           checkbox.setAttribute("checked", true);
-          checkbox.setAttribute("onclick", "updateInfo()");
-          cell3.appendChild(checkbox) ;
+          checkbox.setAttribute("onclick", "updateInfoConf()");
+          cell4.appendChild(checkbox);
         }
+        updateInfoConf();
       }
     });
   }
-  updateInfo();
 }
 
 $('.btn').click(function(e) {
@@ -246,9 +252,8 @@ $('.btn').click(function(e) {
   }
   if (activeCategory.length == 0) {
     $("#conflist tr").remove();
-    updateInfo();
-  } else {
-    updateRanking();
+    updateInfoConf();
   }
+  updateConfList();
 });
 </script>
