@@ -1,16 +1,14 @@
 {% load staticfiles%}
 <div class="well well-sm">
   <div class="row">
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-sm-12" id="rank-yearrange">
-        </div>
-        <div class="col-sm-12" id="rank-conflist">
-        </div>
-      </div>
+    <div class="col-sm-10" id="rank-yearrange">
     </div>
     <div class="col-sm-2">
       <button class="btn btn-primary" style="width:100%;" id="rankbutton">Rank</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" id="rank-conflist">
     </div>
   </div>
 </div>
@@ -58,7 +56,7 @@ $("div.alphaslider").html(
     '<input type="range" min="0" max="10" value="5" onchange="changeValue(this.value)"/>'+
     '<output>&alpha; = <span class="text-primary" id="alphaValue">0.5</span></output>'+
   '</div>'+
-  '<small class="text-muted">Combined = papers<sup>&alpha;</sup> x citations<sup>1-&alpha;</sup></small>'
+  '<small class="text-muted">Combined = papers<sup>1-&alpha;</sup> x citations<sup>&alpha;</sup></small>'
 );
 
 table.on( 'order.dt search.dt', function () {
@@ -106,8 +104,8 @@ function updateTable(){
     var row = table.row(index);
     var data = row.data();
     // combined = alpha*parseFloat(data[3]) + (1-alpha)*parseFloat(data[4]);
-    combined = Math.pow(parseFloat(data[3]), alpha)
-              *Math.pow(parseFloat(data[4]), 1-alpha);
+    combined = Math.pow(parseFloat(data[3]), 1-alpha)
+              *Math.pow(parseFloat(data[4]), alpha);
     data[5] = Number((combined).toFixed(1));
     table.row(index).data(data);
   });

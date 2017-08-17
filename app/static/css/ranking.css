@@ -37,6 +37,15 @@ body {
     width: 240px;
 }
 
+input[type=checkbox]
+{
+  -ms-transform: scale(1.3); /* IE */
+  -moz-transform: scale(1.3); /* FF */
+  -webkit-transform: scale(1.3); /* Safari and Chrome */
+  -o-transform: scale(1.3); /* Opera */
+  padding: 10px 0;
+}
+
 #spinner {
     position: absolute;
     top: 50%;

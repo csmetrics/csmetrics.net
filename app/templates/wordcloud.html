@@ -42,12 +42,21 @@
     </div>
   </div>
 </div>
+<div class="row">
+  <div class="col-sm-9">
+    <h4><span class="label label-default">Category</span></h4>
+  </div>
+  <div class="col-sm-3">
+    <div style="float:right; padding: 5px 10px 0 0;">
+      Select All <input id="selectall" type="checkbox" style="margin: 5px 0 0 3px;"></input>
+    </div>
+  </div>
+</div>
 <div class="row" style="margin-bottom: 10px;">
   <div class="col-lg-12">
-    <h4><span class="label label-default">Category</span></h4>
     <div style="text-align:center;">
       {% for t in tags %}
-        <button class="btn btn-sm btn-default" style="margin-bottom:3px;">
+        <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
           <span class="text-uppercase">{{ t.0 }}</span>
           <!-- <span class="badge">{{ t.1 }}</span> -->
         </button>
@@ -230,7 +239,11 @@ function updateConfList(){
   }
 }
 
-$('.btn').click(function(e) {
+$('#selectall').click(function(e) {
+  // $('.btn-venue').click();
+});
+
+$('.btn-venue').click(function(e) {
   var btn = $(this);
   btn.toggleClass('active');
   if (btn.hasClass('active')){

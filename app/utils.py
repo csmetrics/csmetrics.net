@@ -1,4 +1,5 @@
-import os, json, numpy, pickle
+import os, numpy, pickle
+import json, csv
 import itertools
 from random import randint
 
