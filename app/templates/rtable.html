@@ -91,7 +91,7 @@ $('#rankbutton').click(function(e) {
         newRow[3] = result[i][1].toFixed(1);
         newRow[4] = result[i][2].toFixed(1);
         newRow[5] = result[i][3].toFixed(1);
-        table.row.add(newRow).draw();
+        table.row.add(newRow);
       }
       updateTable();
       spinner.classList.add("invisible");
