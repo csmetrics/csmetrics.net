@@ -10,7 +10,7 @@
       </div>
       <div class="col-sm-2" style="padding:7px 15px 0 0">
         <div class="text-right">
-          <span class="label-as-badge" id="pub-lower-value"></span>
+          <span class="label-as-badge">[<span id="pub-lower-value"></span></span>
         </div>
       </div>
       <div class="col-sm-6" style="padding:8px">
@@ -18,7 +18,7 @@
       </div>
       <div class="col-sm-2" style="padding:7px 0 0 15px">
         <div class="text-left">
-          <span class="label-as-badge" id="pub-upper-value"></span>
+          <span class="label-as-badge"><span id="pub-upper-value"></span>)</span>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
       </div>
       <div class="col-sm-2" style="padding:7px 15px 0 0">
         <div class="text-right">
-          <span class="label-as-badge" id="cit-lower-value"></span>
+          <span class="label-as-badge">[<span id="cit-lower-value"></span></span>
         </div>
       </div>
       <div class="col-sm-6" style="padding:8px">
@@ -36,7 +36,7 @@
       </div>
       <div class="col-sm-2" style="padding:7px 0 0 15px">
         <div class="text-left">
-          <span class="label-as-badge" id="cit-upper-value"></span>
+          <span class="label-as-badge"><span id="cit-upper-value"></span>)</span>
         </div>
       </div>
     </div>
@@ -108,12 +108,12 @@ var nodes = [
 ];
 pubSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("pubSlider slider update");
-  nodes[handle].innerHTML = parseInt(values[handle]);
+  nodes[handle].innerText = parseInt(values[handle]);
   updateInfoYear();
 });
 citSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("citSlider slider update");
-  nodes[handle+2].innerHTML = parseInt(values[handle]);
+  nodes[handle+2].innerText = parseInt(values[handle]);
   updateInfoYear();
 });
 
@@ -133,11 +133,11 @@ function lockHandle(lastMovedSlider){
     pubLowerHandle.classList.add("noUi-handle-primary");
     citUpperHandle.classList.add("noUi-handle-primary");
     if (lastMovedSlider == 1) {
-      nodes[3].innerHTML = nodes[0].innerHTML;
-      citSlider.noUiSlider.set([nodes[2].innerHTML,nodes[3].innerHTML]);
+      nodes[3].innerText = nodes[0].innerText;
+      citSlider.noUiSlider.set([nodes[2].innerText,nodes[3].innerText]);
     } else {
-      nodes[0].innerHTML = nodes[3].innerHTML;
-      pubSlider.noUiSlider.set([nodes[0].innerHTML,nodes[1].innerHTML]);
+      nodes[0].innerText = nodes[3].innerText;
+      pubSlider.noUiSlider.set([nodes[0].innerText,nodes[1].innerText]);
     }
   } else {
     pubLowerHandle.classList.remove("noUi-handle-primary");
@@ -156,12 +156,12 @@ function crossUpdate ( value, slider ) {
   // console.log(value, slider);
 	if ( !lockedState ) return;
   if ( slider == 1 ) { // citSlider
-    nodes[3].innerHTML = value;
-    var r = [nodes[2].innerHTML,nodes[3].innerHTML];
+    nodes[3].innerText = value;
+    var r = [nodes[2].innerText,nodes[3].innerText];
     citSlider.noUiSlider.set(r);
   } else { // pubSlider
-    nodes[0].innerHTML = value;
-    var r = [nodes[0].innerHTML,nodes[1].innerHTML];
+    nodes[0].innerText = value;
+    var r = [nodes[0].innerText,nodes[1].innerText];
     pubSlider.noUiSlider.set(r);
   }
 }
@@ -185,8 +185,16 @@ function updateInfoYear(){
   // console.log("updateInfoYear");
   var infoYear = document.getElementById('rank-yearrange');
   if (infoYear != null) {
-    infoYear.innerText = "Publication: " + nodes[0].innerHTML + "~" + nodes[1].innerHTML + "\n";
-    infoYear.innerText += "Citation: " + nodes[2].innerHTML + "~" + nodes[3].innerHTML + "\n";
+    y = [];
+    for (i in nodes) {
+      y[i] = parseInt(nodes[i].innerText);
+    }
+    if (y[1]-y[0] <= 0) infoYear.innerText = "Publication: None\n"
+    else if (y[1]-y[0] == 1) infoYear.innerText = "Publication: "+y[0]+"\n";
+    else infoYear.innerText = "Publication: "+y[0]+"~"+(y[1]-1)+"\n";
+    if (y[3]-y[2] <= 0) infoYear.innerText += "Citation: None\n"
+    else if (y[3]-y[2] == 1) infoYear.innerText += "Citation: "+y[2]+"\n";
+    else infoYear.innerText += "Citation: "+y[2]+"~"+(y[3]-1)+"\n";
   }
 }
 function updateInfoConf(){
