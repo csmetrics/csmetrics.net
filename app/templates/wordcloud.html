@@ -232,7 +232,7 @@ function updateConfList(){
           var cell4 = row.insertCell(3);
           cell1.innerHTML = "<b>"+result[i][0]+"</b>";
           cell2.innerHTML = "<small>"+result[i][1]+"</small>";
-          cell3.innerHTML = 1.0;
+          cell3.innerHTML = result[i][2]
 
           var checkbox = document.createElement('input');
           checkbox.setAttribute("class", "checkbox");

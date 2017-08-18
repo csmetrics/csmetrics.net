@@ -7,9 +7,14 @@ cur_path = os.path.dirname(os.path.abspath(__file__))
 
 paperData = {}
 citationData = {}
-instname = set()
-def loadData():
-    global paperData, citationData, instname
+instName = set()
+
+# only load once
+instMap = None
+venueWeight = None
+
+def readPaperCount():
+    global paperData, citationData, instName
     fpath = os.path.join(cur_path, "../score_data")
     try:
         for cfile in os.listdir(fpath):
@@ -18,29 +23,57 @@ def loadData():
             for k, v in cflist["count_score"].items():
                 if type(k[0]).__name__ == 'str':
                     paperData[(confname, k[0], k[1])] = v
-                    instname.add(k[0])
+                    instName.add(k[0])
             for k, v in cflist["cited_score_dict"].items():
                 if type(k[0]).__name__ == 'str':
                     citationData[(confname, k[0], k[1])] = v
-                    instname.add(k[0])
+                    instName.add(k[0])
     except Exception as e:
         print(e)
         print(confname, k, v)
 
 
-instmap = None
-def findInstitution(inst):
-    global instmap
-    if instmap == None:
-        instmap = {}
+def loadInstData():
+    global instMap
+    if instMap == None:
+        instMap = {}
         memberlist = open(os.path.join(cur_path, "data/Member_List.txt"))
         for l in memberlist.readlines():
             name, key = l.split('\t')
-            instmap[key.strip()] = name.strip('"')
-    if inst in instmap:
-        return instmap[inst]
+            instMap[key.strip()] = name.strip('"')
+
+def loadVenueWeight():
+    global venueWeight
+    if venueWeight == None:
+        weightfile = open(os.path.join(cur_path, "data/venue_weight.csv"))
+        reader = csv.reader(weightfile)
+        next(reader) # skip the first line
+        # r[1]: Arithmetic Mean of Citations/Paper
+        # r[2]: Geometric Mean of Citations/Paper
+        venueWeight = dict((r[0], float(r[2])) for r in reader)
+
+def loadData():
+    readPaperCount()
+    loadInstData()
+    loadVenueWeight()
+
+
+def getVenueWeight(venue):
+    global venueWeight
+    venue = venue.lower()
+    if venue in venueWeight:
+        return venueWeight[venue]
+    else:
+        return 0.0
+
+
+def findInstitution(inst):
+    global instMap
+    if inst in instMap:
+        return instMap[inst]
     else:
         return inst
+
 
 def getExampleScore():
     rawdata = open(os.path.join(cur_path, "data/aamas2007affil.txt"))
@@ -53,17 +86,17 @@ def getExampleScore():
     return data
 
 def getPaperScore(conflist, pubrange, citrange):
-    global paperData, citationData, instname
+    global paperData, citationData, instName
 
-    pub = dict(zip(instname, [0 for col in range(len(instname))]))
-    cite = dict(zip(instname, [0 for col in range(len(instname))]))
+    pub = dict(zip(instName, [0 for col in range(len(instName))]))
+    cite = dict(zip(instName, [0 for col in range(len(instName))]))
     pubyears = range(pubrange[0], pubrange[1]+1, 1)
     cityears = range(citrange[0], citrange[1]+1, 1)
-    for t in itertools.product(*[conflist, list(instname), pubyears]):
+    for t in itertools.product(*[conflist, list(instName), pubyears]):
         if t not in paperData: continue
         pub[t[1]] += paperData[t]
-    for t in itertools.product(*[conflist, list(instname), cityears]):
+    for t in itertools.product(*[conflist, list(instName), cityears]):
         if t not in citationData: continue
         cite[t[1]] += citationData[t]
-    # print([(findInstitution(v), pub[v], cite[v], 0) for v in instname if pub[v]>0 or cite[v]>0])
-    return [(findInstitution(v), pub[v], cite[v], 0) for v in instname if pub[v]>0 or cite[v]>0]
+    # print([(findInstitution(v), pub[v], cite[v], 0) for v in instName if pub[v]>0 or cite[v]>0])
+    return [(findInstitution(v), pub[v], cite[v], 0) for v in instName if pub[v]>0 or cite[v]>0]

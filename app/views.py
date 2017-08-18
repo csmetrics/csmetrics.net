@@ -1,7 +1,7 @@
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-
+from operator import itemgetter
 from .wordcloud import createWordcloud, getVenueList
 from .utils import *
 
@@ -24,7 +24,8 @@ def selectKeyword(request):
     for key in keywords.split(','):
         conf.extend(getVenueList(key.lower()))
     set_conf = list(set(conf))
-    return JsonResponse(set_conf, safe=False)
+    sorted_conf = sorted(set_conf, key=itemgetter(2), reverse=True)
+    return JsonResponse(sorted_conf, safe=False)
 
 def main(request):
     loadData()

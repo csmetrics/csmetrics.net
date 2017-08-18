@@ -4,6 +4,7 @@ from nltk.stem.porter import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from collections import Counter
+from .utils import *
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 venues = []
@@ -50,5 +51,6 @@ def createWordcloud():
 
 def getVenueList(keyword):
     global venues
-    vlist = [v.split()[:-1] for v in venues if v.lower().find(keyword) >= 0]
-    return [(v[0], " ".join(v[1:])) for v in vlist]
+    keyword_vlist = [v.split()[:-1] for v in venues if v.lower().find(keyword) >= 0]
+    vlist = [(v[0], " ".join(v[1:]), getVenueWeight(v[0])) for v in keyword_vlist]
+    return vlist
