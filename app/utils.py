@@ -85,18 +85,24 @@ def getExampleScore():
         data.append((findInstitution(uname), randint(10, 400), citation, 0))
     return data
 
-def getPaperScore(conflist, pubrange, citrange):
+def getPaperScore(conflist, pubrange, citrange, weight):
     global paperData, citationData, instName
 
     pub = dict(zip(instName, [0 for col in range(len(instName))]))
     cite = dict(zip(instName, [0 for col in range(len(instName))]))
+    wpub = dict(zip(instName, [0 for col in range(len(instName))]))
+    wcite = dict(zip(instName, [0 for col in range(len(instName))]))
     pubyears = range(pubrange[0], pubrange[1], 1)
     cityears = range(citrange[0], citrange[1], 1)
     for t in itertools.product(*[conflist, list(instName), pubyears]):
         if t not in paperData: continue
+        w = venueWeight[t[0].lower()] if weight and t[0].lower() in venueWeight else 1
         pub[t[1]] += paperData[t]
+        wpub[t[1]] += paperData[t] * w
     for t in itertools.product(*[conflist, list(instName), cityears]):
         if t not in citationData: continue
+        w = venueWeight[t[0].lower()] if weight and t[0].lower() in venueWeight else 1
         cite[t[1]] += citationData[t]
-    # print([(findInstitution(v), pub[v], cite[v], 0) for v in instName if pub[v]>0 or cite[v]>0])
-    return [(findInstitution(v), pub[v], cite[v], 0) for v in instName if pub[v]>0 or cite[v]>0]
+        wcite[t[1]] += citationData[t] * w
+    rlist = [(findInstitution(v), pub[v], wpub[v], cite[v], wcite[v], 0) for v in instName if pub[v]>0 or cite[v]>0]
+    return rlist

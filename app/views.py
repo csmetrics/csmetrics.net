@@ -11,9 +11,10 @@ def updateTable(request):
     pub_e = int(request.POST.get("pub_eyear"))
     cit_s = int(request.POST.get("cit_syear"))
     cit_e = int(request.POST.get("cit_eyear"))
+    weight = request.POST.get("weight")
     conflist = request.POST.get("conflist")
-    # print(conflist, [pub_s, pub_e], [cit_s, cit_e])
-    data = getPaperScore(conflist.split(' '), [pub_s, pub_e], [cit_s, cit_e])
+    # print(conflist, [pub_s, pub_e], [cit_s, cit_e], weight)
+    data = getPaperScore(conflist.split(' '), [pub_s, pub_e], [cit_s, cit_e], weight=="GEOMEAN")
     return JsonResponse(data, safe=False)
 
 @csrf_exempt

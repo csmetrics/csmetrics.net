@@ -1,7 +1,12 @@
 {% load staticfiles%}
 <div class="well well-sm">
   <div class="row">
-    <div class="col-sm-10" id="rank-yearrange">
+    <div class="col-sm-5">
+      <div>Publication: <span id="rank-pub-range"></span></div>
+      <div>Citation: <span id="rank-cit-range"></span></div>
+    </div>
+    <div class="col-sm-5">
+      Weight Metric: <span id="weight-metric" class="text-uppercase">Not Selected</span>
     </div>
     <div class="col-sm-2">
       <button class="btn btn-success" style="width:100%;" id="rankbutton">Rank</button>
@@ -31,7 +36,9 @@ var table = $('#rtable').DataTable({
     { title: "Rank", className: "index" },
     { title: "Institution" },
     { title: "Papers" },
+    { title: "W/P" },
     { title: "Citations" },
+    { title: "W/C" },
     { title: "Combined" }
   ],
   "columnDefs": [ {
@@ -46,7 +53,7 @@ var table = $('#rtable').DataTable({
   "pagingType": "simple_numbers",
   "searching": false,
   "ordering": true,
-  "order": [[ 5, "desc" ]],
+  "order": [[ 7, "desc" ]],
   "info": true,
   "autoWidth": false
 });
@@ -75,6 +82,7 @@ $('#rankbutton').click(function(e) {
       pub_eyear: nodes[1].innerHTML,
       cit_syear: nodes[2].innerHTML,
       cit_eyear: nodes[3].innerHTML,
+      weight: document.getElementById("weight-metric").innerText,
       conflist: document.getElementById("rank-conflist").innerText
     },
     success: function (result) {
@@ -89,6 +97,8 @@ $('#rankbutton').click(function(e) {
         newRow[3] = result[i][1].toFixed(1);
         newRow[4] = result[i][2].toFixed(1);
         newRow[5] = result[i][3].toFixed(1);
+        newRow[6] = result[i][4].toFixed(1);
+        newRow[7] = result[i][5].toFixed(1);
         table.row.add(newRow);
       }
       updateTable();
@@ -103,10 +113,9 @@ function updateTable(){
   table.rows().eq(0).each( function (index) {
     var row = table.row(index);
     var data = row.data();
-    // combined = alpha*parseFloat(data[3]) + (1-alpha)*parseFloat(data[4]);
-    combined = Math.pow(parseFloat(data[3]), 1-alpha)
-              *Math.pow(parseFloat(data[4]), alpha);
-    data[5] = Number((combined).toFixed(1));
+    combined = Math.pow(parseFloat(data[4]), 1-alpha)
+              *Math.pow(parseFloat(data[6]), alpha);
+    data[7] = Number((combined).toFixed(1));
     table.row(index).data(data);
   });
   table.draw();

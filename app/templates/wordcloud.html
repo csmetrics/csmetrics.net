@@ -67,7 +67,21 @@
 <div class="row">
   <div class="col-lg-12">
     <div style="max-height: 600px; overflow-x: hidden;">
-      <table id="conflist" class="table table-condensed table-hover">
+      <table id="conflist" class="table table-condensed table-hover invisible">
+        <thead>
+          <tr>
+            <td><b>Abbr.</b></td>
+            <td><b>Conference</b></td>
+            <td>
+              <select id="weightselector">
+                <option value="equal">Equal</option>
+                <option value="geomean">Geo Mean</option>
+              </select>
+            </td>
+          </tr>
+        </thead>
+        <tbody id="conflist-body">
+        </tbody>
       </table>
     </div>
   </div>
@@ -185,28 +199,29 @@ citSlider.noUiSlider.on('slide', function( values, handle ){
 
 function updateInfoYear(){
   // console.log("updateInfoYear");
-  var infoYear = document.getElementById('rank-yearrange');
-  if (infoYear != null) {
+  var infoPubYear = document.getElementById('rank-pub-range');
+  var infoCitYear = document.getElementById('rank-cit-range');
+  if (infoPubYear != null) {
     y = [];
     for (i in nodes) {
       y[i] = parseInt(nodes[i].innerText);
     }
-    if (y[1]-y[0] <= 0) infoYear.innerText = "Publication: None\n"
-    else if (y[1]-y[0] == 1) infoYear.innerText = "Publication: "+y[0]+"\n";
-    else infoYear.innerText = "Publication: "+y[0]+"~"+(y[1]-1)+"\n";
-    if (y[3]-y[2] <= 0) infoYear.innerText += "Citation: None\n"
-    else if (y[3]-y[2] == 1) infoYear.innerText += "Citation: "+y[2]+"\n";
-    else infoYear.innerText += "Citation: "+y[2]+"~"+(y[3]-1)+"\n";
+    if (y[1]-y[0] <= 0) infoPubYear.innerText = "None"
+    else if (y[1]-y[0] == 1) infoPubYear.innerText = y[0];
+    else infoPubYear.innerText = y[0]+"~"+(y[1]-1);
+    if (y[3]-y[2] <= 0) infoCitYear.innerText = "None"
+    else if (y[3]-y[2] == 1) infoCitYear.innerText = y[2];
+    else infoCitYear.innerText = y[2]+"~"+(y[3]-1);
   }
 }
 function updateInfoConf(){
   // console.log("updateInfoConf");
   var infoConflist = document.getElementById('rank-conflist');
   if (infoConflist != null) {
-    var rows = document.getElementById("conflist").rows;
+    var rows = document.getElementById("conflist-body").rows;
     infoConflist.innerHTML = "";
     for (var i = 0; i < rows.length; i++){
-      if (rows.item(i).cells[3].children[0].checked) {
+      if (rows.item(i).cells[4].children[0].checked) {
         infoConflist.innerHTML += '<span class="label label-default">'
           + rows.item(i).cells[0].innerText + "</span> ";
       }
@@ -224,24 +239,34 @@ function updateConfList(){
         keyword: activeCategory.join()
       },
       success: function (result) {
-        var table = document.getElementById("conflist");
-        $("#conflist tr").remove();
+        $("#conflist").removeClass("invisible");
+        var table = document.getElementById("conflist-body");
+        $("#conflist-body tr").remove();
         for(var i in result) {
           var row = table.insertRow(i);
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
           var cell3 = row.insertCell(2);
           var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
           cell1.innerHTML = "<b>"+result[i][0]+"</b>";
           cell2.innerHTML = "<small>"+result[i][1]+"</small>";
-          cell3.innerHTML = result[i][2]
+          cell3.innerHTML = 1;
+          cell4.innerHTML = result[i][2]; // geo mean
+          if (weightselector.value == "equal") {
+            cell4.style.display = 'none';
+          } else {
+            cell3.style.display = 'none';
+          }
+          var weightmetric = document.getElementById('weight-metric');
+          weightmetric.innerText = weightselector.value;
 
           var checkbox = document.createElement('input');
           checkbox.setAttribute("class", "checkbox");
           checkbox.setAttribute("type", "checkbox");
           checkbox.setAttribute("checked", true);
           checkbox.setAttribute("onclick", "updateInfoConf()");
-          cell4.appendChild(checkbox);
+          cell5.appendChild(checkbox);
         }
         updateInfoConf();
       }
@@ -259,15 +284,34 @@ function getActiveCategories() {
     }
   }
   if (activeCategory.length == 0) {
-    $("#conflist tr").remove();
+    $("#conflist").addClass("invisible");
+    $("#conflist-body tr").remove();
     updateInfoConf();
   }
   updateConfList();
 }
 
-$('#selectall').click( function(e) {
-  // $('.btn-venue').click();
-  if ($('#selectall')[0].checked) {
+var weightselector = document.getElementById('weightselector');
+weightselector.addEventListener("change", function(e) {
+  console.log(weightselector.value);
+  var weightmetric = document.getElementById('weight-metric');
+  weightmetric.innerText = weightselector.value;
+  var rows = document.getElementById("conflist-body").getElementsByTagName("tr");
+  for (var i = 0; i < rows.length; i++) {
+    var col = rows[i].children
+    if (weightselector.value == "one") {
+      col[3].style.display="none";
+      col[2].style.display="block";
+    } else {
+      col[2].style.display="none";
+      col[3].style.display="block";
+    }
+  }
+});
+
+var selectall = document.getElementById('selectall');
+selectall.addEventListener("click", function(e) {
+  if (selectall.checked) {
     $('.btn-venue').addClass('active');
     $('.btn-venue').removeClass('btn-default');
     $('.btn-venue').addClass('btn-primary');
@@ -288,7 +332,7 @@ $('.btn-venue').click(function(e) {
   } else {
     btn.removeClass('btn-primary');
     btn.addClass('btn-default');
-    $('#selectall')[0].checked = false;
+    selectall.checked = false;
   }
   e.preventDefault();
   getActiveCategories();
