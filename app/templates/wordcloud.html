@@ -247,22 +247,7 @@ function updateConfList(){
   }
 }
 
-$('#selectall').click(function(e) {
-  // $('.btn-venue').click();
-});
-
-$('.btn-venue').click(function(e) {
-  var btn = $(this);
-  btn.toggleClass('active');
-  if (btn.hasClass('active')){
-    btn.removeClass('btn-default');
-    btn.addClass('btn-primary');
-  } else {
-    btn.removeClass('btn-primary');
-    btn.addClass('btn-default');
-  }
-  e.preventDefault();
-
+function getActiveCategories() {
   activeCategory = [];
   var buttons = document.getElementsByTagName('button');
   for (var i = 0; i < buttons.length; i++) {
@@ -276,5 +261,34 @@ $('.btn-venue').click(function(e) {
     updateInfoConf();
   }
   updateConfList();
+}
+
+$('#selectall').click( function(e) {
+  // $('.btn-venue').click();
+  if ($('#selectall')[0].checked) {
+    $('.btn-venue').addClass('active');
+    $('.btn-venue').removeClass('btn-default');
+    $('.btn-venue').addClass('btn-primary');
+  } else {
+    $('.btn-venue').removeClass('active');
+    $('.btn-venue').addClass('btn-default');
+    $('.btn-venue').removeClass('btn-primary');
+  }
+  getActiveCategories();
+});
+
+$('.btn-venue').click(function(e) {
+  var btn = $(this);
+  btn.toggleClass('active');
+  if (btn.hasClass('active')){
+    btn.removeClass('btn-default');
+    btn.addClass('btn-primary');
+  } else {
+    btn.removeClass('btn-primary');
+    btn.addClass('btn-default');
+    $('#selectall')[0].checked = false;
+  }
+  e.preventDefault();
+  getActiveCategories();
 });
 </script>
