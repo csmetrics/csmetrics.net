@@ -73,29 +73,31 @@
   </div>
 </div>
 <script>
+var yearrange = [1990, 2016];
+var pivotyear = 2010;
 var activeCategory = [];
 var pubSlider = document.getElementById('publication');
 noUiSlider.create(pubSlider, {
   connect: true,
   behaviour: 'tap',
-  start: [ 2010, 2016 ],
+  start: [ pivotyear, yearrange[1] ],
   step: 1,
   animate: false,
   range: {
-    'min': [ 2000 ],
-    'max': [ 2016 ]
+    'min': [ yearrange[0] ],
+    'max': [ yearrange[1] ]
   }
 });
 var citSlider = document.getElementById('citation');
 noUiSlider.create(citSlider, {
   connect: true,
   behaviour: 'tap',
-  start: [ 2000, 2010 ],
+  start: [ yearrange[0], pivotyear ],
   step: 1,
   animate: false,
   range: {
-    'min': [ 2000 ],
-    'max': [ 2016 ]
+    'min': [ yearrange[0] ],
+    'max': [ yearrange[1] ]
   }
 });
 var pubLowerHandle = pubSlider.getElementsByClassName('noUi-handle-lower')[0];

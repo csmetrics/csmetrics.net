@@ -90,8 +90,8 @@ def getPaperScore(conflist, pubrange, citrange):
 
     pub = dict(zip(instName, [0 for col in range(len(instName))]))
     cite = dict(zip(instName, [0 for col in range(len(instName))]))
-    pubyears = range(pubrange[0], pubrange[1]+1, 1)
-    cityears = range(citrange[0], citrange[1]+1, 1)
+    pubyears = range(pubrange[0], pubrange[1], 1)
+    cityears = range(citrange[0], citrange[1], 1)
     for t in itertools.product(*[conflist, list(instName), pubyears]):
         if t not in paperData: continue
         pub[t[1]] += paperData[t]
