@@ -20,6 +20,7 @@ def readPaperCount():
         for cfile in os.listdir(fpath):
             confname = cfile.split('.')[0]
             cflist = pickle.load(open(os.path.join(fpath, cfile), "rb"))
+            # print(cflist)
             for k, v in cflist["count_score"].items():
                 if type(k[0]).__name__ == 'str':
                     paperData[(confname, k[0], k[1])] = v

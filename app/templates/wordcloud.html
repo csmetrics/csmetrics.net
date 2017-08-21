@@ -299,7 +299,7 @@ weightselector.addEventListener("change", function(e) {
   var rows = document.getElementById("conflist-body").getElementsByTagName("tr");
   for (var i = 0; i < rows.length; i++) {
     var col = rows[i].children
-    if (weightselector.value == "one") {
+    if (weightselector.value == "equal") {
       col[3].style.display="none";
       col[2].style.display="block";
     } else {
