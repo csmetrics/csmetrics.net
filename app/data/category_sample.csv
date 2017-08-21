@@ -1,0 +1,70 @@
+artificial intelligence::AAAI
+artificial intelligence::AAMAS
+artificial intelligence:natural language processing:ACL
+artificial intelligence::ASE
+programming language,operating systems,architecture::ASPLOS
+theory:logic and verification:CAV
+systems:security:CCS
+hci::CHI
+systems:networks:CoNEXT
+theory:cryptography:CRYPTO
+artificial intelligence:computer vision:CVPR
+systems:design automation:DAC
+systems:distributed computing:DISC
+artificial intelligence:computer vision:ECCV
+systems:programming language:ECOOP
+artificial intelligence:natural language processing:EMNLP
+systems:embedded,real-time:EMSOFT
+theory:cryptography:EUROCRYPT
+systems:operating systems:EuroSys
+theory:algorithms,complexity:FOCS
+software engineering:software engineering:FSE
+systems:high-performance computing,computer architecture:HPCA
+systems:high-performance computing:HPDC
+artificial intelligence:planning:ICAPS
+systems:design automation:ICCAD
+artificial intelligence:computer vision:ICCV
+hci:user interfaces:ICMI
+artificial intelligence:machine learning:ICML
+robotics:robotics:ICRA
+systems:high-performance computing:ICS
+software engineering:software engineering:ICSE
+systems:security:S&P
+artificial intelligence::IJCAI
+measurement,performance analysis:measurement,performance analysis:IMC
+systems:networks:INFOCOM
+systems::INTERSPEECH
+robotics:robotics:IROS
+systems:computer architecture:ISCA
+bioinformatics::ISMB
+artificial intelligence:data mining:KDD
+theory:logic and verification:LICS
+systems:computer architecture:MICRO
+systems:mobile:MobiCom
+systems:mobile:MobiSys
+artificial intelligence:natural language processing:NAACL
+artificial intelligence:machine learning:NIPS
+systems:networks:NSDI
+systems:operating systems:OSDI
+programming language::PLDI
+programming language::POPL
+bioinformatics::RECOMB
+systems:embedded,real-time:RTAS
+systems:embedded,real-time:RTSS
+systems:high-performance computing:SC
+systems:mobile:SenSys
+systems:networks:SIGCOMM
+computer graphics:computer graphics:SIGGRAPH
+artificial intelligence:information retrieval:SIGIR
+measurement,performance analysis:measurement,performance analysis:SIGMETRICS
+systems:database:SIGMOD
+theory:algorithms,complexity:SODA
+systems:operating systems:SOSP
+theory:algorithms,complexity:STOC
+hci::UbiComp
+hci::UIST
+systems:operating systems:USENIX ATC
+systems:security:USENIX Security
+systems:database:VLDB
+artificial intelligence:computer vision:VR
+artificial intelligence:information retrieval:WWW
