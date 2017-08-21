@@ -2,7 +2,7 @@ from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from operator import itemgetter
-from .wordcloud import createWordcloud, getVenueList
+from .wordcloud import *
 from .utils import *
 
 @csrf_exempt
@@ -31,5 +31,6 @@ def selectKeyword(request):
 def main(request):
     loadData()
     # data = getExampleScore()
-    tags = createWordcloud()
+    # tags = createWordcloud()
+    tags = createCategorycloud()
     return render(request, "main.html", {"tags": tags})

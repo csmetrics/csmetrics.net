@@ -5,36 +5,36 @@
   </div>
   <div class="col-sm-10">
     <div class="row">
-      <div class="col-sm-2 text-right" style="padding:7px 0">
+      <div class="col-sm-2 text-right" style="padding:6px 0">
         Publication
       </div>
-      <div class="col-sm-2" style="padding:7px 15px 0 0">
+      <div class="col-sm-2" style="padding:6px 15px 0 0">
         <div class="text-right">
           <span class="label-as-badge">[<span id="pub-lower-value"></span></span>
         </div>
       </div>
-      <div class="col-sm-6" style="padding:8px">
+      <div class="col-sm-6" style="padding:7px 4px">
         <div id="publication"></div>
       </div>
-      <div class="col-sm-2" style="padding:7px 0 0 15px">
+      <div class="col-sm-2" style="padding:6px 0 0 15px">
         <div class="text-left">
           <span class="label-as-badge"><span id="pub-upper-value"></span>)</span>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-2 text-right" style="padding:7px 0">
+      <div class="col-sm-2 text-right" style="padding:3px 0">
         Citation
       </div>
-      <div class="col-sm-2" style="padding:7px 15px 0 0">
+      <div class="col-sm-2" style="padding:3px 15px 0 0">
         <div class="text-right">
           <span class="label-as-badge">[<span id="cit-lower-value"></span></span>
         </div>
       </div>
-      <div class="col-sm-6" style="padding:8px">
+      <div class="col-sm-6" style="padding:4px 4px">
         <div id="citation"></div>
       </div>
-      <div class="col-sm-2" style="padding:7px 0 0 15px">
+      <div class="col-sm-2" style="padding:3px 0 0 15px">
         <div class="text-left">
           <span class="label-as-badge"><span id="cit-upper-value"></span>)</span>
         </div>
@@ -56,10 +56,12 @@
   <div class="col-lg-12">
     <div style="text-align:center;">
       {% for t in tags %}
+        {% if t.0 %}
         <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
           <span class="text-uppercase">{{ t.0 }}</span>
           <!-- <span class="badge">{{ t.1 }}</span> -->
         </button>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -249,7 +251,7 @@ function updateConfList(){
           var cell3 = row.insertCell(2);
           var cell4 = row.insertCell(3);
           var cell5 = row.insertCell(4);
-          cell1.innerHTML = "<b>"+result[i][0]+"</b>";
+          cell1.innerHTML = "<span class='text-uppercase'><b>"+result[i][0]+"</b></span>";
           cell2.innerHTML = "<small>"+result[i][1]+"</small>";
           cell3.innerHTML = 1;
           cell4.innerHTML = result[i][2]; // geo mean
