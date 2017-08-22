@@ -13,7 +13,7 @@ instName = set()
 instMap = None
 venueWeight = None
 
-def readPaperCount():
+def readPaperCount_all():
     global paperData, citationData, instName
     fpath = os.path.join(cur_path, "../score_data")
     try:
@@ -23,12 +23,33 @@ def readPaperCount():
             # print(cflist)
             for k, v in cflist["count_score"].items():
                 if type(k[0]).__name__ == 'str':
+                    # confname(upper), venue, year
                     paperData[(confname, k[0], k[1])] = v
                     instName.add(k[0])
             for k, v in cflist["cited_score_dict"].items():
                 if type(k[0]).__name__ == 'str':
                     citationData[(confname, k[0], k[1])] = v
                     instName.add(k[0])
+    except Exception as e:
+        print(e)
+        print(confname, k, v)
+
+
+def readPaperCount():
+    global paperData, citationData, instName
+    fpath = os.path.join(cur_path, "../scores")
+    try:
+        for cfile in os.listdir(fpath):
+            confname, year, type = cfile.split('.')[0].split('_')
+            confname = confname.upper()
+            if type == "author": # only considr affil for now
+                continue
+            cflist = json.load(open(os.path.join(fpath, cfile), "rb"))
+            for k, v in cflist.items():
+                # confname(upper), venue, year
+                paperData[(confname, k, int(year))] = v["Publication Count"]
+                citationData[(confname, k, int(year))] = v["Citation Count"]
+                instName.add(k)
     except Exception as e:
         print(e)
         print(confname, k, v)
@@ -54,6 +75,7 @@ def loadVenueWeight():
         venueWeight = dict((r[0], float(r[2])) for r in reader)
 
 def loadData():
+    # readPaperCount_all()
     readPaperCount()
     loadInstData()
     loadVenueWeight()
@@ -74,17 +96,6 @@ def findInstitution(inst):
         return instMap[inst]
     else:
         return inst
-
-
-def getExampleScore():
-    rawdata = open(os.path.join(cur_path, "data/aamas2007affil.txt"))
-    lines = rawdata.readlines()
-    data = []
-    for i in range(2, len(lines), 3):
-        uname = lines[i].split(' ', 1)[1].strip()
-        citation = float(lines[i+1].split(' ', 1)[1].strip())
-        data.append((findInstitution(uname), randint(10, 400), citation, 0))
-    return data
 
 def getPaperScore(conflist, pubrange, citrange, weight):
     global paperData, citationData, instName
