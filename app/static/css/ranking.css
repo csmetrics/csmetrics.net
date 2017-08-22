@@ -99,7 +99,10 @@ body {
 }
 
 #conflist td {
-    vertical-align: middle;
+    vertical-align: middle !important;
+}
+#conflist td.invisible {
+    display: none;
 }
 
 .table {

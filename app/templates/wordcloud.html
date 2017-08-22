@@ -80,7 +80,7 @@
           <tr>
             <td><b>Abbr.</b></td>
             <td><b>Conference</b></td>
-            <td>
+            <td colspan="2">
               <select id="weightselector">
                 <option value="equal">Equal</option>
                 <option value="geomean">Geo Mean</option>
@@ -260,11 +260,13 @@ function updateConfList(){
           cell1.innerHTML = "<span class='text-uppercase'><b>"+result[i][0]+"</b></span>";
           cell2.innerHTML = "<small>"+result[i][1]+"</small>";
           cell3.innerHTML = 1;
+          cell3.style.width = 65;
+          cell4.style.width = 65;
           cell4.innerHTML = result[i][2]; // geo mean
           if (weightselector.value == "equal") {
-            cell4.style.display = 'none';
+            cell4.classList.add("invisible");
           } else {
-            cell3.style.display = 'none';
+            cell3.classList.add("invisible");
           }
           var weightmetric = document.getElementById('weight-metric');
           weightmetric.innerText = weightselector.value;
@@ -308,11 +310,11 @@ weightselector.addEventListener("change", function(e) {
   for (var i = 0; i < rows.length; i++) {
     var col = rows[i].children
     if (weightselector.value == "equal") {
-      col[3].style.display="none";
-      col[2].style.display="block";
+      col[3].classList.add("invisible");
+      col[2].classList.remove("invisible");
     } else {
-      col[2].style.display="none";
-      col[3].style.display="block";
+      col[2].classList.add("invisible");
+      col[3].classList.remove("invisible");
     }
   }
 });

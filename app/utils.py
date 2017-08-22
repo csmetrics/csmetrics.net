@@ -4,6 +4,8 @@ import itertools
 from random import randint
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
+FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
+FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
 
 paperData = {}
 citationData = {}
@@ -58,16 +60,14 @@ def readPaperCount():
 def loadInstData():
     global instMap
     if instMap == None:
-        instMap = {}
-        memberlist = open(os.path.join(cur_path, "data/Member_List.txt"))
-        for l in memberlist.readlines():
-            name, key = l.split('\t')
-            instMap[key.strip()] = name.strip('"')
+        memberlist = open(FILE_MEMBER)
+        reader = csv.reader(memberlist)
+        instMap = dict((r[1].strip(), r[0].strip()) for r in reader)
 
 def loadVenueWeight():
     global venueWeight
     if venueWeight == None:
-        weightfile = open(os.path.join(cur_path, "data/venue_weight.csv"))
+        weightfile = open(FILE_VENUE_WEIGHT)
         reader = csv.reader(weightfile)
         next(reader) # skip the first line
         # r[1]: Arithmetic Mean of Citations/Paper
