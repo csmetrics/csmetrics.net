@@ -57,10 +57,16 @@
     <div style="text-align:center;">
       {% for t in tags %}
         {% if t.0 %}
-        <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
-          <span class="text-uppercase">{{ t.0 }}</span>
-          <!-- <span class="badge">{{ t.1 }}</span> -->
-        </button>
+          {% if t.1 == 1 %}
+            <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
+              <span class="text-uppercase">{{ t.0 }}</span>
+              <!-- <span class="badge">{{ t.1 }}</span> -->
+            </button>
+          {% else %}
+            <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
+              <span class="text-uppercase text-muted">{{ t.0 }}</span>
+            </button>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </div>

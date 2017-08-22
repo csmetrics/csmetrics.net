@@ -18,13 +18,16 @@ def createCategorycloud():
     readVenueName()
     venuesdata = open(os.path.join(cur_path, "data/category_sample.csv"))
     reader = csv.reader(venuesdata, delimiter=':')
-    venueCategory = dict((r[2].lower(), {"topic1":r[0].split(','), "topic2":r[1].split(',')}) for r in reader)
+    venueCategory = dict((r[2].lower(), {
+                "topic1":[w.strip() for w in r[0].split(',')],\
+                "topic2":[w.strip() for w in r[1].split(',')]\
+            }) for r in reader)
 
-    wordset = Counter([])
+    wordset = {}
     for v in venueCategory.keys():
-        wordset += Counter(venueCategory[v]["topic1"])
-        wordset += Counter(venueCategory[v]["topic2"])
-    return wordset.most_common()
+        for t2 in venueCategory[v]["topic2"]: wordset[t2] = 2
+        for t1 in venueCategory[v]["topic1"]: wordset[t1] = 1
+    return wordset.items()
 
 def getVenueList(keyword):
     global venueName, venueCategory
