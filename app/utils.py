@@ -7,6 +7,9 @@ cur_path = os.path.dirname(os.path.abspath(__file__))
 FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
 FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
 
+DIR_RAW_DATA_ALL = os.path.join(cur_path, "../score_data")
+DIR_RAW_DATA = os.path.join(cur_path, "../scores")
+
 paperData = {}
 citationData = {}
 instName = set()
@@ -17,11 +20,10 @@ venueWeight = None
 
 def readPaperCount_all():
     global paperData, citationData, instName
-    fpath = os.path.join(cur_path, "../score_data")
     try:
-        for cfile in os.listdir(fpath):
-            confname = cfile.split('.')[0]
-            cflist = pickle.load(open(os.path.join(fpath, cfile), "rb"))
+        for cfile in os.listdir(DIR_RAW_DATA_ALL):
+            confname = os.path.splitext(cfile)[0]
+            cflist = pickle.load(open(os.path.join(DIR_RAW_DATA_ALL, cfile), "rb"))
             # print(cflist)
             for k, v in cflist["count_score"].items():
                 if type(k[0]).__name__ == 'str':
@@ -39,14 +41,13 @@ def readPaperCount_all():
 
 def readPaperCount():
     global paperData, citationData, instName
-    fpath = os.path.join(cur_path, "../scores")
     try:
-        for cfile in os.listdir(fpath):
-            confname, year, type = cfile.split('.')[0].split('_')
+        for cfile in os.listdir(DIR_RAW_DATA):
+            confname, year, type = os.path.splitext(cfile)[0].split('_')
             confname = confname.upper()
             if type == "author": # only considr affil for now
                 continue
-            cflist = json.load(open(os.path.join(fpath, cfile), "rb"))
+            cflist = json.load(open(os.path.join(DIR_RAW_DATA, cfile), "rb"))
             for k, v in cflist.items():
                 # confname(upper), venue, year
                 paperData[(confname, k, int(year))] = v["Publication Count"]

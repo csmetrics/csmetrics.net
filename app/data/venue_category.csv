@@ -45,7 +45,7 @@ speech::INTERSPEECH:interspeech
 systems::IPDPS:ipdps
 robotics::IROS:iros
 systems:architecture:ISCA:isca
-thoery::ISIT:
+theory::ISIT:
 bioinformatics::ISMB:ismb
 information retrieval::ISMIR:
 software engineering::ISSTA:issta
@@ -85,7 +85,7 @@ performance analysis::SIGMETRICS:sigmetrics
 systems:database:SIGMOD:sigmod
 theory:algorithms:SODA:soda
 systems:operating systems:SOSP:sosp
-thoery, architecture::SPAA:spaa
+theory, architecture::SPAA:spaa
 theory:algorithms:STOC:stoc
 artificial intelligence::UAI:uai
 hci::UbiComp:ubicomp
