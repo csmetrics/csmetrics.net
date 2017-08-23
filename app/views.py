@@ -30,16 +30,19 @@ def selectKeyword(request):
 
 def main(request):
     loadData()
-    # data = getExampleScore()
-    # tags = createWordcloud()
     tags = createCategorycloud()
     return render(request, "main.html", {
         "words": {
             "title": "TITLE",
+            "label_year": "Year",
+            "label_category": "Category",
+            "slider_desc": "Year of publication",
             "forward": "Estimated",
             "forward_tooltip": "Estimated impact is calculated by the number of publication",
+            "forward_info": "Estimated Impact",
             "backward": "Measured",
             "backward_tooltip": "Measured impact is calculated by the number of citations",
+            "backward_info": "Measured Impact",
             "ctable_label_0": "Abbr.",
             "ctable_label_1": "Conference",
             "ctable_weight_option_equal": "Equal",

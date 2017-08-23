@@ -5,12 +5,12 @@
   <body>
     <div class="mycontainer">
       <div class="header clearfix">
-        <nav>
+        <!-- <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation"><a href="#">Home</a></li>
             <li role="presentation"><a href="/admin">Admin</a></li>
           </ul>
-        </nav>
+        </nav> -->
         <h3 class="text-muted">{{ words.title }}</h3>
       </div>
 
@@ -18,9 +18,7 @@
         <div class="col-lg-5">
           {% include 'wordcloud.html' with words=words tags=tags %}
         </div>
-
         <div class="col-lg-7">
-          <!-- {% include 'rtable.html' with data=data %} -->
           {% include 'rtable.html' with words=words %}
         </div>
       </div>

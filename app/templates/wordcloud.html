@@ -1,13 +1,13 @@
 {% load staticfiles%}
 <div class="row" style="margin-bottom: 10px;">
   <div class="col-sm-2">
-    <h4><span class="label label-default">Year</span></h4>
+    <h4><span class="label label-default">{{ words.label_year }}</span></h4>
   </div>
   <div class="col-sm-10">
     <div class="row">
       <div class="col-sm-4"></div>
       <div class="col-sm-6 text-center">
-        <span class="text-muted"><small>Year of publication</small></span>
+        <span class="text-muted"><small>{{ words.slider_desc }}</small></span>
       </div>
       <div class="col-sm-2"></div>
     </div>
@@ -58,7 +58,7 @@
 </div>
 <div class="row">
   <div class="col-sm-2">
-    <h4><span class="label label-default">Category</span></h4>
+    <h4><span class="label label-default">{{ words.label_category }}</span></h4>
   </div>
   <div class="col-sm-10">
     <div style="float:left; padding: 5px 0;">
