@@ -105,8 +105,21 @@ body {
     display: none;
 }
 
-.table {
+
+.yearlabel {
+    color: black;
+    font-weight: 600;
+    font-style: oblique;
+}
+.tooltip-inner {
+    width: 350px;
+}
+
+table {
     font-size: 14px;
+}
+td.index {
+    font-weight: bold;
 }
 td.details-control {
     background: url('../images/details_open.png') no-repeat center center;

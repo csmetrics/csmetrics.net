@@ -39,6 +39,6 @@ def getVenueList(keyword):
     for k, v in venueCategory.items():
         if keyword in v["topic1"] or keyword in v["topic2"]:
             keyword_vlist.append(k)
-    vlist = [(v, venueName[v], getVenueWeight(venueCategory[v]["key"]))\
+    vlist = [(v, venueName[v], int(getVenueWeight(venueCategory[v]["key"])))\
                 for v in keyword_vlist]
     return vlist

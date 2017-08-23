@@ -5,8 +5,19 @@
   </div>
   <div class="col-sm-10">
     <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-6 text-center">
+        <span class="text-muted"><small>Year of publication</small></span>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
       <div class="col-sm-2 text-right" style="padding:6px 0">
-        Publication
+        <!-- title: detail description -->
+        <span data-toggle="tooltip" class="yearlabel"
+          title="Estimated impact is calculated by the number of publication">
+          Estimated
+        </span>
       </div>
       <div class="col-sm-2" style="padding:6px 15px 0 0">
         <div class="text-right">
@@ -24,7 +35,10 @@
     </div>
     <div class="row">
       <div class="col-sm-2 text-right" style="padding:3px 0">
-        Citation
+        <span data-toggle="tooltip" class="yearlabel"
+          title="Measured impact is calculated by the number of citation">
+          Measured
+        </span>
       </div>
       <div class="col-sm-2" style="padding:3px 15px 0 0">
         <div class="text-right">
@@ -95,8 +109,8 @@
   </div>
 </div>
 <script>
-var yearrange = [2007, 2018];
-var pivotyear = 2013;
+var yearrange = [2007, 2017];
+var pivotyear = 2014;
 var activeCategory = [];
 var pubSlider = document.getElementById('publication');
 noUiSlider.create(pubSlider, {
