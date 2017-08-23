@@ -43,6 +43,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#spinner i {
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: 1px gray;
+}
 .invisible {
     visibility: hidden;
 }

@@ -6,9 +6,12 @@
       <div>{{ words.backward_info }}: <span id="rank-cit-range"></span></div>
     </div>
     <div class="col-sm-5">
-      Weight Metric: <span id="weight-metric" class="text-uppercase">Not Selected</span>
+      {{ words.weight_info }}: <span id="weight-metric" class="text-uppercase">Not Selected</span>
     </div>
     <div class="col-sm-2">
+      <div id="spinner" class="invisible">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+      </div>
       <button class="btn btn-success" style="width:100%;" id="rankbutton">{{ words.rank_button }}</button>
     </div>
   </div>
@@ -16,9 +19,6 @@
     <div class="col-sm-12" id="rank-conflist">
     </div>
   </div>
-</div>
-<div id="spinner" class="invisible">
-  <i class="fa fa-spinner fa-spin" style="font-size:80px"></i>
 </div>
 <table id="rtable" class="row-border hover order-column" cellspacing="0" width="100%">
 </table>
@@ -137,11 +137,15 @@ function updateTable(){
   if (weightselector.value == "equal") {
     table.column(3).visible(false);
     table.column(5).visible(false);
-    alphatext.innerHTML = "Combined = Measured<sup>&alpha;</sup> x Estimated<sup>1-&alpha;</sup>";
+    alphatext.innerHTML = "{{ words.rtable_label_6 }} = "
+      +"{{ words.rtable_label_2_long }}<sup>&alpha;</sup> x "
+      +"{{ words.rtable_label_4_long }}<sup>1-&alpha;</sup>";
   } else {
     table.column(3).visible(true);
     table.column(5).visible(true);
-    alphatext.innerHTML = "Combined = w.Measured<sup>1-&alpha;</sup> x w.Estimated<sup>&alpha;</sup>";
+    alphatext.innerHTML = "{{ words.rtable_label_6 }} = "
+      +"{{ words.rtable_label_3_long }}<sup>&alpha;</sup> x "
+      +"{{ words.rtable_label_5_long }}<sup>1-&alpha;</sup>";
   }
   table.draw();
 }
