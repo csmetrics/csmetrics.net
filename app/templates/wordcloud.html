@@ -15,8 +15,8 @@
       <div class="col-sm-2 text-right" style="padding:6px 0">
         <!-- title: detail description -->
         <span data-toggle="tooltip" class="yearlabel"
-          title="Estimated impact is calculated by the number of publication">
-          Estimated
+          title="{{ words.forward_tooltip }}">
+          {{ words.forward }}
         </span>
       </div>
       <div class="col-sm-2" style="padding:6px 15px 0 0">
@@ -36,8 +36,8 @@
     <div class="row">
       <div class="col-sm-2 text-right" style="padding:3px 0">
         <span data-toggle="tooltip" class="yearlabel"
-          title="Measured impact is calculated by the number of citation">
-          Measured
+          title="{{ words.backward_tooltip }}">
+          {{ words.backward }}
         </span>
       </div>
       <div class="col-sm-2" style="padding:3px 15px 0 0">
@@ -57,11 +57,11 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-9">
+  <div class="col-sm-2">
     <h4><span class="label label-default">Category</span></h4>
   </div>
-  <div class="col-sm-3">
-    <div style="float:right; padding: 5px 10px 0 0;">
+  <div class="col-sm-10">
+    <div style="float:left; padding: 5px 0;">
       Select All <input id="selectall" type="checkbox" style="margin: 5px 0 0 3px;"></input>
     </div>
   </div>
@@ -92,12 +92,12 @@
       <table id="conflist" class="table table-condensed table-hover invisible">
         <thead>
           <tr>
-            <td><b>Abbr.</b></td>
-            <td><b>Conference</b></td>
+            <td><b>{{ words.ctable_label_0 }}</b></td>
+            <td><b>{{ words.ctable_label_1 }}</b></td>
             <td colspan="2">
               <select id="weightselector">
-                <option value="equal">Equal</option>
-                <option value="geomean">Geo Mean</option>
+                <option value="equal">{{ words.ctable_weight_option_equal }}</option>
+                <option value="geomean">{{ words.ctable_weight_option_geo }}</option>
               </select>
             </td>
           </tr>

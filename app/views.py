@@ -33,4 +33,25 @@ def main(request):
     # data = getExampleScore()
     # tags = createWordcloud()
     tags = createCategorycloud()
-    return render(request, "main.html", {"tags": tags})
+    return render(request, "main.html", {
+        "words": {
+            "title": "TITLE",
+            "forward": "Estimated",
+            "forward_tooltip": "Estimated impact is calculated by the number of publication",
+            "backward": "Measured",
+            "backward_tooltip": "Measured impact is calculated by the number of citations",
+            "ctable_label_0": "Abbr.",
+            "ctable_label_1": "Conference",
+            "ctable_weight_option_equal": "Equal",
+            "ctable_weight_option_geo": "Geo Mean",
+            "rank_button": "Rank",
+            "rtable_label_0": "Rank",
+            "rtable_label_1": "Institution",
+            "rtable_label_2": "Meas",
+            "rtable_label_3": "w.Meas",
+            "rtable_label_4": "Est",
+            "rtable_label_5": "w.Est",
+            "rtable_label_6": "Combined",
+        },
+        "tags": tags
+    })

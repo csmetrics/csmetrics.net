@@ -1,5 +1,6 @@
 import os, codecs, csv
 from collections import Counter
+from operator import itemgetter
 from .utils import *
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
@@ -31,7 +32,7 @@ def createCategorycloud():
     for v in venueCategory.keys():
         for t2 in venueCategory[v]["topic2"]: wordset[t2] = 2
         for t1 in venueCategory[v]["topic1"]: wordset[t1] = 1
-    return wordset.items()
+    return sorted(wordset.items(), key=itemgetter(0))
 
 def getVenueList(keyword):
     global venueName, venueCategory

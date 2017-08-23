@@ -11,17 +11,17 @@
             <li role="presentation"><a href="/admin">Admin</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">CS Ranking System</h3>
+        <h3 class="text-muted">{{ words.title }}</h3>
       </div>
 
       <div class="row">
         <div class="col-lg-5">
-          {% include 'wordcloud.html' with tags=tags conf=conf %}
+          {% include 'wordcloud.html' with words=words tags=tags %}
         </div>
 
         <div class="col-lg-7">
           <!-- {% include 'rtable.html' with data=data %} -->
-          {% include 'rtable.html'%}
+          {% include 'rtable.html' with words=words %}
         </div>
       </div>
 

@@ -50,7 +50,7 @@ body {
 .range {
     display: table;
     position: relative;
-    height: 28px;
+    height: 24px;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -67,10 +67,12 @@ body {
     display: table-cell;
     width: 100%;
     background-color: transparent;
-    height: 28px;
+    height: 24px;
     cursor: pointer;
 }
 .range output {
+    font-size: 12px;
+    font-weight: bold;
     display: table-cell;
     padding: 3px 5px 2px;
     min-width: 40px;
