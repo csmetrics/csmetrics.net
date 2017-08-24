@@ -6,11 +6,14 @@
       <div>{{ words.backward_info }}: <span id="rank-cit-range"></span></div>
     </div>
     <div class="col-sm-5">
-      {{ words.ctable_label_2 }}:
-      <select id="weightselector">
-        <option value="equal">{{ words.select_weight_option_equal }}</option>
-        <option value="geomean">{{ words.select_weight_option_geo }}</option>
-      </select>
+      <div>
+        {{ words.ctable_label_2 }}:
+        <select id="weightselector">
+          <option value="equal">{{ words.select_weight_option_equal }}</option>
+          <option value="geomean">{{ words.select_weight_option_geo }}</option>
+        </select>
+      </div>
+      <div class="text-left"><small id="weightselector-text" class="text-muted"></small></div>
     </div>
     <div class="col-sm-2">
       <div id="spinner" class="invisible">
@@ -27,6 +30,12 @@
 <table id="rtable" class="row-border hover order-column" cellspacing="0" width="100%">
 </table>
 <script type="text/javascript">
+// venue weight selector description
+var weighttext = document.getElementById('weightselector-text');
+weighttext.innerHTML = "{{ words.rtable_label_3 }} = "
+  +"&Sigma; Paper Count x {{ words.ctable_label_2 }}";
+
+// venue weight selector
 var weightselector = document.getElementById('weightselector');
 weightselector.addEventListener("change", function(e) {
   console.log(weightselector.value);
@@ -44,12 +53,13 @@ weightselector.addEventListener("change", function(e) {
 });
 
 var spinner = document.getElementById("spinner");
+// ranking table
 var table = $('#rtable').DataTable({
   "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphaslider'>>>" +
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-4'i><'col-sm-8'p>>",
-  "pageLength": 20,
-  "lengthMenu": [ 10, 20, 50, 100 ],
+  "pageLength": 20, // default page
+  "lengthMenu": [ 10, 20, 50, 100 ], // page options
   "lengthChange": true,
   "columns": [
     // { className: "details-control" },
@@ -77,10 +87,10 @@ var table = $('#rtable').DataTable({
   "ordering": true,
   "order": [[ 4, "desc" ]],
   "info": true,
-  "autoWidth": false,
-  "sortClasses": true
+  "autoWidth": false
 });
 
+// alpha slider
 $("div.alphaslider").html(
   '<div class="range">'+
     '<input type="range" min="0" max="10" value="5" onchange="changeValue(this.value)"/>'+
@@ -96,6 +106,7 @@ table.on( 'order.dt search.dt', function () {
   } );
 } ).draw();
 
+// rank button listener
 $('#rankbutton').click(function(e) {
   spinner.classList.remove("invisible");
   $.ajax({
@@ -133,6 +144,7 @@ $('#rankbutton').click(function(e) {
   });
 });
 
+// update combined value using alpha
 function updateTable(){
   // console.log("updateTable");
   var alpha = document.getElementById("alphaValue").innerText;

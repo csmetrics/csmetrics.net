@@ -304,6 +304,7 @@ function getActiveCategories() {
   updateConfList();
 }
 
+// selectall checkbox listener
 var selectall = document.getElementById('selectall');
 selectall.addEventListener("click", function(e) {
   if (selectall.checked) {
@@ -318,6 +319,7 @@ selectall.addEventListener("click", function(e) {
   getActiveCategories();
 });
 
+// category button listener
 $('.btn-venue').click(function(e) {
   var btn = $(this);
   btn.toggleClass('active');
