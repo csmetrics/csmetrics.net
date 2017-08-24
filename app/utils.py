@@ -94,9 +94,9 @@ def getVenueWeight(venue):
 def findInstitution(inst):
     global instMap
     if inst in instMap:
-        return instMap[inst]
+        return instMap[inst], 1
     else:
-        return inst
+        return inst, 0
 
 def getPaperScore(conflist, pubrange, citrange, weight):
     global paperData, citationData, instName
@@ -117,5 +117,10 @@ def getPaperScore(conflist, pubrange, citrange, weight):
         w = venueWeight[t[0].lower()] if weight and t[0].lower() in venueWeight else 1
         cite[t[1]] += citationData[t]
         wcite[t[1]] += citationData[t] * w
-    rlist = [(findInstitution(v), pub[v], wpub[v], cite[v], wcite[v]) for v in instName if pub[v]>0 or cite[v]>0]
+
+    rlist = []
+    for v in instName:
+        if pub[v] > 0 or cite[v] > 0:
+            name, type = findInstitution(v) # type 0: not CRA member, type 1: CRA member
+            rlist.append((name, pub[v], wpub[v], cite[v], wcite[v], type))
     return rlist

@@ -37,6 +37,10 @@ body {
     width: 240px;
 }
 
+#regionselector {
+    margin-left: 5px;
+}
+
 #spinner {
     position: absolute;
     top: 50%;

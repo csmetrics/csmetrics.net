@@ -50,6 +50,8 @@ def main(request):
             "select_weight_option_equal": "Equal",
             "select_weight_option_geo": "Geo Mean",
             "rank_button": "Rank",
+            "select_region_all": "all",
+            "select_region_inlist": "CRA members only",
             "rtable_label_0": "Rank",
             "rtable_label_1": "Institution",
             "rtable_label_2": "Measured",
