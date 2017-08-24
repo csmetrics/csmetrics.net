@@ -113,9 +113,9 @@ body {
 }
 
 
-.yearlabel {
-    color: black;
-    font-weight: 600;
+.tooltiplabel {
+    /*color: black;*/
+    font-weight: bold;
     font-style: oblique;
 }
 .tooltip-inner {

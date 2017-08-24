@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-sm-2 text-right" style="padding:6px 0">
         <!-- title: detail description -->
-        <span data-toggle="tooltip" class="yearlabel"
+        <span data-toggle="tooltip" class="tooltiplabel"
           title="{{ words.forward_tooltip }}">
           {{ words.forward }}
         </span>
@@ -35,7 +35,7 @@
     </div>
     <div class="row">
       <div class="col-sm-2 text-right" style="padding:3px 0">
-        <span data-toggle="tooltip" class="yearlabel"
+        <span data-toggle="tooltip" class="tooltiplabel"
           title="{{ words.backward_tooltip }}">
           {{ words.backward }}
         </span>
@@ -88,9 +88,13 @@
           <tr>
             <td><b>{{ words.ctable_label_0 }}</b></td>
             <td><b>{{ words.ctable_label_1 }}</b></td>
-            <td colspan="2" style="width: 100px">
+            <td>
+              <span data-toggle="tooltip" class="tooltiplabel"
+                title="{{ words.ctable_label_2_tooltip }}">
                 <b>{{ words.ctable_label_2 }}</b>
+              </span>
             </td>
+            <td></td>
           </tr>
         </thead>
         <tbody id="conflist-body">

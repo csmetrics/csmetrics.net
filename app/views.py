@@ -6,7 +6,7 @@ from .wordcloud import *
 from .utils import *
 
 @csrf_exempt
-def updateTable(request):
+def updateTable(request): # /update
     pub_s = int(request.POST.get("pub_syear"))
     pub_e = int(request.POST.get("pub_eyear"))
     cit_s = int(request.POST.get("cit_syear"))
@@ -18,7 +18,7 @@ def updateTable(request):
     return JsonResponse(data, safe=False)
 
 @csrf_exempt
-def selectKeyword(request):
+def selectKeyword(request): # /select
     keywords = request.POST.get("keyword")
 
     conf = []
@@ -46,6 +46,7 @@ def main(request):
             "ctable_label_0": "Abbr.",
             "ctable_label_1": "Conference",
             "ctable_label_2": "Venue Weight",
+            "ctable_label_2_tooltip": "Venue Weight is either Equal or Geometric mean of the citation count/paper count",
             "select_weight_option_equal": "Equal",
             "select_weight_option_geo": "Geo Mean",
             "rank_button": "Rank",
