@@ -71,16 +71,10 @@
     <div style="text-align:center;">
       {% for t in tags %}
         {% if t.0 %}
-          {% if t.1 == 1 %}
-            <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
-              <span class="text-uppercase">{{ t.0 }}</span>
-              <!-- <span class="badge">{{ t.1 }}</span> -->
-            </button>
-          {% else %}
-            <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
-              <span class="text-uppercase text-muted">{{ t.0 }}</span>
-            </button>
-          {% endif %}
+          <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
+            <span class="text-uppercase">{{ t.0 }}</span>
+            <!-- <span class="badge">{{ t.1 }}</span> -->
+          </button>
         {% endif %}
       {% endfor %}
     </div>
@@ -94,11 +88,8 @@
           <tr>
             <td><b>{{ words.ctable_label_0 }}</b></td>
             <td><b>{{ words.ctable_label_1 }}</b></td>
-            <td colspan="2">
-              <select id="weightselector">
-                <option value="equal">{{ words.ctable_weight_option_equal }}</option>
-                <option value="geomean">{{ words.ctable_weight_option_geo }}</option>
-              </select>
+            <td colspan="2" style="width: 100px">
+                <b>{{ words.ctable_label_2 }}</b>
             </td>
           </tr>
         </thead>
@@ -282,8 +273,6 @@ function updateConfList(){
           } else {
             cell3.classList.add("invisible");
           }
-          var weightmetric = document.getElementById('weight-metric');
-          weightmetric.innerText = weightselector.value;
 
           var checkbox = document.createElement('input');
           checkbox.setAttribute("class", "checkbox");
@@ -314,24 +303,6 @@ function getActiveCategories() {
   }
   updateConfList();
 }
-
-var weightselector = document.getElementById('weightselector');
-weightselector.addEventListener("change", function(e) {
-  console.log(weightselector.value);
-  var weightmetric = document.getElementById('weight-metric');
-  weightmetric.innerText = weightselector.value;
-  var rows = document.getElementById("conflist-body").getElementsByTagName("tr");
-  for (var i = 0; i < rows.length; i++) {
-    var col = rows[i].children
-    if (weightselector.value == "equal") {
-      col[3].classList.add("invisible");
-      col[2].classList.remove("invisible");
-    } else {
-      col[2].classList.add("invisible");
-      col[3].classList.remove("invisible");
-    }
-  }
-});
 
 var selectall = document.getElementById('selectall');
 selectall.addEventListener("click", function(e) {

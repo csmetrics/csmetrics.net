@@ -6,7 +6,11 @@
       <div>{{ words.backward_info }}: <span id="rank-cit-range"></span></div>
     </div>
     <div class="col-sm-5">
-      {{ words.weight_info }}: <span id="weight-metric" class="text-uppercase">Not Selected</span>
+      {{ words.ctable_label_2 }}:
+      <select id="weightselector">
+        <option value="equal">{{ words.select_weight_option_equal }}</option>
+        <option value="geomean">{{ words.select_weight_option_geo }}</option>
+      </select>
     </div>
     <div class="col-sm-2">
       <div id="spinner" class="invisible">
@@ -23,6 +27,22 @@
 <table id="rtable" class="row-border hover order-column" cellspacing="0" width="100%">
 </table>
 <script type="text/javascript">
+var weightselector = document.getElementById('weightselector');
+weightselector.addEventListener("change", function(e) {
+  console.log(weightselector.value);
+  var rows = document.getElementById("conflist-body").getElementsByTagName("tr");
+  for (var i = 0; i < rows.length; i++) {
+    var col = rows[i].children
+    if (weightselector.value == "equal") {
+      col[3].classList.add("invisible");
+      col[2].classList.remove("invisible");
+    } else {
+      col[2].classList.add("invisible");
+      col[3].classList.remove("invisible");
+    }
+  }
+});
+
 var spinner = document.getElementById("spinner");
 var table = $('#rtable').DataTable({
   "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphaslider'>>>" +
@@ -37,9 +57,7 @@ var table = $('#rtable').DataTable({
     { title: "{{ words.rtable_label_1 }}", className: "dt-body-left" },
     { title: "{{ words.rtable_label_2 }}", className: "dt-body-right" },
     { title: "{{ words.rtable_label_3 }}", className: "dt-body-right" },
-    { title: "{{ words.rtable_label_4 }}", className: "dt-body-right" },
-    { title: "{{ words.rtable_label_5 }}", className: "dt-body-right" },
-    { title: "{{ words.rtable_label_6 }}", className: "dt-body-right" }
+    { title: "{{ words.rtable_label_4 }}", className: "dt-body-right" }
   ],
   "columnDefs": [
     // {
@@ -57,8 +75,7 @@ var table = $('#rtable').DataTable({
   "pagingType": "simple_numbers",
   "searching": false,
   "ordering": true,
-  // "order": [[ 7, "desc" ]],
-  "order": [[ 6, "desc" ]],
+  "order": [[ 4, "desc" ]],
   "info": true,
   "autoWidth": false,
   "sortClasses": true
@@ -89,7 +106,7 @@ $('#rankbutton').click(function(e) {
       pub_eyear: nodes[1].innerHTML,
       cit_syear: nodes[2].innerHTML,
       cit_eyear: nodes[3].innerHTML,
-      weight: document.getElementById("weight-metric").innerText,
+      weight: weightselector.value,
       conflist: document.getElementById("rank-conflist").innerText
     },
     success: function (result) {
@@ -102,16 +119,12 @@ $('#rankbutton').click(function(e) {
         // result[2]: w. paper count
         // result[3]: citation count
         // result[4]: w. citation count
-        // result[5]: 0 -- will be calculated later
         var newRow = {};
-        // newRow[0] = null;
         newRow[0] = null;
         newRow[1] = result[i][0];
-        newRow[2] = result[i][3].toFixed(0);
-        newRow[3] = result[i][4].toFixed(0);
-        newRow[4] = result[i][1].toFixed(0);
-        newRow[5] = result[i][2].toFixed(0);
-        newRow[6] = result[i][5].toFixed(0);
+        newRow[2] = result[i][3].toFixed(0); // Measured
+        newRow[3] = result[i][2].toFixed(0); // Estimated
+        newRow[4] = 0 // Combined -- will be calculated later
         table.row.add(newRow);
       }
       updateTable();
@@ -124,29 +137,17 @@ function updateTable(){
   // console.log("updateTable");
   var alpha = document.getElementById("alphaValue").innerText;
   var alphatext = document.getElementById("alphaslider-text");
+  alphatext.innerHTML = "{{ words.rtable_label_4 }} = "
+    +"{{ words.rtable_label_2 }}<sup>1-&alpha;</sup> x "
+    +"{{ words.rtable_label_3 }}<sup>&alpha;</sup>";
   table.rows().eq(0).each( function (index) {
     var row = table.row(index);
     var data = row.data();
-    combined = Math.pow(parseFloat(data[3]), 1-alpha)
-              *Math.pow(parseFloat(data[5]), alpha);
-    data[6] = Number((combined).toFixed(0));
+    combined = Math.pow(parseFloat(data[2]), 1-alpha)
+              *Math.pow(parseFloat(data[3]), alpha);
+    data[4] = Number((combined).toFixed(0));
     table.row(index).data(data);
   });
-
-  console.log(weightselector.value);
-  if (weightselector.value == "equal") {
-    table.column(3).visible(false);
-    table.column(5).visible(false);
-    alphatext.innerHTML = "{{ words.rtable_label_6 }} = "
-      +"{{ words.rtable_label_2_long }}<sup>&alpha;</sup> x "
-      +"{{ words.rtable_label_4_long }}<sup>1-&alpha;</sup>";
-  } else {
-    table.column(3).visible(true);
-    table.column(5).visible(true);
-    alphatext.innerHTML = "{{ words.rtable_label_6 }} = "
-      +"{{ words.rtable_label_3_long }}<sup>&alpha;</sup> x "
-      +"{{ words.rtable_label_5_long }}<sup>1-&alpha;</sup>";
-  }
   table.draw();
 }
 updateInfoYear();

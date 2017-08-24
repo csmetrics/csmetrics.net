@@ -117,5 +117,5 @@ def getPaperScore(conflist, pubrange, citrange, weight):
         w = venueWeight[t[0].lower()] if weight and t[0].lower() in venueWeight else 1
         cite[t[1]] += citationData[t]
         wcite[t[1]] += citationData[t] * w
-    rlist = [(findInstitution(v), pub[v], wpub[v], cite[v], wcite[v], 0) for v in instName if pub[v]>0 or cite[v]>0]
+    rlist = [(findInstitution(v), pub[v], wpub[v], cite[v], wcite[v]) for v in instName if pub[v]>0 or cite[v]>0]
     return rlist

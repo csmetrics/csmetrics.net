@@ -14,7 +14,7 @@ def updateTable(request):
     weight = request.POST.get("weight")
     conflist = request.POST.get("conflist")
     # print(conflist, [pub_s, pub_e], [cit_s, cit_e], weight)
-    data = getPaperScore(conflist.split(' '), [pub_s, pub_e], [cit_s, cit_e], weight=="GEOMEAN")
+    data = getPaperScore(conflist.split(' '), [pub_s, pub_e], [cit_s, cit_e], weight!="equal")
     return JsonResponse(data, safe=False)
 
 @csrf_exempt
@@ -33,7 +33,7 @@ def main(request):
     tags = createCategorycloud()
     return render(request, "main.html", {
         "words": {
-            "title": "TITLE",
+            "title": "Institutional Publication Metrics for Computer Science",
             "label_year": "Year",
             "label_category": "Category",
             "slider_desc": "Year of publication",
@@ -45,21 +45,15 @@ def main(request):
             "backward_info": "Measured Impact",
             "ctable_label_0": "Abbr.",
             "ctable_label_1": "Conference",
-            "ctable_weight_option_equal": "Equal",
-            "ctable_weight_option_geo": "Geo Mean",
-            "weight_info": "Weight Metric",
+            "ctable_label_2": "Venue Weight",
+            "select_weight_option_equal": "Equal",
+            "select_weight_option_geo": "Geo Mean",
             "rank_button": "Rank",
             "rtable_label_0": "Rank",
             "rtable_label_1": "Institution",
-            "rtable_label_2": "Meas",
-            "rtable_label_2_long": "Measured",
-            "rtable_label_3": "w.Meas",
-            "rtable_label_3_long": "w.Measured",
-            "rtable_label_4": "Est",
-            "rtable_label_4_long": "Estimated",
-            "rtable_label_5": "w.Est",
-            "rtable_label_5_long": "w.Estimated",
-            "rtable_label_6": "Combined",
+            "rtable_label_2": "Measured",
+            "rtable_label_3": "Estimated",
+            "rtable_label_4": "Combined",
         },
         "tags": tags
     })
