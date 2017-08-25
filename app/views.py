@@ -25,7 +25,7 @@ def selectKeyword(request): # /select
     for key in keywords.split(','):
         conf.extend(getVenueList(key.lower()))
     set_conf = list(set(conf))
-    sorted_conf = sorted(set_conf, key=itemgetter(0), reverse=False)
+    sorted_conf = sorted(set_conf, key=lambda s: s[0].lower(), reverse=False)
     return JsonResponse(sorted_conf, safe=False)
 
 def main(request):
