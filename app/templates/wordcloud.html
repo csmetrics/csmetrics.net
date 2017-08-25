@@ -75,6 +75,11 @@
             <span class="text-uppercase">{{ t.0 }}</span>
             <!-- <span class="badge">{{ t.1 }}</span> -->
           </button>
+        {% else %}
+          <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
+            <span class="text-uppercase">Others</span>
+            <!-- <span class="badge">{{ t.1 }}</span> -->
+          </button>
         {% endif %}
       {% endfor %}
     </div>
@@ -281,7 +286,7 @@ function updateConfList(){
           cell3.innerHTML = 1;
           cell3.style.width = 65;
           cell4.style.width = 65;
-          cell4.innerHTML = result[i][2]; // geo mean
+          cell4.innerHTML = parseFloat(result[i][2]).toFixed(0); // geo mean
           if (weightselector.value == "equal") {
             cell4.classList.add("invisible");
           } else {

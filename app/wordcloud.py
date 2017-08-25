@@ -26,22 +26,25 @@ def createCategorycloud():
     next(reader) # skip the first line
     venueCategory = dict((r[2].lower(), {
                 "key":r[3],
-                "topic1":[w.strip() for w in r[0].split(',')],
-                "topic2":[w.strip() for w in r[1].split(',')]
+                "topic1":[w.strip().lower() for w in r[0].split(',')],
+                "topic2":[w.strip().lower() for w in r[1].split(',')]
             }) for r in reader)
 
     wordset = {}
     for v in venueCategory.keys():
         for t2 in venueCategory[v]["topic2"]: wordset[t2] = 2
         for t1 in venueCategory[v]["topic1"]: wordset[t1] = 1
+    # print(sorted(wordset.items(), key=itemgetter(0)))
     return sorted(wordset.items(), key=itemgetter(0))
 
 def getVenueList(keyword):
     global venueName, venueCategory
     keyword_vlist = []
+    if keyword == "others":
+        keyword = ""
     for k, v in venueCategory.items():
         if keyword in v["topic1"] or keyword in v["topic2"]:
             keyword_vlist.append(k)
-    vlist = [(v, venueName[v], int(getVenueWeight(venueCategory[v]["key"])))\
+    vlist = [(v, venueName[v], getVenueWeight(venueCategory[v]["key"]))\
                 for v in keyword_vlist]
     return vlist
