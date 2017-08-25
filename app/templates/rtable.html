@@ -119,14 +119,17 @@ table.columns('.institution').every( function () {
     .on( 'change', function () {
       var val = $(this).val();
       console.log(val);
-      if (val == "members") {
-        table.columns('.inst-type').search(1).draw();
+      if (val == "cra_all") {
+        table.columns('.inst-type').search('1|2', true, true).draw();
+      } else if (val == "cra_academic") {
+        table.columns('.inst-type').search(2).draw();
       } else {
         table.columns('.inst-type').search('').draw();
       }
     });
-  select.append('<option value="all">all</option>');
-  select.append('<option value="members">CRA members</option>');
+  select.append('<option value="all">All</option>');
+  select.append('<option value="cra_all">CRA All</option>');
+  select.append('<option value="cra_academic">CRA Academic</option>');
 });
 
 

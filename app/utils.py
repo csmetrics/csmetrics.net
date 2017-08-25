@@ -64,7 +64,9 @@ def loadInstData():
         memberlist = open(FILE_MEMBER)
         reader = csv.reader(memberlist)
         next(reader) # skip the first line
-        instMap = dict((r[1].strip(), r[0].strip()) for r in reader)
+        instMap = dict((r[1].strip(),\
+                    {"name": r[0].strip(), "type": r[2].strip()})\
+                    for r in reader)
 
 def loadVenueWeight():
     global venueWeight
@@ -95,7 +97,7 @@ def getVenueWeight(venue):
 def findInstitution(inst):
     global instMap
     if inst in instMap:
-        return instMap[inst], 1
+        return instMap[inst]["name"], 2 if instMap[inst]["type"] == "academic" else 1
     else:
         return inst, 0
 
