@@ -165,10 +165,16 @@ function lockHandle(lastMovedSlider){
   if (lockedState) {
     pubLowerHandle.classList.add("noUi-handle-primary");
     citUpperHandle.classList.add("noUi-handle-primary");
-    if (lastMovedSlider == 1) {
+    if (lastMovedSlider == 1) { // publication slider
+      if (parseInt(nodes[0].innerText) == yearrange[0]) {
+        pubSlider.noUiSlider.set([yearrange[0]+1, nodes[1].innerText]);
+      }
       nodes[3].innerText = parseInt(nodes[0].innerText)-1;
       citSlider.noUiSlider.set([nodes[2].innerText,nodes[3].innerText]);
-    } else {
+    } else { // citation slider
+      if (parseInt(nodes[3].innerText) == yearrange[1]) {
+        citSlider.noUiSlider.set([nodes[2].innerText, yearrange[1]-1]);
+      }
       nodes[0].innerText = parseInt(nodes[3].innerText)+1;
       pubSlider.noUiSlider.set([nodes[0].innerText,nodes[1].innerText]);
     }
