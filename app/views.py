@@ -25,7 +25,7 @@ def selectKeyword(request): # /select
     for key in keywords.split(','):
         conf.extend(getVenueList(key.lower()))
     set_conf = list(set(conf))
-    sorted_conf = sorted(set_conf, key=itemgetter(2), reverse=True)
+    sorted_conf = sorted(set_conf, key=itemgetter(0), reverse=False)
     return JsonResponse(sorted_conf, safe=False)
 
 def main(request):
@@ -37,9 +37,9 @@ def main(request):
             "label_year": "Year",
             "label_category": "Category",
             "slider_desc": "Year of publication",
-            "forward": "Estimated",
-            "forward_tooltip": "Estimated impact is calculated by the number of publication",
-            "forward_info": "Estimated Impact",
+            "forward": "Predicted",
+            "forward_tooltip": "Predicted impact is calculated by the number of publication",
+            "forward_info": "Predicted Impact",
             "backward": "Measured",
             "backward_tooltip": "Measured impact is calculated by the number of citations",
             "backward_info": "Measured Impact",
@@ -50,12 +50,14 @@ def main(request):
             "select_weight_option_equal": "Equal",
             "select_weight_option_geo": "Geo Mean",
             "rank_button": "Rank",
+            "default_alpha": 0.3,
+            "default_alpha_position": 0.3*10,
             "select_region_all": "all",
             "select_region_inlist": "CRA members only",
             "rtable_label_0": "Rank",
             "rtable_label_1": "Institution",
             "rtable_label_2": "Measured",
-            "rtable_label_3": "Estimated",
+            "rtable_label_3": "Predicted",
             "rtable_label_4": "Combined",
         },
         "tags": tags

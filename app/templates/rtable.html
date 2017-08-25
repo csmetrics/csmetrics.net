@@ -98,8 +98,8 @@ var table = $('#rtable').DataTable({
 // alpha slider
 $("div.alphaslider").html(
   '<div class="range">'+
-    '<input type="range" min="0" max="10" value="5" onchange="changeValue(this.value)"/>'+
-    '<output>&alpha; = <span class="text-primary" id="alphaValue">0.5</span></output>'+
+    '<input type="range" min="0" max="10" value="{{ words.default_alpha_position }}" onchange="changeValue(this.value)"/>'+
+    '<output>&alpha; = <span class="text-primary" id="alphaValue">{{ words.default_alpha }}</span></output>'+
   '</div>'+
   '<div class="text-center"><small id="alphaslider-text" class="text-muted"></small></div>'
 );
@@ -173,11 +173,11 @@ $('#rankbutton').click(function(e) {
 // update combined value using alpha
 function updateTable(){
   // console.log("updateTable");
-  var alpha = document.getElementById("alphaValue").innerText;
+  var alpha = parseFloat(document.getElementById("alphaValue").innerText);
   var alphatext = document.getElementById("alphaslider-text");
   alphatext.innerHTML = "{{ words.rtable_label_4 }} = "
-    +"{{ words.rtable_label_2 }}<sup>1-&alpha;</sup> x "
-    +"{{ words.rtable_label_3 }}<sup>&alpha;</sup>";
+    +"{{ words.rtable_label_2 }}<sup>"+(1-alpha).toFixed(1)+"</sup> x "
+    +"{{ words.rtable_label_3 }}<sup>"+alpha.toFixed(1)+"</sup>";
   table.rows().eq(0).each( function (index) {
     var row = table.row(index);
     var data = row.data();

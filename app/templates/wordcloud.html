@@ -29,7 +29,7 @@
       </div>
       <div class="col-sm-2" style="padding:6px 0 0 15px">
         <div class="text-left">
-          <span class="label-as-badge"><span id="pub-upper-value"></span>)</span>
+          <span class="label-as-badge"><span id="pub-upper-value"></span>]</span>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
       </div>
       <div class="col-sm-2" style="padding:3px 0 0 15px">
         <div class="text-left">
-          <span class="label-as-badge"><span id="cit-upper-value"></span>)</span>
+          <span class="label-as-badge"><span id="cit-upper-value"></span>]</span>
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@
   </div>
 </div>
 <script>
-var yearrange = [2007, 2017];
+var yearrange = [2007, 2016];
 var pivotyear = 2014;
 var activeCategory = [];
 var pubSlider = document.getElementById('publication');
@@ -123,7 +123,7 @@ var citSlider = document.getElementById('citation');
 noUiSlider.create(citSlider, {
   connect: true,
   behaviour: 'tap',
-  start: [ yearrange[0], pivotyear ],
+  start: [ yearrange[0], pivotyear-1 ],
   step: 1,
   animate: false,
   range: {
@@ -166,10 +166,10 @@ function lockHandle(lastMovedSlider){
     pubLowerHandle.classList.add("noUi-handle-primary");
     citUpperHandle.classList.add("noUi-handle-primary");
     if (lastMovedSlider == 1) {
-      nodes[3].innerText = nodes[0].innerText;
+      nodes[3].innerText = parseInt(nodes[0].innerText)-1;
       citSlider.noUiSlider.set([nodes[2].innerText,nodes[3].innerText]);
     } else {
-      nodes[0].innerText = nodes[3].innerText;
+      nodes[0].innerText = parseInt(nodes[3].innerText)+1;
       pubSlider.noUiSlider.set([nodes[0].innerText,nodes[1].innerText]);
     }
   } else {
@@ -189,11 +189,11 @@ function crossUpdate ( value, slider ) {
   // console.log(value, slider);
 	if ( !lockedState ) return;
   if ( slider == 1 ) { // citSlider
-    nodes[3].innerText = value;
+    nodes[3].innerText = parseInt(value)-1;
     var r = [nodes[2].innerText,nodes[3].innerText];
     citSlider.noUiSlider.set(r);
   } else { // pubSlider
-    nodes[0].innerText = value;
+    nodes[0].innerText = parseInt(value)+1;
     var r = [nodes[0].innerText,nodes[1].innerText];
     pubSlider.noUiSlider.set(r);
   }
@@ -202,6 +202,9 @@ function crossUpdate ( value, slider ) {
 pubSlider.noUiSlider.on('slide', function( values, handle ){
   // console.log("pubSlider slider slide", handle);
   if (handle == 0) {
+    if ( lockedState && values[handle] <= yearrange[0] ) {
+      pubSlider.noUiSlider.set([yearrange[0]+1, values[1]]);
+    }
     sliding = true;
     crossUpdate(values[handle], 1);
   }
@@ -209,6 +212,9 @@ pubSlider.noUiSlider.on('slide', function( values, handle ){
 citSlider.noUiSlider.on('slide', function( values, handle ){
   // console.log("citSlider slider slide", handle);
   if (handle == 1) {
+    if ( lockedState && values[handle] >= yearrange[1] ) {
+  		citSlider.noUiSlider.set([values[0], yearrange[1]-1]);
+    }
     sliding = true;
     crossUpdate(values[handle], 0);
   }
@@ -223,12 +229,10 @@ function updateInfoYear(){
     for (i in nodes) {
       y[i] = parseInt(nodes[i].innerText);
     }
-    if (y[1]-y[0] <= 0) infoPubYear.innerText = "None"
-    else if (y[1]-y[0] == 1) infoPubYear.innerText = y[0];
-    else infoPubYear.innerText = y[0]+"~"+(y[1]-1);
-    if (y[3]-y[2] <= 0) infoCitYear.innerText = "None"
-    else if (y[3]-y[2] == 1) infoCitYear.innerText = y[2];
-    else infoCitYear.innerText = y[2]+"~"+(y[3]-1);
+    if (y[1]-y[0] <= 0) infoPubYear.innerText = y[0];
+    else infoPubYear.innerText = y[0]+"~"+(y[1]);
+    if (y[3]-y[2] <= 0) infoCitYear.innerText = y[2];
+    else infoCitYear.innerText = y[2]+"~"+(y[3]);
   }
 }
 function updateInfoConf(){
