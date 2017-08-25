@@ -1,89 +1,90 @@
-artificial intelligence::AAAI:aaai
-artificial intelligence:multi-agent systems:AAMAS:aamas
-artificial intelligence:natural language processing:ACL:acl
-software engineering::ASE:ase
-systems:programming languages, operating systems, architecture:ASPLOS:asplos
-theory:logic and verification:CAV:cav
-systems:security:CCS:ccs
-hci::CHI:chi
-information retrieval:databases:CIKM:cikm
-systems:networks:CoNEXT:conext
-theory:cryptography:CRYPTO:crypto
-hci::CSCW:cscw
-artificial intelligence:computer vision:CVPR:cvpr
-systems:design automation:DAC:dac
-systems:distributed computing:DISC:disc
-artificial intelligence:computer vision:ECCV:eccv
-systems:programming languages:ECOOP:ecoop
-artificial intelligence:natural language processing:EMNLP:emnlp
-systems:embedded:EMSOFT:emsoft
-theory:cryptography:EUROCRYPT:eurocrypt
-systems:operating systems:EuroSys:eurosys
-theory:algorithms:FOCS:focs
-software engineering::FSE:fse
-high-performance computing::HiPC:hipc
-systems:high-performance computing, architecture:HPCA:hpca
-systems:high-performance computing:HPDC:hpdc
-artificial intelligence:planning:ICAPS:icaps
-signal processing::ICASSP:icassp
-systems:design automation:ICCAD:iccad
-artificial intelligence:computer vision:ICCV:iccv
-databases::ICDE:icde
-programming languages::ICFP:icfp
-artificial intelligence:machine learning:ICML:icml
-robotics::ICRA:icra
-systems:high-performance computing:ICS:ics
-software engineering::ICSE:icse
-information retrieval::ICWSM:icwsm
-artificial intelligence::IJCAI:ijcai
-performance analysis::IMC:imc
-systems:networks:INFOCOM:infocom
-speech::INTERSPEECH:interspeech
-systems::IPDPS:ipdps
-robotics::IROS:iros
-systems:architecture:ISCA:isca
-bioinformatics::ISMB:ismb
-software engineering::ISSTA:issta
-hci::IUI:iui
-artificial intelligence:data mining:KDD:kdd
-theory:logic and verification:LICS:lics
-systems:architecture:MICRO:micro
-multimedia:hci, systems:MM:mm
-systems:mobile:MobiCom:mobicom
-systems:mobile:MobiSys:mobisys
-artificial intelligence:natural language processing:NAACL:naacl
-systems:security:NDSS:ndss
-artificial intelligence:machine learning:NIPS:nips
-systems:networks:NSDI:nsdi
-programming languages::OOPSLA:oopsla
-systems:operating systems:OSDI:osdi
-hci::PERCOM:percom
-programming languages::PLDI:pldi
-systems::PODC:podc
-databases::PODS:pods
-programming languages::POPL:popl
-systems::PPoPP:ppopp
-bioinformatics::PSB:psb
-bioinformatics::RECOMB:recomb
-robotics::RSS:rss
-systems:embedded:RTAS:rtas
-systems:embedded:RTSS:rtss
-systems:security:S&P:sp
-systems:high-performance computing:SC:sc
-systems:mobile:SenSys:sensys
-systems:networks:SIGCOMM:sigcomm
-artificial intelligence:information retrieval:SIGIR:sigir
-performance analysis::SIGMETRICS:sigmetrics
-systems:databases:SIGMOD:sigmod
-theory:algorithms:SODA:soda
-systems:operating systems:SOSP:sosp
-theory, architecture::SPAA:spaa
-theory:algorithms:STOC:stoc
-artificial intelligence::UAI:uai
-hci::UbiComp:ubicomp
-hci::UIST:uist
-systems:operating systems:USENIX ATC:usenix
-systems:security:USENIX Security:uss
-artificial intelligence:computer vision:VR:vr
-artificial intelligence::WSDM:wsdm
-artificial intelligence:information retrieval:WWW:www
+Topic Area/s 1,Topic Area/s 2,Venue,KEY
+artificial intelligence,,AAAI,aaai
+artificial intelligence,multi-agent systems,AAMAS,aamas
+artificial intelligence,natural language processing,ACL,acl
+software engineering,,ASE,ase
+systems,"programming languages, operating systems, architecture",ASPLOS,asplos
+theory,logic and verification,CAV,cav
+systems,security,CCS,ccs
+hci,,CHI,chi
+information retrieval,databases,CIKM,cikm
+systems,networks,CoNEXT,conext
+theory,cryptography,CRYPTO,crypto
+hci,,CSCW,cscw
+artificial intelligence,computer vision,CVPR,cvpr
+systems,design automation,DAC,dac
+systems,distributed computing,DISC,disc
+artificial intelligence,computer vision,ECCV,eccv
+systems,programming languages,ECOOP,ecoop
+artificial intelligence,natural language processing,EMNLP,emnlp
+systems,embedded,EMSOFT,emsoft
+theory,cryptography,EUROCRYPT,eurocrypt
+systems,operating systems,EuroSys,eurosys
+theory,algorithms,FOCS,focs
+software engineering,,FSE,fse
+high-performance computing,,HiPC,hipc
+systems,"high-performance computing, architecture",HPCA,hpca
+systems,high-performance computing,HPDC,hpdc
+artificial intelligence,planning,ICAPS,icaps
+signal processing,,ICASSP,icassp
+systems,design automation,ICCAD,iccad
+artificial intelligence,computer vision,ICCV,iccv
+databases,,ICDE,icde
+programming languages,,ICFP,icfp
+artificial intelligence,machine learning,ICML,icml
+robotics,,ICRA,icra
+systems,high-performance computing,ICS,ics
+software engineering,,ICSE,icse
+information retrieval,,ICWSM,icwsm
+artificial intelligence,,IJCAI,ijcai
+performance analysis,,IMC,imc
+systems,networks,INFOCOM,infocom
+speech,,INTERSPEECH,interspeech
+systems,,IPDPS,ipdps
+robotics,,IROS,iros
+systems,architecture,ISCA,isca
+bioinformatics,,ISMB,ismb
+software engineering,,ISSTA,issta
+hci,,IUI,iui
+artificial intelligence,data mining,KDD,kdd
+theory,logic and verification,LICS,lics
+systems,architecture,MICRO,micro
+multimedia,"hci, systems",MM,mm
+systems,mobile,MobiCom,mobicom
+systems,mobile,MobiSys,mobisys
+artificial intelligence,natural language processing,NAACL,naacl
+systems,security,NDSS,ndss
+artificial intelligence,machine learning,NIPS,nips
+systems,networks,NSDI,nsdi
+programming languages,,OOPSLA,oopsla
+systems,operating systems,OSDI,osdi
+hci,,PERCOM,percom
+programming languages,,PLDI,pldi
+systems,,PODC,podc
+databases,,PODS,pods
+programming languages,,POPL,popl
+systems,,PPoPP,ppopp
+bioinformatics,,PSB,psb
+bioinformatics,,RECOMB,recomb
+robotics,,RSS,rss
+systems,embedded,RTAS,rtas
+systems,embedded,RTSS,rtss
+systems,security,S&P,sp
+systems,high-performance computing,SC,sc
+systems,mobile,SenSys,sensys
+systems,networks,SIGCOMM,sigcomm
+artificial intelligence,information retrieval,SIGIR,sigir
+performance analysis,,SIGMETRICS,sigmetrics
+systems,databases,SIGMOD,sigmod
+theory,algorithms,SODA,soda
+systems,operating systems,SOSP,sosp
+"theory, architecture",,SPAA,spaa
+theory,algorithms,STOC,stoc
+artificial intelligence,,UAI,uai
+hci,,UbiComp,ubicomp
+hci,,UIST,uist
+systems,operating systems,USENIX ATC,usenix
+systems,security,USENIX Security,uss
+artificial intelligence,computer vision,VR,vr
+artificial intelligence,,WSDM,wsdm
+artificial intelligence,information retrieval,WWW,www

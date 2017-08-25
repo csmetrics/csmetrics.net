@@ -14,14 +14,16 @@ venueCategory = {}
 def readVenueName():
     global venueName
     venuefullname = open(FILE_FULLNAME)
-    reader = csv.reader(venuefullname, delimiter=':')
+    reader = csv.reader(venuefullname, delimiter=',')
+    next(reader) # skip the first line
     venueName = dict((r[0].lower(), r[1]) for r in reader)
 
 def createCategorycloud():
     global venueName, venueCategory
     readVenueName()
     venuesdata = open(FILE_CATEGORY)
-    reader = csv.reader(venuesdata, delimiter=':')
+    reader = csv.reader(venuesdata, delimiter=',')
+    next(reader) # skip the first line
     venueCategory = dict((r[2].lower(), {
                 "key":r[3],
                 "topic1":[w.strip() for w in r[0].split(',')],

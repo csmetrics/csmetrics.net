@@ -63,6 +63,7 @@ def loadInstData():
     if instMap == None:
         memberlist = open(FILE_MEMBER)
         reader = csv.reader(memberlist)
+        next(reader) # skip the first line
         instMap = dict((r[1].strip(), r[0].strip()) for r in reader)
 
 def loadVenueWeight():
