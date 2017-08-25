@@ -4,53 +4,55 @@
     <h4><span class="label label-default">{{ words.label_year }}</span></h4>
   </div>
   <div class="col-sm-10">
-    <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-6 text-center">
-        <span class="text-muted"><small>{{ words.slider_desc }}</small></span>
+    <div style="max-width: 385px">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-6 text-center">
+          <span class="text-muted"><small>{{ words.slider_desc }}</small></span>
+        </div>
+        <div class="col-sm-2"></div>
       </div>
-      <div class="col-sm-2"></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2 text-right" style="padding:6px 0">
-        <!-- title: detail description -->
-        <span data-toggle="tooltip" class="tooltiplabel"
-          title="{{ words.forward_tooltip }}">
-          {{ words.forward }}
-        </span>
-      </div>
-      <div class="col-sm-2" style="padding:6px 15px 0 0">
-        <div class="text-right">
-          <span class="label-as-badge">[<span id="pub-lower-value"></span></span>
+      <div class="row">
+        <div class="col-sm-2 text-right" style="padding:6px 0">
+          <!-- title: detail description -->
+          <span data-toggle="tooltip" class="tooltiplabel"
+            title="{{ words.forward_tooltip }}">
+            {{ words.forward }}
+          </span>
+        </div>
+        <div class="col-sm-2" style="padding:6px 15px 0 0">
+          <div class="text-right">
+            <span class="label-as-badge">[<span id="pub-lower-value"></span></span>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding:7px 4px">
+          <div id="publication" class="yearslider"></div>
+        </div>
+        <div class="col-sm-2" style="padding:6px 0 0 15px">
+          <div class="text-left">
+            <span class="label-as-badge"><span id="pub-upper-value"></span>]</span>
+          </div>
         </div>
       </div>
-      <div class="col-sm-6" style="padding:7px 4px">
-        <div id="publication"></div>
-      </div>
-      <div class="col-sm-2" style="padding:6px 0 0 15px">
-        <div class="text-left">
-          <span class="label-as-badge"><span id="pub-upper-value"></span>]</span>
+      <div class="row">
+        <div class="col-sm-2 text-right" style="padding:3px 0">
+          <span data-toggle="tooltip" class="tooltiplabel"
+            title="{{ words.backward_tooltip }}">
+            {{ words.backward }}
+          </span>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2 text-right" style="padding:3px 0">
-        <span data-toggle="tooltip" class="tooltiplabel"
-          title="{{ words.backward_tooltip }}">
-          {{ words.backward }}
-        </span>
-      </div>
-      <div class="col-sm-2" style="padding:3px 15px 0 0">
-        <div class="text-right">
-          <span class="label-as-badge">[<span id="cit-lower-value"></span></span>
+        <div class="col-sm-2" style="padding:2px 15px 0 0">
+          <div class="text-right">
+            <span class="label-as-badge">[<span id="cit-lower-value"></span></span>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-6" style="padding:4px 4px">
-        <div id="citation"></div>
-      </div>
-      <div class="col-sm-2" style="padding:3px 0 0 15px">
-        <div class="text-left">
-          <span class="label-as-badge"><span id="cit-upper-value"></span>]</span>
+        <div class="col-sm-6" style="padding:3px 4px">
+          <div id="citation" class="yearslider"></div>
+        </div>
+        <div class="col-sm-2" style="padding:2px 0 0 15px">
+          <div class="text-left">
+            <span class="label-as-badge"><span id="cit-upper-value"></span>]</span>
+          </div>
         </div>
       </div>
     </div>

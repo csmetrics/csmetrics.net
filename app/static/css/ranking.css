@@ -32,6 +32,10 @@ body {
     border: 1px solid #e5e5e5;
 }
 
+.yearslider {
+    width: 200px;
+}
+
 .alphaslider {
     float: right;
     width: 240px;
