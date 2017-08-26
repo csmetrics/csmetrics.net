@@ -179,13 +179,13 @@ function updateTable(){
   var alpha = parseFloat(document.getElementById("alphaValue").innerText);
   var alphatext = document.getElementById("alphaslider-text");
   alphatext.innerHTML = "{{ words.rtable_label_4 }} = "
-    +"{{ words.rtable_label_2 }}<sup>"+(1-alpha).toFixed(1)+"</sup> x "
-    +"{{ words.rtable_label_3 }}<sup>"+alpha.toFixed(1)+"</sup>";
+    +"({{ words.rtable_label_2 }}+1)<sup>"+(1-alpha).toFixed(1)+"</sup> x "
+    +"({{ words.rtable_label_3 }}+1)<sup>"+alpha.toFixed(1)+"</sup>";
   table.rows().eq(0).each( function (index) {
     var row = table.row(index);
     var data = row.data();
-    combined = Math.pow(parseFloat(data[2]), 1-alpha)
-              *Math.pow(parseFloat(data[3]), alpha);
+    combined = Math.pow(parseFloat(data[2])+1, 1-alpha)
+              *Math.pow(parseFloat(data[3])+1, alpha);
     data[4] = Number((combined).toFixed(0));
     table.row(index).data(data);
   });

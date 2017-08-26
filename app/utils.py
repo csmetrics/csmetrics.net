@@ -108,8 +108,8 @@ def getPaperScore(conflist, pubrange, citrange, weight):
     cite = dict(zip(instName, [0 for col in range(len(instName))]))
     wpub = dict(zip(instName, [0 for col in range(len(instName))]))
     wcite = dict(zip(instName, [0 for col in range(len(instName))]))
-    pubyears = range(pubrange[0], pubrange[1], 1)
-    cityears = range(citrange[0], citrange[1], 1)
+    pubyears = range(pubrange[0], pubrange[1]+1, 1)
+    cityears = range(citrange[0], citrange[1]+1, 1)
     for t in itertools.product(*[conflist, list(instName), pubyears]):
         if t not in paperData: continue
         w = venueWeight[t[0].lower()] if weight and t[0].lower() in venueWeight else 1
