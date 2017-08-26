@@ -1,14 +1,21 @@
 import os, numpy, pickle
 import json, csv
 import itertools
+from operator import itemgetter
 from random import randint
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
 FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
 
+FILE_FULLNAME = os.path.join(cur_path, "data/venue_fullname.csv")
+FILE_CATEGORY = os.path.join(cur_path, "data/venue_category.csv")
+
 DIR_RAW_DATA_ALL = os.path.join(cur_path, "../score_data")
 DIR_RAW_DATA = os.path.join(cur_path, "../scores")
+
+venueName = {}
+venueCategory = {}
 
 paperData = {}
 citationData = {}
@@ -18,8 +25,17 @@ instName = set()
 instMap = None
 venueWeight = None
 
+
+def readVenueName():
+    global venueName
+    venuefullname = open(FILE_FULLNAME)
+    reader = csv.reader(venuefullname, delimiter=',')
+    next(reader) # skip the first line
+    venueName = dict((r[0], {"abbr": r[1], "full": r[2]}) for r in reader if r[0] != "")
+
+
 def readPaperCount_all():
-    global paperData, citationData, instName
+    global paperData, instName, citationData
     try:
         for cfile in os.listdir(DIR_RAW_DATA_ALL):
             confname = os.path.splitext(cfile)[0]
@@ -27,7 +43,7 @@ def readPaperCount_all():
             # print(cflist)
             for k, v in cflist["count_score"].items():
                 if type(k[0]).__name__ == 'str':
-                    # confname(upper), venue, year
+                    # confname, venue, year
                     paperData[(confname, k[0], k[1])] = v
                     instName.add(k[0])
             for k, v in cflist["cited_score_dict"].items():
@@ -40,16 +56,15 @@ def readPaperCount_all():
 
 
 def readPaperCount():
-    global paperData, citationData, instName
+    global paperData, instName, citationData
     try:
         for cfile in os.listdir(DIR_RAW_DATA):
             confname, year, type = os.path.splitext(cfile)[0].split('_')
-            confname = confname.upper()
             if type == "author": # only considr affil for now
                 continue
             cflist = json.load(open(os.path.join(DIR_RAW_DATA, cfile), "rb"))
             for k, v in cflist.items():
-                # confname(upper), venue, year
+                # confname, venue, year
                 paperData[(confname, k, int(year))] = v["Publication Count"]
                 citationData[(confname, k, int(year))] = v["Citation Count"]
                 instName.add(k)
@@ -68,6 +83,7 @@ def loadInstData():
                     {"name": r[0].strip(), "type": r[2].strip()})\
                     for r in reader)
 
+
 def loadVenueWeight():
     global venueWeight
     if venueWeight == None:
@@ -78,6 +94,7 @@ def loadVenueWeight():
         # r[2]: Geometric Mean of Citations/Paper
         venueWeight = dict((r[0], float(r[2])) for r in reader)
 
+
 def loadData():
     # readPaperCount_all()
     readPaperCount()
@@ -87,7 +104,6 @@ def loadData():
 
 def getVenueWeight(venue):
     global venueWeight
-    venue = venue.lower()
     if venue in venueWeight:
         return venueWeight[venue]
     else:
@@ -101,23 +117,62 @@ def findInstitution(inst):
     else:
         return inst, 0
 
-def getPaperScore(conflist, pubrange, citrange, weight):
-    global paperData, citationData, instName
 
+def createCategorycloud():
+    global venueCategory
+    readVenueName()
+    venuesdata = open(FILE_CATEGORY)
+    reader = csv.reader(venuesdata, delimiter=',')
+    next(reader) # skip the first line
+    venueCategory = dict((r[3], {
+                "topic1":[w.strip().lower() for w in r[0].split(',')],
+                "topic2":[w.strip().lower() for w in r[1].split(',')]
+            }) for r in reader)
+
+    wordset = {}
+    for v in venueCategory.keys():
+        for t2 in venueCategory[v]["topic2"]: wordset[t2] = 2
+        for t1 in venueCategory[v]["topic1"]: wordset[t1] = 1
+    # print(sorted(wordset.items(), key=itemgetter(0)))
+    return sorted(wordset.items(), key=itemgetter(0))
+
+
+def getVenueList(keyword):
+    global venueName
+    keyword_vlist = []
+    if keyword == "others":
+        for k, v in venueCategory.items():
+            if "" in v["topic1"] and "" in v["topic2"]:
+                keyword_vlist.append(k)
+    else:
+        for k, v in venueCategory.items():
+            if keyword in v["topic1"] or keyword in v["topic2"]:
+                keyword_vlist.append(k)
+
+    vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v))\
+                for v in keyword_vlist]
+    return vlist
+
+
+def getPaperScore(conflistname, pubrange, citrange, weight):
+    global instName, venueName, venueCategory, paperData, citationData
+
+    conflist = [k for k,v in venueName.items() if v["abbr"] in conflistname]
     pub = dict(zip(instName, [0 for col in range(len(instName))]))
     cite = dict(zip(instName, [0 for col in range(len(instName))]))
     wpub = dict(zip(instName, [0 for col in range(len(instName))]))
     wcite = dict(zip(instName, [0 for col in range(len(instName))]))
     pubyears = range(pubrange[0], pubrange[1]+1, 1)
     cityears = range(citrange[0], citrange[1]+1, 1)
+
     for t in itertools.product(*[conflist, list(instName), pubyears]):
         if t not in paperData: continue
-        w = venueWeight[t[0].lower()] if weight and t[0].lower() in venueWeight else 1
+        w = venueWeight[t[0]] if weight and t[0] in venueWeight else 1
         pub[t[1]] += paperData[t]
         wpub[t[1]] += paperData[t] * w
     for t in itertools.product(*[conflist, list(instName), cityears]):
         if t not in citationData: continue
-        w = venueWeight[t[0].lower()] if weight and t[0].lower() in venueWeight else 1
+        w = venueWeight[t[0]] if weight and t[0] in venueWeight else 1
         cite[t[1]] += citationData[t]
         wcite[t[1]] += citationData[t] * w
 

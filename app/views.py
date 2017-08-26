@@ -2,7 +2,6 @@ from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from operator import itemgetter
-from .wordcloud import *
 from .utils import *
 
 @csrf_exempt
@@ -14,7 +13,7 @@ def updateTable(request): # /update
     weight = request.POST.get("weight")
     conflist = request.POST.get("conflist")
     # print(conflist, [pub_s, pub_e], [cit_s, cit_e], weight)
-    data = getPaperScore(conflist.split(' '), [pub_s, pub_e], [cit_s, cit_e], weight!="equal")
+    data = getPaperScore(conflist.split(','), [pub_s, pub_e], [cit_s, cit_e], weight!="equal")
     return JsonResponse(data, safe=False)
 
 @csrf_exempt

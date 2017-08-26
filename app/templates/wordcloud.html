@@ -93,6 +93,7 @@
       <table id="conflist" class="table table-condensed table-hover invisible">
         <thead>
           <tr>
+            <td></td>
             <td><b>{{ words.ctable_label_0 }}</b></td>
             <td><b>{{ words.ctable_label_1 }}</b></td>
             <td>
@@ -101,7 +102,6 @@
                 <b>{{ words.ctable_label_2 }}</b>
               </span>
             </td>
-            <td></td>
           </tr>
         </thead>
         <tbody id="conflist-body">
@@ -255,9 +255,9 @@ function updateInfoConf(){
     var rows = document.getElementById("conflist-body").rows;
     infoConflist.innerHTML = "";
     for (var i = 0; i < rows.length; i++){
-      if (rows.item(i).cells[4].children[0].checked) {
-        infoConflist.innerHTML += '<span class="label label-default">'
-          + rows.item(i).cells[0].innerText + "</span> ";
+      if (rows.item(i).cells[0].children[0].checked) {
+        infoConflist.innerHTML += '<span class="label label-default rank-venue">'
+          + rows.item(i).cells[1].innerText + "</span> ";
       }
     }
   }
@@ -283,16 +283,16 @@ function updateConfList(){
           var cell3 = row.insertCell(2);
           var cell4 = row.insertCell(3);
           var cell5 = row.insertCell(4);
-          cell1.innerHTML = "<b>"+result[i][0]+"</b>";
-          cell2.innerHTML = "<small>"+result[i][1]+"</small>";
-          cell3.innerHTML = 1;
-          cell3.style.width = 65;
+          cell2.innerHTML = "<b>"+result[i][0]+"</b>";
+          cell3.innerHTML = "<small>"+result[i][1]+"</small>";
+          cell4.innerHTML = 1;
           cell4.style.width = 65;
-          cell4.innerHTML = parseFloat(result[i][2]).toFixed(0); // geo mean
+          cell5.style.width = 65;
+          cell5.innerHTML = parseFloat(result[i][2]).toFixed(0); // geo mean
           if (weightselector.value == "equal") {
-            cell4.classList.add("invisible");
+            cell5.classList.add("invisible");
           } else {
-            cell3.classList.add("invisible");
+            cell4.classList.add("invisible");
           }
 
           var checkbox = document.createElement('input');
@@ -300,7 +300,7 @@ function updateConfList(){
           checkbox.setAttribute("type", "checkbox");
           checkbox.setAttribute("checked", true);
           checkbox.setAttribute("onclick", "updateInfoConf()");
-          cell5.appendChild(checkbox);
+          cell1.appendChild(checkbox);
         }
         updateInfoConf();
       }

@@ -43,11 +43,11 @@ weightselector.addEventListener("change", function(e) {
   for (var i = 0; i < rows.length; i++) {
     var col = rows[i].children
     if (weightselector.value == "equal") {
-      col[3].classList.add("invisible");
-      col[2].classList.remove("invisible");
-    } else {
-      col[2].classList.add("invisible");
+      col[4].classList.add("invisible");
       col[3].classList.remove("invisible");
+    } else {
+      col[3].classList.add("invisible");
+      col[4].classList.remove("invisible");
     }
   }
 });
@@ -136,6 +136,11 @@ table.columns('.institution').every( function () {
 // rank button listener
 $('#rankbutton').click(function(e) {
   spinner.classList.remove("invisible");
+  var selectedVenue = document.getElementsByClassName("rank-venue");
+  venuelist = [];
+  for (var i = 0; i < selectedVenue.length; i++) {
+    venuelist.push(selectedVenue[i].innerText);
+  }
   $.ajax({
     type: "POST",
     url: "/update",
@@ -145,7 +150,7 @@ $('#rankbutton').click(function(e) {
       cit_syear: nodes[2].innerHTML,
       cit_eyear: nodes[3].innerHTML,
       weight: weightselector.value,
-      conflist: document.getElementById("rank-conflist").innerText
+      conflist: venuelist.join()
     },
     success: function (result) {
       // console.log("Rank success");
