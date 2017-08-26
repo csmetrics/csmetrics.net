@@ -22,27 +22,27 @@
             <div>
               <p>This web page computes institutional publication metrics for computer science configured by users.
                 These metrics are principally focused on institutions, as opposed to faculty or authors,
-                and on assessing both the past and predicting future research impact based on publications.</p>
+                and for use in assessing both the past and predicting future research impact based on publications.
+                The data and scripts are available <a href="https://github.com/shinminjeong/rankings">here</a>.
+                We welcome <a href="">corrections</a> and <a href="">feedback</a>. See more on <a href="">motivation and methodology</a>.</p>
             </div>
             <div id="pageintro" class="collapse in">
-              <p>We cleaned publication data from DBLP and Microsoft Academic for 2007 to 2016 appearing
-                in 200-FIXME venues from 400-FIXME institutions.  We assign each paper in this corpus a value one
-                and divide this credit equally among all authors and their institutions at time of publication.
-                A publication never changes institutions and all authors (graduate students, post docs, faculty,
-                undergraduates, etc.) accrue credit to their institution.</p>
-              <p>Users combine two institutional metrics (<b>citations</b> and <b>prediction</b>) from this data
-                to compute an institutional measure. <b>Citation counts</b> include all citations at anytime to papers
-                published in a specified year range. The <b>prediction</b> metric counts papers in an independently
-                specified year range and weighs them by venue.  We suggest a disjoint range and that prediction
-                only be used on recent publications that have not had sufficient time to accrue citations (e.g., 2014-2016).</p>
-              <p>Users select all topics or individual topics to determine venues, may exclude venues,
-                and may create custom venue lists. Users also select year ranges for each metric and
-                a venue weight.  A venue weight of one values all venues equally.
-                The venue geo mean venue weight assigns each venue the geometric mean of citations to papers
-                appearing in the venue from 2007—2016, thus more highly cited venues weigh more.
-                (Venue weight is displayed next to selected venues.)  Since the metrics are not comparable,
-                we combine them using geometric mean, where the user assigns a relative weight (alpha)
-                to the citation and predictive metrics.</p>
+              <p><b>Introduction to the data and tool</b></p>
+              <p>We cleaned publication, venue, and institution data from DBLP and Microsoft Academic for 2007 to 2016
+                appearing in 200-FIXME venues from 400-FIXME institutions. We assign each paper in this corpus a value one and
+                divide credit equally among all authors and their institutions at time of publication. A publication never changes institutions and
+                all authors (graduate students, post docs, faculty, undergraduates, etc.) accrue credit to their institution.</p>
+              <p>Users combine a retrospective and a prospective metric --- <b>measured</b> (retrospective) and <b>prediction</b> (prospective)
+                --- to compute an institutional measure. The measured metric uses <b>citation counts</b> and includes all citations at anytime
+                to papers published in the specified year range. The <b>prediction</b> metric counts papers in an independently specified year range
+                and weighs them by venue. We suggest a disjoint range for the two metrics and that prediction only be used on recent publications
+                that have not had sufficient time to accrue citations (e.g., 2014-2016).</p>
+              <p>Users select all topics or individual topics to determine venues and may exclude/include individual venues to create custom
+                venue lists. Users select year ranges for each metric and a venue weight. A venue weight of one values all venues equally.
+                The geometric mean  venue weight assigns each venue the geometric mean of citations to papers appearing in the venue from 2007—2016,
+                thus more highly cited venues weigh more. (Venue weight is displayed next to selected venues.)
+                Since the metrics are not comparable, the combined metric uses geometric mean,
+                where the user assigns a relative weight (alpha) to the citation and predictive metrics.</p>
             </div>
           </div>
         </div>
