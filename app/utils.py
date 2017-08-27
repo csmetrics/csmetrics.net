@@ -142,20 +142,25 @@ def createCategorycloud():
     for v in venueCategory.keys():
         for t2 in venueCategory[v]["topic2"]: wordset[t2] = 2
         for t1 in venueCategory[v]["topic1"]: wordset[t1] = 1
-    # print(sorted(wordset.items(), key=itemgetter(0)))
-    return sorted(wordset.items(), key=itemgetter(0))
+    sorted_tags = sorted(wordset.items(), key=itemgetter(0))
+    if '' == sorted_tags[0][0]:    # put other to the last in the list
+        temp = sorted_tags[0]
+        sorted_tags = sorted_tags[1:]
+        sorted_tags.append(temp)
+    # print(sorted_tags)
+    return sorted_tags
 
 
 def getVenueList(keyword):
     global venueName
     keyword_vlist = []
-    if keyword == "others":
-        for k, v in venueCategory.items():
-            if "" in v["topic1"] and "" in v["topic2"]:
-                keyword_vlist.append(k)
-    else:
+    if keyword != "other":
         for k, v in venueCategory.items():
             if keyword in v["topic1"] or keyword in v["topic2"]:
+                keyword_vlist.append(k)
+    else: # other goes the last
+        for k, v in venueCategory.items():
+            if "" in v["topic1"] and "" in v["topic2"]:
                 keyword_vlist.append(k)
 
     vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v))\

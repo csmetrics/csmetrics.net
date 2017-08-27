@@ -16,11 +16,11 @@ systems,"programming languages, operating systems, architecture",ASPLOS,asplos
 design automation,"circuits, logic and verification",ATS,ats
 artificial intelligence,vision,AVSS,avss
 bioinformatics,,BIBE,bibe
-applications,,BPM,bpm
-programming languages,embedded,CASES,cases
+applications,information systems,BPM,bpm
+programming languages,Embedded & Real Time,CASES,cases
 theory,logic and verification,CAV,cav
 programming languages,,CC,cc
-,,CCC,ccc
+theory,algorithms,CCC,ccc
 theory,,CCCG,cccg
 cluster,,CCGRID,ccgrid
 systems,security,CCS,ccs
@@ -28,18 +28,18 @@ programming languages,,CGO,cgo
 hci,,CHI,chi
 information retrieval,databases,CIKM,cikm
 information retrieval,computer vision,CIVR,civr
-,,CLUSTER,cluster
+high-performance computing,distributed systems,CLUSTER,cluster
 natural language processing,,COLING,coling
 artificial intelligence,machine learning,COLT,colt
 ,,COMPSAC,compsac
 systems,networks,CoNEXT,conext
-,,CP,cp
+logic and verification,,CP,cp
 theory,cryptography,CRYPTO,crypto
 hci,,CSCW,cscw
 artificial intelligence,computer vision,CVPR,cvpr
 systems,design automation,DAC,dac
 systems,design automation,DATE,date
-systems,networks,DCOSS,dcoss
+distributed systems,Embedded & Real Time,DCOSS,dcoss
 ,,DDECS,ddecs
 ,,DIGITEL,digitel
 systems,distributed computing,DISC,disc
@@ -50,7 +50,7 @@ systems,programming languages,ECOOP,ecoop
 databases,,EDBT,edbt
 ,,EDCC,edcc
 artificial intelligence,natural language processing,EMNLP,emnlp
-systems,embedded,EMSOFT,emsoft
+systems,Embedded & Real Time,EMSOFT,emsoft
 databases,,ER,er
 ,,ESA,esa
 ,,ESOP,esop
@@ -132,11 +132,11 @@ artificial intelligence,"information retrieval, web techonologies",ISWC,iswc
 design automation,"logic and verification, architecture, circuits",ITC,itc
 information technology,data mining,ITNG,itng
 hci,,IUI,iui
-digital library,,JCDL/DL,jcdl
+digital library,other,JCDL/DL,jcdl
 artificial intelligence,data mining,KDD,kdd
 artificial intelligence,,KR,kr
 Networks,,LCN,lcn
-systems,"embedded, programming languages",LCTES,lctes
+systems,"Embedded & Real Time, programming languages",LCTES,lctes
 theory,logic and verification,LICS,lics
 systems,"performance analysis, networks",MASCOTS,mascots
 networks,,MASS,mass
@@ -167,10 +167,10 @@ security,systems,RAID,raid
 software engineering,,RE,re
 bioinformatics,,RECOMB,recomb
 robotics,,RSS,rss
-systems,embedded,RTAS,rtas
-systems,embedded,RTSS,rtss
+systems,Embedded & Real Time,RTAS,rtas
+systems,Embedded & Real Time,RTSS,rtss
 systems,security,S&P,sp
-applied computing,,SAC,sac
+Applications,,SAC,sac
 systems,,SACMAT,sacmat
 ,,SAINT,saint
 architecture,distributed computing,SBAC-PAD,sbac-pad
@@ -184,7 +184,7 @@ theory,,SGP,
 systems,networks,SIGCOMM,sigcomm
 computer graphics,,SIGGRAPH,
 artificial intelligence,information retrieval,SIGIR,sigir
-performance analysis,,SIGMETRICS,sigmetrics
+performance analysis,networks,SIGMETRICS,sigmetrics
 systems,databases,SIGMOD,sigmod
 theory,,SoCG,
 theory,algorithms,SODA,soda
