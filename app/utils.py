@@ -39,7 +39,7 @@ def readPaperCount_all():
     try:
         for cfile in os.listdir(DIR_RAW_DATA_ALL):
             confname = os.path.splitext(cfile)[0]
-            cflist = pickle.load(open(os.path.join(DIR_RAW_DATA_ALL, cfile), "rb"))
+            cflist = pickle.load(open(os.path.join(DIR_RAW_DATA_ALL, cfile), "r"))
             # print(cflist)
             for k, v in cflist["count_score"].items():
                 if type(k[0]).__name__ == 'str':
@@ -67,7 +67,7 @@ def readPaperCount():
             # else:
             #     confconf[confname] = []
             #     confconf[confname].append(year)
-            cflist = json.load(open(os.path.join(DIR_RAW_DATA, cfile), "rb"))
+            cflist = json.load(open(os.path.join(DIR_RAW_DATA, cfile), "r"))
             for k, v in cflist.items():
                 # confname, venue, year
                 paperData[(confname, k, int(year))] = v["Publication Count"]
@@ -75,7 +75,6 @@ def readPaperCount():
                 instName.add(k)
     except Exception as e:
         print(e)
-        print(confname, k, v)
 
 
 def loadInstData():
