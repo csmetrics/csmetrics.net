@@ -54,7 +54,7 @@ def readPaperCount_all():
         print(e)
         print(confname, k, v)
 
-
+# confconf = {}
 def readPaperCount():
     global paperData, instName, citationData
     try:
@@ -62,6 +62,11 @@ def readPaperCount():
             confname, year, type = os.path.splitext(cfile)[0].split('_')
             if type == "author": # only considr affil for now
                 continue
+            # if confname in confconf:
+            #     confconf[confname].append(year)
+            # else:
+            #     confconf[confname] = []
+            #     confconf[confname].append(year)
             cflist = json.load(open(os.path.join(DIR_RAW_DATA, cfile), "rb"))
             for k, v in cflist.items():
                 # confname, venue, year
@@ -93,7 +98,11 @@ def loadVenueWeight():
         # r[1]: Arithmetic Mean of Citations/Paper
         # r[2]: Geometric Mean of Citations/Paper
         venueWeight = dict((r[0], float(r[2])) for r in reader)
-
+    # for k in venueWeight.keys():
+    #     if k in confconf:
+    #         print (k, ":", sorted(confconf[k], reverse=False))
+    #     else:
+    #         print (k, ":", "No Data")
 
 def loadData():
     # readPaperCount_all()
@@ -127,7 +136,7 @@ def createCategorycloud():
     venueCategory = dict((r[3], {
                 "topic1":[w.strip().lower() for w in r[0].split(',')],
                 "topic2":[w.strip().lower() for w in r[1].split(',')]
-            }) for r in reader)
+            }) for r in reader if r[3] != '')
 
     wordset = {}
     for v in venueCategory.keys():
