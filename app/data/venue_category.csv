@@ -31,6 +31,7 @@ information retrieval,computer vision,CIVR,civr
 high-performance computing,distributed systems,CLUSTER,cluster
 natural language processing,,COLING,coling
 artificial intelligence,machine learning,COLT,colt
+,,SoCG,compgeom
 ,,COMPSAC,compsac
 systems,networks,CoNEXT,conext
 logic and verification,,CP,cp
@@ -44,7 +45,6 @@ distributed systems,Embedded & Real Time,DCOSS,dcoss
 ,,DIGITEL,digitel
 systems,distributed computing,DISC,disc
 artificial intelligence,,ECAI,ecai
-,,ECCB,
 artificial intelligence,computer vision,ECCV,eccv
 systems,programming languages,ECOOP,ecoop
 databases,,EDBT,edbt
@@ -72,7 +72,6 @@ systems,"high-performance computing, architecture",HPCA,hpca
 systems,high-performance computing,HPCC,hpcc
 systems,high-performance computing,HPDC,hpdc
 ,,Hypertext,ht
-,,i3D,si3d
 ,,IAAI,iaai
 ,,ICAC,icac
 theory,,ICALP,icalp
@@ -132,7 +131,7 @@ artificial intelligence,"information retrieval, web techonologies",ISWC,iswc
 design automation,"logic and verification, architecture, circuits",ITC,itc
 information technology,data mining,ITNG,itng
 hci,,IUI,iui
-digital library,other,JCDL/DL,jcdl
+digital library,,JCDL/DL,jcdl
 artificial intelligence,data mining,KDD,kdd
 artificial intelligence,,KR,kr
 Networks,,LCN,lcn
@@ -169,7 +168,6 @@ bioinformatics,,RECOMB,recomb
 robotics,,RSS,rss
 systems,Embedded & Real Time,RTAS,rtas
 systems,Embedded & Real Time,RTSS,rtss
-systems,security,S&P,sp
 Applications,,SAC,sac
 systems,,SACMAT,sacmat
 ,,SAINT,saint
@@ -180,22 +178,20 @@ algorithms,,SEA,sea
 systems,"distributed computing, operating systems",SEC,sec
 security,,Securecomm,securecomm
 systems,mobile,SenSys,sensys
-theory,,SGP,
+,,i3D,si3d
 systems,networks,SIGCOMM,sigcomm
-computer graphics,,SIGGRAPH,
 artificial intelligence,information retrieval,SIGIR,sigir
 performance analysis,networks,SIGMETRICS,sigmetrics
 systems,databases,SIGMOD,sigmod
-theory,,SoCG,
 theory,algorithms,SODA,soda
-systems,,SOSE,sysose
 systems,operating systems,SOSP,sosp
+systems,security,S&P,sp
 "theory, architecture",,SPAA,spaa
-,,SPLASH,
 systems,"operating systems, distributed computing",SRDS,srds
 databases,data mining,SSDBM,ssdbm
 theory,"algorithms, logic and verification",STACS,stacs
 theory,algorithms,STOC,stoc
+systems,,SOSE,sysose
 theory,cryptography,TCC,tcc
 artificial intelligence,,UAI,uai
 hci,,UbiComp,ubicomp
@@ -203,11 +199,13 @@ hci,,UIST,uist
 systems,operating systems,USENIX ATC,usenix
 systems,security,USENIX Security,uss
 systems,"operating systems, programming languages",VEE,vee
-systems,databases,VLDB,
 artificial intelligence,computer vision,VR,vr
 theory,algorithms,WADS,wads
 artificial intelligence,,WCCI,wcci
 systems,networks,WiMOB,wimob
+systems,networks,WoWMoM,wowmom
+artificial intelligence,,WSDM,wsdm
+artificial intelligence,information retrieval,WWW,www
 systems,networks,WoWMoM,wowmom
 artificial intelligence,,WSDM,wsdm
 artificial intelligence,information retrieval,WWW,www
