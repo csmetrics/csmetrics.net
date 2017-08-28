@@ -48,7 +48,6 @@ def main(request):
             "select_weight_option_geo": "Geo Mean",
             "rank_button": "Rank",
             "default_alpha": 0.3,
-            "default_alpha_position": 0.3*10,
             "select_region_all": "all",
             "select_region_inlist": "CRA members only",
             "rtable_label_0": "Rank",
