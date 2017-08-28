@@ -10,5 +10,6 @@ This project is written in python3
 <!-- 2. Download [nltk data](http://www.nltk.org/data.html) on your machine -->
 
 ### Run local server
-1. Run the script `$ ./run_server.sh`
-2. Go to http://localhost:8000
+1. Setup env: `$ ./python manage.py migrate`
+2. Run the server: `$ ./run_server.sh`
+3. Access the server: http://localhost:8000
