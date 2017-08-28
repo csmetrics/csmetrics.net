@@ -1,4 +1,6 @@
-# CS Ranking System
+# csmetrics.org
+
+Webapp for csmetrics.org
 
 This project is written in python3
 
