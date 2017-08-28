@@ -132,10 +132,10 @@ def createCategorycloud():
     venuesdata = open(FILE_CATEGORY)
     reader = csv.reader(venuesdata, delimiter=',')
     next(reader) # skip the first line
-    venueCategory = dict((r[3], {
-                "topic1":[w.strip().lower() for w in r[0].split(',')],
-                "topic2":[w.strip().lower() for w in r[1].split(',')]
-            }) for r in reader if r[3] != '')
+    venueCategory = dict((r[0], {
+                "topic1":[w.strip().lower() for w in r[2].split(',')],
+                "topic2":[w.strip().lower() for w in r[3].split(',')]
+            }) for r in reader if r[0] != '')
 
     wordset = {}
     for v in venueCategory.keys():
