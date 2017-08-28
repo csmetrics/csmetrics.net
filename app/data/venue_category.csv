@@ -1,211 +1,216 @@
-Topic Area/s 1,Topic Area/s 2,Venue,KEY
-artificial intelligence,computer vision,3DIM,3dim
-artificial intelligence,,AAAI,aaai
-artificial intelligence,multi-agent systems,AAMAS,aamas
-artificial intelligence,natural language processing,ACL,acl
-security,,ACSAC,acsac
-systems,,AICCSA,aiccsa
-networks,distributed systems,AINA,aina
-networks,,ANCS,ancs
-networks,applications,APSCC,apscc
-theory,,ARITH,arith
-systems,applications,ASAP,asap
-software engineering,,ASE,ase
-theory,cryptography,ASIACRYPT,asiacrypt
-systems,"programming languages, operating systems, architecture",ASPLOS,asplos
-design automation,"circuits, logic and verification",ATS,ats
-artificial intelligence,vision,AVSS,avss
-bioinformatics,,BIBE,bibe
-applications,information systems,BPM,bpm
-programming languages,Embedded & Real Time,CASES,cases
-theory,logic and verification,CAV,cav
-programming languages,,CC,cc
-theory,algorithms,CCC,ccc
-theory,,CCCG,cccg
-cluster,,CCGRID,ccgrid
-systems,security,CCS,ccs
-programming languages,,CGO,cgo
-hci,,CHI,chi
-information retrieval,databases,CIKM,cikm
-information retrieval,computer vision,CIVR,civr
-high-performance computing,distributed systems,CLUSTER,cluster
-natural language processing,,COLING,coling
-artificial intelligence,machine learning,COLT,colt
-,,SoCG,compgeom
-,,COMPSAC,compsac
-systems,networks,CoNEXT,conext
-logic and verification,,CP,cp
-theory,cryptography,CRYPTO,crypto
-hci,,CSCW,cscw
-artificial intelligence,computer vision,CVPR,cvpr
-systems,design automation,DAC,dac
-systems,design automation,DATE,date
-distributed systems,Embedded & Real Time,DCOSS,dcoss
-,,DDECS,ddecs
-,,DIGITEL,digitel
-systems,distributed computing,DISC,disc
-artificial intelligence,,ECAI,ecai
-artificial intelligence,computer vision,ECCV,eccv
-systems,programming languages,ECOOP,ecoop
-databases,,EDBT,edbt
-,,EDCC,edcc
-artificial intelligence,natural language processing,EMNLP,emnlp
-systems,Embedded & Real Time,EMSOFT,emsoft
-databases,,ER,er
-,,ESA,esa
-,,ESOP,esop
-,,ESORICS,esorics
-theory,cryptography,EUROCRYPT,eurocrypt
-systems,operating systems,EuroSys,eurosys
-systems,"operating systems, storage",FAST,fast
-,,FCCM,fccm
-,,FMCAD,fmcad
-theory,algorithms,FOCS,focs
-software engineering,,FSE,fse
-,,GECCO,gecco
-high-performance computing,distributed systems,GRID,grid
-high-performance computing,,HiPC,hipc
-systems,"architecture, programming languages",HiPEAC,hipeac
-,,HOTI,hoti
-systems,operating systems,HotOS,hotos
-systems,"high-performance computing, architecture",HPCA,hpca
-systems,high-performance computing,HPCC,hpcc
-systems,high-performance computing,HPDC,hpdc
-,,Hypertext,ht
-,,IAAI,iaai
-,,ICAC,icac
-theory,,ICALP,icalp
-artificial intelligence,planning,ICAPS,icaps
-signal processing,,ICASSP,icassp
-,,ICC,icc
-systems,design automation,ICCAD,iccad
-,,ICCCN,icccn
-artificial intelligence,computer vision,ICCV,iccv
-databases,Systems,ICDCS,icdcs
-databases,,ICDE,icde
-databases,data mining,ICDM,icdm
-databases,,ICDT,icdt
-,,ICEBE,icebe
-programming languages,,ICFP,icfp
-,,ICGSE,icgse
-,,ICIS,icis
-theory,,ICLP,iclp
-artificial intelligence,machine learning,ICML,icml
-,,ICNP,icnp
-,,ICPP,icpp
-computer vision,,ICPR,icpr
-robotics,,ICRA,icra
-systems,high-performance computing,ICS,ics
-software engineering,,ICSE,icse
-software engineering,,ICSM,icsm
-software engineering,,ICST,icst
-,,ICWS,icws
-information retrieval,,ICWSM,icwsm
-,,IISWC,iiswc
-artificial intelligence,,IJCAI,ijcai
-theory,,IJCAR,ijcar
-performance analysis,,IMC,imc
-systems,networks,INFOCOM,infocom
-,,INTERACT,interact
-speech,,INTERSPEECH,interspeech
-,,IOLTS,iolts
-,,IPCCC,ipccc
-systems,,IPDPS,ipdps
-,,IPMI,ipmi
-Networks,,IPSN,ipsn
-robotics,,IROS,iros
-systems,architecture,ISCA,isca
-,,ISLPED,islped
-,,ISMAR,ismar
-bioinformatics,,ISMB,ismb
-systems,programming languages,ISMM,ismm
-,,ISMVL,ismvl
-,,ISORC,isorc
-,,ISPA,ispa
-performance analysis,,ISPASS,ispass
-theory,,ISSAC,issac
-circuits,architecture,ISSCC,isscc
-systems,reliability,ISSRE,issre
-software engineering,,ISSTA,issta
-artificial intelligence,"information retrieval, web techonologies",ISWC,iswc
-design automation,"logic and verification, architecture, circuits",ITC,itc
-information technology,data mining,ITNG,itng
-hci,,IUI,iui
-digital library,,JCDL/DL,jcdl
-artificial intelligence,data mining,KDD,kdd
-artificial intelligence,,KR,kr
-Networks,,LCN,lcn
-systems,"Embedded & Real Time, programming languages",LCTES,lctes
-theory,logic and verification,LICS,lics
-systems,"performance analysis, networks",MASCOTS,mascots
-networks,,MASS,mass
-databases,mobile,MDM,mdm
-systems,"computer vision, medical imaging",MICCAI,miccai
-systems,architecture,MICRO,micro
-multimedia,"hci, systems",MM,mm
-systems,mobile,MobiCom,mobicom
-networks,mobile,MobiHoc,mobihoc
-security,mobile,Mobisec,mobisec
-systems,mobile,MobiSys,mobisys
-artificial intelligence,natural language processing,NAACL/HLT,naacl
-systems,security,NDSS,ndss
-artificial intelligence,machine learning,NIPS,nips
-systems,networks,NOMS,noms
-systems,networks,NSDI,nsdi
-programming languages,,OOPSLA,oopsla
-systems,operating systems,OSDI,osdi
-systems,"architecture, programming languages, parallel computing",PACT,pact
-systems,"networks, operating systems, distributed computing",PERCOM,percom
-programming languages,,PLDI,pldi
-systems,,PODC,podc
-databases,,PODS,pods
-programming languages,,POPL,popl
-systems,,PPoPP,ppopp
-bioinformatics,,PSB,psb
-security,systems,RAID,raid
-software engineering,,RE,re
-bioinformatics,,RECOMB,recomb
-robotics,,RSS,rss
-systems,Embedded & Real Time,RTAS,rtas
-systems,Embedded & Real Time,RTSS,rtss
-Applications,,SAC,sac
-systems,,SACMAT,sacmat
-,,SAINT,saint
-architecture,distributed computing,SBAC-PAD,sbac-pad
-systems,high-performance computing,SC,sc
-data mining,,SDM,sdm
-algorithms,,SEA,sea
-systems,"distributed computing, operating systems",SEC,sec
-security,,Securecomm,securecomm
-systems,mobile,SenSys,sensys
-,,i3D,si3d
-systems,networks,SIGCOMM,sigcomm
-artificial intelligence,information retrieval,SIGIR,sigir
-performance analysis,networks,SIGMETRICS,sigmetrics
-systems,databases,SIGMOD,sigmod
-theory,algorithms,SODA,soda
-systems,operating systems,SOSP,sosp
-systems,security,S&P,sp
-"theory, architecture",,SPAA,spaa
-systems,"operating systems, distributed computing",SRDS,srds
-databases,data mining,SSDBM,ssdbm
-theory,"algorithms, logic and verification",STACS,stacs
-theory,algorithms,STOC,stoc
-systems,,SOSE,sysose
-theory,cryptography,TCC,tcc
-artificial intelligence,,UAI,uai
-hci,,UbiComp,ubicomp
-hci,,UIST,uist
-systems,operating systems,USENIX ATC,usenix
-systems,security,USENIX Security,uss
-systems,"operating systems, programming languages",VEE,vee
-artificial intelligence,computer vision,VR,vr
-theory,algorithms,WADS,wads
-artificial intelligence,,WCCI,wcci
-systems,networks,WiMOB,wimob
-systems,networks,WoWMoM,wowmom
-artificial intelligence,,WSDM,wsdm
-artificial intelligence,information retrieval,WWW,www
-systems,networks,WoWMoM,wowmom
-artificial intelligence,,WSDM,wsdm
-artificial intelligence,information retrieval,WWW,www
+KEY,Venue,Topic Area/s 1,Topic Area/s 2
+3dim,3DIM,artificial intelligence,computer vision
+aaai,AAAI,artificial intelligence,
+aamas,AAMAS,artificial intelligence,multi-agent systems
+acl,ACL,artificial intelligence,natural language processing
+acsac,ACSAC,security,
+aiccsa,AICCSA,systems,
+aina,AINA,networks,distributed systems
+ancs,ANCS,networks,
+apscc,APSCC,networks,applications
+arith,ARITH,theory,
+asap,ASAP,systems,applications
+ase,ASE,software engineering,
+asiacrypt,ASIACRYPT,theory,cryptography
+asplos,ASPLOS,systems,"programming languages, operating systems, architecture"
+ats,ATS,design automation,"circuits, logic and verification"
+avss,AVSS,artificial intelligence,vision
+bibe,BIBE,bioinformatics,
+bpm,BPM,applications,information systems
+cases,CASES,programming languages,Embedded & Real Time
+cav,CAV,theory,logic and verification
+cc,CC,programming languages,
+ccc,CCC,theory,algorithms
+cccg,CCCG,theory,
+ccgrid,CCGRID,cluster,
+ccs,CCS,systems,security
+cgo,CGO,programming languages,
+chi,CHI,hci,
+cikm,CIKM,information retrieval,databases
+civr,CIVR,information retrieval,computer vision
+cluster,CLUSTER,high-performance computing,distributed systems
+coling,COLING,natural language processing,
+colt,COLT,artificial intelligence,machine learning
+compgeom,SoCG,theory,
+compsac,COMPSAC,,
+conext,CoNEXT,systems,networks
+cp,CP,logic and verification,
+crypto,CRYPTO,theory,cryptography
+cscw,CSCW,hci,
+cvpr,CVPR,artificial intelligence,computer vision
+dac,DAC,systems,design automation
+date,DATE,systems,design automation
+dcoss,DCOSS,distributed systems,Embedded & Real Time
+ddecs,DDECS,,
+digitel,DIGITEL,,
+disc,DISC,systems,distributed computing
+ecai,ECAI,artificial intelligence,
+eccv,ECCV,artificial intelligence,computer vision
+ecoop,ECOOP,systems,programming languages
+edbt,EDBT,databases,
+edcc,EDCC,,
+emnlp,EMNLP,artificial intelligence,natural language processing
+emsoft,EMSOFT,systems,Embedded & Real Time
+er,ER,databases,
+esa,ESA,,
+esop,ESOP,,
+esorics,ESORICS,,
+eurocrypt,EUROCRYPT,theory,cryptography
+eurosys,EuroSys,systems,operating systems
+fast,FAST,systems,"operating systems, storage"
+fccm,FCCM,,
+fmcad,FMCAD,,
+focs,FOCS,theory,algorithms
+fse,FSE,,
+gecco,GECCO,,
+grid,GRID,high-performance computing,distributed systems
+hipc,HiPC,high-performance computing,
+hipeac,HiPEAC,systems,"architecture, programming languages"
+hoti,HOTI,,
+hotos,HotOS,systems,operating systems
+hpca,HPCA,systems,"high-performance computing, architecture"
+hpcc,HPCC,systems,high-performance computing
+hpdc,HPDC,systems,high-performance computing
+ht,Hypertext,,
+iaai,IAAI,,
+icac,ICAC,,
+icalp,ICALP,theory,
+icaps,ICAPS,artificial intelligence,planning
+icassp,ICASSP,signal processing,
+icc,ICC,,
+iccad,ICCAD,systems,design automation
+icccn,ICCCN,,
+iccv,ICCV,artificial intelligence,computer vision
+icdcs,ICDCS,databases,Systems
+icde,ICDE,databases,
+icdm,ICDM,databases,data mining
+icdt,ICDT,databases,
+icebe,ICEBE,,
+icfp,ICFP,programming languages,
+icgse,ICGSE,,
+icis,ICIS,,
+iclp,ICLP,theory,
+icml,ICML,artificial intelligence,machine learning
+icnp,ICNP,,
+icpp,ICPP,,
+icpr,ICPR,computer vision,
+icra,ICRA,robotics,
+ics,ICS,systems,high-performance computing
+icse,ICSE,software engineering,
+icsm,ICSM,software engineering,
+icst,ICST,software engineering,
+icws,ICWS,,
+icwsm,ICWSM,information retrieval,
+iiswc,IISWC,,
+ijcai,IJCAI,artificial intelligence,
+ijcar,IJCAR,theory,
+imc,IMC,performance analysis,
+infocom,INFOCOM,systems,networks
+interact,INTERACT,,
+interspeech,INTERSPEECH,speech,
+iolts,IOLTS,,
+ipccc,IPCCC,,
+ipdps,IPDPS,systems,
+ipmi,IPMI,,
+ipsn,IPSN,Networks,
+iros,IROS,robotics,
+isca,ISCA,systems,architecture
+islped,ISLPED,,
+ismar,ISMAR,,
+ismb,ISMB,bioinformatics,
+ismm,ISMM,systems,programming languages
+ismvl,ISMVL,,
+isorc,ISORC,,
+ispa,ISPA,,
+ispass,ISPASS,performance analysis,
+issac,ISSAC,theory,
+isscc,ISSCC,circuits,architecture
+issre,ISSRE,systems,reliability
+issta,ISSTA,software engineering,
+iswc,ISWC,artificial intelligence,"information retrieval, web techonologies"
+itc,ITC,design automation,"logic and verification, architecture, circuits "
+itng,ITNG,information technology,data mining
+iui,IUI,hci,
+jcdl,JCDL/DL,digital library,
+kdd,KDD,artificial intelligence,data mining
+kr,KR,artificial intelligence,
+lcn,LCN,Networks,
+lctes,LCTES,systems,"Embedded & Real Time, programming languages"
+lics,LICS,theory,logic and verification
+mascots,MASCOTS,systems,"performance analysis, networks"
+mass,MASS,networks,
+mdm,MDM,databases,mobile
+miccai,MICCAI,systems,"computer vision, medical imaging"
+micro,MICRO,systems,architecture
+mm,MM,multimedia,"hci, systems"
+mobicom,MobiCom,systems,mobile
+mobihoc,MobiHoc,networks,mobile
+mobisec,Mobisec,security,mobile
+mobisys,MobiSys,systems,mobile
+naacl,NAACL/HLT,artificial intelligence,natural language processing
+ndss,NDSS,systems,security
+nips,NIPS,artificial intelligence,machine learning
+noms,NOMS,systems,networks
+nsdi,NSDI,systems,networks
+oopsla,OOPSLA,programming languages,
+osdi,OSDI,systems,operating systems
+pact,PACT,systems,"architecture, programming languages, parallel computing"
+percom,PERCOM,systems,"networks, operating systems, distributed computing"
+pldi,PLDI,programming languages,
+podc,PODC,systems,
+pods,PODS,databases,
+popl,POPL,programming languages,
+ppopp,PPoPP,systems,
+psb,PSB,bioinformatics,
+raid,RAID,security,systems
+re,RE,software engineering,
+recomb,RECOMB,bioinformatics,
+rss,RSS,robotics,
+rtas,RTAS,systems,Embedded & Real Time
+rtss,RTSS,systems,Embedded & Real Time
+sac,SAC,Applications,
+sacmat,SACMAT,systems,
+saint,SAINT,,
+sbac-pad,SBAC-PAD,architecture,distributed computing
+sc,SC,systems,high-performance computing
+sdm,SDM,data mining,
+sea,SEA,algorithms,
+sec,SEC,systems,"distributed computing, operating systems"
+securecomm,Securecomm,security,
+sensys,SenSys,systems,mobile
+si3d,i3D,,
+sigcomm,SIGCOMM,systems,networks
+sigecom,EC,,
+sigir,SIGIR,artificial intelligence,information retrieval
+sigmetrics,SIGMETRICS,performance analysis,networks
+sigmod,SIGMOD,systems,databases
+sigsoft-fse,ESEC/FSE,software engineering,
+soda,SODA,theory,algorithms
+sosp,SOSP,systems,operating systems
+sp,S&P,systems,security
+spaa,SPAA,"theory, architecture",
+srds,SRDS,systems,"operating systems, distributed computing"
+ssdbm,SSDBM,databases,data mining
+stacs,STACS,theory,"algorithms, logic and verification"
+stoc,STOC,theory,algorithms
+sysose,SOSE,systems,
+tcc,TCC,theory,cryptography
+uai,UAI,artificial intelligence,
+ubicomp,UbiComp,hci,
+uist,UIST,hci,
+usenix,USENIX ATC,systems,operating systems
+uss,USENIX Security,systems,security
+vee,VEE,systems,"operating systems, programming languages"
+vr,VR,artificial intelligence,computer vision
+wads,WADS,theory,algorithms
+wcci,WCCI,artificial intelligence,
+wimob,WiMOB,systems,networks
+wowmom,WoWMoM,systems,networks
+wsdm,WSDM,artificial intelligence,
+www,WWW,artificial intelligence,information retrieval
+,ECCB,,
+,SGP,theory,
+,SIGGRAPH,computer graphics,
+,SoCG,theory,
+,SPLASH,,
+,VLDB,systems,databases
