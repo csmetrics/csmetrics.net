@@ -72,11 +72,11 @@ $(document).ready(function(){
 });
 $("#collapse-button").on("click", function() {
   var $this = $(this);
-  if(!$this.hasClass('panel-collapsed')) {
-    $this.addClass('panel-collapsed');
+  if(!$this.hasClass('in')) {
+    $this.addClass('in');
     $this.find('i').removeClass('fa-minus').addClass('fa-plus');
   } else {
-    $this.removeClass('panel-collapsed');
+    $this.removeClass('in');
     $this.find('i').removeClass('fa-plus').addClass('fa-minus');
   }
 });

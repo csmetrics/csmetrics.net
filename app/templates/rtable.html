@@ -23,7 +23,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12" id="rank-conflist">
+    <div class="col-sm-12">
+      <div id="rank-conflist" style="max-height: 120px; overflow-x: hidden;"></div>
     </div>
   </div>
 </div>
@@ -145,9 +146,9 @@ table.columns('.institution').every( function () {
         table.columns('.inst-type').search('').draw();
       }
     });
-  // select.append('<option value="all">All</option>');
-  select.append('<option value="cra_all">CRA All</option>');
-  select.append('<option value="cra_academic">CRA Academic</option>');
+  // select.append('<option value="all">{{ words.select_region_all }}</option>');
+  select.append('<option value="cra_all">{{ words.select_region_cra_all }}</option>');
+  select.append('<option value="cra_academic">{{ words.select_region_cra_academic }}</option>');
 });
 
 
