@@ -23,17 +23,17 @@
               <p>This web page computes institutional publication metrics for computer science configured by users.
                 These metrics are principally focused on institutions, as opposed to faculty or authors,
                 and for use in assessing both the past and predicting future research impact based on publications.
-                The data and scripts are available <a href="https://github.com/shinminjeong/rankings">here</a>.
+                The data and scripts are available <a href="https://github.com/csmetrics/csmetrics.org">here</a>.
                 We welcome <a href="">corrections</a> and <a href="">feedback</a>. See more on <a href="">motivation and methodology</a>.</p>
             </div>
             <div id="pageintro" class="collapse in">
               <p><b>Introduction to the data and tool</b></p>
               <p>We cleaned publication, venue, and institution data from DBLP and Microsoft Academic for 2007 to 2016
-                appearing in 200-FIXME venues from 400-FIXME institutions. We assign each paper in this corpus a value one and
-                divide credit equally among all authors and their institutions at time of publication. A publication never changes institutions and
+                appearing in 200-FIXME venues from 400-FIXME institutions. For each paper in this corpus we divide credit equally
+                among all authors and their institutions at time of publication. A publication never changes institutions and
                 all authors (graduate students, post docs, faculty, undergraduates, etc.) accrue credit to their institution.</p>
               <p>Users combine a retrospective and a prospective metric --- <b>measured</b> (retrospective) and <b>prediction</b> (prospective)
-                --- to compute an institutional measure. The measured metric uses <b>citation counts</b> and includes all citations at anytime
+                --- to compute an institutional measure. The measured metric uses <b>citation counts</b> and includes all citations at any time
                 to papers published in the specified year range. The <b>prediction</b> metric counts papers in an independently specified year range
                 and weighs them by venue. We suggest a disjoint range for the two metrics and that prediction only be used on recent publications
                 that have not had sufficient time to accrue citations (e.g., 2014-2016).</p>
@@ -42,7 +42,7 @@
                 The geometric mean venue weight assigns each venue the geometric mean of citations to papers appearing in the venue from 2007—2016,
                 thus more highly cited venues weigh more. (Venue weight is displayed next to selected venues.)
                 Since the metrics are not comparable, the combined metric uses geometric mean,
-                where the user assigns a relative weight (alpha) to the citation and predictive metrics.</p>
+                where the user assigns a relative weight (alpha) to the measured and predictive metrics.</p>
             </div>
           </div>
         </div>
@@ -68,6 +68,7 @@
 <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
+    $('#selectall').click();
 });
 $("#collapse-button").on("click", function() {
   var $this = $(this);

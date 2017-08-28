@@ -9,8 +9,8 @@
       <div>
         {{ words.ctable_label_2 }}:
         <select id="weightselector">
-          <option value="equal">{{ words.select_weight_option_equal }}</option>
           <option value="geomean">{{ words.select_weight_option_geo }}</option>
+          <option value="equal">{{ words.select_weight_option_equal }}</option>
         </select>
       </div>
       <div class="text-left"><small id="weightselector-text" class="text-muted"></small></div>
@@ -127,7 +127,7 @@ table.columns('.institution').every( function () {
         table.columns('.inst-type').search('').draw();
       }
     });
-  select.append('<option value="all">All</option>');
+  // select.append('<option value="all">All</option>');
   select.append('<option value="cra_all">CRA All</option>');
   select.append('<option value="cra_academic">CRA Academic</option>');
 });
@@ -163,14 +163,16 @@ $('#rankbutton').click(function(e) {
         // result[3]: citation count
         // result[4]: w. citation count
         // result[5]: institution type
-        var newRow = {};
-        newRow[0] = null;
-        newRow[1] = result[i][0];
-        newRow[2] = result[i][3].toFixed(0); // Measured
-        newRow[3] = result[i][2].toFixed(0); // Estimated
-        newRow[4] = 0 // Combined -- will be calculated later
-        newRow[5] = result[i][5];
-        table.row.add(newRow);
+        if (result[i][5] > 0) { // only consider CRA members for now
+          var newRow = {};
+          newRow[0] = null;
+          newRow[1] = result[i][0];
+          newRow[2] = result[i][3].toFixed(0); // Measured
+          newRow[3] = result[i][2].toFixed(0); // Estimated
+          newRow[4] = 0 // Combined -- will be calculated later
+          newRow[5] = result[i][5];
+          table.row.add(newRow);
+        }
       }
       updateTable();
       spinner.classList.add("invisible");
