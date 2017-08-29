@@ -10,18 +10,18 @@
 
 ## <a name="quickstart"></a>CSmetrics.org quick start guide
 
-**Defaults**: Load the page, and then press the green “Rank” button, this will rank 199 CRA member institutions (academic and industry) according to the aggregate weighted metrics (both measured and predicted) from 2007 to 2016 on 210 conferences. 
+**Defaults** Load the page, and then press the green “Rank” button, this will rank 199 CRA member institutions (academic and industry) according to the aggregate weighted metrics (both measured and predicted) from 2007 to 2016 on 210 conferences. 
 
-1. **Year slider**: Use this slider to change the year range of the measured (citations, retrospective) and predicted (prospective) metrics. By default the two ranges are mutually exclusive, click the slider to unlock and adjust the two year ranges independently.
+1. **Year slider** Use this slider to change the year range of the measured (citations, retrospective) and predicted (prospective) metrics. By default the two ranges are mutually exclusive, click the slider to unlock and adjust the two year ranges independently.
 
-2. **Venue selection**: Click each area keyword to toggle inclusion/exclusion of conferences in the corresponding area. The list of conferences on the lower left and the list of acronyms on the right will update correspondingly. You can use check boxes on the left to select or deselect individual conferences. 
-A complete curated list of venue categories is at https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_category.csv , data on CS journals are being reviewed and added. Submit a pull request if you’d like to propose edits to this. 
+2. **Venue selection** Click each area keyword to toggle inclusion/exclusion of conferences in the corresponding area. The list of conferences on the lower left and the list of acronyms on the right will update correspondingly. You can use check boxes on the left to select or deselect individual conferences. 
+A complete curated list of venue categories is at https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_category.csv, data on CS journals are being reviewed and added. Submit a pull request if you’d like to propose edits to this. 
 
 3. **Venue weighting** The default is the geometric mean of the citations for all papers in a conference (LINK TBD). You can change it to equal (i.e., each conference has a weight of 1.0) with the “Venue weight” dropdown box on the right. 
 One can use the α slider to change the relative geometric weighting of the measured vs predicted metric. Small constant ε is used to prevent invalid values when an institution has zero publications in a venue. 
 
 4. **Navigating the rank list** The following options are updated instantly without having to press the ‘Rank’ button: changing the list of institutions being ranked, changing the entries per page, and flipping pages. 
-The list of CRA member institutions are here https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv. We are currently curating an international list containing thousands of institutions. 
+The list of CRA member institutions are [here](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv). We are currently curating an international list containing thousands of institutions. 
 
 This is an pre-release version of the ranking site, feedback welcome. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as github issue https://github.com/csmetrics/csmetrics.org/issues
 
