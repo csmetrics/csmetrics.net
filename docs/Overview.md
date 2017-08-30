@@ -4,17 +4,25 @@ Rankings highly influence students, faculty members, and institutions.   Whether
 
 We seek to improve the quality of data and analytical tools available to Computer Science (CS) deans, chairs, faculty, students, departments, institutions, such that they can inform decision making and ranking activities by combining quantitative metrics with expert qualitative opinions, recognizing that the data and metrics will never be perfect.  
 
-Although judging research quality is hard, science judges itself and scientific progress, almost universally,  by combining expert qualitative opinion with qualitative metrics.  Our tool focuses on quantitative publication metrics for 2007-2016 using a retrospective metric (citations) and a predictive metric (for very recent publications; each publication may be weighed by a measure of venue strength).  For both metrics, credit goes to institutions based on authors at time of publication and never changes.  Because all big data is dirty, we spent considerable time cleaning the data we gathered from [dblp](http://dblp.uni-trier.de) and [Microsoft Academic Scholar](http://academic.research.microsoft.com) which sources its data from ACM, IEEE, and other publishers. We describe our data cleaning process and metrics in more detail below in Methodology.
+Although judging research quality is hard, science judges itself and scientific progress, almost universally,  by combining expert qualitative opinion with qualitative metrics.  Our tool focuses on quantitative publication metrics for 2007-2016 using a retrospective metric (citations) and a predictive metric (for very recent publications; each publication may be weighed by a measure of venue strength).  For both metrics, credit goes to institutions based on authors at time of publication and never changes.  Because all big data is dirty, we spent considerable time cleaning the data we gathered from [dblp](http://dblp.uni-trier.de) and [Microsoft Academic Scholar](http://academic.research.microsoft.com) which sources its data from ACM, IEEE, and other publishers. We clean publication venue, citations, and institutional data for over XXX conferences and journals.  We describe our data cleaning process and metrics in more detail below in [Methodology](#methodology).  
 
-In the Other metrics and tools Section, we describe how our approach differs from other efforts, e.g., [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), which only uses opinions, [Computer Science Rankings (beta)](www.csrankings.org), which counts papers in selected venues for current faculty, and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which uses citations and productivity for current faculty.  In particular, we clean publication venue, citations, and institutional data for over XXX conferences and journals.  Rather than individual faculty’s credit moving with them if they move, we focus on institutional metrics that credit all authors with work performed at an institution. Publications never change institutions.  We use both retrospective and predictive metrics.
+[Below](#other) we describe how our approach differs from efforts such as [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), which only uses opinions, [Computer Science Rankings (beta)](www.csrankings.org), which counts papers in selected venues for current faculty, and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which uses citations and productivity for current faculty.  In particular, rather than individual faculty’s credit moving with them if they move, we focus on institutional metrics that credit all authors with work performed at an institution. Publications never change institutions.  We use both retrospective and predictive metrics.
 
-We note that our tool is incomplete because it does not include other important metrics, such as, research test-of-time awards, faculty honors, funding, and faculty size, but for now these are outside our scope.
+We note that our tool is incomplete because it does not include other important metrics, such as, count of faculty, research test-of-time awards, faculty honors, funding, and faculty size. Some of these metrics are available elsewhere, but for now they are outside our scope.
 
-# Methodology
+# Table of Contents
+* [Methodology](#methodology)
+* [Cleaning the data](#cleaning)
+* [Metrics](#metrics)
+* [Other CS Ranking Methods and Tools](#other)
+* [Short term plans and long term goals](#plans)
+
+
+# <a name="methodology"></a>Methodology
 
 We organize CS publication data by venue, author institution, and citations.   We currently have XXX conference and journal venues. Our intention is to include all CS venues with a rigorous peer-review process.  We currently present YYY institutions out of 5000+ that our tools identified as participating in CS research world-wide.  We intend to include them all eventually, but  because authors do not uniformly indicate their institution, we must hand-identify and encode institutional aliases. The next section first describes more on why and how we cleaned publication data, and then we describe our analysis and metrics based on this data.
 
-## Data cleaning
+## <a name="cleaning"></a>Data cleaning
 We gathered publication data from 2007 to 2016 from … this data is all derived from publishers such as ...
 
 Lots of publication data is available from DBLP, Google Scholar, Microsoft Academic, and publishers such as ACM and IEEE, but unfortunately as with all big data, this publication and citation data is dirty and some errors are orders of magnitude. Careful examination of ACM and IEEE publication data, and sources derived from them (e.g., dblp, Google Scholar, and Microsoft Academics) showed numerous systematic and one-off errors that resulted in orders of magnitude differences in publication counts for some venues.  For example, we found examples where all of the papers in a major conference (e.g., OOPSLA, ICSE)  with a rigorous peer review processes were grouped together with large numbers of unrefereed posters and publications at satellite workshops with a different submission and editorial processes.
@@ -41,7 +49,7 @@ For each venue, we identified major topics it covers. The number of CS research 
 
 Since publication and citation practices differ substantially by CS sub-area, we think qualitative analysis must complement bibliometrics by area. In the future, it may be possible to develop a methodology for grouping and analyzing sub-areas that informs combining and comparing subareas, but we leave those kinds of metrics for future work.
 
-## Metrics
+## <a name="metrics"></a>Metrics
 We propose combining two metrics for the purposes of analyzing past research impact and trying to predict the future.  For past research impact, we use citations to publications. For prediction, we use paper counts and venue impact. 
 
 We start by dividing credit for each paper equally among all authors and credit it to their institution. 
@@ -54,7 +62,7 @@ For the predicted impact, we compute the number of papers appearing in a venue a
 
 **Limitations**  We note that the longer ago a paper was published and, similarly, the older a particular instance of a venue,  the more time they have to accrue citations.  Thus, both citations and venue weights are influenced by time, and, furthermore, publication and citations practices change over time.  As an example,  a number of venues recently eliminated page count limitations on citations.   A limitation of our current tool is that it does not consider this time varying component of the data.
 
-# Other metrics and tools
+# <a name="other"></a>Other CS Ranking metrics and tools
 
 Unfortunately for CS, the most influential ranking source for CS graduate programs, The [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), is based only on opinions. Our purpose is to influence rankings by metrics and opinions.  Our metrics have a different focus than two recent sources of rankings, [Computer Science Rankings (beta)](www.csrankings.org) and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which evaluate current faculty.  In these systems, research impact is measured by faculty research. The research of PhD students, postdoctoral students, undergraduates, research staff, and collaborators in other departments at the same institution are not included.  If a faculty member moves between institutions, all their publications move with them. Our tool differs because all authors accrue credit to their institution at time of a paper’s publication and this credit is not moveable.   Depending on your purpose for ranking, faculty metrics and institutional metrics likely both have a place.
 
@@ -64,6 +72,9 @@ Numerous prestigious international research organizations, including DORA, the U
 
 [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/) uses citations of current faculty by querying Google Scholar for the number of citations to the faculty member’s 10th most cited paper (T10 metric).  They use the median and geometric mean then weigh it by faculty rank (full and associate professors are grouped together, and assistant professors are grouped separately).  They also weigh publication credit by author order, whereas we divide it equally since some areas use alphabetic and other conventions for author ordering.  The T10 metric rewards productivity as well as citations, but minimizes the impact of the very most influential papers that accrue many citations, which seems counter-productive to understanding impact.  However, they offer a number of metrics and weights, and find that their ranking correlates well with the U.S. News & World Report ranking.   
 
-# Long term goal
+# <a name="plans"></a>Short term plans and long term goals
 
+Journal ...
+Institutions... 
+Topics...
 We believe that this activity should be supported and expanded with awards, current faculty members, funding, etc. by the community in perpetuity and welcome your participation. 
