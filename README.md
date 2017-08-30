@@ -10,7 +10,7 @@
 
 ## <a name="quickstart"></a>CSmetrics.org quick start guide
 
-**Defaults** Load the page, and then press the green 'Rank' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences. 
+**Defaults** Load the page and then press the green 'Rank' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences. 
 
 1. **Year slider** Use this slider to change the year range of the measured (citations, retrospective) and predicted (prospective) metrics. By default the two ranges are mutually exclusive, click the slider to unlock and adjust the two year ranges independently.
 
@@ -20,7 +20,7 @@
 
 4. **Combining metrics** The α slider changes the relative geometric weighting of the measured versus predicted metric. We add a small constant ε to prevent invalid values when an institution has zero publications in a venue. 
 
-5. **Navigating the rank list** The webpage updates instantly without having to press the ‘Rank’ button when you: change the list of institutions being ranked, change the entries per page, and flip pages. Otherwise, you need to select 'Rank' again. 
+5. **Navigating the rank list** The webpage updates instantly without having to press the ‘Rank’ button when you: change the list of institutions being ranked, change the entries per page, and flip pages. Otherwise, if you change the venues, years, or  α, you need to select 'Rank' again. 
 
 6. **List of institutions**  Because authors do not identify their institutions uniformly, we combined institutational aliases with some automation and by hand for the [CRA member institutions](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv). We are currently curating and combining aliases for an international list containing thousands of institutions.  More details on how we cleaned the data are [here](LINK TBD).
 
