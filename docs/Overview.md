@@ -8,7 +8,7 @@ Although judging research quality is hard, science judges itself and scientific 
 
 [Below](#other) we describe how our approach differs from efforts such as [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), which only uses opinions, [Computer Science Rankings (beta)](www.csrankings.org), which counts papers in selected venues for current faculty, and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which uses citations and productivity for current faculty.  In particular, rather than individual faculty’s credit moving with them if they move, we focus on institutional metrics that credit all authors with work performed at an institution. Publications never change institutions.  We use both retrospective and predictive metrics.
 
-We note that our tool is incomplete because it does not include other important metrics, such as, count of faculty, research test-of-time awards, faculty honors, funding, and faculty size. Some of these metrics are available elsewhere, but for now they are outside our scope.
+We note that our tool is incomplete because it does not include other important metrics, such as, count of faculty, research test-of-time awards, faculty honors, PhD placement, and funding. Some of these metrics are available elsewhere, but for now they are outside our scope.
 
 # Table of Contents
 * [Methodology](#methodology)
