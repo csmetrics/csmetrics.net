@@ -1,4 +1,4 @@
-#Motivation#
+# Motivation
 
 Rankings highly influence students, faculty members, and institutions.   Whether Computer Science wants to be ranked or not, it will be ranked.  
 
