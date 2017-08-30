@@ -22,7 +22,7 @@
 
 5. **Navigating the rank list** The webpage updates instantly without having to press the ‘Rank’ button when you: change the list of institutions being ranked, change the entries per page, and flip pages. Otherwise, you need to select 'Rank' again. 
 
-6. **List of institutions**  Because authors do not identify their institutions uniformly, we combined institutational aliases with some automation and by hand for the [CRA member institutions](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv). We are currently curating and combining aliases for an international list containing thousands of institutions.  More details on how we cleaned the data are [here]() FIXME.
+6. **List of institutions**  Because authors do not identify their institutions uniformly, we combined institutational aliases with some automation and by hand for the [CRA member institutions](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv). We are currently curating and combining aliases for an international list containing thousands of institutions.  More details on how we cleaned the data are [here](LINK TBD).
 
 7. **Contributions and Feedback** This version is a pre-release and we welcome feedback. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as [github issue](https://github.com/csmetrics/csmetrics.org/issues)
 
