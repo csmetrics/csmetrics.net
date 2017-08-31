@@ -26,6 +26,13 @@
 
 7. **Contributions and Feedback** This version is a pre-release and we welcome feedback. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as [github issue](https://github.com/csmetrics/csmetrics.org/issues)
 
+<p align="center">
+<img width="80%" src="docs/extra/user_guide.001.png" />
+<br>
+Figure 1. Quick Start User Guide.
+</p>
+
+
 [Overview doc](docs/Overview.md)
 
 ## <a name="pushreq"></a>Instructions for making edits
