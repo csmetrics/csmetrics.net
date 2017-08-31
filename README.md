@@ -10,12 +10,12 @@
 
 ## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
-**Defaults** Load the page and then press the green 'Rank' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences. 
-
 <p align="center">
-<img width="80%" src="docs/extra/user_guide.001.png" />
+<img width="75%" src="docs/extra/user_guide.001.png" />
 Figure 1. Quick Start User Guide.
 </p>
+
+**Defaults** Load the page and then press the green 'Rank' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences. 
 
 1. **Year slider** Use this slider to change the year range of the measured (citations, retrospective) and predicted (prospective) metrics. By default the two ranges are mutually exclusive, click the slider to unlock and adjust the two year ranges independently.
 
