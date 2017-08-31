@@ -13,7 +13,7 @@
 **Defaults** Load the page and then press the green 'Rank' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences. 
 
 <p align="center">
-<img width="75%" src="docs/extra/user_guide.001.png" />
+<img width="90%" src="docs/extra/user_guide.001.png" />
 </p>
 <p align="center">
 Figure 1. Quick Start User Guide.
