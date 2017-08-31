@@ -28,7 +28,6 @@
 
 <p align="center">
 <img width="80%" src="docs/extra/user_guide.001.png" />
-<br>
 Figure 1. Quick Start User Guide.
 </p>
 
