@@ -8,7 +8,7 @@
 
 * [Instructions for making edits](#pushreq)
 
-## <a name="quickstart"></a>CSmetrics.org quick start guide
+## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
 **Defaults** Load the page and then press the green 'Rank' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences. 
 
