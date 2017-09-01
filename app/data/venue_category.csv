@@ -90,7 +90,7 @@ icfp,ICFP,programming languages,
 icgse,ICGSE,,
 icis,ICIS,,
 iclp,ICLP,theory,
-icml,ICML,artificial intelligence,machine learning
+icml,ICML,artificial intelligence,"machine learning, data mining" 
 icnp,ICNP,,
 icpp,ICPP,,
 icpr,ICPR,computer vision,
@@ -100,7 +100,7 @@ icse,ICSE,software engineering,
 icsm,ICSM,software engineering,
 icst,ICST,software engineering,
 icws,ICWS,,
-icwsm,ICWSM,information retrieval,
+icwsm,ICWSM,information retrieval,social media
 iiswc,IISWC,,
 ijcai,IJCAI,artificial intelligence,
 ijcar,IJCAR,theory,
@@ -149,7 +149,7 @@ mobisec,Mobisec,security,mobile
 mobisys,MobiSys,systems,mobile
 naacl,NAACL/HLT,artificial intelligence,natural language processing
 ndss,NDSS,systems,security
-nips,NIPS,artificial intelligence,machine learning
+nips,NIPS,artificial intelligence,"machine learning, data mining"
 noms,NOMS,systems,networks
 nsdi,NSDI,systems,networks
 oopsla,OOPSLA,programming languages,
@@ -206,8 +206,8 @@ wads,WADS,theory,algorithms
 wcci,WCCI,artificial intelligence,
 wimob,WiMOB,systems,networks
 wowmom,WoWMoM,systems,networks
-wsdm,WSDM,artificial intelligence,
-www,WWW,artificial intelligence,information retrieval
+wsdm,WSDM,artificial intelligence,"databases, social media"
+www,WWW,information retrieval,web technologies
 ,ECCB,,
 ,SGP,theory,
 ,SIGGRAPH,computer graphics,
