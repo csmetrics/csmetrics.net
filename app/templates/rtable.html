@@ -153,7 +153,7 @@ table.columns('.institution').every( function () {
 
 
 // rank button listener
-$('#rankbutton').click(function(e) {
+function dorank() {
   spinner.classList.remove("invisible");
   var selectedVenue = document.getElementsByClassName("rank-venue");
   venuelist = [];
@@ -197,7 +197,12 @@ $('#rankbutton').click(function(e) {
       spinner.classList.add("invisible");
     }
   });
+};
+$('#rankbutton').click(function(e) {
+  dorank();
 });
+
+
 
 // update combined value using alpha
 function updateTable(){
@@ -252,4 +257,6 @@ $('#rtable tbody').on('click', 'td.details-control', function () {
         tr.addClass('shown');
     }
 } );
+
+
 </script>

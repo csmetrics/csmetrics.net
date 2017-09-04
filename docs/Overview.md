@@ -4,16 +4,24 @@ Rankings highly influence students, faculty members, and institutions.   Whether
 
 We seek to improve the quality of data and analytical tools available to Computer Science (CS) deans, chairs, faculty, students, departments, institutions, such that they can inform decision making and ranking activities by combining quantitative metrics with expert qualitative opinions, recognizing that the data and metrics will never be perfect.  
 
-Although judging research quality is hard, science judges itself and scientific progress, almost universally,  by combining expert qualitative opinion with qualitative metrics.  Our tool focuses on quantitative publication metrics for 2007-2016 using a retrospective metric (citations) and a predictive metric (for very recent publications; each publication may be weighed by a measure of venue strength).  For both metrics, credit goes to institutions based on authors at time of publication and never changes.  Because all big data is dirty, we spent considerable time cleaning the data we gathered from [dblp](http://dblp.uni-trier.de) and [Microsoft Academic Scholar](http://academic.research.microsoft.com) which sources its data from ACM, IEEE, and other publishers. We clean publication venue, citations, and institutional data for over XXX conferences and journals.  We describe our data cleaning process and metrics in more detail below in [Methodology](#methodology).  
+Although judging research quality is hard, science judges itself and scientific progress, almost universally,  by combining expert qualitative opinion with quantitative metrics.  Our tool focuses on quantitative publication metrics for 2007-2016.  Because all big data is dirty, we spent considerable time cleaning the data we gathered from [dblp](http://dblp.uni-trier.de) and [Microsoft Academic Scholar](http://academic.research.microsoft.com) which sources its data from ACM, IEEE, and other publishers. We clean publication venue, citations, and institutional data for over XXX conferences and journals.  We describe our data cleaning process and metrics in more detail below in [Methodology](#methodology).  
+
+University research, like so many other accomplishments, is complex and multi-dimensional, and hence hard to measure.  In addition, many things we care about, such as impact, reputation, and alumni success, take time to manifest themselves.  In consequence, it is hard to know how well an institution is doing at present, or to determine whether an institution is on an upward or a downward trajectory.
+
+In this paper, we address the above challenges, while restricting our focus to scholarly publications.    
+
+In this paper, we develop a simple model that predicts the future citations of a paper at the time of its publication, and use this to get a less backward-looking metric of institutional accomplishment, at least in terms of Computing-related publications.
+using a retrospective metric (citations) and a predictive metric (for very recent publications; each publication may be weighed by a measure of venue strength).  For both metrics, credit goes to institutions based on authors at time of publication and never changes.
 
 [Below](#other) we describe how our approach differs from efforts such as [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), which only uses opinions, [Computer Science Rankings (beta)](www.csrankings.org), which counts papers in selected venues for current faculty, and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which uses citations and productivity for current faculty.  In particular, rather than individual faculty’s credit moving with them if they move, we focus on institutional metrics that credit all authors with work performed at an institution. Publications never change institutions.  We use both retrospective and predictive metrics.
 
-We note that our tool is incomplete because it does not include other important metrics, such as, count of faculty, research test-of-time awards, faculty honors, PhD placement, and funding. Some of these metrics are available elsewhere, but for now they are outside our scope.
+Publications, and citations to these publications, are time-honored ways in which to quantify research accomplishments.  While these metrics are not perfect, they are the best we have in terms of available and relatively well curated data, and are likely to be substantially superior to subjective guesses.  We note that our tool is incomplete because it does not include other important metrics, such as, count of faculty, research test-of-time awards, faculty honors, PhD placement, and funding. Some of these metrics are available elsewhere, but for now they are outside our scope.
 
 # Table of Contents
 * [Methodology](#methodology)
 * [Cleaning the data](#cleaning)
 * [Metrics](#metrics)
+* [Limitations](#limitations)
 * [Other CS Ranking Methods and Tools](#other)
 * [Short term plans and long term goals](#plans)
 
@@ -60,7 +68,15 @@ We start by dividing credit for each paper equally among all authors and credit 
 
 For the predicted impact, we compute the number of papers appearing in a venue and divide the credit equally among authors’ institutions. We optionally weight this count by the geometric mean of the citations to the venue.  This weighting thus gives more potential impact to papers that appear in venues that in the past had more citations.  We use the geometric mean instead of the arithmetic mean because even in the impactful venues, many papers are not cited, many incur only a modest number of citations (which depend on the discipline and point in history), and a few are highly cited. ADD A CITATION.
 
-**Limitations**  We note that the longer ago a paper was published and, similarly, the older a particular instance of a venue,  the more time they have to accrue citations.  Thus, both citations and venue weights are influenced by time, and, furthermore, publication and citations practices change over time.  As an example,  a number of venues recently eliminated page count limitations on citations.   A limitation of our current tool is that it does not consider this time varying component of the data.
+## <a name="limitations"></a>Limitations
+
+As discussed above, we only consider publications, which are a very important piece of scolarly output, but still only a piece.  Even when considering publications, we ideally wish to measure impact rather than just count publications.  We use citations as the measure of impact, but recognize that citations do not tell the full story.
+
+A significant challenge with using citations as a metric is that citations take time to accumulate, with significant variation across papers in citation rate over time.  As such, citations are not a good way to measure impact for recent papers, less than 2 or 3 years old.   We have developed and used a novel metric, based on predicted citation count, estimating this based on the venue.  There is room to improve this metric, by performing a  more careful estimation, taking into account not just venue but also the author(s) and their institution(s).
+
+We note that the longer ago a paper was published and, similarly, the older a particular instance of a venue,  the more time they have to accrue citations.  Thus, both citations and venue weights are influenced by time, and, furthermore, publication and citations practices change over time.  As an example,  a number of venues recently eliminated page count limitations on citations.   A limitation of our current tool is that it does not consider this time varying component of the data.
+
+
 
 # <a name="other"></a>Other CS Ranking metrics and tools
 
