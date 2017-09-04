@@ -8,6 +8,8 @@
 
 * [Instructions for making edits](#pushreq)
 
+* [Summary of methodology and data processing](docs/Overview.md) -- opens a separate document
+
 ## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
 **Defaults** Load the page and then press the green 'Rank' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences. 
@@ -33,9 +35,6 @@ Figure 1. Quick Start User Guide.
 
 7. **Contributions and Feedback** This version is a pre-release and we welcome feedback. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as [github issue](https://github.com/csmetrics/csmetrics.org/issues)
 
-
-
-[Overview doc](docs/Overview.md)
 
 ## <a name="pushreq"></a>Instructions for making edits
 
