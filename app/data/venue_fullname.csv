@@ -17,7 +17,7 @@ ats,ATS,Asian Test Symposium
 avss,AVSS,Advanced Video and Signal Based Surveillance
 bibe,BIBE,IEEE Bioinformatics and Bioengineering
 bpm,BPM,International Conference in Business Process Management
-cases,CASES,International Conference on Compilers, Architecture, and Synthesis for Embedded Systems
+cases,CASES,"International Conference on Compilers, Architecture, and Synthesis for Embedded Systems "
 cav,CAV,Computer Aided Verification
 cc,CC,International Conference on Compiler Construction
 ccc,CCC,IEEE Symposium on Computational Complexity
@@ -56,7 +56,7 @@ esa,ESA,European Symposium on Algorithms
 esop,ESOP,European Symposium on Programming
 esorics,ESORICS,European Symposium on Research in Computer Security
 eurocrypt,EUROCRYPT,International Conference on the Theory and Applications of Cryptographic Techniques
-eurosys,Eurosys, ACM Eurosys Conference
+eurosys,Eurosys,ACM Eurosys Conference
 fast,FAST,Conference on File and Storage Technologies
 fccm,FCCM,IEEE Symposium on Field-Programmable Custom Computing Machines
 fmcad,FMCAD,Formal Methods in Computer-Aided Design
@@ -123,7 +123,7 @@ ismvl,ISMVL,International Symposium on Multiple-Valued Logic
 isorc,ISORC,IEEE International Symposium on Object-Oriented Real-time Distributed Computing
 ispa,ISPA,IEEE International Symposium on Parallel and Distributed Processing with Applications
 ispass,ISPASS,IEEE International Symposium on Performance Analysis of Systems and Software
-issac,ISSAC,Intl. Symposium on Symbolic and Algebraic Computation
+issac,ISSAC,International Symposium on Symbolic and Algebraic Computation
 isscc,ISSCC,International Solid State Circuits Conference
 issre,ISSRE,International Symposium on Software Reliability Engineering
 issta,ISSTA,International Symposium on Software Testing and Analysis
@@ -215,7 +215,7 @@ www,WWW,International World Wide Web Conference
 ,ICCS,International Conference on Computational Science
 ,ICICIC,"International Conference on Innovative Computing, Information and Control  "
 ,PERFORMANCE,"International Symposium on Computer Performance, Modeling, Measurements and Evaluation"
-,SGP,Eurographics Symposium on Geometry Processing
+,SGP,Eurographics symposium on Geometry Processing
 ,SIGGRAPH,ACM SIG International Conference on Computer Graphics and Interactive Techniques
 ,SPLASH,"Systems, Programming, Languages, and Applications: Software for Humanity"
-,VLDB,International Conference on Very large data bases
+,VLDB,International Conference on Very Large Data Bases
