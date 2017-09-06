@@ -38,13 +38,11 @@ Figure 1. Quick Start User Guide.
 
 ## <a name="pushreq"></a>Instructions for making edits
 
-This project is written in python3 with the Django web framework. 
+This project is written in **python3** with the **Django** web framework. 
 
 1. Fork and clone this repository
-1. Install Django and other requirements `$ pip install -r requirements.txt`
-1. Run a local server
-  1. Setup env: `$ ./python manage.py migrate`
-  2. Run the server: `$ ./run_server.sh`
-  3. Access the server: http://localhost:8000
-1. Make and test changes locally
-1. Push changes to your fork and submit a pull request. 
+2. Install Django and other requirements `$ pip install -r requirements.txt`
+3. Run the server: `$ ./run_server.sh`
+4. Access the server: http://localhost:8000
+5. Make and test changes locally
+6. Push changes to your fork and submit a pull request. 
