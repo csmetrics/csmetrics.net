@@ -22,43 +22,54 @@
             <div>
               <p>
 	      Because perspective students, parents, faculty, and
-  University administrators use rankings to make decisions, their
+  University administrators use rankings to make decisions, improving their
   accuracy is important. This tool
-  seeks to inform the ranking process with better quantitave
+  seeks to inform the ranking process with better quantitive
   metrics on publications.  This tool is  <a
-  href="https://github.com/csmetrics/csmetrics.org#discussion">incomplete</a>
+ href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md#limitations">incomplete</a>
   because it needs to be combined with qualitative expert opinion and additional
   quantitative metrics, such as faculty size, undergraduate and PhD
   student graduation rates, PhD placement,
   test-of-time awards, other awards, etc., but it is a
-  start. We welcome  <a href="https://github.com/csmetrics/">improvements and contributions.</a>
-	 <!--     <P>The web page computes institutional publication metrics for computer science configured by users.
-                These metrics are principally focused on institutions, as opposed to faculty or authors,
-                and for use in assessing both the past and predicting future research impact based on publications.</p>
-     -->
-                The data and scripts are available <a href="https://github.com/csmetrics/csmetrics.org">here</a>.
-                Also available is a <a href=https://github.com/csmetrics/csmetrics.org#quickstart>users' guide</a> for this page.
+  start.  Here are  the          <a
+  href="https://github.com/csmetrics/csmetrics.org"> data and
+  scripts</a> and
+               the <a
+  href=https://github.com/csmetrics/csmetrics.org#quickstart>users'
+  guide</a>.
                 We welcome <a href="https://github.com/csmetrics/csmetrics.org">corrections</a> and <a href="https://github.com/csmetrics/csmetrics.org/issues">feedback</a>
-                via github pull requests and issues. See more on <a href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md">motivation and methodology</a>.</p>
+                via github pull requests and issues. See  <a
+  href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md">motivation
+  and methodology</a> for more details.</p>
             </div>
             <div id="pageintro" class="collapse">
-              <p><b>Introduction to the data and metrics</b>
-              We cleaned publication, venue, and institution data from DBLP and Microsoft Academic for 2007 to 2016
-                appearing in 210 venues from 199 institutions. For each paper in this corpus we divide credit equally
+              <p><b>Introduction to the metrics and data </b>
+
+   This web page computes institutional publication metrics for computer science configured by users.
+                These metrics are principally focused on institutions, as opposed to faculty or authors,
+                and for use in assessing both the past and predicting
+                future research impact of publications.
+	      We cleaned publication, venue, and institution data from DBLP and Microsoft Academic for 2007 to 2016
+                appearing in 210 venues from 199 institutions. For each paper in this corpus, we divide credit equally
                 among all authors and their institutions at time of publication. A publication never changes institutions and
                 all authors (graduate students, post docs, faculty, undergraduates, etc.) accrue credit to their institution.</p>
-              <p>Users combine a retrospective and a prospective metric --- <b>measured</b> (retrospective) and <b>prediction</b> (prospective)
-                --- to compute an institutional measure. The measured metric uses <b>citation counts</b> and includes all citations at any time
+              <p>Users combine a <b>measured</b> (retrospective) and
+                <b>prediction</b> (prospective) metric
+                 to compute an institutional measure. The measured metric uses <b>citation counts</b> and includes all citations at any time
                 to papers published in the specified year range. The <b>prediction</b> metric counts papers in an independently specified year range
-                and weighs them by venue. We suggest a disjoint range for the two metrics and that prediction only be used on recent publications
-                that have not had sufficient time to accrue citations (e.g., 2014-2016).</p>
-              <p>Users select all topics or individual topics to determine venues and may exclude/include individual venues to create custom
-                venue lists. Users select year ranges for each metric and a venue weight. A venue weight of one values all venues equally.
-                The geometric mean venue weight assigns each venue the geometric mean of citations to papers appearing in the venue from 2007—2016,
-                thus more highly cited venues weigh more. (Venue weight is displayed next to selected venues.)
+                and weighs them by venue.  A venue weight of one values all venues equally.
+                The geometric mean venue weight assigns each venue the geometric mean of citations to papers appearing in the venue from 2007-2016,
+                thus more highly cited venues weigh more.  (Venue weight is displayed next to selected venues.)</p>
+
+	      <p> Users select year ranges for each metric and a venue weight. We suggest a disjoint range for the two metrics and that prediction only be used on recent publications
+                that have not had sufficient time to accrue citations (e.g., 2014-2016).
+              Users select all topics or individual topics to determine venues and may exclude/include individual venues to create custom
+                venue lists.
                 Since the metrics are not comparable, the combined metric uses geometric mean,
                 where the user assigns a relative weight (alpha) to the measured and predictive metrics.</p>
-              <p><b><a href=https://github.com/csmetrics/csmetrics.org#quickstart>Quick start guide for using csmetrics.org</a></b> see <a href=https://github.com/csmetrics/csmetrics.org#quickstart>here</a></p>
+Please see the              <b><a
+                href=https://github.com/csmetrics/csmetrics.org#quickstart>quick
+                start guide</a></b> for more help.</p>
             </div>
           </div>
         </div>
