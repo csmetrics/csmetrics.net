@@ -14,7 +14,7 @@
         <h3 class="text-muted">{{ words.title }}</h3>
       </div>
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-md-12">
           <div class="well well-md">
             <button type="button" id=collapse-button class="btn btn-xs btn-defult pull-right" data-toggle="collapse" data-target="#pageintro">
               <i class="fa fa-minus"></i>
@@ -37,11 +37,11 @@
                 and for use in assessing both the past and predicting future research impact based on publications.</p>
      -->
                 The data and scripts are available <a href="https://github.com/csmetrics/csmetrics.org">here</a>.
-                Also available is a <a href=https://github.com/csmetrics/csmetrics.org#quickstart>users' guide</a> for this page. 
-                We welcome <a href="https://github.com/csmetrics/csmetrics.org">corrections</a> and <a href="https://github.com/csmetrics/csmetrics.org/issues">feedback</a> 
+                Also available is a <a href=https://github.com/csmetrics/csmetrics.org#quickstart>users' guide</a> for this page.
+                We welcome <a href="https://github.com/csmetrics/csmetrics.org">corrections</a> and <a href="https://github.com/csmetrics/csmetrics.org/issues">feedback</a>
                 via github pull requests and issues. See more on <a href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md">motivation and methodology</a>.</p>
             </div>
-            <div id="pageintro" class="collapse in">
+            <div id="pageintro" class="collapse">
               <p><b>Introduction to the data and metrics</b>
               We cleaned publication, venue, and institution data from DBLP and Microsoft Academic for 2007 to 2016
                 appearing in 210 venues from 199 institutions. For each paper in this corpus we divide credit equally
@@ -64,10 +64,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-md-5">
           {% include 'wordcloud.html' with words=words tags=tags %}
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 col-md-7">
           {% include 'rtable.html' with words=words %}
         </div>
       </div>
