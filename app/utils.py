@@ -79,13 +79,16 @@ def readPaperCount():
 
 def loadInstData():
     global instMap
-    if instMap == None:
-        memberlist = open(FILE_MEMBER)
-        reader = csv.reader(memberlist)
-        next(reader) # skip the first line
-        instMap = dict((r[1].strip(),\
-                    {"name": r[0].strip(), "type": r[2].strip()})\
-                    for r in reader)
+    if instMap != None:
+        return
+    instMap = dict()
+    memberlist = open(FILE_MEMBER)
+    reader = csv.reader(memberlist)
+    next(reader) # skip the first line
+    for r in reader:
+        for k in r[2:]:
+            if k != "":
+                instMap[k.strip()] = {"name": r[1].strip(), "type": r[0].strip()}
 
 
 def loadVenueWeight():
@@ -176,7 +179,6 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
     pub = dict(zip(instName, [0 for col in range(len(instName))]))
     cite = dict(zip(instName, [0 for col in range(len(instName))]))
     wpub = dict(zip(instName, [0 for col in range(len(instName))]))
-    wcite = dict(zip(instName, [0 for col in range(len(instName))]))
     pubyears = range(pubrange[0], pubrange[1]+1, 1)
     cityears = range(citrange[0], citrange[1]+1, 1)
 
@@ -187,13 +189,17 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
         wpub[t[1]] += paperData[t] * w
     for t in itertools.product(*[conflist, list(instName), cityears]):
         if t not in citationData: continue
-        w = venueWeight[t[0]] if weight and t[0] in venueWeight else 1
         cite[t[1]] += citationData[t]
-        wcite[t[1]] += citationData[t] * w
 
-    rlist = []
+    # sum by alias name
+    rlist = {}
     for v in instName:
         if pub[v] > 0 or cite[v] > 0:
             name, type = findInstitution(v) # type 0: not CRA member, type 1: CRA member
-            rlist.append((name, pub[v], wpub[v], cite[v], wcite[v], type))
-    return rlist
+            if name in rlist:
+                rlist[name][0] += pub[v]
+                rlist[name][1] += wpub[v]
+                rlist[name][2] += cite[v]
+            else:
+                rlist[name] = [pub[v], wpub[v], cite[v], type]
+    return [(k, v[0], v[1], v[2], v[3]) for k, v in rlist.items()]
