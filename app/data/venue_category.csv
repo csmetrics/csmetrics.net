@@ -61,7 +61,7 @@ fast,FAST,systems,operating systems
 fccm,FCCM,circuits,
 fmcad,FMCAD,design automation,verification
 focs,FOCS,theory,algorithms
-fse,IACR-FSE,software engineering,cryptography
+fse,IACR-FSE,security,
 gecco,GECCO,bioinformatics,
 grid,GRID,systems,"high performance computing,distributed systems"
 hipc,HiPC,systems,high performance computing
