@@ -46,7 +46,7 @@ def main(request):
             "ctable_label_2_tooltip": "A venue weight of one values all venues equally. The geometric mean venue weight assigns each venue the geometric mean of citations to papers.",
             "select_weight_option_equal": "Equal",
             "select_weight_option_geo": "Geo Mean",
-            "rank_button": "Rank",
+            "rank_button": "Go",
             "default_alpha": 0.3,
             "select_region_all": "all",
             "select_region_cra_all": "CRA All",

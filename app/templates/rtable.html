@@ -1,33 +1,5 @@
 {% load staticfiles%}
-<div class="well well-sm">
-  <div class="row">
-    <div class="col-sm-5">
-      <div>{{ words.forward }}: <span id="rank-pub-range"></span></div>
-      <div>{{ words.backward }}: <span id="rank-cit-range"></span></div>
-    </div>
-    <div class="col-sm-5">
-      <div>
-        {{ words.ctable_label_2 }}:
-        <select id="weightselector">
-          <option value="geomean">{{ words.select_weight_option_geo }}</option>
-          <option value="equal">{{ words.select_weight_option_equal }}</option>
-        </select>
-      </div>
-      <div class="text-left"><small id="weightselector-text" class="text-muted"></small></div>
-    </div>
-    <div class="col-sm-2">
-      <div id="spinner" class="invisible">
-        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-      </div>
-      <button class="btn btn-success" style="width:100%;" id="rankbutton">{{ words.rank_button }}</button>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div id="rank-conflist" style="max-height: 110px; overflow-y: auto; overflow-x: hidden;"></div>
-    </div>
-  </div>
-</div>
+
 <table id="rtable" class="row-border hover order-column" cellspacing="0" width="100%">
 </table>
 <script type="text/javascript">
