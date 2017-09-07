@@ -61,7 +61,7 @@ fast,FAST,systems,"operating systems, storage"
 fccm,FCCM,circuits,
 fmcad,FMCAD,design automation,verification
 focs,FOCS,theory,algorithms
-fse,FSE,software engineering,
+fse,IACR-FSE,software engineering,
 gecco,GECCO,bioinformatics,
 grid,GRID,systems,"high-performance computing,distributed systems"
 hipc,HiPC,systems,high-performance computing
@@ -175,7 +175,7 @@ sbac-pad,SBAC-PAD,systems,"architecture,high-performance computing"
 sc,SC,systems,"high-performance computing,parallel computing"
 sdm,SDM,data mining,
 sea,SEA,algorithms,
-sec,SEC,systems,distributed systems operating systems
+sec,SEC,systems,"distributed systems, operating systems"
 securecomm,Securecomm,security,
 sensys,SenSys,systems,mobile
 si3d,i3D,graphics,
@@ -184,7 +184,7 @@ sigecom,EC,other,
 sigir,SIGIR,artificial intelligence,information retrieval
 sigmetrics,SIGMETRICS,performance analysis,networks
 sigmod,SIGMOD,databases,
-sigsoft-fse,ESEC/FSE,systems,software engineering
+sigsoft-fse,FSE,systems,software engineering
 soda,SODA,theory,algorithms
 sosp,SOSP,systems,operating systems
 sp,S&P,systems,security
