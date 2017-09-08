@@ -1,7 +1,7 @@
 {% load staticfiles%}
-
 <table id="rtable" class="row-border hover order-column" cellspacing="0" width="100%">
 </table>
+<div id="rtablecurtain" class="invisible"></div>
 <script type="text/javascript">
 // venue weight selector description
 var weighttext = document.getElementById('weightselector-text');
@@ -27,7 +27,7 @@ weightselector.addEventListener("change", function(e) {
 
 var spinner = document.getElementById("spinner");
 // ranking table
-var table = $('#rtable').DataTable({
+var ranktable = $('#rtable').DataTable({
   "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphasliderdiv'>>>" +
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-4'i><'col-sm-8'p>>",
@@ -96,14 +96,14 @@ alphaSlider.noUiSlider.on('change', function (values) {
 });
 
 // update rank index
-table.on( 'order.dt search.dt', function () {
-  table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+ranktable.on( 'order.dt search.dt', function () {
+  ranktable.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
     cell.innerHTML = i+1;
   } );
 } ).draw();
 
 // append selector at institution header
-table.columns('.institution').every( function () {
+ranktable.columns('.institution').every( function () {
   var that = this;
   var select = $('<select id="regionselector"/>')
     .appendTo(this.header())
@@ -111,11 +111,11 @@ table.columns('.institution').every( function () {
       var val = $(this).val();
       console.log(val);
       if (val == "cra_all") {
-        table.columns('.inst-type').search('1|2', true, true).draw();
+        ranktable.columns('.inst-type').search('1|2', true, true).draw();
       } else if (val == "cra_academic") {
-        table.columns('.inst-type').search(2).draw();
+        ranktable.columns('.inst-type').search(2).draw();
       } else {
-        table.columns('.inst-type').search('').draw();
+        ranktable.columns('.inst-type').search('').draw();
       }
     });
   // select.append('<option value="all">{{ words.select_region_all }}</option>');
@@ -133,23 +133,21 @@ function updateTable(){
     +"({{ words.rtable_label_2 }}+&epsilon;)<sup>"+(1-alpha).toFixed(1)+"</sup> x "
     +"({{ words.rtable_label_3 }}+&epsilon;)<sup>"+alpha.toFixed(1)+"</sup>";
   var epsilon = 0.01;
-  table.rows().eq(0).each( function (index) {
-    var row = table.row(index);
+  ranktable.rows().eq(0).each( function (index) {
+    var row = ranktable.row(index);
     var data = row.data();
     combined = Math.pow(parseFloat(data[2])+epsilon, 1-alpha)
               *Math.pow(parseFloat(data[3])+epsilon, alpha);
     data[4] = Number((combined).toFixed(0));
-    table.row(index).data(data);
+    ranktable.row(index).data(data);
   });
-  table.draw();
+  ranktable.draw();
 }
-updateInfoYear();
 
 function changeValue(newValue) {
     document.getElementById("alphaValue").innerHTML = parseFloat(newValue).toFixed(1);
     updateTable(newValue);
 };
-
 
 // more option - disabled for now
 function format (d) {
@@ -168,7 +166,7 @@ function format (d) {
 // more option - disabled for now
 $('#rtable tbody').on('click', 'td.details-control', function () {
     var tr = $(this).closest('tr');
-    var row = table.row( tr );
+    var row = ranktable.row( tr );
     if ( row.child.isShown() ) {
         row.child.hide();
         tr.removeClass('shown');
@@ -177,6 +175,5 @@ $('#rtable tbody').on('click', 'td.details-control', function () {
         tr.addClass('shown');
     }
 } );
-
 
 </script>

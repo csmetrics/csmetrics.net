@@ -169,12 +169,12 @@ var nodes = [
 pubSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("pubSlider slider update");
   nodes[handle].innerText = parseInt(values[handle]);
-  updateInfoYear();
+  inputChanged();
 });
 citSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("citSlider slider update");
   nodes[handle+2].innerText = parseInt(values[handle]);
-  updateInfoYear();
+  inputChanged();
 });
 
 var lockedState = true;
@@ -253,20 +253,16 @@ citSlider.noUiSlider.on('slide', function( values, handle ){
   }
 });
 
-function updateInfoYear(){
-  // console.log("updateInfoYear");
-  var infoPubYear = document.getElementById('rank-pub-range');
-  var infoCitYear = document.getElementById('rank-cit-range');
-  if (infoPubYear != null) {
-    y = [];
-    for (i in nodes) {
-      y[i] = parseInt(nodes[i].innerText);
-    }
-    if (y[1]-y[0] <= 0) infoPubYear.innerText = y[0];
-    else infoPubYear.innerText = "["+y[0]+"-"+y[1]+"]";
-    if (y[3]-y[2] <= 0) infoCitYear.innerText = y[2];
-    else infoCitYear.innerText = "["+y[2]+"-"+y[3]+"]";
-  }
+var btn = document.getElementById("rankbutton")
+function rankFinished() {
+    $('#rankbutton').attr('disabled', 'disabled');
+    $('#alphaslider').removeAttr('disabled');
+    $('#rtablecurtain').addClass('invisible');
+}
+function inputChanged() {
+    $('#rankbutton').removeAttr('disabled');
+    $('#alphaslider').attr('disabled', 'disabled');
+    $('#rtablecurtain').removeClass('invisible');
 }
 
 var selectedVenueList = [];
@@ -279,6 +275,7 @@ function updateInfoConf(){
       selectedVenueList.push(rows.item(i).cells[1].innerText);
     }
   }
+  inputChanged();
 }
 
 function updateConfList(){
@@ -363,7 +360,7 @@ function dorank() {
     },
     success: function (result) {
       // console.log("Rank success");
-      table.clear();
+      ranktable.clear();
       for(var i in result) {
         // console.log(result[i]);
         // result[0]: institution name
@@ -379,11 +376,12 @@ function dorank() {
           newRow[3] = result[i][2].toFixed(0); // Estimated
           newRow[4] = 0 // Combined -- will be calculated later
           newRow[5] = result[i][4];
-          table.row.add(newRow);
+          ranktable.row.add(newRow);
         }
       }
       updateTable();
       spinner.classList.add("invisible");
+      rankFinished();
     }
   });
 };
