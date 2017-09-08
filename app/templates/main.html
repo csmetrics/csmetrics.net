@@ -16,8 +16,8 @@
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="well well-md">
-            <button type="button" id=collapse-button class="btn btn-xs btn-defult pull-right" data-toggle="collapse" data-target="#pageintro">
-              <i class="fa fa-minus"></i>
+            <button type="button" id=collapse-button class="btn btn-sm btn-defult pull-right" data-toggle="collapse" data-target="#pageintro">
+              <i class="fa fa-plus"></i>
             </button>
             <div>
               <p>
@@ -75,10 +75,10 @@ Please see the              <b><a
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-6" style="padding-right:25px">
+        <div class="col-lg-6 col-md-6" style="border-right: 1px solid #e5e5e5">
           {% include 'wordcloud.html' with words=words tags=tags %}
         </div>
-        <div class="col-lg-6 col-md-6" style="padding-left:0px">
+        <div class="col-lg-6 col-md-6">
           {% include 'rtable.html' with words=words %}
         </div>
       </div>
@@ -103,10 +103,10 @@ $("#collapse-button").on("click", function() {
   var $this = $(this);
   if(!$this.hasClass('in')) {
     $this.addClass('in');
-    $this.find('i').removeClass('fa-minus').addClass('fa-plus');
+    $this.find('i').removeClass('fa-plus').addClass('fa-minus');
   } else {
     $this.removeClass('in');
-    $this.find('i').removeClass('fa-plus').addClass('fa-minus');
+    $this.find('i').removeClass('fa-minus').addClass('fa-plus');
   }
 });
 </script>

@@ -124,57 +124,6 @@ table.columns('.institution').every( function () {
 });
 
 
-// rank button listener
-function dorank() {
-  spinner.classList.remove("invisible");
-  var selectedVenue = document.getElementsByClassName("rank-venue");
-  venuelist = [];
-  for (var i = 0; i < selectedVenue.length; i++) {
-    venuelist.push(selectedVenue[i].innerText);
-  }
-  $.ajax({
-    type: "POST",
-    url: "/update",
-    data: {
-      pub_syear: nodes[0].innerHTML,
-      pub_eyear: nodes[1].innerHTML,
-      cit_syear: nodes[2].innerHTML,
-      cit_eyear: nodes[3].innerHTML,
-      weight: weightselector.value,
-      conflist: venuelist.join()
-    },
-    success: function (result) {
-      // console.log("Rank success");
-      table.clear();
-      for(var i in result) {
-        // console.log(result[i]);
-        // result[0]: institution name
-        // result[1]: paper count
-        // result[2]: w. paper count
-        // result[3]: citation count
-        // result[4]: institution type
-        if (result[i][4] > 0) { // only consider CRA members for now
-          var newRow = {};
-          newRow[0] = null;
-          newRow[1] = result[i][0];
-          newRow[2] = result[i][3].toFixed(0); // Measured
-          newRow[3] = result[i][2].toFixed(0); // Estimated
-          newRow[4] = 0 // Combined -- will be calculated later
-          newRow[5] = result[i][4];
-          table.row.add(newRow);
-        }
-      }
-      updateTable();
-      spinner.classList.add("invisible");
-    }
-  });
-};
-$('#rankbutton').click(function(e) {
-  dorank();
-});
-
-
-
 // update combined value using alpha
 function updateTable(){
   // console.log("updateTable");

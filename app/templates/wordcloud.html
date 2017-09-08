@@ -1,42 +1,9 @@
 {% load staticfiles%}
-<div class="row">
-  <div class="col-sm-10" style="padding-right:0">
-    <div class="well well-sm">
-      <div class="row">
-        <div class="col-sm-5" style="min-width: 160px; padding-right:0">
-          <div>{{ words.forward }}: <span id="rank-pub-range"></span></div>
-          <div>{{ words.backward }}: <span id="rank-cit-range"></span></div>
-        </div>
-        <div class="col-sm-7">
-          <div>
-            {{ words.ctable_label_2 }}:
-            <select id="weightselector">
-              <option value="geomean">{{ words.select_weight_option_geo }}</option>
-              <option value="equal">{{ words.select_weight_option_equal }}</option>
-            </select>
-          </div>
-          <div class="text-left"><small id="weightselector-text" class="text-muted"></small></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="rank-conflist" style="max-height: 70px; overflow-y: auto; overflow-x: hidden;"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-2">
-    <div id="spinner" class="invisible">
-      <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-    </div>
-    <button class="btn btn-success" style="width:100%; height:60px" id="rankbutton">{{ words.rank_button }}</button>
-  </div>
-</div>
-<div class="row" style="margin-bottom: 10px;">
-  <div class="col-lg-2 col-md-2 col-sm-12">
+<div class="row" style="padding-bottom: 5px;">
+  <div class="col-lg-1 col-md-1 col-sm-1">
     <h4><span class="label label-default">{{ words.label_year }}</span></h4>
   </div>
-  <div class="col-lg-10 col-md-10 col-sm-12" style="max-width: 380px">
+  <div class="col-lg-9 col-md-9 col-sm-9" >
     <table>
       <tr>
         <td style="width: 80px"></td>
@@ -47,7 +14,7 @@
         <td></td>
       </tr>
       <tr>
-        <td style="width: 80px">
+        <td class="text-right" style="width: 80px">
           <span data-toggle="tooltip" class="tooltiplabel"
             title="{{ words.forward_tooltip }}">
             {{ words.forward }}
@@ -68,7 +35,7 @@
         </td>
       </tr>
       <tr>
-        <td style="width: 80px">
+        <td class="text-right" style="width: 80px">
           <span data-toggle="tooltip" class="tooltiplabel text-right"
             title="{{ words.backward_tooltip }}">
             {{ words.backward }}
@@ -90,8 +57,14 @@
       </tr>
     </table>
   </div>
+  <div class="col-lg-2 col-md-2 col-sm-2" style="padding: 10px 15px 0 15px">
+    <div id="spinner" class="invisible" style="padding: 10px 15px 0 15px">
+      <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+    <button class="btn btn-success" style="width:100%; height:60px" id="rankbutton">{{ words.rank_button }}</button>
+  </div>
 </div>
-<div class="row">
+<div class="row" style="padding-bottom: 5px;">
   <div class="col-lg-2 col-md-2 col-sm-2">
     <h4><span class="label label-default">{{ words.label_category }}</span></h4>
   </div>
@@ -101,7 +74,7 @@
     </div>
   </div>
 </div>
-<div class="row" style="margin-bottom: 10px;">
+<div class="row" style="padding-bottom: 10px;">
   <div class="col-lg-12">
     <div style="text-align:center;">
       {% for t in tags %}
@@ -120,27 +93,41 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-lg-12">
-    <div style="max-height: 450px; overflow-y: auto; overflow-x: hidden;">
-      <table id="conflist" class="table table-condensed table-hover invisible">
-        <thead>
-          <tr>
-            <td></td>
-            <td><b>{{ words.ctable_label_0 }}</b></td>
-            <td><b>{{ words.ctable_label_1 }}</b></td>
-            <td>
-              <span data-toggle="tooltip" class="tooltiplabel"
-                title="{{ words.ctable_label_2_tooltip }}">
-                <b>{{ words.ctable_label_2 }}</b>
-              </span>
-            </td>
-          </tr>
-        </thead>
-        <tbody id="conflist-body">
-        </tbody>
-      </table>
-    </div>
+<div class="row" style="padding-bottom: 5px;">
+  <div class="col-sm-3">
+    <h4><span class="label label-default">{{ words.label_venueweight }}</span></h4>
+  </div>
+  <div class="col-sm-7" style="padding: 7px 5px 0 5px;">
+    <select id="weightselector">
+      <option value="geomean">{{ words.select_weight_option_geo }}</option>
+      <option value="equal">{{ words.select_weight_option_equal }}</option>
+    </select>
+    <small id="weightselector-text" class="text-muted" style="padding-left: 15px;"></small>
+  </div>
+</div>
+<div class="row" style="padding-bottom: 20px;">
+  <div class="col-sm-12">
+    <table id="conflist" class="table table-fixed table-condensed table-hover invisible">
+      <thead>
+        <tr>
+          <th class="col-xs-3" style="padding:0 5px 1px 0">
+            <h4><span class="label label-default" style="margin:0;">
+              {{ words.label_venuelist }}
+            </span></h4>
+          </th>
+          <!-- <th><b>{{ words.ctable_label_0 }}</b></th> -->
+          <th class="col-xs-7" style="padding:7px 30px"><b>{{ words.ctable_label_1 }}</b></th>
+          <th class="col-xs-2" style="padding:7px 30px">
+            <span data-toggle="tooltip" class="tooltiplabel"
+              title="{{ words.ctable_label_2_tooltip }}">
+              <b>{{ words.ctable_label_2 }}</b>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="conflist-body">
+      </tbody>
+    </table>
   </div>
 </div>
 <script>
@@ -281,17 +268,15 @@ function updateInfoYear(){
     else infoCitYear.innerText = "["+y[2]+"-"+y[3]+"]";
   }
 }
+
+var selectedVenueList = [];
 function updateInfoConf(){
   // console.log("updateInfoConf");
-  var infoConflist = document.getElementById('rank-conflist');
-  if (infoConflist != null) {
-    var rows = document.getElementById("conflist-body").rows;
-    infoConflist.innerHTML = "";
-    for (var i = 0; i < rows.length; i++){
-      if (rows.item(i).cells[0].children[0].checked) {
-        infoConflist.innerHTML += '<span class="label label-default rank-venue">'
-          + rows.item(i).cells[1].innerText + "</span> ";
-      }
+  selectedVenueList = [];
+  var rows = document.getElementById("conflist-body").rows;
+  for (var i = 0; i < rows.length; i++){
+    if (rows.item(i).cells[0].children[0].checked) {
+      selectedVenueList.push(rows.item(i).cells[1].innerText);
     }
   }
 }
@@ -319,9 +304,13 @@ function updateConfList(){
           cell2.innerHTML = "<b>"+result[i][0]+"</b>";
           cell3.innerHTML = "<small>"+result[i][1]+"</small>";
           cell4.innerHTML = 1;
-          cell4.style.width = 65;
-          cell5.style.width = 65;
           cell5.innerHTML = parseFloat(result[i][2]).toFixed(0); // geo mean
+
+          cell1.className = "col-xs-1";
+          cell2.className = "col-xs-2";
+          cell3.className = "col-xs-7";
+          cell4.className = "col-xs-1";
+          cell5.className = "col-xs-1";
           if (weightselector.value == "equal") {
             cell5.classList.add("invisible");
           } else {
@@ -357,6 +346,51 @@ function getActiveCategories() {
   }
   updateConfList();
 }
+
+// rank button listener
+function dorank() {
+  spinner.classList.remove("invisible");
+  $.ajax({
+    type: "POST",
+    url: "/update",
+    data: {
+      pub_syear: nodes[0].innerHTML,
+      pub_eyear: nodes[1].innerHTML,
+      cit_syear: nodes[2].innerHTML,
+      cit_eyear: nodes[3].innerHTML,
+      weight: weightselector.value,
+      conflist: selectedVenueList.join()
+    },
+    success: function (result) {
+      // console.log("Rank success");
+      table.clear();
+      for(var i in result) {
+        // console.log(result[i]);
+        // result[0]: institution name
+        // result[1]: paper count
+        // result[2]: w. paper count
+        // result[3]: citation count
+        // result[4]: institution type
+        if (result[i][4] > 0) { // only consider CRA members for now
+          var newRow = {};
+          newRow[0] = null;
+          newRow[1] = result[i][0];
+          newRow[2] = result[i][3].toFixed(0); // Measured
+          newRow[3] = result[i][2].toFixed(0); // Estimated
+          newRow[4] = 0 // Combined -- will be calculated later
+          newRow[5] = result[i][4];
+          table.row.add(newRow);
+        }
+      }
+      updateTable();
+      spinner.classList.add("invisible");
+    }
+  });
+};
+$('#rankbutton').click(function(e) {
+  dorank();
+});
+
 
 // selectall checkbox listener
 var selectall = document.getElementById('selectall');

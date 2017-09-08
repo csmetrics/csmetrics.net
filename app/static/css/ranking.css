@@ -77,6 +77,24 @@ body {
     display: none;
 }
 
+.table-fixed thead tr {
+  width: 100%;
+  height: 35px;
+  display: block;
+}
+.table-fixed tbody {
+  height: 450px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed tbody {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
 
 .tooltiplabel {
     /*color: black;*/
