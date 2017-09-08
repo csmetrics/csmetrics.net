@@ -253,14 +253,11 @@ citSlider.noUiSlider.on('slide', function( values, handle ){
   }
 });
 
-var btn = document.getElementById("rankbutton")
 function rankFinished() {
-    $('#rankbutton').attr('disabled', 'disabled');
     $('#alphaslider').removeAttr('disabled');
     $('#rtablecurtain').addClass('invisible');
 }
 function inputChanged() {
-    $('#rankbutton').removeAttr('disabled');
     $('#alphaslider').attr('disabled', 'disabled');
     $('#rtablecurtain').removeClass('invisible');
 }

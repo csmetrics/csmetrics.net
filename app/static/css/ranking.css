@@ -92,6 +92,7 @@ body {
   width: 100%;
   height: 35px;
   display: block;
+  border: 0;
 }
 .table-fixed tbody {
   max-height: 450px;
@@ -101,7 +102,7 @@ body {
 .table-fixed tbody {
   display: block;
 }
-.table-fixed tbody td, .table-fixed thead > tr> th {
+.table-fixed tbody td, .table-fixed thead th {
   float: left;
   border-bottom-width: 0;
 }
