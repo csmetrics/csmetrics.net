@@ -53,6 +53,7 @@ def main(request):
             "select_region_all": "all",
             "select_region_cra_all": "CRA All",
             "select_region_cra_academic": "CRA Academic",
+            "msg_empty_table": "Configure parameters and select Go button",
             "rtable_label_0": "Rank",
             "rtable_label_1": "Institution",
             "rtable_label_2": "Measured",
