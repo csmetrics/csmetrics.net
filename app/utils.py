@@ -196,6 +196,8 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
     for v in instName:
         if pub[v] > 0 or cite[v] > 0:
             name, type = findInstitution(v) # type 0: not CRA member, type 1: CRA member
+            if type == 0: # only include CRA members for now
+                continue
             if name in rlist:
                 rlist[name][0] += pub[v]
                 rlist[name][1] += wpub[v]
