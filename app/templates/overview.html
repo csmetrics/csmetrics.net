@@ -5,7 +5,11 @@
     <div class="mycontainer">
       <div class="row">
         <div class="col-lg-12 col-md-12">
-          {% include 'overview_generated.html'%}
+          {% if exist %}
+            {% include 'overview_generated.html'%}
+          {% else %}
+            <a href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md">motivation and methodology</a>
+          {% endif %}
         </div>
       </div>
     </div>

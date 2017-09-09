@@ -1,6 +1,7 @@
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from django import template
 from operator import itemgetter
 from .utils import *
 
@@ -16,6 +17,7 @@ def updateTable(request): # /update
     data = getPaperScore(conflist.split(','), [pub_s, pub_e], [cit_s, cit_e], weight!="equal")
     return JsonResponse(data, safe=False)
 
+
 @csrf_exempt
 def selectKeyword(request): # /select
     keywords = request.POST.get("keyword")
@@ -27,8 +29,16 @@ def selectKeyword(request): # /select
     sorted_conf = sorted(set_conf, key=lambda s: s[0].lower(), reverse=False)
     return JsonResponse(sorted_conf, safe=False)
 
+
+register = template.Library()
+@register.simple_tag
 def overview(request):
-    return render(request, "overview.html")
+    try:
+        template.loader.get_template("overview_generated.html")
+        return render(request, "overview.html", {"exist":True})
+    except template.TemplateDoesNotExist:
+        return render(request, "overview.html", {"exist":False})
+
 
 def main(request):
     loadData()
