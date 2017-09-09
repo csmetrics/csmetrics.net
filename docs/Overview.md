@@ -27,11 +27,19 @@ Publications, and citations to these publications, are time-honored ways in whic
 
 # <a name="methodology"></a>Methodology
 
-We organize CS publication data by venue, author institution, and citations.   We currently have 210 conference and journal venues. Our intention is to include all CS venues that use a rigorous peer-review process.  We currently present 199 institutions out of 5000+ that our tools identified as participating in CS research world-wide.  We intend to include them all eventually, but  because authors do not use uniform institution identifiers, we must hand-identify and encode institutional aliases. The next section first describes more on why and how we cleaned publication data, and then describes our analysis and metrics based on this data.
+We organize computing publication data by venue, author institution, and citations.   We currently have 210 conference and journal venues. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 199 institutions out of 5000+ that our tools identified as participating in CS research world-wide.  We intend to include them all eventually, but  because authors do not use uniform institution identifiers, we must hand-identify and encode institutional aliases. We are still working on the remaining institutions.  
+
+The next section first describes more on why and how we cleaned publication data, and then describes our analysis and metrics based on this data.
 
 ## <a name="cleaning"></a>Data cleaning
 
-Lots of publication data is available from DBLP, Google Scholar, Microsoft Academic, and publishers such as ACM and IEEE, but unfortunately as with all big data, this publication and citation data is dirty and sometimes errors are orders of magnitude. Careful examination of ACM and IEEE publication data, and sources derived from them (e.g., dblp, Google Scholar, and Microsoft Academics) showed numerous systematic and one-off errors that resulted in orders of magnitude differences in publication counts for some venues.  For example, we found instances where all of the papers in a major conference (e.g., OOPSLA and ICSE) with a rigorous peer review processes were grouped together and made indistinguishable from very large numbers of unrefereed posters and publications at satellite workshops with a different submission and editorial processes.
+Publication data is available from many sources, including DBLP, Google Scholar, Microsoft Academic, and publishers such as ACM and IEEE, but unfortunately as with all big data, this publication and citation data is dirty. Careful examination of ACM and IEEE publication data, and sources derived from them (e.g., dblp, Google Scholar, and Microsoft Academics) showed numerous systematic and one-off errors that resulted in orders of magnitude differences in publication counts for some venues.  For example, we found instances where all of the papers in a major conference (e.g., OOPSLA and ICSE) with a rigorous peer review processes were grouped together and made indistinguishable from very large numbers of unrefereed posters and publications at satellite workshops with different submission and editorial processes.  Any publication-related metrics can reliably be computed only after the data are cleaned.
+
+### Choice of venues
+
+We chose to include 210 conference and journal venues. Computing research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and computing research evolves and flourishes.  Including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation.  We thus chose an inclusive list of venues, all of which use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
+
+In other words, our complete set of venues may be larger than many users would like.  As such, we give users the option to leave out any venues that they would prefer not to include.  Note that users cannot be given flexibility in the opposite direction -- if we do not have cleaned and processed data 
 
 ### Cleaning publication to venue mapping
 
@@ -56,9 +64,6 @@ Because sometimes the same author or authors from the same institution do not re
 
 Because aliases cause under-reporting, we only include cleaned institutions. We plan to add more soon.
 
-### Choice of venues
-
-We chose to include 210 conference and journal venues. CS research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and CS research evolves and flourishes.  Including venues that primarily focus on other fields such as Science and Nature is not appropriate.  However, including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation. We thus chose an inclusive list of venues. We chose venues that use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
 
 ### Choice of research topics 
 
