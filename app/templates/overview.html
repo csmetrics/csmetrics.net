@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<html>
+  {% include 'header.html' with words=words %}
+  <body>
+    <div class="mycontainer">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          {% include 'overview_generated.html'%}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

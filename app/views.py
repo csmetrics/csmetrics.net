@@ -27,6 +27,9 @@ def selectKeyword(request): # /select
     sorted_conf = sorted(set_conf, key=lambda s: s[0].lower(), reverse=False)
     return JsonResponse(sorted_conf, safe=False)
 
+def overview(request):
+    return render(request, "overview.html")
+
 def main(request):
     loadData()
     tags = createCategorycloud()
