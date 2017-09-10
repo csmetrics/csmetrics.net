@@ -1,0 +1,68 @@
+Conf+year,Our number of publications,Editor's number,Notes
+ACL 2007,131,131,
+ANCS 2014,19,19,
+ARITH 2013,27,23,Found 2 additional keynote address and 2 short papers. Now down to 23
+ASAP 2010,32,32,
+AVSS 2013,67,67,
+BIBE 2012,133,134,Must have manually removed a paper that I shouldn't have
+CAV 2008,47,33 ( + 14?),"There are 14 tool papers. I included these, should I have?"
+CAV 2014,57,46 (+11 Short papers),"Their short papers were still 7+ pages, which is why I had left them in. In addition, the short papers were reviewed by committee"
+CCGRID 2014,66,54,I have removed 12 papers. A 'competition' category was included and two workshops that were't labeled as workshops. It now aligns
+CCGRID 2010,65,51,Found 14 short papers under typical section headings. I have removed those and now have a matching 51
+CCGRID 2007,72,72,
+CCGRID 2009,57,57,
+CHI 2013,316,316,I had originally left in some short papers. I removed these and recalculated CHI paper count before comparing
+,,,"Extra note on CHI: my numbers line up almost exactly for each year when ""notes"" are included, however I've removed these since they're essentially short papers"
+CIKM 2015,165,165,
+CLUSTER 2010,33,33,
+CONEXT 2014,37,27 ( + 10 short papers),"Short papers are 7 pages or more, which is why I left them in"
+CRYPTO 2012,50,48,Not sure which 2 shouldn't be included
+DCOSS 2008,29,29,
+ECAI 2008,136,121,15 papers were included that were part of a workshop. I've edited those out and now have 121
+ECOOP 2011,26,26,
+EMNLP 2015,188,157,No Section headings and hard to figure out which papers shouldn't be included
+ER 2009,33,31,"Found an 'Anniversary Paper', so our count is now down to 32. Not sure what the extra paper is though"
+ESOP 2010,32,30,"Found one short paper… down to 31, but not sure what extra paper is"
+EUROSYS 2015,32,32,
+FCCM 2016,18,31,"Short papers were included in typical section headers. Once removed, I got down to 18. I suspect this is true for all years, will adjust"
+FCCM 2012,22,22,This check was done after I adjusted for short papers as I mentioned above
+FOCS 2013,79,79,
+GECCO 2014,180,180,
+GRID 2007,37,39,
+HIPEAC 2010,24,23,Not sure what extra paper is
+HPCA 2016,57,53,"I had included papers from the 'industry track.' Once removing these 4, I was back to just 53"
+ICALP 2016,146,146,All 3 tracks added up matched up with our total
+ICDCS 2012,70,71,Not sure what I omitted
+ICDE 2009,108,93,Found that I shouldn't include the industrial track. Also found a couple short papers. My total is now down to 94. Not sure what extra is
+ICDT 2013,24,22,Not sure what extra two papers were
+ICGSE,40,29,"There is 8 industrial papers and 3 educational papers I included. Taking these out, I am left with the correct number (29)"
+ICPP 2014,54,54,
+ICPP 2015,99,99,"Was definitely expecting this to be off, but all checks out"
+ICSE 2014,98,99,Not sure where paper was omitted
+IPCCC 2016,73,48,There are short papers I will have to go back and remove
+ISCA 2010,44,44,
+ISLPED 2014,51,43,"There are 8 papers that follow the poster session in the listing, but they seem legitimate"
+ISMAR 2009,24,24,
+ISPA 2014,25,16 (+11 posters?),This one is strange. DBLP had 8 under their poster session and all the other papers seemed legitimate.
+ISSAC 2012,52,46,I found 6 short papers within the listing that shouldn't have been included. Will go over and recheck this conf
+ISSRE 2015,45,45,
+ISSTA 2014,36,36,
+LICS 2010,41,39,Not sure what extra 2 papers are
+PERCOM 2012,28,28,
+PLDI 2013,46,46,
+POPL 2008,38,35,"There are 3 papers at the end of ""Session 12"" that I can safely remove, bringing me back to 35"
+RTAS 2013,28,28,
+SAC 2015,367,291,"They also had 77 short papers, which I must have left in. Will remove to get down to correct number. Will double check entire conf"
+SACMAT 2012,19,19,
+SC 2014,86,83,Not sure what extra 3 papers were
+SDM 2011,86,86,
+SODA 2015,135,135,
+SOSP 2013,30,30,
+SPAA 2015,31,31,
+SRDS 2013,21,22,Not sure what was omitted
+STACS 2012,58,54,"Looks like I included 4 invited talks. Once I remove these, we will be at the correct 54"
+TCC 2009,35,33,Looks like two papers were 'extended abstracts.' I will remove these to get to the correct number
+VR 2010,20,20,
+VR 2014,49,18,"Something is very off with VR after 2010, I will look into it and correct it"
+WSDM 2016,68,67,"Extra paper is a 'Practice and Experience Track,' will correct"
+WWW 2012,107,108,Not sure what the paper was that I omitted
