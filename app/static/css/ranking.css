@@ -25,6 +25,10 @@ body {
     max-width: 1200px;
 }
 
+#collapse-button {
+    margin:-25px 3px 0 3px;
+}
+
 .label-as-badge {
     border-radius: 4px;
     padding: 4px;

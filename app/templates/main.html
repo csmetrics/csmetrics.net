@@ -16,26 +16,22 @@
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="well well-md">
-            <button type="button" id=collapse-button class="btn btn-sm btn-defult pull-right" data-toggle="collapse" data-target="#pageintro" style="margin:3px">
-              <i class="fa fa-plus"></i>
-            </button>
-            <div>
-                <p>
+            <p>
 		Prospective students, parents, faculty, and University administrators use rankings to make
 		decisions. This tool seeks to inform the process by creating better quantitative metrics on
 		publications. These metrics are  <a href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md#limitations">
 		incomplete</a> because they should be combined with qualitative
 		expert opinion and other metrics, such as area  citation practices, faculty  size, awards,
-		student graduation rates, and PhD placement. It is a work in progress.</p>
-		<p>
+		student graduation rates, and PhD placement. It is a work in progress.
+            </p>
+            <p>
 		To start, you must select a <b>year</b> range, discipline <b>category</b>(s), <b>venue
-		weight</b>ings, and <b>venue list</b>, and then <b>press ‘Go’</b>.   See our <a
-                href=https://github.com/csmetrics/csmetrics.org#quickstart>quick start guide</a> for more
-		on how to use the tool.</p>
-            </div>
-            <div id="pageintro" class="collapse">
-	        <p>
-
+		weight</b>ings, and <b>venue list</b>, and then <b>press ‘Go’</b>. <br/> See our <a
+                href="https://github.com/csmetrics/csmetrics.org#quickstart">quick start guide</a> for more
+		on how to use the tool.
+            </p>
+            <span id="pageintro" class="collapse">
+              <p>
                 We welcome <a
   href="https://github.com/csmetrics/csmetrics.org">corrections</a> to
   the data and scripts, and
@@ -68,9 +64,12 @@
                 Since the metrics are not comparable, the combined metric uses geometric mean,
                 where the user assigns a relative weight (alpha) to the measured and predictive metrics.</p>
 Please see the              <b><a
-                href=https://github.com/csmetrics/csmetrics.org#quickstart>quick
+                href="https://github.com/csmetrics/csmetrics.org#quickstart">quick
                 start guide</a></b> for more help.</p>
-            </div>
+            </span>
+            <button type="button" id=collapse-button class="btn btn-sm btn-defult pull-right" data-toggle="collapse" data-target="#pageintro">
+              more
+            </button>
           </div>
         </div>
       </div>
@@ -103,10 +102,10 @@ $("#collapse-button").on("click", function() {
   var $this = $(this);
   if(!$this.hasClass('in')) {
     $this.addClass('in');
-    $this.find('i').removeClass('fa-plus').addClass('fa-minus');
+    $this.html("less");
   } else {
     $this.removeClass('in');
-    $this.find('i').removeClass('fa-minus').addClass('fa-plus');
+    $this.html("more");
   }
 });
 </script>
