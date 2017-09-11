@@ -2,14 +2,14 @@
 
 Rankings highly influence students, faculty members, and institutions.   Whether Computer Science wants to be ranked or not, it will be ranked.  
 
-University research, like so many other accomplishments, is complex and multi-dimensional, and hence hard to measure.  In addition, many things that we care about, such as impact, reputation, and alumni success, take time to manifest.  Consequently, it is hard to know how well an institution is doing at present and whether an institution is on an upward or a downward trajectory. We seek to address this challenge and to improve the quality of data and analytical tools available to Computer Science (CS) deans, chairs, faculty, students, departments, institutions, such that they can inform decision-making and institutional comparisons by combining quantitative metrics with expert qualitative opinions, recognizing that neither opinion, data, or metrics will ever be perfect. 
+University research, like so many other accomplishments, is complex and multi-dimensional, and hence hard to measure.  In addition, many things that we care about, such as impact, reputation, and alumni success, take time to manifest.  Consequently, it is hard to know how well an institution is doing at present and whether an institution is on an upward or a downward trajectory. We seek to address this challenge and to improve the quality of data and analytical tools available to Computer Science (CS) deans, chairs, faculty, students, departments, institutions, such that they can inform decision-making and institutional comparisons by combining quantitative metrics with expert qualitative opinions, recognizing that neither opinion, data, or metrics will ever be perfect.
 
 Although judging research quality is hard, science judges itself and scientific progress, almost universally, by combining expert qualitative opinion with quantitative metrics.  Our tool focuses on quantitative publication metrics for 2007-2016.  Because all big data is dirty, we spent considerable time cleaning the data we gathered from [dblp](http://dblp.uni-trier.de) and [Microsoft Academic Search](http://academic.research.microsoft.com) which sources its data from ACM, IEEE, and other publishers. We clean publication venue, citations, and institutional data for over 200 conferences and journals (in progress).  We describe our data cleaning process and metrics in more detail below in [Methodology](#methodology).  
 
 
 We develop a simple model that predicts the future citations of a paper at the time of its publication, and use this as a forward-looking metric of institutional accomplishment, in terms of computing-related publications. We use a retrospective metric (citations) and a predictive metric (for very recent publications, where each publication may be weighed by a measure of venue strength).
 
-[Below](#other) we describe how our approach differs from efforts such as [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), which only uses opinions, [Computer Science Rankings (beta)](https://www.csrankings.org), which counts papers in selected venues for current faculty, and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which uses citations and productivity for current faculty. These other tools include important metrics such as faculty size and individual faculty productivity and citations.  We focus on institutional metrics that credit all authors with work performed at an institution. In our tool, individual faculty’s credit does not move with them. Publications never change institutions.  We use both retrospective and predictive metrics.
+[Below](#other) we describe how our approach differs from efforts such as [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), which only uses opinions, [Computer Science Rankings (beta)](http://www.csrankings.org), which counts papers in selected venues for current faculty, and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which uses citations and productivity for current faculty. These other tools include important metrics such as faculty size and individual faculty productivity and citations.  We focus on institutional metrics that credit all authors with work performed at an institution. In our tool, individual faculty’s credit does not move with them. Publications never change institutions.  We use both retrospective and predictive metrics.
 
 Publications, and citations to these publications, are time-honored ways in which to quantify research accomplishments.  While these metrics are imperfect, we think that they are likely to be substantially superior to subjective guesses.  We note that our tool is intrinsically [incomplete](#limitations) because it does not include other important metrics, such as, count of faculty, research test-of-time awards, faculty honors, PhD placement,  funding, and expert opinions. Some of these quantitative metrics are available elsewhere, but for now they are outside our scope.
 
@@ -51,13 +51,13 @@ We used a similar filtering process  for journals (although these are not yet in
 
 This process generated a full list of papers for every conference and every journal over the past 10 years (2007-2016). The next step of the cleaning process was to cross-check the number of paper titles we gathered for ~70 conferences with the number specified by the respective program committee in the front matter of the conference. The conferences were chosen randomly, with a bias towards conferences with greater variation in publication counts between years. The idea behind the bias was that publication counts should not vary too much from year to year, so those conferences were more likely to contain ‘bad’ papers than others.
 
-The comparisons of our counts and the conference-specified counts from front matter and other sources are in [PublicationCheck.xlsx](./PublicationCleaningNote.csv). Many of the comparisons matched up as expected, others had minor errors, and some conferences required a bit of manual editing and removal. For any conference with an error, we reviewed and corrected all ten years of that conference.  The publication counts were also reviewed by experts  familiar with the various conferences.
+The comparisons of our counts and the conference-specified counts from front matter and other sources are in [PublicationCheck](https://github.com/csmetrics/csmetrics.org/blob/master/docs/PublicationCleaningNote.csv). Many of the comparisons matched up as expected, others had minor errors, and some conferences required a bit of manual editing and removal. For any conference with an error, we reviewed and corrected all ten years of that conference.  The publication counts were also reviewed by experts  familiar with the various conferences.
 
 We used a script to send this list of papers titles  to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned for each paper its authors, affiliations, and citations. We sent the Microsoft’s API   only  the  title because it does not have every paper linked to an author and/or affiliation. Microsoft Academic did not match about 2.5% of our title searches.
 
 ### Cleaning author to institution mapping
 
-Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 5,000 institutions world-wide.  To clean this data, we therefore first started by restricting ourselves to a smaller number. We chose the CRA institutions because most U.S. and Canadian active academic and industrial CS research institutions are members. We identified aliases by hand and encoded in an [institutional data file](./app/data/member_list.csv). 
+Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 5,000 institutions world-wide.  To clean this data, we therefore first started by restricting ourselves to a smaller number. We chose the CRA institutions because most U.S. and Canadian active academic and industrial CS research institutions are members. We identified aliases by hand and encoded in an [institutional data file](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv).
 
 Because aliases cause under-reporting, we only include cleaned institutions. We plan to add more soon.
 
@@ -75,7 +75,7 @@ We start by dividing credit for each paper equally among all authors and credit 
 
 **Predicted impact**   More than other disciplines, CS research institutions are currently experiencing a lot of growth to meet student demand and societal workforce and innovation demands on CS.. We have thus included a predictive forward-looking metric, to understand the benefits of investment or the results of neglect.
 
-For the predicted impact, we compute the number of papers appearing in a venue and divide the credit equally among authors’ institutions. We optionally weight this count by the geometric mean of the citations to the venue.  This weighting thus gives more potential impact to papers that appear in venues that in the past had more citations.  We use the geometric mean instead of the arithmetic mean because even in the impactful venues, many papers are not cited, many incur only a modest number of citations (which depend on the discipline and point in history), and a few are very highly cited. 
+For the predicted impact, we compute the number of papers appearing in a venue and divide the credit equally among authors’ institutions. We optionally weight this count by the geometric mean of the citations to the venue.  This weighting thus gives more potential impact to papers that appear in venues that in the past had more citations.  We use the geometric mean instead of the arithmetic mean because even in the impactful venues, many papers are not cited, many incur only a modest number of citations (which depend on the discipline and point in history), and a few are very highly cited.
 
 ## <a name="limitations"></a>Limitations
 
@@ -110,7 +110,7 @@ Numerous prestigious international research organizations, including DORA, the U
 
 # <a name="plans"></a>Plan: Your support and opinion counts
 
-This tool currently has no financial support and cannot continue in perpetuity or be improved without such support. We believe that this data collection and analysis activity of computer science institutions should be supported and expanded with student enrollments, graduation rates, awards, current faculty members, etc. by the community and welcome your participation. 
+This tool currently has no financial support and cannot continue in perpetuity or be improved without such support. We believe that this data collection and analysis activity of computer science institutions should be supported and expanded with student enrollments, graduation rates, awards, current faculty members, etc. by the community and welcome your participation.
 
 <p> Please go to this webpage and participate in a poll if you think this activity will make rankings better, about the same, or worse; and if you think the CRA should support this activity or not.  Other comments are also welcome.
 
@@ -128,9 +128,8 @@ Mario Nascimento, University of Alberta
 
 Minjeong Shin, ANU
 
-Sean Stockwell, University of Michigan 
+Sean Stockwell, University of Michigan
 
 Lexing Xie, ANU
 
 Qiongkai Xu, ANU
-
