@@ -19,14 +19,16 @@
             <p>
 		Prospective students, parents, faculty, and University administrators use rankings to make
 		decisions. This tool seeks to inform the process by creating better quantitative metrics on
-		publications. These metrics are  <a href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md#limitations">
+		publications. These metrics are intrinsically  <a href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md#limitations">
 		incomplete</a> because they should be combined with qualitative
 		expert opinion and other metrics, such as area  citation practices, faculty  size, awards,
 		student graduation rates, and PhD placement. It is a work in progress.
             </p>
             <p>
 		To start, you must select a <b>year</b> range, discipline <b>category</b>(s), <b>venue
-		weight</b>ings, and <b>venue list</b>, and then <b>press ‘Go’</b>. <br/> See our <a
+		weight</b>ings, and <b>venue list</b>, and then
+  <b>press ‘Go’</b>. Each time you make a new selection, you must press
+  ‘Go’ again to update the institutional metrics. <br/> </p><p> See our <a
                 href="https://github.com/csmetrics/csmetrics.org#quickstart">quick start guide</a> for more
 		on how to use the tool.
             </p>
@@ -37,32 +39,45 @@
   the data and scripts, and
 		<a href="https://github.com/csmetrics/csmetrics.org/issues">feedback</a>  via github pull requests
 		and issues. See <a href="./overview">
-		motivation and methodology</a> for details.</p>
+		motivation and methodology</a> for more details on
+  our motivation and how we cleaned the data.</p>
 
-              <p><b>Introduction to the metrics and data </b>
+              <p><b>Introduction to the metrics and data. </b>
 
-   		This web page computes institutional publication metrics for computer science configured by users.
+   		This web page computes user-configured institutional publication metrics for computer science.
                 These metrics are principally focused on institutions, as opposed to faculty or authors,
-                and for use in assessing both the past and predicting
+                and are for use in assessing both the past and predicting
                 future research impact of publications.
-	      We cleaned publication, venue, and institution data from DBLP and Microsoft Academic for 2007 to 2016
+	      We cleaned publication, venue, and institution data from [DBLP](http://dblp.uni-trier.de) and [Microsoft Academic](https://academic.microsoft.com/) for 2007 to 2016
                 appearing in 210 venues from 199 institutions. For each paper in this corpus, we divide credit equally
                 among all authors and their institutions at time of publication. A publication never changes institutions and
                 all authors (graduate students, post docs, faculty, undergraduates, etc.) accrue credit to their institution.</p>
-              <p>Users combine a <b>measured</b> (retrospective) and
-                <b>prediction</b> (prospective) metric
-                 to compute an institutional measure. The measured metric uses <b>citation counts</b> and includes all citations at any time
-                to papers published in the specified year range. The <b>prediction</b> metric counts papers in an independently specified year range
-                and weighs them by venue.  A venue weight of one values all venues equally.
-                The geometric mean venue weight assigns each venue the geometric mean of citations to papers appearing in the venue from 2007-2016,
-                thus more highly cited venues weigh more.  (Venue weight is displayed next to selected venues.)</p>
 
-	      <p> Users select year ranges for each metric and a venue weight. We suggest a disjoint range for the two metrics and that prediction only be used on recent publications
-                that have not had sufficient time to accrue citations (e.g., 2014-2016).
-              Users select categories to determine venues and may exclude/include individual venues to create custom
-                venue lists.
-                Since the metrics are not comparable, the combined metric uses geometric mean,
-                where the user assigns a relative weight (alpha) to the measured and predictive metrics.</p>
+	      <p> Users combine a <b>measured</b> (retrospective) and
+                <b>predictive</b> (prospective) metric to compute an
+                institutional measure. Users first select year ranges
+                for each metric and a venue weight. We suggest a
+                disjoint year range for the two metrics and that
+                prediction only be used on recent publications that
+                have not had sufficient time to accrue citations
+                (e.g., 2014-2016).  Users select categories to
+                determine venues and may select individual venues to
+                create custom venue lists. The measured metric uses
+                <b>citation counts</b> and includes all citations at
+                any time to papers published in the specified year
+                range. The <b>predictive</b> metric counts papers in
+                an independently specified year range and weighs them
+                by venue.  Selecting 'Equal' assigns all venues
+                equal weight (one).  Selecting the geometric mean
+                assigns each venue the geometric mean of citations to
+                papers appearing in the venue from 2007-2016, thus
+                more highly cited venues weigh more.  (Venue weight is
+                displayed next to selected venues.)  Since the metrics
+                are not comparable, the combined metric uses geometric
+                mean, where the user assigns a relative weight (alpha)
+                to the measured and predictive metrics.  </p>
+
+
 Please see the              <b><a
                 href="https://github.com/csmetrics/csmetrics.org#quickstart">quick
                 start guide</a></b> for more help.</p>
