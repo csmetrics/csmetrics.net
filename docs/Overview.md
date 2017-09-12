@@ -1,4 +1,7 @@
-# Motivation
+
+Institutional Publication Metrics for Computer Science
+
+## Motivation
 
 Rankings highly influence students, faculty members, and institutions.   Whether Computer Science wants to be ranked or not, it will be ranked.  
 
@@ -13,32 +16,33 @@ We develop a simple model that predicts the future citations of a paper at the t
 
 Publications, and citations to these publications, are time-honored ways in which to quantify research accomplishments.  While these metrics are imperfect, we think that they are likely to be substantially superior to subjective guesses.  We note that our tool is intrinsically [incomplete](#limitations) because it does not include other important metrics, such as, count of faculty, research test-of-time awards, faculty honors, PhD placement,  funding, and expert opinions. Some of these quantitative metrics are available elsewhere, but for now they are outside our scope.
 
-# Table of Contents
+## Table of Contents
 * [Methodology](#methodology)
 * [Cleaning the data](#cleaning)
 * [Metrics](#metrics)
 * [Limitations](#limitations)
 * [Other Methods and Tools for CS Metrics](#other)
-* [Short term plans and long term goals](#plans)
+* [Your support and opinion counts](#survey)
+* [Contributors](#contributors)
 
 
-# <a name="methodology"></a>Methodology
+## <a name="methodology"></a>Methodology
 
 We organize computing publication data by venue, author institution, and citations.   We currently have 210 conferences and plan on adding journals. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 199 institutions out of 5000+ that our tools identified as participating in CS research world-wide.  We intend to include them all eventually, but  because authors do not use uniform institution identifiers, we must hand-identify and encode institutional aliases. We are still working on the remaining institutions.  
 
 The next section first describes more on why and how we cleaned publication data, and then describes our analysis and metrics based on this data.
 
-## <a name="cleaning"></a>Data cleaning
+### <a name="cleaning"></a>Data cleaning
 
 Publication data is available from many sources, including [DBLP](http://dblp.uni-trier.de), [Google Scholar](https://scholar.google.com), [Microsoft Academic](https://academic.microsoft.com/), and publishers such as [ACM](http://dl.acm.org) and [IEEE](http://ieeexplore.ieee.org/Xplore/home.jsp), but unfortunately as with all big data, this publication and citation data is dirty. Careful examination of ACM and IEEE publication data, and sources derived from them (e.g., DBLP, Google Scholar, and Microsoft Academics) showed numerous systematic and one-off errors that resulted in orders of magnitude differences in publication counts for some venues.  For example, we found instances where all of the papers in a major conference (e.g., OOPSLA and ICSE) with a rigorous peer review processes were grouped together and made indistinguishable from very large numbers of unrefereed posters and publications at satellite workshops with different submission and editorial processes.  Any publication-related metrics can reliably be computed only after the data are cleaned.
 
-### Choice of venues
+#### Choice of venues
 
 We chose to include 210 conference and journal venues. Computing research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and computing research evolves and flourishes.  Including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation.  We thus chose an inclusive list of venues, all of which use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
 
 In other words, our complete set of venues may be larger than many users would like.  As such, we give users the option to leave out any venues that they would prefer not to include.  Note that adding new venues will require  cleaning and processing the data, but we welcome these additions using a [github pull request](https://github.com/csmetrics/csmetrics.org).
 
-### Cleaning publication to venue mapping
+#### Cleaning publication to venue mapping
 
 From DBLP, we downloaded the xml file for each conference/journal considered for every year/volume in our data range of interest (2007-2016). From this XML file, we extracted paper titles, and additional information, such as page length, authors, etc.). From this list we identified papers, which we defined as full research papers at the venue that were selected through the same editorial process (e.g., submission, peer reviewing, revision, etc.)
 
@@ -55,18 +59,18 @@ The comparisons of our counts and the conference-specified counts from front mat
 
 We used a script to send this list of papers titles  to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned for each paper its authors, affiliations, and citations. We sent the Microsoft’s API   only  the  title because it does not have every paper linked to an author and/or affiliation. Microsoft Academic did not match about 2.5% of our title searches.
 
-### Cleaning author to institution mapping
+#### Cleaning author to institution mapping
 
 Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 5,000 institutions world-wide.  To clean this data, we therefore first started by restricting ourselves to a smaller number. We chose the CRA institutions because most U.S. and Canadian active academic and industrial CS research institutions are members. We identified aliases by hand and encoded in an [institutional data file](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv).
 
 Because aliases cause under-reporting, we only include cleaned institutions. We plan to add more soon.
 
 
-### Choice of research topics
+#### Choice of research topics
 
 For each venue, we identified major topics it covers. The number of CS research topics is expanding and becoming increasingly interdisciplinary as computational methods are applied to new areas and in new ways. Since publication and citation practices differ substantially by CS sub-area, we think qualitative analysis must complement bibliometrics by area. In the future, it may be possible to develop a methodology for grouping and analyzing sub-areas that informs combining and comparing subareas, but we leave those kinds of metrics for future work.  We generally required an area category to include 3 or more venues, and otherwise classified it as 'other'.
 
-## <a name="metrics"></a>Metrics
+### <a name="metrics"></a>Metrics
 We propose combining two metrics for the purposes of analyzing past research impact and trying to predict the future.  For past research impact, we use citations to publications. For prediction, we use paper counts and venue impact.
 
 We start by dividing credit for each paper equally among all authors and credit it to their institution.
@@ -77,7 +81,7 @@ We start by dividing credit for each paper equally among all authors and credit 
 
 For the predicted impact, we compute the number of papers appearing in a venue and divide the credit equally among authors’ institutions. We optionally weight this count by the geometric mean of the citations to the venue.  This weighting thus gives more potential impact to papers that appear in venues that in the past had more citations.  We use the geometric mean instead of the arithmetic mean because even in the impactful venues, many papers are not cited, many incur only a modest number of citations (which depend on the discipline and point in history), and a few are very highly cited.
 
-## <a name="limitations"></a>Limitations
+### <a name="limitations"></a>Limitations
 
 As discussed above, we only consider publications, which are a very important piece of scholarly output, but  only a piece.  Even when considering publications, we ideally wish to measure impact rather than just count publications.  We use citations as the measure of impact, but recognize that citations do not tell the full story.
 
@@ -98,7 +102,7 @@ Interdisciplinary work is to be applauded and  encouraged,  yet, it is difficult
 
 Many venues have multiple classes of publications. For example, full papers and short papers.  Our present system seeks to incude papers in a venue that undergo the same editorial process, e.g., same submission, review, and acceptance criteria. Generally for each venue, the publication should include only  refereed full research papers.  However, some short papers at very prestigious venues may be more important and impactful than full papers at less selective venues.  In future work, we plan to consider such short papers as well.
 
-# <a name="other"></a>Other Methods and Tools for CS Metrics
+## <a name="other"></a>Other Methods and Tools for CS Metrics
 
 Unfortunately for CS, the most influential ranking source for CS graduate programs, The [U.S. News & World Report](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings), is based only on opinions. Our purpose is to provide a way to compare institutions (and influence rankings) using publication, area, and venue metrics, as well as opinions.  Our metrics have a different focus than two recent sources of rankings, [Computer Science Rankings (beta)](http://www.csrankings.org) and [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/), which evaluate current faculty.  In these systems, research impact is measured by faculty research. The research of PhD students, postdoctoral students, undergraduates, research staff, and collaborators in other departments at the same institution is not included.  If a faculty member moves between institutions, all their publications move with them. Our tool differs because all authors accrue credit to their institution at time of a paper’s publication and this credit is not moveable.   Depending on your purpose for ranking, faculty metrics and institutional metrics likely both have a place.
 
@@ -108,28 +112,20 @@ Numerous prestigious international research organizations, including DORA, the U
 
 [Scholar Ranking](http://www.dabi.temple.edu/~vucetic/CSranking/) uses citations of current faculty by querying Google Scholar for the number of citations to the faculty member’s 10th most cited paper (T10 metric).  They use the median and geometric mean then weigh it by faculty rank (full and associate professors are grouped together, and assistant professors are grouped separately).  They also weigh publication credit by author order, whereas we divide it equally since some areas use alphabetic and other conventions for author ordering.  The T10 metric rewards productivity as well as citations, but minimizes the impact of the very most influential papers that accrue many citations, which seems counter-productive to understanding impact.  However, they offer a number of metrics and weights, and find that their ranking correlates well with the opinions in the U.S. News & World Report ranking.   
 
-# <a name="plans"></a>Plan: Your support and opinion counts
+## <a name="survey"></a>Your support and opinion counts
 
 This tool currently has no financial support and cannot continue in perpetuity or be improved without such support. We believe that this data collection and analysis activity of computer science institutions should be supported and expanded with student enrollments, graduation rates, awards, current faculty members, etc. by the community and welcome your participation.
 
-<p> Please go to this webpage and participate in a poll if you think this activity will make rankings better, about the same, or worse; and if you think the CRA should support this activity or not.  Other comments are also welcome.
+<p> Please go to this webpage and participate in a poll if you think this activity will make rankings better, about the same, or worse; and if you think the [Computer Research Association (CRA)](http://cra.org) should support this activity or not.  Other comments are also welcome.
 
-[Contributors](#contributors)
+## <a name="contributors"></a>Contributors
 
- Steve Blackburn, ANU
-
-Carla Brodley Northeastern University
-
-H. V. Jagadish, University of Michigan
-
-Kathryn S McKinley, Google
-
-Mario Nascimento, University of Alberta
-
-Minjeong Shin, ANU
-
-Sean Stockwell, University of Michigan
-
-Lexing Xie, ANU
-
-Qiongkai Xu, ANU
+* Steve Blackburn, ANU
+* Carla Brodley Northeastern University
+* H. V. Jagadish, University of Michigan
+* Kathryn S McKinley, Google
+* Mario Nascimento, University of Alberta
+* Minjeong Shin, ANU
+* Sean Stockwell, University of Michigan
+* Lexing Xie, ANU
+* Qiongkai Xu, ANU
