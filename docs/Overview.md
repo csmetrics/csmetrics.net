@@ -121,7 +121,7 @@ This tool currently has no financial support and cannot continue in perpetuity o
 ## <a name="contributors"></a>Contributors
 
 * Steve Blackburn, ANU
-* Carla Brodley Northeastern University
+* Carla Brodley, Northeastern University
 * H. V. Jagadish, University of Michigan
 * Kathryn S McKinley, Google
 * Mario Nascimento, University of Alberta
