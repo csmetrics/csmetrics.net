@@ -1,5 +1,5 @@
 
-Institutional Publication Metrics for Computer Science
+# Institutional Publication Metrics for Computer Science
 
 ## Motivation
 
@@ -24,6 +24,7 @@ Publications, and citations to these publications, are time-honored ways in whic
 * [Other Methods and Tools for CS Metrics](#other)
 * [Your support and opinion counts](#survey)
 * [Contributors](#contributors)
+* [Acknowledgements](#ack)
 
 
 ## <a name="methodology"></a>Methodology
@@ -131,4 +132,6 @@ This tool currently has no financial support and cannot continue in perpetuity o
 * Qiongkai Xu, ANU
 
 ## <a name="ack"></a>Acknowledgements
-We thank [Computer Research Association (CRA)](http://cra.org), ANU [College of Engineering and Computer Science](http://cecs.anu.edu.au), [Research School of Computer Science](http://cs.anu.edu.au) for supporting the development of the data and web application. 
+We thank [Computer Research Association (CRA)](http://cra.org), ANU [College of Engineering and Computer Science](http://cecs.anu.edu.au), [Research School of Computer Science](http://cs.anu.edu.au) for supporting the development of the data and web application. We thank [Microsoft Academic Search](http://academic.research.microsoft.com) for their help and data, and [dblp](http://dblp.uni-trier.de) for their data.
+
+
