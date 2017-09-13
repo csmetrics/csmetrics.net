@@ -7,7 +7,7 @@ Rankings highly influence students, faculty members, and institutions.   Whether
 
 University research, like so many other accomplishments, is complex and multi-dimensional, and hence hard to measure.  In addition, many things that we care about, such as impact, reputation, and alumni success, take time to manifest.  Consequently, it is hard to know how well an institution is doing at present and whether an institution is on an upward or a downward trajectory. We seek to address this challenge and to improve the quality of data and analytical tools available to Computer Science (CS) deans, chairs, faculty, students, departments, institutions, such that they can inform decision-making and institutional comparisons by combining quantitative metrics with expert qualitative opinions, recognizing that neither opinion, data, or metrics will ever be perfect.
 
-Although judging research quality is hard, science judges itself and scientific progress, almost universally, by combining expert qualitative opinion with quantitative metrics.  Our tool focuses on quantitative publication metrics for 2007-2016.  Because all big data is dirty, we spent considerable time cleaning the data we gathered from [dblp](http://dblp.uni-trier.de) and [Microsoft Academic Search](http://academic.research.microsoft.com) which sources its data from ACM, IEEE, and other publishers. We clean publication venue, citations, and institutional data for over 200 conferences and journals (in progress).  We describe our data cleaning process and metrics in more detail below in [Methodology](#methodology).  
+Although judging research quality is hard, science judges itself and scientific progress, almost universally, by combining expert qualitative opinion with quantitative metrics.  Our tool focuses on quantitative publication metrics for 2007-2016.  Because all big data is dirty, we spent considerable time cleaning the data we gathered from [DBLP](http://dblp.uni-trier.de) and [Microsoft Academic Search](http://academic.research.microsoft.com) which sources its data from ACM, IEEE, and other publishers. We clean publication venue, citations, and institutional data for over 200 conferences and journals (in progress).  We describe our data cleaning process and metrics in more detail below in [Methodology](#methodology).  
 
 
 We develop a simple model that predicts the future citations of a paper at the time of its publication, and use this as a forward-looking metric of institutional accomplishment, in terms of computing-related publications. We use a retrospective metric (citations) and a predictive metric (for very recent publications, where each publication may be weighed by a measure of venue strength).
@@ -117,7 +117,8 @@ Numerous prestigious international research organizations, including DORA, the U
 
 This tool currently has no financial support and cannot continue in perpetuity or be improved without such support. We believe that this data collection and analysis activity of computer science institutions should be supported and expanded with student enrollments, graduation rates, awards, current faculty members, etc. by the community and welcome your participation.
 
-<p> Please go to this webpage and participate in a poll if you think this activity will make rankings better, about the same, or worse; and if you think the [Computer Research Association (CRA)](http://cra.org) should support this activity or not.  Other comments are also welcome.
+<p> Please fill out this [FIXME survey]()  to tell us if the tool
+  is useful, how you are using this information, and to influence the future of this tool. </p>
 
 ## <a name="contributors"></a>Contributors
 
@@ -132,6 +133,6 @@ This tool currently has no financial support and cannot continue in perpetuity o
 * Qiongkai Xu, ANU
 
 ## <a name="ack"></a>Acknowledgements
-We thank [Computer Research Association (CRA)](http://cra.org), ANU [College of Engineering and Computer Science](http://cecs.anu.edu.au), [Research School of Computer Science](http://cs.anu.edu.au) for supporting the development of the data and web application. We thank [Microsoft Academic Search](http://academic.research.microsoft.com) for their help and data, and [dblp](http://dblp.uni-trier.de) for their data.
+We thank the [Computer Research Association (CRA)](http://cra.org),  [ANU College of Engineering and Computer Science](http://cecs.anu.edu.au), and [ANU Research School of Computer Science](http://cs.anu.edu.au) for supporting the development of the data and web application. We thank [Microsoft Academic Search](http://academic.research.microsoft.com) for their help and data, and [DBLP](http://dblp.uni-trier.de) for their data.
 
 
