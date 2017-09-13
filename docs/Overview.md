@@ -120,7 +120,7 @@ This tool currently has no financial support and cannot continue in perpetuity o
 
 ## <a name="contributors"></a>Contributors
 
-* Steve Blackburn, ANU
+* Steve Blackburn, Australian National University (ANU)
 * Carla Brodley, Northeastern University
 * H. V. Jagadish, University of Michigan
 * Kathryn S McKinley, Google
@@ -129,3 +129,6 @@ This tool currently has no financial support and cannot continue in perpetuity o
 * Sean Stockwell, University of Michigan
 * Lexing Xie, ANU
 * Qiongkai Xu, ANU
+
+## <a name="ack"></a>Acknowledgements
+We thank [Computer Research Association (CRA)](http://cra.org), ANU [College of Engineering and Computer Science](http://cecs.anu.edu.au), [Research School of Computer Science](http://cs.anu.edu.au) for supporting the development of the data and web application. 
