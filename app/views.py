@@ -5,6 +5,8 @@ from django import template
 from operator import itemgetter
 from .utils import *
 
+TITLE = "Institutional Publication Metrics for Computer Science"
+
 @csrf_exempt
 def updateTable(request): # /update
     pub_s = int(request.POST.get("pub_syear"))
@@ -35,18 +37,18 @@ register = template.Library()
 def overview(request):
     try:
         template.loader.get_template("overview_generated.html")
-        return render(request, "overview.html", {"exist":True})
+        return render(request, "overview.html", {"exist":True, "words":{"title":TITLE}})
     except template.TemplateDoesNotExist:
-        return render(request, "overview.html", {"exist":False})
+        return render(request, "overview.html", {"exist":False, "words":{"title":TITLE}})
 
 
 @register.simple_tag
 def acks(request):
     try:
         template.loader.get_template("acks_generated.html")
-        return render(request, "acks.html", {"exist":True})
+        return render(request, "acks.html", {"exist":True, "words":{"title":TITLE}})
     except template.TemplateDoesNotExist:
-        return render(request, "acks.html", {"exist":False})
+        return render(request, "acks.html", {"exist":False, "words":{"title":TITLE}})
 
 
 def main(request):
@@ -54,7 +56,7 @@ def main(request):
     tags = createCategorycloud()
     return render(request, "main.html", {
         "words": {
-            "title": "Institutional Publication Metrics for Computer Science",
+            "title": TITLE,
             "label_year": "Year",
             "label_category": "Category",
             "label_venueweight": "Venue Weight",
