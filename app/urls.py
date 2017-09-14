@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^update', views.updateTable, name='update'),
     url(r'^select', views.selectKeyword, name='select'),
     url(r'^overview/', views.overview, name='overview'),
+    url(r'^acks/', views.acks, name='acks'),
     url(r'^admin/', admin.site.urls),
 ]

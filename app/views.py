@@ -40,6 +40,15 @@ def overview(request):
         return render(request, "overview.html", {"exist":False})
 
 
+@register.simple_tag
+def acks(request):
+    try:
+        template.loader.get_template("acks_generated.html")
+        return render(request, "acks.html", {"exist":True})
+    except template.TemplateDoesNotExist:
+        return render(request, "acks.html", {"exist":False})
+
+
 def main(request):
     loadData()
     tags = createCategorycloud()
