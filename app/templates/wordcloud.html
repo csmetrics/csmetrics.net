@@ -285,6 +285,7 @@ function updateConfList(){
         keyword: activeCategory.join()
       },
       success: function (result) {
+        console.log("success");
         $("#conflist").removeClass("invisible");
         var table = document.getElementById("conflist-body");
         $("#conflist-body tr").remove();
@@ -318,7 +319,11 @@ function updateConfList(){
           checkbox.setAttribute("onclick", "updateInfoConf()");
           cell1.appendChild(checkbox);
         }
+        console.log("venue table loaded");
         updateInfoConf();
+      },
+      error: function (result) {
+        console.log("error");
       }
     });
   }
@@ -326,7 +331,7 @@ function updateConfList(){
 
 function getActiveCategories() {
   activeCategory = [];
-  var buttons = document.getElementsByTagName('button');
+  var buttons = document.getElementsByClassName('btn-venue');
   for (var i = 0; i < buttons.length; i++) {
     var button = buttons[i];
     if (button.classList.contains('active')) {
