@@ -19,6 +19,22 @@ body {
     border-top: 1px solid #e5e5e5;
 }
 
+.mddocs p {
+    padding-left: 20px;
+}
+
+.mddocs h1 {
+    font-size: 24px;
+    padding: 5px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.mddocs h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+
 .mycontainer {
     margin-right: auto;
     margin-left: auto;

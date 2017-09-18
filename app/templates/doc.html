@@ -5,11 +5,13 @@
     <div class="mycontainer" style="max-width: 1000px;">
       <div class="row">
         <div class="col-lg-12 col-md-12">
-          {% if exist %}
-            {% include template %}
-          {% else %}
-            <a href="{{ alt_link }}">{{ alt_title }}</a>
-          {% endif %}
+          <div class="mddocs">
+            {% if exist %}
+              {% include template %}
+            {% else %}
+              <a href="{{ alt_link }}">{{ alt_title }}</a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>

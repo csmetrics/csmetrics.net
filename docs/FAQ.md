@@ -1,6 +1,6 @@
 # Institutional Publication Metrics for Computer Science
 
-## FAQs
+## Frequently asked questions
 
 ### 1. What is a measured versus a predicted metric?
 
