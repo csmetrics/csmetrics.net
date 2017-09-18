@@ -6,9 +6,9 @@
       <div class="row">
         <div class="col-lg-12 col-md-12">
           {% if exist %}
-            {% include 'overview_generated.html'%}
+            {% include template %}
           {% else %}
-            <a href="https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md">motivation and methodology</a>
+            <a href="{{ alt_link }}">{{ alt_title }}</a>
           {% endif %}
         </div>
       </div>

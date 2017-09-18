@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^select', views.selectKeyword, name='select'),
     url(r'^overview/', views.overview, name='overview'),
     url(r'^acks/', views.acks, name='acks'),
+    url(r'^faq/', views.faq, name='faq'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -34,21 +34,30 @@ def selectKeyword(request): # /select
 
 register = template.Library()
 @register.simple_tag
+def openMDDocs(request, html, alt_link, alt_title):
+    try:
+        template.loader.get_template(html)
+        return render(request, "doc.html", {"exist":True,
+            "template":html, "words":{"title":TITLE}})
+    except template.TemplateDoesNotExist:
+        return render(request, "doc.html", {"exist":False,
+            "alt_link":alt_link, "alt_title":alt_title, "words":{"title":TITLE}})
+
+
 def overview(request):
-    try:
-        template.loader.get_template("overview_generated.html")
-        return render(request, "overview.html", {"exist":True, "words":{"title":TITLE}})
-    except template.TemplateDoesNotExist:
-        return render(request, "overview.html", {"exist":False, "words":{"title":TITLE}})
+    return openMDDocs(request, "overview_generated.html",
+        "https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md",
+        "motivation and methodology")
 
-
-@register.simple_tag
 def acks(request):
-    try:
-        template.loader.get_template("acks_generated.html")
-        return render(request, "acks.html", {"exist":True, "words":{"title":TITLE}})
-    except template.TemplateDoesNotExist:
-        return render(request, "acks.html", {"exist":False, "words":{"title":TITLE}})
+    return openMDDocs(request, "acks_generated.html",
+        "https://github.com/csmetrics/csmetrics.org/blob/master/docs/Acks.md",
+        "Acknowledgements")
+
+def faq(request):
+    return openMDDocs(request, "faq_generated.html",
+        "https://github.com/csmetrics/csmetrics.org/blob/master/docs/FAQ.md",
+        "FAQ")
 
 
 def main(request):
