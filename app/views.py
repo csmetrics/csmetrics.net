@@ -101,6 +101,8 @@ def main(request):
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 def citingflow(request):
+    typelist = ["full graph", "ego graph"]
+    numlist = [10, 20, 50, 100, 200]
     datalist = ["select venue data"]
     datadir = os.path.join(cur_path, "citing_flow")
     for f in os.listdir(datadir):
@@ -108,16 +110,41 @@ def citingflow(request):
         if fname[0] == "citing_flow_edge" and fname[-1] == "csv":
             datalist.append(f)
 
+    topnum = 200
+    errormsg = ""
+    ntype = None
+    center = None
     selectfile = None
     datafile = None
     if "draw" in request.GET:
-        selectfile = request.GET.get("select")
+        selectfile = request.GET.get("venue")
+        center = request.GET.get("center")
+        ntype = request.GET.get("type")
+        topnum = int(request.GET.get("topnum"))
         print("selected:", selectfile)
+        print("Institution of instrest:", center)
+        print("network type:", ntype)
+        print("top number:", topnum)
 
-        path = os.path.join(datadir, selectfile)
-        if os.path.exists(path):
+        try:
+            path = os.path.join(datadir, selectfile)
+            if not os.path.exists(path):
+                raise Exception("Error: venue file not exists")
             f = open(path)
-            datafile = create_graph(f)
+            datafile = create_graph(f, center, typelist.index(ntype), topnum)
+        except Exception as e:
+            errormsg = e
+            print(errormsg)
 
     # print(datalist)
-    return render(request, "graph.html", {"datalist":datalist, "datafile":datafile});
+    return render(request, "graph.html", {
+                "error":errormsg,
+                "sfile":selectfile,
+                "scenter":center,
+                "stype":ntype,
+                "stopnum":topnum,
+                "numlist":numlist,
+                "typelist":typelist,
+                "datalist":datalist,
+                "datafile":datafile
+            });
