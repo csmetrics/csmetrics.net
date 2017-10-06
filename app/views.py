@@ -110,7 +110,7 @@ def citingflow(request):
         if fname[0] == "citing_flow_edge" and fname[-1] == "csv":
             datalist.append(f)
 
-    topnum = 200
+    topnum = 50
     errormsg = ""
     ntype = None
     center = None
