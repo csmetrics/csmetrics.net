@@ -66,11 +66,13 @@ var svg = d3.select("svg")
     .attr("width", width)
     .attr("height", height);
 
+var numnodes = parseInt("{{ stopnum }}");
+
 d3.json("{% static datafile %}", function (error, graph) {
     cola
         .nodes(graph.nodes)
         .links(graph.links)
-        .jaccardLinkLengths(200,1.4)
+        .linkDistance(5000/Math.sqrt(numnodes+80))
         .avoidOverlaps(true)
         .start(30);
 
