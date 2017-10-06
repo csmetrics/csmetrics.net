@@ -1,9 +1,11 @@
+import os
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django import template
 from operator import itemgetter
 from .utils import *
+from .graph import *
 
 TITLE = "Institutional Publication Metrics for Computer Science"
 
@@ -95,3 +97,27 @@ def main(request):
         },
         "tags": tags
     })
+
+
+cur_path = os.path.dirname(os.path.abspath(__file__))
+def citingflow(request):
+    datalist = ["select venue data"]
+    datadir = os.path.join(cur_path, "citing_flow")
+    for f in os.listdir(datadir):
+        fname = f.split(".")
+        if fname[0] == "citing_flow_edge" and fname[-1] == "csv":
+            datalist.append(f)
+
+    selectfile = None
+    datafile = None
+    if "draw" in request.GET:
+        selectfile = request.GET.get("select")
+        print("selected:", selectfile)
+
+        path = os.path.join(datadir, selectfile)
+        if os.path.exists(path):
+            f = open(path)
+            datafile = create_graph(f)
+
+    # print(datalist)
+    return render(request, "graph.html", {"datalist":datalist, "datafile":datafile});

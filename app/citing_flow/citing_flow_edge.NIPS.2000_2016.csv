@@ -1,0 +1,2701 @@
+Source;Target;Weight
+university of california san diego;university of pittsburgh;0.0108695652174
+university of california san diego;university of california davis;0.0108695652174
+university of leoben;university of pennsylvania;0.0909090909091
+interdisciplinary center for neural computation;interdisciplinary center for neural computation;0.366666666667
+max planck institute for intelligent systems;indian statistical institute;0.0384615384615
+max planck institute for intelligent systems;university of guelph;0.0523504273504
+weizmann institute of science;university of california berkeley;0.0769230769231
+max planck society;max planck society;20.9129931485
+nec;at t;0.0666666666667
+microsoft;university of illinois at chicago;0.0651260504202
+universite de montreal;university of pittsburgh school of medicine;0.0238095238095
+york university;university of pittsburgh school of medicine;0.0119047619048
+university of pittsburgh;university of pittsburgh school of medicine;0.0357142857143
+carnegie mellon university;robotics institute;0.590909090909
+max planck society;royal holloway university of london;1.36346153846
+university of toronto;merck co;0.333333333333
+max planck society;massachusetts general hospital;0.0818181818182
+toyota technological institute;royal institute of technology;0.1
+max planck society;carnegie mellon university;3.30638281309
+max planck society;university of tokyo;0.0589743589744
+max planck society;osaka university;0.0863247863248
+ecole normale superieure;max planck society;0.177777777778
+courant institute of mathematical sciences;massachusetts institute of technology;0.0384615384615
+courant institute of mathematical sciences;university of california san diego;0.0384615384615
+university of california berkeley;robotics institute;0.25
+university of washington;brown university;0.0277777777778
+university of washington;carnegie mellon university;0.277777777778
+university of washington;university college london;0.184343434343
+university of washington;college of william mary;0.0277777777778
+max planck institute for intelligent systems;helsinki institute for information technology;0.14649122807
+microsoft;california institute of technology;0.4
+carnegie mellon university;parc;0.142857142857
+max planck society;university of science and technology sana a;0.05
+university of rochester;max planck society;0.25
+carnegie mellon university;ibm;0.301680672269
+max planck society;university of toronto;0.840034965035
+max planck society;at t;1.78868527509
+max planck society;massachusetts institute of technology;1.81297730048
+max planck society;ecole polytechnique;0.234508547009
+carnegie mellon university;massachusetts institute of technology;0.871738604533
+max planck institute for intelligent systems;university of geneva;0.1
+max planck institute for intelligent systems;university of massachusetts amherst;0.1
+microsoft;carnegie mellon university;1.6948758389
+microsoft;stanford university;1.37050070028
+hebrew university of jerusalem;university college london;0.114035087719
+columbia university;johns hopkins university;0.0506329113924
+university of illinois at urbana champaign;university of oxford;0.361111111111
+charite;university of alberta;0.125
+microsoft;university of california los angeles;0.267606516291
+microsoft;fx palo alto laboratory;0.0416666666667
+university of arizona;university of michigan;0.0238095238095
+university of arizona;princeton university;0.047619047619
+university of arizona;carnegie mellon university;0.0952380952381
+nec;brown university;0.166666666667
+university of zurich;university of zurich;0.558823529412
+institute for theoretical computer science;technion israel institute of technology;0.0384615384615
+university of pittsburgh;technion israel institute of technology;0.0384615384615
+los alamos national laboratory;los alamos national laboratory;0.4
+university of pennsylvania;tokyo institute of technology;0.111111111111
+university of pennsylvania;centre national de la recherche scientifique;0.0555555555556
+max planck society;stanford university;2.44441900692
+massachusetts institute of technology;university of waterloo;0.336805555556
+eth zurich;university of southern california;0.138888888889
+eth zurich;yale university;0.0833333333333
+iowa state university;max planck society;0.0833333333333
+carnegie mellon university;stanford university;1.01779984721
+carnegie mellon university;carnegie mellon university;3.20405879524
+max planck institute for intelligent systems;georgia institute of technology;0.269162087912
+max planck institute for intelligent systems;shanghai jiao tong university;0.09375
+california institute of technology;university of chicago;0.166666666667
+ecole polytechnique federale de lausanne;university of chicago;0.1
+mcgill university;duke university;0.0277777777778
+university of alberta;duke university;0.155555555556
+university of edinburgh;university of cambridge;0.2
+max planck society;university of california santa cruz;0.200066137566
+max planck society;university of helsinki;0.529304029304
+max planck society;saarland university;0.261904761905
+max planck society;university of california berkeley;1.44997789735
+university of california berkeley;university of california berkeley;1.23442460317
+hebrew university of jerusalem;hebrew university of jerusalem;1.78558006536
+university of liege;cleveland clinic;0.0769230769231
+university of alberta;university of michigan;0.95
+max planck society;university of california;0.78373015873
+massachusetts institute of technology;system development corporation;0.0666666666667
+massachusetts institute of technology;harvard university;0.0666666666667
+massachusetts institute of technology;university of california berkeley;1.34736856281
+university of pennsylvania;harvard university;0.5
+stanford university;stanford university;3.34593330112
+stanford university;university college london;0.05
+stanford university;carnegie mellon university;0.758986203498
+stanford university;university of sydney;0.05
+max planck society;california institute of technology;0.498340548341
+max planck institute for intelligent systems;max planck society;2.64046078191
+max planck institute for intelligent systems;yahoo;0.0990231990232
+max planck institute for intelligent systems;australian national university;0.363869463869
+center for neural science;center for neural science;0.30119047619
+max planck society;howard hughes medical institute;0.540367965368
+max planck society;university college london;0.859281741035
+university of alberta;max planck institute for intelligent systems;0.111111111111
+intel;california institute of technology;0.121212121212
+california institute of technology;california institute of technology;0.742424242424
+beckman institute for advanced science and technology;stanford university;0.0555555555556
+beckman institute for advanced science and technology;carnegie mellon university;0.0555555555556
+beckman institute for advanced science and technology;mitsubishi electric;0.111111111111
+max planck society;graz university of technology;0.699473443223
+max planck society;johns hopkins school of medicine;0.0565656565657
+max planck society;johns hopkins university;0.340404040404
+max planck society;columbia university;1.19600677101
+microsoft;microsoft;6.47117321778
+stanford university;tel aviv university;0.12
+massachusetts institute of technology;cornell university;0.125490196078
+university of washington;california institute of technology;0.0555555555556
+university of texas at austin;humboldt university of berlin;0.0438596491228
+university of texas at austin;university of louisiana at monroe;0.0614035087719
+howard hughes medical institute;princeton university;0.0434782608696
+microsoft;technion israel institute of technology;0.183333333333
+microsoft;technical university of berlin;0.333333333333
+university of california berkeley;university of california;0.783333333333
+carnegie mellon university;bell labs;0.333333333333
+university of pennsylvania;university of california santa cruz;0.125
+university of pennsylvania;university of helsinki;0.125
+microsoft;university college london;0.799242424242
+microsoft;at t labs;0.259884114936
+microsoft;university of illinois at urbana champaign;0.479306722689
+columbia university;heidelberg university;0.0253164556962
+columbia university;university of pennsylvania;0.0886075949367
+max planck society;intel;0.100877192982
+microsoft;max planck society;1.94840102708
+australian national university;university of alberta;0.037037037037
+australian national university;carnegie mellon university;0.0740740740741
+university of manchester;massachusetts institute of technology;1.0
+university of california berkeley;national university of singapore;0.0952380952381
+university of toronto;technische universitat munchen;0.0909090909091
+microsoft;georgia institute of technology;0.0967741935484
+max planck institute for intelligent systems;max planck institute for intelligent systems;0.580963480963
+max planck institute for intelligent systems;university of illinois at urbana champaign;0.116865079365
+max planck institute for intelligent systems;university of chicago;0.158964646465
+massachusetts institute of technology;university of genoa;0.1
+massachusetts institute of technology;ames research center;0.1
+carnegie mellon university;weizmann institute of science;0.161111111111
+stanford university;ibm;0.212195121951
+university of alberta;at t;0.0625
+university of alberta;carnegie mellon university;0.516468253968
+massachusetts institute of technology;polytechnic university of valencia;0.111111111111
+massachusetts institute of technology;temple university;0.0555555555556
+max planck society;ibm;0.998297292376
+max planck society;university of southampton;0.0192307692308
+max planck society;merrill lynch;0.0192307692308
+max planck society;university of california davis;0.0636752136752
+max planck society;duke university;0.504329004329
+massachusetts institute of technology;carnegie mellon university;0.741666666667
+laval university;mcgill university;0.111111111111
+princeton university;pennsylvania state university;0.0588235294118
+school of computer science university of manchester;helsinki institute for information technology;0.0714285714286
+school of computer science university of manchester;university of ljubljana;0.0714285714286
+university of bremen;new york university;0.25
+ibm;columbia university;0.140625
+brigham young university;university college london;0.0714285714286
+brigham young university;at t labs;0.0714285714286
+max planck society;university of maryland college park;0.147817460317
+max planck society;southern methodist university;0.0555555555556
+university of florida;mitsubishi electric;0.333333333333
+microsoft;university of toronto;0.187719298246
+national university of singapore;brown university;0.1875
+massachusetts institute of technology;tel aviv university;0.451904761905
+massachusetts institute of technology;massachusetts institute of technology;3.95191993464
+university of toronto;massachusetts institute of technology;1.0316017316
+university of pennsylvania;university of california berkeley;0.5
+max planck society;toyota;0.0357142857143
+university of california berkeley;massachusetts institute of technology;1.08519258519
+max planck society;australian national university;1.07697163947
+microsoft;at t;0.738095238095
+microsoft;university of california berkeley;0.849650920974
+max planck institute for intelligent systems;kyungpook national university;0.132478632479
+university college london;clemson university;0.125
+hebrew university of jerusalem;stanford university;0.103267973856
+toyota technological institute;stanford university;0.0222222222222
+max planck society;nec;0.790908782575
+max planck society;indiana university bloomington;0.111111111111
+university of minnesota;university of michigan;0.0909090909091
+new york university;los alamos national laboratory;0.037037037037
+new york university;university of california berkeley;0.0185185185185
+new york university;new york university;0.277777777778
+siemens healthcare;university of maryland college park;0.0333333333333
+university of maryland college park;university of maryland college park;0.133333333333
+google;google;0.0714285714286
+microsoft;orange s a;0.0651260504202
+universite de montreal;university of zurich;0.0238095238095
+york university;university of zurich;0.0119047619048
+university of pittsburgh;university of zurich;0.0357142857143
+salk institute for biological studies;california institute of technology;1.0
+dallas museum of art;hungarian academy of sciences;0.0416666666667
+french institute for research in computer science and automation;hungarian academy of sciences;0.128787878788
+university of alberta;hungarian academy of sciences;0.0416666666667
+max planck society;university of texas at austin;0.526583139083
+australian national university;max planck society;0.358333333333
+max planck society;university of chicago;0.499326248464
+max planck society;mines paristech;0.127272727273
+max planck society;university of washington;0.499427655678
+nec;university of southern california;0.1
+nec;university of minnesota;0.1
+ruhr university bochum;german cancer research center;0.0526315789474
+toyota technological institute;toyota technological institute;0.236111111111
+microsoft;ames research center;0.25
+at t labs;carnegie mellon university;0.2
+university of southern california;netherlands organisation for applied scientific research;0.0104166666667
+university of california irvine;netherlands organisation for applied scientific research;0.0104166666667
+university of southern california;hebrew university of jerusalem;0.0104166666667
+university of california irvine;hebrew university of jerusalem;0.0104166666667
+university of california los angeles;university of bonn;0.25
+brown university;university of toronto;0.133333333333
+brown university;university college london;0.1
+microsoft;university of minnesota;0.142857142857
+carnegie mellon university;cornell university;0.367647058824
+hebrew university of jerusalem;university of california;0.166666666667
+max planck institute for intelligent systems;tsinghua university;0.0238095238095
+max planck institute for intelligent systems;microsoft;0.327525252525
+columbia university;california institute of technology;0.0886075949367
+columbia university;university of california;0.0253164556962
+columbia university;hong kong university of science and technology;0.0126582278481
+university of massachusetts amherst;university of massachusetts amherst;1.15384615385
+stanford university;massachusetts institute of technology;1.18133545824
+massachusetts institute of technology;mcgill university;0.125
+university of seville;university of oslo;0.1
+university of oslo;university of oslo;0.1
+baylor university;university of california san diego;0.125
+university of california san diego;brown university;0.0664251207729
+max planck society;university of crete;0.00877192982456
+max planck society;vanderbilt university;0.00877192982456
+university of edinburgh;hong kong university of science and technology;0.0769230769231
+max planck society;department of trade and industry;0.0697115384615
+massachusetts institute of technology;university of exeter;0.111111111111
+australian national university;stanford university;0.0740740740741
+australian national university;agency for science technology and research;0.037037037037
+university of massachusetts amherst;southern methodist university;0.0769230769231
+microsoft;kaist;0.0322580645161
+university of arizona;massachusetts institute of technology;0.0793650793651
+french institute for research in computer science and automation;french institute for research in computer science and automation;0.199971941639
+french institute for research in computer science and automation;french institute of health and medical research;0.2
+princeton university;university college london;0.160317460317
+princeton university;carnegie mellon university;0.174696545285
+university college london;carnegie mellon university;0.236111111111
+university of washington;johns hopkins university;0.25
+idiap research institute;new york state department of health;0.125
+australian national university;national tsing hua university;0.125
+university of pennsylvania;university of pennsylvania;1.56150793651
+university of pennsylvania;nec;0.0277777777778
+max planck society;princeton university;0.883582913188
+university of toronto;los alamos national laboratory;0.5
+university of california berkeley;hebrew university of jerusalem;0.212707431457
+university of california berkeley;mitsubishi electric research laboratories;0.0952380952381
+max planck society;vienna university of technology;0.224206349206
+saarland university;vienna university of technology;0.0714285714286
+max planck society;max planck institute for intelligent systems;0.389224664225
+saarland university;max planck institute for intelligent systems;0.0178571428571
+saarland university;max planck society;0.196428571429
+paristech;university of illinois at urbana champaign;0.0833333333333
+microsoft;weizmann institute of science;0.272222222222
+purdue university;duke university;0.0769230769231
+university of california berkeley;nec;0.15
+eth zurich;university of oslo;0.0588235294118
+university of california berkeley;university of texas at austin;0.153846153846
+max planck society;yale university;0.491005291005
+microsoft;ibm;0.47123015873
+microsoft;university of southampton;0.00892857142857
+microsoft;merrill lynch;0.00892857142857
+microsoft;university of california davis;0.00892857142857
+university college london;ogi school of science and engineering;0.25
+university of liege;university of liege;0.145104895105
+university of science and technology sana a;panasonic;0.25
+max planck society;university of british columbia;0.46978021978
+max planck institute for intelligent systems;ames research center;0.10119047619
+max planck society;ames research center;0.378968253968
+intel;university of california;0.0606060606061
+california institute of technology;university of california;0.121212121212
+max planck society;salk institute for biological studies;0.385702260702
+university of toronto;microsoft;2.07626262626
+max planck society;washington university in st louis;0.0431407672787
+microsoft;university of massachusetts amherst;0.44012605042
+interdisciplinary center for neural computation;hebrew university of jerusalem;1.3136955637
+brown university;university of florida;0.0833333333333
+universite de montreal;carnegie mellon university;0.365079365079
+idiap research institute;carnegie mellon university;0.0714285714286
+at t labs;at t labs;0.2
+microsoft;los alamos national laboratory;0.171428571429
+university of california berkeley;carnegie mellon university;0.60303030303
+interdisciplinary center for neural computation;university of california berkeley;0.105555555556
+nec;concordia university;0.166666666667
+max planck society;state university of new york system;0.1
+max planck society;university of california san diego;0.842857142857
+carnegie mellon university;university of washington;0.530050505051
+columbia university;university of waterloo;0.0126582278481
+johns hopkins university;johns hopkins university;0.525
+microsoft;university of california san diego;0.361904761905
+microsoft;university of california san francisco;0.0238095238095
+stanford university;universite de montreal;0.2
+university of toronto;university of california berkeley;0.784722222222
+microsoft;national university of singapore;0.06170668607
+arizona state university;georgia institute of technology;0.0714285714286
+university of california irvine;university of california irvine;1.12857142857
+microsoft;hebrew university of jerusalem;0.191666666667
+laval university;carnegie mellon university;0.365079365079
+laval university;university of toronto;0.0277777777778
+laval university;university of waterloo;0.0555555555556
+laval university;university of amsterdam;0.0277777777778
+ibm;australian national university;0.533333333333
+princeton university;university of glasgow;0.0588235294118
+university of california berkeley;max planck society;0.125
+massachusetts institute of technology;stanford university;1.36008403361
+university college london;university college london;0.790079365079
+university of washington;stanford university;0.516666666667
+university of washington;ibm;0.1
+national university of singapore;university of kentucky;0.125
+institute for theoretical computer science;hebrew university of jerusalem;0.0833333333333
+institute for theoretical computer science;at t;0.0833333333333
+institute for theoretical computer science;nec;0.0833333333333
+institute for theoretical computer science;university of tokyo;0.0625
+institute for theoretical computer science;mind institute;0.1875
+carnegie mellon university;brown university;0.648412698413
+microsoft;mitsubishi electric research laboratories;0.0555555555556
+university of toronto;ecole polytechnique federale de lausanne;0.111111111111
+university of stirling;university of sydney;0.0769230769231
+university of toronto;university of toronto;2.95271765272
+university of california;nec;0.25
+university of pennsylvania;at t labs;1.07619047619
+mit lincoln laboratory;carnegie mellon university;0.142857142857
+stanford university;max planck society;0.428185703186
+microsoft;university of chicago;0.0357142857143
+microsoft;london school of economics and political science;0.111111111111
+microsoft;university of washington;0.362155388471
+karlsruhe institute of technology;carnegie mellon university;0.0588235294118
+university of california san diego;ge global research;0.0217391304348
+university of california san diego;university of illinois at urbana champaign;0.0652173913043
+center for neural science;howard hughes medical institute;0.1
+university of minnesota;george mason university;0.0909090909091
+university of stirling;max planck society;0.129166666667
+new york university;stanford university;0.111111111111
+google;mines paristech;0.0357142857143
+google;university of california berkeley;0.0357142857143
+microsoft;international computer science institute;0.202777777778
+brown university;french institute for research in computer science and automation;0.5
+max planck society;mind institute;0.05
+max planck society;ecole polytechnique federale de lausanne;0.130626780627
+max planck institute for intelligent systems;university of waikato;0.111111111111
+university of pennsylvania;spanish national research council;0.2
+max planck society;center for neural science;0.387731481481
+university of verona;university of illinois at urbana champaign;0.05
+rutgers university;university of california irvine;0.0833333333333
+microsoft;massachusetts institute of technology;0.726352339181
+max planck institute for intelligent systems;french institute for research in computer science and automation;0.222222222222
+university of california san diego;university of toronto;0.210869565217
+stony brook university;ibm;0.142857142857
+microsoft;university of oxford;0.868686868687
+howard hughes medical institute;massachusetts institute of technology;0.0869565217391
+university of southern california;ohio state university;0.0104166666667
+university of california irvine;ohio state university;0.0104166666667
+university of alberta;massachusetts institute of technology;0.357142857143
+texas a m university;free university of berlin;0.0384615384615
+texas a m university;humboldt university of berlin;0.0384615384615
+microsoft;university of cambridge;0.4875
+technical university of berlin;graz university of technology;0.129370629371
+charite;graz university of technology;0.0192307692308
+university of tokyo;graz university of technology;0.0192307692308
+free university of berlin;free university of berlin;0.285714285714
+university of toronto;at t labs;0.588095238095
+university of tokyo;university of tokyo;0.383333333333
+university of tokyo;osaka university;0.216666666667
+massachusetts institute of technology;microsoft;2.24218828557
+massachusetts institute of technology;bell labs;0.0416666666667
+university of toronto;statoil;0.125
+university of toronto;norwegian university of science and technology;0.125
+max planck society;brandeis university;0.325
+university of washington;university of southern california;0.166666666667
+max planck institute for intelligent systems;carnegie mellon university;0.566435370185
+massachusetts institute of technology;mitsubishi;0.372023809524
+massachusetts institute of technology;interval research corporation;0.0666666666667
+carnegie mellon university;york university;0.1
+max planck society;university of tubingen;0.125
+university of california santa cruz;hewlett packard;0.142857142857
+max planck institute for intelligent systems;uppsala university;0.0181818181818
+university of pennsylvania;university of mannheim;0.142857142857
+mcgill university;national university of defense technology;0.0277777777778
+university of alberta;national university of defense technology;0.0555555555556
+interdisciplinary center for neural computation;university of pennsylvania;0.1
+toyota technological institute;ibm;0.0625
+toyota technological institute;technion israel institute of technology;0.0625
+university of california berkeley;harvard university;0.0833333333333
+university of california berkeley;glendon college;0.0208333333333
+university of oxford;university of oxford;0.25
+hebrew university of jerusalem;washington university in st louis;0.0588235294118
+massachusetts institute of technology;national research council;0.0666666666667
+university college london;university of cambridge;0.25
+max planck society;siemens;0.190909090909
+technische universitat munchen;at t;0.0769230769231
+karlsruhe institute of technology;stanford university;0.0882352941176
+max planck society;ceremade;0.142857142857
+siemens healthcare;ibm;0.0133333333333
+university of maryland college park;ibm;0.0533333333333
+university of california san diego;microsoft;1.34259834369
+max planck society;perelman school of medicine at the university of pennsylvania;0.0344827586207
+university of california san diego;university college london;0.14852484472
+university of california san diego;university of california san francisco;0.0357142857143
+university of california berkeley;at t labs;0.296464646465
+max planck society;langley research center;0.0416666666667
+university of california berkeley;university of bonn;0.125
+max planck society;microsoft;2.47426491637
+max planck society;interdisciplinary center for neural computation;0.226623376623
+university of california san diego;yahoo;0.0416666666667
+university of california san diego;carnegie mellon university;0.64237405107
+university of rochester;technische universitat munchen;0.166666666667
+university of rochester;university of chicago;0.0833333333333
+university of california berkeley;university of basel;0.125
+microsoft;city university of hong kong;0.0434173669468
+columbia university;university of pavia;0.0126582278481
+university of edinburgh;university of southern california;0.333791208791
+university of glasgow;university of stirling;0.0625
+university of stirling;university of stirling;0.129166666667
+baylor university;university of washington;0.125
+institute for theoretical computer science;eth zurich;0.111111111111
+princeton university;mitsubishi electric;0.142857142857
+university of california berkeley;georgia tech research institute;0.111111111111
+max planck institute for intelligent systems;university of british columbia;0.147456709957
+stanford university;cornell university;0.171507760532
+university of arizona;nagoya university;0.047619047619
+university of pittsburgh;brown university;0.2
+princeton university;okinawa institute of science and technology;0.0333333333333
+princeton university;tamagawa university;0.0333333333333
+johns hopkins university;alcatel lucent;0.125
+university of adelaide;harvard university;0.125
+ludwig maximilian university of munich;massachusetts institute of technology;0.2
+max planck society;san francisco state university;0.0625
+university of california santa cruz;max planck society;0.0138888888889
+microsoft;cornell university;0.650186741363
+university of glasgow;university of electro communications;0.0416666666667
+university of glasgow;university of maryland college park;0.0208333333333
+university of stirling;university of electro communications;0.0416666666667
+university of stirling;university of maryland college park;0.0208333333333
+eth zurich;california institute of technology;0.166666666667
+university of pennsylvania;max planck society;0.452380952381
+university of pennsylvania;fraunhofer society;0.0357142857143
+university of oxford;max planck institute of psychiatry;0.125
+cornell university;stanford university;0.047619047619
+cornell university;hp labs;0.0952380952381
+victoria university of wellington;university of edinburgh;0.0769230769231
+university of alberta;university of massachusetts amherst;0.584126984127
+carnegie mellon university;university of hong kong;0.0208333333333
+carnegie mellon university;university of the district of columbia;0.0208333333333
+carnegie mellon university;university of maryland college park;0.0416666666667
+massachusetts institute of technology;university of washington;0.417692307692
+university of leoben;university of pittsburgh;0.0909090909091
+university of stirling;oregon health science university;0.0666666666667
+stanford university;university of massachusetts amherst;0.417929292929
+max planck society;katholieke universiteit leuven;0.177339901478
+courant institute of mathematical sciences;university of toronto;0.420227920228
+university of california berkeley;hp labs;0.0909090909091
+nec;harvard university;0.15
+nec;massachusetts general hospital;0.05
+university of geneva;university of california san diego;0.107142857143
+ecole normale superieure;university of california san diego;0.0357142857143
+ruhr university bochum;boston university;0.0526315789474
+toyota technological institute;los alamos national laboratory;0.133333333333
+max planck institute for intelligent systems;university of helsinki;0.197076023392
+ibm;ibm;0.694444444444
+carnegie mellon university;intel;0.25873015873
+carnegie mellon university;university of california berkeley;0.929761904762
+university of bonn;university of toronto;0.25
+siemens;sarnoff corporation;0.333333333333
+max planck society;university of sheffield;0.215384615385
+university of alberta;university of alberta;0.790674603175
+max planck society;hebrew university of jerusalem;1.36837773175
+max planck institute for intelligent systems;university of southern california;0.125
+hebrew university of jerusalem;university of california los angeles;0.0789473684211
+hebrew university of jerusalem;university of cambridge;0.0578947368421
+stanford university;columbia university;0.44965034965
+purdue university;purdue university;0.0860215053763
+purdue university;brown university;0.0430107526882
+idiap research institute;radboud university nijmegen;0.0769230769231
+massachusetts institute of technology;university college london;0.353968253968
+university of massachusetts amherst;university of california;0.0769230769231
+university of bonn;chicago metropolitan agency for planning;0.166666666667
+university of alberta;siemens;0.0125
+university of alberta;ludwig maximilian university of munich;0.0125
+university of alberta;tsinghua university;0.025
+university of alberta;university of arkansas at little rock;0.0125
+microsoft;kla tencor;0.166666666667
+university of edinburgh;university of edinburgh;1.125
+max planck society;university of rochester;0.108024691358
+ibm;stanford university;0.638888888889
+school of computer science university of manchester;massachusetts institute of technology;0.142857142857
+eth zurich;tel aviv university;0.138888888889
+eth zurich;eth zurich;0.169934640523
+technical university of berlin;university of california berkeley;0.130555555556
+fraunhofer society;university of california berkeley;0.025
+charite;university of california berkeley;0.025
+columbia university;university of toronto;0.0454545454545
+columbia university;massachusetts institute of technology;0.118718833909
+purdue university;ludwig maximilian university of munich;0.0769230769231
+helsinki university of technology;helsinki university of technology;0.47619047619
+ecole normale superieure de cachan;department of computer science university of illinois at urbana champaign;0.125
+max planck institute for intelligent systems;universite catholique de louvain;0.174242424242
+boston university;rockefeller university;0.0714285714286
+university of california berkeley;ibm;0.139423076923
+university of toronto;university of glasgow;0.0454545454545
+university of toronto;hamilton institute;0.106060606061
+stanford university;bose institute;0.0384615384615
+stanford university;centre national de la recherche scientifique;0.0384615384615
+victoria university of wellington;max planck society;0.230769230769
+university of california berkeley;university of tokyo;0.1
+microsoft;university of texas at austin;0.13025210084
+technische universitat munchen;massachusetts institute of technology;0.0769230769231
+hebrew university of jerusalem;university of michigan;0.0222222222222
+hebrew university of jerusalem;university of missouri;0.0222222222222
+toyota technological institute;university of michigan;0.0111111111111
+toyota technological institute;university of missouri;0.0111111111111
+french institute for research in computer science and automation;university of chicago;0.037037037037
+french institute for research in computer science and automation;university of waterloo;0.037037037037
+university of california san francisco;microsoft;1.0
+max planck society;university of oxford;0.712301587302
+max planck society;nvidia;0.2
+victoria university australia;research institute for advanced computer science;0.0833333333333
+rensselaer polytechnic institute;university of minnesota;0.0434782608696
+university of california san diego;johns hopkins university;0.0760869565217
+max planck society;rutgers university;0.572275641026
+new york university;university of edinburgh;0.0555555555556
+weizmann institute of science;university of toronto;0.0769230769231
+max planck society;karlsruhe institute of technology;0.141773504274
+max planck society;institute of statistical mathematics;0.265941295547
+stanford university;university of texas at austin;0.231818181818
+siemens;siemens;0.142857142857
+nec;university of pennsylvania;0.2
+ruhr university bochum;brown university;0.0263157894737
+ruhr university bochum;ecole polytechnique;0.0263157894737
+max planck society;university of edinburgh;0.655133755134
+max planck institute for intelligent systems;osaka university;0.0517543859649
+microsoft;royal institute of technology;0.0277777777778
+microsoft;xerox;0.0555555555556
+university of texas at austin;hebrew university of jerusalem;0.0614035087719
+university of texas at austin;google;0.0263157894737
+university of california san diego;university of texas at austin;0.142857142857
+microsoft;ohio state university;0.0325630252101
+purdue university;australian national university;0.0322580645161
+university of california san diego;california institute of technology;0.205314009662
+university of science and technology of china;carnegie mellon university;0.181818181818
+university of edinburgh;here;0.0769230769231
+university of massachusetts amherst;stanford university;0.0769230769231
+ca foscari university of venice;mcgill university;0.037037037037
+ca foscari university of venice;yale university;0.148148148148
+ca foscari university of venice;ca foscari university of venice;0.0740740740741
+stanford university;graz university of technology;0.0243902439024
+university of pennsylvania;carleton college;0.0625
+university of pennsylvania;university of wisconsin madison;0.0625
+princeton university;tel aviv university;0.0666666666667
+princeton university;nara institute of science and technology;0.0666666666667
+interdisciplinary center for neural computation;university of british columbia;0.267857142857
+university of adelaide;university of minnesota;0.0625
+university of adelaide;bell labs;0.0625
+microsoft;columbia university;0.583333333333
+university of california berkeley;california institute of technology;0.388095238095
+university of pennsylvania;department of computer science university of illinois at urbana champaign;0.2
+max planck society;university of southern california;0.452777777778
+max planck institute for intelligent systems;hebrew university of jerusalem;0.291666666667
+university of toronto;max planck society;0.306818181818
+hebrew university of jerusalem;emory university school of medicine;0.0384615384615
+hebrew university of jerusalem;california institute of technology;0.258241758242
+max planck society;queen mary university of london;0.25
+university college london;catholic university of leuven;0.125
+max planck society;alcatel lucent;0.111111111111
+max planck society;xerox;0.174242424242
+max planck institute for software systems;santa fe institute;0.0392156862745
+max planck institute for software systems;university of new mexico;0.0196078431373
+max planck institute for intelligent systems;intel;0.0769230769231
+university of california san diego;massachusetts institute of technology;0.464942907334
+carnegie mellon university;institute of statistical mathematics;0.211111111111
+stony brook university;university of texas at austin;0.0714285714286
+microsoft;hewlett packard;0.133098400651
+carnegie mellon university;university of southern california;0.111111111111
+brown university;brown university;0.884444444444
+ecole normale superieure;university of toronto;0.0444444444444
+ecole normale superieure;brown university;0.0222222222222
+max planck society;french institute for research in computer science and automation;0.408333333333
+university of california berkeley;department of engineering university of cambridge;0.125
+carnegie mellon university;institute for advanced study;0.25
+ruhr university bochum;university of helsinki;0.0526315789474
+ruhr university bochum;university of california san diego;0.0526315789474
+stanford university;microsoft;0.440709688347
+university of washington;ecole polytechnique federale de lausanne;0.111111111111
+university of california san diego;at t labs;0.245580808081
+university of illinois at urbana champaign;hebrew university of jerusalem;0.03125
+university of illinois at urbana champaign;columbia university;0.0625
+university of illinois at urbana champaign;princeton university;0.03125
+university of illinois at urbana champaign;at t labs;0.25
+university of southern california;university of southern california;0.0208333333333
+university of california irvine;university of southern california;0.0208333333333
+max planck society;tokyo institute of technology;0.243452380952
+duke university;los alamos national laboratory;0.0555555555556
+duke university;hunter college;0.0555555555556
+university of california san diego;university of california san diego;0.909383430579
+max planck society;sant anna school of advanced studies;0.0175438596491
+universite de montreal;california institute of technology;0.0714285714286
+universite de montreal;jet propulsion laboratory;0.0714285714286
+max planck society;florida international university;0.1
+university of potsdam;at t;0.133333333333
+university of potsdam;university of california berkeley;0.0666666666667
+university of toronto;university of california;0.531385281385
+max planck institute for intelligent systems;department of engineering science university of oxford;0.0681818181818
+helsinki university of technology;university college london;0.142857142857
+rutgers university;brown university;0.0555555555556
+massachusetts institute of technology;max planck society;0.236111111111
+free university of berlin;graz university of technology;0.464285714286
+free university of berlin;forschungszentrum julich;0.107142857143
+university of california berkeley;georgia institute of technology;0.244444444444
+los alamos national laboratory;at t;0.125
+hebrew university of jerusalem;oregon health science university;0.03125
+ibm;university of california santa cruz;0.0625
+ibm;university of helsinki;0.0625
+university of edinburgh;massachusetts institute of technology;0.291666666667
+instituto superior tecnico;massachusetts institute of technology;0.111111111111
+eth zurich;indiana university bloomington;0.111111111111
+ecole normale superieure;university of geneva;0.0833333333333
+ecole normale superieure;ecole normale superieure;0.0277777777778
+tel aviv university;university of louisville;0.125
+university of alberta;tokyo institute of technology;0.0416666666667
+university of alberta;keio university;0.0416666666667
+max planck society;at t labs;1.00696248196
+carnegie mellon university;duke university;0.203594771242
+technical university of berlin;stanford university;0.0375
+technical university of berlin;university of california los angeles;0.01875
+technical university of berlin;ecole normale superieure;0.01875
+fraunhofer society;stanford university;0.0125
+fraunhofer society;university of california los angeles;0.00625
+fraunhofer society;ecole normale superieure;0.00625
+charite;stanford university;0.0125
+charite;university of california los angeles;0.00625
+charite;ecole normale superieure;0.00625
+university of toronto;hebrew university of jerusalem;0.378787878788
+max planck institute for intelligent systems;moscow state university;0.0555555555556
+johns hopkins university;technical university of denmark;0.0454545454545
+johns hopkins university;delhi technological university;0.0454545454545
+johns hopkins university;california institute of technology;0.494949494949
+georgia institute of technology;carnegie mellon university;0.0714285714286
+hebrew university of jerusalem;university of washington;0.112745098039
+hebrew university of jerusalem;microsoft;0.487745098039
+max planck institute for intelligent systems;university of north carolina at chapel hill;0.118055555556
+massachusetts institute of technology;university of toronto;0.291666666667
+max planck society;instituto politecnico nacional;0.125
+apple inc;university of california berkeley;0.0588235294118
+university college london;max planck society;0.450549450549
+max planck society;brown university;0.841443278943
+max planck institute for intelligent systems;university of washington;0.32060994561
+toyota technological institute;university of southern california;0.1
+courant institute of mathematical sciences;carnegie mellon university;0.188034188034
+microsoft;lockheed missiles and space company;0.0833333333333
+hebrew university of jerusalem;university of south florida;0.0526315789474
+johns hopkins university;trw inc;0.1
+interdisciplinary center for neural computation;massachusetts institute of technology;0.291666666667
+microsoft;peking university;0.144068627451
+microsoft;international institute of information technology hyderabad;0.08125
+university of california san diego;new york university;0.0555555555556
+idiap research institute;george mason university;0.0769230769231
+max planck society;university of western ontario;0.0714285714286
+max planck institute for intelligent systems;eotvos lorand university;0.0416666666667
+university of colorado boulder;university of warwick;0.25
+arizona state university;technion israel institute of technology;0.214285714286
+university of massachusetts amherst;carnegie mellon university;0.333333333333
+university of california san diego;university of oxford;0.329192546584
+university of california irvine;university of toronto;0.1
+johns hopkins university;stmicroelectronics;0.111111111111
+free university of berlin;fraunhofer society;0.0714285714286
+michigan state university;technion israel institute of technology;0.133333333333
+princeton university;tokyo institute of technology;0.0196078431373
+princeton university;university of california irvine;0.0637254901961
+princeton university;national university of singapore;0.0196078431373
+hebrew university of jerusalem;national institute of standards and technology;0.125
+max planck society;technische universitat darmstadt;0.18253968254
+microsoft;brown university;1.18253968254
+stanford university;university of florida;0.0694444444444
+university of california santa cruz;university of florida;0.0138888888889
+iowa state university;at t;0.0416666666667
+iowa state university;university of california berkeley;0.0416666666667
+iowa state university;national university of singapore;0.0833333333333
+columbia university;university of washington;0.103567318757
+university of pennsylvania;microsoft;1.0746031746
+university of pennsylvania;stanford university;0.342857142857
+max planck institute for intelligent systems;stanford university;0.454724442224
+ecole normale superieure de cachan;new york university;0.125
+max planck society;rensselaer polytechnic institute;0.124542124542
+max planck institute for intelligent systems;trinity college;0.0266666666667
+max planck society;trinity college;0.0309956709957
+yahoo;university of chicago;0.166666666667
+microsoft;tsinghua university;0.227681395139
+university college london;university of chicago;0.236111111111
+university of pennsylvania;california institute of technology;1.23571428571
+karlsruhe institute of technology;karlsruhe institute of technology;0.0588235294118
+max planck institute for software systems;paris diderot university;0.0147058823529
+max planck institute for software systems;chicago metropolitan agency for planning;0.0147058823529
+max planck institute for software systems;centre national de la recherche scientifique;0.0735294117647
+max planck institute for software systems;ensae paristech;0.0147058823529
+university of california san diego;queen s university;0.0786749482402
+university of california san diego;university of western ontario;0.0859213250518
+laval university;university of massachusetts amherst;0.0714285714286
+laval university;mississippi state university;0.0714285714286
+university of california san francisco;nec;0.255555555556
+university of california san francisco;international school for advanced studies;0.0666666666667
+siemens healthcare;stanford university;0.00666666666667
+siemens healthcare;xerox;0.00666666666667
+university of maryland college park;stanford university;0.0266666666667
+university of maryland college park;xerox;0.0266666666667
+siemens healthcare;max planck society;0.0133333333333
+university of maryland college park;max planck society;0.0533333333333
+stony brook university;university of sussex;0.0357142857143
+stony brook university;visual sciences;0.0357142857143
+stony brook university;university of illinois at urbana champaign;0.0714285714286
+university of california santa cruz;university of helsinki;0.271428571429
+university of california santa cruz;university of california;0.1
+stony brook university;harvard medical school;0.0714285714286
+carnegie mellon university;mississippi state university;0.1
+university of california san diego;university of california;0.590838509317
+stanford university;chinese academy of sciences;0.05
+max planck institute for intelligent systems;beijing normal university;0.128205128205
+mitsubishi electric;university college london;0.0833333333333
+mitsubishi electric;at t labs;0.0833333333333
+ibm;duke university;0.111111111111
+university of california san diego;university of washington;0.2375
+howard hughes medical institute;university of cambridge;0.0869565217391
+university of southern california;max planck society;0.0104166666667
+university of california irvine;max planck society;0.0104166666667
+max planck society;eth zurich;0.333333333333
+university of california san diego;boston university;0.0555555555556
+universite de montreal;university of toronto;0.142857142857
+university of edinburgh;carnegie mellon university;0.153846153846
+university of alberta;university of paderborn;0.0625
+university of alberta;stanford university;0.260912698413
+princeton university;northeastern university;0.0666666666667
+nec;university of washington;0.125
+johns hopkins university;philips;0.125
+max planck institute for human development;max planck institute for human development;0.480769230769
+max planck institute for human development;university of bonn;0.153846153846
+institute for theoretical computer science;howard hughes medical institute;0.891025641026
+university of pittsburgh;howard hughes medical institute;0.0576923076923
+laval university;laval university;0.396825396825
+computer laboratory university of cambridge;microsoft;0.166666666667
+ecole normale superieure;hong kong university of science and technology;0.0555555555556
+ecole normale superieure;xerox;0.0555555555556
+national university of singapore;carnegie mellon university;0.125
+max planck society;leipzig university;0.0625
+max planck society;ludwig maximilian university of munich;0.489718614719
+columbia university;siemens;0.0909090909091
+university of glasgow;case western reserve university;0.0625
+university of stirling;case western reserve university;0.0625
+stanford university;university of toronto;0.0909090909091
+max planck society;university of bristol;0.213636363636
+max planck society;university of bonn;0.310101010101
+austrian research institute for artificial intelligence;salk institute for biological studies;0.166666666667
+microsoft;mississippi state university;0.1
+hebrew university of jerusalem;max planck society;0.315079365079
+toyota technological institute;max planck society;0.211111111111
+hebrew university of jerusalem;trinity college;0.0444444444444
+toyota technological institute;trinity college;0.0222222222222
+idiap research institute;cornell university;0.333333333333
+jordan university of science and technology;robotics institute;0.0434782608696
+victoria university australia;university of cambridge;0.0833333333333
+victoria university australia;university of washington;0.0833333333333
+rensselaer polytechnic institute;stanford university;0.0434782608696
+max planck society;cornell university;0.637408887409
+weizmann institute of science;weizmann institute of science;0.487179487179
+hebrew university of jerusalem;university of texas southwestern medical center;1.0
+technical university of berlin;free university of berlin;0.303613053613
+max planck society;toros university;0.0333333333333
+royal holloway university of london;at t;0.0416666666667
+royal holloway university of london;university of california berkeley;0.0208333333333
+royal holloway university of london;cornell university;0.0625
+microsoft;duke university;0.486607142857
+massachusetts institute of technology;technion israel institute of technology;0.125
+university of bonn;boston university;0.0416666666667
+university of bonn;honda;0.0416666666667
+university of bonn;university of sheffield;0.0833333333333
+university of texas at austin;stanford university;0.030701754386
+max planck institute for intelligent systems;university college london;0.201923076923
+stanford university;indian institute of science;0.25
+brown university;university of michigan;0.0222222222222
+microsoft;yahoo;0.127906162465
+columbia university;university of bern;0.0274261603376
+columbia university;columbia university;0.00632911392405
+columbia university;university of oslo;0.0316455696203
+university of ottawa;royal holloway university of london;0.25
+university of ottawa;university of ottawa;0.25
+purdue university;massachusetts institute of technology;0.0322580645161
+university of edinburgh;beckman institute for advanced science and technology;0.125
+duke university;carnegie mellon university;0.18253968254
+duke university;university of british columbia;0.111111111111
+nanjing university;university of rochester;0.142857142857
+arizona state university;california institute of technology;0.0714285714286
+stanford university;university of oxford;0.168191056911
+stanford university;california institute of technology;0.132520325203
+stanford university;princeton university;0.108130081301
+university college london;dartmouth college;0.111111111111
+university of washington;university of washington;1.08888888889
+australian national university;monash university;0.125
+university of adelaide;university of adelaide;0.125
+university of alberta;mcgill university;0.0833333333333
+national university of singapore;duke university;0.0625
+max planck society;florida state university;0.156782106782
+saarland university;florida state university;0.0714285714286
+university of colorado boulder;university of california santa cruz;0.2
+max planck institute for intelligent systems;university of california santa cruz;0.0104166666667
+max planck society;university of cambridge;0.143191311612
+university of waterloo;stanford university school of medicine;0.0625
+university of waterloo;international computer science institute;0.125
+hebrew university of jerusalem;university of pennsylvania;0.0588235294118
+krasnow institute for advanced study;krasnow institute for advanced study;0.142857142857
+microsoft;mines paristech;0.0178571428571
+university college london;johns hopkins university;0.25
+department of engineering university of cambridge;lsi corporation;0.2
+university of pennsylvania;boston university;0.125
+university of pennsylvania;university of maryland college park;0.125
+stanford university;hebrew university of jerusalem;0.171612466125
+stanford university;university of california berkeley;0.92509469697
+courant institute of mathematical sciences;university college london;0.0470085470085
+max planck society;university of minnesota;0.27833000333
+university of california santa cruz;university of california santa cruz;0.314285714286
+stony brook university;massachusetts institute of technology;0.0714285714286
+royal holloway university of london;ibm;0.015625
+royal holloway university of london;university of southampton;0.015625
+royal holloway university of london;merrill lynch;0.015625
+royal holloway university of london;university of california davis;0.015625
+howard hughes medical institute;university of california;1.0
+idiap research institute;hebrew university of jerusalem;0.030303030303
+idiap research institute;at t;0.030303030303
+idiap research institute;nec;0.030303030303
+universite de montreal;universite de montreal;0.0714285714286
+idiap research institute;universite de montreal;0.0714285714286
+university of toronto;at t;0.35873015873
+interdisciplinary center for neural computation;at t labs;0.142857142857
+purdue university;arizona state university;0.0322580645161
+purdue university;university of toronto;0.0430107526882
+massachusetts institute of technology;university of california santa cruz;0.0555555555556
+massachusetts institute of technology;university of helsinki;0.0555555555556
+massachusetts institute of technology;princeton university;0.423412698413
+french institute for research in computer science and automation;pasteur institute;0.0119047619048
+french institute for research in computer science and automation;university of oxford;0.0714285714286
+max planck society;technical university of berlin;0.212072649573
+max planck society;control group;0.222222222222
+johns hopkins university;ibm;0.125
+max planck society;west virginia university;0.0246913580247
+max planck society;national institute for occupational safety and health;0.0123456790123
+max planck society;university of fribourg;0.142857142857
+massachusetts institute of technology;brown university;0.624587912088
+max planck institute for intelligent systems;robotics institute;0.0909090909091
+carnegie mellon university;texas a m university;0.0714285714286
+microsoft;pennsylvania state university;0.0714285714286
+iowa state university;vanderbilt university;0.0833333333333
+university of pennsylvania;hebrew university of jerusalem;0.321428571429
+university of pennsylvania;massachusetts institute of technology;0.271825396825
+max planck society;los alamos national laboratory;0.277777777778
+hebrew university of jerusalem;siemens;0.566666666667
+max planck society;oregon state university;0.147727272727
+max planck society;university of bahrain;0.0833333333333
+university of washington;university of toronto;0.0805555555556
+university of washington;banting and best department of medical research;0.225
+ben gurion university of the negev;mitre corporation;0.1
+university of toronto;nec;0.047619047619
+max planck institute for intelligent systems;university of florida;0.0833333333333
+max planck institute for intelligent systems;at t labs;0.0580808080808
+max planck society;fraunhofer society;0.166017316017
+max planck society;charite;0.0542857142857
+boston university;institute for advanced study;0.0714285714286
+university of california berkeley;stanford university;0.655769230769
+university of california berkeley;university of north carolina at chapel hill;0.0673076923077
+hebrew university of jerusalem;ben gurion university of the negev;0.0588235294118
+massachusetts institute of technology;university of california santa barbara;0.160317460317
+massachusetts institute of technology;mitsubishi electric;0.0627450980392
+microsoft;ben gurion university of the negev;0.15
+jordan university of science and technology;carnegie mellon university;0.063768115942
+apple inc;apple inc;0.0588235294118
+max planck institute for intelligent systems;university of maryland college park;0.0416666666667
+max planck society;humboldt university of berlin;0.0833333333333
+carnegie mellon university;at t labs;0.124242424242
+carnegie mellon university;binghamton university;0.111111111111
+massachusetts institute of technology;university of kentucky;0.142857142857
+nec;university of lausanne;0.0222222222222
+nec;nec;0.209444444444
+australian national university;brown university;0.0333333333333
+australian national university;australian national university;0.0333333333333
+interdisciplinary center for neural computation;arizona state university;0.0769230769231
+carnegie mellon university;microsoft;0.611111111111
+max planck institute for intelligent systems;mitre corporation;0.0119047619048
+max planck society;mitre corporation;0.0119047619048
+max planck institute for intelligent systems;monash university;0.0238095238095
+max planck institute for intelligent systems;nanjing university;0.0119047619048
+max planck society;monash university;0.0238095238095
+max planck society;nanjing university;0.0119047619048
+howard hughes medical institute;university of western australia;0.0869565217391
+department of engineering science university of oxford;university of california;0.111111111111
+harvard university;university of minnesota;0.03125
+harvard university;bell labs;0.09375
+australian national university;university of geneva;0.0555555555556
+australian national university;catholic university of leuven;0.0555555555556
+university of arizona;university of california los angeles;0.0238095238095
+university of arizona;brown university;0.0396825396825
+princeton university;massachusetts institute of technology;0.223902894491
+princeton university;baylor college of medicine;0.0222222222222
+princeton university;university of fribourg;0.0222222222222
+australian national university;university of washington;0.125
+max planck institute for human development;hec paris;0.0625
+university of pennsylvania;tampere university of technology;0.111111111111
+university of california berkeley;university of british columbia;0.0845238095238
+university of california berkeley;wadsworth center;0.125
+university of toronto;courant institute of mathematical sciences;0.111111111111
+massachusetts institute of technology;university of oxford;0.580847338936
+department of engineering university of cambridge;microsoft;0.5
+university of california irvine;university of rochester;0.0911458333333
+university of california irvine;marion merrell dow;0.0833333333333
+stanford university;universidade federal de minas gerais;0.0347222222222
+stanford university;smith kettlewell institute;0.0347222222222
+university of california santa cruz;universidade federal de minas gerais;0.00694444444444
+university of california santa cruz;smith kettlewell institute;0.00694444444444
+iowa state university;carnegie mellon university;0.0833333333333
+institute for theoretical computer science;brandeis university;0.361111111111
+helsinki university of technology;university of cambridge;0.111111111111
+university of washington;university of california san diego;0.272727272727
+university of toronto;university of sheffield;0.122159090909
+university of toronto;technical university of berlin;0.03125
+university of pennsylvania;ibm;0.279761904762
+nec;ibm;0.0416666666667
+university of pennsylvania;texas instruments;0.0416666666667
+nec;texas instruments;0.0416666666667
+cornell university;cornell university;0.38253968254
+cornell university;columbia university;0.0714285714286
+university of alberta;microsoft;0.111111111111
+university of california berkeley;new york university;0.225
+carnegie mellon university;university of california;0.285353535354
+microsoft;oxford brookes university;0.0394736842105
+apple inc;mit lincoln laboratory;0.117647058824
+max planck society;national taiwan university;0.0988095238095
+max planck society;yahoo;0.156748575499
+max planck society;mit sloan school of management;0.142857142857
+max planck institute for intelligent systems;university of california berkeley;0.276119366744
+google;national taiwan university of science and technology;0.0714285714286
+nec;university of toronto;0.279166666667
+nec;university of illinois at urbana champaign;0.0666666666667
+microsoft;google;0.0434173669468
+technical university of berlin;university of alberta;0.0909090909091
+university of pennsylvania;university of edinburgh;0.2
+stanford university;university of alberta;0.030303030303
+toyota technological institute;microsoft;0.1
+royal holloway university of london;max planck society;0.125
+brown university;oregon state university;0.0714285714286
+brown university;university of california irvine;0.0714285714286
+interdisciplinary center for neural computation;duke university school of medicine;0.0769230769231
+nec;microsoft;0.566666666667
+university college london;university of wisconsin madison;0.05
+columbia university;university of wisconsin madison;0.05
+massachusetts institute of technology;university of southern california;0.236111111111
+university of texas at austin;iowa state university;0.0350877192982
+university of texas at austin;technion israel institute of technology;0.0350877192982
+university of texas at austin;princeton university;0.0526315789474
+columbia university;university of the west of england;0.0126582278481
+johns hopkins university;michigan state university;0.1
+max planck institute for intelligent systems;pierre and marie curie university;0.0138888888889
+max planck institute for intelligent systems;pacific institute;0.0138888888889
+stanford university;university of mannheim;0.0243902439024
+stanford university;department of engineering university of cambridge;0.0400152439024
+max planck institute for intelligent systems;north carolina state university;0.0375
+max planck institute for intelligent systems;university of wisconsin madison;0.0894230769231
+max planck institute for intelligent systems;university of mannheim;0.0125
+max planck institute for intelligent systems;human genome sequencing center;0.0375
+university of california irvine;university of helsinki;0.166666666667
+technical university of berlin;fraunhofer society;0.267132867133
+technical university of berlin;charite;0.0461538461538
+charite;fraunhofer society;0.0153846153846
+charite;charite;0.0230769230769
+university of tokyo;fraunhofer society;0.0153846153846
+university of tokyo;charite;0.0230769230769
+idiap research institute;fraunhofer society;0.125
+laval university;duke university;0.0555555555556
+laval university;brown university;0.0555555555556
+universite de montreal;microsoft;0.111111111111
+eth zurich;university of zurich;0.53431372549
+purdue university;pompeu fabra university;0.0384615384615
+purdue university;graduate school of management;0.0384615384615
+hebrew university of jerusalem;autonomous university of madrid;0.0833333333333
+hebrew university of jerusalem;ecole normale superieure;0.0833333333333
+university of pennsylvania;robotics institute;0.142857142857
+boston university;boston university;0.214285714286
+eth zurich;ruhr university bochum;0.0588235294118
+max planck society;technion israel institute of technology;0.175
+massachusetts institute of technology;hebrew university of jerusalem;0.467261904762
+stanford university;yale school of medicine;0.0192307692308
+stanford university;wayne state university school of medicine;0.0576923076923
+university of liege;university of birmingham;0.0769230769231
+rensselaer polytechnic institute;microsoft;0.333333333333
+french institute for research in computer science and automation;max planck society;0.148148148148
+french institute for research in computer science and automation;university of paris sud;0.0925925925926
+jordan university of science and technology;oregon state university;0.0217391304348
+jordan university of science and technology;university of bahrain;0.0217391304348
+max planck institute for intelligent systems;bowling green state university;0.0769230769231
+university of waterloo;cornell university;0.5
+university of california berkeley;idiap research institute;0.05
+siemens healthcare;university of sao paulo;0.00444444444444
+siemens healthcare;carnegie mellon university;0.00888888888889
+university of maryland college park;university of sao paulo;0.0177777777778
+university of maryland college park;carnegie mellon university;0.0355555555556
+university of alberta;robotics institute;0.111111111111
+max planck society;innogenetics;0.025
+max planck society;rega institute for medical research;0.0916666666667
+universite de montreal;university college london;0.150793650794
+york university;university college london;0.0119047619048
+university of pittsburgh;university college london;0.0357142857143
+universite de montreal;wadsworth center;0.0238095238095
+york university;wadsworth center;0.0119047619048
+university of pittsburgh;wadsworth center;0.0357142857143
+french institute for research in computer science and automation;university of liege;0.0681818181818
+university of liege;french institute for research in computer science and automation;0.0681818181818
+max planck society;yale school of medicine;0.0413793103448
+idiap research institute;university of texas at austin;0.0909090909091
+stanford university;bosch;0.0333333333333
+mitsubishi electric;stanford university;0.0833333333333
+mitsubishi electric;carnegie mellon university;0.0833333333333
+max planck institute for intelligent systems;university at buffalo;0.0357142857143
+max planck society;university at buffalo;0.0357142857143
+ruhr university bochum;aston university;0.0526315789474
+hebrew university of jerusalem;massachusetts institute of technology;0.33025210084
+hebrew university of jerusalem;michigan state university;0.0936507936508
+ibm;north carolina state university;0.111111111111
+university of southern california;nec;0.0104166666667
+university of california irvine;nec;0.0104166666667
+university of southern california;ruhr university bochum;0.00520833333333
+university of southern california;university of zurich;0.00520833333333
+university of california irvine;ruhr university bochum;0.00520833333333
+university of california irvine;university of zurich;0.00520833333333
+max planck institute for intelligent systems;university of leeds;0.1
+max planck institute for intelligent systems;istituto italiano di tecnologia;0.111111111111
+university of glasgow;helen wills neuroscience institute;0.0625
+university of stirling;helen wills neuroscience institute;0.0625
+baylor university;microsoft;0.125
+university of edinburgh;columbia university;0.121978021978
+university of pennsylvania;university of bremen;0.0833333333333
+university of pennsylvania;weizmann institute of science;0.184523809524
+university of pennsylvania;tel aviv university;0.0416666666667
+microsoft;tufts university;0.142857142857
+university of california berkeley;harvard medical school;0.0357142857143
+university of california berkeley;french institute for research in computer science and automation;0.0714285714286
+arizona state university;los alamos national laboratory;0.0238095238095
+arizona state university;university of california san diego;0.047619047619
+stanford university;university of manchester;0.0487804878049
+rutgers university;university of toronto;0.111111111111
+university of california irvine;stanford university;0.416666666667
+university of california irvine;massachusetts institute of technology;0.251875
+university of california irvine;whitehead institute;0.02
+johns hopkins university;university of chicago;0.125
+microsoft;oki electric industry;0.05
+microsoft;nara institute of science and technology;0.05
+university of adelaide;stanford university;0.125
+ludwig maximilian university of munich;university of toronto;0.2
+university of california san diego;hebrew university of jerusalem;0.0789141414141
+university of california san diego;at t;0.184343434343
+university of california san diego;tel aviv university;0.0277777777778
+university of california san diego;university of london;0.290909090909
+ecole polytechnique federale de lausanne;university of bonn;0.166666666667
+university of pennsylvania;yale university;0.142857142857
+max planck society;university of california irvine;0.0654761904762
+max planck society;national university of singapore;0.168253968254
+university of toronto;university of edinburgh;0.0625
+university of toronto;university college london;0.517261904762
+georgia institute of technology;alcatel lucent;0.0714285714286
+georgia institute of technology;honda;0.0714285714286
+massachusetts institute of technology;yale university;0.116666666667
+university of liege;vienna university of economics and business;0.0448717948718
+university of liege;technische universitat munchen;0.025641025641
+university of liege;ludwig maximilian university of munich;0.0833333333333
+university of science and technology sana a;north carolina state university;0.25
+university of science and technology sana a;texas instruments;0.25
+max planck society;georgia institute of technology;0.459210526316
+carnegie mellon university;sarnoff corporation;0.0909090909091
+university of leoben;brown university;0.0909090909091
+carnegie mellon university;yale university;0.1
+radboud university nijmegen;radboud university nijmegen;0.583333333333
+university of zurich;brandeis university;0.333333333333
+siemens;max planck society;0.285714285714
+university of washington;georgetown university;0.101851851852
+university of washington;massachusetts institute of technology;0.239057239057
+university of washington;university of arizona;0.0185185185185
+howard hughes medical institute;courant institute of mathematical sciences;0.0434782608696
+carnegie mellon university;university of edinburgh;0.0909090909091
+carnegie mellon university;california institute of technology;0.0909090909091
+department of engineering science university of oxford;massachusetts institute of technology;0.111111111111
+max planck society;delft university of technology;0.166666666667
+texas a m university;helsinki university of technology;0.0769230769231
+baylor university;at t labs;0.125
+microsoft;aston university;0.166666666667
+massachusetts institute of technology;university of massachusetts amherst;0.05
+max planck institute for intelligent systems;princeton university;0.124494949495
+university of california berkeley;eth zurich;0.0714285714286
+massachusetts institute of technology;university of chicago;0.110416666667
+max planck institute for intelligent systems;science college;0.0909090909091
+university of alberta;university of amsterdam;0.0625
+max planck institute for intelligent systems;abu dhabi indian school;0.025
+ibm;massachusetts institute of technology;0.003125
+ibm;carnegie mellon university;0.003125
+ibm;yale university;0.00625
+ibm;indian institute of science;0.003125
+university of southampton;massachusetts institute of technology;0.003125
+university of southampton;carnegie mellon university;0.003125
+university of southampton;yale university;0.00625
+university of southampton;indian institute of science;0.003125
+merrill lynch;massachusetts institute of technology;0.003125
+merrill lynch;carnegie mellon university;0.003125
+merrill lynch;yale university;0.00625
+merrill lynch;indian institute of science;0.003125
+university of california davis;massachusetts institute of technology;0.003125
+university of california davis;carnegie mellon university;0.003125
+university of california davis;yale university;0.00625
+university of california davis;indian institute of science;0.003125
+university of pennsylvania;bell labs;0.0277777777778
+michigan state university;stanford university;0.366666666667
+school of computer science university of manchester;university of toronto;0.142857142857
+institute for theoretical computer science;university of sao paulo;0.25
+university of massachusetts amherst;ecole polytechnique de montreal;0.0833333333333
+carnegie mellon university;ludwig maximilian university of munich;0.0714285714286
+university of california berkeley;university of massachusetts amherst;0.275
+hebrew university of jerusalem;university of california santa cruz;0.3
+hebrew university of jerusalem;university of helsinki;0.1
+interdisciplinary center for neural computation;university of copenhagen;0.1
+max planck society;university of pennsylvania;0.695833333333
+mit lincoln laboratory;fraunhofer society;0.142857142857
+max planck society;vision sciences inc;0.333333333333
+hebrew university of jerusalem;rice university;0.0588235294118
+microsoft;utrecht university;0.1
+carnegie mellon university;university of wisconsin madison;0.194444444444
+max planck society;university of manchester;0.174196174196
+victoria university australia;aston university;0.0833333333333
+massachusetts institute of technology;university of california;0.933823529412
+stanford university;university of california santa cruz;0.0373983739837
+max planck society;university of new mexico;0.0344827586207
+max planck society;daimler ag;0.0666666666667
+university of pennsylvania;hong kong university of science and technology;0.0416666666667
+university of pennsylvania;shanghai jiao tong university;0.125
+massachusetts institute of technology;university of british columbia;0.31862745098
+university college london;university of wales;0.025
+columbia university;university of wales;0.025
+nec;university of sheffield;0.1875
+university of washington;university of pennsylvania;0.0277777777778
+institute for theoretical computer science;university of cambridge;0.5
+university of california san diego;robotics institute;0.166666666667
+university of southern california;microsoft;0.0104166666667
+university of california irvine;microsoft;0.486607142857
+robotics institute;binghamton university;0.25
+max planck society;rolls royce holdings;0.125
+hebrew university of jerusalem;at t;0.222222222222
+hebrew university of jerusalem;nec;0.188034188034
+columbia university;eth zurich;0.0632911392405
+stanford university;brown university;0.0681818181818
+university of illinois at urbana champaign;carnegie mellon university;0.25
+howard hughes medical institute;university of washington;0.0909090909091
+max planck society;european food safety authority;0.00350877192982
+max planck society;international agency for research on cancer;0.00701754385965
+max planck society;imperial college london;0.123391812865
+ibm;at t;0.166666666667
+university of pennsylvania;johns hopkins university;0.166666666667
+australian national university;nec;0.111111111111
+university of vienna;university of michigan health system;0.0555555555556
+stanford university;ge global research;0.0243902439024
+rutgers university;university of california berkeley;0.255555555556
+rutgers university;max planck society;0.25
+university of california san diego;microstrategy;0.0714285714286
+university of california san diego;university of rochester;0.0714285714286
+university of toronto;university of amsterdam;0.0571428571429
+university of toronto;leiden university;0.0285714285714
+university of toronto;astrazeneca;0.0285714285714
+university of toronto;radboud university nijmegen;0.0285714285714
+princeton university;university of cambridge;0.0588235294118
+max planck society;ecole centrale de nantes;0.142857142857
+tel aviv university;university of texas at austin;0.125
+university of california berkeley;university of pennsylvania;0.125
+ecole polytechnique federale de lausanne;ecole polytechnique federale de lausanne;0.166666666667
+columbia university;stanford university;0.890909090909
+university college london;university of toronto;0.333333333333
+university of toronto;stanford university;0.254761904762
+university of toronto;carnegie mellon university;0.57123015873
+helsinki university of technology;university of groningen;0.111111111111
+hebrew university of jerusalem;ibm;0.235714285714
+hebrew university of jerusalem;university of southampton;0.0357142857143
+hebrew university of jerusalem;merrill lynch;0.0357142857143
+hebrew university of jerusalem;university of california davis;0.0357142857143
+massachusetts institute of technology;xerox;0.129166666667
+university of sheffield;microsoft;0.25
+rensselaer polytechnic institute;national university of singapore;0.333333333333
+victoria university australia;university of toronto;0.0833333333333
+university of waterloo;max planck society;0.5
+max planck society;weill cornell medical college;0.155723905724
+new york university;university of pennsylvania;0.037037037037
+new york university;university of york;0.0185185185185
+carnegie mellon university;siemens;0.05
+max planck society;free university of berlin;0.1625
+university of washington;university of manitoba;0.2
+max planck society;hartford hospital;0.0275862068966
+cornell university;university of washington;0.3
+max planck institute for intelligent systems;state university of new york system;0.0208333333333
+max planck institute for intelligent systems;university of oxford;0.0208333333333
+humboldt state university;stanford university;0.5
+humboldt state university;carnegie mellon university;0.166666666667
+interdisciplinary center for neural computation;max planck society;0.0555555555556
+max planck society;university of california san francisco;0.1
+harvard university;rutgers university;0.03125
+harvard university;at t;0.03125
+international university cambodia;washington state university;0.666666666667
+international university cambodia;university of victoria;0.333333333333
+universite de montreal;stanford university;0.0714285714286
+max planck society;university of alberta;0.246565934066
+university of massachusetts amherst;university of pennsylvania;0.153846153846
+ca foscari university of venice;university of vienna;0.148148148148
+ca foscari university of venice;university of trieste;0.037037037037
+university of sheffield;university of cambridge;0.0277777777778
+university of sheffield;medical research council;0.0833333333333
+rutgers university;duke university;0.0555555555556
+max planck society;institute of company secretaries of india;0.00833333333333
+purdue university;university of california berkeley;0.153846153846
+hebrew university of jerusalem;university of california berkeley;0.108823529412
+university of california santa cruz;boston university;0.142857142857
+universite de montreal;at t;0.111111111111
+microsoft;university of michigan;0.0714285714286
+microsoft;rice university;0.0714285714286
+university of edinburgh;microsoft;0.975
+max planck institute for intelligent systems;brown university;0.0625
+university of alberta;university of california san diego;0.166666666667
+max planck society;university of oslo;0.25
+max planck institute for intelligent systems;university of toronto;0.0666666666667
+victoria university of wellington;microsoft;0.153846153846
+university of pennsylvania;georgia institute of technology;0.25
+max planck institute for software systems;yahoo;0.0441176470588
+max planck institute for software systems;carnegie mellon university;0.0147058823529
+university of toronto;brown university;0.638888888889
+toyota technological institute;northwestern university;0.1
+max planck society;university of california santa barbara;0.161111111111
+french institute for research in computer science and automation;universite de montreal;0.0555555555556
+max planck society;university of pisa;0.025641025641
+university of illinois at urbana champaign;mitsubishi electric research laboratories;0.111111111111
+university of geneva;cornell university;0.107142857143
+ecole normale superieure;cornell university;0.102380952381
+universite de montreal;google;0.0357142857143
+universite de montreal;rwth aachen university;0.0357142857143
+idiap research institute;google;0.0357142857143
+idiap research institute;rwth aachen university;0.0357142857143
+max planck institute for intelligent systems;vrije universiteit brussel;0.00657894736842
+max planck institute for intelligent systems;vilnius university;0.00657894736842
+max planck institute for intelligent systems;max planck institute for mathematics;0.00657894736842
+max planck institute for intelligent systems;radboud university nijmegen;0.116228070175
+university of california san diego;university of wisconsin madison;0.0625
+university of pennsylvania;university of connecticut;0.25
+university of toronto;california institute of technology;0.1
+university of toronto;jet propulsion laboratory;0.1
+university of southern california;harvard medical school;0.0104166666667
+university of california irvine;harvard medical school;0.110416666667
+university of southern california;queen s university;0.0104166666667
+university of california irvine;queen s university;0.0104166666667
+carnegie mellon university;robert gordon university;0.0909090909091
+max planck society;michigan state university;0.0864197530864
+hebrew university of jerusalem;carnegie mellon university;0.568421052632
+hebrew university of jerusalem;baylor college of medicine;0.0350877192982
+columbia university;scr;0.0042194092827
+columbia university;ecole polytechnique federale de lausanne;0.0084388185654
+columbia university;imec;0.0126582278481
+university of illinois at urbana champaign;university of toronto;0.180555555556
+university of illinois at urbana champaign;university of illinois at urbana champaign;0.0902777777778
+university of illinois at urbana champaign;honda;0.0902777777778
+max planck institute for intelligent systems;technion israel institute of technology;0.0666666666667
+microsoft;intel;0.0322580645161
+stanford university;university of sao paulo;0.00609756097561
+stanford university;weizmann institute of science;0.122682926829
+stanford university;courant institute of mathematical sciences;0.00609756097561
+stanford university;nec;0.256097560976
+university of arizona;french institute for research in computer science and automation;0.0952380952381
+university of bonn;university of bonn;0.166666666667
+max planck society;university of sydney;0.275091575092
+max planck society;loyola marymount university;0.108974358974
+idiap research institute;idiap research institute;0.413461538462
+stanford university;rowland institute for science;0.1
+universite de montreal;university of edinburgh;0.111111111111
+massachusetts institute of technology;at t corporation;0.0833333333333
+ibm;department of computer science university of illinois at urbana champaign;0.125
+massachusetts institute of technology;at t labs;0.342948717949
+massachusetts institute of technology;georgia institute of technology;0.03125
+massachusetts institute of technology;mitsubishi electric research laboratories;0.0606617647059
+carnegie mellon university;university college london;0.144444444444
+university of glasgow;royal institute of technology;0.0625
+university of stirling;royal institute of technology;0.0625
+universite de montreal;at t labs;0.126984126984
+microsoft;colorado school of mines;0.142857142857
+max planck society;weizmann institute of science;0.0357142857143
+max planck society;ecole normale superieure;0.138095238095
+university of california berkeley;university of south florida;0.0416666666667
+university of toronto;national university of singapore;0.15484006734
+boston university;harvard medical school;0.0238095238095
+boston university;technion israel institute of technology;0.047619047619
+krasnow institute for advanced study;university of southampton;0.0714285714286
+krasnow institute for advanced study;duke university school of medicine;0.0714285714286
+max planck society;institut mines telecom;0.0333333333333
+tel aviv university;salk institute for biological studies;0.1
+university of california san diego;university of cambridge;0.0217391304348
+university of leoben;rutgers university;0.25
+university of leoben;university of california san diego;0.0227272727273
+university of california berkeley;princeton university;0.184769397269
+massachusetts institute of technology;national institute of standards and technology;0.125
+university of alberta;at t labs;0.177777777778
+university of california irvine;university of alberta;0.142857142857
+max planck society;university of erlangen nuremberg;0.0833333333333
+max planck society;university of new south wales;0.00909090909091
+australian national university;cornell university;0.2
+max planck society;information technology institute;0.1
+max planck society;helsinki university of technology;0.116666666667
+carnegie mellon university;mcgill university;0.142857142857
+interdisciplinary center for neural computation;university of edinburgh;0.25
+rutgers university;lawrence berkeley national laboratory;0.0833333333333
+ruhr university bochum;helsinki university of technology;0.0526315789474
+ibm;pennsylvania state university;0.126736111111
+microsoft;university of california;0.489801375095
+interdisciplinary center for neural computation;university of michigan;0.105555555556
+microsoft;french institute for research in computer science and automation;0.0833333333333
+university of texas at austin;microsoft;0.0526315789474
+howard hughes medical institute;university of manchester;0.0217391304348
+howard hughes medical institute;cornell university;0.0217391304348
+carnegie mellon university;hitachi;0.0117647058824
+intel;university of illinois at urbana champaign;0.125
+department of engineering science university of oxford;university of north dakota;0.111111111111
+columbia university;lehigh university;0.0126582278481
+ohio state university;ohio state university;0.142857142857
+university of copenhagen;university of antwerp;0.111111111111
+university of copenhagen;national taiwan university;0.0666666666667
+university of copenhagen;yahoo;0.0444444444444
+microsoft;university of pennsylvania;0.2875
+university of california san diego;university of british columbia;0.198412698413
+university of pennsylvania;international computer science institute;0.05
+university of edinburgh;ibm;0.0769230769231
+max planck institute for intelligent systems;university of pennsylvania;0.0138888888889
+max planck institute for intelligent systems;catholic university of leuven;0.0277777777778
+princeton university;stanford university;0.0861344537815
+university of sheffield;york university;0.111111111111
+max planck institute for human development;stanford university;0.0625
+institute for theoretical computer science;keck school of medicine of usc;0.0384615384615
+university of pittsburgh;keck school of medicine of usc;0.0384615384615
+max planck society;fred hutchinson cancer research center;0.037037037037
+computer laboratory university of cambridge;max planck society;0.333333333333
+cornell university;university of illinois at urbana champaign;0.142857142857
+max planck society;department of computer science university of illinois at urbana champaign;0.0166666666667
+max planck society;courant institute of mathematical sciences;0.0333333333333
+university of alberta;insead;0.166666666667
+massachusetts institute of technology;beckman institute for advanced science and technology;0.0625
+stanford university;french institute for research in computer science and automation;0.0868902439024
+microsoft;the chinese university of hong kong;0.0714285714286
+technical university of berlin;university of helsinki;0.075
+fraunhofer society;university of helsinki;0.025
+charite;university of helsinki;0.025
+university of glasgow;delft university of technology;0.0625
+university of stirling;delft university of technology;0.0625
+stanford university;university of southern california;0.251262626263
+university of michigan;stanford graduate school of business;0.333333333333
+toyota technological institute;at t;0.125
+university of toronto;cornell university;0.214285714286
+mit lincoln laboratory;mit lincoln laboratory;0.142857142857
+university of california berkeley;university of minnesota;0.0568181818182
+university of pennsylvania;university of delaware;0.142857142857
+french institute for research in computer science and automation;tarbiat modares university;0.037037037037
+french institute for research in computer science and automation;university of gottingen;0.0246913580247
+french institute for research in computer science and automation;austrian academy of sciences;0.0123456790123
+microsoft;courant institute of mathematical sciences;0.0526315789474
+rensselaer polytechnic institute;at t;0.0434782608696
+max planck institute for software systems;institute of statistical mathematics;0.0588235294118
+university of california berkeley;university of konstanz;0.05
+university of california san francisco;iowa state university;0.0166666666667
+university of california san francisco;university of arizona;0.05
+google;ibm;0.0714285714286
+microsoft;university of california irvine;0.337121212121
+stony brook university;state university of new york system;0.214285714286
+nec;massachusetts institute of technology;0.295833333333
+max planck society;national institute of advanced industrial science and technology;0.249242424242
+max planck society;center for computational biology;0.25
+toyota technological institute;massachusetts institute of technology;0.1
+french institute for research in computer science and automation;sri international;0.0454545454545
+university of liege;sri international;0.0454545454545
+microsoft;harvard medical school;0.00625
+university of verona;massachusetts institute of technology;0.025
+university of verona;harvard medical school;0.025
+max planck society;texas instruments;0.0769230769231
+interdisciplinary center for neural computation;at t;0.168518518519
+interdisciplinary center for neural computation;nec;0.135185185185
+brown university;university of california berkeley;0.142857142857
+max planck society;indian statistical institute;0.05
+interdisciplinary center for neural computation;ibm;0.222222222222
+university of california san diego;ibm;0.0208333333333
+university of california san diego;toyota technological institute at chicago;0.0208333333333
+microsoft;bogazici university;0.1
+university of california berkeley;university of california irvine;0.18630952381
+at t labs;apple inc;0.166666666667
+columbia university;university of edinburgh;0.0126582278481
+howard hughes medical institute;vision sciences inc;0.0909090909091
+harvard university;university of groningen;0.0625
+university of glasgow;university of pittsburgh school of medicine;0.0625
+university of stirling;university of pittsburgh school of medicine;0.129166666667
+university of potsdam;max planck society;0.2
+helsinki university of technology;salk institute for biological studies;0.142857142857
+max planck institute for human development;university college london;0.0769230769231
+johns hopkins university;massachusetts institute of technology;0.111111111111
+max planck society;international school for advanced studies;0.037037037037
+max planck society;university of hawaii;0.05
+tel aviv university;university of new mexico;0.125
+university of california santa cruz;carnegie mellon university;0.223412698413
+stanford university;interval research corporation;0.0694444444444
+university of california santa cruz;interval research corporation;0.0138888888889
+mit lincoln laboratory;motorola;0.111111111111
+mcgill university;university of massachusetts amherst;0.0277777777778
+georgia institute of technology;mitsubishi;0.0714285714286
+microsoft;oregon state university;0.156565656566
+max planck institute for intelligent systems;at t;0.2
+university of maryland college park;siemens;0.181818181818
+university of maryland college park;rutgers university;0.0909090909091
+university of california san francisco;university of washington;0.0166666666667
+university of california san francisco;harvard university;0.0166666666667
+new york university;university of maryland college park;0.0555555555556
+max planck society;santa cruz institute for particle physics;0.0428571428571
+technion israel institute of technology;cornell university;0.25
+brown university;duke university;0.0833333333333
+stony brook university;stony brook university;0.428571428571
+university of bonn;ogi school of science and engineering;0.0833333333333
+university of texas at austin;institute of mathematics;0.0526315789474
+max planck institute for intelligent systems;twitter;0.0741758241758
+university of southern california;howard hughes medical institute;0.00520833333333
+university of southern california;forschungszentrum julich;0.00520833333333
+university of california irvine;howard hughes medical institute;0.00520833333333
+university of california irvine;forschungszentrum julich;0.00520833333333
+university of southern california;carleton college;0.0104166666667
+university of california irvine;carleton college;0.0104166666667
+university of southern california;university of exeter;0.0104166666667
+university of california irvine;university of exeter;0.0104166666667
+max planck society;university of north carolina at chapel hill;0.1
+max planck institute for intelligent systems;school of computer science university of manchester;0.0333333333333
+max planck society;school of computer science university of manchester;0.127777777778
+university of massachusetts amherst;university of california berkeley;0.21875
+university of massachusetts amherst;university of british columbia;0.03125
+harvard university;university of california los angeles;0.0625
+max planck society;university of canterbury;0.277777777778
+university of science and technology of china;universite de montreal;0.0909090909091
+max planck society;university of massachusetts lowell;0.00877192982456
+max planck society;radboud university nijmegen;0.355357142857
+arizona state university;alcatel lucent;0.0714285714286
+arizona state university;university of california los angeles;0.0892857142857
+university of arizona;university of oxford;0.047619047619
+rutgers university;microsoft;0.0555555555556
+universite de montreal;max planck society;0.222222222222
+michigan state university;university of california;0.1
+microsoft;jet propulsion laboratory;0.0714285714286
+hebrew university of jerusalem;oregon state university;0.1
+hebrew university of jerusalem;university of bahrain;0.1
+university of stirling;rockefeller university;0.0769230769231
+university of stirling;university of gothenburg;0.0769230769231
+microsoft;queens college;0.0588235294118
+toyota technological institute;hebrew university of jerusalem;0.125
+boston university;harvard university;0.0714285714286
+max planck institute for intelligent systems;ecole normale superieure;0.0666666666667
+technical university of berlin;microsoft;0.0833333333333
+university of tokyo;microsoft;0.166666666667
+max planck society;university of waterloo;0.252777777778
+interdisciplinary center for neural computation;stanford university;0.0892857142857
+idiap research institute;microsoft;0.391025641026
+university of leoben;university college london;0.0909090909091
+interdisciplinary center for neural computation;carnegie mellon university;0.05
+interdisciplinary center for neural computation;jordan university of science and technology;0.05
+toyota technological institute;toyota technological institute at chicago;0.236111111111
+french institute for research in computer science and automation;uganda revenue authority;0.0555555555556
+cornell university;university of texas at austin;0.1
+cornell university;massachusetts institute of technology;0.111111111111
+cornell university;university of bonn;0.222222222222
+duke university;hebrew university of jerusalem;0.0952380952381
+duke university;at t labs;0.047619047619
+carnegie mellon university;university of oxford;0.125
+ibm;university of toronto;0.333333333333
+massachusetts institute of technology;university of michigan;0.15625
+university of southern california;university of rochester;0.0078125
+university of southern california;center for neural science;0.0130208333333
+university of california irvine;center for neural science;0.0130208333333
+carnegie mellon university;tel aviv university;0.0980392156863
+intel;at t labs;0.125
+brown university;university of chicago;0.163333333333
+brown university;center for neural science;0.0133333333333
+columbia university;brandeis university;0.0189873417722
+columbia university;northwestern university;0.00632911392405
+columbia university;university of seville;0.00632911392405
+charite;free university of berlin;0.269230769231
+purdue university;university of edinburgh;0.0322580645161
+microsoft;toyota technological institute;0.0625
+max planck society;toyota technological institute;0.125
+university of colorado boulder;university of cambridge;0.25
+massachusetts institute of technology;purdue university;0.111111111111
+microsoft;adobe systems;0.0322580645161
+university of sheffield;ohio state university;0.111111111111
+university of vienna;college of william mary;0.0555555555556
+helsinki university of technology;max planck society;0.142857142857
+university of alberta;the chinese university of hong kong;0.0885416666667
+university of alberta;michigan state university;0.0364583333333
+ogi school of science and engineering;hebrew university of jerusalem;0.2
+idiap research institute;university of illinois at urbana champaign;0.125
+institute for theoretical computer science;northeastern university;0.0384615384615
+university of pittsburgh;northeastern university;0.0384615384615
+laval university;university of california berkeley;0.148148148148
+university of california berkeley;curtin university;0.133333333333
+massachusetts institute of technology;university of california los angeles;0.0138888888889
+massachusetts institute of technology;california institute of technology;0.270424836601
+university of california san diego;ohio state university;0.0587761674718
+university of california san diego;michigan state university;0.037037037037
+university of california san diego;indian institute of science;0.037037037037
+cornell university;at t labs;0.047619047619
+cornell university;princeton university;0.195238095238
+university of alberta;polytechnic university of turin;0.0416666666667
+university of alberta;university of california berkeley;0.0416666666667
+massachusetts institute of technology;universidade federal de minas gerais;0.114583333333
+massachusetts institute of technology;smith kettlewell institute;0.114583333333
+stanford university;siemens;0.0625
+stanford university;university of california san diego;0.0625
+microsoft;german research centre for artificial intelligence;0.0714285714286
+ecole polytechnique federale de lausanne;siemens;0.2
+max planck society;nagoya university;0.111111111111
+university of maryland college park;university of cambridge;0.099797979798
+jordan university of science and technology;flinders university;0.0434782608696
+university of alberta;northeastern university;0.111111111111
+microsoft;national taiwan university;0.0581932773109
+max planck society;new york university;0.0596929890033
+australian national university;ibm;0.1
+microsoft;university of california santa cruz;0.0125
+university of verona;university of california santa cruz;0.05
+max planck society;stanford university school of medicine;0.0818181818182
+university of edinburgh;burlington coat factory;0.325
+cornell university;university of california berkeley;0.144444444444
+carnegie mellon university;xerox;0.0588235294118
+university of california berkeley;university of chicago;0.0833333333333
+university of california san diego;instituto superior tecnico;0.276785714286
+max planck society;missouri university of science and technology;0.037037037037
+columbia university;brown university;0.0429612581511
+university of massachusetts amherst;robotics institute;0.125
+interdisciplinary center for neural computation;technical university of berlin;0.047619047619
+interdisciplinary center for neural computation;university of bristol;0.047619047619
+interdisciplinary center for neural computation;microsoft;0.347619047619
+harvard university;stanford university;0.0625
+duke university;microsoft;0.111111111111
+university of california san diego;university of central florida;0.0772946859903
+university of massachusetts amherst;at t labs;0.0769230769231
+university of toronto;mitsubishi electric research laboratories;0.25
+microsoft;rensselaer polytechnic institute;0.0322580645161
+max planck institute for intelligent systems;tokyo institute of technology;0.05
+university of toronto;salk institute for biological studies;0.111111111111
+university of arizona;microsoft;0.0952380952381
+max planck institute for intelligent systems;department of engineering university of cambridge;0.20101010101
+johns hopkins university;texas a m university;0.111111111111
+smith college;northeastern university;0.166666666667
+university of bremen;university of california berkeley;0.25
+university of pennsylvania;lehigh university;0.166666666667
+max planck society;university of manitoba;0.0166666666667
+max planck society;simon fraser university;0.05
+max planck institute for intelligent systems;ita software;0.0909090909091
+max planck society;insead;0.0625
+university of washington;mcgovern institute for brain research;0.0909090909091
+max planck society;stanford university medical center;0.125
+mit lincoln laboratory;florida institute of technology;0.142857142857
+max planck society;university of pittsburgh;0.0645833333333
+stanford university;university of bergen;0.0266181988743
+stanford university;european bioinformatics institute;0.0625
+university of sheffield;university of toronto;0.25
+lsi corporation;hebrew university of jerusalem;0.5
+microsoft;ogi school of science and engineering;0.0526315789474
+karlsruhe institute of technology;microsoft;0.0588235294118
+google;cornell university;0.0714285714286
+university of toronto;national taiwan university;0.0285714285714
+university of toronto;tsinghua university;0.0571428571429
+stony brook university;university of southern california;0.0714285714286
+university of pennsylvania;australian national university;0.1
+microsoft;universidade federal de minas gerais;0.0916666666667
+microsoft;smith kettlewell institute;0.0916666666667
+courant institute of mathematical sciences;new york university;0.0769230769231
+interdisciplinary center for neural computation;cornell university;0.0888888888889
+ohio state university;johns hopkins university;0.142857142857
+johns hopkins university;university of stirling;0.1
+idiap research institute;aalborg university;0.0769230769231
+university college london;at t;0.333333333333
+max planck institute for intelligent systems;hewlett packard;0.0416666666667
+university of california berkeley;tokyo institute of technology;0.0238095238095
+max planck institute for intelligent systems;maastricht university;0.05
+stanford university;university of british columbia;0.0365853658537
+max planck society;mitsubishi;0.225
+max planck institute for intelligent systems;university of edinburgh;0.122222222222
+princeton university;university of massachusetts amherst;0.117647058824
+university of massachusetts amherst;visual sciences;0.0416666666667
+university of massachusetts amherst;university college london;0.0416666666667
+instituto superior tecnico;microsoft;0.111111111111
+max planck institute for intelligent systems;rutgers university;0.0502525252525
+max planck institute for intelligent systems;duke university;0.0545454545455
+microsoft;university of verona;0.08
+national university of singapore;stanford university;0.1875
+national university of singapore;massachusetts institute of technology;0.0625
+massachusetts institute of technology;york university;0.0666666666667
+university of california santa cruz;massachusetts institute of technology;0.0208333333333
+hebrew university of jerusalem;interdisciplinary center for neural computation;0.166666666667
+technical university of berlin;university of tokyo;0.075
+fraunhofer society;university of tokyo;0.025
+charite;university of tokyo;0.025
+stanford university;beckman institute for advanced science and technology;0.0909090909091
+max planck institute for intelligent systems;university of california los angeles;0.0833333333333
+university of pennsylvania;university of sheffield;0.0208333333333
+university of pennsylvania;columbia university;0.0208333333333
+nec;columbia university;0.0208333333333
+university of toronto;weizmann institute of science;0.142857142857
+university of california berkeley;johns hopkins university;0.1
+microsoft;parc;0.111111111111
+max planck institute for intelligent systems;university of minnesota;0.0277777777778
+jordan university of science and technology;rutgers university;0.0434782608696
+tel aviv university;lund university;0.1
+karlsruhe institute of technology;salk institute for biological studies;0.0588235294118
+carnegie mellon university;instituto superior tecnico;0.0909090909091
+university of california san francisco;hebrew university of jerusalem;0.0222222222222
+university of california san francisco;at t;0.0222222222222
+siemens healthcare;university of toronto;0.00222222222222
+siemens healthcare;university of cambridge;0.00222222222222
+siemens healthcare;university of british columbia;0.00888888888889
+university of maryland college park;university of toronto;0.00888888888889
+university of maryland college park;university of british columbia;0.0355555555556
+stony brook university;california institute of technology;0.142857142857
+google;microsoft;0.0714285714286
+carnegie mellon university;university of british columbia;0.123611111111
+university of pennsylvania;technical university of berlin;0.0555555555556
+university of pennsylvania;university of bristol;0.0555555555556
+toyota technological institute;oxford brookes university;0.1
+university of california san diego;university of california irvine;0.0142857142857
+university of california san diego;university of liege;0.1
+max planck society;robotics institute;0.452380952381
+instituto politecnico nacional;ericsson;0.037037037037
+instituto politecnico nacional;judge rotenberg educational center;0.0740740740741
+university of washington;howard hughes medical institute;0.268518518519
+university of washington;hebrew university of jerusalem;0.0185185185185
+university of washington;university of california los angeles;0.0555555555556
+university of california san diego;bell labs;0.0511363636364
+university of california san diego;national university of singapore;0.0833333333333
+university of southern california;johns hopkins university;0.0138888888889
+university of california irvine;johns hopkins university;0.0138888888889
+max planck society;school of electronics and computer science university of southampton;0.2
+university of california los angeles;hebrew university of jerusalem;0.0833333333333
+university of california los angeles;at t;0.333333333333
+university of california los angeles;nec;0.0833333333333
+university of california berkeley;university of louisiana at lafayette;0.0625
+max planck society;university of london;0.276923076923
+university of california san diego;university of bristol;0.0555555555556
+max planck society;york university;0.0175438596491
+princeton university;university of california;0.142857142857
+max planck society;university of melbourne;0.111111111111
+university of vienna;ludwig institute for cancer research;0.037037037037
+university of vienna;centre national de la recherche scientifique;0.0185185185185
+rutgers university;rutgers university;0.138888888889
+university of california san diego;helsinki university of technology;0.205357142857
+idiap research institute;sarnoff corporation;0.125
+max planck institute for human development;microsoft;0.0625
+center for neural science;stanford university;0.05
+center for neural science;ibm;0.025
+center for neural science;university of exeter;0.05
+massachusetts institute of technology;boston college;0.125
+free university of berlin;university of oxford;0.0714285714286
+max planck society;university of delaware;0.142857142857
+max planck society;institute of science and technology austria;0.0238095238095
+paristech;university of california;0.0833333333333
+microsoft;ecole normale superieure;0.111111111111
+sri international;university of pennsylvania;0.25
+eth zurich;hebrew university of jerusalem;0.0588235294118
+eth zurich;university of massachusetts amherst;0.0588235294118
+georgia institute of technology;massachusetts institute of technology;0.0714285714286
+university of alberta;washington university in st louis;0.111111111111
+center for neural science;helsinki university of technology;0.142857142857
+idiap research institute;university of washington;0.173076923077
+hebrew university of jerusalem;brown university;0.0588235294118
+hebrew university of jerusalem;university of utah;0.0588235294118
+max planck institute for intelligent systems;university of liege;0.0138888888889
+technische universitat munchen;technische universitat munchen;0.153846153846
+university of california san diego;heriot watt university;0.0108695652174
+google;nec;0.0714285714286
+carnegie mellon university;french institute for research in computer science and automation;0.035
+technical university of berlin;university of oxford;0.0909090909091
+carnegie mellon university;university of bonn;0.495238095238
+french institute for research in computer science and automation;los alamos national laboratory;0.0555555555556
+university of puerto rico;university of toronto;0.0833333333333
+university of puerto rico;university of waterloo;0.0833333333333
+university of puerto rico;university of york;0.0833333333333
+university of puerto rico;university of alberta;0.0833333333333
+max planck society;university of wisconsin madison;0.95
+max planck institute for intelligent systems;helsinki university of technology;0.138596491228
+university of southern california;birkbeck university of london;0.0104166666667
+university of california irvine;birkbeck university of london;0.0104166666667
+max planck society;ohio state university;0.0266313932981
+max planck society;indian institute of science;0.0123456790123
+hebrew university of jerusalem;university of waikato;0.0526315789474
+microsoft;harvard university;0.84418767507
+microsoft;sapienza university of rome;0.0825630252101
+columbia university;national tsing hua university;0.0126582278481
+howard hughes medical institute;rutgers newark;0.030303030303
+howard hughes medical institute;washington state university;0.0606060606061
+university of seville;california institute of technology;0.05
+university of oslo;california institute of technology;0.05
+max planck society;european bioinformatics institute;0.142857142857
+university of science and technology of china;university of wisconsin madison;0.0909090909091
+max planck society;arizona state university;0.2
+university of california berkeley;lancaster university;0.0357142857143
+university of california berkeley;university of bristol;0.0357142857143
+nanjing university;university of waikato;0.142857142857
+max planck institute for intelligent systems;washington state university;0.1
+max planck institute for human development;university of oregon;0.0625
+university of toronto;florida institute of technology;0.142857142857
+hebrew university of jerusalem;cornell university;0.166666666667
+hebrew university of jerusalem;yale university;0.125
+university of california berkeley;mines paristech;0.047619047619
+university of california irvine;university of massachusetts amherst;0.5859375
+university of california santa cruz;microsoft;0.0138888888889
+stanford university;robotics institute;0.289141414141
+university of california santa cruz;robotics institute;0.0138888888889
+eth zurich;new mexico state university;0.0588235294118
+microsoft;university of leoben;0.0909090909091
+yahoo;max planck society;0.333333333333
+hebrew university of jerusalem;national institutes of health;0.0769230769231
+technische universitat munchen;york university;0.0769230769231
+french institute for research in computer science and automation;ruhr university bochum;0.037037037037
+karlsruhe institute of technology;jet propulsion laboratory;0.0294117647059
+university of california san diego;vienna university of technology;0.0217391304348
+university of california san francisco;university of cambridge;0.0666666666667
+massachusetts institute of technology;northeastern university;0.111111111111
+columbia university;university of west florida;0.2
+rutgers university;stanford university;0.1
+rutgers university;ibm;0.1
+courant institute of mathematical sciences;national university of singapore;0.0626780626781
+mitsubishi electric;university of california;0.333333333333
+howard hughes medical institute;university of texas at austin;0.0434782608696
+columbia university;ibm;0.05
+columbia university;university of southampton;0.05
+columbia university;merrill lynch;0.05
+columbia university;university of california davis;0.05
+university of seville;university of zurich;0.05
+university of oslo;university of zurich;0.05
+institute for theoretical computer science;institute for theoretical computer science;0.111111111111
+princeton university;princeton university;0.166666666667
+max planck institute for intelligent systems;university of glasgow;0.0333333333333
+max planck institute for intelligent systems;university of stirling;0.0166666666667
+arizona state university;stanford university;0.0357142857143
+arizona state university;ecole normale superieure;0.0178571428571
+university of arizona;university of illinois at urbana champaign;0.0714285714286
+max planck institute for human development;oregon research institute;0.0625
+center for neural science;university of california los angeles;0.0166666666667
+university of tokyo;north carolina state university;0.2
+ibm;seoul national university;0.166666666667
+massachusetts institute of technology;yahoo;0.0208333333333
+university of california berkeley;mitsubishi;0.125
+university of california berkeley;ohio state university;0.0833333333333
+hebrew university of jerusalem;indiana university;0.0588235294118
+hebrew university of jerusalem;tel aviv university;0.0588235294118
+university of toronto;university of strathclyde;0.030303030303
+university of tokyo;free university of berlin;0.185897435897
+max planck society;vrije universiteit brussel;0.046875
+max planck society;university of almeria;0.046875
+max planck society;clarkson university;0.03125
+stanford university;university of pennsylvania;0.0833333333333
+hebrew university of jerusalem;ecole normale superieure de cachan;0.0444444444444
+toyota technological institute;ecole normale superieure de cachan;0.0222222222222
+max planck society;jet propulsion laboratory;0.10101010101
+french institute for research in computer science and automation;istituto nazionale di fisica nucleare;0.00740740740741
+french institute for research in computer science and automation;university of geneva;0.0296296296296
+princeton university;helsinki university of technology;0.5
+jordan university of science and technology;university of paris;0.0434782608696
+jordan university of science and technology;university of helsinki;0.0434782608696
+university college london;university of pittsburgh;0.1
+university college london;university of california davis;0.1
+max planck society;mcgovern institute for brain research;0.0227272727273
+university of toronto;university of michigan;0.0416666666667
+microsoft;radboud university nijmegen;0.1
+rutgers university;fraunhofer society;0.0277777777778
+michigan state university;university of michigan;0.25
+university of texas at austin;university of california santa barbara;0.0175438596491
+university of texas at austin;new mexico state university;0.0175438596491
+university of texas at austin;massachusetts institute of technology;0.0728070175439
+massachusetts institute of technology;university of cambridge;0.236111111111
+ibm;royal holloway university of london;0.015625
+university of southampton;royal holloway university of london;0.015625
+merrill lynch;royal holloway university of london;0.015625
+university of california davis;royal holloway university of london;0.015625
+center for neural science;mcgill university;0.025
+center for neural science;queen s university;0.025
+center for neural science;carnegie mellon university;0.02
+center for neural science;massachusetts general hospital;0.03
+institute for theoretical computer science;massachusetts institute of technology;0.0769230769231
+university of pittsburgh;massachusetts institute of technology;0.276923076923
+free university of berlin;state university of new york system;0.214285714286
+michigan state university;purdue university;0.1
+university of california berkeley;microsoft;0.464782439782
+massachusetts institute of technology;university of california davis;0.0104166666667
+massachusetts institute of technology;ibm;0.0277777777778
+massachusetts institute of technology;weizmann institute of science;0.0138888888889
+weizmann institute of science;university of oxford;0.333333333333
+max planck society;university of notre dame;0.233333333333
+max planck society;chiang mai university;0.00892857142857
+massachusetts institute of technology;university of surrey;0.133333333333
+university of zurich;howard hughes medical institute;0.279411764706
+university of zurich;center for neural science;0.0294117647059
+mit lincoln laboratory;national institute of standards and technology;0.111111111111
+interdisciplinary center for neural computation;university of virginia;0.05
+microsoft;max planck institute for molecular plant physiology;0.0857142857143
+microsoft;university of florida;0.0571428571429
+university of stirling;vision sciences inc;0.0769230769231
+university of california;university of pennsylvania;0.0416666666667
+university of california;carnegie mellon university;0.0833333333333
+university of edinburgh;university of tokyo;0.2
+sri international;university of rochester;0.25
+max planck institute for intelligent systems;dartmouth college;0.0333333333333
+max planck society;dartmouth college;0.0333333333333
+stanford university;banting and best department of medical research;0.0230769230769
+stanford university;yale university;0.0538461538462
+university of liege;alcatel lucent;0.0769230769231
+rensselaer polytechnic institute;georgia institute of technology;0.0289855072464
+rensselaer polytechnic institute;carnegie mellon university;0.0579710144928
+max planck institute for software systems;georgia institute of technology;0.0588235294118
+max planck institute for software systems;stanford university;0.0588235294118
+university college london;microsoft;0.153846153846
+university of toronto;st bartholomew s hospital;0.333333333333
+australian national university;hebrew university of jerusalem;0.05
+australian national university;google;0.05
+nec;siemens;0.166666666667
+at t labs;stanford university;0.16
+at t labs;tel aviv university;0.04
+microsoft;chinese academy of sciences;0.04
+university of southern california;california institute of technology;0.0104166666667
+university of california irvine;california institute of technology;0.0104166666667
+stanford university;university of potsdam;0.25
+brown university;microsoft;0.0666666666667
+hebrew university of jerusalem;university of sydney;0.0105263157895
+hebrew university of jerusalem;complutense university of madrid;0.0105263157895
+columbia university;toshiba;0.0126582278481
+charite;ames research center;0.125
+university of ottawa;at t;0.5
+harvard university;university of adelaide;0.0625
+microsoft;australian national university;0.046875
+microsoft;centre national de la recherche scientifique;0.015625
+university of arizona;simon fraser university;0.047619047619
+university of california irvine;university of chicago;0.0833333333333
+university of california irvine;university of western ontario;0.0833333333333
+university of southampton;pennsylvania state university;0.015625
+merrill lynch;pennsylvania state university;0.015625
+university of california davis;pennsylvania state university;0.015625
+max planck institute for human development;university of missouri;0.0625
+university of toronto;university of california irvine;0.142857142857
+universite de montreal;ibm;0.111111111111
+university of tokyo;new jersey institute of technology;0.2
+princeton university;university of chicago;0.0294117647059
+princeton university;university of western ontario;0.0294117647059
+massachusetts institute of technology;university of texas at austin;0.0833333333333
+university of edinburgh;hp labs;0.166666666667
+max planck society;hong kong university of science and technology;0.0357142857143
+massachusetts institute of technology;sarnoff corporation;0.0666666666667
+university of california santa cruz;hebrew university of jerusalem;0.00694444444444
+university of toronto;ogi school of science and engineering;0.166666666667
+ecole polytechnique federale de lausanne;massachusetts institute of technology;0.0888888888889
+max planck institute for intelligent systems;cornell university;0.110119047619
+ecole normale superieure de cachan;yahoo;0.125
+university of liege;university of california berkeley;0.0769230769231
+beckman institute for advanced science and technology;beckman institute for advanced science and technology;0.444444444444
+beckman institute for advanced science and technology;university of florida;0.333333333333
+university of science and technology sana a;max planck society;0.25
+university of california san diego;university of california los angeles;0.114906832298
+max planck society;university of glasgow;0.0555555555556
+max planck society;maynooth university;0.0555555555556
+max planck society;norwegian university of science and technology;0.180555555556
+university of california santa cruz;california institute of technology;0.2
+microsoft;university of pittsburgh;0.0833333333333
+nec;new york university;0.1
+cornell university;university of california los angeles;0.166666666667
+university of liege;hungarian academy of sciences;0.0454545454545
+max planck society;carleton university;0.0769230769231
+technion israel institute of technology;at t;0.25
+massachusetts institute of technology;university of arizona;0.00980392156863
+massachusetts institute of technology;middle east technical university;0.00980392156863
+university of southern california;michigan state university;0.0104166666667
+university of california irvine;michigan state university;0.0104166666667
+carnegie mellon university;at t;0.0196078431373
+duke university;philips;0.111111111111
+max planck society;centre national de la recherche scientifique;0.127777777778
+ibm;ruhr university bochum;0.015625
+university of southampton;ruhr university bochum;0.015625
+merrill lynch;ruhr university bochum;0.015625
+university of california davis;ruhr university bochum;0.015625
+university of southampton;columbia university;0.015625
+merrill lynch;columbia university;0.015625
+university of california davis;columbia university;0.015625
+university of toronto;whitehead institute;0.0285714285714
+johns hopkins university;university of california santa barbara;0.0555555555556
+johns hopkins university;stanford university;0.0555555555556
+university of pennsylvania;ohio state university;0.0555555555556
+max planck society;university of virginia;0.0625
+max planck society;university of kansas;0.0625
+max planck society;pohang university of science and technology;0.111111111111
+max planck society;university of illinois at urbana champaign;0.102380952381
+microsoft;university of tampere;0.0588235294118
+university of pennsylvania;university of waterloo;0.142857142857
+center for neural science;brown university;0.142857142857
+university of waterloo;microsoft;0.125
+microsoft;rutgers university;0.1
+technische universitat munchen;university of california irvine;0.0769230769231
+karlsruhe institute of technology;university of washington;0.0588235294118
+university of california san diego;university of rhode island;0.0217391304348
+katholieke universiteit leuven;royal holloway university of london;0.0555555555556
+katholieke universiteit leuven;university of bristol;0.0555555555556
+weizmann institute of science;university of pennsylvania;0.0769230769231
+max planck society;indian institute of technology bombay;0.0384615384615
+university of geneva;stanford university;0.0178571428571
+university of geneva;hebrew university of jerusalem;0.0357142857143
+ecole normale superieure;stanford university;0.00595238095238
+ecole normale superieure;hebrew university of jerusalem;0.0119047619048
+max planck institute for intelligent systems;ludwig maximilian university of munich;0.0863095238095
+max planck institute for intelligent systems;university of alberta;0.0119047619048
+nec;universite catholique de louvain;0.166666666667
+nec;california institute of technology;0.25
+nec;jet propulsion laboratory;0.0833333333333
+university of illinois at urbana champaign;microsoft;0.125
+carnegie mellon university;university of california san diego;0.156035141329
+department of engineering science university of oxford;microsoft;0.222222222222
+carnegie mellon university;max planck society;0.111111111111
+stanford university;hewlett packard;0.0909090909091
+interdisciplinary center for neural computation;university of cambridge;0.111111111111
+interdisciplinary center for neural computation;university of california san diego;0.198412698413
+max planck society;wellcome trust;0.0519480519481
+max planck society;new york university school of medicine;0.004329004329
+max planck society;washington university school of medicine;0.595088819227
+max planck society;university of colorado denver;0.004329004329
+university of science and technology of china;max planck society;0.181818181818
+max planck society;university of ljubljana;0.0175438596491
+nanjing university;oregon state university;0.0714285714286
+nanjing university;university of california irvine;0.0714285714286
+university of alberta;tel aviv university;0.0333333333333
+ogi school of science and engineering;microsoft;0.2
+los alamos national laboratory;massachusetts institute of technology;0.325
+max planck society;istituto italiano di tecnologia;0.037037037037
+los alamos national laboratory;australian national university;0.325
+university of california irvine;max planck institute for human development;0.333333333333
+university of texas at austin;university of texas at austin;0.219298245614
+jordan university of science and technology;university of pittsburgh;0.0231884057971
+university of stirling;stanford university;0.0333333333333
+university of stirling;university of california;0.0333333333333
+wharton school of the university of pennsylvania;microsoft;0.1
+max planck society;max planck institute for molecular plant physiology;0.1
+cornell university;mitsubishi;0.166666666667
+university of verona;university of cambridge;0.05
+idiap research institute;university of edinburgh;0.181818181818
+university of pennsylvania;oregon state university;0.166666666667
+at t labs;new york university stern school of business;0.2
+microsoft;university of florence;0.025
+hebrew university of jerusalem;columbia university;0.169172932331
+ohio state university;university college london;0.142857142857
+university of glasgow;university of texas at austin;0.0625
+university of stirling;university of texas at austin;0.0625
+max planck institute for intelligent systems;eth zurich;0.0208333333333
+microsoft;mitsubishi electric;0.0161290322581
+microsoft;siemens;0.175115207373
+stanford university;interdisciplinary center for neural computation;0.0121951219512
+stanford university;university of chicago;0.0243902439024
+french institute for research in computer science and automation;international university cambodia;0.0833333333333
+free university of berlin;new york state department of health;0.0714285714286
+university of pennsylvania;mitsubishi;0.0555555555556
+max planck society;university of leicester;0.0185185185185
+university of toronto;technische universitat darmstadt;0.111111111111
+max planck society;tsinghua university;0.138095238095
+max planck society;university of michigan;0.119047619048
+iowa state university;beckman institute for advanced science and technology;0.0416666666667
+iowa state university;mitsubishi electric;0.0416666666667
+purdue university;university of new south wales;0.0769230769231
+university of california;university of washington;0.0416666666667
+university of california;at t labs;0.0833333333333
+hebrew university of jerusalem;auburn university;0.0588235294118
+school of electrical and electronic engineering university of manchester;max planck society;0.142857142857
+university of washington;center for neural science;0.25
+max planck institute for software systems;max planck institute for software systems;0.0588235294118
+max planck institute for intelligent systems;university of cambridge;0.025641025641
+center for neural science;university of california santa barbara;0.05
+center for neural science;mitsubishi electric;0.05
+university of minnesota;university of southern california;0.0909090909091
+max planck institute for intelligent systems;mitsubishi electric research laboratories;0.0769230769231
+university of california santa cruz;royal holloway university of london;0.0666666666667
+university of california santa cruz;university of new mexico;0.0666666666667
+university of pennsylvania;university college london;0.2
+max planck society;university of medicine and dentistry of new jersey;0.00689655172414
+interdisciplinary center for neural computation;duke university;0.153846153846
+technion israel institute of technology;ibm;0.125
+technion israel institute of technology;carnegie mellon university;0.125
+university of geneva;university of oxford;0.0535714285714
+ecole normale superieure;university of oxford;0.0178571428571
+mitsubishi electric;ibm;0.166666666667
+university of bonn;ecole polytechnique federale de lausanne;0.0833333333333
+columbia university;university of hawaii;0.0126582278481
+purdue university;stanford university;0.0752688172043
+university of toronto;university of california los angeles;0.1
+university of massachusetts amherst;university of texas at austin;0.0769230769231
+stanford university;helsinki university of technology;0.2
+max planck institute for intelligent systems;chicago metropolitan agency for planning;0.0208333333333
+max planck institute for intelligent systems;ecole centrale paris;0.0138888888889
+max planck institute for intelligent systems;university of crete;0.0277777777778
+max planck society;allen institute for brain science;0.0666666666667
+princeton university;university of rochester;0.0666666666667
+ludwig maximilian university of munich;max planck society;0.2
+hebrew university of jerusalem;radboud university nijmegen;0.0588235294118
+paristech;ecole normale superieure;0.0833333333333
+columbia university;insead;0.030303030303
+columbia university;university college london;0.160606060606
+university of california berkeley;smith kettlewell institute;0.0416666666667
+university of washington;visual sciences;0.0454545454545
+university of toronto;university of pennsylvania;0.142857142857
+idiap research institute;university of california berkeley;0.0865384615385
+krasnow institute for advanced study;howard hughes medical institute;0.142857142857
+carnegie mellon university;howard hughes medical institute;0.047619047619
+max planck institute for software systems;university of california santa barbara;0.0588235294118
+weizmann institute of science;saarland university;0.0769230769231
+stony brook university;beckman institute for advanced science and technology;0.0357142857143
+stony brook university;university of rochester;0.107142857143
+carnegie mellon university;eth zurich;0.097619047619
+carnegie mellon university;technical university of berlin;0.047619047619
+carnegie mellon university;fraunhofer society;0.0952380952381
+university of toronto;banting and best department of medical research;0.277777777778
+university of alberta;ibm;0.0714285714286
+cornell university;microsoft;0.0666666666667
+rutgers university;university of washington;0.0208333333333
+rutgers university;columbia university;0.125
+rutgers university;nec;0.0208333333333
+instituto politecnico nacional;university of texas at austin;0.111111111111
+university of pennsylvania;toyota technological institute at chicago;0.166666666667
+university of illinois at urbana champaign;cardiff university;0.111111111111
+max planck institute for intelligent systems;it university of copenhagen;0.0357142857143
+max planck society;it university of copenhagen;0.0357142857143
+humboldt state university;university college london;0.166666666667
+humboldt state university;at t labs;0.166666666667
+stony brook university;university of virginia;0.142857142857
+microsoft;olivetti;0.333333333333
+rensselaer polytechnic institute;rensselaer polytechnic institute;0.125
+rensselaer polytechnic institute;university of pennsylvania;0.15625
+rensselaer polytechnic institute;tel aviv university;0.0625
+rensselaer polytechnic institute;toyota technological institute;0.03125
+max planck institute for intelligent systems;adobe systems;0.00833333333333
+max planck society;adobe systems;0.00416666666667
+university of california san diego;oregon state university;0.1
+university of california san diego;university of bahrain;0.1
+max planck society;university of freiburg;0.111111111111
+max planck institute for intelligent systems;visual sciences;0.05
+max planck institute for intelligent systems;university of texas at austin;0.0714285714286
+university of copenhagen;bell labs;0.111111111111
+university of california san diego;beckman institute for advanced science and technology;0.0495169082126
+idiap research institute;texas instruments;0.0769230769231
+universite de montreal;mitsubishi electric;0.142857142857
+university of california berkeley;university of oxford;0.246428571429
+university of california berkeley;university of illinois at urbana champaign;0.0714285714286
+max planck institute for intelligent systems;university of sussex;0.0125
+max planck institute for intelligent systems;xi an jiaotong university;0.0125
+max planck institute for intelligent systems;center for complex systems and brain sciences;0.0125
+max planck institute for intelligent systems;indian institute of science;0.0125
+arizona state university;university of california;0.0714285714286
+stanford university;university of cambridge;0.0243902439024
+university of alberta;universite de montreal;0.0625
+university of alberta;brown university;0.147619047619
+university of pittsburgh;stanford university;0.2
+max planck institute for human development;temple university;0.0769230769231
+institute for theoretical computer science;california institute of technology;0.25
+columbia university;university of california berkeley;0.0909090909091
+stanford university;university of california;0.0909090909091
+max planck institute for intelligent systems;kyoto university;0.0555555555556
+idiap research institute;at t labs;0.0288461538462
+max planck society;harvard medical school;0.229166666667
+french institute for research in computer science and automation;ecole normale superieure;0.037037037037
+apple inc;university of toronto;0.0294117647059
+apple inc;massachusetts institute of technology;0.0294117647059
+victoria university australia;california institute of technology;0.0833333333333
+rensselaer polytechnic institute;university of queensland;0.0434782608696
+max planck institute for software systems;purdue university;0.0588235294118
+carnegie mellon university;university of warwick;0.0909090909091
+university of stirling;max planck institute for medical research;0.129166666667
+technical university of berlin;max planck society;0.129370629371
+university of alberta;university of california;0.142857142857
+brown university;technion israel institute of technology;0.0833333333333
+university of geneva;university of california berkeley;0.0535714285714
+ecole normale superieure;university of california berkeley;0.0845238095238
+university college london;harvard university;0.025
+columbia university;harvard university;0.025
+max planck society;bristol myers squibb;0.0119047619048
+max planck society;dana farber cancer institute;0.0119047619048
+max planck society;whitehead institute;0.047619047619
+max planck society;brigham and women s hospital;0.0119047619048
+massachusetts institute of technology;university of sheffield;0.125
+max planck institute for intelligent systems;the chinese university of hong kong;0.157894736842
+max planck society;lawrence berkeley national laboratory;0.0181818181818
+max planck society;eunice kennedy shriver national institute of child health and human development;0.0363636363636
+university of bonn;oregon health science university;0.0833333333333
+university of bonn;fruit of islam;0.0277777777778
+university of bonn;brown university;0.0555555555556
+university of southern california;university of bristol;0.0208333333333
+university of california irvine;university of bristol;0.0208333333333
+carnegie mellon university;lamsade;0.0392156862745
+carnegie mellon university;sapienza university of rome;0.0196078431373
+robotics institute;salk institute for biological studies;0.125
+columbia university;max planck society;0.206329113924
+columbia university;paris descartes university;0.00632911392405
+university of seville;etsi;0.05
+university of oslo;etsi;0.05
+max planck society;tel aviv university;0.00438596491228
+max planck institute for intelligent systems;heidelberg university;0.0416666666667
+massachusetts institute of technology;brandeis university;0.1
+australian national university;kaist;0.125
+max planck institute for human development;umea university;0.0384615384615
+max planck institute for human development;uppsala university;0.0384615384615
+michigan state university;courant institute of mathematical sciences;0.1
+computer laboratory university of cambridge;university college london;0.25
+massachusetts institute of technology;augsburg college;0.09375
+university of california san diego;university of california berkeley;0.0454545454545
+university of california san diego;yale university;0.0909090909091
+university of alberta;ita software;0.242857142857
+french institute for research in computer science and automation;university of wisconsin madison;0.037037037037
+french institute for research in computer science and automation;georgia institute of technology;0.0185185185185
+microsoft;universite de montreal;0.0526315789474
+apple inc;philips;0.0588235294118
+carnegie mellon university;harvard medical school;0.108333333333
+university of california san diego;university of massachusetts amherst;0.0108695652174
+max planck society;indiana university;0.037037037037
+max planck society;northwestern university;0.185185185185
+university of minnesota;mitsubishi electric;0.0909090909091
+siemens healthcare;university of hong kong;0.00333333333333
+siemens healthcare;university of the district of columbia;0.00333333333333
+university of maryland college park;university of hong kong;0.0133333333333
+university of maryland college park;university of the district of columbia;0.0133333333333
+carnegie mellon university;ecole normale superieure;0.1
+nec;university of british columbia;0.0666666666667
+university of alberta;university of toronto;0.0952380952381
+max planck society;computer laboratory university of cambridge;0.0833333333333
+interdisciplinary center for neural computation;ohio state university;0.0833333333333
+interdisciplinary center for neural computation;michigan state university;0.0833333333333
+interdisciplinary center for neural computation;indian institute of science;0.0833333333333
+courant institute of mathematical sciences;courant institute of mathematical sciences;0.0769230769231
+instituto politecnico nacional;university of massachusetts amherst;0.037037037037
+instituto politecnico nacional;georgia institute of technology;0.0740740740741
+university of california berkeley;columbia university;0.0454545454545
+massachusetts institute of technology;university of edinburgh;0.0588235294118
+howard hughes medical institute;ames research center;0.0869565217391
+rensselaer polytechnic institute;massachusetts institute of technology;0.125
+university of california berkeley;haskins laboratories;0.125
+max planck society;picower institute for learning and memory;0.00584795321637
+max planck society;medical research council;0.0116959064327
+university of arizona;cornell university;0.047619047619
+australian national university;microsoft;0.5
+ludwig maximilian university of munich;university college london;0.2
+princeton university;university of wisconsin madison;0.0588235294118
+university of california berkeley;national institutes of health;0.0625
+university of edinburgh;university of notre dame;0.166666666667
+university of florida;university of california;0.333333333333
+massachusetts institute of technology;northwestern university;0.0625
+microsoft;university of tsukuba;0.05
+purdue university;michigan state university;0.0769230769231
+university of glasgow;cleveland state university;0.0625
+university of stirling;cleveland state university;0.0625
+university of stirling;stanford university school of medicine;0.0769230769231
+max planck society;beckman institute for advanced science and technology;0.0142857142857
+max planck society;indian department of telecommunications;0.00714285714286
+max planck society;university of bologna;0.0142857142857
+max planck society;sapienza university of rome;0.0214285714286
+hebrew university of jerusalem;stanford university school of medicine;0.0769230769231
+max planck society;department of engineering university of cambridge;0.0416666666667
+center for neural science;max planck society;0.1
+new york university;massachusetts institute of technology;0.111111111111
+weizmann institute of science;robotics institute;0.0769230769231
+stony brook university;university of oxford;0.0714285714286
+mcgill university;university of california berkeley;0.142857142857
+technical university of berlin;delft university of technology;0.0181818181818
+tel aviv university;tel aviv university;0.333333333333
+dallas museum of art;university of leoben;0.0277777777778
+dallas museum of art;university of alberta;0.0138888888889
+french institute for research in computer science and automation;university of leoben;0.0555555555556
+french institute for research in computer science and automation;university of alberta;0.0277777777778
+university of alberta;university of leoben;0.0277777777778
+stanford university;national institute of advanced industrial science and technology;0.0227272727273
+stanford university;university of tokyo;0.0227272727273
+max planck society;toyota technological institute at chicago;0.144444444444
+idiap research institute;interdisciplinary center for neural computation;0.0909090909091
+university of geneva;microsoft;0.0535714285714
+ecole normale superieure;microsoft;0.0178571428571
+max planck institute for intelligent systems;college of science and technology;0.0267857142857
+max planck institute for intelligent systems;faculty of information technology university džemal bijedic of mostar;0.00892857142857
+max planck society;college of science and technology;0.0267857142857
+max planck society;faculty of information technology university džemal bijedic of mostar;0.00892857142857
+toyota technological institute;pompeu fabra university;0.0555555555556
+max planck society;pennsylvania state university;0.0384615384615
+cornell university;university of science and technology sana a;0.111111111111
+university of pennsylvania;university of washington;0.25
+carnegie mellon university;oregon state university;0.111111111111
+microsoft;princeton university;0.154411764706
+howard hughes medical institute;nec;0.0909090909091
+ibm;university of london;0.140625
+university of southampton;university of london;0.015625
+merrill lynch;university of london;0.015625
+university of california davis;university of london;0.015625
+university of california berkeley;university of waterloo;0.0666666666667
+massachusetts institute of technology;columbia university;0.185897435897
+massachusetts institute of technology;rutgers university;0.0833333333333
+massachusetts institute of technology;alcatel lucent;0.0208333333333
+weizmann institute of science;university of illinois at urbana champaign;0.333333333333
+national university of singapore;university of amsterdam;0.125
+paristech;florida state university;0.0833333333333
+at t labs;hong kong university of science and technology;0.2
+mcgill university;university of mainz;0.0138888888889
+mcgill university;university of hertfordshire;0.0138888888889
+university of alberta;university of mainz;0.0277777777778
+university of alberta;university of hertfordshire;0.0277777777778
+university of toronto;tel aviv university;0.142857142857
+university of california berkeley;weizmann institute of science;0.0416666666667
+eth zurich;johns hopkins university;0.0588235294118
+georgia institute of technology;microsoft;0.0714285714286
+max planck society;parc;0.0227272727273
+university of california berkeley;parc;0.0681818181818
+university of california berkeley;university of edinburgh;0.1
+department of engineering university of cambridge;university of cambridge;0.2
+tel aviv university;brown university;0.1
+katholieke universiteit leuven;yahoo;0.0555555555556
+katholieke universiteit leuven;university college london;0.0555555555556
+new york university;brown university;0.0555555555556
+max planck institute for intelligent systems;ibm;0.0555555555556
+french institute for research in computer science and automation;university of california berkeley;0.0555555555556
+ecole normale superieure;university of waterloo;0.0333333333333
+ecole normale superieure;university of alberta;0.0333333333333
+university of illinois at urbana champaign;yale university;0.222222222222
+carnegie mellon university;university of south carolina;0.0294117647059
+carnegie mellon university;university of paderborn;0.0909090909091
+microsoft;seoul national university;0.00980392156863
+microsoft;university of british columbia;0.0196078431373
+purdue university;ames research center;0.010752688172
+purdue university;carnegie mellon university;0.0599669148056
+university of massachusetts amherst;brown university;0.0769230769231
+princeton university;hebrew university of jerusalem;0.166666666667
+university of sheffield;mcgill university;0.111111111111
+max planck institute for human development;at t;0.0384615384615
+max planck institute for human development;carnegie mellon university;0.0384615384615
+ecole normale superieure;university of texas at austin;0.111111111111
+paristech;georgia institute of technology;0.0833333333333
+university of california;hebrew university of jerusalem;0.03125
+university of california;university of california berkeley;0.09375
+university of edinburgh;ames research center;0.0833333333333
+university of edinburgh;research institute for advanced computer science;0.0416666666667
+university of toronto;concordia university;0.0208333333333
+university of toronto;centre national de la recherche scientifique;0.0416666666667
+university of california san diego;northwestern university;0.0217391304348
+laval university;ames research center;0.142857142857
+carnegie mellon university;university of toronto;0.0666666666667
+center for neural science;university of rochester;0.1
+university of alberta;max planck society;0.111111111111
+universite de montreal;duke university;0.0238095238095
+york university;duke university;0.0119047619048
+university of pittsburgh;duke university;0.0357142857143
+australian national university;massachusetts institute of technology;0.1
+stanford university;sungkyunkwan university;0.0909090909091
+french institute for research in computer science and automation;mit lincoln laboratory;0.00617283950617
+french institute for research in computer science and automation;university of avignon;0.0246913580247
+french institute for research in computer science and automation;technical university of madrid;0.00617283950617
+french institute for research in computer science and automation;centre national de la recherche scientifique;0.00617283950617
+max planck society;college of western idaho;0.0769230769231
+max planck institute for intelligent systems;universidade federal de minas gerais;0.0214285714286
+max planck institute for intelligent systems;ohio state university;0.0142857142857
+max planck society;universidade federal de minas gerais;0.0214285714286
+ruhr university bochum;stanford university;0.0263157894737
+ruhr university bochum;massachusetts institute of technology;0.0263157894737
+toyota technological institute;australian national university;0.0740740740741
+toyota technological institute;ecole polytechnique;0.037037037037
+interdisciplinary center for neural computation;linkoping university;0.0555555555556
+carnegie mellon university;hebrew university of jerusalem;0.415909090909
+max planck society;university of nottingham;0.1
+carnegie mellon university;university of alberta;0.037037037037
+harvard university;harvard university;0.0625
+microsoft;university of delaware;0.0909090909091
+microsoft;instituto superior tecnico;0.0714285714286
+nec;universite libre de bruxelles;0.0909090909091
+carnegie mellon university;mitsubishi;0.111111111111
+arizona state university;max planck society;0.0714285714286
+max planck institute for intelligent systems;university of colorado boulder;0.025
+max planck institute for intelligent systems;northwestern university;0.075
+laval university;hebrew university of jerusalem;0.037037037037
+laval university;university of british columbia;0.037037037037
+michigan state university;microsoft;0.1
+instituto superior tecnico;university of sussex;0.111111111111
+university of alberta;fudan university;0.0416666666667
+university of alberta;kyoto university;0.0416666666667
+microsoft;yale university;0.0714285714286
+university of california santa cruz;stanford university;0.0138888888889
+paristech;ibm;0.0833333333333
+carnegie mellon university;university of freiburg;0.0666666666667
+university of zurich;california institute of technology;0.25
+boston university;max planck society;0.0714285714286
+university of california berkeley;university of toronto;0.0769230769231
+hebrew university of jerusalem;saint petersburg state university;0.0222222222222
+toyota technological institute;saint petersburg state university;0.0111111111111
+toyota technological institute;michigan state university;0.0111111111111
+university of maryland college park;university of michigan;0.121212121212
+center for neural science;university of florence;0.1
+university of minnesota;martin luther university of halle wittenberg;0.0227272727273
+university of minnesota;carnegie mellon university;0.0227272727273
+university of minnesota;university of helsinki;0.0454545454545
+dallas museum of art;chicago metropolitan agency for planning;0.0208333333333
+dallas museum of art;french institute for research in computer science and automation;0.0208333333333
+french institute for research in computer science and automation;chicago metropolitan agency for planning;0.0787037037037
+university of alberta;chicago metropolitan agency for planning;0.0208333333333
+university of alberta;french institute for research in computer science and automation;0.0208333333333
+max planck society;kyoto university;0.0545454545455
+ruhr university bochum;kaiserslautern university of technology;0.0526315789474
+at t labs;at t;0.2
+university of california san diego;university of helsinki;0.0625
+university of california san diego;max planck society;0.0625
+cornell university;at t;0.111111111111
+stanford university;university of michigan;0.2
+university of glasgow;baylor college of medicine;0.0625
+university of stirling;baylor college of medicine;0.129166666667
+university of science and technology of china;hebrew university of jerusalem;0.0227272727273
+university of science and technology of china;columbia university;0.0454545454545
+university of science and technology of china;princeton university;0.0227272727273
+idiap research institute;institute of statistical mathematics;0.0769230769231
+massachusetts institute of technology;at t;0.0666666666667
+university of toronto;temple university;0.0952380952381
+massachusetts institute of technology;parc;0.125
+hebrew university of jerusalem;google;0.0555555555556
+princeton university;helsinki institute for information technology;0.0588235294118
+massachusetts institute of technology;academia sinica;0.0104166666667
+massachusetts institute of technology;national taiwan university;0.0104166666667
+massachusetts institute of technology;dartmouth college;0.0104166666667
+massachusetts institute of technology;university of florida;0.0104166666667
+stanford university;university of sussex;0.2
+max planck society;emory university;0.0277777777778
+max planck society;university of montana;0.0277777777778
+max planck society;wake forest university;0.0277777777778
+university of zurich;ames research center;0.0588235294118
+university of pennsylvania;carnegie mellon university;0.142857142857
+victoria university of wellington;university of cambridge;0.0769230769231
+university of minnesota;university college london;0.0454545454545
+university of minnesota;at t labs;0.0454545454545
+university of stirling;howard hughes medical institute;0.0666666666667
+massachusetts institute of technology;max planck institute for intelligent systems;0.111111111111
+max planck society;feinberg school of medicine;0.1
+nec;stanford university;0.112121212121
+beckman institute for advanced science and technology;university college london;0.0555555555556
+beckman institute for advanced science and technology;at t labs;0.0555555555556
+universite de montreal;university of manitoba;0.0238095238095
+york university;university of manitoba;0.0119047619048
+university of pittsburgh;university of manitoba;0.0357142857143
+cornell university;royal institute of technology;0.0833333333333
+cornell university;swedish institute of computer science;0.0833333333333
+instituto politecnico nacional;defence science and technology organization;0.111111111111
+interdisciplinary center for neural computation;helsinki university of technology;0.0555555555556
+university of southern california;university college london;0.00347222222222
+university of southern california;university of cambridge;0.00694444444444
+university of california irvine;university college london;0.00347222222222
+university of california irvine;university of cambridge;0.00694444444444
+university of southern california;trinity college;0.0104166666667
+university of california irvine;trinity college;0.0104166666667
+howard hughes medical institute;university of pennsylvania;0.0454545454545
+howard hughes medical institute;center for neural science;0.110671936759
+university of copenhagen;national council for scientific and technological development;0.111111111111
+max planck institute for intelligent systems;university of california;0.0541666666667
+max planck institute for intelligent systems;sandia national laboratories;0.0454545454545
+stanford university;technion israel institute of technology;0.0121951219512
+university of california san diego;oberlin college;0.142857142857
+technical university of berlin;keele university;0.0384615384615
+charite;keele university;0.0192307692308
+university of tokyo;keele university;0.0192307692308
+university of california berkeley;university of california san diego;0.125
+cornell university;dartmouth college;0.142857142857
+university of washington;nynex;0.2
+university of zurich;vanderbilt university;0.0588235294118
+university of stirling;university of rochester;0.0384615384615
+university of stirling;the institute of optics;0.0384615384615
+stanford university;university of washington;0.2
+max planck society;bell labs;0.0978835978836
+nec;max planck society;0.0666666666667
+technical university of berlin;university of washington;0.0181818181818
+university of alberta;university of waterloo;0.0714285714286
+university of california san diego;los alamos national laboratory;0.0238095238095
+tohoku university;california institute of technology;1.0
+duke university;university of sydney;0.142857142857
+university of california berkeley;brown university;0.225
+university of texas at austin;cornell university;0.0526315789474
+max planck institute for intelligent systems;centre national de la recherche scientifique;0.0769230769231
+massachusetts institute of technology;vision sciences inc;0.0625
+university of southern california;carnegie mellon university;0.00694444444444
+university of california irvine;carnegie mellon university;0.00694444444444
+institute for advanced study;johns hopkins university;0.333333333333
+at t labs;university college london;0.166666666667
+microsoft;indian institute of technology bombay;0.0294117647059
+rutgers university;university college london;0.0555555555556
+institute for theoretical computer science;kavli institute for theoretical physics;0.0192307692308
+university of pittsburgh;kavli institute for theoretical physics;0.0192307692308
+free university of berlin;ames research center;0.0714285714286
+university of bonn;microsoft;0.333333333333
+hebrew university of jerusalem;brandeis university;0.166666666667
+university of toronto;university of cambridge;0.25
+center for neural science;university of toronto;0.107142857143
+center for neural science;university college london;0.0357142857143
+victoria university of wellington;university of toronto;0.0769230769231
+max planck institute for intelligent systems;aalto university;0.0277777777778
+hebrew university of jerusalem;los alamos national laboratory;0.0444444444444
+max planck institute for software systems;eth zurich;0.0588235294118
+university of minnesota;hebrew university of jerusalem;0.030303030303
+university of minnesota;at t;0.030303030303
+university of minnesota;nec;0.030303030303
+nec;carnegie mellon university;0.0266666666667
+toyota technological institute;weizmann institute of science;0.1
+french institute for research in computer science and automation;rutgers university;0.0454545454545
+university of liege;rutgers university;0.0454545454545
+instituto politecnico nacional;australian national university;0.111111111111
+max planck institute for intelligent systems;kaist;0.0119047619048
+max planck institute for intelligent systems;bell labs;0.0238095238095
+max planck society;kaist;0.0119047619048
+ruhr university bochum;university of amsterdam;0.0526315789474
+max planck institute for intelligent systems;max planck institute of economics;0.0263157894737
+ibm;george mason university;0.111111111111
+max planck institute for intelligent systems;university of queensland;0.025
+max planck institute for intelligent systems;university of twente;0.025
+max planck institute for intelligent systems;mcgill university;0.025
+columbia university;cybercast news service;0.0042194092827
+massachusetts institute of technology;instituto superior tecnico;0.0625
+university of glasgow;ludwig maximilian university of munich;0.046875
+university of glasgow;columbia university;0.015625
+university of stirling;ludwig maximilian university of munich;0.046875
+university of stirling;columbia university;0.015625
+university of edinburgh;aston university;0.1
+institute for theoretical computer science;pennsylvania state university;0.111111111111
+nec;pacific northwest national laboratory;0.0909090909091
+microsoft;mitsubishi;0.0322580645161
+helsinki university of technology;microsoft;0.253968253968
+university of california berkeley;university college london;0.225
+university of massachusetts amherst;university of washington;0.0166666666667
+university of massachusetts amherst;university of michigan;0.05
+university of massachusetts amherst;columbia university;0.0166666666667
+ibm;bar ilan university;0.0416666666667
+ibm;weizmann institute of science;0.0833333333333
+university of california san diego;genome institute of singapore;0.030303030303
+university of california san diego;singapore mit alliance;0.030303030303
+university of california san diego;stanford university;0.0909090909091
+university of california santa cruz;university of southern california;0.0138888888889
+ecole polytechnique federale de lausanne;university of edinburgh;0.0277777777778
+university of pennsylvania;at t;0.1
+max planck institute for intelligent systems;google;0.015625
+sri international;johns hopkins university;0.25
+georgia institute of technology;university of haifa;0.0714285714286
+georgia institute of technology;intel;0.0714285714286
+max planck society;university of houston;0.03125
+university of waterloo;university of waterloo;0.25
+idiap research institute;new york university;0.0576923076923
+massachusetts institute of technology;new york university;0.119230769231
+massachusetts institute of technology;idiap research institute;0.0192307692308
+yahoo;microsoft;0.166666666667
+victoria university of wellington;carnegie mellon university;0.0769230769231
+french institute for research in computer science and automation;minneapolis institute of arts;0.037037037037
+french institute for research in computer science and automation;legg mason;0.037037037037
+apple inc;ibm;0.0588235294118
+university of california san francisco;center for neural science;0.0666666666667
+new york university;parc;0.0555555555556
+university of colorado boulder;california institute of technology;0.2
+university of geneva;department of engineering science university of oxford;0.0535714285714
+ecole normale superieure;department of engineering science university of oxford;0.0178571428571
+duke university;stanford university;0.0714285714286
+hebrew university of jerusalem;university at buffalo;0.142857142857
+university of california berkeley;at t;0.0666666666667
+cornell university;university of chicago;0.0555555555556
+cornell university;university of western ontario;0.0555555555556
+stanford university;indiana university bloomington;0.2
+howard hughes medical institute;howard hughes medical institute;0.0217391304348
+university of southern california;salk institute for biological studies;0.0104166666667
+university of california irvine;salk institute for biological studies;0.0104166666667
+carnegie mellon university;johns hopkins university;0.0294117647059
+institute for advanced study;university of oxford;0.285714285714
+institute for advanced study;brandeis university;0.047619047619
+max planck institute for intelligent systems;california institute of technology;0.0111111111111
+intel;university of chicago;0.125
+max planck institute for intelligent systems;institute of statistical mathematics;0.0277777777778
+university of california san diego;max planck institute for biophysical chemistry;0.0555555555556
+max planck society;center for complex systems and brain sciences;0.00584795321637
+max planck society;university of florida;0.0116959064327
+max planck society;ohio northern university;0.0555555555556
+max planck society;bowling green state university;0.0555555555556
+microsoft;department of engineering university of cambridge;0.00806451612903
+microsoft;imperial college school of medicine;0.1875
+microsoft;medical research council;0.0625
+michigan state university;university of ljubljana;0.1
+brigham young university;mitsubishi electric;0.142857142857
+university of california berkeley;university of electro communications;0.03125
+university of california berkeley;university of cambridge;0.03125
+university of california berkeley;university of arizona;0.0625
+ecole normale superieure de cachan;pacific maritime association;0.125
+georgia institute of technology;north carolina state university;0.0178571428571
+georgia institute of technology;columbia university;0.0535714285714
+university of california berkeley;university of washington;0.0512820512821
+university of waterloo;stanford university;0.0625
+university of alberta;salk institute for biological studies;0.1
+max planck society;university of potsdam;0.142857142857
+max planck society;idiap research institute;0.142857142857
+university of pennsylvania;howard hughes medical institute;0.0857142857143
+university of pennsylvania;lawrence berkeley national laboratory;0.0571428571429
+university of maryland college park;yale university;0.0606060606061
+university of california san francisco;harvard medical school;0.0666666666667
+beckman institute for advanced science and technology;queen s university;0.111111111111
+max planck society;university of kiel;0.0666666666667
+toyota technological institute;carnegie mellon university;0.1
+university of california irvine;university of california berkeley;0.25
+robotics institute;australian national university;0.125
+university of california san diego;french institute for research in computer science and automation;0.142857142857
+columbia university;ecole normale superieure;0.0126582278481
+columbia university;columbia university college of physicians and surgeons;0.0126582278481
+texas a m university;university of leicester;0.0192307692308
+texas a m university;tufts university school of medicine;0.0384615384615
+texas a m university;eth zurich;0.0192307692308
+texas a m university;wright state university;0.0769230769231
+microsoft;delft university of technology;0.0625
+rutgers university;french institute for research in computer science and automation;0.111111111111
+university of toronto;bbn technologies;0.25
+princeton university;university of missouri;0.0666666666667
+idiap research institute;max planck society;0.125
+ibm;max planck society;0.265625
+university of southampton;max planck society;0.015625
+merrill lynch;max planck society;0.015625
+university of california davis;max planck society;0.015625
+johns hopkins university;mit lincoln laboratory;0.111111111111
+royal holloway university of london;microsoft;0.5
+institute for theoretical computer science;university of illinois at urbana champaign;0.25
+tel aviv university;max planck society;0.125
+massachusetts institute of technology;general motors;0.0666666666667
+max planck institute for intelligent systems;university of bristol;0.122159090909
+johns hopkins university;university of pennsylvania;0.0909090909091
+max planck institute for intelligent systems;university of tokyo;0.075
+french institute for research in computer science and automation;computer laboratory university of cambridge;0.0185185185185
+tel aviv university;microsoft;0.1
+max planck society;vcu medical center;0.111111111111
+mcgill university;technion israel institute of technology;0.142857142857
+cornell university;university of toronto;0.1
+university of pennsylvania;department of engineering university of cambridge;0.166666666667
+ibm;university of cambridge;0.333333333333
+university of texas at austin;university of california berkeley;0.0526315789474
+microsoft;national and kapodistrian university of athens;0.0294117647059
+university of seville;eth zurich;0.05
+university of oslo;eth zurich;0.05
+university of glasgow;max planck institute for medical research;0.0625
+duke university;texas a m university;0.111111111111
+university of science and technology of china;microsoft;0.0909090909091
+university of edinburgh;stanford university;0.0769230769231
+university of colorado boulder;massachusetts institute of technology;0.25
+rutgers university;university of oxford;0.0555555555556
+max planck society;technische universitat munchen;0.0666666666667
+technical university of berlin;mines paristech;0.0555555555556
+technical university of berlin;princeton university;0.0555555555556
+kyoto university;mines paristech;0.0555555555556
+kyoto university;university of california berkeley;0.0555555555556
+kyoto university;princeton university;0.0555555555556
+nara institute of science and technology;mines paristech;0.0555555555556
+nara institute of science and technology;university of california berkeley;0.0555555555556
+nara institute of science and technology;princeton university;0.0555555555556
+max planck institute for intelligent systems;university of copenhagen;0.0625
+idiap research institute;columbia university;0.0576923076923
+max planck institute for intelligent systems;city university of hong kong;0.0833333333333
+austrian research institute for artificial intelligence;microsoft;0.166666666667
+university of oxford;ecole normale superieure;0.2
+wharton school of the university of pennsylvania;university of washington;0.1
+technical university of berlin;ames research center;0.0909090909091
+max planck society;medical college of wisconsin;0.0344827586207
+max planck institute for intelligent systems;harvard university;0.0769230769231
+columbia university;philips;0.0126582278481
+max planck society;boston university;0.0555555555556
+max planck society;leiden university;0.0555555555556
+max planck society;national chengchi university;0.0119047619048
+university of texas at austin;intel;0.0666666666667
+university of texas at austin;carnegie mellon university;0.0333333333333
+university of texas at austin;university of maryland college park;0.0333333333333
+hebrew university of jerusalem;princeton university;0.0769230769231
+max planck society;university of ottawa;0.1
+hebrew university of jerusalem;toyota technological institute at chicago;0.0222222222222
+toyota technological institute;university of california berkeley;0.0111111111111
+max planck society;university of cologne;0.333333333333
+universite de montreal;princeton university;0.0238095238095
+york university;princeton university;0.0119047619048
+university of pittsburgh;princeton university;0.0357142857143
+max planck society;max planck institute for medical research;0.0666666666667
+rutgers university;university of rochester;0.0555555555556
+rutgers university;university of delaware;0.0277777777778
+university of california berkeley;oregon state university;0.0909090909091
+university of california berkeley;texas a m university;0.0625
+max planck institute for intelligent systems;national institute of informatics;0.0119047619048
+max planck institute for intelligent systems;university of sydney;0.0238095238095
+max planck society;national institute of informatics;0.0119047619048
+university of washington;university of california berkeley;0.0555555555556
+max planck society;university of alaska fairbanks;0.0833333333333
+at t labs;massachusetts institute of technology;0.4
+university of southern california;university of massachusetts amherst;0.00260416666667
+university of southern california;university of edinburgh;0.00260416666667
+university of southern california;massachusetts institute of technology;0.00520833333333
+university of california irvine;university of edinburgh;0.00260416666667
+charite;new york state department of health;0.025
+charite;university of tubingen;0.1
+purdue university;university of british columbia;0.010752688172
+harvard university;justsystem pittsburgh research center;0.0625
+texas a m university;texas a m university;0.0769230769231
+university of california san diego;university of amsterdam;0.0555555555556
+massachusetts institute of technology;robotics institute;0.1
+nec;lawrence berkeley national laboratory;0.0454545454545
+princeton university;at t labs;0.0714285714286
+university of california berkeley;boston college;0.0714285714286
+rutgers university;massachusetts institute of technology;0.0555555555556
+charite;max planck society;0.0192307692308
+university of tokyo;max planck society;0.0192307692308
+smith college;max planck institute for human development;0.166666666667
+school of computer science university of manchester;university of california berkeley;0.142857142857
+department of engineering university of cambridge;defence research agency;0.125
+at t labs;northeastern university;0.2
+technical university of berlin;university of wisconsin madison;0.0375
+technical university of berlin;georgia institute of technology;0.0375
+fraunhofer society;university of wisconsin madison;0.0125
+fraunhofer society;georgia institute of technology;0.0125
+charite;university of wisconsin madison;0.0125
+charite;georgia institute of technology;0.0125
+purdue university;iowa state university;0.0384615384615
+university of toronto;state university of new york system;0.2
+university of california santa cruz;university of wisconsin madison;0.0714285714286
+university of california santa cruz;university of california irvine;0.0714285714286
+max planck institute for intelligent systems;university of exeter;0.03125
+idiap research institute;brown university;0.0576923076923
+lsi corporation;university of pennsylvania;0.5
+university of pennsylvania;university of nottingham;0.142857142857
+max planck institute for software systems;technion israel institute of technology;0.0588235294118
+stony brook university;mitsubishi;0.0714285714286
+max planck society;wake forest school of medicine;0.0190476190476
+max planck society;colorado state university;0.0190476190476
+french institute for research in computer science and automation;max planck institute for intelligent systems;0.0454545454545
+university of liege;max planck institute for intelligent systems;0.0454545454545
+max planck society;sciences po;0.0172413793103
+michigan state university;duke university;0.25
+duke university;university of oxford;0.142857142857
+max planck society;german cancer research center;0.0833333333333
+stanford university;university of california davis;0.1
+university of washington;university of washington school of medicine;0.0555555555556
+intel;institute for theoretical computer science;0.0625
+intel;mind institute;0.0625
+university of glasgow;max planck society;0.0625
+duke university;duke university;0.0444444444444
+duke university;newcastle university;0.0222222222222
+duke university;duke university hospital;0.0444444444444
+university of edinburgh;university of california berkeley;0.0769230769231
+university of arizona;university of british columbia;0.047619047619
+french institute for research in computer science and automation;university of michigan;0.0833333333333
+johns hopkins university;brown university;0.125
+max planck institute for human development;iese business school;0.03125
+max planck institute for human development;polytechnic university of catalonia;0.03125
+microsoft;johns hopkins university;0.1
+school of computer science university of manchester;xerox;0.142857142857
+brigham young university;stanford university;0.0714285714286
+brigham young university;carnegie mellon university;0.0714285714286
+mit lincoln laboratory;massachusetts institute of technology;0.111111111111
+ecole polytechnique federale de lausanne;telcordia technologies;0.05
+ecole polytechnique federale de lausanne;technion israel institute of technology;0.05
+university of stirling;university of glasgow;0.0769230769231
+ecole normale superieure de cachan;university of north carolina at chapel hill;0.125
+university of washington;university of minnesota;0.0909090909091
+center for neural science;microsoft;0.142857142857
+max planck institute for intelligent systems;massachusetts institute of technology;0.166666666667
+rensselaer polytechnic institute;max planck society;0.333333333333
+courant institute of mathematical sciences;at t;0.111111111111
+university of maryland college park;university of oxford;0.0909090909091
+stony brook university;robotics institute;0.0714285714286
+carnegie mellon university;boston college;0.05
+stanford university;universite catholique de louvain;0.0625
+university of colorado boulder;university of colorado boulder;0.2
+free university of berlin;massachusetts institute of technology;0.142857142857
+instituto politecnico nacional;university of southern california;0.111111111111
+nec;university at buffalo;0.2
+university of california san diego;universities uk;0.2
+microsoft;department of engineering science university of oxford;0.075
+department of engineering science university of oxford;xerox;0.111111111111
+department of engineering science university of oxford;university of edinburgh;0.111111111111
+purdue university;max planck society;0.010752688172
+purdue university;university of strathclyde;0.010752688172
+purdue university;polytechnic university of valencia;0.010752688172
+max planck institute for intelligent systems;autonomous university of madrid;0.0208333333333
+university of arizona;university at buffalo;0.047619047619
+max planck society;university of dundee;0.0333333333333
+ogi school of science and engineering;purdue university;0.2
+university of california irvine;stanford university medical center;0.1
+massachusetts institute of technology;university of california irvine;0.0833333333333
+stanford university;international computer science institute;0.2
+instituto superior tecnico;university of delaware;0.111111111111
+university of toronto;university of birmingham;0.166666666667
+university of toronto;university of the west of scotland;0.166666666667
+stanford university;university of california los angeles;1.0
+university of toronto;princeton university;0.2
+max planck society;university of queensland;0.111111111111
+ben gurion university of the negev;technische universitat munchen;0.1
+university of zurich;eth zurich;0.25
+max planck institute for intelligent systems;disney research;0.0166666666667
+max planck society;disney research;0.0166666666667
+microsoft;university of waikato;0.0909090909091
+school of electrical and electronic engineering university of manchester;at t;0.0714285714286
+school of electrical and electronic engineering university of manchester;massachusetts institute of technology;0.0357142857143
+school of electrical and electronic engineering university of manchester;ecole polytechnique;0.0357142857143
+university college london;university of michigan;0.125

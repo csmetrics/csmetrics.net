@@ -1,0 +1,95 @@
+{% load staticfiles %}
+<html>
+  {% include 'header.html'%}
+
+  <body>
+    <div class="content">
+      <div class="row" style="width:600px">
+        <form role="form" action="." method="get" style="display: inline">
+          <div class="col-sm-11" style="padding:1px">
+            <select class="form-control select" name="select">
+              {% for d in datalist %}
+                <option value="{{ d }}" {% if form.activity.value == d %}selected{% endif %}>{{ d }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-sm-1" style="padding:1px">
+            <button class="btn btn-primary btn-form" type="submit" name="draw" value="draw">Draw</button>
+          </div>
+        </form>
+      </div>
+      <svg width="1200" height="1000"></svg>
+
+    </div>
+    </div>
+  </body>
+</html>
+<script src="{% static 'js/d3v4.js' %}"></script>
+<script src="{% static 'js/cola.min.js' %}"></script>
+{% if datafile %}
+<script>
+var width = 1200,
+    height = 760;
+
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+var cola = cola.d3adaptor(d3)
+    .size([width, height]);
+
+var svg = d3.select("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+d3.json("{% static datafile %}", function (error, graph) {
+    cola
+        .nodes(graph.nodes)
+        .links(graph.links)
+        .jaccardLinkLengths(200,2.0)
+        .avoidOverlaps(true)
+        .start(30);
+
+    var link = svg.selectAll(".link")
+        .data(graph.links)
+      .enter().append("line")
+        .attr("class", "link")
+        .style("stroke-width", function (d) { return d.value; });
+
+    var node = svg.selectAll(".node")
+        .data(graph.nodes)
+      .enter().append("circle")
+        .attr("class", "node")
+        .attr("r", function (d) { return Math.sqrt(d.degree); })
+        .style("fill", function (d) { if (d.group == 0) return "#FF0000"; else return color(d.group); })
+        .call(cola.drag);
+
+    var label = svg.selectAll(".label")
+        .data(graph.nodes)
+       .enter().append("text")
+        .attr("class", "label")
+        .text(function (d) { return d.name; })
+        .call(cola.drag);
+
+    node.append("title")
+        .text(function (d) { return d.name; });
+
+    cola.on("tick", function () {
+        link.attr("x1", function (d) { return d.source.x; })
+            .attr("y1", function (d) { return d.source.y; })
+            .attr("x2", function (d) { return d.target.x; })
+            .attr("y2", function (d) { return d.target.y; });
+
+        node.attr("cx", function (d) { return d.x; })
+            .attr("cy", function (d) { return d.y; });
+
+        label.attr("x", function (d) {
+                var w = this.getBBox().width;
+                return d.x - w/2; })
+             .attr("y", function (d) {
+                var h = this.getBBox().height;
+                return d.y + h/4;
+             });
+    });
+});
+
+</script>
+{% endif %}
