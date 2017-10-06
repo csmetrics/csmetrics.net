@@ -101,7 +101,7 @@ def main(request):
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 def citingflow(request):
-    typelist = ["full graph", "ego graph"]
+    typelist = ["full graph", "egograph_in", "egograph_out"]
     numlist = [10, 20, 50, 100, 200]
     datalist = ["select venue data"]
     datadir = os.path.join(cur_path, "citing_flow")

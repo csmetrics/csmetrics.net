@@ -25,8 +25,14 @@ def create_graph(f, center, ntype, num):
             raise Exception("Error: cannot find center node")
 
         Egograph = nx.ego_graph(G, center_node)
-        to_keep = [s for s, t, w in sorted(Egograph.edges(data='weight'),key=itemgetter(2),reverse=True) if s == center or t == center]
-        Subgraph = Egograph.subgraph(to_keep[n_from:n_to])
+        to_keep = []
+        for s, t, w in sorted(Egograph.edges(data='weight'),key=itemgetter(2),reverse=True):
+            if ntype == 1 and t == center:
+                to_keep.append((s, w))
+            if ntype == 2 and s == center:
+                to_keep.append((t, w))
+        sorted_nodes = [n for n,v in sorted(to_keep,key=itemgetter(1),reverse=True)]
+        Subgraph = Egograph.subgraph(sorted_nodes[n_from:n_to])
 
     else:
         to_keep = [k for k, d in sorted(G.degree(weight=True),key=itemgetter(1),reverse=True)]
