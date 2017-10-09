@@ -35,7 +35,7 @@ def create_graph(f, center, ntype, num):
         Subgraph = Egograph.subgraph(sorted_nodes[n_from:n_to])
 
     else:
-        to_keep = [k for k, d in sorted(G.degree(weight=True),key=itemgetter(1),reverse=True)]
+        to_keep = [k for k, d in sorted(G.in_degree(weight=True),key=itemgetter(1),reverse=True)]
         Subgraph = G.subgraph(to_keep[n_from:n_to])
 
     for n, d in Subgraph.nodes(data=True):
