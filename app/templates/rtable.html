@@ -42,6 +42,7 @@ var ranktable = $('#rtable').DataTable({
     { title: "{{ words.rtable_label_3 }}", className: "dt-body-right" },
     { title: "{{ words.rtable_label_4 }}", className: "dt-body-right" },
     { title: "type", className: "inst-type" },
+    { title: "tiebreaker", className: "dt-body-right" },
   ],
   "columnDefs": [
     {
@@ -54,8 +55,12 @@ var ranktable = $('#rtable').DataTable({
       "searchable": true
     },
     {
-      "targets": 5,
+      "targets": [5, 6],
       "visible": false
+    },
+    {
+      "targets": [4],
+      "orderData": [4, 6]
     }
   ],
   "language": {
@@ -142,6 +147,7 @@ function updateTable(){
     combined = Math.pow(parseFloat(data[2])+epsilon, 1-alpha)
               *Math.pow(parseFloat(data[3])+epsilon, alpha);
     data[4] = Number((combined).toFixed(0));
+    data[6] = combined; //secondary order
     ranktable.row(index).data(data);
   });
   ranktable.draw();
