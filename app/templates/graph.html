@@ -98,7 +98,7 @@ d3.json("{% static datafile %}", function (error, graph) {
         .call(cola.drag);
 
     node.append("title")
-        .text(function (d) { return d.name; });
+        .text(function (d) { return d.degree; });
 
     cola.on("tick", function () {
         link.attr("x1", function (d) { return d.source.x; })
