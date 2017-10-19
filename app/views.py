@@ -131,7 +131,7 @@ def citingflow(request):
             if not os.path.exists(path):
                 raise Exception("Error: venue file not exists")
             f = open(path)
-            datafile = create_graph(f, center, typelist.index(ntype), topnum)
+            datafile = create_citation_graph(f, center, typelist.index(ntype), topnum)
         except Exception as e:
             errormsg = e
             print(errormsg)
@@ -146,5 +146,43 @@ def citingflow(request):
                 "numlist":numlist,
                 "typelist":typelist,
                 "datalist":datalist,
+                "datafile":datafile
+            });
+
+
+def coauthor(request):
+    datalist = []
+    datadir = os.path.join(cur_path, "coauthor")
+    for f in os.listdir(datadir):
+        fname = f.split("_")
+        if fname[0] == "anu":
+            datalist.append(f)
+
+    errormsg = ""
+    selectfile = None
+    datafile = None
+    center = None
+    if "draw" in request.GET:
+        selectfile = request.GET.get("selectfile")
+        center = request.GET.get("center")
+        print("selected:", selectfile)
+        print("center:", center)
+
+        try:
+            path = os.path.join(datadir, selectfile)
+            if not os.path.exists(path):
+                raise Exception("Error: selected file not exists")
+            f = open(path)
+            datafile = create_coauthor_graph(f, center)
+        except Exception as e:
+            errormsg = e
+            print(errormsg)
+
+    # print(datalist)
+    return render(request, "coauthor.html", {
+                "error":errormsg,
+                "sfile":selectfile,
+                "scenter":center,
+                "datalist":sorted(datalist),
                 "datafile":datafile
             });

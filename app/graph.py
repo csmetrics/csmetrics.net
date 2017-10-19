@@ -1,9 +1,10 @@
 import os, json, csv, sys
+import itertools
 import networkx as nx
 from operator import itemgetter
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
-def create_graph(f, center, ntype, num):
+def create_citation_graph(f, center, ntype, num):
     G = nx.DiGraph()
     csv.field_size_limit(sys.maxsize)
     reader = csv.reader(f, delimiter=';')
@@ -52,6 +53,58 @@ def create_graph(f, center, ntype, num):
     # print(G_nodes)
     # print(G_links)
     datafile = "graph/network-{}-{}.json".format(n_from, n_to)
+    network = { "nodes": G_nodes, "links": G_links }
+    # print(os.path.join(cur_path, "static", datafile))
+    with open(os.path.join(cur_path, "static", datafile), 'w') as outfile:
+        json.dump(network, outfile)
+
+    return datafile
+
+
+def create_coauthor_graph(f, center):
+    Inst_set = set()
+    Papers = {}
+    reader = csv.reader(f, delimiter=',')
+    for r in reader:
+        if r[0] in Papers:
+            Papers[r[0]]["authors"].append({
+                "name": r[1],
+                "inst": r[3]
+            })
+        else:
+            Papers[r[0]] = {
+                "authors": [{
+                    "name": r[1],
+                    "inst": r[3]
+                }],
+                "venue": r[4]
+            }
+        Inst_set.add(r[3])
+
+    # print(Papers)
+    Inst_list = list(Inst_set)
+
+    G = nx.Graph()
+    for k, v in Papers.items():
+        for x,y in itertools.combinations(v["authors"], 2):
+            G.add_node(x["name"], type=x["inst"])
+            G.add_node(y["name"], type=y["inst"])
+            G.add_edge(x["name"], y["name"], conf=v["venue"])
+
+    G_nodes = []
+    G_links = []
+    for n, d in G.nodes(data=True):
+        if n == center:
+            G_nodes.append({"name": n, "group_idx": -1, "fixed": True,\
+                            "group": d["type"] if d["type"] != "" else "None", "degree": G.degree(n)})
+        else:
+            G_nodes.append({"name": n, "group_idx": Inst_list.index(d["type"]),\
+                            "group": d["type"] if d["type"] != "" else "None", "degree": G.degree(n)})
+    names = [n["name"] for n in G_nodes]
+    for s, t, v in G.edges(data="conf", default=1):
+        G_links.append({"source": names.index(s), "target": names.index(t), "value": v})
+
+    datafile = "graph/coauthor.json"
     network = { "nodes": G_nodes, "links": G_links }
     # print(os.path.join(cur_path, "static", datafile))
     with open(os.path.join(cur_path, "static", datafile), 'w') as outfile:

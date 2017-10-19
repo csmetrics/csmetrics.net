@@ -10,5 +10,6 @@ urlpatterns = [
     url(r'^acks/', views.acks, name='acks'),
     url(r'^faq/', views.faq, name='faq'),
     url(r'^network/', views.citingflow, name='citingflow'),
+    url(r'^coauthor/', views.coauthor, name='coauthor'),
     url(r'^admin/', admin.site.urls),
 ]

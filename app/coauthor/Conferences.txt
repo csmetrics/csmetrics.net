@@ -1,0 +1,1283 @@
+42C0AB71	PAKM	Practical Aspects of Knowledge Management
+42DBFEF6	SWS	Secure Web Services
+42F4C8D1	ACIIDS	Asian Conference on Intelligent Information and Database Systems
+4366C780	ICGI	International Colloquium on Grammatical Inference
+43742018	CTIC	Computational Topology in Image Context
+44815780	WSC	Winter Simulation Conference
+44ADC5A3	ADMI	Agents and Data Mining Interaction
+44C9D190	CONIELECOMP	International Conference on Electronics, Communications, and Computers
+44F7644F	ISA	Information Security and Assurance
+4527A09C	ISMM	International Symposium on Memory Management
+45C7E457	DRCN	Design of Reliable Communication Networks
+45D14EDE	UbiComp	Ubiquitous Computing
+46926BFF	CASCON	Conference of the Centre for Advanced Studies on Collaborative Research
+46A3F844	AI	Canadian Conference on Artificial Intelligence
+46F865B7	HAIS	Hybrid Artificial Intelligence Systems
+473581E8	ECCE	European Conference on Cognitive Ergonomics
+4761B00F	NSPW	New Security Paradigms Workshop
+856D618D	ACC	American Control Conference
+42C7B402	WSDM	Web Search and Data Mining
+42C99491	FPS	Foundations and Practice of Security
+42F73407	FSTTCS	Foundations of Software Technology and Theoretical Computer Science
+4326CCD6	ESANN	The European Symposium on Artificial Neural Networks
+4372B502	ICMI	International Conference on Multimodal Interfaces
+43A23F32	SECON	Sensor, Mesh and Ad Hoc Communications and Networks
+43A585B4	ISPDC	International Symposium on Parallel and Distributed Computing
+43B946B8	SOUPS	Symposium On Usable Privacy and Security
+442E19D7	RANLP	Recent Advances in Natural Language Processing
+451916EF	FCST	Frontier of Computer Science and Technology
+4523D0A5	ICONS	International Conference on Systems
+452F7228	IIR	Italian Information Retrieval Workshop
+453637D6	CGAMES	Computer Games
+45673081	COMSNETS	Communication Systems and Networks
+45D9718E	VaMoS	Variability Modelling of Software-Intensive Systems
+45F914AD	NAACL	North American Chapter of the Association for Computational Linguistics
+4606A0B0	CDVE	Cooperative Design, Visualization, and Engineering
+46081467	ICON	International Conference on Networks
+4692A0B1	EC-Web	Electronic Commerce and Web Technologies
+46F6F355	CBSE	Component-Based Software Engineering
+4726E440	EDM	Educational Data Mining
+473A22D9	ICPE	International Conference on Performance Engineering
+473F3BB1	RFID-TA	RFID-Technologies and Applications
+474677D8	PARCO	Parallel Computing
+47568F35	TCoB	Technologies for Collaborative Business Process Management
+479D4D98	CP	Principles and Practice of Constraint Programming
+42D8A0F3	AIMSA	Artificial Intelligence: Methodology, Systems, Applications
+432251B5	ICME	International Conference on Multimedia and Expo
+43254BF9	ELPUB	International Conference on Electronic Publishing
+43A193B2	CLUSTER	International Conference on Cluster Computing
+44ACBCB7	ACML	Asian Conference on Machine Learning
+44C93DEC	ESA	European Symposium on Algorithms
+44CCC1CE	AMFG	Analysis and Modeling of Faces and Gestures
+450F627A	ONDM	Optical Network Design and Modelling
+454CC982	W2GIS	Web and Wireless Geographical Information Systems
+45700DCB	P2P	International Conference on Peer-to-Peer Computing
+45FC642E	KSE	Knowledge and Systems Engineering
+4607C954	EC	Electronic Commerce
+461982D8	SAMOS	International Conference / Workshop on Embedded Computer Systems: Architectures, Modeling and Simulation
+461F33EF	SEW	Annual Software Engineering Workshop
+465D12F0	PPDP	Principles and Practice of Declarative Programming
+46AD78C1	DCC	Data Compression Conference
+471CBCFD	WORKS	Workflows in Support of Large-Scale Science
+4738187E	CIBB	Computational Intelligence Methods for Bioinformatics and Biostatistics
+476F3906	CCS	Computer and Communications Security
+477202E3	BMVC	British Machine Vision Conference
+47B5E94A	A-MOST	Advances in Model-Based Software Testing
+47CA3817	Petri Nets	Applications and Theory of Petri Nets
+430122E0	PADL	Practical Aspects of Declarative Languages
+433DE719	ICES	International Conference on Evolvable Systems
+43B85068	CSCL	Computer Supported Collaborative Learning
+43C1EF66	ICPADS	International Conference on Parallel and Distributed Systems
+43E30231	UDM	Ubiquitous Data Management
+43E84C32	APLAS	Asian Symposium on Programming Languages and Systems
+44421CD5	WebMedia	Brazilian Symposium on Multimedia and the Web
+446AAA55	BIRD	Bioinformatics Research and Development
+448D1E7E	ICDAR	International Conference on Document Analysis and Recognition
+449397C9	ISMIS	International Syposium on Methodologies for Intelligent Systems
+44B2697D	SARA	Symposium on Abstraction, Reformulation and Approximation
+44B92818	PKAW	Pacific Rim Knowledge Acquisition Workshop
+44BF6A26	ICWL	International Conference on Web-Based Learning
+44CF28DC	SIGMAP	International Conference on Signal Processing and Multimedia Applications
+451D2615	ESEM	Empirical Software Engineering and Measurement
+45230F0A	PST	Conference on Privacy, Security and Trust
+4562CB61	AccessNets	International Conference on Access Networks
+4579FB5B	ITC	International Test Conference
+45A12B87	Stringology	Prague Stringology Conference
+45EB6430	LPNMR	Logic Programming and Non-Monotonic Reasoning
+4634306E	ADHOC-NOW	Ad-Hoc, Mobile and Wireless Networks
+46AC2C9A	IFM	Integrated Formal Methods
+4752F5A1	NBiS	Network-Based Information Systems
+47650C33	BROADNETS	Broadband Communications, Networks and Systems
+85BB5EB3	Mediacom	International Conference on Multimedia Communications
+432DA9EE	DaMoN	Data Management on New Hardware
+432DDB7E	ETS	European Test Symposium
+43A98FDA	SOSE	Service Oriented Software Engineering
+43CD4E8A	TCC	Theory of Cryptography Conference
+43CDABDA	SAS	Static Analysis Symposium
+4482B3A4	DIM	Digital Identity Management
+44D822DB	WISM	Web Information Systems Modeling
+44DF880B	MVA	Machine Vision Applications
+453E185C	WPMC	Wireless Personal Multimedia Communications
+4542770D	SSIRI	Secure Software Integration and Reliability Improvement
+459777C0	APSCC	Asia-Pacific Services Computing Conference
+45B176DF	JCDL	ACM/IEEE Joint Conference on Digital Libraries
+45C4ABE0	AISB	Artificial Intelligence and the Simulation of Behaviour
+4608C574	ECMFA	European Conference on Modelling Foundations and Applications
+46228D40	FMICS	Formal Methods for Industrial Critical Systems
+46598FE3	NDSS	Network and Distributed System Security Symposium
+465F7C62	ICML	International Conference on Machine Learning
+46CB61B2	RSP	Rapid System Prototyping
+46DA1590	MAICS	Midwest Artificial Intelligence and Cognitive Science Conference
+46E27806	ECSQARU	European Conference on Symbolic and Quantitative Approaches to Reasoning and Uncertainty
+4783E335	SACI	Symposium on Applied Computational Intelligence and Informatics
+47880EBE	ICSEA	International Conference on Software Engineering Advances
+478BCB40	IWDW	International Workshop on Digital Watermarking
+47C35ECC	ICMCS	International Conference on Multimedia Computing and Systems
+433B9B9F	ARSO	Advanced Robotics and its Social Impacts
+440CCBEB	IEEM	Industrial Engineering and Engineering Management
+442E5188	INTENSIVE	International Conference on Intensive Applications and Services
+445372B4	ICTA	Information and Communication Technologies and Accessibility
+4472F8CF	INFOVIS	IEEE Symposium on Information Visualization
+447A7E77	BIS	Business Information Systems
+44AC2FEE	ICMAI	International Conference on Music and Artificial Intelligence
+44AE44DD	CGI	Computer Graphics International
+450B99F2	ANSS	Annual Simulation Symposium
+451BB32E	NOCS	Networks-on-Chips
+453CB501	ICVS	International Conference on Computer Vision Systems
+4569270C	HICSS	Hawaii International Conference on System Sciences
+45E8D393	ICDCN	International Conference of Distributed Computing and Networking
+460FDA1C	CATS	Computing: The Australasian Theory Symposium
+4627B282	MDAI	Modeling Decisions for Artificial Intelligence
+463119A6	COLT	Computational Learning Theory
+464DFFCB	SCSC	Summer Computer Simulation Conference
+468CDFB4	PSB	Pacific Symposium on Biocomputing
+46FBFB42	MRC	Modeling and Retrieval of Context
+470659EF	ISCSLP	International Symposium on Chinese Spoken Language Processing
+47091364	GMAI	Geometric Modeling and Imaging
+4786A6E3	ILP	Inductive Logic Programming
+42CC6E2D	CI	Computational Intelligence
+437413E1	CyberC	Cyber-Enabled Distributed Computing and Knowledge Discovery
+43C176E6	COMSWARE	COMmunication System softWAre and MiddlewaRE
+43E6F40C	eHealth	Electronic Healthcare
+44305079	SSBSE	Symposium on Search Based Software Engineering
+44506119	GeNeMe	Gemeinschaften in Neuen Medien
+4455FCF9	CSWWS	Canadian Semantic Web Working Symposium
+446908FE	CoopIS	Cooperative Information Systems
+44E12FD1	ISWC	International Semantic Web Conference
+44EA5E08	BIBM	Bioinformatics and Biomedicine
+4542027C	EC-TEL	European Conference on Technology Enhanced Learning
+455A416B	EDCC	European Dependable Computing Conference
+45F964A3	MobiQuitous	International Conference on Mobile and Ubiquitous Systems: Networking and Services
+460A7036	SIGMOD	International Conference on Management of Data
+462EC289	IMIS	Innovative Mobile and Internet Services in Ubiquitous Computing
+464A90B0	SMPS	Soft Methods in Probability and Statistics
+465DBAD1	VMCAI	Verification, Model Checking and Abstract Interpretation
+465F0C00	ICCM	International Conference on Cognitive Modelling
+46BC0EDE	ICWE	International Conference on Web Engineering
+46C3B28B	SBBD	Brazilian Symposium on Databases
+46FFF74D	ICWUS	International Conference on Wireless and Ubiquitous Systems
+4737FD14	ISPA	International Symposium on Parallel and Distributed Processing and Applications
+474BD8D0	PDPTA	Parallel and Distributed Processing Techniques and Applications
+477DF6EB	SLATE	Symposium on Languages, Applications and Technologies
+47831A49	ISER	International Symposium on Experimental Robotics
+478ED67F	RV	Runtime Verification
+47B967AF	DCAI	Distributed Computing and Artificial Intelligence
+42CB1F93	ICMLC	International Conference on Machine Learning and Cybernetics
+42D493FC	ICASSP	International Conference on Acoustics, Speech, and Signal Processing
+43226B44	HPCA	High-Performance Computer Architecture
+4381C1AF	IFL	Implementation and Application of Functional Languages
+438B4414	DLS	Dynamic Languages Symposium
+439BCE5E	RecSys	Conference on Recommender Systems
+44376BCB	EMMCVPR	Energy Minimization Methods in Computer Vision and Pattern Recognition
+44902F2C	ITHET	Information Technology Based Higher Education and Training
+44AB61E1	RTCSA	Embedded and Real-Time Computing Systems and Applications
+44C1E1C1	EUROSEC	European Workshop on System Security
+45E5BC3F	CIS	Computational Intelligence and Security
+45FFFB88	ICSE	International Conference on Software Engineering
+4668332C	BSN	Wearable and Implantable Body Sensor Networks
+46E8C2CD	VECPAR	High Performance Computing for Computational Science (Vector and Parallel Processing)
+46F3B6B4	TARK	Theoretical Aspects of Rationality and Knowledge
+4734B6A1	WILF	International Workshop on Fuzzy Logic and Applications
+47490CF4	CTS	Collaboration Technologies and Systems
+47870042	MIG	Motion in Games
+85CC4F4F	MINES	International Conference on Multimedia Information Networking and Security
+4304EC96	SETN	Hellenic Conference on Artificial Intelligence
+436150FA	ICC	International Conference on Communications
+43626F75	IVCNZ	Image and Vision Computing New Zealand
+437068C2	CIbSE	Conferencia Iberoamericana de Software Engineering
+4372AEEF	SIGMETRICS	Measurement and Modeling of Computer Systems
+43E59455	HPCNCS	High Performance Computing, Networking and Communication Systems
+443CF3D6	SpringSim	Spring Simulation Multiconference
+44788D44	IDEAL	Intelligent Data Engineering and Automated Learning
+448ECA1D	FOCS	Foundations of Computer Science
+44E947F7	IHCI	Intelligent Human Computer Interaction
+45BA2C87	PDCAT	Parallel and Distributed Computing: Applications and Technologies
+45E3CA1B	ICB	International Conference on Biometrics
+46469614	FDG	Foundations of Digital Games
+4686A887	ISSCC	International Solid-State Circuits Conference
+4687CD2F	PECCS	International Conference on Pervasive and Embedded Computing and Communication Systems
+46E903B1	CICC	Custom Integrated Circuits Conference
+46EE8E44	ACC	Advances in Computing and Communications
+46FFDB2C	AMAST	Algebraic Methodology and Software Technology
+4704764E	FPL	Field-Programmable Logic and Applications
+4769E092	RAID	Recent Advances in Intrusion Detection
+477F6C83	FSE	Foundations of Software Engineering
+4300B64E	Afrigraph	Computer Graphics, Virtual Reality, Visualisation and Interaction in Africa
+4307E237	WOSIS	Security in Information Systems
+437D615C	ICICIC	International Conference on Innovative Computing, Information and Control
+439F03CF	PACT	International Conference on Parallel Architectures and Compilation Techniques
+441886A1	TbiLLC	Tbilisi Symposium on Logic, Language, and Computation
+44DA004E	KR	Principles of Knowledge Representation and Reasoning
+44EBC01F	DATA	International Conference on Data Technologies and Applications
+451090C0	IWRT	International Workshop on RFID Technology
+4515502B	ICPC	International Conference on Program Comprehension
+454ED2F8	ICFP	International Conference on Functional Programming
+45610CDA	ICDE	International Conference on Data Engineering
+45827814	NPC	Network and Parallel Computing
+45A2253F	VizSEC	Visualization for Computer Security
+45CC63B2	ICMT	International Conference on Model Transformation
+462D0C46	ITP	Interactive Theorem Proving
+46493DFD	ICSI	International Conference on Swarm Intelligence
+46EC7D07	DOLAP	Data Warehousing and OLAP
+4714E463	SOCA	Service-Oriented Computing and Applications
+471F9CDC	WebDB	International Workshop on the Web and Databases
+47253C12	IIiX	Information Interaction in Context
+472FC0F1	CSLP	Constraint Solving and Language Processing
+476E7EAC	ISTA	Information Systems Technology and its Applications
+478CDBCA	TAMC	Theory and Applications of Models of Computation
+47CCD291	GIR	Geographic Information Retrieval
+42C200E4	ICCPOL	International Conference on the Computer Processing of Oriental Languages
+42D8D442	NFM	NASA Formal Methods
+43001016	ECCV	European Conference on Computer Vision
+433D5EC6	SEFM	Software Engineering and Formal Methods
+435480C3	FMOODS	Formal Methods for Open Object-Based Distributed Systems
+436649AA	NCM	Networked Computing and Advanced Information Management
+43692916	WPES	Workshop on Privacy in the Electronic Society
+4389053B	HIPS	High-Level Parallel Programming Models and Supportive Environments
+43ABF249	WWW	International World Wide Web Conferences
+43D3179F	FoIKS	Foundations of Information and Knowledge Systems
+4431E39D	SoMeT	New Trends in Software Methodologies, Tools and Techniques
+4432E3F1	BWCCA	Broadband and Wireless Computing, Communication and Applications
+4509AF66	ICMENS	International Conference on MEMS, NANO, and Smart Systems
+45126447	ICANN	International Conference on Artificial Neural Networks
+4513F0F9	DPPI	Designing Pleasurable Products and Interfaces
+451E8992	ECBS	Engineering of Computer-Based Systems
+454F686A	ECAI	European Conference on Artificial Intelligence
+4564558E	WADT	Workshop on Recent Trends in Algebraic Development Techniques
+45C7663C	SMC	Systems, Man and Cybernetics
+46723E5B	WWIC	Wired/Wireless Internet Communications
+46819766	QSIC	International Conference on Quality Software
+46D5969B	ESIAT	Environmental Science and Information Application Technology
+4751F232	SocialCom	International Conference on Social Computing
+478757A6	CEC	Congress on Evolutionary Computation
+4791FE57	WASPAA	Workshop on Applications of Signal Processing to Audio and Acoustics
+42D7146F	MICAI	Mexican International Conference on Artificial Intelligence
+4304526C	CMSB	Computational Methods in Systems Biology
+433E69C4	SAFECOMP	International Conference on Computer Safety, Reliability, and Security
+43486AA0	RR	Web Reasoning and Rule Systems
+43510C43	ICISS	International Conference on Information Systems Security
+43BF9DCC	OPODIS	International Conference on Principles of Distributed Systems
+43D2A5F0	ICCS	International Conference on Conceptual Structures
+440E04A9	PKDD	European Conference on Principles of Data Mining and Knowledge Discovery
+4441FD71	IALP	International Conference on Asian Language Processing
+446BF184	ADCS	Australasian Document Computing Symposium
+44B7C5DA	AINTEC	Asian Internet Engineering Conference
+44D072F0	ICNS	International Conference on Networking and Services
+45000EEB	MOBIWAC	Mobility Management and Wireless Access
+4516158A	AsiaSim	Asian Simulation Conference
+454AACD8	MSR	Mining Software Repositories
+454B8FEC	MOMPES	Model-based Methodologies for Pervasive and Embedded Software
+45687161	Performance	International Symposium on Computer Modeling, Measurement and Evaluation
+457D1A50	ICWN	International Conference on Wireless Networks
+45C5F84D	LCC	Logical and Computational Complexity
+4638832E	HRPR	Human-Robot Personal Relationships
+46B8FFD4	ADC	Australasian Database Conference
+46DAFD1F	PRDC	Pacific Rim International Symposium on Dependable Computing
+46F1CA07	PRIS	Pattern Recognition in Information Systems
+470372BF	BIOTECHNO	Biocomputation, Bioinformatics, and Biomedical Technologies
+42CD4D27	ICA3PP	International Conference on Algorithms and Architectures for Parallel Processing
+42E510A7	WISA	Workshop on Information Security Applications
+4330BC8E	eTELEMED	International Conference on eHealth, Telemedicine, and Social Medicine
+43520CB2	EvoBIO	Evolutionary Computation, Machine Learning and Data Mining in Bioinformatics
+43C4880A	WAW	Workshop on Algorithms and Models for the Web-Graph
+43CBB3AE	DDECS	Design and Diagnostics of Electronic Circuits and Systems
+43F6459B	EUROCRYPT	Theory and Application of Cryptographic Techniques
+448DC0E0	ICCCI	International Conference on Computational Collective Intelligence
+4565989B	ICIW	International Conference on Internet and Web Applications and Services
+45C15042	ISSPIT	International Symposium on Signal Processing and Information Technology
+45CE5B32	AAIM	Algorithmic Applications in Management
+4650D7A9	MVHI	Machine Vision and Human-machine Interface
+46528AF2	IWOMP	International Workshop on OpenMP
+46619AC5	NEW2AN	Next Generation Teletraffic and Wired/Wireless Advanced Networking
+46BD07AF	DICTA	Digital Image Computing: Techniques and Applications
+46C18BBB	CDS	Cooperative Distributed Systems
+46CD3D2A	WOCN	Wireless and Optical Communications Networks
+46E5B931	CoLIS	Conceptions of Library and Information Sciences
+46FD5AEB	ISSAC	International Symposium on Symbolic and Algebraic Computation
+475A7738	ARITH	Symposium on Computer Arithmetic
+4775BF7A	MSN	Mobile Ad-hoc and Sensor Networks
+47AF2B68	DFMA	Distributed Frameworks for Multimedia Applications
+47C2A24C	AMiRE	Autonomous Minirobots for Research and Edutainment
+47CCD465	UAI	Uncertainty in Artificial Intelligence
+42DC17E4	DIGITEL	Digital Game and Intelligent Toy Enhanced Learning
+42E17B30	ISI	Intelligence and Security Informatics
+434C54FB	HRI	Human-Robot Interaction
+43618307	ATVA	Automated Technology for Verification and Analysis
+4377364B	EJC	European-Japanese Conference on Information Modelling and Knowledge Bases
+43940F97	CSR	Computer Science Symposium in Russia
+4423838D	RC	Reversible Computation
+443CBAC4	PRIMA	Pacific Rim International Conference on Multi-Agents
+446A1297	DMSN	Data Management for Sensor Networks
+44955A9A	ICSOB	International Conference on Software Business
+44C615EB	ICHL	International Conference on Hybrid Learning and Education
+44EABA80	GMP	Geometric Modeling and Processing
+44EC54CE	AMDO	Articulated Motion and Deformable Objects
+45083D2F	CVPR	Computer Vision and Pattern Recognition
+451C4D3D	ALENEX	Algorithm Engineering and Experimentation
+45210AF1	MACE	Modelling Autonomic Communications Environments
+4530EE52	GIScience	Geographic Information Science
+45465CC4	CC	Compiler Construction
+45701BF3	ICCV	International Conference on Computer Vision
+4574D9D2	ICDT	International Conference on Database Theory
+459868E4	PDC	Participatory Design Conference
+45F475CA	IWCF	International Workshop on Computational Forensics
+4616A0E2	IICAI	Indian International Conference on Artificial Intelligence
+461DDC0A	SACMAT	Symposium on Access Control Models and Technologies
+46556D49	ESWC	European Semantic Web Conference
+46804BBA	ETX	Eclipse Technology eXchange
+4693D390	IPCO	Integer Programming and Combinatorial Optimization
+46BFF4BF	ICCD	International Conference on Computer Design
+46C53898	AINA	Advanced Information Networking and Applications
+46D6E0D7	ECIW	European Conference on Information Warfare and Security
+47059E35	MoDELS	Model Driven Engineering Languages and Systems
+47169EC5	DEXA	Database and Expert Systems Applications
+4727BEE5	PPSN	Parallel Problem Solving from Nature
+474799EB	IA	Intelligent Agents
+476C3638	EATIS	Euro American Conference on Telematics and Information Systems
+47957C42	ICAART	International Conference on Agents and Artificial Intelligence
+43073C3F	CPAIOR	Integration of AI and OR Techniques in Constraint Programming
+430EDF97	ECDL	European Conference on Research and Advanced Technology for Digital Libraries
+4321CC25	CICLing	Conference on Intelligent Text Processing and Computational Linguistics
+4364C619	MWCN	Mobile and Wireless Communication Networks
+43B71DE0	ICPS	International Conference on Pervasive Services
+43CB8BB1	FLOPS	International Symposium on Functional and Logic Programming
+44250E28	IROS	Intelligent RObots and Systems
+4439F68B	ICCPS	International Conference on Cyber-Physical Systems
+44699282	BIRTE	Business Intelligence for the Real-Time Enterprises
+44EACB63	SIGDOC	International Conference on Design of Communication
+45276E0A	ACNS	Applied Cryptography and Network Security
+45483BED	IWANN	International Work-Conference on Artificial and Natural Neural Networks
+455C7238	MFCS	Mathematical Foundations of Computer Science
+45686500	ICNSC	International Conference on Networking, Sensing and Control
+457D471C	i3D	Interactive 3D Graphics and Games
+459EF883	ATS	Asian Test Symposium
+45A24601	IRCDL	Italian Research Conference on Digital Library Management Systems
+45AB6F7C	IOT	The Internet of Things
+45C742AD	RoboCup	Robot Soccer World Cup
+45CEA1A5	DAARC	Discourse Anaphora and Anaphor Resolution Colloquium
+45FF4DDC	WOCC	Wireless and Optical Communications Conference
+46173BF7	VCIP	Visual Communications and Image Processing
+46A6CA97	NEMS	Nano/Micro Engineered and Molecular Systems
+46CFE76B	ICSOFT	International Conference on Software and Data Technologies
+4733F622	KEOD	International Conference on Knowledge Engineering and Ontology Development
+4756C1ED	ICCVG	International Conference on Computer Vision and Graphics
+4771A36B	AIIDE	Artificial Intelligence and Interactive Digital Entertainment Conference
+478178C8	MIRAGE	Computer Vision/Computer Graphics Collaboration Techniques
+4789F291	ICDCS	International Conference on Distributed Computing Systems
+42F0CC9A	SOCO	Soft Computing
+42F14778	MobiDE	Data Engineering for Wireless and Mobile Access
+438E31AA	LCN	Local Computer Networks
+43F3068F	GECCO	Genetic and Evolutionary Computation Conference
+43FD0CAC	ICCL	International Conference on Computational Logistics
+442BF739	ATC	Autonomic and Trusted Computing
+446AF0D7	ICN	International Conference on Networking
+4472203F	EKAW	Knowledge Acquisition, Modeling and Management
+450EFBB0	DUX	Designing for User eXperiences
+45443D53	PROFES	Product Focused Software Process Improvement
+455477A7	ICIP	International Conference on Image Processing
+45876312	K-CAP	International Conference on Knowledge Capture
+45D416DF	ISDA	Intelligent Systems Design and Applications
+45D6911A	ACII	Affective Computing and Intelligent Interaction
+461A4BFF	MIE	Medical Informatics Europe
+4624E2A3	IWSOS	International Workshop on Self-Organizing Systems
+463369F3	NGI	Next Generation Internet
+46438945	BMEI	BioMedical Engineering and Informatics
+468A7487	ICDM	International Conference on Data Mining
+468D8535	ESORICS	European Symposium on Research in Computer Security
+469407EC	ADMA	Advanced Data Mining and Applications
+46A05BB0	AAAI	National Conference on Artificial Intelligence
+46A60087	SYNASC	Symbolic and Numeric Algorithms for Scientific Computing
+46FBD884	STOC	Symposium on the Theory of Computing
+473A73C9	IGARSS	International Geoscience and Remote Sensing Symposium
+4749C184	SLT	Spoken Language Technology Workshop
+47A1D52F	MMSP	Multimedia Signal Processing
+43137C5C	AVSS	Advanced Video and Signal Based Surveillance
+43383ED6	AIME	Artificial Intelligence in Medicine in Europe
+433F0094	WISE	Web Information Systems Engineering
+4352FEBB	SYRCoDIS	Spring Young Researchers Colloquium on Databases and Information Systems
+4367C1B4	IPMI	Information Processing in Medical Imaging
+4371D954	IWCMC	International Conference on Wireless Communications and Mobile Computing
+4372EE76	ICPR	International Conference on Pattern Recognition
+43758D9B	FOIS	Formal Ontology in Information Systems
+43820346	EDBT	Extending Database Technology
+43ADADD6	TRUST	Trust and Trustworthy Computing
+4400C9EC	MMM-ACNS	Mathematical Methods, Models, and Architectures for Network Security Systems
+443790FE	AIRWeb	Adversarial Information Retrieval on the Web
+44534090	WMUTE	Wireless, Mobile and Ubiquitous Technologies in Education
+44ABBB5D	QoMEX	Quality of Multimedia Experience
+4520AE55	ISR	International Symposium on Robotics
+455734FB	ICUMT	International Conference on Ultra Modern Telecommunications
+45B4AB31	WiOpt	Modeling and Optimization in Mobile, Ad-Hoc and Wireless Networks
+45B9D64F	FM	Formal Methods
+45C8CEE9	PRO-VE	Working Conference on Virtual Enterprises
+45DB01B0	SCIA	Scandinavian Conference on Image Analysis
+463966B8	LA-WEB	Latin American Web Congress
+46C042B6	STAIRS	Starting AI Researchers' Symposium
+46EF4FF9	VRST	Virtual Reality Software and Technology
+46F80578	SiPS	Signal Processing Systems
+46FBD930	RTAS	Real Time Technology and Applications Symposium
+471D649B	ALT	Algorithmic Learning Theory
+47366FA8	FICS	Fixed Points in Computer Science
+474FB019	ICGSE	International Conference on Global Software Engineering
+47CAE638	ACAL	Australian Conference on Artificial Life
+432BB4B8	CoNEXT	Conference on Emerging Network Experiment and Technology
+4351B9E8	RAM	Robotics, Automation and Mechatronics
+436B17F2	CiE	Conference on Computability in Europe
+438B9955	CCIW	Computational Color Imaging Workshop
+440ED19A	ICALP	International Colloquium on Automata, Languages and Programming
+44679532	SETP	Software Engineering Theory and Practice
+44B35AAB	ICARIS	International Conference on Artificial Immune Systems
+44BF398F	HiPC	High Performance Computing
+4503201D	ISSRE	International Symposium on Software Reliability Engineering
+458D25A3	DEON	Deontic Logic in Computer Science
+458F31C4	ITiCSE	Integrating Technology into Computer Science Education
+45A0F122	LOPSTR	Logic-based Program Synthesis and Transformation
+45B09F25	ICWMC	International Conference on Wireless and Mobile Communications
+45B7D2EB	COLING	International Conference on Computational Linguistics
+45D2A0CB	WBIR	Workshop on Biomedical Image Registration
+45E2ADDB	ROBIO	Robotics and Biomimetics
+461171C2	WIDM	Web Information and Data Management
+461B085B	ISPASS	International Symposium on Performance Analysis of Systems and Software
+46202E57	ER	International Conference on Conceptual Modeling
+46789D3E	DSS	Decision Support Systems
+474EAFD5	ISADS	International Symposium on Autonomous Decentralized Systems
+42E401CE	PSD	Privacy in Statistical Databases
+4304F3D4	WONS	Wireless on Demand Network Systems and Service
+43520230	CSCWD	Computer Supported Cooperative Work in Design
+436976F3	KDD	Knowledge Discovery and Data Mining
+43A4149C	CHASE	Cooperative and Human Aspects of Software Engineering
+43A56762	NOSSDAV	Network and Operating System Support for Digital Audio and Video
+43B93A74	GRAPP	International Conference on Computer Graphics Theory and Applications
+43E7F2AC	ICIAP	International Conference on Image Analysis and Processing
+4404AE79	COORDINATION	International Conference on Coordination Models and Languages
+4411E2EF	ADNTIIC	Advances in New Technologies, Interactive Interfaces, and Communicability
+4421681B	PoEM	The Practice of Enterprise Modeling
+442F700A	SoCG	Symposium on Computational Geometry
+4480577C	WHPCF	High Performance Computational Finance
+44C0EC29	ICTAI	International Conference on Tools with Artificial Intelligence
+44C8BF02	SUTC	Sensor Networks, Ubiquitous, and Trustworthy Computing
+44E1CC91	MOBILIGHT	Mobile Lightweight Wireless Systems
+44F01D7B	CLEF	Cross-Language Evaluation Forum
+44F29802	WEBIST	International Conference on Web Information Systems and Technologies
+450EACAF	ICSOC	International Conference on Service Oriented Computing
+451FA97C	EUC	Embedded and Ubiquitous Computing
+452ACCB8	IM	Integrated Network Management
+457D53D9	WG	Workshop on Graph-Theoretic Concepts in Computer Science
+458BF182	ROBOCOMM	International Conference on Robot Communication and Coordination
+45B0FD09	COSIT	Conference On Spatial Information Theory
+45BF6EA0	ICCE	International Conference on Computers in Education
+460C1940	Humanoids	IEEE-RAS International Conference on Humanoid Robots
+46463F24	SEUS	Software Technologies for Embedded and Ubiquitous Systems
+46AF9D29	FroCoS	Frontiers of Combining Systems
+470B5A7A	GD	Graph Drawing
+470EFF91	VEE	Virtual Execution Environments
+4726B6D2	MobiMedia	International Conference on Mobile Multimedia Communications
+474D9BDC	HOST	Hardware-Oriented Security and Trust
+476A3C20	MKM	Mathematical Knowledge Management
+862CBF4A	MIDI	Multimedia Interaction Design and Innovation
+42C509C4	RTA	Rewriting Techniques and Applications
+436D51D0	ICDIM	International Conference on Digital Information Management
+43886E5D	SCAI	Scandinavian Conference on AI
+441038DB	PASTE	Workshop on Program Analysis For Software Tools and Engineering
+44175CFB	TSD	Text, Speech and Dialogue
+441D80FD	ADS	Agent-Directed Simulation
+4479ED89	IPTPS	International Workshop on Peer-to-Peer Systems
+44ABD1BA	WoWMoM	World of Wireless, Mobile and Multimedia Networks
+44ADC1F4	BPM	Business Process Management
+44E1A46F	CIG	Computational Intelligence and Games
+450560B3	APGV	Applied Perception in Graphics and Visualization
+450B3A86	NSDI	Networked Systems Design and Implementation
+453E289B	WiMob	Wireless and Mobile Computing, Networking and Communications
+4558D729	CHI	Human Factors in Computing Systems
+45835902	CBMS	Computer-Based Medical Systems
+4619EDE8	INDOCRYPT	International Conference on Cryptology in India
+462AACB5	EMEIT	Electronic and Mechanical Engineering and Information Technology
+462BF9E1	INTERSPEECH	Conference of the International Speech Communication Association
+4647C10B	ECAL	European Conference on Artificial Life
+4694B652	PODS	Symposium on Principles of Database Systems
+46F3F722	NIME	New Interfaces for Musical Expression
+46F73898	SIMULTECH	International Conference on Simulation and Modeling Methodologies, Technologies and Applications
+472D3001	FLAIRS	The Florida AI Research Society
+47784D0E	BIOINFORMATICS	International Conference on Bioinformatics
+478641DF	GCB	German Conference on Bioinformatics
+4799F7D8	CTW	Cologne Twente Workshop on Graphs and Combinatorial Optimization
+479E6080	CIDR	Conference on Innovative Data Systems Research
+47A132CF	AIS	Autonomous and Intelligent Systems
+47AF8B65	ECCB	European Conference on Computational Biology
+42FA5DCE	ISESS	International Symposium on Environmental Software Systems
+430F1CC9	ICFCA	International Conference on Formal Concept Analysis
+433321A4	NETGAMES	Network and System Support for Games
+4333BBB9	AISM	Australian Information Security Management Conference
+43819A5A	RSKT	Rough Sets and Knowledge Technology
+43AA5802	MM	ACM Multimedia
+43F65246	ICIS	International Conference on Information Systems
+43FB6CAE	MKWI	Multikonferenz Wirtschaftsinformatik
+451788DE	CloudCom	Cloud Computing
+4531DEA3	CRV	Canadian Conference on Computer and Robot Vision
+455FBCE1	ICRA	International Conference on Robotics and Automation
+45737C92	ICIRA	International Conference on Intelligent Robotics and Applications
+4573EEB1	CORES	Computer Recognition Systems
+45A86DF6	ICCBR	International Conference on Case-Based Reasoning
+45D7DDA8	ICISC	International Conference on Information Security and Cryptology
+45F99B30	SG	Smart Graphics
+46CFCF2A	WOC	IASTED International Multi-Conference on Wireless and Optical Communications
+4756756D	DICTAP	Digital Information and Communication Technology and Its Applications
+4764A635	INAP	International Conference on Applications of Declarative Programming and Knowledge Management
+47C39427	IJCAI	International Joint Conference on Artificial Intelligence
+42CCF5DE	ISLPED	International Symposium on Low Power Electronics and Design
+4306EF42	RTSS	Real-Time Systems Symposium
+436E482B	SBCCI	Symposium on Integrated Circuits and Systems Design
+439E92D8	DAIS	Distributed Applications and Interoperable Systems
+43AFA617	MEDES	Management of Emergent Digital EcoSystems
+43F1D62E	CLIN	Computational Linguistics in the Netherlands
+43FA7FA8	PRIB	Pattern Recognition in Bioinformatics
+44236CB3	SLIP	System-Level Interconnect Prediction
+4457BAFF	FoSSaCS	Foundations of Software Science and Computation Structure
+449D545A	ICAC	International Conference on Autonomic Computing
+44D3E57F	ASAP	Application-Specific Systems, Architectures, and Processors
+44E6CA1F	ARCS	Automation, Robotics and Control Systems
+45577A03	ICAPS	International Conference on Automated Planning and Scheduling
+45B8879C	CARS	Computer Assisted Radiology and Surgery
+45C028EA	IUI	Intelligent User Interfaces
+45C4CD5D	SERA	Software Engineering Research and Applications
+45E52D8B	EEWC	Enterprise Engineering Working Conference
+4617B656	CRITIS	Critical Information Infrastructures Security
+46396AE3	MLG	Mining and Learning with Graphs
+465F3CD9	LID	Logic in Databases
+46AB27D7	SWAP	Semantic Web Applications and Perspectives
+46AFE0E6	FedCSIS	Federated Conference on Computer Science and Information Systems
+46C2A057	DSN	Dependable Systems and Networks
+46CD56E8	BSB	Brazilian Symposium on Bioinformatics
+46E77C12	SITIS	Signal-Image Technology and Internet-Based Systems
+47391705	MATES	Multiagent System Technologies
+475D2B08	DEBS	Distributed Event-Based Systems
+47B8452D	WISTP	Workshop in Information Security Theory and Practice
+42CCC198	HiPEAC	High Performance Embedded Architectures and Compilers
+42D65D01	ADHOCNETS	Ad Hoc Networks
+43123418	CIMCA	Computational Intelligence for Modelling, Control and Automation
+43301426	CICSyN	Computational Intelligence, Communication Systems and Networks
+433C9218	SoCC	Symposium on Cloud Computing
+435B3D98	NaBIC	Nature and Biologically Inspired Computing
+436D599B	CMC	Communications and Mobile Computing
+436F501E	FUN	Fun with Algorithms
+439550F3	HPTS	High Performance Transaction Systems Workshop
+439E9A1C	DGCI	Discrete Geometry for Computer Imagery
+43C18390	FPGA	Field Programmable Gate Arrays
+43E3E33C	CLOSER	International Conference on Cloud Computing and Services Science
+44195980	ATMOS	Algorithmic Approaches for Transportation Modeling, Optimization, and Systems
+4482E21B	ARTCom	Advances in Recent Technologies in Communication and Computing
+44AB0F07	ECCTD	European Conference on Circuit Theory and Design
+44B38E21	PE-WASUN	Performance Evaluation of Wireless Ad Hoc, Sensor, and Ubiquitous Networks
+44E34C11	KSEM	Knowledge Science, Engineering and Management
+4516081A	TACAS	Tools and Algorithms for Construction and Analysis of Systems
+451FE2E9	ICMR	International Conference on Multimedia Retrieval
+455982FB	WINE	Workshop on Internet and Network Economics
+455D09BB	BNCOD	British National Conference on Databases
+457D0954	IDEAS	International Database Engineering and Applications Symposium
+45AEE573	SCAM	Source Code Analysis and Manipulation
+45BA0A3D	ICHIT	International Conference on Hybrid Information Technology
+464C588C	ETFA	Emerging Technologies and Factory Automation
+467A131E	TASE	Theoretical Aspects of Software Engineering
+46DE2D44	RECOMB	Research in Computational Molecular Biology
+472B124E	AOSD	Aspect-Oriented Software Development
+478A3950	DBKDA	Databases, Knowledge, and Data Applications
+43247716	HOTI	High Performance Interconnects
+43555C32	CGO	Symposium on Code Generation and Optimization
+4372E602	DISC	International Symposium on Distributed Computing
+4373F5A0	LCTES	Languages, Compilers, and Tools for Embedded Systems
+43CD997E	HEALTHINF	International Conference on Health Informatics
+43D23988	ICCCN	International Conference on Computer Communications and Networks
+4409EED4	VMV	Vision Modeling and Visualization
+44135ABE	CHINZ	New Zealand Chapter's International Conference on Computer-Human Interaction
+441B582F	QEST	Quantitative Evaluation of Systems
+442BD7CD	INFOCOM	International Conference on Computer Communications
+44641471	BIONETICS	Bioinspired Models of Network, Information, and Computing Systems
+4475ECD0	WHC	World Haptics Conference
+44A2A3CC	BIOSTEC	Biomedical Engineering Systems and Technologies
+44B337CB	Infoscale	Scalable Information Systems
+44B9A6EF	ICCABS	International Conference on Computational Advances in Bio and Medical Sciences
+44E5A1B2	ICPP	International Conference on Parallel Processing
+4503DE86	WIAMIS	Workshop on Image Analysis for Multimedia Interactive Services
+45302733	GrC	Granular Computing
+453C1DA9	SAMT	Semantics and Digital Media Technologies
+45503341	PACIIA	Pacific-Asia Workshop on Computational Intelligence and Industrial Application
+45913BE9	AMTA	Conference of the Association for Machine Translation in the Americas
+45A2F31B	ACSD	International Conference on Application of Concurrency to System Design
+45C56EDC	DFT	Defect and Fault Tolerance in VLSI and Nanotechnology Systems
+4600D055	ISPEC	Information Security Practice and Experience
+46066DC0	NPAR	Non-Photorealistic Animation and Rendering
+4626185F	QoSA	Quality of Software Architectures
+463BE6FF	DATE	Design, Automation, and Test in Europe
+4677A3BB	MCU	Machines, Computations, and Universality
+46B686C3	CASA	Computer Animation and Social Agents
+46F92F3E	WS-FM	Web Services and Formal Methods
+47313E98	ASONAM	Advances in Social Networks Analysis and Mining
+475AC8A7	ReConFig	Reconfigurable Computing and FPGAs
+47798906	NOLISP	Non-Linear Speech Processing
+478C2CAA	SECRYPT	International Conference on Security and Cryptography
+47A823DD	ICWS	International Conference on Web Services
+4339904B	SENSORNETS	International Conference on Sensor Networks
+43987AC1	AVI	Advanced Visual Interfaces
+43BD90D3	SWAT	Scandinavian Workshop on Algorithm Theory
+43C81C42	SIPEW	SPEC International Performance Evaluation Workshop
+43F7DA87	ICAL	International Conference on Automation and Logistics
+43F8572D	GIS	Advances in Geographic Information Systems
+44985063	Compute	Bangalore Annual Compute Conference
+44D6B481	SUM	Scalable Uncertainty Management
+45277557	ISCC	International Symposium on Computers and Communications
+45933558	FORMATS	Formal Modeling and Analysis of Timed Systems
+459FD6FD	CMMR	Computer Music Modeling and Retrieval
+45CB2A7D	CAD/Graphics	Computer-Aided Design and Computer Graphics
+45F282AE	WAIM	Web-Age Information Management
+46013AA1	ICYCS	International Conference for Young Computer Scientists
+46598106	IWCIA	International Workshop on Combinatorial Image Analysis
+466431A5	SAINT	Symposium on Applications and the Internet
+46E2E4B1	FSMNLP	Finite-State Methods and Natural Language Processing
+472C8CEC	ICISO	International Conference on Informatics and Semiotics in Organisations
+4757E64E	GridNets	Networks for Grid Applications
+475F4819	WITS	Workshop on Information Technologies and Systems
+47797088	DRR	Document Recognition and Retrieval
+477FB9E7	IPAW	International Provenance and Annotation Workshop
+47838997	IRFC	Information Retrieval Facility Conference
+47B28A7C	WISES	Workshop on Intelligent Solutions in Embedded Systems
+42DA9D26	GREC	Graphics Recognition
+430E4089	WAOA	Workshop on Approximation and Online Algorithms
+4342BD78	ISSA	Information Security for South Africa
+43650CDF	AGI	Artificial General Intelligence
+4384DEC8	SECURWARE	International Conference on Emerging Security Information, Systems and Technologies
+4385295C	EGOV	Electronic Government
+438A7779	WISEC	Wireless Network Security
+439B8DD1	SBMF	Brazilian Symposium on Formal Methods
+43A3BF50	ICIDS	International Conference on Interactive Digital Storytelling
+43E4D7A4	CAR	International Asia Conference on Informatics in Control, Automation and Robotics
+442743F7	COCOA	Conference on Combinatorial Optimization and Applications
+451C6EC3	FOGA	Foundations of Genetic Algorithms
+4539ED1E	ISNN	International Symposium on Neural Networks
+45777CD3	AICI	Artificial Intelligence and Computational Intelligence
+45834231	FMCAD	Formal Methods in Computer-Aided Design
+45D76B94	DIS	Designing Interactive Systems
+4612EACA	ICST	International Conference on Software Testing, Verification, and Validation
+4637EEEA	STACS	Symposium on Theoretical Aspects of Computer Science
+469A7426	LATA	Language and Automata Theory and Applications
+46CDFBC4	DAC	Design Automation Conference
+4723E433	CSEDU	International Conference on Computer Supported Education
+474DBE69	CISSE	Computer, Information, and Systems Sciences, and Engineering
+475887BB	ENTER	Information and Communication Technologies in Tourism
+47BE2D88	Autonomics	Autonomic Computing and Communication Systems
+42B837D2	CEAS	Conference on Email and Anti-Spam
+42EE09CD	CIRA	Computational Intelligence in Robotics and Automation
+435D23B8	SODA	Symposium on Discrete Algorithms
+438FC436	ICDCIT	International Conference on Distributed Computing and Internet Technology
+4392C40B	APCCAS	Asia Pacific Conference on Circuits and Systems
+4394676A	CLA	Concept Lattices and their Applications
+43E251D1	MTDT	Memory Technology, Design and Testing
+43E3020F	OWLED	OWL: Experiences and Directions
+440DEB3E	BIOSIG	Biometrics and Electronic Signatures
+4411B4B8	ICAD	International Conference on Auditory Display
+44344A0A	IMECS	International MultiConference of Engineers and Computer Scientists
+44CCF851	DAS	Document Analysis Systems
+44DA6608	RuleML	Rules and Rule Markup Languages for the Semantic Web
+4549948F	CAV	Computer Aided Verification
+455F8435	NLG	Natural Language Generation
+45B33971	ISSPA	Information Sciences, Signal Processing and their Applications
+47188EEA	CRiSIS	Conference on Risks and Security of Internet and Systems
+475B8292	PACCS	Pacific-Asia Conference on Circuits, Communications and Systems
+4769FF98	LCPC	Languages and Compilers for Parallel Computing
+47A17F8A	C5	Conference on Creating, Connecting and Collaborating through Computing
+47A7A7E0	ISMAR	International Symposium on Mixed and Augmented Reality
+47C1980F	IISWC	IEEE International Symposium on Workload Characterization
+42E6BE19	DSD	Digital Systems Design
+430824ED	NDT	Networked Digital Technologies
+43498F7E	SASN	Security of ad hoc and Sensor Networks
+43584039	EGPGV	Eurographics Workshop on Parallel Graphics and Visualization
+43CD1EFB	ADBIS	Advances in Databases and Information Systems
+43F41A29	PODC	Principles of Distributed Computing
+43FD6777	ISMB	Intelligent Systems in Molecular Biology
+4429EF2C	SEAFOOD	Software Engineering Approaches for Offshore and Outsourced Development
+44B660C4	Globe	International Conference on Data Management in Grid and P2P Systems
+44F1BEFF	IAAI	Innovative Applications of Artificial Intelligence
+45466C92	PPAM	Parallel Processing and Applied Mathematics
+457FF1EE	CASC	Computer Algebra in Scientific Computing
+45D96940	CANS	Cryptology and Network Security
+460D43CF	CISS	Conference on Information Sciences and Systems
+4665AEAE	FSKD	Fuzzy Systems and Knowledge Discovery
+469BDC4B	MobiSys	International Conference on Mobile Systems, Applications, and Services
+46C698EA	DocEng	Document Engineering
+46C92457	ISBI	International Symposium on Biomedical Imaging
+4708B833	IPDPS	International Parallel and Distributed Processing Symposium
+4714F2C6	ICAIS	International Conference on Adaptive and Intelligent Systems
+474585AD	SASO	Self-Adaptive and Self-Organizing Systems
+476B7673	BIOSIGNALS	International Conference on Bio-inspired Systems and Signal Processing
+4782201E	ESSCIRC	European Solid-State Circuits Conference
+42F91B89	MMM	Conference on Multimedia Modeling
+4309C535	ICWSM	International Conference on Weblogs and Social Media
+437C0B5D	ICINCO	International Conference on Informatics in Control, Automation and Robotics
+43BF68AF	AIAI	Artificial Intelligence Applications and Innovations
+43F539F1	ArtsIT	Arts and Technology
+4429872D	IITA	Intelligent Information Technology Application
+446DDB98	IbPRIA	Iberian Conference on Pattern Recognition and Image Analysis
+452BB0BA	ProvSec	Provable Security
+4542EB6A	CCC	Conference on Computational Complexity
+45462B39	EMSOFT	Embedded Software
+4553C258	SMARTGREENS	International Conference on Smart Grids and Green IT Systems
+45828ED1	ISIPTA	International Symposium on Imprecise Probabilities and Their Applications
+45A68B5F	ICDKE	Data and Knowledge Engineering
+45F841A1	PETS	Privacy Enhancing Technologies
+46294516	OPTICS	International Conference on Optical Communication Systems
+462C0072	CSE	Computational Science and Engineering
+4673EE2C	ICECCS	International Conference on Engineering of Complex Computer Systems
+467B3333	PCI	Panhellenic Conference on Informatics
+468C0299	ICONIP	International Conference on Neural Information Processing
+46A01C8F	ICUIMC	International Conference on Ubiquitous Information Management and Communication
+46A1EA1D	AIMS	Autonomous Infrastructure, Management and Security
+46D76472	ISM	International Symposium on Multimedia
+47796128	CIBCB	Computational Intelligence in Bioinformatics and Computational Biology
+47BBF4CC	WCCI	World Congress on Computational Intelligence
+42E0A8FA	BMSD	Business Modeling and Software Design
+42FFB84B	EIT	Electro/Information Technology
+434A76CE	GLSVLSI	Great Lakes Symposium on VLSI
+43701CEE	GLOBECOM	Global Communications Conference
+43837677	SGP	Symposium on Geometry Processing
+43D1CF2E	ASP-DAC	Asia and South Pacific Design Automation Conference
+443F9CFF	VR	IEEE Virtual Reality Conference
+44477544	EuroITV	European Conference on Interactive TV
+4492538C	NSS	Network and System Security
+44B587D1	ISITA	International Symposium on Information Theory and its Applications
+44C78644	IPCCC	International Performance, Computing, and Communications Conference
+454CA326	SSME	Services Science, Management and Engineering
+456FEF09	LREC	Language Resources and Evaluation
+45C0AEF7	ICDSC	International Conference on Distributed Smart Cameras
+45D6D8B6	UCS	Ubiquitous Computing Systems
+45E1EDD6	INCoS	Intelligent Networking and Collaborative Systems
+465E9AD0	DARS	Distributed Autonomous Robotic Systems
+46E679A5	APWCS	Asia-Pacific Conference on Wearable Computing Systems
+46F58A2E	MIR	Multimedia Information Retrieval
+47924BFA	IVAPP	International Conference on Information Visualization Theory and Applications
+47B86F47	ICDS	International Conference on the Digital Society
+42BD758D	CAINE	Computer Applications in Industry and Engineering
+42DCA4D1	HVC	Haifa Verification Conference
+42F4F2CC	MOBICOM	ACM/IEEE International Conference on Mobile Computing and Networking
+439E313A	CADE	Conference on Automated Deduction
+43C40A80	COCOON	Computing and Combinatorics Conference
+43F44683	APWeb	Asia-Pacific Web Conference
+4401AFCF	IIS	Intelligent Information Systems
+448FB98B	JTRES	Java Technologies for Real-time and Embedded Systems
+44B4399F	SBIA	Brazilian Symposium on Artificial Intelligence
+4565183D	ISQED	International Symposium on Quality Electronic Design
+456FCE15	COOP	Cooperative Systems Design
+457DC158	CIC	Color Imaging Conference
+45848F1A	UIST	User Interface Software and Technology
+458DD1E0	ICIG	International Conference on Image and Graphics
+45F753AE	HASE	High-Assurance Systems Engineering
+462CCB7F	IPCC	International Professional Communication Conference
+4659CB2E	ICCMS	International Conference on Computer Modeling and Simulation
+46D08960	CALCO	Conference on Algebra and Coalgebra in Computer Science
+46F3DAAB	ISECS	International Symposium on Electronic Commerce and Security
+47077118	SCIS	Scandinavian Conference on Information Systems
+471D9198	ICPRAM	International Conference on Pattern Recognition Applications and Methods
+474B9420	AMR	Adaptive Multimedia Retrieval
+479FE96A	CNS	Communications and Networking Symposium
+47B178E5	ISAS	International Service Availability Symposium
+42DF60D9	MTSR	Metadata and Semantics Research
+431CE69C	ISCIS	International Symposium on Computer and Information Sciences
+43727C0E	ICANNGA	International Conference on Adaptive and Natural Computing Algorithms
+438DC8E7	ICFEM	International Conference on Formal Engineering Methods
+43904F00	WSCG	International Conference in Central Europe on Computer Graphics and Visualization
+449C9FDE	ICEBE	International Conference on e-Business Engineering
+452A24F2	MobiSec	Security and Privacy in Mobile Information and Communication Systems
+453E8A20	ICFIE	International Conference of Fuzzy Information and Engineering
+454FB0B7	FSEN	Fundamentals of Software Engineering
+45B94082	QUATIC	Quality of Information and Communications Technology
+45DA1F87	FCCM	Field-Programmable Custom Computing Machines
+4609C01C	MCPR	Mexican Conference on Pattern Recognition
+465A87B2	ECSA	European Conference on Software Architecture
+467CEB8F	SIN	Security of Information and Networks
+468CE928	XIME-P	International Workshop on XQuery Implementation, Experience and Perspectives
+4690296A	TABLEAUX	Theorem Proving with Analytic Tableaux and Related Methods
+476E205F	TGC	Trustworthy Global Computing
+47765112	CASES	Compilers, Architecture, and Synthesis for Embedded Systems
+47B0EBDD	GCE	Grid Computing Environments
+47CC151A	IWPSE	International Workshop on Principles of Software Evolution
+47CD5392	ICADL	International Conference on Asian Digital Libraries
+4398864E	CAiSE	Conference on Advanced Information Systems Engineering
+43B0793E	SRDS	Symposium on Reliable Distributed Systems
+43B11EF5	SKG	Semantics, Knowledge and Grid
+43B86C1D	CITA	Conference on Information Technology in Asia
+43E26252	ISVLSI	IEEE Computer Society Annual Symposium on VLSI
+43FD776C	SIGIR	International ACM SIGIR Conference on Research and Development in Information Retrieval
+442F440A	PSIVT	Pacific-Rim Symposium on Image and Video Technology
+4479EF94	TFP	Trends in Functional Programming
+447B8E60	HPCC	High Performance Computing and Communications
+448AC690	CIVR	Conference on Image and Video Retrieval
+44FBA995	MABS	Multi-Agent Systems and Agent-Based Simulation
+452560D7	VSTTE	Verified Software: Theories, Tools, Experiments
+454E0ED5	APCHI	Asia-Pacific Computer and Human Interaction
+45B351F5	REFSQ	Requirements Engineering: Foundation for Software Quality
+45DA765E	EUROBOT	International Conference on Research and Education in Robotics
+45E116C3	AIED	Artificial Intelligence in Education
+45FAE21C	SwSTE	Software - Science, Technology and Engineering
+463BD859	PAKDD	Pacific-Asia Conference on Knowledge Discovery and Data Mining
+46B6BD2F	MIPRO	International Convention on Information and Communication Technology, Electronics and Microelectronics
+46FC8289	FDL	Forum on specification and Design Languages
+4706D6FC	RA	Robotics and Applications
+4777163F	PDCS	Parallel and Distributed Computing Systems (ISCA)
+47A9B8FE	ICGT	International Conference on Graph Transformation
+8519957F	iCBBE	International Conference on Bioinformatics and Biomedical Engineering
+42C0465A	SEAL	Simulated Evolution and Learning
+42C04CB3	VISIGRAPP	International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications
+43563C32	SEMCCO	Swarm, Evolutionary, and Memetic Computing
+43CF4565	CLOUD	International Conference on Cloud Computing
+43DA00C9	DNIS	Databases in Networked Information Systems
+43FD084C	ICAIL	International Conference on Artificial Intelligence and Law
+441458FA	CARE	Collaborative Agents - REsearch and Development
+44616FF1	PPoPP	ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+447B80D7	ASWEC	Australian Software Engineering Conference
+4499A295	MICRO	International Symposium on Microarchitecture
+449CDF39	CSSE	Computer Science and Software Engineering
+44BC5EE8	MUE	Multimedia and Ubiquitous Engineering
+455B6732	S&P	IEEE Symposium on Security and Privacy
+4574F859	AMSTA	Agent and Multi-Agent Systems: Technologies and Applications
+45ADA753	InfoSecCD	Information Security Curriculum Development
+45C96A92	NGITS	Next Generation Information Technologies and Systems
+45D87245	SASP	Symposium on Application Specific Processors
+45F233EC	SPLASH	ACM conference on Systems, Programming, Languages and Applications: Software for Humanity
+4650D622	AMT	Active Media Technology
+4664FD6F	CASoN	Computational Aspects of Social Networks
+466DD17F	WETICE	Workshops on Enabling Technologies: Infrastracture for Collaborative Enterprises
+47050C03	PETRA	Pervasive Technologies Related to Assistive Environments
+4718BF06	CPM	Combinatorial Pattern Matching
+4743F3A5	WoLLIC	Workshop on Logic, Language, Information and Computation
+4773F002	CDC	Conference on Decision and Control
+478D1F3B	EGSR	Eurographics Symposium on Rendering Techniques
+42B9FC1C	SAB	Simulation of Adaptive Behavior
+42C62517	CIT	Computer and Information Technology
+42CF1BB8	CIARP	Iberoamerican Congress on Pattern Recognition
+43DCE876	SenSys	International Conference on Embedded Networked Sensor Systems
+443AAA9F	ExaCt	Explanation-aware Computing
+443C9649	VECIMS	Virtual Environments, Human-Computer Interfaces and Measurement Systems
+4484A15D	PEPM	Partial Evaluation and Semantic-Based Program Manipulation
+44B16F02	EuroCG	European Workshop on Computational Geometry
+44B79239	MTAGS	Many-Task Computing on Grids and Supercomputers
+45986FDA	AHS	Adaptive Hardware and Systems
+459A9715	AST	Automation of Software Test
+46580135	TPDL	Theory and Practice of Digital Libraries
+46706268	INTETAIN	Intelligent Technologies for Interactive Entertainment
+4672F3B6	MASS	Mobile Adhoc and Sensor Systems
+46E57E89	VISSOFT	Visualizing Software for Understanding and Analysis
+46F34EFB	EUROCON	Conference on Computer as a Tool
+471F93FA	CIAC	International Conference on Algorithms and Complexity
+4772219F	CIDM	Computational Intelligence and Data Mining
+47A83BFE	IWINAC	International Work-Conference on the Interplay Between Natural and Artificial Computation
+47B51FBD	ECRTS	Euromicro Conference on Real-Time Systems
+42D58280	RAW	Reconfigurable Architectures Workshop
+4306948C	SIGCSE	Technical Symposium on Computer Science Education
+43570143	TAP	Tests and Proofs
+439B9AD2	ICIC	International Conference on Intelligent Computing
+43B17EAF	PDP	Parallel, Distributed and Network-Based Processing
+43C320E5	ESOP	European Symposium on Programming
+43D1DCC1	ANCS	Architectures for Networking and Communications Systems
+43DFAE0A	OOPSLA	Conference on Object-Oriented Programming Systems, Languages, and Applications
+447CF406	ECIS	European Conference on Information Systems
+44AECA52	CSA	Computer Science and its Applications
+453F3F1D	IPSN	Information Processing in Sensor Networks
+453FBF5D	VAST	Visual Analytics Science and Technology
+4554E150	GCC	Grid and Cooperative Computing
+45F99F55	ICITS	International Conference on Information Theoretic Security
+462744F4	VTC	Vehicular Technology Conference
+46505CF0	ICSIPA	International Conference on Signal and Image Processing Applications
+465DCDBA	COMAD	Conference on Management of Data
+466F15E7	SAGT	Algorithmic Game Theory
+46E1AB3B	FCT	Fundamentals of Computation Theory
+472461FB	DSOM	Distributed Systems: Operations and Management
+47260F7B	PervasiveHealth	Pervasive Computing Technologies for Healthcare
+4765E125	LANOMS	Latin American Network Operations and Management Symposium
+4797C437	ECEG	European Conference On e-Government
+47B42F95	WOSP	Workshop on Software and Performance
+47C77B94	CBMI	Content-Based Multimedia Indexing
+8516B55A	EMBC	International Conference of the IEEE Engineering in Medicine and Biology Society
+4361BD82	WICSA	Working IEEE/IFIP Conference on Software Architecture
+437E7D49	IWPT	International Workshop/Conference on Parsing Technologies
+43AEF2F9	Pervasive	International Conference on Pervasive Computing
+441CE122	SDM	SIAM International Conference on Data Mining
+44B7D8B2	IRI	Information Reuse and Integration
+44C5464F	BIBE	Bioinformatics and Bioengineering
+4527DE98	ICARA	International Conference on Automation, Robotics and Applications
+457C90F5	WCE	World Congress on Engineering
+457CED2E	Edutainment	International Conference on E-learning and Games
+45A9AA34	PASCO	Parallel Symbolic Computation
+45B09C45	ICER	International Computing Education Research Workshop
+461C83ED	SEAA	Software Engineering and Advanced Applications
+465EFAEC	MUM	Mobile and Ubiquitous Multimedia
+466F7BE2	NMR	Non-Monotonic Reasoning
+46AB47BD	CSIE	Computer Science and Information Engineering
+46E64AD9	NCA	Network Computing and Applications
+470B05DE	ICCSA	International Conference on Computational Science and Its Applications
+4783F0C2	PROMAS	Programming Multi-Agent Systems
+478794CB	WI	Web Intelligence
+47CB8578	SCOPES	Software and Compilers for Embedded Systems
+42D4CF15	ICTAC	International Colloquium on Theoretical Aspects of Computing
+436312EA	RCIS	Research Challenges in Information Science
+437CD902	TKE	Terminology and Knowledge Engineering
+43805E25	HERCMA	Hellenic-European Conference on Computer Mathematics and its Applications
+43B385AB	WINSYS	International Conference on Wireless Information Networks and Systems
+43E5D455	ALGOSENSORS	Algorithmic Aspects of Wireless Sensor Networks
+44087830	GPC	Grid and Pervasive Computing
+447AFBD7	AAA-IDEA	Advanced Architectures and Algorithms for Internet Delivery and Applications
+4492F51B	ICSEng	International Conference on Systems Engineering
+44B13001	SIGCOMM	ACM Special Interest Group on Data Communication
+44C084AC	JCKBSE	Joint Conference on Knowledge-Based Software Engineering
+44D4200D	UIC	Ubiquitous Intelligence and Computing
+44D951AC	PIMRC	Personal, Indoor and Mobile Radio Communications
+45A0DDC1	ICARCV	International Conference on Control, Automation, Robotics and Vision
+45A87C40	WFLP	Workshop on Functional and Constraint Logic Programming
+45CC165B	LICS	Logic in Computer Science
+45D8562E	AMCIS	Americas Conference on Information Systems
+45FD9DD4	PRICAI	Pacific Rim International Conference on Artificial Intelligence
+462FCD74	MLDM	Machine Learning and Data Mining in Pattern Recognition
+46C28EA3	SISAP	Similarity Search and Applications
+46D869D6	EACL	Conference of the European Chapter of the Association for Computational Linguistics
+4742B309	TLDI	Types In Languages Design And Implementation
+4744249D	SOFSEM	Conference on Current Trends in Theory and Practice of Informatics
+42DD43AB	CogART	Cognitive Radio and Advanced Spectrum Management
+430D9705	ISSTA	International Symposium on Software Testing and Analysis
+4384C1D1	WALCOM	Workshop on Algorithms and Computation
+43AFEC4B	EDOC	Enterprise Distributed Object Computing
+43E2179B	SEA	Symposium on Experimental and Efficient Algorithms
+447BF857	BCI	Balkan Conference in Informatics
+44C16141	CRYPTO	International Cryptology Conference
+4511E94A	PGM	Probabilistic Graphical Models
+453B1861	FOCI	Foundations of Computational Intelligence
+45563B9A	WCNC	Wireless Communications and Networking Conference
+45E37591	CAMAD	Computer Aided Modeling and Design of Communication Links and Networks
+461877A8	NCTA	International Conference on Neural Computation Theory and Applications
+4651456C	CCGRID	Cluster Computing and the Grid
+4677BC9C	ESTIMedia	Embedded Systems for Real-Time Multimedia
+46908B16	CARDIS	Smart Card Research and Advanced Application Conference
+469324BE	IWSEC	International Workshop on Security
+46A355BA	OSDI	Operating Systems Design and Implementation
+46EF45E9	AUS-AI	Australian Joint Conference on Artificial Intelligence
+471752F4	ISCAS	International Symposium on Circuits and Systems
+472C6E2D	CIKM	Conference on Information and Knowledge Management
+473B0162	CSCW	Conference on Computer Supported Cooperative Work
+42D98AA6	GPCE	Generative Programming and Component Engineering
+4315A0BB	ReCoSoC	Reconfigurable Communication-centric Systems-on-Chip
+4373D98F	NAS	Networking, Architecture and Storages
+4390334E	VLDB	Very Large Data Bases
+43A09DE3	IPOM	IP Operations and Management
+443A5863	ISMIR	International Symposium/Conference on Music Information Retrieval
+44BF411D	ICEE	International Conference on E-Business and E-Government
+450CC8B5	SBRN	Brazilian Symposium on Neural Networks
+45266923	ACHI	Advances in Computer-Human Interaction
+4556024C	Euro-Par	European Conference on Parallel Processing
+45BC9F29	SIIT	Standardization and Innovation in Information Technology
+45CC942C	GSN	GeoSensor Networks
+45ED3638	FORTE	Formal Techniques for (Networked and) Distributed Systems
+462E0862	ICGEC	International Conference on Genetic and Evolutionary Computing
+465EF934	MASCOTS	Modeling, Analysis, and Simulation On Computer and Telecommunication Systems
+469DDC30	SAM	System Analysis and Modeling
+46B774B0	CATA	Computers and Their Applications
+46CC45CE	ACRI	Cellular Automata for Research and Industry
+470DE66B	TRIDENTCOM	Testbeds and Research Infrastructures for the DEvelopment of NeTworks and COMmunities
+47167ADC	EMNLP	Empirical Methods in Natural Language Processing
+4742F3EA	QuantumComm	Quantum Communication and Quantum Networking
+47A8116F	MoMM	Advances in Mobile Multimedia
+4332078E	PLDI	Programming Language Design and Implementation
+435F0460	ICETC	International Conference on Education Technology and Computer
+43939626	MOBILWARE	Mobile Wireless Middleware, Operating Systems, and Applications
+439F2D27	PCS	Picture Coding Symposium
+43C2327D	DFRWS	Digital Forensic Research Workshop
+43F3EBCF	PG	Pacific Conference on Computer Graphics and Applications
+43F5AF1B	WKDD	Workshop on Knowledge Discovery and Data Mining
+442F3062	WWV	Workshop on Automated Specification and Verification of Web Sites
+4488779E	SEDE	Software Engineering and Data Engineering
+44913AA3	WSE	Symposium on Web Systems Evolution
+4493E2DA	TMFCS	Theoretical and Mathematical Foundations of Computer Science
+44A68539	ICEIS	International Conference on Enterprise Information Systems
+44E63CB6	EuroSSC	European Conference on Smart Sensing and Context
+44F27AEF	ISBRA	International Symposium on Bioinformatics Research and Applications
+44F7308E	K4HelP	Knowledge Management for Health Care Procedures
+45616195	PACIS	Pacific Asia Conference on Information Systems
+4579BE85	SLE	Software Language Engineering
+4585ADCE	SBAC-PAD	Symposium on Computer Architecture and High Performance Computing
+45ECD72D	ENASE	International Conference on Evaluation of Novel Approaches to Software Engineering
+460F9D66	ASSETS	Conference on Computers and Accessibility
+464237F2	DALT	Declarative Agent Languages and Technologies
+466797C4	CollaborateCom	Collaborative Computing
+46E9951F	LADC	Latin-American Symposium on Dependable Computing
+4788C323	SOFTVIS	Software Visualization
+433DEF3A	ICCAD	International Conference on Computer Aided Design
+434386A1	UTP	Unifying Theories of Programming
+435FBD28	FPT	Field-Programmable Technology
+4399020E	ICSC	International Conference on Semantic Computing
+43C21165	LACL	Logical Aspects of Computational Linguistics
+44076982	MCO	Modelling, Computation and Optimization in Information Systems and Management Sciences
+44486FB2	CSMR	Conference on Software Maintenance and Reengineering
+44554111	EUROCAST	Computer Aided Systems Theory
+44684398	DMO	Data Mining and Optimization
+4532399F	ICSM	International Conference on Software Maintenance
+45478760	IPTC	Information Processing and Trusted Computing
+45548029	ISEC	India Software Engineering Conference
+457AC1B6	MODELSWARD	International Conference on Model-Driven Engineering and Software Development
+458DD604	INLG	International Conference on Natural Language Generation
+45A88363	AAMAS	Adaptive Agents and Multi-Agents Systems
+45EF7C45	ISSE	Information Security Solutions Europe
+45F09162	EuroSys	European Conference on Computer Systems
+4603CA00	APCCM	Asia-Pacific Conference on Conceptual Modelling
+4613D662	ISVC	International Symposium on Visual Computing
+467CB781	PROMISE	Predictive Models in Software Engineering
+469683B8	PATMOS	Power and Timing Modeling, Optimization and Simulation
+46DAB993	ACL	Meeting of the Association for Computational Linguistics
+46F7C53A	SPLC	Software Product Lines
+47175205	MSWiM	Modeling Analysis and Simulation of Wireless and Mobile Systems
+4761B1FF	ASWC	Asian Semantic Web Conference
+8623C823	MMSys	ACM SIGMM Conference on Multimedia Systems
+43750ABA	WCRE	Working Conference on Reverse Engineering
+43A1990D	APSEC	Asia-Pacific Software Engineering Conference
+43EE3DE7	WSKS	World Summit on the Knowledge Society
+441D2B85	ICSDM	International Conference on Spatial Data Mining and Geographical Knowledge Services
+444A182D	CONCUR	International Conference on Concurrency Theory
+449D19CC	MobiHoc	Mobile Ad Hoc Networking and Computing
+450351F9	Haskell	Symposium/Workshop on Haskell
+450989A3	KMIS	International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management
+4556567A	DLT	Developments in Language Theory
+46444A28	IWAAL	International Workshop on Ambient Assisted Living
+466E8FD2	AICT	Advanced Industrial Conference on Telecommunications
+469ADBD6	RO-MAN	Robot and Human Interactive Communication
+473225DB	CPA	Communicating Process Architectures
+4756FC72	PDSW	Petascale Data Storage Workshop
+476951FF	APPT	Advanced Parallel Programming Technologies
+479D1E74	CCCG	Canadian Conference on Computational Geometry
+47B7ABEF	AICCSA	ACS/IEEE International Conference on Computer Systems and Applications
+42BC7E41	ICCTA	International Conference on Computing: Theory and Applications
+42D3DE40	BNAIC	Belgium-Netherlands Conference on Artificial Intelligence
+42FD7C2C	DBISP2P	Databases, Information Systems, and Peer-to-Peer Computing
+43359BCB	TAMODIA	Task Models and Diagrams for User Interface Design
+4341ED82	NLDB	Applications of Natural Language to Data Bases
+4346E145	KDIR	International Conference on Knowledge Discovery and Information Retrieval
+435020A4	MICCAI	Medical Image Computing and Computer-Assisted Intervention
+43613D12	SCCG	Spring Conference on Computer Graphics
+436B0257	IMCSIT	International Multiconference on Computer Science and Information Technology
+446CDE43	CNSM	Conference on Network and Service Management
+44865A7C	WACV	Workshop on Applications of Computer Vision
+448C641E	EuroIMSA	Internet, Multimedia Systems and Applications
+4499F545	MTV	Microprocessor Test and Verification
+449E1173	IVA	Intelligent Virtual Agents
+450942AC	TYPES	Types for Proofs and Programs
+4519AD8F	MPC	Mathematics of Program Construction
+4565F956	DIMEA	Digital Interactive Media in Entertainment and Arts
+457F1F48	CSL	Computer Science Logic
+45B4FD1D	GeoInfo	Brazilian Symposium on GeoInformatics
+45F0406D	AB	Algebraic Biology
+460AA0EE	ICETE	International Conference on E-Business and Telecommunication Networks
+462601A7	ICAISC	International Conference on Artificial Intelligence and Soft Computing
+46CB4466	ITNG	International Conference on Information Technology: New Generations
+476510B9	IOLTS	International On-Line Testing Symposium
+47C2769F	ICTD	Information and Communication Technologies and Development
+42F87EE3	ASMTA	Analytical and Stochastic Modeling Techniques and Applications
+432E26DB	CHES	Cryptographic Hardware and Embedded Systems
+43319730	SimuTools	Simulation Tools and Techniques for Communications, Networks and System
+433BF259	DaWaK	Data Warehousing and Knowledge Discovery
+434C5E01	ITA	Information Theory and Applications
+43765ED4	ACISP	Australasian Conference on Information Security and Privacy
+44359895	CAIP	Computer Analysis of Images and Patterns
+44412635	XSym	International XML Database Symposium
+44B7DAB8	ECKM	European Conference on Knowledge Management
+451C2F65	ICTCS	Italian Conference on Theoretical Computer Science
+451FFB54	TMRA	Topic Maps Research and Applications
+4524B15F	POPL	Symposium on Principles of Programming Languages
+4539C0B4	ICFHR	International Conference on Frontiers in Handwriting Recognition
+4572EEB5	SWAT4LS	Semantic Web Applications and Tools for Life Sciences
+46142C30	ISAAC	International Symposium on Algorithms and Computation
+462A34B5	ICALT	International Conference on Advanced Learning Technologies
+46405877	GRID	Grid Computing
+464FF5AC	BioMED	Biomedical Engineering
+46576033	ICE-B	International Conference on e-Business
+465B502B	ECSCW	European Conference on Computer Supported Cooperative Work
+46600F2A	EPIA	Portuguese Conference on Artificial Intelligence
+469D149A	DASFAA	Database Systems for Advanced Applications
+46C53EEB	DBTA	Database Technology and Applications
+47838FAB	CCECE	Canadian Conference on Electrical and Computer Engineering
+47BD7764	GECON	Grid Economics and Business Models
+430A5A1A	PPPJ	Principles and Practice of Programming in Java
+43263CA3	ECMR	European Conference on Mobile Robots
+433F90DB	IPMU	Information Processing and Management of Uncertainty
+438FF714	LATIN	Latin American Symposium on Theoretical Informatics
+43CF060B	WIRN	Italian Workshop on Neural Nets
+4404B5BB	DoCEIS	Doctoral Conference on Computing, Electrical and Industrial Systems
+442C7448	IDAACS	Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications
+4458CAA8	WCET	Worst-Case Execution Time Analysis
+44689F98	Inscrypt	Information Security and Cryptology
+447034A1	VSMM	Virtual Systems and MultiMedia
+448B966A	WADS	Workshop on Algorithms and Data Structures
+44CD2E44	CSO	Computational Sciences and Optimization
+4530AFC7	EISWT	Enterprise Information Systems and Web Technologies
+45AAD458	EUMAS	European Workshop on Multi-Agent Systems
+45DB9FB6	IJCBS	International Joint Conferences on Bioinformatics, Systems Biology and Intelligent Computing
+45F6A80D	SCN	Security and Cryptography for Networks
+464F6958	SEC	Information Security
+465670BF	DELTA	Symposium/Workshop on Electronic Design, Test and Applications
+4657D5DF	SoCPaR	Soft Computing and Pattern Recognition
+4678AD74	ICIAR	International Conference on Image Analysis and Recognition
+46C5ADCD	SIMPAR	Simulation, Modeling, and Programming for Autonomous Robots
+470CB4A0	CSC	Conference on Scientific Computing
+47405592	ACSAC	Annual Computer Security Applications Conference
+86292C1A	MITA	International Conference on Multimedia Information Technology and its Applications
+42ECFC7D	JSSPP	Job Scheduling Strategies for Parallel Processing
+434443DC	DBSocial	Databases and Social Networks
+437CDDA1	HLDVT	High Level Design Validation and Test
+437FE08B	CompSysTech	Computer Systems and Technologies
+43B576F5	KiVS	Kommunikation in Verteilten Systemen
+43D159ED	PAM	Passive and Active Network Measurement
+43E27A26	HPCS	High Performance Computing Systems and Applications
+43F82A34	ICSAP	International Conference on Signal Acquisition and Processing
+43F9E08E	IJCNN	International Joint Conference on Neural Network
+440BE04C	WCNIS	Wireless Communications, Networking and Information Security
+44233F91	COMPSAC	Computer Software and Applications Conference
+4454EDDD	TrustBus	Trust and Privacy in Digital Business
+44612919	MSE	Microelectronics Systems Education
+4484AC0E	ACG	Advances in Computer Games
+449AF10A	ISCID	International Symposium on Computational Intelligence and Design
+44A907AC	AusDM	Australasian Data Mining Conference
+44E8D4B3	SSDBM	Statistical and Scientific Database Management
+45238EAA	DCOSS	Distributed Computing in Sensor Systems
+45BD7739	CSB	Computational Systems Bioinformatics
+45FB3662	ASPLOS	Architectural Support for Programming Languages and Operating Systems
+46155D1D	IH	Information Hiding
+461BAEE3	IJCAR	International Joint Conference on Automated Reasoning
+462A683B	ECOOP	European Conference on Object-Oriented Programming
+46453CB4	PARELEC	Parallel Computing in Electrical Engineering
+46BD2B41	IPTComm	Principles, Systems and Applications of IP Telecommunications
+46DA87CC	ARC	Applied Reconfigurable Computing
+47241879	TLCA	Typed Lambda Calculus and Applications
+4734C321	POST	Principles of Security and Trust
+47787FB4	PAISI	Pacific Asia Workshop on Intelligence and Security Informatics
+479426BE	COMMA	Computational Models of Argument
+47977D8C	ICLP	International Conference on Logic Programming
+47A15BDB	MEMOCODE	International Conference on Formal Methods and Models for Co-Design
+47B4EE41	CHIMIT	Computer Human Interaction for Management of Information Technology
+42E3CB36	WPNC	Workshop on Positioning Navigation and Communication
+42FD31AF	LoCA	Location- and Context-Awareness
+43282CD8	IJCNLP	International Joint Conference on Natural Language Processing
+43319DD4	NIPS	Neural Information Processing Systems
+436EE6FE	ISCA	International Symposium on Computer Architecture
+437C7B15	DS	Discovery Science
+4397F0B8	MDM	Mobile Data Management
+440F51B1	HPDC	High Performance Distributed Computing
+4413E269	EuroGP	European Conference on Genetic Programming
+444DCF49	VALUETOOLS	Performance Evaluation Methodolgies and Tools
+4457D26B	PERSUASIVE	International Conference on Persuasive Technology
+44A6E67D	PADS	Workshop on Parallel and Distributed Simulation
+44EDD7DB	MOL	Mathematics of Language
+44F1AB80	ICNP	International Conference on Network Protocols
+44F65719	VNC	Vehicular Networking Conference
+45563292	VRCAI	Virtual Reality Continuum and its Applications in Industry
+45563EAC	FQAS	Flexible Query Answering Systems
+4566232D	SIGGRAPH	International Conference on Computer Graphics and Interactive Techniques
+4567204E	ANNPR	Artificial Neural Networks in Pattern Recognition
+45A1082E	MMEDIA	Advances in Multimedia
+4603A79F	ACCV	Asian Conference on Computer Vision
+4651E4FA	VISAPP	International Conference on Computer Vision Theory and Applications
+46549128	APNOMS	Asia-Pacific Network Operations and Management Symposium
+46807285	ICSNC	International Conference on Systems and Networks Communications
+46D67E9C	SSIAI	Southwest Symposium on Image Analysis and Interpretation
+46E0467E	CW	Cyberworlds
+470D0FF8	LION	Learning and Intelligent Optimization
+4799A10B	IDA	Intelligent Data Analysis
+47C279F3	ECOWS	European Conference on Web Services
+42BBC5C1	WABI	Workshop on Algorithms in Bioinformatics
+42EA3E23	BICA	Biologically Inspired Cognitive Architectures
+4300CAC5	VTS	VLSI Test Symposium
+43BA2D06	PReMI	Pattern Recognition and Machine Intelligence
+4401057D	WASA	Wireless Algorithms, Systems, and Applications
+4408CAFE	ICAS	International Conference on Autonomic and Autonomous Systems
+441B060E	BPSC	Business Process and Services Computing
+444CACB9	VLSID	International Conference on VLSI Design
+44B989E6	ICORES	International Conference on Operations Research and Enterprise Systems
+44D9FF9E	VDAT	VLSI Design and Test
+44EC53EC	DSDE	Data Storage and Data Engineering
+44F1E491	NOMS	Network Operations and Management Symposium
+45878F67	ASE	Automated Software Engineering
+45AAAE95	OZCHI	Australasian Computer-Human Interaction Conference
+45CC6C98	PLPV	Programming Languages meets Program Verification
+45CEC493	SOSP	Symposium on Operating Systems Principles
+45F5DF42	AWIC	Atlantic Web Intelligence Conference
+46462C3E	CNSR	Conference on Communication Networks and Services Research
+4659102E	ICOST	International Conference on Smart Homes and Health Telematics
+467F57A2	AIRS	Asia Information Retrieval Symposium
+46B1CCD7	ITI	Information Technology Interfaces
+46C99331	FASE	Fundamental Approaches to Software Engineering
+470F8BDC	DBPL	Database Programming Languages
+47987D60	Ada-Europe	International Conference on Reliable Software Technologies
+43277916	CIA	Cooperative Information Agents
+43AAC778	HPSR	High Performance Switching and Routing
+43B6A1AD	CCNC	Consumer Communications and Networking Conference
+43DB3338	IEA/AIE	Industrial and Engineering Applications of Artificial Intelligence and Expert Systems
+43E93603	ICPW	International Conference on Pragmatic Web
+43F6AF91	ICOIN	International Conference on Information Networking
+4440ADC2	ICT	International Conference on Telecommunications
+44CF71D4	TMA	Traffic Monitoring and Analysis
+44FC6FEB	IZS	International Zurich Seminar on Digital Communications
+451C38EE	SPAA	ACM Symposium on Parallel Algorithms and Architectures
+4552E25A	ICEEI	International Conference on Electrical Engineering and Informatics
+45F4651A	CISIM	Computer Information Systems and Industrial Management Applications
+460452E7	ISORC	International Symposium on Object/Component/Service-Oriented Real-Time Distributed Computing
+461D4FC0	OSS	Open Source Systems
+462F772C	SPIRE	String Processing and Information Retrieval
+46321245	PSATS	Personal Satellite Services
+4686FE52	QDB	Quality in Databases
+46CA67CE	JURIX	International Conference on Legal Knowledge and Information Systems
+46D629DC	SocInfo	Social Informatics
+4748E8C5	ICMS	International Congress on Mathematical Software
+4763D7B8	SERENE	Software Engineering for Resilient Systems
+478E195D	APBC	Asia-Pacific Bioinformatics Conference
+42BD0758	EuroPKI	European Public Key Infrastructure Workshop
+439224DC	MCDM	Multiple Criteria Decision Making
+43C08A77	ICS	International Conference on Supercomputing
+4402B9E5	Mobility	International Conference on Mobile Technology, Applications, and Systems
+443880FD	AIML	Advances in Modal Logic
+4439490E	NordiCHI	Nordic Conference on Human-Computer Interaction
+444C7E0A	DMS	Distributed Multimedia Systems
+446A89CA	CLADE	Challenges of Large Applications in Distributed Environments
+44C0A1A4	IC3	International Conference on Contemporary Computing
+44FA759F	AUIC	Australasian User Interface Conference
+45A2B36F	ICCA	International Conference on Control and Automation
+45ABA571	WICON	International Wireless Internet Conference
+45CC99B7	EASSS	European Agent Systems Summer School
+45CD6C58	NGMAST	Next Generation Mobile Applications, Services and Technologies
+45F650F9	SEKE	Software Engineering and Knowledge Engineering
+46347866	SIGITE	Conference on Information Technology Education
+467F497B	ISWCS	International Symposium on Wireless Communication Systems
+46A7A69E	ICISP	International Conference on Image and Signal Processing
+46C87E64	ECTA	International Conference on Evolutionary Computation Theory and Applications
+46C9E7AF	ACIVS	Advanced Concepts for Intelligent Vision Systems
+46D5DA24	HotNets	Hot Topics in Networks
+473FBE8B	BIODEVICES	International Conference on Biomedical Electronics and Devices
+478C2346	TCS	IFIP International Conference on Theoretical Computer Science
+8620CA64	MMIT	International Conference on Multimedia and Information Technology
+43331058	INTERACT	International Conference on Human-Computer Interaction
+435EE3DA	SecureComm	Security and Privacy in Communication Networks
+4385AB9B	ICESS	International Conference on Embedded Software and Systems
+43A32784	IIH-MSP	Intelligent Information Hiding and Multimedia Signal Processing
+43A4E7DF	ENC	Mexican International Conference on Computer Science
+43A8F3E1	IWQoS	International Workshop on Quality of Service
+43B0EC38	ICICS	International Conference on Information and Communication Security
+43DF0F6B	ICMLA	International Conference on Machine Learning and Applications
+441DE433	FSR	Field and Service Robotics
+44406FED	SAT	Theory and Applications of Satisfiability Testing
+4458E6AE	ISUVR	International Symposium on Ubiquitous Virtual Reality
+4459102E	PCM	Pacific Rim Conference on Multimedia
+44AAE75B	NetCoM	International Conference on Networks and Communications
+44F7486F	DILS	Data Integration in the Life Sciences
+4514C69B	SIES	International Symposium on Industrial Embedded Systems
+452527AF	ISMVL	International Symposium on Multiple-Valued Logic
+452D6964	IMC	Internet Measurement Conference
+454034E3	LISA	USENIX Large Installation Systems Administration Conference
+456A8673	IMS	Advanced Information Management and Service
+456CDDD6	ISPD	International Symposium on Physical Design
+465D33C1	ECIR	European Conference on Information Retrieval
+46950273	SNPD	Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing
+46BF2DF2	NTMS	New Technologies, Mobility and Security
+46D4C980	GRAPHITE	Conference on Computer Graphics and Interactive Techniques in Australasia and Southeast Asia
+4762CAF8	ISIT	International Symposium on Information Theory
+4766A14B	AmI	Ambient Intelligence
+47C1A70D	AISC	Artificial Intelligence and Symbolic Computation
