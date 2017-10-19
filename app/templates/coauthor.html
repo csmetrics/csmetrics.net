@@ -1,0 +1,143 @@
+{% load staticfiles %}
+<html>
+  {% include 'header.html'%}
+
+  <body>
+    <div class="content">
+      <form role="form" action="." method="get" style="display: inline">
+        <div class="row" style="width:500px">
+          <div class="col-sm-6" style="padding:1px">
+            <select class="form-control select" name="selectfile">
+              {% for d in datalist %}
+                <option value="{{ d }}" {% if d == sfile %} selected {% endif %}>{{ d }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-sm-4" style="padding:1px">
+            <input type="text" class="form-control" name="center" {% if scenter %} value="{{scenter}}" {% endif %} placeholder="Center" />
+          </div>
+          <div class="col-sm-2" style="padding:1px">
+            <button class="btn btn-primary btn-form" type="submit" name="draw" value="draw">Draw</button>
+          </div>
+        </div>
+      </form>
+      {{ error }}
+      <div id="graph_container">
+      </div>
+    </div>
+  </body>
+</html>
+<script src="{% static 'js/d3v4.js' %}"></script>
+<script src="{% static 'js/cola.min.js' %}"></script>
+{% if datafile %}
+<script>
+var width = 1200,
+    height = 900,
+    imageScale = 0.1;
+
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+var cola = cola.d3adaptor(d3)
+    .size([width, height]);
+
+var numnodes = parseInt("{{ stopnum }}");
+
+var outer = d3.select("#graph_container").append("svg")
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("pointer-events", "all");
+
+var zoom = d3.zoom();
+outer.append('rect')
+    .attr('fill', 'white')
+    .attr('width', "100%")
+    .attr('height', "100%")
+    .call(zoom.on("zoom", redraw))
+    .on("dblclick.zoom", zoomToFit);
+
+var vis = outer.append('g');
+var svg = vis.append("g");
+
+var nodeMouseDown = false;
+var nodeWidth = 30, nodeHeight = 35;
+
+function redraw(transition) {
+    // if mouse down then we are dragging not panning
+    if (nodeMouseDown) return;
+    (transition ? vis.transition() : vis)
+        .attr("transform", d3.event.transform);
+}
+
+function graphBounds() {
+    var x = Number.POSITIVE_INFINITY, X = Number.NEGATIVE_INFINITY, y = Number.POSITIVE_INFINITY, Y = Number.NEGATIVE_INFINITY;
+    nodesLayer.selectAll(".node").each(function (v) {
+        x = Math.min(x, v.x - nodeWidth / 2);
+        X = Math.max(X, v.x + nodeWidth / 2);
+        y = Math.min(y, v.y - nodeHeight / 2);
+        Y = Math.max(Y, v.y + nodeHeight / 2);
+    });
+    return { x: x, X: X, y: y, Y: Y };
+}
+
+function zoomToFit() {
+    var b = graphBounds();
+    var w = b.X - b.x, h = b.Y - b.y;
+    var cw = Number(outer.attr("width")), ch = Number(outer.attr("height"));
+    var s = Math.min(cw / w, ch / h);
+    var tx = (-b.x * s + (cw / s - w) * s / 2), ty = (-b.y * s + (ch / s - h) * s / 2);
+    zoom.translate([tx, ty]).scale(s);
+    redraw(true);
+}
+
+d3.json("{% static datafile %}", function(error, graph) {
+  cola
+      .nodes(graph.nodes)
+      .links(graph.links)
+      .symmetricDiffLinkLengths(50, 1.5)
+      .start(30);
+
+  var link = svg.selectAll(".link")
+      .data(graph.links)
+    .enter().append("line")
+      .attr("class", "link")
+      .style("stroke-width", function (d) { return 1; });
+
+  var node = svg.selectAll(".node")
+      .data(graph.nodes)
+    .enter().append("circle")
+      .attr("class", "node")
+      .attr("r", function(d) { return d.degree+10; })
+      .attr("fill", function(d) { if (d.group_idx == -1) return "#FF0000"; else return color(d.group_idx); })
+      .call(cola.drag);
+
+  var label = svg.selectAll(".label")
+      .data(graph.nodes)
+     .enter().append("text")
+      .attr("class", "label")
+      .text(function (d) { return d.name; })
+      .call(cola.drag);
+
+  node.append("title")
+      .text(function(d) { return d.group; });
+
+  cola.on("tick", function () {
+      link.attr("x1", function (d) { return d.source.x; })
+          .attr("y1", function (d) { return d.source.y; })
+          .attr("x2", function (d) { return d.target.x; })
+          .attr("y2", function (d) { return d.target.y; });
+
+      node.attr("cx", function (d) { return d.x; })
+          .attr("cy", function (d) { return d.y; });
+
+      label.attr("x", function (d) {
+              var w = this.getBBox().width;
+              return d.x - w/2; })
+           .attr("y", function (d) {
+              var h = this.getBBox().height;
+              return d.y + h/4;
+            });
+  });
+});
+
+</script>
+{% endif %}
