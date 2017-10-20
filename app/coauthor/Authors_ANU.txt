@@ -1,0 +1,1915 @@
+03DB03A9	hercules dalianis
+277BF564	patrick y k chau
+69DB0061	marc m budge
+76301960	j walter larson
+79D0FAB0	michael breakspear
+7C16FABC	trystan upstill
+7CC23C54	tobias hollerer
+7D4B6AE3	tom rowlands
+7D99F435	michael a martin
+7DABE554	zhiyun lin
+7DBC6345	shiyao jin
+7DF61BCF	scott sanner
+7E1F846D	nianjun liu
+7E7A5E3F	nathan robinson
+7E960DDF	quang anh nguyen
+7EA701B6	cheng wang
+7F0FE80F	p m thomas
+7F1CCBF3	a pedro aguiar
+800F2B79	hongyi lu
+8031E110	susan r wilson
+80339F3A	ke zhang
+803DE979	mei kuan lim
+80EB6092	xu zang
+815ED893	wen zhang
+8163415A	nigel tao
+8174C2F6	angela carbone
+819855E4	wanqing li
+81BCB347	jiantong cheng
+83814645	qing wang
+83E24B72	jon baxter
+8472E6FF	sejuti rahman
+847654DC	y v v satyanarayana
+84C1E65F	foroohar foroozan
+84FE477D	florian poppa
+86300BE0	a c doherty
+0EBFC443	pattaraporn khuwuthyakorn
+0EF3BFDA	andrey a bliznyuk
+71551895	miriam van heist
+7691D8BA	bernhard nebel
+77644F82	a p willmore
+77C6776A	nick craswell
+7BF9CF2D	paul brebner
+7C375240	samuel z guyer
+7C446BD1	t nguyen
+7C60BACB	darko stefanovic
+7CB29E9A	andrew i comport
+7D25C816	david grove
+7D3FFEA9	matthew kuipers
+7D63C011	majdah alshehri
+7DB3B56E	chinho lin
+7DBEABA8	jess s jin
+7DE43CF0	sondoss el sawah
+7DEAD78D	jason ozolins
+7EB9A932	ida bagus kerthyayana manuaba
+7ED4D9EF	anish varghese
+7F617CF7	shi wang
+7F9C6569	yanzhe wang
+7FC4AABD	yong kim
+7FE44B6D	minhduc hua
+7FE541DC	florian widmann
+7FF900D4	j t y ho
+8018C117	j g walker
+8062A8AA	w p malcolm
+80B42E30	tristan reeves
+80B88671	j j antony
+80EC66A2	russell s crosbie
+80FA8946	khoinguyen tran
+82BBBAE4	simon g thompson
+8373511F	richard hartley
+848EE712	alexander zelinsky
+84D801C2	jennifer b sartor
+84E963B4	s maruthu permal
+8525CF17	denny denny
+852BF8E6	lei wang
+853807CF	huan zhang
+85D8C038	joseph noel
+8632D548	james r larus
+094C4B0D	tim hendtlass
+14B23BBD	frederik schaffalitzky
+2A849F9E	jeanpierre guedon
+4EF43BE9	laurent dousset
+69C5DF34	zarko b krusevac
+722209B3	fabrizio perin
+76AFB3FA	peter sunehag
+76ED9426	daniel clewley
+77405067	mostafa darabi
+77AC4274	francois morain
+77E95603	kenichi maruno
+7A6D58DB	j vedi
+7A88EB33	prasanga samarasinghe
+7AFFED4E	shing mou
+7D21920E	judy sheard
+7D2EE7FD	pengdong xiao
+7D48D719	xiangke wang
+7D5947EA	jinbo huang
+7D879376	marcel lippmann
+7D8C4012	giuseppe liotta
+7D9AD717	i s barnes
+7E334749	walid saad
+7E868370	hailun tan
+7EA6FD49	xinhua zhang
+7EECE471	stephen robertson
+7F6F7E73	andrew c doherty
+7FB4DE81	wim heirman
+7FF2AF05	stephen m blackburn
+8031356D	dinggang shen
+803C6280	ben swift
+8041EFB0	alfredo petrosino
+81B46A25	matthias fuchs
+821752CD	miguel o bernabeu
+823967F7	roy featherstone
+825CC348	lei wang
+84D5B07E	robert shorten
+02A6572C	sylvie thiebaux
+083EE865	wolfgang sturzl
+0D02A53E	hajar sadeghi sokeh
+13186B74	maria skeppstedt
+17C65658	william t e pitkeathly
+4B8EBEDC	vladimir v nikulin
+6716813B	laurent kneip
+68FB4CEC	e v krishnamurthy
+76E35ADE	zhihong guan
+76FD5D5B	alain pajor
+7918E1A1	olivier buffet
+7A449ACF	filip pizlo
+7CF5EDC9	jieyi liao
+7D4BC413	xiaohua jia
+7D640282	michael norrish
+7D88D0B8	lachlan paget
+7DD9CC8B	s a durrani
+7E2186C1	shama n islam
+7E69C837	f de bruyne
+7F4D9664	charith perera
+7F8A294E	md mohsin ali
+800E2315	a kannan
+810992F6	norazwin buang
+820EA4CC	nianjun liu
+8222EC75	peng sun
+8299CC7A	jian a zhang
+83816871	florian kahl
+84A66271	steven m blackburn
+85020324	abhas chandra
+85166EF4	wei shi
+8569C494	satyam bhuyan
+85FC20B6	ronald ortner
+8622F6BE	t j l jones
+86284408	nan ding
+8628B503	nick barnes
+00F7530F	chanop silpaanan
+0E3E8B74	oystein nytro
+11BA75DA	bernhard scholkopf
+13A8D06A	david baelde
+3392F794	peter e caines
+4D6D6829	masoumeh nasirikenari
+716F877D	yogesan kanagasingam
+730D7323	glenn vinnicombe
+76798229	lex weaver
+768EFE1A	michele zito
+780D05E3	chris kelman
+7BC35B21	ziyad alshaikh
+7CDEC537	muhammad atif
+7E829257	luping zhou
+7E8AA476	rodrigo f s c oliveira
+7E90EF39	kap luk chan
+7EF903C6	g g borg
+7F7F2CC8	shankar krishnan
+7F85C6C5	chunhua shen
+7FBD7F00	matthew robards
+7FEF35EF	ahmed awad
+7FF067A1	svetha venkatesh
+7FFC5414	tomasz kowalski
+804F2DF9	shuo chen
+80F430B6	martin hassel
+81148B08	jun sun
+8135D6CA	shuangshuang fu
+82461A62	romeo ortega
+82AA0246	stevenson
+82AA35C9	lei wang
+83DFA23C	hanna suominen
+84973688	xun ll
+863C7A2E	lars petersson
+07E957C7	jaison paul mulerikkal
+09E662FE	roman vershynin
+0D4B76BC	nicolas cherbuin
+2043BAC6	yvonne pittelkow
+2F1ACF9F	daniil ryabko
+6E6FC28B	joe pittfrancis
+76A4C70C	brendan van rooyen
+7A3AF967	maria jump
+7A671A54	ehsan abbasnejad
+7ACA11A6	m a belabbas
+7BFABAEF	p w c kung
+7C521A52	roland goecke
+7D23F3D6	ming zhao
+7D2F3ACE	paul j kennedy
+7D68825C	siti z z abidin
+7D6F7F7B	christian stricker
+7DC2A96D	hanna suominen
+7DCDBB5E	lei wang
+7E6C1B57	a ghosh
+7EF1E0A2	j j cole
+7F277EF2	kohsin cindy wang
+7F46E0E3	xiangyun zhou
+7F669BA3	timothy de vries
+7F9BC730	uwe helmke
+7FAC5EDB	morteza azad
+80493CE3	anton van den hengel
+806A07CE	michael j brooks
+80BE41FD	rasika r perera
+80C44285	salim el rouayheb
+80E8BB0A	xiaojing he
+8177934E	o v ramana murthy
+8398E4F4	kassel hingee
+83D8CADA	david grove
+841E9181	rohan williams
+84DB8BF0	xuezhi zeng
+84E10D8F	paul thomas
+850C6985	ken taylor
+850F23C8	qiufen xia
+060F4776	robert shorten
+0CB20E80	wray buntine
+0ED42FAE	antony
+10C7CFCB	ahmed salahledin
+119A94B2	laurent orseau
+6A258237	sandra hirche
+6E867F3D	wayne weibel
+76217F8F	shahar mendelson
+77156838	cees g m snoek
+7818A02B	james macnicol
+78D26A3C	ralf koetter
+78EC5E97	rajehndra nagappan
+79E642EC	nathan brewer
+7AD9D847	a lecchini
+7B943145	brendan d mckay
+7C11939C	c r n athaudage
+7CECF962	n nugroho
+7CF59678	daihee kim
+7CF986D3	brian d hart
+7D59DB6E	samunda perera
+7D672C43	biao he
+7DBB8489	jun zhao
+7DDE8928	shirley gregor
+7E16F5BF	jyunhao huang
+7E1789F4	c r mark
+7E4B590E	leliane nunes de barros
+7E5066CC	c r sanderson
+7EA3035F	jianjia zhang
+7EB04793	xuemin lin
+7EF5035E	xiangjun wang
+7FE875F0	xiaojiang ren
+801EA601	sukanya manna
+804B2F0A	mengqiu zhang
+80571275	edward harrington
+8071395B	lan du
+813C7504	lijun chang
+81D13336	murtaza ali
+820A6CFE	hemant bhatta
+822FD012	m franz
+848FAF9C	buyu liu
+850FAD2D	john langford
+85399DB5	angiras r varma
+853F1B86	jae hee lee
+85824D91	james sheridan
+07D97ED4	jan juerjens
+0C784B82	sadeep jayasumana
+4D25EB8A	ralf herbrich
+559B2CF0	w m lioen
+65ED198E	daniel von dincklage
+72E45D5E	matej kristan
+73C09196	stewart burn
+76210EEE	sithamparanathan kandeepan
+76CAE3D2	duan lifeng
+78338905	j e bradby
+78A036F6	peter christen
+7935459E	tor lattimore
+7A9A5727	jarek nieplocha
+7B52B022	sajjad siddiqi
+7B8ECA7E	chandra r n athaudage
+7BFD22C9	agnes boskovitz
+7CF607D4	mingyi he
+7D9D2469	liu tao
+7D9DA15B	a dehghani
+7DA3833A	l van gool
+7DD592DE	jie li
+7DEA8F38	m s rahman
+7E7F80BA	klausdieter schewe
+7EBDF165	p y lee
+7EDA967B	jie liang
+7F017BF7	julien hendrickx
+7F37859E	zheng zhao
+7F3873D7	kyoungup park
+80CF6980	qian zheng
+80D42601	h l trentelman
+81261E0F	lu xia
+81340BE4	d b grove
+82619871	jason wood
+82ADF378	mohammad yamin
+84C8C6BD	gordon parkerx
+851EC5E4	alwen tiu
+120B1A43	peter corke
+54FAD9E3	eileen luders
+6E3F11B9	peter l bartlett
+75102902	karen aardal
+75333944	caitilin de berigny wall
+75EA0D80	cristiano bertolini
+76B9B236	mehrtash t harandi
+76E9BD1D	robert amor
+77C4E9CD	wissam dib
+78C8915F	jon smillie
+79A878D7	mohammed s tarawneh
+7AEA9661	dirk p kroese
+7B19AC88	sarah taghavi namin
+7B5412CB	stjepan picek
+7C3741A6	jochen renz
+7D130B7F	joshua c c chan
+7DCDE652	david b smith
+7DF69D3C	minkyoung kim
+7E2FFE2C	weidong huang
+7E5BA1A2	jyoti joshi
+7EBAC7F3	banda ramadan
+7EC3B2C5	behrouz maham
+7EC5D7CA	huidong jin
+7ECA3CAF	shiqiang yang
+7F1C4226	ben searle
+7FB2816E	jun luo
+8005112E	yusuke suzuki
+8015BFBC	munish kumar
+80ABCB22	erhard rahm
+81B3FB52	thanh tang
+81CFCE29	ann cowling
+82195A07	he wang
+829DDD51	tan vo
+82CB85B1	saeed jamali
+830254D9	wayes tushar
+83370638	sanjay chawla
+83584D71	hadi esmaeilzadeh
+84B0AA7C	daniel marshall
+84E72044	toma vojir
+049A4D27	vassilios s verykios
+10BAC473	agus pudjijono
+1124B055	david e orin
+1614EBE8	s m akramus salehin
+4B3AA83F	douglas aberdeen
+58064184	jorge l penaarancibia
+5BBD989C	hugh dennett
+629FA59E	s alireza motevallian
+754855E0	john armston
+76B50302	philip kilby
+79192BC2	rogerio s feris
+79E84232	pedro gonnet
+79F70EC8	b sumudu u mendis
+7B32CAD4	osmat azzam jefferson
+7B565A42	m euston
+7B69ED8C	john hosking
+7B7FC44C	a zelinsky
+7BBE3A8E	peter gammie
+7CFA4E05	bo wang
+7CFA63D1	adam gatt
+7D0B6515	matt ruan
+7DBEC0AC	christopher n johnson
+7DCC649D	kaiqi huang
+7E3F187C	chris a johnson
+7EEED1E0	jianfei cai
+80B3F048	feng liang
+813882F4	song guo
+816A90F8	alexander n korotkov
+845D6108	b sumudu mendis
+848EE672	fatima silva leite
+849086EC	dana pordel
+84C9A9F8	joerg hoffmann
+84F01D6E	soura dasgupta
+84F25C6C	bochao wang
+85090602	mark c reed
+857ECA73	tan vo
+861D2BE3	david j hill
+86246973	paul thomas
+86351BFB	kostia robert
+02D626C5	ahmad khajenezhad
+0852D3D5	janos botzheim
+0D0BAC08	suvash sedhain
+1264EDD9	himal a suraweera
+14B5E658	jonathan h manton
+2D88B10D	marek solony
+6CB97386	paulette lieby
+71C4E47C	benoit recur
+760F4416	alessandro astolfi
+76F972FB	stephen chen
+78A9DAB1	prem prakash jayaraman
+7A68CF14	ian wood
+7A9DBD08	tim brereton
+7C124546	andrew stranieri
+7CEA6D96	david l porter
+7CEF2139	jinhong yuan
+7CFACA5F	liam osullivan
+7E127301	alessandro saccon
+7EAE6CA8	ammar alazab
+7EDFC053	lei qiu
+7F13994C	deke guo
+7F1E706F	f de grandi
+7F5E6F12	mohammad zamani
+7FE9827E	lawrence murray
+801A3A8A	rodney a kennedy
+80233091	michael r osborne
+80569CA4	qifeng yu
+805CBFFC	michael eichler
+80CCEA07	kerry trentelman
+80E3863E	j p homer
+8129A96B	m m rahman
+81BE8CFE	qinghe wu
+829A2942	tamas gedeon
+82FCFD06	gordon parker
+83ECD49C	peng wang
+83F04DE3	zahra zamani
+84A8D3B5	conrad sanderson
+84B42CD0	nariman habili
+850DA27C	pengfei li
+8512D0EC	jessica tsimeris
+8586D7FA	bernhard thalheim
+8624A5DF	graham williams
+863332F5	daniel frampton
+8636A343	nicolas normand
+080DBCE5	lodewijk bonebakker
+1090C79F	yang yuansheng
+2A62191D	john h maindonald
+71453199	william m mceneaney
+75A4662C	lin luo
+7613AAD8	alain bensoussan
+76959918	raffaella carloni
+76DA3F2F	eric j stotzer
+76FC861C	timothy senden
+78E31A14	kim blackmore
+797346D6	francois bousquet
+7A3DD81C	shane latham
+7B10C7AB	seyed hamid rezatofighi
+7C090896	eckehard steinbach
+7CFEF80F	khurrum aftab
+7D40293A	junzhou luo
+7D8FF0B1	falko schmid
+7DAE408A	tao wang
+7DF2040A	myeong hun jeong
+7E353E69	quang nguyen
+7ED117DA	lars petersson
+7EDF19D0	nianjun liu
+7EE29A6D	yongtian wang
+7F06114C	karan sikka
+7F243308	yunlian sun
+7F2B4F5C	tom bruce
+7F30FEF0	weitian chen
+7F64B5F9	karina valdivia delgado
+7F662B2E	jie wang
+7F8AD219	zhuoyuan tu
+7FAF699B	rajiv ranjan
+80140B23	elmar mair
+801FA135	anthony g cohn
+805110E1	a santhanam
+8088FA42	changyou chen
+80948662	martin muller
+80F006D7	liam o brien
+80F8D387	g guillerm
+8174AE2D	stephen taylor
+81A8E40D	gerasimos potamianos
+83E343EA	tom gedeon
+83EBD24A	ting cao
+845212E5	rui yang
+84D0B578	xin li
+85444D04	xuming he
+8606C0ED	qiao zhang
+0568EA2C	peter strazdins
+0C64DAF7	teddy mantoro
+255BB9F6	john mashford
+5D72BFDD	frederik deroo
+69D96365	adrian ankiewicz
+757CB96D	sumudu mendis
+75E28FCD	gaston h gonnet
+78E31565	baris fidan
+7958FE59	loig jezequel
+79AED940	nicol n schraudolph
+7BD4254B	andrew over
+7C5165A8	dean soccol
+7D11E9CD	e h huntington
+7D2E6C17	nick barnes
+7D3E9347	sebastian brand
+7D63CCA2	jingbo wu
+7D6FBE49	kelvin cheng
+7DB2517A	hongcheu liu
+7DEE111B	junge zhang
+7E88719B	weidong gu
+7EB20173	a s morse
+8021E960	nasiroh omar
+80CB5FB0	ross gayler
+80D0982F	ting cao
+80D1DDEE	wenguan wang
+80D570B8	tao li
+811B4C0A	christine m okeefe
+811C8FA7	kashif gohar
+8123A953	d c price
+81A22C9E	nathan robertson
+8233F624	jonathan baxter
+82A572B3	c yu
+82A96BED	peter sunehag
+83C40384	william duckworth
+83FA0C77	simon guenter
+84DCB094	mengbin ye
+85004BFC	florian luna
+85025FAF	wei zhuo
+85D8CBD3	joseph antony
+863C8ECF	dimitrios georgakopoulos
+004B1D7A	omar hashmi
+0AF1EDEA	alan f smeaton
+0E395AAC	riitta danielssonojala
+2D5106F8	peter radoll
+455374F9	michael curtotti
+72C6C86A	salah alhyari
+7624D72E	sharath pankanti
+77BD7B57	francis crimmins
+7818C38D	matthias hauswirth
+7890EC54	j m davoren
+792A8B07	tim churches
+7AE1F985	xiomara marquez
+7D642D9E	lachlan l h andrew
+7E29C09F	h david
+7E353365	weipeng xu
+7E8810B5	s k garg
+7F0C2FC8	f silva leite
+7F1A2603	a i j m van dijk
+7F85DC74	roland gocke
+7FDF002A	john lim
+8027CF78	shahab kalantar
+803AF79A	zhiguo shi
+803ECA78	hanxi li
+805D1276	d a ward
+809E5C52	xiaola lin
+83418667	chao wang
+84737A17	bathiya senanayake
+84964D36	gary overett
+8549A610	christopher beer
+863D0B97	timothy hancock
+039F9B63	chris gaskett
+4A640D74	pavel smrz
+5F2A9C4F	paul pounds
+701C8D8E	simon lucey
+73A53329	tarek hamel
+7620B5F1	b s u mendis
+78CBD004	l t chadderton
+7B720BC4	simon lynen
+7D0A87CF	r g lamont
+7D39ECF5	david james austin
+7DA2F284	thomas huber
+7DE10260	nigel martin
+7E26944B	gordon parker
+7E99E06C	luke fletcher
+7F77E8AA	terence chan
+7F82956A	huomin dong
+7F8C308E	gabriela ferraro
+7FAC8536	stephen gould
+7FCC81AE	chengfei liu
+7FCF68F7	h j wong
+7FD73B3C	joel b montgomery
+7FDE8F48	muhammad khalid
+8136BE24	adi botea
+81476951	cherkeng heng
+817994E5	bomin jiang
+819DD1D5	m h williams
+82F4CEE5	yu pan
+83970CFE	gerald friedland
+8459982C	terry caelli
+8480522B	shyam sundar rajagopalan
+84D8106C	chris pelling
+85869179	jin gao
+861DB0C1	yongmin zhang
+0E4BAC1B	hakki can karaimer
+11C7A6DA	azer bestavros
+14869486	francesco bullo
+2407063F	douglas sheil
+24857087	kaarin j anstey
+48BCA33F	holger averdunk
+4BAE4CF5	steven schockaert
+50C0DDA8	yee whye teh
+707A3D78	tom gedeon
+75AF76C6	conrad j burden
+765E8B88	michael rotkowitz
+7753036C	prashan premaratne
+779B6C78	risi kondor
+77EB8197	olaf delgadofriedrichs
+78B7F361	l obrien
+792B741C	j wongleung
+794B6FDA	ezio malis
+797E9786	azamossadat hosseinzadeh salati
+7A93BC0E	enrico costanza
+7AB53399	faisal mufti
+7B57ABB5	paul tregoning
+7CD490FE	b azvine
+7D699A99	geoffrey stewart morrison
+7D6FA77D	alistair riddell
+7D7C0E09	sylvain bertrand
+7DA446B9	zhiying wang
+7DAB477B	bangu vo
+7DF3D122	jesse wu
+7E8BA5A3	maria e orlowska
+7EA373E2	bijan rohani
+7EB00B90	han lung
+7EC4878C	shantanu h joshi
+7ED42503	rainbow cai
+7F347E96	michael wagner
+7F84E10F	indra kurniawan
+80FAEA03	jie dong
+813DC176	vanessa robins
+838DF11F	premananda indic
+83B53B7B	phil tickle
+83D873AF	hanyang tong
+840A7B03	sid l huff
+84AA6551	m v srinivasan
+858DF3AF	james f montgomery
+02FA452F	edoardo apra
+061EA437	massila kamalrudin
+0AB9EC65	ofer zwikael
+0E3E8775	worapan kusakunniran
+553EBAC7	alejandro piadmorffis
+6CA7B668	franc ivankovic
+72C61DDB	mohammad esmaeilzadeh
+75D20539	mohamedslim alouini
+760F1C9D	soren sonnenburg
+7687D371	n cronin
+76DFA238	jiri jaros
+77F7EB40	klausrobert muller
+78F3983A	h vincent poor
+7A9D3864	peter vamplew
+7B46F4EE	marc pollefeys
+7C151404	m caldera
+7CC4AED2	pierreantoine absil
+7D2FEE82	guoliang chen
+7D33E765	james southern
+7D47974A	zhenning shi
+7E5E58F8	shi bai
+7E8731D5	yuntao qian
+7F37C00D	xiaoqin zhang
+7F483854	shuk ying ho
+7F7FADA5	chris allen
+7FA18BD7	yue liu
+7FB041B3	richard p alexander
+7FB49D51	andreas bauer
+7FF28B3F	ken c taylor
+8038ABBC	qiang wu
+804F635C	jorg raisch
+805514FE	jared cope
+81607073	ming cao
+81730275	kun he
+81B3D1C8	wi bing tan
+820AD76A	c w johnson
+822200BF	roberta allsman
+8289E7B1	yong haur tay
+82F7B0A4	gareth loy
+83538503	yi li
+83EFF601	michael j anderson
+848944AF	andreas bauer
+849D5E33	sophie oustrieres
+84DEB1E9	yuanzhi wang
+8516D596	david han
+8550DDD4	paul s thomas
+855B9F87	matthew a addicoat
+0AB9ADF0	hani mehrpouyan
+0E3DAE9C	behrooz nasihatkon
+269A0DA0	jussi rintanen
+2AC1AE2D	pascal bihler
+48CD645D	warwick graco
+4976FD4B	l a i wyborn
+67123E16	thorsten bormer
+74C2D680	mamoun alazab
+7529A7DB	zoltan l ovari
+7545D163	linda stals
+7B26C6CF	martin hirzel
+7C8F27A3	dario garciagarcia
+7D2154C8	christoph h arns
+7D364170	fabien spindler
+7D6D7DA4	qing liu
+7D87B7DC	changbin yu
+7D8DB6F5	wen zhang
+7DE8B416	viktor k decyk
+7E3485CB	subhrakanti dey
+7E5F5FB2	paul d teal
+7E62EFC1	xixiang yang
+7E75AFF1	robert m davison
+7E825274	perminder s sachdev
+7E988C0D	tingting zhang
+7EB43D16	rohini marathe
+7EBD82A2	y richard yang
+7EC63273	zhiheng huang
+7F640F4F	lizhe wang
+7FA03FF3	robert j harrison
+7FABBEB2	doug burger
+7FE27B3A	wei yang
+80519533	huizhi liang
+805C9661	soren frank
+8065F930	changsheng xu
+8082E79B	sanjiang li
+80E8D83F	changhung yu
+812855F0	mark schmidt
+814D539D	stephen jay gould
+838DC75E	p r munroe
+847C77D5	sergey i salishev
+8556CD30	wei chen
+86136D6E	maurice nevile
+862CEC25	d e smith
+012804D4	jerome darmont
+0C26F2F9	bjarne steensgaard
+109EB0E7	sarah l hickmott
+137A02F1	gary overett
+29AFE035	alex sprintson
+4908FAFF	xavier sirault
+738444F7	samer m abdallah
+75BF98B8	jyrki kivinen
+762EF23E	d p shepherd
+7840BCBF	darius braziunas
+7D397880	lexing xie
+7D3E39C2	hans burkhardt
+7DB5C2E3	nicholas e wilson
+7E10BF2F	maojun cao
+7E23ADF4	zhiyong sun
+7E420585	he zhang
+7E859FFF	v k murthy
+7ED14A94	s mcclusky
+7ED69883	li cheng
+7EE5B668	matthias westphal
+7EFE31CB	samuel p drake
+7F1E5476	glenn platt
+7F9CBD1D	henry gardner
+7FCE30EC	rittwik jana
+8090F01A	k b ngo
+809EF1E6	william w armstrong
+80B7687B	masahiro yanagisawa
+80F1389F	emery n brown
+830C8BFF	jon baxter
+832DE855	duncan
+844697BE	f pizlo
+84F708D9	philip blackwell
+8544F7A8	thomas jacob
+8552BF3C	lei wang
+857108EB	marshall shepard
+862BB826	ranald clouston
+0E29D41C	nicolas ceynowa
+0F7D2A91	karl goiser
+117C26D3	saadan zokaei
+1276B8F7	neda aboutorab
+17C553CF	bernd funovits
+492E64F5	c d helon
+722AA586	ramani duraiswami
+731E0C41	thushara d abhayapala
+750A29F5	helja lundgrenlaine
+75C738AD	s m krasnoshtanov
+77A287EA	asim khwaja
+77AC477F	lieven eeckhout
+79055AD5	markus friberg
+790EFED0	thomas moor
+79A9C653	claire trenham
+79EDCC0A	joao m b carreiras
+7A1D6985	robert orsi
+7BEF96EE	avraham ruderman
+7CF34A96	karl e weber
+7D12D87D	t s jones
+7DF4889F	kevin k w ho
+7E11CEB4	adele f scott
+7E5C59A8	naoki katoh
+7E9613D0	alfredo gabaldon
+7F0B8CA2	jingjing xiao
+7F3C2AF3	lu qin
+7F66C61A	min zhang
+7F6C3BF1	chee seng chan
+7FB03801	tina t zhou
+7FEC140B	tengfei liu
+802F0F45	jitao sang
+8043BA9A	xiping jia
+8151B5A4	yuchao dai
+820F2D18	armin haller
+82C623B7	lars petersson
+831F0572	p ioannou
+83F52A9B	jie cai
+84A63014	andrew zhang
+84CBEF1F	carlos xudiera
+851536E4	jing guo
+857C78EA	bob edwards
+3DABAD7D	robert mahony
+751B98BD	michael r hush
+7572E010	s v n vishwanathan
+758EC809	alexander j smola
+773A4F79	alexander lanzon
+78A49DBF	e v krishnamurthy
+797E64DF	duc nghia pham
+799B7674	guoqiang mao
+79E2BEE3	mayank daswani
+79FA81F7	xiaoyuan ta
+7BCD4888	damien mcaullay
+7C51A42F	frank allgower
+7C63EA5C	hui ke
+7D6A3AEC	ali a nasir
+7DE646C6	zhiheng niu
+7E532AFA	vinayaka pandit
+7E9019A5	nandita sharma
+7F291B06	weifa liang
+7F8743E8	surya prakash
+802AE5FD	lachlan horne
+80338533	michael wagner
+807FB87B	rene vidal
+810335CA	pascal morin
+816326DE	zijie zhang
+8173BC13	bianca haberl
+81767819	yanyan shen
+84966348	alice p bates
+84ACEEDE	richard hartley
+84FFBC5A	miles de la hunty
+850BCA57	philip ogunbona
+85875457	j r chen
+862569F2	lachlan blackhall
+8635F951	mohommadali mohammadi
+0D2355A6	roland p malhame
+17CD8919	abdesselam bouzerdoum
+29CBEC38	iain h woodhouse
+7264CADD	markus hegland
+75DE5993	bruno herisse
+77858FE9	minoru hokari
+798564C4	bernhard beckert
+7C2896F6	nail akhmediev
+7D7A16AC	jian zhang
+7E15454C	mark r pickering
+7E1D46B2	kathryn s mckinley
+7E527AF4	m williams
+7E60ABC3	kai cai
+7E6AEC4F	zeyu shen
+7E85FCE1	woods wang
+7EE2DAF6	janchristoph kuster
+7EEF2CB9	richard g jones
+7EFACBC3	seokhee hong
+7F397378	josh milthorpe
+7FF377E1	michael haupt
+80199B7C	james lam
+8092AAEF	zibo miao
+80F26290	jiaolong yang
+810DD945	kenneth chiu
+8259C5DD	j c tsai
+828A42AD	jingbo wang
+828D391F	guyin zhou
+82A6CA68	s j dury
+82B13663	bill clarke
+8480EF4E	peter radoll
+02384EEE	david hawking
+043F0A1C	ian lintault
+13EE292D	saul thurrowgood
+456E1F94	veysel gazi
+51676C60	edward t a mitchard
+6EBC0B59	tim wark
+7221F66B	yee harn teh
+73BF98F2	behjat siddiquie
+755C5E7C	j bruce millar
+76D381C5	elena kelareva
+77B3979A	d fink
+7C0B8AB9	dimitrios tsifakis
+7CB8D901	mustafa tumen
+7CFC48D6	g r booker
+7D006E58	yuhang zhang
+7D165EB2	charles l a clarke
+7D1A0C2E	anika schumann
+7DD27AEA	thanh tin tang
+7DD75C38	yung chung wei
+7E052CD4	ke zhang
+7EA0CDC9	daniel feinberg
+7F1E47EA	leana copeland
+7F21E482	shayne flint
+7F2CA808	anila sahar butt
+7F74F77B	richard hartley
+7FD50A31	liu tengfei
+7FF31277	irene moser
+8007ACFE	mahta moghaddam
+8129D063	andrew walker
+81439917	shengbo guo
+816F9651	jiugen shi
+835A0430	xiaojun shen
+83C57563	niall rooney
+83DEB6B5	ran wei
+848BDCF7	wetian chen
+849AC409	ahmed a alhabob
+852F5EE9	torben schou
+09ECC9F4	helen allvin
+17F705BE	sandra h dandach
+221CA475	nassir navab
+3B3E4262	thilina ranbaduge
+6D5E6D01	nicolas becu
+72729184	tzvetan ivanov
+7576F1A4	roman pflugfelder
+78AC0FED	s z sayed hassen
+7997F4AC	stuart hungerford
+7C009899	v ganesh
+7CB4A8FE	uwe helmke
+7D73061E	peng yang
+7D94A3D2	graham j williams
+7DE20894	chris mccarthy
+7E3BCDDB	m l williams
+7ECB4025	xi wen
+7F07B274	j s williams
+7F0AD1F7	diana glazebrook
+7F3237CC	ni ding
+7F42987A	hongdong li
+7F88E8DB	kevin osborn
+7F9BDD2C	yasemin altun
+7FFD914A	yun zhai
+8016AAA6	arkady zaslavsky
+8034FBC3	xu xu
+80E67255	riccardo barbieri
+8118216B	sung h cha
+815180AE	xiaobing wu
+835065E4	hoa tran
+839462AB	andrew over
+83C358BC	usman qayyum
+8479702B	jia fang
+84FAEF85	liangliang cao
+8517888F	mohammad najafi
+8634B94B	v t rajan
+00617221	jochen zeil
+03E25734	iain mccalman
+052A37BC	linas baltrunas
+0B015DE9	yannick pencole
+1009CC07	yves barral
+11DEABE8	behzad bozorgtabar
+45E7C478	azwirman gusrialdi
+4A18EA4C	j m pflimlin
+7541F84C	j f milthorpe
+75B6BCD7	c jagadish
+76F614D7	yibeltal f alem
+79887B66	salman durrani
+7A173F7B	srinivas sridharan
+7B2ACECD	paul wong
+7CCEA000	steve blackburn
+7D498AA7	john gough
+7D5C6A9B	fangyuan chen
+7D5DB737	jing liu
+7D677635	matthew gray
+7D6BFBA3	junming wei
+7D92D46C	lei wang
+7E0706FD	ben wiedermann
+7ED7086B	sara w lazar
+7EFED7A4	gareth loy
+800951E3	marieke huisman
+8016A08B	jeffrey fisher
+8057FC92	jim procter
+805C7AA8	philip kilby
+80640EE0	gucan long
+80CACBE1	qinfeng shi
+80D62CB3	michel gevers
+814B0AE5	krystian ji
+82E322C6	rowena ball
+83174548	chintha tellambura
+83C7C492	s l mendelson
+8490299B	s w zhang
+84B0A5ED	g piova
+856C90AF	x marquez
+85CC3ADA	mike jia
+863ADCF4	m r james
+0E540221	brenan j mccarragher
+1228C409	andrey v savkin
+180FD663	a d s jayalath
+5970A695	clemens kupke
+760012C1	simon gunter
+76019E17	francoisxavier russotto
+775C23C7	jiang zhongping
+78003AF9	eric mccreath
+785824B8	mark a knackstedt
+78652419	david k goldenberg
+78BF4E87	timothy baldwin
+7A21A2CE	justin bedo
+7B85ED67	g j kramer
+7C4E2F48	tatiana semenova
+7CC1CDF4	richardson n leao
+7CF9FA2F	wenhua dou
+7D64E170	alex ip
+7D8C2B05	kit devine
+7DBD461A	rui zhou
+7DDF9EB7	zhao jun
+7E1CD4D5	daniel h chae
+7E2CF23A	jywefei fang
+7E8BB4EA	hanchi chen
+7EB7350F	shaoshuai mou
+7F42DB75	zhichun fu
+7F44567D	r g hartley
+7FC01BD3	sheng liu
+7FF903A4	roger hillman
+80E380EF	jiping liu
+80F26A4A	bo li
+81182FFA	lijun cao
+82B4D3ED	sara maher
+84D15A0B	yu changbin
+84DF421C	thalaiyasingam ajanthan
+0ECCB023	simon
+128F3727	novi quadrianto
+145D128F	patrik haslum
+1A9F6AD6	sanna salantera
+5F7EEE45	abeje y mersha
+6302355A	christian lageman
+653E25FB	stephan fasbender
+70C4BD11	alireza khosravian
+75F7D1F9	anne cregan
+778AE292	robert lesslie
+7D1ABDCC	a jones
+7D3A69B6	darren b ward
+7D6AE16A	mandyam v srinivasan
+7D9D3DA9	miaomiao liu
+7E0A5F69	john grundy
+7EFA0B00	a p haller
+7F9D751D	james a thomson
+7F9F906D	kristy sim
+7FAC1C43	leila alem
+7FB810C7	kathleen m griffiths
+7FC0BD60	adrien bartoli
+7FC0FB7C	zhen he
+7FD63CC0	nicj barnes
+8008EF7E	jiahu qin
+8037732C	fangfang lu
+8087B7D7	arnon friedmann
+80BA5DC8	j eliot b moss
+80DF2333	dat tran
+80DFADF2	jing yao
+80E63006	huibo ji
+837B8E75	abed malti
+84356973	john hosking
+8542FA6D	rollin omari
+85602FB6	john oliensis
+0FE83577	r h nobes
+102B2AC1	stefano stramigioli
+4AB52539	sivalogeswaran ratnasingam
+5A2C2F5C	predrag b rapajic
+633098A1	ali soltanifarani
+74D633D4	florent brunet
+75FDC1C2	maj mirmirani
+7698B479	ahmed h el zein
+78E19D25	s sajja
+7D001A94	herman te riele
+7D3FD686	david j hill
+7D51C05A	alonso marquez
+7D5F7D01	yoong siang oh
+7D9D7652	ming zhao
+7DCA314F	lei wang
+7DD6E077	mustapha ait rami
+7E3C2C27	charith perera
+7E9C9129	weiming hu
+7EF56628	rene vidal
+7F016E6F	judy kay
+7FAD3B81	susan d wilson
+7FC35961	sebastien wong
+7FD10B5B	dale miller
+804C2BE7	hui wang
+805452F9	huang huang
+80C15186	hannah j joyce
+80FE802A	zichuan xu
+83551A36	xiaohu zhang
+83932E7D	eric mccreath
+83B32C88	hadi mohasel afshar
+83D52AA1	david grove
+84B1667C	yiran zhong
+84FD3350	charles martin
+84FD5E45	jun tu
+851B9F36	mark brown
+8541FD61	tianlong see
+85432015	myriam servieres
+857D2C47	brenan j mccarragher
+13D255FC	denny
+24885D04	valery a ugrinovskii
+2968B209	walter f bischof
+4852C47C	rowel atienza
+70B821F6	thomas gartner
+745099E7	usman qayyum
+74BF22DF	dino miniutti
+778887DE	viorica botea
+78FAE8DC	sandun kodituwakku
+7964DCF3	andrew slater
+79ACBA8D	richard hartley
+7A1E722D	terry caelli
+7C7F16DA	s masrom
+7D0E7C50	a c lee
+7D1CA551	mac boot
+7DD65B67	yuko kinoshita
+7E2CDB5A	xiang wu
+7E5A3B2D	aashish phansalkar
+7E7DC11F	lisa m brown
+7E8EBAD5	malcolm c smith
+7EF29499	monique rooney
+7EFA4429	enrico scala
+7F655968	l andrew coward
+7FAD1537	kristian beckers
+7FED2C47	anthony milton
+7FF416BB	mathieu salzmann
+8022E561	gao zhu
+80235D45	tiejun gao
+805F1542	bruce p graham
+80C017B3	qing wang
+80E5260B	gem stapleton
+80F2BA33	john lloyd
+80F9ACCC	alan m zaslavsky
+8111634F	surya prakash
+83A725B4	clive boughton
+84A0B18D	lei wang
+84F82E20	jinho huang
+852368A8	chalapathy net
+85722688	yang li
+85835127	jin yu
+862151B6	mile gu
+8639459A	vinayak rao
+03AC3971	karim faez
+2892EC45	abdkrim seghouane
+2BE7BFA1	manfred deistler
+5FB72FCA	viorica botea
+6D6C98E9	odalricambrym maillard
+7575B385	srimal jayawardena
+759EFCA3	julien epps
+76722C4A	luka cehovin
+77838DBD	ken brodlie
+7C476DDE	andrea lecchinivisintini
+7CD48D7A	nimalan nandapalan
+7CEA82BB	ben gilbert
+7D383FB3	yang xi
+7D5E8FD2	h lee
+7DA79604	xiaolei hou
+7DC2B838	yunde jia
+7E514AC9	ashley stacey
+7E724602	ke zhang
+7EE19277	james j jiang
+7EE64C62	sylvain foret
+7EF90941	elisabeth crawford
+7F2DC50F	cong phuoc huynh
+7F524790	xiao bai
+7FE1B4EB	hari sundaram
+801F8977	noboru yamamoto
+8074566C	kristian mogensen
+80B067CA	gavin bell
+8134BD33	warick brown
+83B958F4	m m rahman
+84F19F8B	adele scott
+84F47F17	rodney a kennedyy
+852160EF	zhenyu jiang
+8523C188	zheng li
+857D5E8F	qiang wu
+8625885B	olivier bousquet
+06822F88	tharaka a lamahewa
+0F83345D	wray buntine
+2BAA2D72	antony l hosking
+761D44B7	a muffett
+78B9E9E8	r j bridle
+7905DCC7	pietro abate
+790865D6	ibrahim radwan
+797F8A7A	s m a salehin
+7A630060	orson sutherland
+7CFF95FD	baoqi huang
+7D35ACA8	c c fung
+7D741FBC	weihua chen
+7D867D4F	pei h leong
+7DC20A72	r i mckay
+7E101BC9	c j hoffmann
+7E6D8366	debdeep banerjee
+7EB09D0A	gareth oliver
+7EB0D329	d louis collins
+7F3194AE	m j hill
+7F49D984	sergey goncharov
+7F712596	masoud nikravesh
+7FF5D777	nicole dodd
+80137105	k w wong
+804D7234	kahlil hodgson
+809656CE	yueshi shen
+80BB0959	zhihui hao
+80FC7C3B	matt adcock
+81A97654	yantao feng
+825A5D7A	jungwoo ha
+82A00C76	hui wang
+842AA3FA	e vikram krishnamurthy
+8499E215	asjad m khang
+8514EABC	anindita saha
+8517F900	ming matt ruan
+8581D0E9	jaehak kim
+12E31729	lukas polok
+1CC4276F	froduald kabanza
+2B601E0C	ali zarezade
+7222CBD6	bertrand clarke
+77ED4491	john howse
+78B1C254	michael milford
+78CA61A3	john k slaney
+792A459A	uditha r ratnayake
+7B96E893	s ruffell
+7D96C3B9	diyang chu
+7DDA5494	zhongping jiang
+7E483089	zhiyu wang
+7E5AA073	peter baumgartner
+7ED8858C	david hobbs
+7FC119BD	pascal perez
+7FC26F4D	tony s pollock
+803F67EF	jie zhou
+806BA1B9	atif m memon
+809878DD	k s ng
+80BE0BEA	emil keyder
+80C3E9F4	ju lynn ong
+812B5E49	clive boughton
+81448539	dongsong zhang
+814C4E1A	jianbing shen
+81B2E063	keng t tan
+83801074	tomasz celinski
+84992D89	ale leonardis
+84A416A1	zhouyu du
+84EE09A0	hark hoe tan
+85463C50	t s jones
+855CF0FD	matthew arnold
+05D00772	sebastien poullot
+0A41A5F7	terence betlehem
+0B4EC410	salah sukkarieh
+10F48FA4	olivier tardieu
+12D9BB26	georg nebehay
+13AD5209	imants svalbe
+19F8CF33	chalapathy neti
+218FC6C0	vijay varadharajan
+27C28515	a dhammika s jayalath
+30B0B411	stephane canu
+3AE54BAD	nicholas apostoloff
+448425BB	thomas vandrunen
+5B2D8A90	tamir yedidya
+73BDFE0C	hartmut hoehle
+767B00B1	alexandre eudes
+76C93247	apostol natsev
+7B5DA040	david f bacon
+7C7E3481	nermin samet
+7DAFECC3	steve blackburn
+7DC58A65	stephen gould
+7E1C91D3	arvin dehghani
+7E2B2390	haixun wang
+7E5BC035	suisin khoo
+7EC1FD0D	jianke zhu
+7EC8F39A	roberto santana
+7F26D1F4	xiaoyu ge
+7F81EC45	aastha gupta
+7F9BC9F3	fei wu
+7F9FE1E0	elin carlsson
+80057D2A	z sun
+80381E2E	ahmed sohaib
+805BB604	martin leucker
+806E3093	wei yang
+8096E0B0	jonathan schaeffer
+8102C207	salman durrani
+810952AA	yihong yao
+82C8A2BF	amer diwan
+832EBADF	akshay asthana
+833D1754	qing wang
+84C290BA	jinbo huang
+84E2AD46	sebastian fleissner
+850BF863	swapnil mishra
+8543BA03	zhiqiang zheng
+85B168DC	huan liu
+00491B58	a j jakeman
+00E27758	alexandros karatzoglou
+140E2F1C	peter eades
+1747918A	roy timo
+521DCD46	suilan estevezvelarde
+7899168C	javaan chahl
+7DC61597	carl olsson
+7DF5970C	alwen tiu
+7E3E33B0	meixia tao
+7E7FCF3F	toby collins
+7E889567	graham r williams
+7E988655	marco bernardo
+7EA281B6	lingling tao
+7EA863A9	cheng soon ong
+7EE879CE	sanlin xu
+7F6BD155	jian zhang
+7FA7A44B	sitalakshmi venkatraman
+7FB90EFD	john r smith
+7FD138F0	andrew a haigh
+8032575B	xiuping jia
+80BB7CDE	phuong nguyen
+80C373D0	zubair khalid
+812CA2D7	media anugerah ayu
+8138D95F	beryl plimmer
+8154EB28	dingzhu du
+8206D20A	xiaola lin
+8453D68F	jianxin li
+84A071B3	l a coward
+84D401CD	alistair riddell
+84EFF999	lakshmi sreenivasareddy dirisinapu
+84F2906C	saifullah m dewan
+85051564	chris putnam
+8543B6A4	jae hee lee
+0032F0EA	remy malgouyres
+012BE21F	giulio bottegal
+480DCE9E	jochen trumpf
+6CDAD1BE	sumithra velupillai
+7318C12D	vikas shivashankar
+75618091	gordon wyeth
+761A5DEC	andrew gacek
+769FAA6C	elena akhmatskaya
+78FA4083	alexander zelinsky
+7B41ACB4	mike quirk
+7C4CB82C	arun vishwanath
+7D30E7BE	gordon v cormack
+7D5C5DC9	thorsten wismann
+7D814A42	brian murphy
+7D9F65D1	kevin p murphy
+7DE68BE5	david kearney
+7DF394E9	peng cui
+7E56196A	bin liu
+7E8739D7	mark d reid
+7EEC7E10	zhouyu fu
+7F770EB7	adrian horridge
+7FF39D77	rajeev gore
+80503197	steven w su
+80A06CD4	qiang gao
+80EA587F	ian r petersen
+81C54D2D	vaughan coulthard
+82C075CD	peter carr
+83036BE5	marc pollefeys
+848247DE	honglin yu
+853F97B8	wayes tushar
+85505E51	gaurav sood
+85812B39	m j wagner
+859559F6	michael chaosheng chang
+03CC8BE8	pavel zemcik
+0411E947	agung fatwanto
+08A54560	dinusha vatsalan
+1272F93B	torben sko
+19F90212	pietro torasso
+64B0A84F	masashi yanagisawa
+70FC42D5	benjamin swift
+78288BA1	gopalan nadathur
+798AF427	ramtin shams
+7A90472D	muriel medard
+7AAF30F0	eric a lehmann
+7B84E2F7	charlotte hucher
+7BE07CAE	patrick meir
+7BE5F608	lawrence mutimbu
+7D34FE91	qing hua qin
+7D94600B	john a richards
+7D96FE39	ben evans
+7E1A984A	john downs
+7E5476F2	x huang
+7E6F177C	michael a collins
+7EBA6196	jonghyuk kim
+7EEE279F	wee gin lim
+7F76DD7F	wibe a dejong
+8038CE34	yuzhen liu
+806383D6	yifan lu
+8098324B	aisha khan
+80E55FFF	ken taylor
+8229E774	xin du
+82CCD92D	elizabeth bradley
+8320510C	tao liu
+8487D7A3	mohamed el helw
+85201743	tom rowlands
+85239D86	peter chapman
+85260870	joseph chan
+857D0A38	helene pietlahanier
+00380FAD	vidas daudaravicius
+0E32EDBA	dumidu s talagala
+0F8C8980	jochen garcke
+3CE31038	frank schreckenbach
+59B047DA	sajjad taghvaee
+59EEF8A8	james bornholt
+762D650B	tiberio s caetano
+777C0155	lutz schroder
+78DF8529	lei liu
+798C5DA6	dhammika jayalath
+79C5088F	m heurs
+7D9AE2FD	aditya krishna menon
+7E11BE47	j marchand
+7E71C7C8	junae kim
+7EB1264F	paul zimmermann
+7F8A6C15	jill middleton
+7FD99340	y j wu
+7FF3CF18	lang white
+80772DD9	edwin bonilla
+811DE03F	david austin
+815C8B7D	h t nguyen
+83AC3F42	ga wu
+83CB19E3	michael wagner
+83D8F334	tiberio s caetano
+847256DD	brandon ayers
+84771A11	trung v nguyen
+84B10385	u ravi babu
+84CC6BA0	thien d nguyen
+8633820D	bin jiang
+062E2442	linda postniece
+11AC56CF	pascal o vontobel
+4ACE43E4	faris abousaleh
+75D99B0F	peter m dower
+76101823	hendra gunadi
+7851D001	david toman
+7A7A25F0	michael breakspear
+7D132A54	yiqiu fang
+7DAFC2C8	david walsh
+7E6342E8	ke jia
+7E8929B9	ji zhang
+7EC97CCD	nan yang
+7ECA605E	chuankun wu
+7ED07566	soura dasgupta
+7F3339FC	david rodda
+7F68F47C	geoff stacey
+7F7831BF	pan ji
+7F9F90BA	tong wu
+8050550F	anders eriksson
+8060B208	minyi huang
+80F9A3B0	samantha yueying lim
+81265D41	p coote
+8147DC19	harel paz
+82D5B069	phil rose
+8362FD4D	armin haller
+8457D41A	brendan harding
+84BA12F5	rifat shahriyar
+853B7848	matthew gray
+856C6D2D	jaehak kim
+8592B402	thomas hofmann
+863EBD6C	p sunehag
+0DA8F21A	john r kender
+10F2590C	kirill kouzoubov
+1A0191CC	douglas aberdeen
+2B4BFA89	steven d blostein
+7662BC82	pascal schweitzer
+767084B2	m g nagle
+7695FF38	j m davoren
+769A6617	timothy sears
+77BA7786	patrick m wensing
+77ECDA97	antonio robleskelly
+782311E3	bariş fidan
+790E5B79	vasanta chaganti
+79734997	franz baader
+79E07AD2	k t milne
+7A0838AF	sheila mcilraith
+7B863D5B	mario edoardo maresca
+7CEFAEC5	yi lin
+7D42AA3C	mostafa ozlati moghadam
+7D78ED7F	chuankun wu
+7DCA0F40	parastoo sadeghi
+7DD6D0B2	kevin lee
+7E1371F5	hien d nguyen
+7E28841B	robby t tan
+7E2B669B	quoc v le
+7E59DB7D	j w larson
+7E847E1E	mathieu salzmann
+7E8ACC1D	xuanying zhu
+7EA48A0E	mahdi zamani
+7F73C5C8	ali salehi
+7F8AB5D7	lijiu zhang
+7FAB74E7	suzanne a pierce
+8073FC3F	sigi goode
+80FBEF76	john rice
+810F0F1E	peng zhang
+81477897	jan c willems
+82D3D8B9	arkady zaslavsky
+835DCDF6	david rajaratnam
+83FE0BD5	bo su
+841E099B	h truong
+8475F8B2	shaochun huang
+847C54BC	richard hartley
+84B9BC0B	jian zhang
+85AE6714	daniel mcnamara
+85C2012D	olivier barreteau
+001DC666	ben lippmeier
+085A4A24	meladel mistica
+0A7444DB	patrick mcconvell
+0B3E37C7	vinod tipparaju
+5EC0A157	s h cavallar
+75D9DA47	michael broughton
+7686BB3A	florent le bras
+7774861B	matthew hill
+79A13CC1	daniel gorin
+79D26DE6	stefan wolfl
+7ACF7074	andrew dankers
+7B162D76	rochelle ohagan
+7C893998	viorela ila
+7CB08804	duy t ngo
+7D11A774	jeremy e dawson
+7D876992	rishabh mehrotra
+7D94FE8F	sungsik huh
+7DD6A30D	fredrik kahl
+7EC2FB16	alex grant
+7EC90BEB	dan xu
+7EEFCF00	jihui zhang
+7EF6F280	paolo remagnino
+7F3DC5EA	jennifer abernethy
+7F80E4F8	sing bing kang
+7F8E5179	junwei ge
+80E4FD42	b t cox
+815D8B89	david r w barr
+8280CF38	mohsen zamani
+8371417C	alexander filler
+8456434F	yongduek seo
+85015419	govardhan aliseri
+85311F04	stephen barrass
+853E811D	s p thompson
+018F5DE3	michael felsberg
+0C11FF02	sharifa alghowinem
+1093B787	mohammad deghat
+113D0842	bhaskara marthi
+13253DEC	anil nerode
+523C202A	jan leike
+61BF44C1	jens c pruessner
+778467BC	ashkan amirsadri
+784EDD07	w v pinczewski
+78602530	james popple
+78C6308E	rashed noman
+793151E7	janmichael frahm
+79456EC7	christoph bockisch
+79AF217E	julian mcauley
+7B817CB4	dian tjondronegoro
+7D19B7DB	adrian n bishop
+7DCD07F5	b d anderson
+7E8E88BA	rauf iqbal
+7F2BF017	sahibzada u latif
+7F313D97	heyang li
+7F439A0D	lorenzo marconi
+7F4DF8FF	diedrich wolter
+8030D6C1	brendan harding
+80569422	dimitrios kokkinakis
+805A2828	gustavo fernandez
+80AB0AAB	van khanh nguyen
+80BD997B	nianjun liu
+8120CCE9	song wang
+8146D592	guodong shi
+822570D8	chanchal k roy
+82486A16	srinivas chemboli
+82A89F26	timothy jones
+82D37E29	jiri matas
+848CDF84	david shaw
+84C5B63E	terence betlehem
+85281B1B	gordon mcintyre
+863158FA	melissa j green
+03125FBF	rustam stolkin
+096CCA6A	nicole megow
+0A061C9C	gunnar ratsch
+0AFAB6CA	stefan kratsch
+0E8DF89D	alban grastien
+12A5015B	sharon oleskevich
+18222083	a s berdinsky
+2B3D2E13	francois chaumette
+37AA2522	norbert boeddeker
+4273F927	vaibhav gavane
+471D1C7E	karen d loch
+79A41BF1	andrew fogden
+7A4F25AB	charles gretton
+7D093BDF	roger clarke
+7D2D10D4	amy fu
+7D41C23E	hongxing he
+7DC43BB7	michael m wagner
+7E7421B8	xiaofan chen
+7E7B5938	jie chen
+7EF384BB	lixin cai
+7F2F6C56	geyong min
+7F83C64D	pichao wang
+7FA5EEF5	s mehdi hashemi
+80114E7E	mark c reed
+8068A1E7	joseph guillaume
+80E98722	guanrong chen
+8133908C	shinichi satoh
+81359EA9	benyuan liu
+82E79CBA	holger schmidt
+82FFAF9D	arjen k lenstra
+8460ABE2	volker hilsenstein
+84A34210	jianshu chao
+84ACDCA3	cody james christopher
+84D80F20	james roper
+84F1C94B	b walmsey
+84F3FCC4	bin liu
+8535AFBF	authors
+853F9248	mohammad m rahman
+854B8863	roland goeck
+8556AB00	jun zhou
+0863C985	peter a zadrozny
+5543B7BE	zeeshan hayder
+7630FB76	matthew p hyett
+766C0036	jeanpierre guillon
+76B637DB	duncan stevenson
+7A0307AC	edwin r hancock
+7A6239BD	noureddine bounoua
+7BD1BD08	muralikrishna sridhar
+7CECDDB5	b dodson
+7CF2F229	s k dey
+7D70D7C0	mingchao yu
+7D83FDB1	hao shen
+7DC10067	eddie li
+7DC44A33	hua o wang
+7E3853C8	jordan christensen
+7E6DB936	bob williamson
+7E79107B	ramana kumar
+7F111196	wenzheng xu
+7F2717B1	liansheng tan
+7FBF4863	michael ulbrich
+7FE012C2	jeff gilchrist
+803D5F21	eric fabre
+80522C1E	kar wai lim
+8052A780	soohwan kim
+80D2BA1E	jonathan e cooper
+811645A9	b j turner
+824627FF	patrik haslum
+8522A909	arun jagota
+853B188E	jaewon kim
+0AB2D84F	thomas s brinsmead
+72EE9A3C	abdul sattar
+757C1901	linh anh nguyen
+765A0D41	w d emmerich
+79A6A108	jennifer b sartor
+79C35621	elisabeth felsenstein
+7AA8450D	pawalai kraipeerapun
+7B886488	matthias weidlich
+7C35DC10	aditi barthwal
+7D449D6F	brett wilkinson
+7DDB19DA	wenwu zhu
+7E69376D	jussi rintanen
+7E6F18CD	lucia santoso
+7E73A265	irfan altas
+7EBD5B66	peng wang
+7F32F1A4	xiaoxing guo
+7F674D4C	yinlong xu
+7FA281B8	xi yang
+7FD0E75A	bing bing zhou
+7FDA2EBD	matthew turk
+8094A17E	martin wehrle
+81045F00	peter w carr
+8111983A	janghoon yang
+811E5728	toby walsh
+820CD053	william e hughes
+8392F1A6	matthew driscoll
+847AC1E9	craig saint
+853E6CF4	pattie maes
+862BD9D8	peter read
+058309F8	michael r frater
+4B480972	xavier mary
+63263985	robert sok
+6C239C48	peter a flach
+738F7590	david newth
+77228643	filippo maria fazi
+790EE9CE	katarina mele
+7994F980	andrew sorensen
+7A2062D0	marc g bellemare
+7A31C8E4	marcus hutter
+7A5D534F	t d gedeon
+7AB71285	g j mclachlan
+7BB5C392	areej alwabil
+7C9C6B93	matt duckham
+7CF22D08	karin strauss
+7D798CC7	jose m alvarez
+7DB144ED	choon hui teo
+7E2A3F94	john c platt
+7E312E8D	carsten schurmann
+7E6EA6CE	norman foo
+7EA17D85	c a murthy
+7F93D5B0	hongguang ren
+80C3AD3E	john uhlmann
+82082C34	liam obrien
+8473C8CC	arvin dehghaniz
+84C4C579	sheppard adrian
+84F986FC	yang zhen
+8506D4F3	melissa fedrigo
+8539D9D9	cong wang
+022CE7A0	pakpong jantapremjit
+04EF842D	bradley e treeby
+0CAE197E	luke nguyenhoan
+11C19B28	laszlo t koczy
+297FBA17	terry caelli
+49127571	zoe e brain
+55B17996	dorothy monekosso
+5CBEA617	anbulagan anbulagan
+712B6DE7	hendra i nurdin
+76E85813	joerg hoffmann
+78DC84BB	felix schill
+79D67F6D	paul c leyland
+7B6948DE	ilya a sharapov
+7C9FC702	conrad sanderson
+7D4AE9CE	ying chen
+7E25B832	jason r chen
+7E469893	zhe hou
+7E52D700	jeffrey xu yu
+7F1DAB54	xianchao zhang
+7F85DF97	xuchun li
+7FA48014	hyunchul shim
+7FB97E50	xiaoming wu
+7FC08D03	jason saragih
+8031F841	stephen t hyde
+805AACBC	baichen chen
+80ACE757	lois b obrien
+80EDF8CB	dana s nau
+8166139F	john f arnold
+84493B76	dirk pattinson
+84DB19E1	j zhang
+84F0681D	krishna murthy mudumbi
+859C90DF	weiming liu
+862F9EA4	huijun gao
+075D261F	erez petrank
+0A5A0CD8	yannick pencole
+0E04B5E1	rotem bentzur
+13C7F9A1	sophie pinchinat
+253A4BE6	knut huper
+2C44DCFB	oday jerew
+6B6F3E6D	sam reisenfeld
+75893AFE	malin premaratne
+79563FD9	jun tu
+79AC673B	bin liu
+79EA4B27	peter l montgomery
+7A5B3737	mahdieh hasheminezhad
+7AAD9AF6	martin henschke
+7AF9345C	xinwang liu
+7BD3EF93	todd mytkowicz
+7C4CD8E8	amir aryani
+7D1E4807	mark a poletti
+7D344724	richard lucas
+7D65D13D	jingyuan zhang
+7DC23586	petra philips
+7DD7B88B	kathy griffiths
+7DDD03DE	jaein jeong
+7E7B8AC2	tyler h summers
+7E7F8EB8	yan jennifer wu
+7F1A0317	junliang xing
+7F84952D	niloofar gheissari
+8009C3E0	jamie callan
+803932AB	haley jones
+8050CB21	michael anderson
+806DBBF9	huan zhang
+8082CE4E	liying wei
+80D8DBC2	dongsong ban
+80E14D77	jonathan smillie
+80EBC6FE	jamil y khan
+80FA787C	brian d o anderson
+8110CEA4	matthew r james
+813B2AFE	shoudong huang
+814E934F	rebecca allen
+81AFBBA9	jaeyong chung
+81B256BE	zahra mobini
+82E70473	adrien bartoli
+84424FAA	xiao chun hong
+84CB07BA	b do anderson
+84F06B05	yiran xie
+85713A41	gunther grabner
+85827A07	k l teo
+85951043	daniel harabor
+85F404EB	perry chang
+1587731B	snezana krusevac
+299C61B8	albert y zomaya
+379826A0	samuel a inverso
+45DA230E	danail traskov
+56EAF550	antonio boluferohler
+702A8349	shahriar etemadi tajbakhsh
+753AC5ED	thomas a ocallaghan
+764E2398	martin zinkevich
+7B366785	gunnar nilsson
+7B669FEC	marieodile cordier
+7BA664D3	michael t compton
+7C4742F9	martin schaf
+7D264475	di yang
+7D2BD213	florian rosenberg
+7D57D389	christian witte
+7D71305D	wilson ong
+7E2BE306	dingyun zhu
+7E9B8DD4	kokleong ong
+7EA73A40	ali zia
+7F1B6B29	xiaomeng zhang
+7F65354D	miranda zhang
+7FA9BDD7	s chan
+7FDC8BE0	richard bowden
+7FF96319	donglu wang
+804934A5	jun zhou
+80774841	anna carnerup
+8116AEEE	peter j smith
+816F0B51	peter f sweeney
+81ED3247	uwe r zimmer
+82FFE210	nicolas della penna
+83380BD1	robert mahony
+8401B890	rolf schwitter
+847686DC	nicolo malaguttiy
+84E1A909	chunyan su
+851E4DCB	lei wang
+8574033C	geraimos potamianos
+0261EB40	martin vechev
+1059E5DF	sarah alghuwinem
+12EA45D8	ramesh sankaranarayana
+2B86E690	alistair p rendell
+3E3802DC	herbert a fruchtl
+7198B7A7	sara frug
+758BCF52	abid ghous
+764F11F1	james g burchfield
+76D4EB4D	helen wright
+77633985	fatih porikli
+7850992C	p n bierwirth
+78D028AC	ylies falcone
+79121F7B	xavier bombois
+79D2A634	victor milman
+7AE074BB	reza shams
+7B5D3D4A	prasad t samarasinghe
+7B69806B	daniel peter dallas
+7C3CD576	pete p janes
+7CF5B89F	m m hassan mahmud
+7D139A0A	yue xu
+7D8884B8	kerry taylor
+7DA28784	helen d ennis
+7DB468CF	andrew l janke
+7DB4D758	akshay asthana
+7DC63916	alex lee
+7DD9D128	jing guo
+7FC3D864	greg okeefe
+7FE09CB0	gaurav mitra
+8030A312	john b moore
+803D5846	yansheng ming
+80622092	muhammad hanif
+810CF90F	james petterson
+81744029	tim pugh
+8204811C	tim jones
+8349F8BA	shaji krishnan
+838CDC44	lin gu
+839B5408	nicolas normand
+84768384	a v brasch
+85178216	p s chaudhuri
+85200DA0	vivek kumar
+853A8D84	adi botea
+85B582CA	yiming ji
+85D70734	kai xu
+0BD4E10E	sotiris s xantheas
+49583657	paul leopardi
+5B33C561	craig watman
+772A575B	marek e bialkowski
+7779D715	suresh venkatasubramanian
+7783A142	rajiv ranjan
+78FF5607	ajay jayaraj
+7A48638C	alistair p l rendell
+7AFCB3FC	ben e nizette
+7C70C468	florian widmann
+7CAB86A8	adrian sheppard
+7D0AB797	emily baird
+7D27F5C7	md tofazzal hossain
+7DB8A87C	weidong chen
+7DF1483E	yanxiang wang
+7E36828A	zhixin miao
+7EB3708A	james f montgomery
+7EB5A18A	jason jingshi li
+7EFB575D	jeancharles bazin
+7F313865	robin garner
+7F620880	stephen d roberts
+8039769B	stephen j roberts
+80431591	eusebio scornavacca
+815FC807	lingqiao liu
+821DB41A	s w zhang
+841C05A8	qi wang
+8439452A	navinda kottege
+84BBF431	arrian purcell
+84E5DCDC	david nister
+850794FC	craig wang
+858E3759	jian wang
+8594A10E	w j foley
+85A4DFF2	bo li
+104207D4	sebastien rougeaux
+1B5D95AC	david a shamma
+1B9EB65C	masoud faraki
+72DA1EC5	abhinav dhall
+7333C417	ping xue
+74F4347C	yasushi hada
+75E805A1	david hyunchul shim
+7622E7ED	iman shames
+7652A122	henri der sarkissian
+76FB89C9	wynita m griggs
+77ACEBBE	joel veness
+78802A70	karel lebeda
+78D91B87	stuart ramsden
+792CE5A7	hamid r rabiee
+7A001767	hridesh rajan
+7A41E60D	ranald clouston
+7AF39908	lei wei
+7B84E1BA	adam kowalczyk
+7C4190B4	linda buisman
+7D08F6A2	yingyu wan
+7DFEA8A9	shekhar chandra
+7ED5187A	daniel frampton
+7EF321D4	luis a duffaut espinosa
+7F438044	ned kock
+7F53B365	richard p brent
+7FA3CECD	adnan shah
+7FCE68ED	perry cheng
+801FA6B8	james w montgomery
+8085509E	iain little
+80F07540	wen zhang
+8106074F	zhenlin wang
+81163BD7	kerry olesen
+81222BAD	james montgomery
+82479E27	chris sweeney
+8274D9C4	jian zhang
+83779960	lei wang
+84779215	boby thekkanath
+847C349D	changbin vu
+84EA542F	guanjun ma
+855B8E0F	xiaoqin chen
+85B76FE6	vladimir nikulin
+1E8CFC46	kurt mehlhorn
+613AB519	supakit charnvanichborikarn
+731A1090	sameh sorour
+756B5FF7	tareq y alnaffouri
+76FC353E	omri guttman
+77920025	k pfitzner
+7A16110B	nicol n schraudolph
+7A2CA0C1	leif w hanlen
+7C588148	dragan nesic
+7D5C6CA2	rui cao
+7D97744D	ole nielsen
+7DA9E3D7	hao chen
+7E8029E8	robert c williamson
+7EED4799	mark wallace
+7F0E7ECF	liying wei
+7F749461	amy y c liu
+7FB60004	mohammad s karim
+7FF39791	rueyjen yang
+801C8CE0	andrew kingston
+803C45BB	xuming he
+80D0B613	guofeng zhang
+81117EBD	deborah bird rose
+813A792A	paul thomas
+82489430	a stephen morse
+82D8EFB1	beth cook
+84B8F0CE	luke fletcher
+84C2AE93	edwin davis
+853AA64C	wei bai
+8552C7F5	paul thomas
+856F470C	fidan baris
+861F4A84	ranald clouston

@@ -63,6 +63,7 @@ def create_citation_graph(f, center, ntype, num):
 
 def create_coauthor_graph(f, center):
     Inst_set = set()
+    Author_set = {}
     Papers = {}
     reader = csv.reader(f, delimiter=',')
     for r in reader:
@@ -80,16 +81,24 @@ def create_coauthor_graph(f, center):
                 "venue": r[4]
             }
         Inst_set.add(r[3])
+        Author_set[r[1]] = ""
 
-    # print(Papers)
+    author_file = open(os.path.join(cur_path, "coauthor/Authors_ANU.txt"), "r")
+    for line in author_file:
+        key, author = line.split('\t')
+        if key in Author_set:
+            Author_set[key] = author.strip()
+
+    # print(Author_set)
     Inst_list = list(Inst_set)
 
     G = nx.Graph()
     for k, v in Papers.items():
         for x,y in itertools.combinations(v["authors"], 2):
-            G.add_node(x["name"], type=x["inst"])
-            G.add_node(y["name"], type=y["inst"])
-            G.add_edge(x["name"], y["name"], conf=v["venue"])
+            G.add_node(Author_set[x["name"]] if Author_set[x["name"]] != "" else x["name"], type=x["inst"])
+            G.add_node(Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"], type=y["inst"])
+            G.add_edge(Author_set[x["name"]] if Author_set[x["name"]] != "" else x["name"],\
+                        Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"], conf=v["venue"])
 
     G_nodes = []
     G_links = []

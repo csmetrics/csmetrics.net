@@ -1,4 +1,4 @@
-import os
+import os, csv
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -157,6 +157,21 @@ def coauthor(request):
         fname = f.split("_")
         if fname[0] == "anu":
             datalist.append(f)
+
+    # Author_set = {}
+    # for d in datalist:
+    #     dfile = open(os.path.join(datadir, d))
+    #     reader = csv.reader(dfile, delimiter=',')
+    #     for r in reader:
+    #         Author_set[r[1]] = ""
+    #
+    # author_file = open(os.path.join(datadir, "Authors.txt"), "r")
+    # subset_author_file = open(os.path.join(datadir, "Authors_ANU_test.txt"), "w")
+    # for line in author_file:
+    #     key, author = line.split('\t')
+    #     if key in Author_set:
+    #         subset_author_file.write(line)
+
 
     errormsg = ""
     selectfile = None
