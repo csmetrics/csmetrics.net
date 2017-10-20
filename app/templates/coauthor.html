@@ -94,6 +94,8 @@ d3.json("{% static datafile %}", function(error, graph) {
       .nodes(graph.nodes)
       .links(graph.links)
       .symmetricDiffLinkLengths(100, 0.2)
+      // .linkDistance(150)
+      .avoidOverlaps(true)
       .start(10);
 
   var link = svg.selectAll(".link")
@@ -118,6 +120,8 @@ d3.json("{% static datafile %}", function(error, graph) {
       .call(cola.drag);
 
   node.append("title")
+      .text(function(d) { return d.group; });
+  label.append("title")
       .text(function(d) { return d.group; });
 
   cola.on("tick", function () {
