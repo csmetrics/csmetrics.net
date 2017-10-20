@@ -93,8 +93,8 @@ d3.json("{% static datafile %}", function(error, graph) {
   cola
       .nodes(graph.nodes)
       .links(graph.links)
-      .symmetricDiffLinkLengths(50, 1.5)
-      .start(30);
+      .symmetricDiffLinkLengths(100, 0.2)
+      .start(10);
 
   var link = svg.selectAll(".link")
       .data(graph.links)
@@ -106,7 +106,7 @@ d3.json("{% static datafile %}", function(error, graph) {
       .data(graph.nodes)
     .enter().append("circle")
       .attr("class", "node")
-      .attr("r", function(d) { return d.degree+10; })
+      .attr("r", function(d) { return (d.degree+3)*2; })
       .attr("fill", function(d) { if (d.group_idx == -1) return "#FF0000"; else return color(d.group_idx); })
       .call(cola.drag);
 

@@ -1,6 +1,7 @@
 import os, json, csv, sys
 import itertools
 import networkx as nx
+from collections import Counter
 from operator import itemgetter
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
@@ -63,7 +64,7 @@ def create_citation_graph(f, center, ntype, num):
 
 def create_coauthor_graph(f, center):
     Inst_set = set()
-    Author_set = {}
+    Author_list = []
     Papers = {}
     reader = csv.reader(f, delimiter=',')
     for r in reader:
@@ -81,22 +82,26 @@ def create_coauthor_graph(f, center):
                 "venue": r[4]
             }
         Inst_set.add(r[3])
-        Author_set[r[1]] = ""
+        Author_list.append(r[1])
 
+    Author_set = Counter(Author_list)
+    Author_paper_count = Counter(Author_list)
     author_file = open(os.path.join(cur_path, "coauthor/Authors_ANU.txt"), "r")
     for line in author_file:
         key, author = line.split('\t')
         if key in Author_set:
             Author_set[key] = author.strip()
 
-    # print(Author_set)
+    # print(Author_paper_count)
     Inst_list = list(Inst_set)
 
     G = nx.Graph()
     for k, v in Papers.items():
         for x,y in itertools.combinations(v["authors"], 2):
-            G.add_node(Author_set[x["name"]] if Author_set[x["name"]] != "" else x["name"], type=x["inst"])
-            G.add_node(Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"], type=y["inst"])
+            G.add_node(Author_set[x["name"]] if Author_set[x["name"]] != "" else x["name"],\
+                        type=x["inst"], papers=Author_paper_count[x["name"]])
+            G.add_node(Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"],\
+                        type=y["inst"], papers=Author_paper_count[y["name"]])
             G.add_edge(Author_set[x["name"]] if Author_set[x["name"]] != "" else x["name"],\
                         Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"], conf=v["venue"])
 
@@ -105,10 +110,12 @@ def create_coauthor_graph(f, center):
     for n, d in G.nodes(data=True):
         if n == center:
             G_nodes.append({"name": n, "group_idx": -1, "fixed": True,\
-                            "group": d["type"] if d["type"] != "" else "None", "degree": G.degree(n)})
+                            "group": d["type"] if d["type"] != "" else "None",\
+                            "degree": d["papers"]})
         else:
             G_nodes.append({"name": n, "group_idx": Inst_list.index(d["type"]),\
-                            "group": d["type"] if d["type"] != "" else "None", "degree": G.degree(n)})
+                            "group": d["type"] if d["type"] != "" else "None",\
+                            "degree": d["papers"]})
     names = [n["name"] for n in G_nodes]
     for s, t, v in G.edges(data="conf", default=1):
         G_links.append({"source": names.index(s), "target": names.index(t), "value": v})
