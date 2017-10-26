@@ -113,6 +113,11 @@ def create_coauthor_graph(datadir, selectfile, yearrange, center):
             G.add_edge(Author_set[x["name"]] if Author_set[x["name"]] != "" else x["name"],\
                         Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"], year=v["year"])
 
+    if center: # show only connected nodes
+        connected_nodes = nx.shortest_path(G, center).keys()
+        G = G.subgraph(connected_nodes)
+
+
     G_nodes = []
     G_links = []
     for n, d in G.nodes(data=True):
