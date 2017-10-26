@@ -174,21 +174,19 @@ def coauthor(request):
 
 
     errormsg = ""
-    selectfile = None
     datafile = None
     center = None
+    year_lower = 2000
+    year_upper = 2015
     if "draw" in request.GET:
-        selectfile = request.GET.get("selectfile")
+        year_lower = int(request.GET.get("year-lower"))
+        year_upper = int(request.GET.get("year-upper"))
         center = request.GET.get("center")
-        print("selected:", selectfile)
+        print("year range:", year_lower, year_upper)
         print("center:", center)
 
         try:
-            path = os.path.join(datadir, selectfile)
-            if not os.path.exists(path):
-                raise Exception("Error: selected file not exists")
-            f = open(path)
-            datafile = create_coauthor_graph(f, center)
+            datafile = create_coauthor_graph(datadir, "anu_conf", range(year_lower, year_upper+1), center)
         except Exception as e:
             errormsg = e
             print(errormsg)
@@ -196,7 +194,8 @@ def coauthor(request):
     # print(datalist)
     return render(request, "coauthor.html", {
                 "error":errormsg,
-                "sfile":selectfile,
+                "syear":year_lower,
+                "eyear":year_upper,
                 "scenter":center,
                 "datalist":sorted(datalist),
                 "datafile":datafile

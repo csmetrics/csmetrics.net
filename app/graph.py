@@ -62,35 +62,43 @@ def create_citation_graph(f, center, ntype, num):
     return datafile
 
 
-def create_coauthor_graph(f, center):
+def create_coauthor_graph(datadir, selectfile, yearrange, center):
     Inst_set = set()
     Author_list = []
     Papers = {}
-    reader = csv.reader(f, delimiter=',')
-    for r in reader:
-        if r[0] in Papers:
-            Papers[r[0]]["authors"].append({
-                "name": r[1],
-                "inst": r[3]
-            })
-        else:
-            Papers[r[0]] = {
-                "authors": [{
+    for y in yearrange:
+        path = os.path.join(datadir, "{}_{}".format(selectfile, y))
+        print(path)
+        if not os.path.exists(path):
+            raise Exception("Error: selected file not exists")
+        f = open(path)
+
+        reader = csv.reader(f, delimiter=',')
+        for r in reader:
+            if r[0] in Papers:
+                Papers[r[0]]["authors"].append({
                     "name": r[1],
                     "inst": r[3]
-                }],
-                "venue": r[4]
-            }
-        Inst_set.add(r[3])
-        Author_list.append(r[1])
+                })
+            else:
+                Papers[r[0]] = {
+                    "authors": [{
+                        "name": r[1],
+                        "inst": r[3]
+                    }],
+                    "venue": r[4],
+                    "year": y
+                }
+            Inst_set.add(r[3])
+            Author_list.append(r[1])
 
-    Author_set = Counter(Author_list)
-    Author_paper_count = Counter(Author_list)
-    author_file = open(os.path.join(cur_path, "coauthor/Authors_ANU.txt"), "r")
-    for line in author_file:
-        key, author = line.split('\t')
-        if key in Author_set:
-            Author_set[key] = author.strip()
+        Author_set = Counter(Author_list)
+        Author_paper_count = Counter(Author_list)
+        author_file = open(os.path.join(cur_path, "coauthor/Authors_ANU.txt"), "r")
+        for line in author_file:
+            key, author = line.split('\t')
+            if key in Author_set:
+                Author_set[key] = author.strip()
 
     # print(Author_paper_count)
     Inst_list = list(Inst_set)
@@ -103,7 +111,7 @@ def create_coauthor_graph(f, center):
             G.add_node(Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"],\
                         type=y["inst"], papers=Author_paper_count[y["name"]])
             G.add_edge(Author_set[x["name"]] if Author_set[x["name"]] != "" else x["name"],\
-                        Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"], conf=v["venue"])
+                        Author_set[y["name"]] if Author_set[y["name"]] != "" else y["name"], year=v["year"])
 
     G_nodes = []
     G_links = []
@@ -117,7 +125,7 @@ def create_coauthor_graph(f, center):
                             "group": d["type"] if d["type"] != "" else "None",\
                             "degree": d["papers"]})
     names = [n["name"] for n in G_nodes]
-    for s, t, v in G.edges(data="conf", default=1):
+    for s, t, v in G.edges(data="year", default=1):
         G_links.append({"source": names.index(s), "target": names.index(t), "value": v})
 
     datafile = "graph/coauthor.json"

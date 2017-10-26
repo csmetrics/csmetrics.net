@@ -6,18 +6,28 @@
     <div class="content">
       <form role="form" action="." method="get" style="display: inline">
         <div class="row" style="width:500px">
-          <div class="col-sm-6" style="padding:1px">
-            <select class="form-control select" name="selectfile">
-              {% for d in datalist %}
-                <option value="{{ d }}" {% if d == sfile %} selected {% endif %}>{{ d }}</option>
-              {% endfor %}
-            </select>
-          </div>
-          <div class="col-sm-4" style="padding:1px">
-            <input type="text" class="form-control" name="center" {% if scenter %} value="{{scenter}}" {% endif %} placeholder="Center" />
+          <div class="col-sm-10" style="padding:1px">
+            <table>
+              <tr>
+                <td class="col-sm-3">
+                  <input type="text" class="form-control" id="year-lower-value" name="year-lower" />
+                </td>
+                <td class="col-sm-6">
+                  <div id="yearSlider"></div>
+                </td>
+                <td class="col-sm-3">
+                  <input type="text" class="form-control" id="year-upper-value" name="year-upper" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan=3 class="col-sm-12">
+                  <input type="text" class="form-control" name="center" {% if scenter %} value="{{scenter}}" {% endif %} placeholder="Center" />
+                </td>
+              </tr>
+            </table>
           </div>
           <div class="col-sm-2" style="padding:1px">
-            <button class="btn btn-primary btn-form" type="submit" name="draw" value="draw">Draw</button>
+            <button class="btn btn-primary btn-form" style="height: 68px;" type="submit" name="draw" value="draw">Draw</button>
           </div>
         </div>
       </form>
@@ -27,6 +37,32 @@
     </div>
   </body>
 </html>
+<script>
+var syear = parseInt("{{ syear }}");
+var eyear = parseInt("{{ eyear }}");
+
+var yearrange = [2000, 2015];
+var yearSlider = document.getElementById('yearSlider');
+noUiSlider.create(yearSlider, {
+  connect: true,
+  behaviour: 'tap',
+  start: [ syear, eyear ],
+  step: 1,
+  animate: false,
+  range: {
+    'min': [ yearrange[0] ],
+    'max': [ yearrange[1] ]
+  }
+});
+var yearnodes = [
+  document.getElementById('year-lower-value'),
+  document.getElementById('year-upper-value'),
+];
+yearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+  yearnodes[handle].value = parseInt(values[handle]);
+});
+</script>
+
 <script src="{% static 'js/d3v4.js' %}"></script>
 <script src="{% static 'js/cola.min.js' %}"></script>
 {% if datafile %}
@@ -102,6 +138,7 @@ d3.json("{% static datafile %}", function(error, graph) {
       .data(graph.links)
     .enter().append("line")
       .attr("class", "link")
+      .style("stroke", function (d) { if (d.value != eyear) return "#ddd"; else return "black"; })
       .style("stroke-width", function (d) { return 1; });
 
   var node = svg.selectAll(".node")
