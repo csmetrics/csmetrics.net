@@ -27,7 +27,7 @@ ccs,CCS,systems,security
 cgo,CGO,systems,programming languages
 chi,CHI,human computer interaction,
 cikm,CIKM,information retrieval,databases
-civr,CIVR,information retrieval,vision
+civr,CIVR,information retrieval,"vision,multimedia"
 cluster,CLUSTER,systems,"high performance computing,distributed systems"
 coling,COLING,natural language processing,
 colt,COLT,artificial intelligence,"theory,machine learning"
@@ -143,7 +143,7 @@ mass,MASS,systems,mobile
 mdm,MDM,databases,mobile
 miccai,MICCAI,systems,"vision, bioinformatics"
 micro,MICRO,systems,architecture
-mm,MM,human computer interaction,
+mm,MM,human computer interaction,multimedia
 mobicom,MobiCom,systems,mobile
 mobihoc,MobiHoc,systems,"mobile,networks"
 mobisec,Mobisec,systems,"mobile,security"
@@ -206,7 +206,7 @@ vr,VR,artificial intelligence,vision
 wads,WADS,theory,algorithms
 wcci,WCCI,artificial intelligence,
 wimob,WiMOB,systems,"networks,mobile"
-wowmom,WoWMoM,systems,"networks,mobile"
+wowmom,WoWMoM,systems,"networks,mobile,multimedia"
 wsdm,WSDM,artificial intelligence,"databases, data mining"
 www,WWW,web technologies,information retrieval
 ,ECCB,,
