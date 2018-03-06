@@ -16,11 +16,11 @@ weightselector.addEventListener("change", function(e) {
   for (var i = 0; i < rows.length; i++) {
     var col = rows[i].children
     if (weightselector.value == "equal") {
-      col[4].classList.add("invisible");
-      col[3].classList.remove("invisible");
-    } else {
-      col[3].classList.add("invisible");
+      col[5].classList.add("invisible");
       col[4].classList.remove("invisible");
+    } else {
+      col[4].classList.add("invisible");
+      col[5].classList.remove("invisible");
     }
   }
 });

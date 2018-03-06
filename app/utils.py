@@ -121,6 +121,14 @@ def getVenueWeight(venue):
         return 0.0
 
 
+def getVenueType(venue):
+    global venueCategory
+    if venueCategory[venue]["type"] == "conference":
+        return "C"
+    else:
+        return "J"
+
+
 def findInstitution(inst):
     global instMap
     if inst in instMap:
@@ -137,7 +145,8 @@ def createCategorycloud():
     next(reader) # skip the first line
     venueCategory = dict((r[0], {
                 "topic1":[w.strip().lower() for w in r[2].split(',')],
-                "topic2":[w.strip().lower() for w in r[3].split(',')]
+                "topic2":[w.strip().lower() for w in r[3].split(',')],
+                "type": r[4]
             }) for r in reader if r[0] != '')
 
     wordset = {}
@@ -167,7 +176,7 @@ def getVenueList(keyword):
     #         if "" in v["topic1"] and "" in v["topic2"]:
     #             keyword_vlist.append(k)
 
-    vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v))\
+    vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v), getVenueType(v))\
                 for v in keyword_vlist]
     return vlist
 
