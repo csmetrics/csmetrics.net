@@ -1,510 +1,290 @@
-<<<<<<< HEAD
-KEY,Venue,Topic Area/s 1,Topic Area/s 2
-3dim,3DIM,artificial intelligence,vision
-aaai,AAAI,artificial intelligence,
-aamas,AAMAS,artificial intelligence,robotics
-acl,ACL,artificial intelligence,natural language processing
-acsac,ACSAC,systems,architecture
-aiccsa,AICCSA,systems,
-aina,AINA,systems,"networks,distributed systems"
-ancs,ANCS,systems,networks
-apscc,APSCC,other,
-arith,ARITH,theory,
-asap,ASAP,systems,
-ase,ASE,software engineering,
-asiacrypt,ASIACRYPT,theory,"cryptography,security"
-asplos,ASPLOS,systems,"programming languages, operating systems, architecture"
-ats,ATS,design automation,"circuits,verification"
-avss,AVSS,artificial intelligence,vision
-bibe,BIBE,bioinformatics,
-bpm,BPM,other,
-cases,CASES,programming languages,"programming languages,architecture,embedded & real time"
-cav,CAV,theory,verification
-cc,CC,programming languages,
-ccc,CCC,theory,algorithms
-cccg,CCCG,theory,
-ccgrid,CCGRID,systems,distributed systems
-ccs,CCS,systems,security
-cgo,CGO,systems,programming languages
-chi,CHI,human computer interaction,
-cikm,CIKM,information retrieval,databases
-civr,CIVR,information retrieval,"vision,multimedia"
-cluster,CLUSTER,systems,"high performance computing,distributed systems"
-coling,COLING,natural language processing,
-colt,COLT,artificial intelligence,"theory,machine learning"
-compgeom,SoCG,theory,
-compsac,COMPSAC,other,
-conext,CoNEXT,systems,networks
-cp,CP,verification,
-crypto,CRYPTO,theory,cryptography
-cscw,CSCW,human computer interaction,
-cvpr,CVPR,artificial intelligence,vision
-dac,DAC,architecture,design automation
-date,DATE,systems,"design automation,verification"
-dcoss,DCOSS,systems,"distributed systems,embedded & real time"
-ddecs,DDECS,circuits,design automation
-digitel,DIGITEL,other,
-disc,DISC,systems,distributed systems
-ecai,ECAI,artificial intelligence,
-eccv,ECCV,artificial intelligence,vision
-ecoop,ECOOP,systems,programming languages
-edbt,EDBT,databases,
-edcc,EDCC,systems,
-emnlp,EMNLP,artificial intelligence,natural language processing
-emsoft,EMSOFT,systems,embedded & real time
-er,ER,databases,
-esa,ESA,theory,algorithms
-esop,ESOP,systems,programming languages
-esorics,ESORICS,security,
-eurocrypt,EUROCRYPT,theory,cryptography
-eurosys,EuroSys,systems,operating systems
-fast,FAST,systems,operating systems
-fccm,FCCM,circuits,
-fmcad,FMCAD,design automation,verification
-focs,FOCS,theory,algorithms
-fse,IACR-FSE,security,
-gecco,GECCO,bioinformatics,
-gis,GIS,databases,
-grid,GRID,systems,"high performance computing,distributed systems"
-hipc,HiPC,systems,high performance computing
-hipeac,HiPEAC,systems,"architecture, programming languages,embedded & real time"
-hoti,HOTI,systems,networks
-hotos,HotOS,systems,operating systems
-hpca,HPCA,systems,"high performance computing, architecture"
-hpcc,HPCC,systems,high performance computing
-hpdc,HPDC,systems,"high performance computing,distributed systems"
-ht,Hypertext,,web technologies
-iaai,IAAI,artificial intelligence,
-icac,ICAC,artificial intelligence,systems
-icalp,ICALP,theory,programming languages
-icaps,ICAPS,artificial intelligence,
-icassp,ICASSP,other,
-icc,ICC,systems,networks
-iccad,ICCAD,systems,design automation
-icccn,ICCCN,systems,networks
-iccv,ICCV,artificial intelligence,vision
-icdcs,ICDCS,systems,distributed systems
-icde,ICDE,databases,
-icdm,ICDM,databases,data mining
-icdt,ICDT,databases,
-icebe,ICEBE,other,
-icfp,ICFP,theory,programming languages
-icgse,ICGSE,software engineering,
-icis,ICIS,other,
-iclp,ICLP,theory,
-icml,ICML,artificial intelligence,"machine learning, data mining,theory"
-icnp,ICNP,systems,networks
-icpp,ICPP,systems,parallel computing
-icpr,ICPR,artificial intelligence,vision
-icra,ICRA,robotics,
-ics,ICS,systems,high performance computing
-icse,ICSE,software engineering,
-icsm,ICSM,software engineering,
-icst,ICST,software engineering,
-icws,ICWS,,web technologies
-icwsm,ICWSM,information retrieval,
-iiswc,IISWC,systems,performance analysis
-ijcai,IJCAI,artificial intelligence,
-ijcar,IJCAR,theory,
-imc,IMC,systems,performance analysis
-infocom,INFOCOM,systems,networks
-interact,INTERACT,human computer interaction,
-interspeech,INTERSPEECH,other,
-iolts,IOLTS,design automation,
-ipccc,IPCCC,systems,"networks,parallel computing,performance analysis"
-ipdps,IPDPS,systems,"distributed systems,parallel computing"
-ipmi,IPMI,bioinformatics,vision
-ipsn,IPSN,systems,networks
-iros,IROS,robotics,
-isca,ISCA,systems,architecture
-islped,ISLPED,circuits,
-ismar,ISMAR,artificial intelligence,
-ismb,ISMB,bioinformatics,
-ismm,ISMM,systems,programming languages
-ismvl,ISMVL,theory,verification
-isorc,ISORC,systems,distributed systems
-ispa,ISPA,systems,"distributed systems,parallel computing"
-ispass,ISPASS,systems,performance analysis
-issac,ISSAC,theory,
-isscc,ISSCC,circuits,architecture
-issre,ISSRE,systems,software engineering
-issta,ISSTA,systems,software engineering
-iswc,ISWC,artificial intelligence,"information retrieval, web technologies"
-itc,ITC,design automation,"verification, architecture, circuits "
-itng,ITNG,other,
-iui,IUI,human computer interaction,
-jcdl,JCDL/DL,other,
-kdd,KDD,artificial intelligence,data mining
-kr,KR,artificial intelligence,
-lcn,LCN,systems,networks
-lctes,LCTES,systems,"embedded & real time, programming languages"
-lics,LICS,theory,verification
-mascots,MASCOTS,systems,"performance analysis, networks"
-mass,MASS,systems,mobile
-mdm,MDM,databases,mobile
-miccai,MICCAI,systems,"vision, bioinformatics"
-micro,MICRO,systems,architecture
-mm,MM,human computer interaction,multimedia
-mobicom,MobiCom,systems,mobile
-mobihoc,MobiHoc,systems,"mobile,networks"
-mobisec,Mobisec,systems,"mobile,security"
-mobisys,MobiSys,systems,mobile
-naacl,NAACL/HLT,artificial intelligence,"natural language processing,human computer interaction"
-ndss,NDSS,systems,"networks,security,distributed systems"
-nips,NIPS,artificial intelligence,"machine learning, data mining"
-noms,NOMS,systems,networks
-nsdi,NSDI,systems,networks
-oopsla,OOPSLA,systems,programming languages
-osdi,OSDI,systems,operating systems
-pact,PACT,systems,"architecture, programming languages, parallel computing"
-percom,PERCOM,systems,"networks, operating systems, distributed systems"
-pldi,PLDI,systems,programming languages
-podc,PODC,systems,distributed systems
-pods,PODS,databases,
-popl,POPL,theory,programming languages
-ppopp,PPoPP,systems,parallel computing
-psb,PSB,bioinformatics,
-raid,RAID,security,systems
-re,RE,systems,software engineering
-recomb,RECOMB,bioinformatics,
-rss,RSS,robotics,
-rtas,RTAS,systems,embedded & real time
-rtss,RTSS,systems,embedded & real time
-sac,SAC,other,
-sacmat,SACMAT,systems,
-saint,SAINT,,web technologies
-sbac-pad,SBAC-PAD,systems,"architecture,high performance computing"
-sc,SC,systems,"high performance computing,parallel computing"
-sdm,SDM,data mining,
-sea,SEA,algorithms,
-sec,SEC,security,
-securecomm,Securecomm,systems,"security,networks"
-sensys,SenSys,systems,"mobile,networks,embedded & real time"
-si3d,i3D,graphics,
-sigcomm,SIGCOMM,systems,networks
-sigecom,EC,other,
-sigir,SIGIR,artificial intelligence,information retrieval
-sigmetrics,SIGMETRICS,systems,"performance analysis,networks"
-sigmod,SIGMOD,databases,
-sigsoft-fse,FSE,systems,software engineering
-soda,SODA,theory,algorithms
-sosp,SOSP,systems,operating systems
-sp,S&P,systems,security
-spaa,SPAA,theory,"algorithms,architecture,parallel computing"
-srds,SRDS,systems,"operating systems, distributed systems"
-ssdbm,SSDBM,databases,data mining
-stacs,STACS,theory,"algorithms, verification"
-stoc,STOC,theory,algorithms
-sysose,SOSE,systems,
-tcc,TCC,theory,cryptography
-uai,UAI,artificial intelligence,
-ubicomp,UbiComp,human computer interaction,
-uist,UIST,human computer interaction,
-usenix,USENIX ATC,systems,operating systems
-uss,USENIX Security,systems,security
-vee,VEE,systems,"operating systems, programming languages"
-vr,VR,artificial intelligence,graphics
-wads,WADS,theory,algorithms
-wcci,WCCI,artificial intelligence,
-wimob,WiMOB,systems,"networks,mobile"
-wowmom,WoWMoM,systems,"networks,mobile,multimedia"
-wsdm,WSDM,artificial intelligence,"databases, data mining"
-www,WWW,web technologies,information retrieval
-,ECCB,,
-,SGP,theory,
-,SIGGRAPH,graphics,
-,SoCG,theory,
-,SPLASH,,
-,VLDB,systems,databases
-=======
-KEY,Venue,Topic Area/s 1,Topic Area/s 2,Type
-3dim,3DIM,artificial intelligence,vision,conference
-aaai,AAAI,artificial intelligence,,conference
-aamas,AAMAS,artificial intelligence,robotics,conference
-acl,ACL,artificial intelligence,natural language processing,conference
-acsac,ACSAC,systems,architecture,conference
-aiccsa,AICCSA,systems,,conference
-aina,AINA,systems,"networks,distributed systems",conference
-ancs,ANCS,systems,networks,conference
-annals,ANNALS,other,,journal
-apscc,APSCC,other,,conference
-arith,ARITH,theory,,conference
-asap,ASAP,systems,,conference
-ase,ASE,software engineering,,conference
-asiacrypt,ASIACRYPT,theory,"cryptography,security",conference
-asplos,ASPLOS,systems,"programming languages, operating systems, architecture",conference
-ats,ATS,design automation,"circuits,verification",conference
-avss,AVSS,artificial intelligence,vision,conference
-bibe,BIBE,bioinformatics,,conference
-bioinformatics,BIOINFORMATICS,bioinformatics,,journal
-bpm,BPM,other,,conference
-cacm,CACM,other,,journal
-cal,CAL,architecture,systems,journal
-cases,CASES,programming languages,"programming languages,architecture,embedded & real time",conference
-cav,CAV,theory,verification,conference
-cc,CC,programming languages,,conference
-ccc,CCC,theory,algorithms,conference
-cccg,CCCG,theory,,conference
-ccgrid,CCGRID,systems,distributed systems,conference
-ccs,CCS,systems,security,conference
-cga,CGA,graphics,,journal
-cgf,CGF,graphics,,journal
-cgo,CGO,systems,programming languages,conference
-chi,CHI,human computer interaction,,conference
-cikm,CIKM,information retrieval,databases,conference
-civr,CIVR,information retrieval,vision,conference
-cluster,CLUSTER,systems,"high performance computing,distributed systems",conference
-coling,COLING,natural language processing,,conference
-colt,COLT,artificial intelligence,"theory,machine learning",conference
-compgeom,SoCG,theory,,conference
-compsac,COMPSAC,other,,conference
-computer,COMPUTER,other,,journal
-conext,CONEXT,systems,networks,conference
-cp,CP,verification,,conference
-crypto,CRYPTO,theory,cryptography,conference
-cscw,CSCW,human computer interaction,,conference
-cse,CSE,other,,journal
-csur,CSUR,other,,journal
-cvpr,CVPR,artificial intelligence,vision,conference
-dac,DAC,other,,conference
-datamine,DATAMINE,data mining,,journal
-date,DATE,systems,"design automation,verification",conference
-dcoss,DCOSS,systems,"distributed systems,embedded & real time",conference
-ddecs,DDECS,circuits,design automation,conference
-digitel,DIGITEL,other,,conference
-disc,DISC,systems,distributed systems,conference
-dt,DT,design automation,"circuits, systems",journal
-ecai,ECAI,artificial intelligence,,conference
-eccv,ECCV,artificial intelligence,vision,conference
-ecoop,ECOOP,systems,programming languages,conference
-edbt,EDBT,databases,,conference
-edcc,EDCC,systems,,conference
-emnlp,EMNLP,artificial intelligence,natural language processing,conference
-emsoft,EMSOFT,systems,embedded & real time,conference
-er,ER,databases,,conference
-esa,ESA,theory,algorithms,conference
-esop,ESOP,systems,programming languages,conference
-esorics,ESORICS,security,,conference
-eurocrypt,EUROCRYPT,theory,cryptography,conference
-eurosys,Eurosys,systems,operating systems,conference
-expert,EXPERT,artificial intelligence,,journal
-fast,FAST,systems,operating systems,conference
-fccm,FCCM,circuits,,conference
-fmcad,FMCAD,design automation,verification,conference
-focs,FOCS,theory,algorithms,conference
-fse,IACR-FSE,security,,conference
-gecco,GECCO,bioinformatics,,conference
-grid,GRID,systems,"high performance computing,distributed systems",conference
-hipc,HiPC,systems,high performance computing,conference
-hipeac,HiPEAC,systems,"architecture, programming languages,embedded & real time",conference
-hoti,HOTI,systems,networks,conference
-hotos,HotOS,systems,operating systems,conference
-hpca,HPCA,systems,"high performance computing, architecture",conference
-hpcc,HPCC,systems,high performance computing,conference
-hpdc,HPDC,systems,"high performance computing,distributed systems",conference
-ht,Hypertext,,web technologies,conference
-iaai,IAAI,artificial intelligence,,conference
-icac,ICAC,artificial intelligence,systems,conference
-icalp,ICALP,theory,programming languages,conference
-icaps,ICAPS,artificial intelligence,,conference
-icassp,ICASSP,other,,conference
-icc,ICC,systems,networks,conference
-iccad,ICCAD,systems,design automation,conference
-icccn,ICCCN,systems,networks,conference
-iccv,ICCV,artificial intelligence,vision,conference
-icdcs,ICDCS,systems,distributed systems,conference
-icde,ICDE,databases,,conference
-icdm,ICDM,databases,data mining,conference
-icdt,ICDT,databases,,conference
-icebe,ICEBE,other,,conference
-icfp,ICFP,theory,programming languages,conference
-icgse,ICGSE,software engineering,,conference
-icis,ICIS,other,,conference
-iclp,ICLP,theory,,conference
-icml,ICML,artificial intelligence,"machine learning, data mining,theory",conference
-icnp,ICNP,systems,networks,conference
-icpp,ICPP,systems,parallel computing,conference
-icpr,ICPR,artificial intelligence,vision,conference
-icra,ICRA,robotics,,conference
-ics,ICS,systems,high performance computing,conference
-icse,ICSE,software engineering,,conference
-icsm,ICSM,software engineering,,conference
-icst,ICST,software engineering,,conference
-icws,ICWS,,web technologies,conference
-icwsm,ICWSM,information retrieval,,conference
-ieeemm,IEEEMM,multimedia,,journal
-iiswc,IISWC,systems,performance analysis,conference
-ijcai,IJCAI,artificial intelligence,,conference
-ijcar,IJCAR,theory,,conference
-imc,IMC,systems,performance analysis,conference
-infocom,INFOCOM,systems,networks,conference
-interact,INTERACT,human computer interaction,,conference
-internet,INTERNET,other,,journal
-interspeech,INTERSPEECH,other,,conference
-iolts,IOLTS,design automation,,conference
-ipccc,IPCCC,systems,"networks,parallel computing,performance analysis",conference
-ipdps,IPDPS,systems,"distributed systems,parallel computing",conference
-ipmi,IPMI,bioinformatics,vision,conference
-ipsn,IPSN,systems,networks,conference
-iros,IROS,robotics,,conference
-isca,ISCA,systems,architecture,conference
-islped,ISLPED,circuits,,conference
-ismar,ISMAR,artificial intelligence,,conference
-ismb,ISMB,bioinformatics,,conference
-ismm,ISMM,systems,programming languages,conference
-ismvl,ISMVL,theory,verification,conference
-isorc,ISORC,systems,distributed systems,conference
-ispa,ISPA,systems,"distributed systems,parallel computing",conference
-ispass,ISPASS,systems,performance analysis,conference
-issac,ISSAC,theory,,conference
-isscc,ISSCC,circuits,architecture,conference
-issre,ISSRE,systems,software engineering,conference
-issta,ISSTA,systems,software engineering,conference
-iswc,ISWC,artificial intelligence,"information retrieval, web technologies",conference
-itc,ITC,design automation,"verification, architecture, circuits ",conference
-itng,ITNG,other,,conference
-itpro,ITPRO,other,,journal
-iui,IUI,human computer interaction,,conference
-jacm,JACM,other,,journal
-jcdl,JCDL/DL,other,,conference
-jdiq,JDIQ,data mining,,journal
-jea,JEA,algorithms,theory,journal
-jetc,JETC,systems,,journal
-jmicro,IEEE MICRO,architecture,systems,journal
-jmlr,JMLR,machine learning,artificial intelligence,journal
-jocch,JOCCH,other,,journal
-kdd,KDD,artificial intelligence,data mining,conference
-kr,KR,artificial intelligence,,conference
-lcn,LCN,systems,networks,conference
-lctes,LCTES,systems,"embedded & real time, programming languages",conference
-lics,LICS,theory,verification,conference
-mascots,MASCOTS,systems,"performance analysis, networks",conference
-mass,MASS,systems,mobile,conference
-mdm,MDM,databases,mobile,conference
-miccai,MICCAI,systems,"vision, bioinformatics",conference
-micro,MICRO,systems,architecture,conference
-ml,ML,machine learning,artificial intelligence,journal
-mm,MM,human computer interaction,,conference
-mmas,MMAS,performance analysis,,journal
-mobicom,MobiCom,systems,mobile,conference
-mobihoc,MobiHoc,systems,"mobile,networks",conference
-mobisec,Mobisec,systems,"mobile,security",conference
-mobisys,MobiSys,systems,mobile,conference
-naacl,NAACL/HLT,artificial intelligence,"natural language processing,human computer interaction",conference
-ndss,NDSS,systems,"networks,security,distributed systems",conference
-nips,NIPS,artificial intelligence,"machine learning, data mining",conference
-noms,NOMS,systems,networks,conference
-nsdi,NSDI,systems,networks,conference
-oopsla,OOPSLA,systems,programming languages,conference
-osdi,OSDI,systems,operating systems,conference
-pact,PACT,systems,"architecture, programming languages, parallel computing",conference
-pami,PAMI,artificial intelligence,,journal
-percom,PERCOM,systems,"networks, operating systems, distributed systems",conference
-pervasive,PERVASIVE,systems,,journal
-pldi,PLDI,systems,programming languages,conference
-podc,PODC,systems,distributed systems,conference
-pods,PODS,databases,,conference
-popl,POPL,theory,programming languages,conference
-ppopp,PPoPP,systems,parallel computing,conference
-psb,PSB,bioinformatics,,conference
-pvldb,PVLDB,databases,,journal
-raid,RAID,security,systems,conference
-re,RE,systems,software engineering,conference
-recomb,RECOMB,bioinformatics,,conference
-rss,RSS,robotics,,conference
-rtas,RTAS,systems,embedded & real time,conference
-rtss,RTSS,systems,embedded & real time,conference
-sac,SAC,other,,conference
-sacmat,SACMAT,systems,,conference
-saint,SAINT,,web technologies,conference
-sbac-pad,SBAC-PAD,systems,"architecture,high performance computing",conference
-sc,SC,systems,"high performance computing,parallel computing",conference
-sdm,SDM,data mining,,conference
-sea,SEA,algorithms,,conference
-sec,SEC,security,,conference
-securecomm,Securecomm,systems,"security,networks",conference
-sensys,SenSys,systems,"mobile,networks,embedded & real time",conference
-si3d,i3D,graphics,,conference
-siamads,SIAMADS,systems,,journal
-siamam,SIAMAM,theory,,journal
-siamco,SIAMCO,theory,,journal
-siamcomp,SIAMCOMP,other,,journal
-siamdm,SIAMDM,theory,,journal
-siamjo,SIAMJO,theory,,journal
-siamma,SIAMMA,theory,,journal
-siammax,SIAMMAX,theory,,journal
-siamnum,SIAMNUM,theory,,journal
-siamrev,SIAMREV,other,,journal
-siamsc,SIAMSC,high performance computing,,journal
-sigcomm,SIGCOMM,systems,networks,conference
-sigecom,EC,other,,conference
-sigir,SIGIR,artificial intelligence,information retrieval,conference
-sigmetrics,SIGMETRICS,systems,"performance analysis,networks",conference
-sigmod,SIGMOD,databases,,conference
-sigsoft-fse,FSE,systems,software engineering,conference
-soda,SODA,theory,algorithms,conference
-software,SOFTWARE,software engineering,,journal
-sosp,SOSP,systems,operating systems,conference
-sp,S&P,systems,security,conference
-spaa,SPAA,theory,"algorithms,architecture,parallel computing",conference
-srds,SRDS,systems,"operating systems, distributed systems",conference
-ssdbm,SSDBM,databases,data mining,conference
-stacs,STACS,theory,"algorithms, verification",conference
-stoc,STOC,theory,algorithms,conference
-sysose,SOSE,systems,,conference
-taas,TAAS,systems,,journal
-taccess,TACCESS,other,,journal
-taco,TACO,programming languages,"architecture, systems",journal
-talg,TALG,algorithms,theory,journal
-talip,TALIP,,,journal
-tap,TAP,vision,artificial intelligence,journal
-tc,TC,other,,journal
-tcbb,TCBB,bioinformatics,,journal
-tcc,TCC,theory,cryptography,conference
-tdsc,TDSC,systems,,journal
-tecs,TECS,embedded & realtime,,journal
-tissec,TISSEC,security,systems,journal
-titb,TITB,other,,journal
-tkdd,TKDD,data mining,artificial intellegence,journal
-tkde,TKDE,data mining,artificial intellegence,journal
-tmc,TMC,mobile,systems,journal
-tmm,TMM,multimedia,,journal
-tochi,TOCHI,human computer interaction,,journal
-tocl,TOCL,theory,,journal
-tocs,TOCS,systems,,journal
-toct,TOCT,theory,,journal
-todaes,TODAES,circuits,"architecture, systems",journal
-tods,TODS,databases,,journal
-tog,TOG,graphics,,journal
-tois,TOIS,systems,,journal
-toit,TOIT,systems,,journal
-tomacs,TOMACS,theory,performance analysis,journal
-tomccap,TOMCCAP,multimedia,,journal
-toms,TOMS,theory,,journal
-ton,TON,networks,systems,journal
-toplas,TOPLAS,programming languages,systems,journal
-tos,TOS,systems,,journal
-tosem,TOSEM,software engineering,,journal
-tosn,TOSN,networks,systems,journal
-tpds,TPDS,distributed systems,,journal
-trets,TRETS,systems,,journal
-tse,TSE,software engineering,,journal
-tslp,TSLP,natural language processing,,journal
-tvcg,TVCG,graphics,,journal
-tvlsi,VLSI,circuits,"architecture, systems",journal
-tweb,TWEB,web technologies,,journal
-uai,UAI,artificial intelligence,,conference
-ubicomp,UBICOMP,human computer interaction,,conference
-uist,UIST,human computer interaction,,conference
-usenix,USENIX ATC,systems,operating systems,conference
-uss,USENIX Security,systems,security,conference
-vee,VEE,systems,"operating systems, programming languages",conference
-vldb,VLDB,databases,,journal
-vr,VR,artificial intelligence,vision,conference
-wads,WADS,theory,algorithms,conference
-wcci,WCCI,artificial intelligence,,conference
-wimob,WiMOB,systems,"networks,mobile",conference
-wowmom,WoWMoM,systems,"networks,mobile",conference
-wsdm,WSDM,artificial intelligence,"databases, data mining",conference
-www,WWW,web technologies,information retrieval,conference
->>>>>>> dc4b291... add journal data
+Venue Abbreviation,Arithmetic Mean: Citations/Paper,Geometric Mean: Citations/Paper,80th percentile: Citations/Paper
+3dim,6.735,2.141,9
+aaai,12.428,4.296,17
+aamas,14.493,6.107,21
+acl,29.552,10.358,40
+acsac,4.008,1.382,6
+aiccsa,2.83,0.794,4
+aina,5.784,1.908,8
+ancs,14.926,5.261,17
+annals,2.858,0.947,3
+apscc,4.705,1.335,6
+arith,8.848,3.496,14
+asap,6.172,2.291,10
+ase,16.733,5.78,26
+asiacrypt,27.288,8.538,32
+asplos,49.625,18.348,70
+ats,4.187,1.557,7
+avss,8.719,2.948,13
+bibe,2.639,0.856,4
+bioinformatics,35.472,8.816,31
+bpm,27.713,10.079,38
+cacm,46.225,4.812,30
+cal,13.538,3.98,14
+cases,8.913,3.666,14
+cav,24.648,10.551,38
+cc,11.026,4.725,16
+ccc,15.795,6.822,25
+cccg,2.51,0.893,4
+ccgrid,17.354,5.728,21
+ccs,45.962,14.212,56
+cga,12.843,3.761,16
+cgf,15.85,6.103,21
+cgo,18.323,8.314,30
+chi,31.851,13.645,44
+cikm,17.411,5.552,21
+civr,28.004,9.78,29
+cluster,9.622,2.847,12
+coling,9.653,2.575,14
+colt,20.148,6.374,26
+compgeom,9.795,3.56,14
+compsac,4.857,1.671,7
+computer,25.249,4.04,21
+conext,36.125,10.065,44
+cp,9.17,3.244,12
+crypto,39.913,15.628,55
+cscw,20.902,9.084,28
+cse,34.195,2.537,12
+csur,74.41,18.486,76
+cvpr,54.441,17.915,63
+dac,17.196,6.806,23
+datamine,25.892,9.381,33
+date,10.452,4.043,15
+dcoss,9.68,3.526,14
+ddecs,3.545,1.379,6
+digitel,9.024,4.46,11
+disc,10.477,4.398,17
+dt,15.239,2.709,15
+ecai,6.377,2.226,9
+eccv,41.712,11.354,50
+ecoop,21.929,8.769,34
+edbt,16.377,6.42,24
+edcc,5.702,1.846,7
+emnlp,28.585,8.35,35
+emsoft,15.171,6.653,24
+er,9.61,3.369,13
+esa,10.596,3.968,16
+esop,24.493,8.243,27
+esorics,17.009,5.794,23
+eurocrypt,47.898,18.289,63
+eurosys,60.277,20.714,83
+expert,23.643,6.609,30
+fast,53.961,23.807,77
+fccm,13.706,6.593,22
+fmcad,11.332,4.254,17
+focs,29.408,12.763,43
+fse,19.237,9.046,28
+gecco,9.744,3.961,14
+grid,17.376,8.104,23
+hipc,5.978,1.937,8
+hipeac,14.269,6.562,21
+hoti,18.057,6.608,27
+hotos,19.621,6.964,29
+hpca,35.16,15.095,51
+hpcc,2.933,0.87,4
+hpdc,24.368,8.816,33
+ht,13.91,5.584,21
+iaai,6.331,2.651,10
+icac,26.412,7.223,28
+icalp,13.659,5.419,19
+icaps,12.568,5.592,20
+icassp,7.388,2.405,9
+icc,7.264,2.432,9
+iccad,12.52,4.505,18
+icccn,5.752,1.913,8
+iccv,48.146,16.26,58
+icdcs,18.452,7.486,29
+icde,29.433,11.673,41
+icdm,18.895,5.781,24
+icdt,17.495,6.876,22
+icebe,3.173,0.886,4
+icfp,16.791,6.874,24
+icgse,14.844,7.104,19
+icis,3.857,1.067,5
+iclp,7.995,2.802,11
+icml,37.519,10.901,44
+icnp,14.089,3.55,20
+icpp,8.967,3.123,13
+icpr,4.876,1.534,7
+icra,12.299,4.702,17
+ics,19.309,7.478,26
+icse,37.216,16.031,56
+icsm,14.51,6.716,22
+icst,12.354,5.161,19
+icws,13.551,5.189,20
+icwsm,38.443,10.49,44
+ieeemm,13.499,3.98,16
+iiswc,23.981,5.604,23
+ijcai,13.936,3.798,18
+ijcar,14.24,5.605,20
+imc,51.426,15.45,60
+infocom,29.171,11.049,40
+interact,9.022,3.618,14
+internet,23.361,5.676,26
+interspeech,5.363,1.63,7
+iolts,4.612,1.726,7
+ipccc,4.792,1.469,6
+ipdps,15.062,6.213,23
+ipmi,16.118,7.588,22
+ipsn,45.74,18.666,68
+iros,8.368,3.118,12
+isca,61.459,21.986,88
+islped,11.389,4.097,15
+ismar,29.6,8.126,30
+ismb,43.586,30.169,65
+ismm,13.178,5.954,20
+ismvl,3.78,1.216,5
+isorc,9.18,2.51,9
+ispa,4.453,1.507,6
+ispass,22.63,6.032,26
+issac,7.978,3.51,11
+isscc,24.697,7.48,34
+issre,9.707,3.819,15
+issta,28.157,11.325,45
+iswc,25.068,8.896,33
+itc,8.615,3.04,12
+itng,4.649,1.492,6
+itpro,11.472,1.933,9
+iui,15.88,6.504,22
+jacm,64.705,21.943,79
+jcdl,11.41,4.446,15
+jdiq,10.37,2.848,10
+jea,18.09,6.717,24
+jetc,9.483,3.077,13
+jmicro,27.203,4.586,24
+jmlr,69.073,21.823,74
+jocch,7.423,2.656,11
+kdd,37.794,11.291,48
+kr,14.097,5.426,22
+lcn,6.25,2.502,9
+lctes,9.665,5.041,15
+lics,12.415,4.869,19
+mascots,9.079,2.723,11
+mass,10.107,3.722,14
+mdm,10.876,3.637,14
+miccai,10.237,4.238,15
+micro,40.508,14.161,61
+ml,31.27,9.903,35
+mm,25.195,9.834,38
+mmas,13.848,4.912,17
+mobicom,66.974,26.749,104
+mobihoc,42.815,12.321,56
+mobisec,4.984,2.062,7
+mobisys,68.703,23.938,106
+naacl,23.462,8.123,33
+ndss,40.583,17.732,60
+nips,30.024,7.746,33
+noms,8.724,2.787,11
+nsdi,70.852,29.255,105
+oopsla,21.39,9.198,34
+osdi,82.278,20.07,103
+pact,29.578,9.728,38
+pami,86.65,27.623,97
+percom,25.048,10.662,37
+pervasive,28.965,6.897,33
+pldi,43.664,18.05,60
+podc,17.08,7.31,28
+pods,28.819,11.712,40
+popl,31.665,16.092,49
+ppopp,35.475,15.197,49
+psb,11.246,4.535,16
+pvldb,32.232,10.708,44
+raid,24.429,8.26,38
+re,14.643,5.313,20
+recomb,26.263,6.516,30
+rss,22.386,9.66,30
+rtas,18.131,8.61,27
+rtss,22.923,8.607,36
+sac,7.44,2.692,11
+sacmat,21.422,7.438,32
+saint,7.47,3.244,12
+sbac-pad,4.645,1.718,7
+sc,28.635,10.548,39
+sdm,14.293,4.522,19
+sea,8.539,2.74,13
+sec,6.632,2.609,11
+securecomm,13.153,2.925,15
+sensys,67.598,24.731,97
+si3d,21.275,10.052,33
+siamads,10.207,4.29,15
+siamam,9.855,3.78,15
+siamco,17.091,5.879,20
+siamcomp,47.14,19.38,63
+siamdm,8.812,3.41,13
+siamjo,24.009,8.462,32
+siamma,10.835,4.531,15
+siammax,15.757,5.825,20
+siamnum,16.068,6.768,21
+siamrev,72.27,11.286,51
+siamsc,15.24,5.875,21
+sigcomm,107.926,39.239,141
+sigecom,19.564,7.396,30
+sigir,40.689,18.254,63
+sigmetrics,34.553,13.717,47
+sigmod,40.682,14.45,55
+sigsoft-fse,27.261,10.694,44
+soda,20.585,9.305,29
+software,27.068,4.989,21
+sosp,115.652,51.936,147
+sp,68.659,27.209,94
+spaa,19.474,7.368,30
+srds,8.392,2.896,11
+ssdbm,9.405,3.322,12
+stacs,10.808,4.74,16
+stoc,38.017,17.081,50
+sysose,3.67,1.174,5
+taas,19.276,5.783,23
+taccess,13.135,5.932,19
+taco,8.334,3.152,12
+talg,36.491,13.936,52
+talip,6.156,2.155,10
+tap,14.836,5.522,25
+tc,16.863,6.578,24
+tcbb,12.401,4.894,18
+tcc,28.146,9.518,36
+tdsc,25.768,10.924,35
+tecs,13.584,3.267,14
+tissec,55.673,17.805,72
+titb,20.712,8.813,30
+tkdd,44.372,7.529,37
+tkde,30.679,10.4,39
+tmc,32.307,12.236,44
+tmm,21.979,9.444,31
+tochi,26.518,11.114,40
+tocl,17.698,6.522,24
+tocs,98.901,21.119,88
+toct,15.051,4.353,18
+todaes,8.701,2.801,12
+tods,34.824,12.22,47
+tog,42.322,18.159,61
+tois,28.204,9.426,35
+toit,19.522,6.464,29
+tomacs,11.156,4.812,17
+tomccap,13.985,4.78,19
+toms,27.903,7.436,31
+ton,40.326,13.147,48
+toplas,38.772,14.374,59
+tos,33.84,9.492,44
+tosem,31.233,12.063,48
+tosn,36.311,10.199,38
+tpds,24.243,9.564,33
+trets,9.36,3.478,14
+tse,42.995,16.669,61
+tslp,18.134,7.82,20
+tvcg,23.161,10.884,34
+tvlsi,12.854,5.232,20
+tweb,42.404,11.492,54
+uai,15.323,5.078,19
+ubicomp,28.147,9.848,39
+uist,33.232,11.523,44
+usenix,35.288,11.021,42
+uss,48.479,19.193,74
+vee,33.5,11.826,40
+vldb,31.891,11.76,39
+vr,6.138,1.57,8
+wads,8.214,2.983,11
+wcci,10,5.201,18
+wimob,5.141,1.649,7
+wowmom,8.195,2.888,10
+wsdm,47.756,16.993,61
+www,65.514,21.196,87
