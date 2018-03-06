@@ -117,20 +117,20 @@
 </div>
 <div class="row" style="padding-bottom: 20px;">
   <div class="col-sm-12">
-    <table id="conflist" class="table table-fixed table-condensed table-hover invisible">
+    <table id="conflist" class="table table-condensed table-hover invisible">
       <thead>
         <tr>
-          <th class="col-xs-3" style="padding:0 5px 1px 0">
+          <th class="col-xs-2" colspan="2" style="padding:0 5px 1px 0">
             <h4><span class="label label-default" style="margin:0;">
               {{ words.label_venuelist }}
             </span></h4>
           </th>
-          <th class="col-xs-1" style="padding:7px 30px">
+          <th class="col-xs-1" style="padding:7px 10px">
             <b>Type</b>
           </th>
           <!-- <th><b>{{ words.ctable_label_0 }}</b></th> -->
-          <th class="col-xs-6" style="padding:7px 30px"><b>{{ words.ctable_label_1 }}</b></th>
-          <th class="col-xs-2" style="padding:7px 30px">
+          <th class="col-xs-7" style="padding:7px 10px"><b>{{ words.ctable_label_1 }}</b></th>
+          <th class="col-xs-2" style="padding:7px 10px">
             <span data-toggle="tooltip" class="tooltiplabel"
               title="{{ words.ctable_label_2_tooltip }}">
               <b>{{ words.ctable_label_2 }}</b>
@@ -324,11 +324,11 @@ function updateConfList(){
           idx += 1;
 
           cell1.className = "col-xs-1";
-          cell2.className = "col-xs-2";
-          cell3.className = "col-xs-6";
-          cell4.className = "col-xs-1";
-          cell5.className = "col-xs-1";
-          cell6.className = "col-xs-1";
+          cell2.className = "col-xs-1";
+          cell3.className = "col-xs-7";
+          cell4.className = "col-xs-1 center";
+          cell5.className = "col-xs-1 center";
+          cell6.className = "col-xs-1 center";
 
           if (weightselector.value == "equal") {
             cell5.classList.add("invisible");
