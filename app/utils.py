@@ -123,10 +123,7 @@ def getVenueWeight(venue):
 
 def getVenueType(venue):
     global venueCategory
-    if venueCategory[venue]["type"] == "conference":
-        return "C"
-    else:
-        return "J"
+    return venueCategory[venue]["type"]
 
 
 def findInstitution(inst):

@@ -98,11 +98,21 @@
     <h4><span class="label label-default">{{ words.label_venueweight }}</span></h4>
   </div>
   <div class="col-sm-7" style="padding: 7px 5px 0 5px; min-width:350px">
-    <select id="weightselector">
-      <option value="geomean">{{ words.select_weight_option_geo }}</option>
-      <option value="equal">{{ words.select_weight_option_equal }}</option>
-    </select>
-    <small id="weightselector-text" class="text-muted" style="padding-left: 15px;"></small>
+    <div>
+      <select id="weightselector">
+        <option value="geomean">{{ words.select_weight_option_geo }}</option>
+        <option value="equal">{{ words.select_weight_option_equal }}</option>
+      </select>
+      <small id="weightselector-text" class="text-muted" style="padding-left: 15px;"></small>
+    </div>
+    <div style="margin-top:5px">
+      <select id="typeselector">
+        <option value="all">All</option>
+        <option value="conference">Conference</option>
+        <option value="journal">Journal</option>
+      </select>
+      <small class="text-muted" style="padding-left: 15px;">Select Venue Type</small>
+    </div>
   </div>
 </div>
 <div class="row" style="padding-bottom: 20px;">
@@ -292,8 +302,13 @@ function updateConfList(){
         $("#conflist").removeClass("invisible");
         var table = document.getElementById("conflist-body");
         $("#conflist-body tr").remove();
+        var idx = 0;
         for(var i in result) {
-          var row = table.insertRow(i);
+          if (typeselector.value != "all" && typeselector.value != result[i][3]) {
+              continue;
+          }
+
+          var row = table.insertRow(idx);
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
           var cell6 = row.insertCell(2); // type
@@ -305,7 +320,8 @@ function updateConfList(){
           cell3.innerHTML = "<small>"+result[i][1]+"</small>";
           cell4.innerHTML = 1;
           cell5.innerHTML = parseFloat(result[i][2]).toFixed(0); // geo mean
-          cell6.innerText = result[i][3];
+          cell6.innerText = result[i][3][0].toUpperCase();
+          idx += 1;
 
           cell1.className = "col-xs-1";
           cell2.className = "col-xs-2";
@@ -313,6 +329,7 @@ function updateConfList(){
           cell4.className = "col-xs-1";
           cell5.className = "col-xs-1";
           cell6.className = "col-xs-1";
+
           if (weightselector.value == "equal") {
             cell5.classList.add("invisible");
           } else {
@@ -385,6 +402,7 @@ function dorank() {
           newRow[3] = result[i][2].toFixed(0); // Estimated
           newRow[4] = 0 // Combined -- will be calculated later
           newRow[5] = result[i][4];
+          newRow[6] = 0 // secondary orderData
           ranktable.row.add(newRow);
         }
       }

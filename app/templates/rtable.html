@@ -25,6 +25,13 @@ weightselector.addEventListener("change", function(e) {
   }
 });
 
+// venue type selector
+var typeselector = document.getElementById('typeselector');
+typeselector.addEventListener("change", function(e) {
+  console.log(typeselector.value);
+  updateConfList();
+});
+
 var spinner = document.getElementById("spinner");
 // ranking table
 var ranktable = $('#rtable').DataTable({
