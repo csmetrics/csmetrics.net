@@ -7,6 +7,7 @@ acsac,ACSAC,Asia-Pacific Computer Systems Architecture Conference
 aiccsa,AICCSA,ACS/IEEE International Conference on Computer Systems and Applications
 aina,AINA,International Conference on Advanced Information Networking and Applications
 ancs,ANCS,ACM/IEEE Symposium on Architectures for Networking and Communications Systems
+annals,ANNALS,IEEE Annals of the History of Computing
 apscc,APSCC,Asia-Pacific Services Computing Conference
 arith,ARITH,IEEE Symposium on Computer Arithmetic
 asap,ASAP,International Conference on Apps for Specific Array Processors
@@ -16,7 +17,10 @@ asplos,ASPLOS,Architectural Support for Programming Languages and Operating Syst
 ats,ATS,Asian Test Symposium
 avss,AVSS,Advanced Video and Signal Based Surveillance
 bibe,BIBE,IEEE Bioinformatics and Bioengineering
+bioinformatics,BIOINFORMATICS,Bioinformatics
 bpm,BPM,International Conference in Business Process Management
+cacm,CACM,Communications of the ACM
+cal,CAL,IEEE Computer Architecture Letters
 cases,CASES,"International Conference on Compilers, Architecture, and Synthesis for Embedded Systems "
 cav,CAV,Computer Aided Verification
 cc,CC,International Conference on Compiler Construction
@@ -24,6 +28,8 @@ ccc,CCC,IEEE Symposium on Computational Complexity
 cccg,CCCG,Canadian Conference on Computational Geometry
 ccgrid,CCGRID,"IEEE International Symposium on Cluster, Cloud, and Grid Computing"
 ccs,CCS,ACM Conference on Computer and Communications Security
+cga,CGA,IEEE Computer Graphics and Applications
+cgf,CGF,Computer Graphics Forum
 cgo,CGO,International Symposium on Code Generation and Optimization
 chi,CHI,International Conference on Human Factors in Computing Systems
 cikm,CIKM,ACM International Conference on Information and Knowledge Management
@@ -33,17 +39,22 @@ coling,COLING,International Conference on Computational Linguistics
 colt,COLT,Annual Conference on Computational Learning Theory
 compgeom,SoCG,Symposium on Computational Geometry
 compsac,COMPSAC,International Computer Software and Applications Conference
+computer,COMPUTER,Computer
 conext,CONEXT,ACM International Conference on Emerging Networking Experiments and Technologies
 cp,CP,International Conference on Principles and Practice of Constraint Programming
 crypto,CRYPTO,Advances in Cryptology
 cscw,CSCW,Conference on Computer Supported Cooperative Work
+cse,CSE,Computing in Science & Engineering (Copublished with the American Institute of Physics)
+csur,CSUR,ACM Computing Surveys
 cvpr,CVPR,IEEE Conference on Computer Vision and Pattern Recognition
 dac,DAC,Digital Arts and Culture
+datamine,DATAMINE,Knowledge Discovery and Data Mining
 date,DATE,Design Automation and Test in Europe Conference
 dcoss,DCOSS,IEEE International Conference on Distributed Computing in Sensor Systems
 ddecs,DDECS,IEEE International Symposium on Design and Diagnostics of Electronic Circuits and Systems
 digitel,DIGITEL,IEEE International Conference on Digital Game and Intelligent Toy Enhanced Learning
 disc,DISC,International Symposium on Distributed Computing
+dt,DT,IEEE Design & Test of Computers
 ecai,ECAI,Europeon Conference on Artificial Intelligence
 eccv,ECCV,European Conference on Computer Vision
 ecoop,ECOOP,European Conference on Object Oriented Programming
@@ -57,6 +68,7 @@ esop,ESOP,European Symposium on Programming
 esorics,ESORICS,European Symposium on Research in Computer Security
 eurocrypt,EUROCRYPT,International Conference on the Theory and Applications of Cryptographic Techniques
 eurosys,Eurosys,ACM Eurosys Conference
+expert,EXPERT,IEEE Intelligent Systems
 fast,FAST,Conference on File and Storage Technologies
 fccm,FCCM,IEEE Symposium on Field-Programmable Custom Computing Machines
 fmcad,FMCAD,Formal Methods in Computer-Aided Design
@@ -101,12 +113,14 @@ icsm,ICSM,IEEE International Conference on Software Maintenance
 icst,ICST,International Conference on Software Testing Verification and Validation
 icws,ICWS,IEEE International Conference on Web Services
 icwsm,ICWSM,International Conference on Weblogs and Social Media
+ieeemm,IEEEMM,IEEE Multimedia
 iiswc,IISWC,International Symposium on Workload Characterization
 ijcai,IJCAI,International Joint Conference on Artificial Intelligence
 ijcar,IJCAR,International Joint Conference on Automated Reasoning
 imc,IMC,Internet Measurement Conference
 infocom,INFOCOM,IEEE Conference on Computer Communications
 interact,INTERACT,IFIP Conference on Human-Computer Interaction
+internet,INTERNET,IEEE Internet Computing
 interspeech,INTERSPEECH,Annual Conference of the International Speech Communication Association
 iolts,IOLTS,IEEE International On-Line Testing Symposium
 ipccc,IPCCC,IEEE International Performance Computing and Communications Conference
@@ -130,10 +144,17 @@ issta,ISSTA,International Symposium on Software Testing and Analysis
 iswc,ISWC,International Semantic Web Conference
 itc,ITC,IEEE International Test Conference
 itng,ITNG,International Conference on Information Technology: New Generations
+itpro,ITPRO,IT Professional
 iui,IUI,International Conference on Intelligent User Interfaces
+jacm,JACM,Journal of the ACM
 jcdl,JCDL/DL,International Conference on Digital Libraries
+jdiq,JDIQ,Journal of Data and Information Quality
+jea,JEA,Journal of Experimental Algorithmics
+jetc,JETC,ACM Journal on Emerging Technologies in Computing Systems
+jmicro,IEEE MICRO,IEEE Micro
+jmlr,JMLR,Journal of Machine Learning Research
+jocch,JOCCH,Journal on Computing and Cultural Heritage
 kdd,KDD,Conference on Knowledge Discovery and Data Mining
-Key,Acronym,Title
 kr,KR,International Conference on Principles of Knowledge Representation and Reasoning
 lcn,LCN,IEEE Conference on Local Computer Networks
 lctes,LCTES,"ACM SIGPLAN Conference on Languages, Compilers and Tools for Embedded Systems"
@@ -143,7 +164,9 @@ mass,MASS,IEEE Internatonal Conference on Mobile Adhoc and Sensor Systems
 mdm,MDM,IEEE International Conference on Mobile Data Management
 miccai,MICCAI,Medical Image Computing and Computer Assisted Interventions
 micro,MICRO,International Symposium on Microarchitecture
+ml,ML,Machine Learning
 mm,MM,ACM Multimedia Conference
+mmas,MMAS,Multiscale Modeling & Simulation
 mobicom,MobiCom,ACM International Conference on Mobile Computing and Networking
 mobihoc,MobiHoc,ACM Symposium of Mobile and Ad Hoc Computing
 mobisec,Mobisec,International ICST Conference on Security and Privacy in Mobile Information and Communication Systems
@@ -156,13 +179,16 @@ nsdi,NSDI,Symposium on Networked Systems Design and Implementation
 oopsla,OOPSLA,"ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications"
 osdi,OSDI, USENIX Symposium on Operating Systems Design and Implementation
 pact,PACT,International Conference on Parallel Architectures and Compilation Techniques
+pami,PAMI,IEEE Transactions on Pattern Analysis & Machine Intelligence
 percom,PERCOM,IEEE International Conference on Pervasive Computing and Communications
+pervasive,PERVASIVE,IEEE Pervasive Computing
 pldi,PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation
 podc,PODC,ACM Symposium on Principles of Distributed Computing
 pods,PODS,ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems
 popl,POPL,ACM-SIGACT Symposium on Principles of Programming Languages
 ppopp,PPoPP,Principles and Practice of Parallel Programming
 psb,PSB,Pacific Symposium on Biocomputing
+pvldb,PVLDB,Proceedings of the VLDB Endowment
 raid,RAID,International Symposium on Recent Advances in Intrusion Detection
 re,RE,IEEE International Requirements Engineering Conference
 recomb,RECOMB,International Conference on Computational Molecular Biology
@@ -180,6 +206,17 @@ sec,SEC,IFIP International Information Security Conference
 securecomm,Securecomm,International ICST Conference on Security and Privacy in Communication Networks
 sensys,SenSys,ACM Conference on Embedded Networked Sensor Systems
 si3d,i3D,ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+siamads,SIAMADS,SIAM Journal on Applied Dynamical Systems
+siamam,SIAMAM,SIAM Journal on Applied Mathematics
+siamco,SIAMCO,SIAM Journal on Control and Optimization
+siamcomp,SIAMCOMP,SIAM Journal on Computing
+siamdm,SIAMDM,SIAM Journal on Discrete Mathematics
+siamjo,SIAMJO,SIAM Journal on Optimization
+siamma,SIAMMA,SIAM Journal on Mathematical Analysis
+siammax,SIAMMAX,SIAM Journal on Matrix Analysis & Applications
+siamnum,SIAMNUM,SIAM Journal on Numerical Analysis
+siamrev,SIAMREV,SIAM Review
+siamsc,SIAMSC,SIAM Journal on Scientific Computing
 sigcomm,SIGCOMM,"ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication"
 sigecom,EC,ACM Conference on Electronic Commerce
 sigir,SIGIR,ACM International Conference on Research and Development in Information Retrieval
@@ -187,6 +224,7 @@ sigmetrics,SIGMETRICS,ACM SIG on Computer and Communications Metrics and Perform
 sigmod,SIGMOD,ACM Special Interest Group on Management of Data Conference
 sigsoft-fse,FSE,ACM SIGSOFT International Symposium on Foundations of Software Engineering
 soda,SODA,ACM/SIAM Symposium on Discrete Algorithms
+software,SOFTWARE,IEEE Software
 sosp,SOSP,ACM SIGOPS Symposium on Operating Systems Principles
 sp,S&P,IEEE Symposium on Security & Privacy
 spaa,SPAA,Symposium on Parallelism in Algorithms and Architectures
@@ -195,13 +233,54 @@ ssdbm,SSDBM,International Conference on Scientific and Statistical Data Base Man
 stacs,STACS,International Symposium on Theoretical Aspects of Computer Science
 stoc,STOC,ACM Symposium on Theory of Computing
 sysose,SOSE,IEEE International Conference on Sytem of Systems Engineering
+taas,TAAS,ACM Transactions on Autonomous and Adaptive Systems
+taccess,TACCESS,ACM Transactions on Accessible Computing
+taco,TACO,ACM Transactions on Architecture and Code Optimization
+talg,TALG,ACM Transactions on Algorithms
+talip,TALIP,ACM Transactions on Asian Language Information Processing
+tap,TAP,ACM Transactions on Applied Perception
+tc,TC,IEEE Transactions on Computers
+tcbb,TCBB,IEEE/ACM Transactions on Computational Biology and Bioinformatics
 tcc,TCC,Theory of Cryptography Conference
+tdsc,TDSC,IEEE Transactions on Dependable and Secure Computing
+tecs,TECS,ACM Transactions on Embedded Computing Systems
+tissec,TISSEC,ACM Transactions on Information and System Security
+titb,TITB,IEEE Transactions on Information Technology in Biomedicine
+tkdd,TKDD,ACM Transactions on Knowledge Discovery from Data
+tkde,TKDE,IEEE Transactions on Knowledge & Data Engineering Promoting
+tmc,TMC,IEEE Transactions on Mobile Computing
+tmm,TMM,IEEE Transactions on Multimedia
+tochi,TOCHI,ACM Transactions on Computer-Human Interaction
+tocl,TOCL,ACM Transactions on Computational Logic
+tocs,TOCS,ACM Transactions on Computer Systems
+toct,TOCT,ACM Transactions on Computation Theory
+todaes,TODAES,ACM Transactions on Design Automation of Electronic Systems
+tods,TODS,ACM Transactions on Database Systems
+tog,TOG,ACM Transactions on Graphics
+tois,TOIS,ACM Transactions on Information Systems
+toit,TOIT,ACM Transactions on Internet Technology
+tomacs,TOMACS,ACM Transactions on Modeling and Computer Simulation
+tomccap,TOMCCAP,"ACM Transactions on Multimedia Computing, Communications, and Applications"
+toms,TOMS,ACM Transactions on Mathematical Software
+ton,TON,IEEE/ACM Transactions on Networking
+toplas,TOPLAS,ACM Transactions on Programming Languages and Systems
+tos,TOS,ACM Transactions on Storage
+tosem,TOSEM,ACM Transactions on Software Engineering and Methodology
+tosn,TOSN,ACM Transactions on Sensor Networks
+tpds,TPDS,IEEE Transactions on Parallel & Distributed Systems
+trets,TRETS,ACM Transactions on Reconfigurable Technology and Systems
+tse,TSE,IEEE Transactions on Software Engineering
+tslp,TSLP,ACM Transactions on Speech and Language Processing
+tvcg,TVCG,IEEE Transactions on Visualization & Computer Graphics
+tvlsi,VLSI,IEEE Transactions on Very Large Scale Integration (VLSI) Systems
+tweb,TWEB,ACM Transactions on the Web
 uai,UAI,Conference on Uncertainty in Artificial Intelligence
 ubicomp,UBICOMP,Ubiquitous Computing
 uist,UIST,ACM Symposium on User Interface Software and Technology
 usenix,USENIX ATC,USENIX Annual Technical Conference
 uss,USENIX Security,USENIX Security Symposium
 vee,VEE,International Conference on Virtual Execution Environments
+vldb,VLDB,International conference on Very large data bases
 vr,VR,IEEE Virtual Reality Conference
 wads,WADS,Algorithms and Data Structures Symposium (was Workshop on Algorithms and Data Structures)
 wcci,WCCI,World Congress on Computational Intelligence
@@ -218,4 +297,3 @@ www,WWW,International World Wide Web Conference
 ,SGP,Eurographics symposium on Geometry Processing
 ,SIGGRAPH,ACM SIG International Conference on Computer Graphics and Interactive Techniques
 ,SPLASH,"Systems, Programming, Languages, and Applications: Software for Humanity"
-,VLDB,International Conference on Very Large Data Bases
