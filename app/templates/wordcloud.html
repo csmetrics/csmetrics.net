@@ -115,8 +115,11 @@
               {{ words.label_venuelist }}
             </span></h4>
           </th>
+          <th class="col-xs-1" style="padding:7px 30px">
+            <b>Type</b>
+          </th>
           <!-- <th><b>{{ words.ctable_label_0 }}</b></th> -->
-          <th class="col-xs-7" style="padding:7px 30px"><b>{{ words.ctable_label_1 }}</b></th>
+          <th class="col-xs-6" style="padding:7px 30px"><b>{{ words.ctable_label_1 }}</b></th>
           <th class="col-xs-2" style="padding:7px 30px">
             <span data-toggle="tooltip" class="tooltiplabel"
               title="{{ words.ctable_label_2_tooltip }}">
@@ -293,19 +296,23 @@ function updateConfList(){
           var row = table.insertRow(i);
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
-          var cell3 = row.insertCell(2);
-          var cell4 = row.insertCell(3);
-          var cell5 = row.insertCell(4);
+          var cell6 = row.insertCell(2); // type
+          var cell3 = row.insertCell(3);
+          var cell4 = row.insertCell(4);
+          var cell5 = row.insertCell(5);
+
           cell2.innerHTML = "<b>"+result[i][0]+"</b>";
           cell3.innerHTML = "<small>"+result[i][1]+"</small>";
           cell4.innerHTML = 1;
           cell5.innerHTML = parseFloat(result[i][2]).toFixed(0); // geo mean
+          cell6.innerText = result[i][3];
 
           cell1.className = "col-xs-1";
           cell2.className = "col-xs-2";
-          cell3.className = "col-xs-7";
+          cell3.className = "col-xs-6";
           cell4.className = "col-xs-1";
           cell5.className = "col-xs-1";
+          cell6.className = "col-xs-1";
           if (weightselector.value == "equal") {
             cell5.classList.add("invisible");
           } else {
