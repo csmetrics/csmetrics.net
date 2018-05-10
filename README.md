@@ -6,11 +6,17 @@
 
 * [Quick start guide](#quickstart)
 
-* [Instructions for making edits](#pushreq)
-
 * [Summary of methodology and data processing](docs/Overview.md) -- opens a separate document
 
 * [Frequently asked questions](docs/FAQ.md) -- opens a separate document
+
+
+* [Instructions for reproducing the ranking]  (**TODO**)
+  * document weighting scheme of venues
+  * document+link to raw scores and how they are used 
+  * document curation of categories
+  
+* [Site developer instructions](#pushreq)
 
 ## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
