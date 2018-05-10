@@ -10,6 +10,7 @@
 
 * [Frequently asked questions](docs/FAQ.md) -- opens a separate document
 
+(Development of CSmetrics stops July 2018, we are open for the community to contribute and take over ... )
 
 * [Instructions for reproducing the ranking]  (**TODO**)
   * document weighting scheme of venues
@@ -17,6 +18,7 @@
   * document curation of categories
   
 * [Site developer instructions](#pushreq)
+
 
 ## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
