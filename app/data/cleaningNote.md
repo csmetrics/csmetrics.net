@@ -1,6 +1,8 @@
-## Institution data cleansing note
+## Institution data cleansing and name resolution 
 
-We use [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases.
+We use [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. 
+
+The result of the process described below are stored in `inst_fullname.csv` (containing names, urls and wikipedia urls), and `inst_alias.csv` (containing mappings of multiple surfaces strings to a single institution as described in item **1** below). 
 
 ### 1) Searching Aliases (using [MAG interpret api](https://docs.microsoft.com/en-us/azure/cognitive-services/academic-knowledge/interpretmethod))
 
