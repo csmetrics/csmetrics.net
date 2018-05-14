@@ -389,22 +389,19 @@ function dorank() {
       ranktable.clear();
       for(var i in result) {
         // console.log(result[i]);
-        // result[0]: institution name
-        // result[1]: paper count
-        // result[2]: w. paper count
-        // result[3]: citation count
-        // result[4]: institution type
-        if (result[i][4] > 0) { // only consider CRA members for now
-          var newRow = {};
-          newRow[0] = null;
-          newRow[1] = result[i][0];
-          newRow[2] = result[i][3].toFixed(0); // Measured
-          newRow[3] = result[i][2].toFixed(0); // Estimated
-          newRow[4] = 0 // Combined -- will be calculated later
-          newRow[5] = result[i][4];
-          newRow[6] = 0 // secondary orderData
-          ranktable.row.add(newRow);
-        }
+        // result["name"]: institution name
+        // result["pub"]: paper count
+        // result["wpub"]: w. paper count
+        // result["cite"]: citation count
+        var newRow = {};
+        newRow[0] = null;
+        newRow[1] = result[i]["name"];
+        newRow[2] = result[i]["cite"].toFixed(0); // Measured
+        newRow[3] = result[i]["wpub"].toFixed(0); // Estimated
+        newRow[4] = 0 // Combined -- will be calculated later
+        newRow[5] = 0 // type -- removed
+        newRow[6] = 0 // secondary orderData
+        ranktable.row.add(newRow);
       }
       updateTable();
       spinner.classList.add("invisible");

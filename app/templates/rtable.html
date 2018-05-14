@@ -113,25 +113,25 @@ ranktable.on( 'order.dt search.dt', function () {
 } ).draw();
 
 // append selector at institution header
-ranktable.columns('.institution').every( function () {
-  var that = this;
-  var select = $('<select id="regionselector"/>')
-    .appendTo(this.header())
-    .on( 'change', function () {
-      var val = $(this).val();
-      console.log(val);
-      if (val == "cra_all") {
-        ranktable.columns('.inst-type').search('1|2', true, true).draw();
-      } else if (val == "cra_academic") {
-        ranktable.columns('.inst-type').search(2).draw();
-      } else {
-        ranktable.columns('.inst-type').search('').draw();
-      }
-    });
-  // select.append('<option value="all">{{ words.select_region_all }}</option>');
-  select.append('<option value="cra_all">{{ words.select_region_cra_all }}</option>');
-  select.append('<option value="cra_academic">{{ words.select_region_cra_academic }}</option>');
-});
+// ranktable.columns('.institution').every( function () {
+//   var that = this;
+//   var select = $('<select id="regionselector"/>')
+//     .appendTo(this.header())
+//     .on( 'change', function () {
+//       var val = $(this).val();
+//       console.log(val);
+//       if (val == "cra_all") {
+//         ranktable.columns('.inst-type').search('1|2', true, true).draw();
+//       } else if (val == "cra_academic") {
+//         ranktable.columns('.inst-type').search(2).draw();
+//       } else {
+//         ranktable.columns('.inst-type').search('').draw();
+//       }
+//     });
+//   select.append('<option value="all">{{ words.select_region_all }}</option>');
+//   select.append('<option value="cra_all">{{ words.select_region_cra_all }}</option>');
+//   select.append('<option value="cra_academic">{{ words.select_region_cra_academic }}</option>');
+// });
 
 
 // update combined value using alpha

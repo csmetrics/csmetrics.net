@@ -3,15 +3,17 @@ import json, csv
 import itertools
 from operator import itemgetter
 from random import randint
+from .mag_search import gen_inst_alias, clean_inst
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
-FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
+# FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
+FILE_INST_ALIAS = os.path.join(cur_path, "data/inst_alias.csv")
+FILE_INST_FULL = os.path.join(cur_path, "data/inst_fullname.csv")
 
 FILE_FULLNAME = os.path.join(cur_path, "data/venue_fullname.csv")
 FILE_CATEGORY = os.path.join(cur_path, "data/venue_category.csv")
 
-DIR_RAW_DATA_ALL = os.path.join(cur_path, "../score_data")
 DIR_RAW_DATA = os.path.join(cur_path, "../scores")
 
 venueName = {}
@@ -23,6 +25,7 @@ instName = set()
 
 # only load once
 instMap = None
+instInfo = None
 venueWeight = None
 
 
@@ -33,26 +36,6 @@ def readVenueName():
     next(reader) # skip the first line
     venueName = dict((r[0], {"abbr": r[1], "full": r[2]}) for r in reader if r[0] != "")
 
-
-def readPaperCount_all():
-    global paperData, instName, citationData
-    try:
-        for cfile in os.listdir(DIR_RAW_DATA_ALL):
-            confname = os.path.splitext(cfile)[0]
-            cflist = pickle.load(open(os.path.join(DIR_RAW_DATA_ALL, cfile), "r"))
-            # print(cflist)
-            for k, v in cflist["count_score"].items():
-                if type(k[0]).__name__ == 'str':
-                    # confname, venue, year
-                    paperData[(confname, k[0], k[1])] = v
-                    instName.add(k[0])
-            for k, v in cflist["cited_score_dict"].items():
-                if type(k[0]).__name__ == 'str':
-                    citationData[(confname, k[0], k[1])] = v
-                    instName.add(k[0])
-    except Exception as e:
-        print(e)
-        print(confname, k, v)
 
 # confconf = {}
 def readPaperCount():
@@ -73,22 +56,49 @@ def readPaperCount():
                 paperData[(confname, k, int(year))] = v["Publication Count"]
                 citationData[(confname, k, int(year))] = v["Citation Count"]
                 instName.add(k)
+
+        # gen_inst_alias(instName)
     except Exception as e:
         print(e)
 
 
 def loadInstData():
-    global instMap
+    global instMap, instInfo
+
+    #load inst_alias
     if instMap != None:
         return
     instMap = dict()
-    memberlist = open(FILE_MEMBER)
-    reader = csv.reader(memberlist)
+    aliaslist = open(FILE_INST_ALIAS)
+    reader = csv.reader(aliaslist)
     next(reader) # skip the first line
     for r in reader:
-        for k in r[2:]:
-            if k != "":
-                instMap[k.strip()] = {"name": r[1].strip(), "type": r[0].strip()}
+        for alias in r[1].split(','):
+            instMap[alias] = r[0].strip()
+    # print([name for name in instName if name not in instMap]) # unregistered name
+    for name in [n for n in instName if n not in instMap]:
+        instMap[name] = name
+
+    # load inst_fullname
+    if instInfo != None:
+        return
+    instInfo = dict()
+    infolist = open(FILE_INST_FULL)
+    reader = csv.reader(infolist)
+    next(reader) # skip the first line
+    for r in reader:
+        instInfo[r[0]] = {
+            "fullname": r[1].strip(),
+            "url": r[2].strip(),
+            "wiki": r[3].strip()
+        }
+    for key in set(instMap.values()):
+        if key not in instInfo:
+            instInfo[key] = {
+                "fullname": key,
+                "url": "",
+                "wiki": ""
+            }
 
 
 def loadVenueWeight():
@@ -107,7 +117,6 @@ def loadVenueWeight():
     #         print (k, ":", "No Data")
 
 def loadData():
-    # readPaperCount_all()
     readPaperCount()
     loadInstData()
     loadVenueWeight()
@@ -129,7 +138,7 @@ def getVenueType(venue):
 def findInstitution(inst):
     global instMap
     if inst in instMap:
-        return instMap[inst]["name"], 2 if instMap[inst]["type"] == "academic" else 1
+        return instMap[inst], 0
     else:
         return inst, 0
 
@@ -202,12 +211,16 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
     for v in instName:
         if pub[v] > 0 or cite[v] > 0:
             name, type = findInstitution(v) # type 0: not CRA member, type 1: CRA member
-            if type == 0: # only include CRA members for now
-                continue
+            # if type == 0: # only include CRA members for now
+            #     continue
             if name in rlist:
                 rlist[name][0] += pub[v]
                 rlist[name][1] += wpub[v]
                 rlist[name][2] += cite[v]
             else:
                 rlist[name] = [pub[v], wpub[v], cite[v], type]
-    return [(k, v[0], v[1], v[2], v[3]) for k, v in rlist.items()]
+
+    return [{"name": instInfo[k]["fullname"],
+            "pub": v[0], "wpub": v[1], "cite": v[2],
+            "url": instInfo[k]["url"] if instInfo[k]["url"] != "" else instInfo[k]["wiki"]
+        } for k, v in rlist.items()]
