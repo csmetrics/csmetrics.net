@@ -120,6 +120,11 @@ body {
     width: 350px;
 }
 
+#weightselector,
+#typeselector {
+    min-width: 100px;
+}
+
 table {
     font-size: 14px;
 }
