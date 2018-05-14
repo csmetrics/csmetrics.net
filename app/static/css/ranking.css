@@ -120,6 +120,10 @@ body {
     width: 350px;
 }
 
+a {
+    color: black !important;
+}
+
 #weightselector,
 #typeselector {
     min-width: 100px;
