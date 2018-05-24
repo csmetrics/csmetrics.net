@@ -39,7 +39,7 @@ Publication data is available from many sources, including [DBLP](http://dblp.un
 
 #### Choice of venues
 
-We chose to include 210 conference and journal venues. Computing research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and computing research evolves and flourishes.  Including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation.  We thus chose an inclusive list of venues, all of which use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
+We chose to include 209 conferences and 80 journal venues. Computing research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and computing research evolves and flourishes.  Including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation.  We thus chose an inclusive list of venues, all of which use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
 
 In other words, our complete set of venues may be larger than many users would like.  As such, we give users the option to leave out any venues that they would prefer not to include.  Note that adding new venues will require  cleaning and processing the data, but we welcome these additions using a [github pull request](https://github.com/csmetrics/csmetrics.org).
 
@@ -58,14 +58,11 @@ This process generated a full list of papers for every conference and every jour
 
 The comparisons of our counts and the conference-specified counts from front matter and other sources are in [PublicationCheck](https://github.com/csmetrics/csmetrics.org/blob/master/docs/PublicationCleaningNote.csv). Many of the comparisons matched up as expected, others had minor errors, and some conferences required a bit of manual editing and removal. For any conference with an error, we reviewed and corrected all ten years of that conference.  The publication counts were also reviewed by experts  familiar with the various conferences.
 
-We used a script to send this list of papers titles  to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned for each paper its authors, affiliations, and citations. We sent the Microsoft’s API   only  the  title because it does not have every paper linked to an author and/or affiliation. Microsoft Academic did not match about 2.5% of our title searches.
+We used a script to send this list of papers titles to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned for each paper its authors, affiliations, and citations. We sent the Microsoft’s API   only  the  title because it does not have every paper linked to an author and/or affiliation. Microsoft Academic did not match about 2.5% of our title searches.
 
 #### Cleaning author to institution mapping
 
-Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 5,000 institutions world-wide.  To clean this data, we therefore first started by restricting ourselves to a smaller number. We chose the CRA institutions because most U.S. and Canadian active academic and industrial CS research institutions are members. We identified aliases by hand and encoded in an [institutional data file](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv).
-
-Because aliases cause under-reporting, we only include cleaned institutions. We plan to add more soon.
-
+Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 5,000 institutions world-wide. To clean this data, we used a script to send this list of institutional names to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned formatted interpretations. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/cleaningNote.md).
 
 #### Choice of research topics
 
@@ -117,7 +114,7 @@ Numerous prestigious international research organizations, including DORA, the U
 
 This tool currently has no financial support and cannot continue in perpetuity or be improved without such support. We believe that this data collection and analysis activity of computer science institutions should be supported and expanded with student enrollments, graduation rates, awards, current faculty members, etc. by the community and welcome your participation.
 
-<p> Please fill out this [FIXME survey]()  to tell us if the tool
+<p> Please fill out this [short survey](https://www.surveymonkey.com/r/csmetrics)  to tell us if the tool
   is useful, how you are using this information, and to influence the future of this tool. </p>
 
 ## <a name="contributors"></a>Contributors
