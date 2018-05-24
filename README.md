@@ -22,7 +22,7 @@
 
 ## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
-**Defaults** Load the page and then press the green 'Go' button to produce a combined aggregated metric (both measured and predicted) for 199 CRA member institutions (academic and industry) for papers published in 2007 to 2016 at 210 conferences.
+**Defaults** Load the page and then press the green 'Go' button to produce a combined aggregated metric (both measured and predicted) for 6729 institutions (academic and industry) for papers published in 2007 to 2016 at 209 conferences and 80 journals.
 
 <p align="center">
 <img width="90%" src="docs/extra/user_guide.001.png" />
@@ -41,7 +41,7 @@ Figure 1. Quick Start User Guide.
 
 5. **Navigating the institution list** The webpage updates instantly without having to press the ‘Go’ button when you: change the list of institutions being ranked, change the entries per page, and flip pages. Otherwise, if you change the venues, years, or  α, you need to select 'Go' again.
 
-6. **List of institutions**  Because authors do not identify their institutions uniformly, we combined institutational aliases with some automation and by hand for the [CRA member institutions](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/member_list.csv). We are currently curating and combining aliases for an international list containing thousands of institutions.  More details on how we cleaned the data are [here](LINK TBD).
+6. **List of institutions**  Because authors do not identify their institutions uniformly, we use [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/cleaningNote.md).
 
 7. **Contributions and Feedback** This version is a pre-release and we welcome feedback. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as [github issue](https://github.com/csmetrics/csmetrics.org/issues)
 
