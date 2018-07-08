@@ -7,7 +7,7 @@ from .mag_search import gen_inst_alias, clean_inst
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
-# FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
+FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
 FILE_INST_ALIAS = os.path.join(cur_path, "data/inst_alias.csv")
 FILE_INST_FULL = os.path.join(cur_path, "data/inst_fullname.csv")
 
@@ -27,6 +27,7 @@ instName = set()
 instMap = None
 instInfo = None
 venueWeight = None
+craMembers = None
 
 
 def readVenueName():
@@ -63,7 +64,16 @@ def readPaperCount():
 
 
 def loadInstData():
-    global instMap, instInfo
+    global instMap, instInfo, craMembers
+
+    # load CRA member_list
+    if craMembers != None:
+        return
+    craMembers = dict()
+    memberlist = open(FILE_MEMBER)
+    reader = csv.reader(memberlist)
+    next(reader) # skip the first line
+    craMembers = {r[2].strip():2 if r[0]=="academic" else 1 for r in reader}
 
     #load inst_alias
     if instMap != None:
@@ -220,7 +230,7 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
             else:
                 rlist[name] = [pub[v], wpub[v], cite[v], type]
 
-    return [{"name": instInfo[k]["fullname"],
+    return [{"name": instInfo[k]["fullname"], "type": craMembers[k] if k in craMembers else 0,
             "pub": v[0], "wpub": v[1], "cite": v[2],
             "url": instInfo[k]["url"] if instInfo[k]["url"] != "" else instInfo[k]["wiki"]
         } for k, v in rlist.items()]

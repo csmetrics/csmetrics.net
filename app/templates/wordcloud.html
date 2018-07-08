@@ -399,7 +399,7 @@ function dorank() {
         newRow[2] = result[i]["cite"].toFixed(0); // Measured
         newRow[3] = result[i]["wpub"].toFixed(0); // Estimated
         newRow[4] = 0 // Combined -- will be calculated later
-        newRow[5] = 0 // type -- removed
+        newRow[5] = result[i]["type"] // type
         newRow[6] = 0 // secondary orderData
         ranktable.row.add(newRow);
       }
