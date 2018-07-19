@@ -11,7 +11,7 @@ weighttext.innerHTML = "{{ words.rtable_label_3 }} = "
 // venue weight selector
 var weightselector = document.getElementById('weightselector');
 weightselector.addEventListener("change", function(e) {
-  console.log(weightselector.value);
+  // console.log(weightselector.value);
   var rows = document.getElementById("conflist-body").getElementsByTagName("tr");
   for (var i = 0; i < rows.length; i++) {
     var col = rows[i].children
@@ -28,7 +28,7 @@ weightselector.addEventListener("change", function(e) {
 // venue type selector
 var typeselector = document.getElementById('typeselector');
 typeselector.addEventListener("change", function(e) {
-  console.log(typeselector.value);
+  // console.log(typeselector.value);
   updateConfList();
 });
 
@@ -119,7 +119,7 @@ ranktable.columns('.institution').every( function () {
     .appendTo(this.header())
     .on( 'change', function () {
       var val = $(this).val();
-      console.log(val);
+      // console.log(val);
       if (val == "cra_all") {
         ranktable.columns('.inst-type').search('1|2', true, true).draw();
       } else if (val == "cra_academic") {
