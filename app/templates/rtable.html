@@ -39,7 +39,7 @@ var ranktable = $('#rtable').DataTable({
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-4'i><'col-sm-8'p>>",
   "pageLength": 20, // default page
-  "lengthMenu": [ 10, 20, 50, 100 ], // page options
+  "lengthMenu": [[ 10, 20, 50, 100, -1 ], [ 10, 20, 50, 100, "All" ]], // page options
   "lengthChange": true,
   "columns": [
     // { className: "details-control" },
