@@ -10,7 +10,8 @@
 
 * [Frequently asked questions](docs/FAQ.md) -- opens a separate document
 
-(CSmetrics is in a pause-and-plan phase since late 2018, we are recruiting new developers to contribute ... )
+* [List of ideas](docs/ideas.md)
+  CSmetrics is in a pause-and-plan phase since late 2018, we are recruiting new developers to contribute ... 
 
 * [Instructions for reproducing the ranking]  (**TODO**)
   * document weighting scheme of venues
