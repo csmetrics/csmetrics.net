@@ -10,7 +10,7 @@
 
 * [Frequently asked questions](docs/FAQ.md) -- opens a separate document
 
-(Development of CSmetrics stops July 2018, we are open for the community to contribute and take over ... )
+(CSmetrics is in a pause-and-plan phase since late 2018, we are recruiting new developers to contribute ... )
 
 * [Instructions for reproducing the ranking]  (**TODO**)
   * document weighting scheme of venues
