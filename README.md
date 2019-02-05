@@ -56,3 +56,6 @@ This project is written in **python3** with the **Django** web framework.
 4. Access the server: http://localhost:8000
 5. Make and test changes locally
 6. Push changes to your fork and submit a pull request.
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
