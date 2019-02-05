@@ -12,13 +12,26 @@ In the future, we plan to use  [Microsoft Academic Graph](https://www.microsoft
 
 Here is the list of ideas for backend development:
 
-**(Goal) Curation of new data to calculate venue weights and rankings**
+**(Goal) Use Microsoft academic to refresh the venue and institution statistics for 2018**
+
+    1. Implement a workflow to gather paper citaion counts from elastic search. 
+    2. Implement a workflow to gather venue weights from elastic search. 
+    3. Check results using citations up to 2017 and compare against the current data. 
+    4. Plot the distribution of paper citation counts and validate the geometric mean heuristic. 
+
+**(Goal) Use Microsoft academic to curate data **
 
     1. Filter the year/volume in our data range of interest (e.g. 2007-2019)
     2. Filter out workshop papers, demonstrations, tutorials, and everything else other than referred papers
     3. Re-generate venue weights with a new data update
     4. Interactively calculate a new ranking with the selected venues
 
+**(Goal) Add new conferences and journals to the venue list**
+
+    1. Workout a workflow to add new conferences/journals to the ranking
+    2. Start by addressing [the issues list](https://github.com/csmetrics/csmetrics.org/issues)
+    3. Compare the venue weight metric with other sources such as Google Scholar Metrics
+    
 **(Stretch goal) Better categorization of venues using field of study**
 
     1. Curate the hierarchy of the cagetories
