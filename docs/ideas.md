@@ -19,7 +19,7 @@ Here is the list of ideas for backend development:
     3. Check results using citations up to 2017 and compare against the current data. 
     4. Plot the distribution of paper citation counts and validate the geometric mean heuristic. 
 
-**(Goal) Use Microsoft academic to curate data **
+**(Goal) Use Microsoft academic to curate data**
 
     1. Filter the year/volume in our data range of interest (e.g. 2007-2019)
     2. Filter out workshop papers, demonstrations, tutorials, and everything else other than referred papers
@@ -45,15 +45,19 @@ Here is the list of ideas for backend development:
 
 Here is the list of ideas for front-end development:
 
+**(Goal) Better navigation for the site**
+    1. Provide search function for the venues and research area
+    2. Enable query-suggest for venues, institutions and research area
+    3. Enable sorting venues by weights and categories
 
-**(Goal) Better look and feel of csmetrics.org**
+**(Goal) Better user interaction on categories**
+    1. Improve the ways it shows categories as we have more fields or sub-fields
+    2. Enable users to interact with categories better
+    3. Enable on-the-fly curation of categories
 
-    1. Introduce a better way to show categories as we have more fields or sub-fields
-    2. Provide search or sort function for the venues by their categories or weights
+**(Stretch goal) More information on-demand**
 
-**(Stretch goal) More information for institutions**
-
-    1. Provide detail information for each institution 
+    1. Enable drilled down to get detail information for each institution 
        (e.g. its top 10 authors, fields of study, most published venue, etc)
 
 
