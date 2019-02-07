@@ -46,11 +46,13 @@ Here is the list of ideas for backend development:
 Here is the list of ideas for front-end development:
 
 **(Goal) Better navigation for the site**
+
     1. Provide search function for the venues and research area
     2. Enable query-suggest for venues, institutions and research area
     3. Enable sorting venues by weights and categories
 
 **(Goal) Better user interaction on categories**
+
     1. Improve the ways it shows categories as we have more fields or sub-fields
     2. Enable users to interact with categories better
     3. Enable on-the-fly curation of categories
