@@ -3,35 +3,6 @@
 </table>
 <div id="rtablecurtain" class="invisible"></div>
 <script type="text/javascript">
-// venue weight selector description
-var weighttext = document.getElementById('weightselector-text');
-weighttext.innerHTML = "{{ words.rtable_label_3 }} = "
-  +"&Sigma; Paper Count x {{ words.label_venueweight }}";
-
-// venue weight selector
-var weightselector = document.getElementById('weightselector');
-weightselector.addEventListener("change", function(e) {
-  // console.log(weightselector.value);
-  var rows = document.getElementById("conflist-body").getElementsByTagName("tr");
-  for (var i = 0; i < rows.length; i++) {
-    var col = rows[i].children
-    if (weightselector.value == "equal") {
-      col[5].classList.add("invisible");
-      col[4].classList.remove("invisible");
-    } else {
-      col[4].classList.add("invisible");
-      col[5].classList.remove("invisible");
-    }
-  }
-});
-
-// venue type selector
-var typeselector = document.getElementById('typeselector');
-typeselector.addEventListener("change", function(e) {
-  // console.log(typeselector.value);
-  updateConfList();
-});
-
 var spinner = document.getElementById("spinner");
 // ranking table
 var ranktable = $('#rtable').DataTable({

@@ -107,6 +107,15 @@ body {
 #conflist td.invisible {
     display: none;
 }
+#conflist tbody>tr.selected {
+    background-color: rgb(245, 245, 245);
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.select-item {
+    display: none;
+}
 .center {
     text-align: center;
 }
