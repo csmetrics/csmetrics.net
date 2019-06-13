@@ -23,12 +23,9 @@ def updateTable(request): # /update
 @csrf_exempt
 def selectKeyword(request): # /select
     keywords = request.POST.get("keyword")
-
-    conf = []
-    for key in keywords.split(','):
-        conf.extend(getVenueList(key.lower()))
-    set_conf = list(set(conf))
-    sorted_conf = sorted(set_conf, key=lambda s: s[0].lower(), reverse=False)
+    # print(keywords)
+    conf = getVenueList(keywords.split(','))
+    sorted_conf = sorted(conf, key=lambda s: s[0].lower(), reverse=False)
     return JsonResponse(sorted_conf, safe=False)
 
 

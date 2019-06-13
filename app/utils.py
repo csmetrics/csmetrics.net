@@ -18,6 +18,7 @@ DIR_RAW_DATA = os.path.join(cur_path, "../scores")
 
 venueName = {}
 venueCategory = {}
+categorySet = {}
 
 paperData = {}
 citationData = {}
@@ -154,44 +155,38 @@ def findInstitution(inst):
 
 
 def createCategorycloud():
-    global venueCategory
+    global venueCategory, categorySet
     readVenueName()
     venuesdata = open(FILE_CATEGORY)
     reader = csv.reader(venuesdata, delimiter=',')
     next(reader) # skip the first line
-    venueCategory = dict((r[0], {
-                "topic1":[w.strip().lower() for w in r[2].split(',')],
-                "topic2":[w.strip().lower() for w in r[3].split(',')],
-                "type": r[4]
-            }) for r in reader if r[0] != '')
+    for r in reader:
+        if not r[0]:
+            continue
+        topics = []
+        topic_1 = [w.strip().lower() for w in r[2].split(',')] if r[2] else None
+        topic_2 = [w.strip().lower() for w in r[3].split(',')] if r[3] else None
+        if topic_1:
+            topics.extend(topic_1)
+        if topic_2:
+            topics.extend(topic_2)
+        for topic in topics:
+            if topic in categorySet:
+                categorySet[topic].append(r[0])
+            else:
+                categorySet[topic] = [r[0]]
+        venueCategory[r[0]] = {"topic1":topic_1, "topic2":topic_2, "type": r[4]}
 
-    wordset = {}
-    for v in venueCategory.keys():
-        for t2 in venueCategory[v]["topic2"]: wordset[t2] = 2
-        for t1 in venueCategory[v]["topic1"]: wordset[t1] = 1
-    # remove duplicated other, it is manually added at the end of the list
-    wordset.pop("other")
-    sorted_tags = sorted(wordset.items(), key=itemgetter(0))
-    if '' == sorted_tags[0][0]:    # put other to the last in the list
-        temp = sorted_tags[0]
-        sorted_tags = sorted_tags[1:]
-        sorted_tags.append(temp)
-    # print(sorted_tags)
-    return sorted_tags
+    wordset = sorted(list(categorySet.keys()))
+    wordset.remove("other") # move other to the end
+    return wordset+["other"]
 
 
-def getVenueList(keyword):
-    global venueName
-    keyword_vlist = []
-    # if keyword != "other":
-    for k, v in venueCategory.items():
-        if keyword in v["topic1"] or keyword in v["topic2"]:
-            keyword_vlist.append(k)
-    # else: # other goes the last
-    #     for k, v in venueCategory.items():
-    #         if "" in v["topic1"] and "" in v["topic2"]:
-    #             keyword_vlist.append(k)
-
+def getVenueList(keywords):
+    global venueName, categorySet
+    keyword_vlist = set()
+    for k in keywords:
+        keyword_vlist.update(set(categorySet[k.lower()]))
     vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v), getVenueType(v))\
                 for v in keyword_vlist]
     return vlist

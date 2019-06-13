@@ -1,9 +1,9 @@
 {% load staticfiles%}
 <div class="row" style="padding-bottom: 10px;">
-  <div class="col-lg-1 col-md-1 col-sm-1">
+  <div class="col-lg-2 col-md-2 col-sm-2">
     <h4><span class="label label-default">{{ words.label_year }}</span></h4>
   </div>
-  <div class="col-lg-9 col-md-9 col-sm-9" >
+  <div class="col-lg-10 col-md-10 col-sm-10" >
     <table>
       <tr>
         <td style="width: 80px"></td>
@@ -14,7 +14,7 @@
         <td></td>
       </tr>
       <tr>
-        <td class="text-right" style="width: 80px">
+        <td class="text-right" style="width: 90px">
           <span data-toggle="tooltip" class="tooltiplabel"
             title="{{ words.forward_tooltip }}">
             {{ words.forward }}
@@ -35,7 +35,7 @@
         </td>
       </tr>
       <tr>
-        <td class="text-right" style="width: 80px">
+        <td class="text-right" style="width: 90px">
           <span data-toggle="tooltip" class="tooltiplabel text-right"
             title="{{ words.backward_tooltip }}">
             {{ words.backward }}
@@ -57,12 +57,12 @@
       </tr>
     </table>
   </div>
-  <div class="col-lg-2 col-md-2 col-sm-2" style="padding: 10px 15px 0 15px">
+  <!-- <div class="col-lg-2 col-md-2 col-sm-2" style="padding: 10px 15px 0 15px">
     <div id="spinner" class="invisible" style="padding: 10px 15px 0 15px">
       <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
     </div>
     <button class="btn btn-success" style="width:100%; height:60px" id="rankbutton">{{ words.rank_button }}</button>
-  </div>
+  </div> -->
 </div>
 <div class="row" style="padding-bottom: 10px;">
   <div class="col-lg-2 col-md-2 col-sm-2">
@@ -78,17 +78,9 @@
   <div class="col-lg-12">
     <div style="text-align:center;">
       {% for t in tags %}
-        {% if t.0 %}
-          <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
-            <span class="text-uppercase">{{ t.0 }}</span>
-            <!-- <span class="badge">{{ t.1 }}</span> -->
-          </button>
-        {% else %}
-          <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
-            <span class="text-uppercase">Other</span>
-            <!-- <span class="badge">{{ t.1 }}</span> -->
-          </button>
-        {% endif %}
+        <button class="btn btn-xs btn-default btn-venue" style="margin-bottom:3px;">
+          <span class="text-uppercase">{{ t }}</span>
+        </button>
       {% endfor %}
     </div>
   </div>
@@ -160,11 +152,19 @@ var nodes = [
 pubSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("pubSlider slider update");
   nodes[handle].innerText = parseInt(values[handle]);
-  inputChanged();
 });
 citSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
   // console.log("citSlider slider update");
   nodes[handle+2].innerText = parseInt(values[handle]);
+});
+pubSlider.noUiSlider.on('change', function ( values, handle, unencoded, isTap, positions ) {
+  // console.log("pubSlider slider change");
+  // nodes[handle].innerText = parseInt(values[handle]);
+  inputChanged();
+});
+citSlider.noUiSlider.on('change', function ( values, handle, unencoded, isTap, positions ) {
+  // console.log("citSlider slider change");
+  // nodes[handle+2].innerText = parseInt(values[handle]);
   inputChanged();
 });
 
@@ -213,13 +213,14 @@ $("div.venuelistlabel").html(
   '{{ words.label_venuelist }}</span></h4>'
 );
 
+var conftableUpdating = false;
 conftable.on("select", function ( e, dt, type, indexes ) {
   // console.log("conftable select");
-  updateInfoConf();
+  if (!conftableUpdating) updateInfoConf();
 });
 conftable.on("deselect", function ( e, dt, type, indexes ) {
   // console.log("conftable deselect");
-  updateInfoConf();
+  if (!conftableUpdating) updateInfoConf();
 });
 
 var lockedState = true;
@@ -317,12 +318,13 @@ weightselector.addEventListener("change", function(e) {
     conftable.column(4).visible(false);
     conftable.column(5).visible(true);
   }
+  inputChanged();
 });
 
 // venue type selector
 var typeselector = document.getElementById('typeselector');
 typeselector.addEventListener("change", function(e) {
-  console.log(typeselector.value);
+  // console.log(typeselector.value);
   updateConfList();
 });
 
@@ -333,6 +335,7 @@ function rankFinished() {
 function inputChanged() {
     $('#alphaslider').attr('disabled', 'disabled');
     $('#rtablecurtain').removeClass('invisible');
+    dorank();
 }
 
 var selectedVenueList = [];
@@ -358,6 +361,7 @@ function updateConfList(){
       },
       success: function (result) {
         console.log("success");
+        conftableUpdating = true;
         // $("#conflist").removeClass("invisible");
         conftable.clear();
         for(var i in result) {
@@ -382,6 +386,7 @@ function updateConfList(){
         }
         conftable.draw();
         // console.log("venue table loaded");
+        conftableUpdating = false;
         updateInfoConf();
       },
       error: function (result) {
@@ -449,9 +454,9 @@ function dorank() {
     }
   });
 };
-$('#rankbutton').click(function(e) {
-  dorank();
-});
+// $('#rankbutton').click(function(e) {
+//   dorank();
+// });
 
 
 // selectall checkbox listener

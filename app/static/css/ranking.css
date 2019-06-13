@@ -88,14 +88,14 @@ body {
 
 #spinner {
     position: absolute;
-    top: 50%;
+    top: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 #spinner i {
-    font-size: 50px;
-    color: white;
-    -webkit-text-stroke: 1px gray;
+    font-size: 100px;
+    color: rgb(245, 245, 245);
+    -webkit-text-stroke: 1px black;
 }
 .invisible {
     visibility: hidden;
