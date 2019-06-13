@@ -119,6 +119,9 @@ body {
 .center {
     text-align: center;
 }
+.dataTables_filter {
+    padding-top: 8px;
+}
 
 .tooltiplabel {
     /*color: black;*/
@@ -135,7 +138,7 @@ a {
 
 #weightselector,
 #typeselector {
-    min-width: 100px;
+    width: 120px;
 }
 
 table {

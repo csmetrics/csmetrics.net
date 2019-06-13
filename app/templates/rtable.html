@@ -8,7 +8,8 @@ var spinner = document.getElementById("spinner");
 var ranktable = $('#rtable').DataTable({
   "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphasliderdiv'>>>" +
           "<'row'<'col-sm-12'tr>>" +
-          "<'row'<'col-sm-4'i><'col-sm-8'p>>",
+          "<'row'<'col-sm-6'i><'col-sm-6'f>>"+
+          "<'row'<'col-sm-12'p>>",
   "pageLength": 20, // default page
   "lengthMenu": [[ 10, 20, 50, 100, -1 ], [ 10, 20, 50, 100, "All" ]], // page options
   "lengthChange": true,
@@ -41,7 +42,7 @@ var ranktable = $('#rtable').DataTable({
   },
   "fixedColumns": true,
   "paging": true,
-  "pagingType": "simple_numbers",
+  "pagingType": "first_last_numbers",
   "searching": true,
   "ordering": true,
   "order": [[ 4, "desc" ]],

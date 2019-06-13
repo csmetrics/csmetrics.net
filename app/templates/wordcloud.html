@@ -213,6 +213,15 @@ $("div.venuelistlabel").html(
   '{{ words.label_venuelist }}</span></h4>'
 );
 
+conftable.on("select", function ( e, dt, type, indexes ) {
+  // console.log("conftable select");
+  updateInfoConf();
+});
+conftable.on("deselect", function ( e, dt, type, indexes ) {
+  // console.log("conftable deselect");
+  updateInfoConf();
+});
+
 var lockedState = true;
 var sliding = false; //
 var lastMovedSlider = 0; // 1:pubSlider, 2:citSlider
@@ -334,6 +343,7 @@ function updateInfoConf(){
   $.each(rows_selected, function(index, rowId){
      selectedVenueList.push(conftable.row(index).data()[1])
   });
+  // console.log(selectedVenueList);
   inputChanged();
 }
 
@@ -348,7 +358,7 @@ function updateConfList(){
       },
       success: function (result) {
         console.log("success");
-        $("#conflist").removeClass("invisible");
+        // $("#conflist").removeClass("invisible");
         conftable.clear();
         for(var i in result) {
           if (typeselector.value != "all" && typeselector.value != result[i][3]) {
@@ -371,7 +381,7 @@ function updateConfList(){
           conftable.column(5).visible(true);
         }
         conftable.draw();
-        console.log("venue table loaded");
+        // console.log("venue table loaded");
         updateInfoConf();
       },
       error: function (result) {
@@ -393,8 +403,8 @@ function getActiveCategories() {
     }
   }
   if (activeCategory.length == 0) {
-    $("#conflist").addClass("invisible");
-    console.log("getActiveCategories");
+    // $("#conflist").addClass("invisible");
+    // console.log("getActiveCategories");
     updateInfoConf();
   }
   updateConfList();
