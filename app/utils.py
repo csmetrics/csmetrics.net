@@ -3,6 +3,7 @@ import json, csv
 import itertools
 from operator import itemgetter
 from random import randint
+from datetime import datetime
 from .mag_search import gen_inst_alias, clean_inst
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
@@ -54,9 +55,17 @@ def readPaperCount():
             #     confconf[confname].append(year)
             cflist = json.load(open(os.path.join(DIR_RAW_DATA, cfile), "r"))
             for k, v in cflist.items():
-                # confname, venue, year
-                paperData[(confname, k, int(year))] = v["Publication Count"]
-                citationData[(confname, k, int(year))] = v["Citation Count"]
+                # inst, confname, year
+                if k in paperData:
+                    paperData[k].append({"conf": confname, "year": int(year), "pubCount": v["Publication Count"]})
+                else:
+                    paperData[k] = [{"conf": confname, "year": int(year), "pubCount": v["Publication Count"]}]
+                if k in citationData:
+                    citationData[k].append({"conf": confname, "year": int(year), "citeCount": v["Citation Count"]})
+                else:
+                    citationData[k] = [{"conf": confname, "year": int(year), "citeCount": v["Citation Count"]}]
+                # paperData[(confname, k, int(year))] = v["Publication Count"]
+                # citationData[(confname, k, int(year))] = v["Citation Count"]
                 instName.add(k)
 
         # gen_inst_alias(instName)
@@ -195,37 +204,31 @@ def getVenueList(keywords):
 def getPaperScore(conflistname, pubrange, citrange, weight):
     global instName, venueName, venueCategory, paperData, citationData
 
+    cite = {}
+    wpub = {}
     conflist = [k for k,v in venueName.items() if v["abbr"] in conflistname]
-    pub = dict(zip(instName, [0 for col in range(len(instName))]))
-    cite = dict(zip(instName, [0 for col in range(len(instName))]))
-    wpub = dict(zip(instName, [0 for col in range(len(instName))]))
     pubyears = range(pubrange[0], pubrange[1]+1, 1)
     cityears = range(citrange[0], citrange[1]+1, 1)
 
-    for t in itertools.product(*[conflist, list(instName), pubyears]):
-        if t not in paperData: continue
-        w = venueWeight[t[0]] if weight and t[0] in venueWeight else 1
-        pub[t[1]] += paperData[t]
-        wpub[t[1]] += paperData[t] * w
-    for t in itertools.product(*[conflist, list(instName), cityears]):
-        if t not in citationData: continue
-        cite[t[1]] += citationData[t]
+    for inst in list(instName):
+        wpub[inst] = sum([p["pubCount"]*(venueWeight[p["conf"]] if weight and p["conf"] in venueWeight else 1)\
+                        for p in paperData[inst] if p["conf"] in conflist and p["year"] in pubyears])
+        cite[inst] = sum([c["citeCount"] for c in citationData[inst] if c["conf"] in conflist and c["year"] in cityears])
 
     # sum by alias name
     rlist = {}
     for v in instName:
-        if pub[v] > 0 or cite[v] > 0:
+        if wpub[v] > 0 or cite[v] > 0:
             name, type = findInstitution(v) # type 0: not CRA member, type 1: CRA member
             # if type == 0: # only include CRA members for now
             #     continue
             if name in rlist:
-                rlist[name][0] += pub[v]
-                rlist[name][1] += wpub[v]
-                rlist[name][2] += cite[v]
+                rlist[name][0] += wpub[v]
+                rlist[name][1] += cite[v]
             else:
-                rlist[name] = [pub[v], wpub[v], cite[v], type]
+                rlist[name] = [wpub[v], cite[v], type]
 
     return [{"name": instInfo[k]["fullname"], "type": craMembers[k] if k in craMembers else 0,
-            "pub": v[0], "wpub": v[1], "cite": v[2],
+            "wpub": v[0], "cite": v[1],
             "url": instInfo[k]["url"] if instInfo[k]["url"] != "" else instInfo[k]["wiki"]
         } for k, v in rlist.items()]
