@@ -20,9 +20,6 @@ DIR_RAW_DATA = os.path.join(cur_path, "../scores")
 venueName = {}
 venueCategory = {}
 categorySet = {}
-
-paperData = {}
-citationData = {}
 instName = set()
 
 # only load once
@@ -30,6 +27,8 @@ instMap = None
 instInfo = None
 venueWeight = None
 craMembers = None
+paperData = None
+citationData = None
 
 
 def readVenueName():
@@ -43,7 +42,11 @@ def readVenueName():
 # confconf = {}
 def readPaperCount():
     global paperData, instName, citationData
+    if paperData != None:
+        return
     try:
+        paperData = {}
+        citationData = {}
         for cfile in os.listdir(DIR_RAW_DATA):
             confname, year, type = os.path.splitext(cfile)[0].split('_')
             if type == "author": # only considr affil for now
