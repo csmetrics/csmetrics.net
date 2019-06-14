@@ -364,6 +364,7 @@ function updateConfList(){
         conftableUpdating = true;
         // $("#conflist").removeClass("invisible");
         conftable.clear();
+        newrows = []
         for(var i in result) {
           if (typeselector.value != "all" && typeselector.value != result[i][3]) {
             continue;
@@ -375,8 +376,9 @@ function updateConfList(){
           newRow[3] = "<small>"+result[i][1]+"</small>";
           newRow[4] = 1;
           newRow[5] = parseFloat(result[i][2]).toFixed(0);
-          conftable.row.add(newRow);
+          newrows.push(newRow);
         }
+        conftable.rows.add(newrows);
         if (weightselector.value == "equal") {
           conftable.column(5).visible(false);
           conftable.column(4).visible(true);
@@ -430,8 +432,8 @@ function dorank() {
       conflist: selectedVenueList.join()
     },
     success: function (result) {
-      // console.log("Rank success");
       ranktable.clear();
+      newrows = []
       for(var i in result) {
         // console.log(result[i]);
         // result["name"]: institution name
@@ -446,9 +448,11 @@ function dorank() {
         newRow[4] = 0 // Combined -- will be calculated later
         newRow[5] = result[i]["type"] // type
         newRow[6] = 0 // secondary orderData
-        ranktable.row.add(newRow);
+        newrows.push(newRow)
       }
+      ranktable.rows.add(newrows);
       updateTable();
+      console.log("Rank updated");
       spinner.classList.add("invisible");
       rankFinished();
     }
