@@ -432,6 +432,7 @@ function dorank() {
       conflist: selectedVenueList.join()
     },
     success: function (result) {
+      ranktable.search('');
       ranktable.clear();
       newrows = []
       for(var i in result) {
