@@ -169,7 +169,7 @@ citSlider.noUiSlider.on('change', function ( values, handle, unencoded, isTap, p
 });
 
 var conftable = $('#conflist').DataTable({
-  "dom":  "<'row'<'col-sm-6'<'venuelistlabel'>><'col-sm-6'f>>" +
+  "dom":  "<'row'<'col-sm-12'<'venuelistlabel'>>>" +
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-12'i>>",
   "columns": [
@@ -201,7 +201,7 @@ var conftable = $('#conflist').DataTable({
   },
   "fixedColumns": true,
   "paging": false,
-  "searching": true,
+  "searching": false,
   "ordering": true,
   "order": [[ 1, "asc" ]],
   "info": true,
