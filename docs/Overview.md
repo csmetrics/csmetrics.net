@@ -29,7 +29,7 @@ Publications, and citations to these publications, are time-honored ways in whic
 
 ## <a name="methodology"></a>Methodology
 
-We organize computing publication data by venue, author institution, and citations.   We currently have 209 conferences and 80 journals. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 6646 institutions that our tools identified as participating in CS research world-wide. 
+We organize computing publication data by venue, author institution, and citations.   We currently have 209 conferences and 80 journals. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 6646 institutions that our tools identified as participating in CS research world-wide.
 
 The next section first describes more on why and how we cleaned publication data, and then describes our analysis and metrics based on this data.
 
@@ -124,6 +124,7 @@ This tool currently has no financial support and cannot continue in perpetuity o
 * H. V. Jagadish, University of Michigan
 * Kathryn S McKinley, Google
 * Mario Nascimento, University of Alberta
+* Benjamin Readshaw, ANU
 * Minjeong Shin, ANU
 * Sean Stockwell, University of Michigan
 * Lexing Xie, ANU
@@ -131,5 +132,3 @@ This tool currently has no financial support and cannot continue in perpetuity o
 
 ## <a name="ack"></a>Acknowledgements
 We thank the [Computer Research Association (CRA)](http://cra.org),  [ANU College of Engineering and Computer Science](http://cecs.anu.edu.au), and [ANU Research School of Computer Science](http://cs.anu.edu.au) for supporting the development of the data and web application. We thank [Microsoft Academic Search](http://academic.research.microsoft.com) for their help and data, and [DBLP](http://dblp.uni-trier.de) for their data.
-
-
