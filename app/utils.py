@@ -13,7 +13,7 @@ FILE_INST_ALIAS = os.path.join(cur_path, "data/inst_alias.csv")
 FILE_INST_FULL = os.path.join(cur_path, "data/inst_fullname.csv")
 
 FILE_VENUE = os.path.join(cur_path, "data/venue_list.csv")
-DIR_RAW_DATA = os.path.join(cur_path, "data/scores")
+DIR_RAW_DATA = os.path.join(cur_path, "../data/scores")
 
 venueName = {}
 venueCategory = {}
