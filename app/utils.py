@@ -12,10 +12,8 @@ FILE_MEMBER = os.path.join(cur_path, "data/member_list.csv")
 FILE_INST_ALIAS = os.path.join(cur_path, "data/inst_alias.csv")
 FILE_INST_FULL = os.path.join(cur_path, "data/inst_fullname.csv")
 
-FILE_FULLNAME = os.path.join(cur_path, "data/venue_fullname.csv")
-FILE_CATEGORY = os.path.join(cur_path, "data/venue_category.csv")
-
-DIR_RAW_DATA = os.path.join(cur_path, "../scores")
+FILE_VENUE = os.path.join(cur_path, "data/venue_list.csv")
+DIR_RAW_DATA = os.path.join(cur_path, "../data/scores")
 
 venueName = {}
 venueCategory = {}
@@ -33,10 +31,10 @@ citationData = None
 
 def readVenueName():
     global venueName
-    venuefullname = open(FILE_FULLNAME)
+    venuefullname = open(FILE_VENUE)
     reader = csv.reader(venuefullname, delimiter=',')
     next(reader) # skip the first line
-    venueName = dict((r[0], {"abbr": r[1], "full": r[2]}) for r in reader if r[0] != "")
+    venueName = dict((r[0], {"abbr": r[1], "full": r[5]}) for r in reader if r[0] != "")
 
 
 # confconf = {}
@@ -169,7 +167,7 @@ def findInstitution(inst):
 def createCategorycloud():
     global venueCategory, categorySet
     readVenueName()
-    venuesdata = open(FILE_CATEGORY)
+    venuesdata = open(FILE_VENUE)
     reader = csv.reader(venuesdata, delimiter=',')
     next(reader) # skip the first line
     for r in reader:

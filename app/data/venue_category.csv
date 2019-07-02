@@ -4,8 +4,11 @@ aaai,AAAI,artificial intelligence,,conference
 aamas,AAMAS,artificial intelligence,robotics,conference
 acl,ACL,artificial intelligence,natural language processing,conference
 acsac,ACSAC,systems,architecture,conference
+ai,AI,artificial intelligence,,journal
 aiccsa,AICCSA,systems,,conference
+aim,AIM,artificial intelligence,,journal
 aina,AINA,systems,"networks,distributed systems",conference
+amai,AMAI,artificial intelligence,,journal
 ancs,ANCS,systems,networks,conference
 annals,ANNALS,other,,journal
 apscc,APSCC,other,,conference
@@ -69,6 +72,7 @@ esorics,ESORICS,security,,conference
 eurocrypt,EUROCRYPT,theory,cryptography,conference
 eurosys,Eurosys,systems,operating systems,conference
 expert,EXPERT,artificial intelligence,,journal
+fase,FASE,software engineering,,conference
 fast,FAST,systems,operating systems,conference
 fccm,FCCM,circuits,,conference
 fmcad,FMCAD,design automation,verification,conference
@@ -99,6 +103,7 @@ icde,ICDE,databases,,conference
 icdm,ICDM,databases,data mining,conference
 icdt,ICDT,databases,,conference
 icebe,ICEBE,other,,conference
+icer,ICER,computer science education,,conference
 icfp,ICFP,theory,programming languages,conference
 icgse,ICGSE,software engineering,,conference
 icis,ICIS,other,,conference
@@ -144,19 +149,23 @@ issre,ISSRE,systems,software engineering,conference
 issta,ISSTA,systems,software engineering,conference
 iswc,ISWC,artificial intelligence,"information retrieval, web technologies",conference
 itc,ITC,design automation,"verification, architecture, circuits ",conference
+iticse,ITiCSE,computer science education,,conference
 itng,ITNG,other,,conference
 itpro,ITPRO,other,,journal
 iui,IUI,human computer interaction,,conference
 jacm,JACM,other,,journal
+jair,JAIR,artificial intelligence,,journal
 jcdl,JCDL/DL,other,,conference
 jdiq,JDIQ,data mining,,journal
 jea,JEA,algorithms,theory,journal
+jeric,TOCE,computer science education,,journal
 jetc,JETC,systems,,journal
 jmicro,IEEE MICRO,architecture,systems,journal
 jmlr,JMLR,machine learning,artificial intelligence,journal
 jocch,JOCCH,other,,journal
 kdd,KDD,artificial intelligence,data mining,conference
 kr,KR,artificial intelligence,,conference
+lats,LATS,computer science education,,conference
 lcn,LCN,systems,networks,conference
 lctes,LCTES,systems,"embedded & real time, programming languages",conference
 lics,LICS,theory,verification,conference
@@ -174,6 +183,7 @@ mobisec,Mobisec,systems,"mobile,security",conference
 mobisys,MobiSys,systems,mobile,conference
 naacl,NAACL/HLT,artificial intelligence,"natural language processing,human computer interaction",conference
 ndss,NDSS,systems,"networks,security,distributed systems",conference
+nfm,NFM,software verification,,conference
 nips,NIPS,artificial intelligence,"machine learning, data mining",conference
 noms,NOMS,systems,networks,conference
 nsdi,NSDI,systems,networks,conference
@@ -219,6 +229,7 @@ siamnum,SIAMNUM,theory,,journal
 siamrev,SIAMREV,other,,journal
 siamsc,SIAMSC,high performance computing,,journal
 sigcomm,SIGCOMM,systems,networks,conference
+sigcse,SIGCSE,computer science education,,conference
 sigecom,EC,other,,conference
 sigir,SIGIR,artificial intelligence,information retrieval,conference
 sigmetrics,SIGMETRICS,systems,"performance analysis,networks",conference
@@ -229,12 +240,14 @@ software,SOFTWARE,software engineering,,journal
 sosp,SOSP,systems,operating systems,conference
 sp,S&P,systems,security,conference
 spaa,SPAA,theory,"algorithms,architecture,parallel computing",conference
+spin,SPIN,software verification,,conference
 srds,SRDS,systems,"operating systems, distributed systems",conference
 ssdbm,SSDBM,databases,data mining,conference
 stacs,STACS,theory,"algorithms, verification",conference
 stoc,STOC,theory,algorithms,conference
 sysose,SOSE,systems,,conference
 taas,TAAS,systems,,journal
+tacas,TACAS,software verification,,conference
 taccess,TACCESS,other,,journal
 taco,TACO,programming languages,"architecture, systems",journal
 talg,TALG,algorithms,theory,journal
@@ -246,6 +259,7 @@ tcc,TCC,theory,cryptography,conference
 tdsc,TDSC,systems,,journal
 tecs,TECS,embedded & real time,,journal
 tissec,TISSEC,security,systems,journal
+tist,TIST,artificial intelligence,,journal
 titb,TITB,other,,journal
 tkdd,TKDD,data mining,artificial intelligence,journal
 tkde,TKDE,data mining,artificial intelligence,journal
