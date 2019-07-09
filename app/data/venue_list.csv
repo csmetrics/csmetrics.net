@@ -191,6 +191,7 @@ nsdi,NSDI,systems,networks,conference,Symposium on Networked Systems Design and 
 oopsla,OOPSLA,systems,programming languages,conference,"ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications",https://dblp.uni-trier.de/db/conf/oopsla/
 osdi,OSDI,systems,operating systems,conference, USENIX Symposium on Operating Systems Design and Implementation,https://dblp.uni-trier.de/db/conf/osdi/
 pact,PACT,systems,"architecture, programming languages, parallel computing",conference,International Conference on Parallel Architectures and Compilation Techniques,https://dblp.uni-trier.de/db/conf/pact/
+pacmpl,PACMPL,systems,"programming languages,theory",journal,Proceedings of the ACM on Programming Languages,https://dblp.org/db/journals/pacmpl/
 pami,PAMI,artificial intelligence,,journal,IEEE Transactions on Pattern Analysis & Machine Intelligence,https://dblp.uni-trier.de/db/journals/pami/
 percom,PERCOM,systems,"networks, operating systems, distributed systems",conference,IEEE International Conference on Pervasive Computing and Communications,https://dblp.uni-trier.de/db/conf/percom/
 pervasive,PERVASIVE,systems,,journal,IEEE Pervasive Computing,https://dblp.uni-trier.de/db/journals/pervasive/
