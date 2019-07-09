@@ -180,6 +180,7 @@ var conftable = $('#conflist').DataTable({
     { title: "{{ words.ctable_label_2 }}", className: "col-xs-8 dt-body-left" },
     { title: "{{ words.ctable_label_3 }}", className: "col-xs-1 dt-body-right" },
     { title: "{{ words.ctable_label_3 }}", className: "col-xs-1 dt-body-right" },
+    { title: "", className: "col-xs-1 dt-body-right" },
   ],
   "columnDefs": [
     {
@@ -193,6 +194,10 @@ var conftable = $('#conflist').DataTable({
     },
     {
       "targets": 4,
+      "visible": false
+    },
+    {
+      "targets": 6,
       "visible": false
     }
   ],
@@ -371,11 +376,12 @@ function updateConfList(){
           }
           var newRow = {};
           newRow[0] = i;
-          newRow[1] = "<a href='"+result[i][4]+"'>"+result[i][0]+"</a>";
+          newRow[1] = result[i][0];
           newRow[2] = result[i][3][0].toUpperCase();
           newRow[3] = "<small>"+result[i][1]+"</small>";
           newRow[4] = 1;
           newRow[5] = parseFloat(result[i][2]).toFixed(0);
+          newRow[6] = result[i][4]; // url to the dblp
           newrows.push(newRow);
         }
         conftable.rows.add(newrows);
