@@ -193,6 +193,12 @@ var conftable = $('#conflist').DataTable({
       }
     },
     {
+      "targets": 1,
+      "createdCell":  function (td, cellData, rowData, row, col){
+        $(td).html("<a href='"+rowData[6]+"' target='_blank'>"+cellData+"</a>");
+      }
+    },
+    {
       "targets": 4,
       "visible": false
     },
