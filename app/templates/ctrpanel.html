@@ -371,7 +371,7 @@ function updateConfList(){
           }
           var newRow = {};
           newRow[0] = i;
-          newRow[1] = result[i][0];
+          newRow[1] = "<a href='"+result[i][4]+"'>"+result[i][0]+"</a>";
           newRow[2] = result[i][3][0].toUpperCase();
           newRow[3] = "<small>"+result[i][1]+"</small>";
           newRow[4] = 1;
