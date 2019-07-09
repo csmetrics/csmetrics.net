@@ -1,0 +1,13 @@
+key,urlbase,period start,period end
+ase,https://dblp.org/db/conf/kbse/ase{}.html,2007,2019
+disc,https://dblp.org/db/conf/wdag/disc{}.html,2007,2019
+icaps,https://dblp.org/db/conf/aips/icaps{}.html,2007,2019
+ijcar,https://dblp.org/db/conf/cade/ijcar{}.html,2007,2019
+lctes,https://dblp.org/db/conf/lctrts/lctes{}.html,2007,2019
+ubicomp,https://dblp.org/db/conf/huc/ubicomp{}.html,2007,2019
+sea,https://dblp.org/db/conf/wea/sea{}.html,2007,2019
+ipdps,https://dblp.org/db/conf/ipps/ipdps{}.html,2007,2019
+aamas,https://dblp.org/db/conf/atal/aamas{}.html,2007,2019
+ssd,https://dblp.org/db/conf/ssd/sstd{}.html,2007,2019
+csfw,https://dblp.org/db/conf/csfw/csf{}.html,2007,2019
+ssd,https://dblp.org/db/conf/ssd/sstd{}.html,2007,2019
