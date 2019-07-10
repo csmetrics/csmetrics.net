@@ -4,7 +4,7 @@
 
 ### Backend
 
-To generate [csmetrics.org](http://csmetrics.org/), we downloaded a full list of papers from [DBLP](https://dblp.org/search/) over the past 10 years (2007-2016) . We cleaned publication venue, citations, and institutional data for over 209 conferences and 80 journals. We used [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. See [data cleaning section](https://github.com/csmetrics/csmetrics.org/blob/8761f3bed6592db9a45a8fd9056327b67a7ed61c/docs/Overview.md#data-cleaning)  for detail.
+To generate [csmetrics.org](http://csmetrics.org/), we downloaded a full list of papers from [DBLP](https://dblp.org/search/) over the past 12 years (2007-2018) . We cleaned publication venue, citations, and institutional data for over 221 conferences and 87 journals. We used [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. See [data cleaning section](https://github.com/csmetrics/csmetrics.org/blob/8761f3bed6592db9a45a8fd9056327b67a7ed61c/docs/Overview.md#data-cleaning)  for detail.
 
 For each venue, we identified [major topics it covers](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_category.csv). In the future, it may be possible to develop a methodology for grouping and analyzing sub-areas.
 
