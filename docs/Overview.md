@@ -29,7 +29,7 @@ Publications, and citations to these publications, are time-honored ways in whic
 
 ## <a name="methodology"></a>Methodology
 
-We organize computing publication data by venue, author institution, and citations.   We currently have 209 conferences and 80 journals. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 6646 institutions that our tools identified as participating in CS research world-wide.
+We organize computing publication data by venue, author institution, and citations.   We currently have 221 conferences and 87 journals. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 6646 institutions that our tools identified as participating in CS research world-wide.
 
 The next section first describes more on why and how we cleaned publication data, and then describes our analysis and metrics based on this data.
 
@@ -39,26 +39,62 @@ Publication data is available from many sources, including [DBLP](http://dblp.un
 
 #### Choice of venues
 
-We chose to include 209 conferences and 80 journal venues. Computing research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and computing research evolves and flourishes.  Including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation.  We thus chose an inclusive list of venues, all of which use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
+We chose to include 221 conferences and 87 journal venues. Computing research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and computing research evolves and flourishes.  Including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation.  We thus chose an inclusive list of venues, all of which use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
 
 In other words, our complete set of venues may be larger than many users would like.  As such, we give users the option to leave out any venues that they would prefer not to include.  Note that adding new venues will require  cleaning and processing the data, but we welcome these additions using a [github pull request](https://github.com/csmetrics/csmetrics.org).
 
 #### Cleaning publication to venue mapping
 
-From DBLP, we downloaded the xml file for each conference/journal considered for every year/volume in our data range of interest (2007-2018). From this XML file, we extracted paper titles, and additional information, such as page length, authors, etc.). From this list we identified papers, which we defined as full research papers at the venue that were selected through the same editorial process (e.g., submission, peer reviewing, revision, etc.)
+From DBLP, we downloaded the HTML file for each conference/journal considered for every year/volume in our data range of interest (2007-2018). From this HTML file, we extracted paper titles, and additional information, such as page length, authors, etc.). From this list we identified papers, which we defined as full research papers at the venue that were selected through the same editorial process (e.g., submission, peer reviewing, revision, etc.)
 
-For many of the conferences, we used section headers in DBLP to  filter out workshop papers, demonstrations, tutorials, and everything else other than referred papers. The filter that we used  searched for section headers and excluded documents with any of the following keywords:
-['Workshop', 'Tutorial', 'Demo', 'Keynote', 'Panel', 'Senior Member', 'Short', 'Poster', 'Oral', 'Student', 'Doctoral ', 'Speaker', "What's Hot", "Invited "]
+For the conferences, we used section headers in DBLP to filter out workshop papers, demonstrations, tutorials, and everything else other than referred papers. The filter that we used searched for section headers and excluded documents with any of the following keywords: ['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge'].
+For the journals, we excluded documents with the following keywords: ['editor', 'special issue','state of the journal', 'in memory'].
 
-If any of the keywords were detected, we did not include the papers listed in that section, unless we determined by hand they were required for the specific venue. A small number of venues included full papers under ‘Oral Presentations’ or under ‘Poster Presentations,’ because they were misclassified by the data source (e.g., ACM or IEEE).  We consulted experts familiar with these conferences regarding such exceptions.  We also double-checked conferences with an abnormally low number of publications to ensure that we weren’t removing good entries. For the venues where this exception was true, we removed the respective keywords from the filtering list and re-extracted the information for that venue.  For conferences that had page numbers, we included  the paper only if it had a regular, Arabic numeral page numbers. This policy effectively eliminated ‘Front Matter.’
+We use the page numbers to further filter short papers -- see [different filtering methods for comparison](#filtering). Among the five options, we choose 'Header + Page Num (k)' filter. The minimum page length is 4.
 
-We used a similar filtering process  for journals. However, instead of applying the filters to section headers, we applied them directly to the paper title. In general, the data for the journals appeared cleaner than for conferences. We used the following keywords  for the journals: ['Editor', 'editor', 'special issue', 'Special Issue', 'State of the Journal', 'state of the journal', 'In Memory']. These filters effectively remove the introductions to each issue. (We did not discard papers from special editions, but removed the introduction to a special edition.)
+#### <a name="filtering"></a>Different filtering methods for comparison
 
-This process generated a full list of papers for every conference and every journal over the past 12 years (2007-2018). The next step of the cleaning process was to cross-check the number of paper titles we gathered for ~70 conferences with the number specified by the respective program committee in the front matter of the conference. The conferences were chosen randomly, with a bias towards conferences with greater variation in publication counts between years. The idea behind the bias was that publication counts should not vary too much from year to year, so those conferences were more likely to contain ‘bad’ papers than others.
+Five different filtering methods are considered:
 
-The comparisons of our counts and the conference-specified counts from front matter and other sources are in [PublicationCheck](https://github.com/csmetrics/csmetrics.org/blob/master/docs/PublicationCleaningNote.csv). Many of the comparisons matched up as expected, others had minor errors, and some conferences required a bit of manual editing and removal. For any conference with an error, we reviewed and corrected all ten years of that conference.  The publication counts were also reviewed by experts  familiar with the various conferences.
+* `filter_by_header 'Header'`: This method uses information contained in the header of the section the paper was scraped from. Specifically, if the section header for a paper contains particular keywords then that paper will be excluded. Not all venues are divided into sections on DBLP and in cases where there are papers without section headers, all such papers are included.
 
-We used a script to send this list of papers titles to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned for each paper its authors, affiliations, and citations. We sent the Microsoft’s API   only  the  title because it does not have every paper linked to an author and/or affiliation. Microsoft Academic did not match about 2.5% of our title searches.
+* `filter_by_page_number_keep_missing 'Page Num (k)'`: This method uses information about the pagination for the paper as scraped from DBPL with the rest of the paper information. The pagination which is pulled from the webpage HTML and stored as a string is parsed into a start and end page number. Using these numbers, the length of the papers is determined and papers are included if they meet a minimum page length. The keep_missing and (k) in the function name and legend label for this filter refer to the method used for dealing with papers for which pagination information could not be validly formatted into a start and end page. In this instance, papers without valid pagination are included (i.e. are not removed by the filter).
+
+* `filter_by_page_number_remove_missing 'Page Num (r)'`: This method is the same as filter_by_page_number_keep_missing with the exception that papers for which pagination information could not be validly formatted are not included (i.e. are removed by the filter).
+
+* `filter_by_header_and_page_number_keep_missing 'Header + Page Num (k)'`: This method first applies the filter_by_header method described above, and then applies the filter_by_page_number_keep_missing method to the remaining papers. This means that the resulting papers are the intersection of the papers that pass each of these filtering methods.
+
+* `filter_by_header_and_page_number_remove_missing 'Header + Page Num (r)'`: Similarly, this method first applies the filter_by_headermethod described above, and then applies the filter_by_page_number_remove_missing method to the remaining papers. Again, this means that the resulting papers are the intersection of the papers that pass each of these filtering methods.
+
+We test the filtering methods using the random sample of (conference,year) tuples (~70) from [conference_samples](conference_samples.csv). The Figure below shows the cumulative fraction of a modest set of (conference, year) tuples with respect to the difference between the differences between what the systems finds and the editors’ input in proceeding foreword.
+
+<p align="center">
+<img width="60%" src="filtering_count_comparison.png" />
+</p>
+<p align="center">
+Figure 1. Filtering count comparison
+</p>
+
+#### Extra scraping for missed papers
+Papers for some venues were not accurately retrieved in the scraping process for a number of different reasons.
+We investigated the venues with many years of zero paper counts, and did the extra scraping for the missed papers.
+
+* ** Case 1) Venues with different keys used in our database compared to the key used by DBLP.**
+A list of venues where the keys contained in [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv) are not the same as the key used by DBLP to represent the same venue is contained in [venues_with_different_dblp_keys](https://github.com/csmetrics/csmetrics.org/blob/master/data/venues_with_different_dblp_keys.csv).
+
+* ** Case 2) Venues that did not fit the general DBLP url template.**
+A list of conferences* where the url for the DBLP data did not fit the simple format matched by most conferences, that is `https://dblp.org/db/conf/{key}/{key}{year}.html`, can be found at [venues_with_different_dblp_baseurls](https://github.com/csmetrics/csmetrics.org/blob/master/data/venues_with_different_dblp_baseurls.csv). Generally this occurs where DBLP has group multiple conferences/workshops together under one group key and then use the conference key to specify after that, i.e. `https://dblp.org/db/conf/{groupkey}/{conferencekey}{year}.html`.
+
+  (*) This list only contains conferences because the method used to scrape the journals makes this problem unique to the conferences. More specifically, the method for journals does not use a set template for each (venue, year) tuple because the journals are stored by volume number rather than year.
+
+* ** Case 3) Journals that needed to be retrieved through an alternative scraping method.**
+A list of journals where that needed to be scraped using an alternative method is at [journals_to_use_alternative_scraping_method](https://github.com/csmetrics/csmetrics.org/blob/master/data/journals_to_use_alternative_scraping_method.csv). The webpages for these journals listed the volumes in a different way and therefore were not picked up by the standard scraping method used for most journals.
+
+* ** Case 4) Papers that have single page number in DBLP.**
+
+
+
+We used a script to send this list of papers titles to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned for each paper its authors, affiliations, and citations. We use MAG data dump (2019-01-01 ver.) to query paper titles. Microsoft Academic did not match about 2.47% of our title searches.
 
 #### Cleaning author to institution mapping
 
