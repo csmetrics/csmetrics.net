@@ -20,12 +20,14 @@ with open(exceptions_list, "r") as fh:
 def get_page_length(pagination, venue, year):
     global exceptions
 
-    # Consider single page numbers for the given venues to be misformed and therefore return None
-    if (venue, year) in exceptions:
-        return None
     
     try:
         int(pagination)
+
+        # Consider single page numbers for the given venues to be misformed and therefore return None
+        if (venue, year) in exceptions:
+            return None
+
         return 1
     except:
         pass
