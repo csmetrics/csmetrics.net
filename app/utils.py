@@ -110,13 +110,15 @@ def loadInstData():
     for r in reader:
         instInfo[r[0]] = {
             "fullname": r[1].strip(),
-            "url": r[2].strip(),
-            "wiki": r[3].strip()
+            "grid": r[2].strip(),
+            "url": r[3].strip(),
+            "wiki": r[4].strip()
         }
     for key in set(instMap.values()):
         if key not in instInfo:
             instInfo[key] = {
                 "fullname": key,
+                "grid": "",
                 "url": "",
                 "wiki": ""
             }
