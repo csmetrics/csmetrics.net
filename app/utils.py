@@ -34,7 +34,7 @@ def readVenueName():
     venuefullname = open(FILE_VENUE)
     reader = csv.reader(venuefullname, delimiter=',')
     next(reader) # skip the first line
-    venueName = dict((r[0], {"abbr": r[1], "full": r[5]}) for r in reader if r[0] != "")
+    venueName = dict((r[0], {"abbr": r[1], "full": r[5], "link": r[6]}) for r in reader if r[0] != "")
 
 
 # confconf = {}
@@ -197,7 +197,7 @@ def getVenueList(keywords):
     keyword_vlist = set()
     for k in keywords:
         keyword_vlist.update(set(categorySet[k.lower()]))
-    vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v), getVenueType(v))\
+    vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v), getVenueType(v), venueName[v]["link"],)\
                 for v in keyword_vlist]
     return vlist
 

@@ -180,6 +180,7 @@ var conftable = $('#conflist').DataTable({
     { title: "{{ words.ctable_label_2 }}", className: "col-xs-8 dt-body-left" },
     { title: "{{ words.ctable_label_3 }}", className: "col-xs-1 dt-body-right" },
     { title: "{{ words.ctable_label_3 }}", className: "col-xs-1 dt-body-right" },
+    { title: "", className: "col-xs-1 dt-body-right" },
   ],
   "columnDefs": [
     {
@@ -192,7 +193,17 @@ var conftable = $('#conflist').DataTable({
       }
     },
     {
+      "targets": 1,
+      "createdCell":  function (td, cellData, rowData, row, col){
+        $(td).html("<a href='"+rowData[6]+"' target='_blank'>"+cellData+"</a>");
+      }
+    },
+    {
       "targets": 4,
+      "visible": false
+    },
+    {
+      "targets": 6,
       "visible": false
     }
   ],
@@ -344,9 +355,9 @@ function updateInfoConf(){
   selectedVenueList = [];
   var rows_selected = conftable.column(0).checkboxes.selected();
   $.each(rows_selected, function(index, rowId){
-     selectedVenueList.push(conftable.row(index).data()[1])
+     selectedVenueList.push(conftable.row(rowId).data()[1])
   });
-  // console.log(selectedVenueList);
+  // console.log("selectedVenueList", selectedVenueList);
   inputChanged();
 }
 
@@ -376,6 +387,7 @@ function updateConfList(){
           newRow[3] = "<small>"+result[i][1]+"</small>";
           newRow[4] = 1;
           newRow[5] = parseFloat(result[i][2]).toFixed(0);
+          newRow[6] = result[i][4]; // url to the dblp
           newrows.push(newRow);
         }
         conftable.rows.add(newrows);
