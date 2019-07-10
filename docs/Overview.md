@@ -77,21 +77,20 @@ Figure 1. Filtering count comparison
 
 #### Extra scraping for missed papers
 Papers for some venues were not accurately retrieved in the scraping process for a number of different reasons.
-We investigated the venues with many years of zero paper counts, and did the extra scraping for the missed papers.
+We investigated the venues with many years of zero paper counts, and did the extra scraping for the missed papers. See this [notebook](https://github.com/csmetrics/csmetrics.org/blob/master/data/get_and_clean_DBLP_papers.ipynb) for more details.
 
-* ** Case 1) Venues with different keys used in our database compared to the key used by DBLP.**
+* **Case 1) Venues with different keys used in our database compared to the key used by DBLP.**
 A list of venues where the keys contained in [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv) are not the same as the key used by DBLP to represent the same venue is contained in [venues_with_different_dblp_keys](https://github.com/csmetrics/csmetrics.org/blob/master/data/venues_with_different_dblp_keys.csv).
 
-* ** Case 2) Venues that did not fit the general DBLP url template.**
+* **Case 2) Venues that did not fit the general DBLP url template.**
 A list of conferences* where the url for the DBLP data did not fit the simple format matched by most conferences, that is `https://dblp.org/db/conf/{key}/{key}{year}.html`, can be found at [venues_with_different_dblp_baseurls](https://github.com/csmetrics/csmetrics.org/blob/master/data/venues_with_different_dblp_baseurls.csv). Generally this occurs where DBLP has group multiple conferences/workshops together under one group key and then use the conference key to specify after that, i.e. `https://dblp.org/db/conf/{groupkey}/{conferencekey}{year}.html`.
 
-  (*) This list only contains conferences because the method used to scrape the journals makes this problem unique to the conferences. More specifically, the method for journals does not use a set template for each (venue, year) tuple because the journals are stored by volume number rather than year.
+  (\*) This list only contains conferences because the method used to scrape the journals makes this problem unique to the conferences. More specifically, the method for journals does not use a set template for each (venue, year) tuple because the journals are stored by volume number rather than year.
 
-* ** Case 3) Journals that needed to be retrieved through an alternative scraping method.**
+* **Case 3) Journals that needed to be retrieved through an alternative scraping method.**
 A list of journals where that needed to be scraped using an alternative method is at [journals_to_use_alternative_scraping_method](https://github.com/csmetrics/csmetrics.org/blob/master/data/journals_to_use_alternative_scraping_method.csv). The webpages for these journals listed the volumes in a different way and therefore were not picked up by the standard scraping method used for most journals.
 
-* ** Case 4) Papers that have single page number in DBLP.**
-
+* **Case 4) Papers that have single page number in DBLP.**
 
 
 We used a script to send this list of papers titles to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned for each paper its authors, affiliations, and citations. We use MAG data dump (2019-01-01 ver.) to query paper titles. Microsoft Academic did not match about 2.47% of our title searches.
@@ -150,8 +149,7 @@ Numerous prestigious international research organizations, including DORA, the U
 
 This tool currently has no financial support and cannot continue in perpetuity or be improved without such support. We believe that this data collection and analysis activity of computer science institutions should be supported and expanded with student enrollments, graduation rates, awards, current faculty members, etc. by the community and welcome your participation.
 
-<p> Please fill out this [short survey](https://www.surveymonkey.com/r/csmetrics)  to tell us if the tool
-  is useful, how you are using this information, and to influence the future of this tool. </p>
+Please fill out this [short survey](https://www.surveymonkey.com/r/csmetrics)  to tell us if the tool is useful, how you are using this information, and to influence the future of this tool.
 
 ## <a name="contributors"></a>Contributors
 
