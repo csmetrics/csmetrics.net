@@ -8,9 +8,8 @@ from .mag_search import gen_inst_alias, clean_inst
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
-FILE_GRID = os.path.join(cur_path, "data/grid.csv")
 FILE_INST_ALIAS = os.path.join(cur_path, "data/inst_alias.csv")
-FILE_INST_FULL = os.path.join(cur_path, "data/inst_fullname.csv")
+FILE_INST_FULL = os.path.join(cur_path, "data/inst_full_clean.csv")
 
 FILE_VENUE = os.path.join(cur_path, "data/venue_list.csv")
 DIR_RAW_DATA = os.path.join(cur_path, "../data/scores")
@@ -24,7 +23,6 @@ instName = set()
 instMap = None
 instInfo = None
 venueWeight = None
-gridMap = None
 paperData = None
 citationData = None
 
@@ -75,16 +73,7 @@ def readPaperCount():
 
 
 def loadInstData():
-    global instMap, instInfo, gridMap
-
-    # load Grid information
-    if gridMap != None:
-        return
-    gridMap = dict()
-    reader = csv.reader(open(FILE_GRID))
-    next(reader) # skip the first line
-    gridMap = {r[0].strip():(r[1].strip(),r[2].strip()) for r in reader}
-    # print(gridMap)
+    global instMap, instInfo
 
     #load inst_alias
     if instMap != None:
@@ -110,17 +99,19 @@ def loadInstData():
     for r in reader:
         instInfo[r[0]] = {
             "fullname": r[1].strip(),
-            "grid": r[2].strip(),
-            "url": r[3].strip(),
-            "wiki": r[4].strip()
+            "type": r[2].strip(),
+            "continent": r[3].strip(),
+            "country": r[4].strip(),
+            "url": r[4].strip()
         }
     for key in set(instMap.values()):
         if key not in instInfo:
             instInfo[key] = {
                 "fullname": key,
-                "grid": "",
-                "url": "",
-                "wiki": ""
+                "type": "Other",
+                "continent": "Other",
+                "country": "",
+                "url": ""
             }
 
 
@@ -230,8 +221,9 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
                 rlist[name] = [wpub[v], cite[v], type]
 
     return [{"name": instInfo[k]["fullname"],
-            "type": gridMap[instInfo[k]["grid"]][1] if instInfo[k]["grid"] in gridMap else "other",
-            "country": gridMap[instInfo[k]["grid"]][0] if instInfo[k]["grid"] in gridMap else "other",
+            "type": instInfo[k]["type"],
+            "continent": instInfo[k]["continent"],
+            "country": instInfo[k]["country"],
             "wpub": v[0], "cite": v[1],
-            "url": instInfo[k]["url"] if instInfo[k]["url"] != "" else instInfo[k]["wiki"]
+            "url": instInfo[k]["url"]
         } for k, v in rlist.items()]

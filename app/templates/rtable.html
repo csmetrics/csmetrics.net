@@ -13,18 +13,19 @@ var ranktable = $('#rtable').DataTable({
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-6'i><'col-sm-6'f>>"+
           "<'row'<'col-sm-12'p>>",
-  "pageLength": 20, // default page
+  "pageLength": 50, // default page
   "lengthMenu": [[ 10, 20, 50, 100, -1 ], [ 10, 20, 50, 100, "All" ]], // page options
   "lengthChange": true,
   "columns": [
     // { className: "details-control" },
     { title: "{{ words.rtable_label_0 }}", className: "index dt-body-center" },
     { title: "{{ words.rtable_label_1 }}", className: "institution dt-body-left" },
-    { title: "{{ words.rtable_label_2 }}", className: "dt-body-right" },
-    { title: "{{ words.rtable_label_3 }}", className: "dt-body-right" },
-    { title: "{{ words.rtable_label_4 }}", className: "dt-body-right" },
-    { title: "type", className: "inst-type" },
-    { title: "Country", className: "inst-country" },
+    { title: "{{ words.rtable_label_2.0 }}", className: "small dt-body-right" },
+    { title: "{{ words.rtable_label_3.0 }}", className: "small dt-body-right" },
+    { title: "{{ words.rtable_label_4 }}", className: "small dt-body-right" },
+    { title: "Type", className: "small inst-type" },
+    { title: "Region", className: "small inst-continent" },
+    { title: "", className: "small inst-country" },
   ],
   "columnDefs": [
     {
@@ -32,13 +33,25 @@ var ranktable = $('#rtable').DataTable({
       "sortable": false,
       "orderable": false
     },
-    {
-      "targets": 1,
-      "searchable": true
-    },
+    { "targets": 0, "width": "5%" },
+    { "targets": 1, "width": "40%" },
+    { "targets": 2, "width": "5%" },
+    { "targets": 3, "width": "5%" },
+    { "targets": 4, "width": "5%" },
     {
       "targets": 5,
-      "visible": false
+      "visible": true,
+      "sortable": false,
+    },
+    {
+      "targets": 6,
+      "visible": true,
+      "sortable": false,
+    },
+    {
+      "targets": 7,
+      "visible": true,
+      "sortable": false,
     }
   ],
   "language": {
@@ -88,8 +101,7 @@ ranktable.on( 'order.dt', function () {
   } );
 } ).draw();
 
-// append selector at institution header
-ranktable.columns('.institution').every( function () {
+ranktable.columns('.inst-type').every( function () {
   var that = this;
   var select = $('<select id="regionselector"/>')
     .appendTo(this.header())
@@ -100,6 +112,27 @@ ranktable.columns('.institution').every( function () {
         ranktable.columns('.inst-type').search('').draw();
       } else {
         ranktable.columns('.inst-type').search(val).draw();
+      }
+    });
+  select_regions = ["all", "Education", "Company", "Government", "Facility", "Nonprofit", "Healthcare", "Archive", "Other"];
+  console.log(select_regions)
+  for (var i in select_regions) {
+    select.append('<option value="'+select_regions[i]+'">'+select_regions[i]+'</option>');
+  }
+});
+
+// append selector at institution header
+ranktable.columns('.inst-continent').every( function () {
+  var that = this;
+  var select = $('<select id="regionselector"/>')
+    .appendTo(this.header())
+    .on( 'change', function () {
+      var val = $(this).val();
+      console.log(val);
+      if (val == "all") {
+        ranktable.columns('.inst-continent').search('').draw();
+      } else {
+        ranktable.columns('.inst-continent').search(val).draw();
       }
     });
   select_regions = {{ words.select_regions|safe }};

@@ -31,6 +31,39 @@ def get_instituion(instname):
     return normalized_name
 
 
+def merge_grid_institutions():
+    gridMap = dict()
+    reader = csv.reader(open("data/grid.csv"))
+    next(reader) # skip the first line
+    gridMap = {r[0].strip():(r[1].strip(),r[2].strip()) for r in reader}
+
+    reader = csv.reader(open("data/grid_types.csv"))
+    next(reader)
+    gridType = {r[0]:r[1] for r in reader}
+
+    instInfo = {}
+    csvfile = open('inst_full_clean.csv', 'w', newline='')
+    spamwriter = csv.writer(csvfile, delimiter=',')
+
+    reader = csv.reader(open("data/inst_fullname.csv"))
+    next(reader)
+    for r in reader:
+        instInfo[r[0]] = {
+            "fullname": r[1].strip(),
+            "grid": r[2].strip(),
+            "url": r[3].strip(),
+            "wiki": r[4].strip()
+        }
+        grid = instInfo[r[0]]["grid"]
+        # print(r[0], instInfo[r[0]]["grid"], gridType[instInfo[r[0]]["grid"]])
+        instInfo[r[0]]["country"] = gridMap[grid][0] if grid in gridMap else ""
+        instInfo[r[0]]["continent"] = gridMap[grid][1] if grid in gridMap else "Other"
+        instInfo[r[0]]["type"] = gridType[grid] if grid in gridType else "Other"
+
+    for k,v in instInfo.items():
+        spamwriter.writerow([k] + [v["fullname"],v["type"],v["continent"],v["country"],v["url"] if v["url"] != "" else v["wiki"]])
+
+
 def clean_inst():
     # inst_alias clean
     # instfile = open("inst_alias.csv")
@@ -73,3 +106,7 @@ def gen_inst_alias(instName):
                                 quotechar='|', quoting=csv.QUOTE_MINIMAL)
         for k, v in instNameAlias.items():
             spamwriter.writerow([k] + [alias for alias in v])
+
+
+if __name__ == '__main__':
+    merge_grid_institutions()
