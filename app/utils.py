@@ -108,12 +108,13 @@ def loadInstData():
     reader = csv.reader(infolist)
     next(reader) # skip the first line
     for r in reader:
-        instInfo[r[0]] = {
-            "fullname": r[1].strip(),
-            "grid": r[2].strip(),
-            "url": r[3].strip(),
-            "wiki": r[4].strip()
-        }
+        if r[0] in set(instMap.values()):
+            instInfo[r[0]] = {
+                "fullname": r[1].strip(),
+                "grid": r[2].strip(),
+                "url": r[3].strip(),
+                "wiki": r[4].strip()
+            }
     for key in set(instMap.values()):
         if key not in instInfo:
             instInfo[key] = {
