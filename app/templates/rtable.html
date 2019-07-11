@@ -37,7 +37,7 @@ var ranktable = $('#rtable').DataTable({
     },
     {
       "targets": 5,
-      "visible": false
+      "visible": true
     }
   ],
   "language": {
@@ -94,18 +94,18 @@ ranktable.columns('.institution').every( function () {
     .appendTo(this.header())
     .on( 'change', function () {
       var val = $(this).val();
-      // console.log(val);
-      if (val == "cra_all") {
-        ranktable.columns('.inst-type').search('1|2', true, true).draw();
-      } else if (val == "cra_academic") {
-        ranktable.columns('.inst-type').search(2).draw();
-      } else {
+      console.log(val);
+      if (val == "all") {
         ranktable.columns('.inst-type').search('').draw();
+      } else {
+        ranktable.columns('.inst-type').search(val).draw();
       }
     });
-  select.append('<option value="all">{{ words.select_region_all }}</option>');
-  select.append('<option value="cra_all">{{ words.select_region_cra_all }}</option>');
-  select.append('<option value="cra_academic">{{ words.select_region_cra_academic }}</option>');
+  select_regions = {{ words.select_regions|safe }};
+  console.log(select_regions)
+  for (var i in select_regions) {
+    select.append('<option value="'+select_regions[i]+'">'+select_regions[i]+'</option>');
+  }
 });
 
 
