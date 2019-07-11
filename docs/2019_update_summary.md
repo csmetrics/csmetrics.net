@@ -37,7 +37,6 @@ Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.org/blob
 
 New categories added:
 * COMPUTATIONAL ECONOMiCS
-* SOFTWARE VERIFICATION
 * CS EDUCATION
 
 ### 4. UI changes
