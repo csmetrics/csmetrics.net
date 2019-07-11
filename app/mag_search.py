@@ -31,9 +31,9 @@ def get_instituion(instname):
     return normalized_name
 
 
-def clean_inst(filename):
+def clean_inst():
     # inst_alias clean
-    # instfile = open(filename)
+    # instfile = open("inst_alias.csv")
     # reader = csv.reader(instfile, delimiter=',')
     # with open('inst_alias_clean.csv', 'w', newline='') as csvfile:
     #     spamwriter = csv.writer(csvfile, delimiter=',')
@@ -44,7 +44,7 @@ def clean_inst(filename):
     #             spamwriter.writerow([r[0], "{}".format(','.join(r[1:]))])
 
     # change csv format for inst_fullname
-    instfile = open(filename)
+    instfile = open("inst_fullname")
     reader = csv.reader(instfile, delimiter='\t')
     with open('inst_full_clean.csv', 'w', newline='') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=',')
