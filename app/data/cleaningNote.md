@@ -17,8 +17,8 @@ aalto university school of science --> aalto university
 #### We found *6231* keys from *6245* institution names (Updated 11/July/2019)
 | type | count |
 |------|------:|
-| name == key (primary name) | *6245* |
-| name != key (alias name) | *6231* |
+| name == key (primary name) | *6231* |
+| name != key (alias name) | *14* |
 | unregistered name | *1* |
 
 - Unregistered aliases :
