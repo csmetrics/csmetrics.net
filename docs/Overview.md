@@ -29,7 +29,7 @@ Publications, and citations to these publications, are time-honored ways in whic
 
 ## <a name="methodology"></a>Methodology
 
-We organize computing publication data by venue, author institution, and citations.   We currently have 221 conferences and 87 journals. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 6646 institutions that our tools identified as participating in CS research world-wide.
+We organize computing publication data by venue, author institution, and citations.   We currently have 221 conferences and 87 journals. Our intention is to include all computing research venues that use a rigorous peer-review process.  We currently present 6231 institutions that our tools identified as participating in CS research world-wide.
 
 The next section first describes more on why and how we cleaned publication data, and then describes our analysis and metrics based on this data.
 
@@ -97,7 +97,7 @@ We used a script to send this list of papers titles to the [Microsoft Academic S
 
 #### Cleaning author to institution mapping
 
-Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 6,646 institutions world-wide. To clean this data, we used a script to send this list of institutional names to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned formatted interpretations. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/cleaningNote.md).
+Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 6231 institutions world-wide. To clean this data, we used a script to send this list of institutional names to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned formatted interpretations. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/cleaningNote.md).
 
 #### Choice of research topics
 

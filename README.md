@@ -23,7 +23,7 @@
 
 ## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
-**Defaults** Load the page and then press the green 'Go' button to produce a combined aggregated metric (both measured and predicted) for 6729 institutions (academic and industry) for papers published in 2007 to 2018 at 221 conferences and 87 journals.
+**Defaults** Load the page and then press the green 'Go' button to produce a combined aggregated metric (both measured and predicted) for 6231 institutions (academic and industry) for papers published in 2007 to 2018 at 221 conferences and 87 journals.
 
 <p align="center">
 <img width="90%" src="docs/extra/user_guide.001.png" />
