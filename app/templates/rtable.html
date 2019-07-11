@@ -24,6 +24,7 @@ var ranktable = $('#rtable').DataTable({
     { title: "{{ words.rtable_label_3 }}", className: "dt-body-right" },
     { title: "{{ words.rtable_label_4 }}", className: "dt-body-right" },
     { title: "type", className: "inst-type" },
+    { title: "Country", className: "inst-country" },
   ],
   "columnDefs": [
     {
@@ -37,7 +38,7 @@ var ranktable = $('#rtable').DataTable({
     },
     {
       "targets": 5,
-      "visible": true
+      "visible": false
     }
   ],
   "language": {

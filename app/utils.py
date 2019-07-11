@@ -83,8 +83,8 @@ def loadInstData():
     gridMap = dict()
     reader = csv.reader(open(FILE_GRID))
     next(reader) # skip the first line
-    gridMap = {r[0].strip():r[2].strip() for r in reader}
-    print(gridMap)
+    gridMap = {r[0].strip():(r[1].strip(),r[2].strip()) for r in reader}
+    # print(gridMap)
 
     #load inst_alias
     if instMap != None:
@@ -229,7 +229,9 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
             else:
                 rlist[name] = [wpub[v], cite[v], type]
 
-    return [{"name": instInfo[k]["fullname"], "type": gridMap[instInfo[k]["grid"]] if instInfo[k]["grid"] in gridMap else "other",
+    return [{"name": instInfo[k]["fullname"],
+            "type": gridMap[instInfo[k]["grid"]][1] if instInfo[k]["grid"] in gridMap else "other",
+            "country": gridMap[instInfo[k]["grid"]][0] if instInfo[k]["grid"] in gridMap else "other",
             "wpub": v[0], "cite": v[1],
             "url": instInfo[k]["url"] if instInfo[k]["url"] != "" else instInfo[k]["wiki"]
         } for k, v in rlist.items()]

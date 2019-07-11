@@ -459,7 +459,7 @@ function dorank() {
         newRow[3] = result[i]["wpub"].toFixed(0); // Estimated
         newRow[4] = 0 // Combined -- will be calculated later
         newRow[5] = result[i]["type"] // type
-        newRow[6] = 0 // secondary orderData
+        newRow[6] = result[i]["country"];
         newrows.push(newRow)
       }
       ranktable.rows.add(newrows);
