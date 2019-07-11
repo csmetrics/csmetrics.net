@@ -18,11 +18,8 @@ aalto university school of science --> aalto university
 | type | count |
 |------|------:|
 | name == key (primary name) | *6231* |
-| name != key (alias name) | *13* |
-| unregistered name | *1* |
-
-- Unregistered aliases :
-  - ['german cancer research center']
+| name != key (alias name) | *14* |
+| unregistered name | *0* |
 
 
 #### Common Error Types
