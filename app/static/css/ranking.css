@@ -38,7 +38,7 @@ body {
 .mycontainer {
     margin-right: auto;
     margin-left: auto;
-    max-width: 1320px;
+    max-width: 1200px;
 }
 
 #collapse-button {
@@ -134,6 +134,12 @@ body {
 
 a {
     color: black !important;
+}
+
+.rtable_divider {
+  height: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
 }
 
 #weightselector,

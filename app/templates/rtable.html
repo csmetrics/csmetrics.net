@@ -9,23 +9,23 @@
 var spinner = document.getElementById("spinner");
 // ranking table
 var ranktable = $('#rtable').DataTable({
-  "dom":  "<'row'<'col-sm-6'l><'col-sm-6'<'alphasliderdiv'>>>" +
+  "dom":  "<'row'<'col-sm-12'<'inst_selector_div'>>>"+
+          "<'row'<'col-sm-6'l><'col-sm-6'<'alphasliderdiv'>>>" +
           "<'row'<'col-sm-12'tr>>" +
-          "<'row'<'col-sm-6'i><'col-sm-6'f>>"+
           "<'row'<'col-sm-12'p>>",
-  "pageLength": 50, // default page
+  "pageLength": 20, // default page
   "lengthMenu": [[ 10, 20, 50, 100, -1 ], [ 10, 20, 50, 100, "All" ]], // page options
   "lengthChange": true,
   "columns": [
     // { className: "details-control" },
     { title: "{{ words.rtable_label_0 }}", className: "index dt-body-center" },
     { title: "{{ words.rtable_label_1 }}", className: "institution dt-body-left" },
-    { title: "{{ words.rtable_label_2.0 }}", className: "small dt-body-right" },
-    { title: "{{ words.rtable_label_3.0 }}", className: "small dt-body-right" },
-    { title: "{{ words.rtable_label_4 }}", className: "small dt-body-right" },
-    { title: "Type", className: "small inst-type" },
-    { title: "Region", className: "small inst-continent" },
-    { title: "", className: "small inst-country" },
+    { title: "{{ words.rtable_label_2 }}", className: "dt-body-right" },
+    { title: "{{ words.rtable_label_3 }}", className: "dt-body-right" },
+    { title: "{{ words.rtable_label_4 }}", className: "dt-body-right" },
+    { title: "Type", className: "inst-type" },
+    { title: "Region", className: "inst-continent" },
+    { title: "Country", className: "inst-country" },
   ],
   "columnDefs": [
     {
@@ -33,24 +33,13 @@ var ranktable = $('#rtable').DataTable({
       "sortable": false,
       "orderable": false
     },
-    { "targets": 0, "width": "5%" },
-    { "targets": 1, "width": "40%" },
-    { "targets": 2, "width": "5%" },
-    { "targets": 3, "width": "5%" },
-    { "targets": 4, "width": "5%" },
     {
-      "targets": 5,
-      "visible": true,
-      "sortable": false,
+      "targets": 1,
+      "searchable": true,
     },
     {
-      "targets": 6,
-      "visible": true,
-      "sortable": false,
-    },
-    {
-      "targets": 7,
-      "visible": true,
+      "targets": [5,6,7],
+      "visible": false,
       "sortable": false,
     }
   ],
@@ -66,6 +55,13 @@ var ranktable = $('#rtable').DataTable({
   "info": true,
   "autoWidth": false,
 });
+
+$("div.inst_selector_div").html(
+  '<b>Institution Type</b> <select id="inst_type_selector"></select> '+
+  '<b>Region</b> <select id="inst_region_selector"></select> '+
+  '<b>Country</b> <select id="inst_country_selector"></select>'+
+  '<div class="rtable_divider"></div>'
+);
 
 // alpha slider
 $("div.alphasliderdiv").html(
@@ -94,53 +90,84 @@ alphaSlider.noUiSlider.on('change', function (values) {
   changeValue(values);
 });
 
+var instCountrySelector = document.getElementById("inst_country_selector");
+instCountrySelector.addEventListener("change", function() {
+  // console.log("type_onchange", instRegionSelector.value, instRegionSelector.selectedIndex)
+  var val = $(this).val();
+  if (val == "all") {
+    ranktable.columns('.inst-country').search('').draw();
+  } else {
+    ranktable.columns('.inst-country').search(val).draw();
+  }
+});
+
 // update rank index
 ranktable.on( 'order.dt', function () {
   ranktable.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
     cell.innerHTML = i+1;
   } );
+
+  ranktable.column(7).data().unique().sort().each( function ( d, j ) {
+    var option = document.createElement("option");
+    option.text = option.value = d;
+    instCountrySelector.appendChild(option);
+  });
 } ).draw();
 
-ranktable.columns('.inst-type').every( function () {
-  var that = this;
-  var select = $('<select id="regionselector"/>')
-    .appendTo(this.header())
-    .on( 'change', function () {
-      var val = $(this).val();
-      console.log(val);
-      if (val == "all") {
-        ranktable.columns('.inst-type').search('').draw();
-      } else {
-        ranktable.columns('.inst-type').search(val).draw();
-      }
-    });
-  select_regions = ["all", "Education", "Company", "Government", "Facility", "Nonprofit", "Healthcare", "Archive", "Other"];
-  console.log(select_regions)
-  for (var i in select_regions) {
-    select.append('<option value="'+select_regions[i]+'">'+select_regions[i]+'</option>');
+var instTypeSelector = document.getElementById("inst_type_selector");
+var select_inst_types = {{ words.select_inst_types|safe }};
+for (var i in select_inst_types) {
+  var option = document.createElement("option");
+  option.text = option.value = select_inst_types[i];
+  instTypeSelector.appendChild(option);
+}
+instTypeSelector.addEventListener("change", function() {
+  // console.log("type_onchange", instTypeSelector.value, instTypeSelector.selectedIndex)
+  var val = $(this).val();
+  if (val == "all") {
+    ranktable.columns('.inst-type').search('').draw();
+  } else {
+    ranktable.columns('.inst-type').search(val).draw();
+  }
+});
+
+var instRegionSelector = document.getElementById("inst_region_selector");
+var select_inst_regions = {{ words.select_inst_regions|safe }};
+for (var i in select_inst_regions) {
+  var option = document.createElement("option");
+  option.text = option.value = select_inst_regions[i];
+  instRegionSelector.appendChild(option);
+}
+instRegionSelector.addEventListener("change", function() {
+  // console.log("type_onchange", instRegionSelector.value, instRegionSelector.selectedIndex)
+  var val = $(this).val();
+  if (val == "all") {
+    ranktable.columns('.inst-continent').search('').draw();
+  } else {
+    ranktable.columns('.inst-continent').search(val).draw();
   }
 });
 
 // append selector at institution header
-ranktable.columns('.inst-continent').every( function () {
-  var that = this;
-  var select = $('<select id="regionselector"/>')
-    .appendTo(this.header())
-    .on( 'change', function () {
-      var val = $(this).val();
-      console.log(val);
-      if (val == "all") {
-        ranktable.columns('.inst-continent').search('').draw();
-      } else {
-        ranktable.columns('.inst-continent').search(val).draw();
-      }
-    });
-  select_regions = {{ words.select_regions|safe }};
-  console.log(select_regions)
-  for (var i in select_regions) {
-    select.append('<option value="'+select_regions[i]+'">'+select_regions[i]+'</option>');
-  }
-});
+// ranktable.columns('.inst-continent').every( function () {
+//   var that = this;
+//   var select = $('<select id="regionselector"/>')
+//     .appendTo(this.header())
+//     .on( 'change', function () {
+//       var val = $(this).val();
+//       console.log(val);
+//       if (val == "all") {
+//         ranktable.columns('.inst-continent').search('').draw();
+//       } else {
+//         ranktable.columns('.inst-continent').search(val).draw();
+//       }
+//     });
+//   select_regions = {{ words.select_regions|safe }};
+//   console.log(select_regions)
+//   for (var i in select_regions) {
+//     select.append('<option value="'+select_regions[i]+'">'+select_regions[i]+'</option>');
+//   }
+// });
 
 
 // update combined value using alpha
