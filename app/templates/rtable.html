@@ -107,11 +107,13 @@ ranktable.on( 'order.dt', function () {
     cell.innerHTML = i+1;
   } );
 
-  ranktable.column(7).data().unique().sort().each( function ( d, j ) {
-    var option = document.createElement("option");
-    option.text = option.value = d;
-    instCountrySelector.appendChild(option);
-  });
+  if (!instCountrySelector.hasChildNodes()){
+    ranktable.column(7).data().unique().sort().each( function ( d, j ) {
+      var option = document.createElement("option");
+      option.text = option.value = d;
+      instCountrySelector.appendChild(option);
+    });
+  }
 } ).draw();
 
 var instTypeSelector = document.getElementById("inst_type_selector");
@@ -147,28 +149,6 @@ instRegionSelector.addEventListener("change", function() {
     ranktable.columns('.inst-continent').search(val).draw();
   }
 });
-
-// append selector at institution header
-// ranktable.columns('.inst-continent').every( function () {
-//   var that = this;
-//   var select = $('<select id="regionselector"/>')
-//     .appendTo(this.header())
-//     .on( 'change', function () {
-//       var val = $(this).val();
-//       console.log(val);
-//       if (val == "all") {
-//         ranktable.columns('.inst-continent').search('').draw();
-//       } else {
-//         ranktable.columns('.inst-continent').search(val).draw();
-//       }
-//     });
-//   select_regions = {{ words.select_regions|safe }};
-//   console.log(select_regions)
-//   for (var i in select_regions) {
-//     select.append('<option value="'+select_regions[i]+'">'+select_regions[i]+'</option>');
-//   }
-// });
-
 
 // update combined value using alpha
 function updateTable(){
