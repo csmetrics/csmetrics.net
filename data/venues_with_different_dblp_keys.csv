@@ -2,3 +2,5 @@ key,DBLP key,venue type,period start,period end
 jmicro,micro,journal,2007,2019
 sigsoft-fse,sigsoft,journal,2007,2019
 ccc,coco,conference,2007,2019
+ispa,trustcom,conference,2013,2013
+ispa,trustcom,conference,2016,2016
