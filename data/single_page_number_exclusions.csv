@@ -1,5 +1,5 @@
 name,year,total publications,filtered publications,single page number papers,% total w/ single page num,Exception (y/n),Comment
-aamas,2007,281,0,281,1,?,Most have single page number but there are a combination of full papers and demos
+aamas,2007,281,0,281,1,y,Most have single page number but there are a combination of full papers and demos
 ancs,2010,37,0,37,1,y,
 cgo,2014,29,0,29,1,y,
 chi,2018,665,0,665,1,y,
