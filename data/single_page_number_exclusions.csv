@@ -1,75 +1,75 @@
-name,year,total publications,filtered publications,single page number papers,% total w/ single page num,Exception (y/n),Comment
-aamas,2007,281,0,281,1,y,Most have single page number but there are a combination of full papers and demos
-ancs,2010,37,0,37,1,y,
-cgo,2014,29,0,29,1,y,
-chi,2018,665,0,665,1,y,
-chi,2019,702,0,702,1,y,
-compgeom,2014,70,1,69,0.985714286,y,"most have single number, length could be inferred from numbers of consecutive papers with more effort"
-conext,2007,78,0,78,1,y,not included in list because 
-conext,2008,77,0,77,1,y,
-conext,2010,28,0,28,1,y,
-conext,2011,30,0,30,1,y,
-csur,2007,12,0,12,1,y,
-emsoft,2018,15,0,15,1,y,
-fast,2012,26,0,26,1,y,
-gis,2007,68,0,68,1,y,
-gis,2008,90,0,90,1,y,
-icac,2007,32,0,32,1,y,
-iccad,2016,133,0,133,1,y,
-iccad,2018,135,3,132,0.977777778,y,Almost all papers have single page number
-icdcs,2007,70,0,70,1,y,
-icis,2007,158,0,158,1,y,
-icis,2008,216,0,216,1,y,
-icis,2009,205,0,205,1,y,
-icis,2010,268,0,268,1,y,
-icpp,2007,77,0,77,1,y,
-ismvl,2007,60,0,58,0.966666667,y,
-iticse,2009,138,63,69,0.5,n,"single page papers are posters, keynotes or tips"
-iticse,2011,132,56,66,0.5,n,"single page papers are posters, keynotes or tips"
-jacm,2007,32,4,28,0.875,y,"Only one volume has start and end page numbers, despite full length papers"
-jeric,2007,7,0,7,1,y,
-jetc,2007,15,0,15,1,y,
-mobihoc,2011,25,0,25,1,y,
-mobisys,2014,69,25,36,0.52173913,n,single page papers are demos or posters
-mobisys,2015,61,29,32,0.524590164,n,single page papers are demos or posters
-mobisys,2017,84,34,50,0.595238095,n,single page papers are demos or posters
-podc,2008,92,41,49,0.532608696,n,the single page papers are brief announcements https://www.podc.org/podc2008/program.shtml
-saint,2007,18,0,18,1,y,
-sc,2007,59,0,59,1,y,
-sc,2008,65,0,65,1,y,
-sc,2012,105,0,105,1,y,
-securecomm,2008,43,0,36,0.837209302,y,only papers without single page numbers are those with none. Tested single page papers were actually full length
-sigcse,2015,295,86,164,0.555932203,n,single page papers are demos or keynotes
-sigcse,2018,418,161,221,0.528708134,n,single page papers are keynotes or workshops or src?
-sigmetrics,2017,50,0,30,0.6,y,most papers have single page number except posters which have valid format and will be excluded through being too short
-sigsoft-fse,2019,12,4,6,0.5,*,Need to recompute sigsoft
-ssdbm,2007,36,0,36,1,y,
-taas,2007,16,0,16,1,y,
-taco,2007,19,0,19,1,y,
-talg,2007,52,9,43,0.826923077,y,most papers have single page number but tested papers are full length
-talip,2007,14,3,11,0.785714286,y,most papers have single page number but tested papers are full length
-tap,2007,19,0,19,1,y,
-tecs,2007,39,7,32,0.820512821,y,most papers have single page number but tested papers are full length
-tissec,2007,12,0,12,1,y,
-tkdd,2007,14,0,14,1,y,
-tochi,2007,15,0,15,1,y,
-tocl,2007,31,0,31,1,y,
-tocs,2007,11,1,10,0.909090909,y,most papers have single page number but tested papers are full length
-todaes,2007,52,24,27,0.519230769,y,some volumes have single page number but tested papers are full length
-tods,2007,30,0,30,1,y,
-tog,2007,128,0,128,1,y,
-tog,2008,166,17,149,0.897590361,y,two large volumes have single page numbers but tested papers are full length
-tog,2009,185,37,148,0.8,y,some volumes have single page number but tested papers are full length
-tog,2011,190,40,150,0.789473684,y,some volumes have single page number but tested papers are full length
-tois,2007,25,0,25,1,y,
-tois,2013,22,11,11,0.5,y,some volumes have single page number but tested papers are full length
-toit,2007,28,0,28,1,y,
-tomacs,2007,23,4,19,0.826086957,y,some volumes have single page number but tested papers are full length
-tomccap,2007,27,8,18,0.666666667,y,some volumes have single page number but tested papers are full length
-toms,2007,28,1,27,0.964285714,y,some volumes have single page number but tested papers are full length
-toplas,2007,45,1,44,0.977777778,y,some volumes have single page number but tested papers are full length
-tosem,2007,23,7,15,0.652173913,y,some volumes have single page number but tested papers are full length
-tosn,2007,22,0,22,1,y,
-tslp,2007,12,6,6,0.5,y,some volumes have single page number but tested papers are full length
-tweb,2007,14,0,14,1,y,
-wimob,2007,86,0,86,1,y,
+name,year,total publications,filtered publications,single page number papers,% total w/ single page num,Exception (y/n),Comment,venue type
+aamas,2007,281,0,281,1,y,Most have single page number but there are a combination of full papers and demos,conference
+ancs,2010,37,0,37,1,y,,conference
+cgo,2014,29,0,29,1,y,,conference
+chi,2018,665,0,665,1,y,,conference
+chi,2019,702,0,702,1,y,,conference
+compgeom,2014,70,1,69,0.985714286,y,"most have single number, length could be inferred from numbers of consecutive papers with more effort",conference
+conext,2007,78,0,78,1,y,not included in list because ,conference
+conext,2008,77,0,77,1,y,,conference
+conext,2010,28,0,28,1,y,,conference
+conext,2011,30,0,30,1,y,,conference
+csur,2007,12,0,12,1,y,,journal
+emsoft,2018,15,0,15,1,y,,conference
+fast,2012,26,0,26,1,y,,conference
+gis,2007,68,0,68,1,y,,conference
+gis,2008,90,0,90,1,y,,conference
+icac,2007,32,0,32,1,y,,conference
+iccad,2016,133,0,133,1,y,,conference
+iccad,2018,135,3,132,0.977777778,y,Almost all papers have single page number,conference
+icdcs,2007,70,0,70,1,y,,conference
+icis,2007,158,0,158,1,y,,conference
+icis,2008,216,0,216,1,y,,conference
+icis,2009,205,0,205,1,y,,conference
+icis,2010,268,0,268,1,y,,conference
+icpp,2007,77,0,77,1,y,,conference
+ismvl,2007,60,0,58,0.966666667,y,,conference
+iticse,2009,138,63,69,0.5,n,"single page papers are posters, keynotes or tips",conference
+iticse,2011,132,56,66,0.5,n,"single page papers are posters, keynotes or tips",conference
+jacm,2007,32,4,28,0.875,y,"Only one volume has start and end page numbers, despite full length papers",journal
+jeric,2007,7,0,7,1,y,,journal
+jetc,2007,15,0,15,1,y,,journal
+mobihoc,2011,25,0,25,1,y,,conference
+mobisys,2014,69,25,36,0.52173913,n,single page papers are demos or posters,conference
+mobisys,2015,61,29,32,0.524590164,n,single page papers are demos or posters,conference
+mobisys,2017,84,34,50,0.595238095,n,single page papers are demos or posters,conference
+podc,2008,92,41,49,0.532608696,n,the single page papers are brief announcements https://www.podc.org/podc2008/program.shtml,conference
+saint,2007,18,0,18,1,y,,conference
+sc,2007,59,0,59,1,y,,conference
+sc,2008,65,0,65,1,y,,conference
+sc,2012,105,0,105,1,y,,conference
+securecomm,2008,43,0,36,0.837209302,y,only papers without single page numbers are those with none. Tested single page papers were actually full length,conference
+sigcse,2015,295,86,164,0.555932203,n,single page papers are demos or keynotes,conference
+sigcse,2018,418,161,221,0.528708134,n,single page papers are keynotes or workshops or src?,conference
+sigmetrics,2017,50,0,30,0.6,y,most papers have single page number except posters which have valid format and will be excluded through being too short,conference
+sigsoft-fse,2019,12,4,6,0.5,*,Need to recompute sigsoft,conference
+ssdbm,2007,36,0,36,1,y,,conference
+taas,2007,16,0,16,1,y,,journal
+taco,2007,19,0,19,1,y,,journal
+talg,2007,52,9,43,0.826923077,y,most papers have single page number but tested papers are full length,journal
+talip,2007,14,3,11,0.785714286,y,most papers have single page number but tested papers are full length,journal
+tap,2007,19,0,19,1,y,,journal
+tecs,2007,39,7,32,0.820512821,y,most papers have single page number but tested papers are full length,journal
+tissec,2007,12,0,12,1,y,,journal
+tkdd,2007,14,0,14,1,y,,journal
+tochi,2007,15,0,15,1,y,,journal
+tocl,2007,31,0,31,1,y,,journal
+tocs,2007,11,1,10,0.909090909,y,most papers have single page number but tested papers are full length,journal
+todaes,2007,52,24,27,0.519230769,y,some volumes have single page number but tested papers are full length,journal
+tods,2007,30,0,30,1,y,,journal
+tog,2007,128,0,128,1,y,,journal
+tog,2008,166,17,149,0.897590361,y,two large volumes have single page numbers but tested papers are full length,journal
+tog,2009,185,37,148,0.8,y,some volumes have single page number but tested papers are full length,journal
+tog,2011,190,40,150,0.789473684,y,some volumes have single page number but tested papers are full length,journal
+tois,2007,25,0,25,1,y,,journal
+tois,2013,22,11,11,0.5,y,some volumes have single page number but tested papers are full length,journal
+toit,2007,28,0,28,1,y,,journal
+tomacs,2007,23,4,19,0.826086957,y,some volumes have single page number but tested papers are full length,journal
+tomccap,2007,27,8,18,0.666666667,y,some volumes have single page number but tested papers are full length,journal
+toms,2007,28,1,27,0.964285714,y,some volumes have single page number but tested papers are full length,journal
+toplas,2007,45,1,44,0.977777778,y,some volumes have single page number but tested papers are full length,journal
+tosem,2007,23,7,15,0.652173913,y,some volumes have single page number but tested papers are full length,journal
+tosn,2007,22,0,22,1,y,,journal
+tslp,2007,12,6,6,0.5,y,some volumes have single page number but tested papers are full length,journal
+tweb,2007,14,0,14,1,y,,journal
+wimob,2007,86,0,86,1,y,,conference
