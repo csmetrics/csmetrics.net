@@ -36,7 +36,7 @@ cgf,CGF,graphics,,journal,Computer Graphics Forum,https://dblp.uni-trier.de/db/j
 cgo,CGO,systems,programming languages,conference,International Symposium on Code Generation and Optimization,https://dblp.uni-trier.de/db/conf/cgo/
 chi,CHI,human computer interaction,,conference,International Conference on Human Factors in Computing Systems,https://dblp.uni-trier.de/db/conf/chi/
 cikm,CIKM,information retrieval,databases,conference,ACM International Conference on Information and Knowledge Management,https://dblp.uni-trier.de/db/conf/cikm/
-civr,CIVR,information retrieval,vision,conference,International Conference on Image and Video Retrieval,https://dblp.uni-trier.de/db/conf/civr/
+civr,CIVR,information retrieval,"vision,multimedia",conference,International Conference on Image and Video Retrieval,https://dblp.uni-trier.de/db/conf/civr/
 cluster,CLUSTER,systems,"high performance computing,distributed systems",conference,IEEE International Conference on Cluster Computing,https://dblp.uni-trier.de/db/conf/cluster/
 coling,COLING,natural language processing,,conference,International Conference on Computational Linguistics,https://dblp.uni-trier.de/db/conf/coling/
 colt,COLT,artificial intelligence,"theory,machine learning",conference,Annual Conference on Computational Learning Theory,https://dblp.uni-trier.de/db/conf/colt/
@@ -176,7 +176,7 @@ mdm,MDM,databases,mobile,conference,IEEE International Conference on Mobile Data
 miccai,MICCAI,vision,,conference,Medical Image Computing and Computer Assisted Interventions,https://dblp.uni-trier.de/db/conf/miccai/
 micro,MICRO,systems,architecture,conference,International Symposium on Microarchitecture,https://dblp.uni-trier.de/db/conf/micro/
 ml,ML,machine learning,artificial intelligence,journal,Machine Learning,https://dblp.uni-trier.de/db/journals/ml/
-mm,MM,human computer interaction,,conference,ACM Multimedia Conference,https://dblp.uni-trier.de/db/conf/mm/
+mm,MM,human computer interaction,multimedia,conference,ACM Multimedia Conference,https://dblp.uni-trier.de/db/conf/mm/
 mmas,MMAS,performance analysis,,journal,Multiscale Modeling & Simulation,https://dblp.uni-trier.de/db/journals/mmas/
 mobicom,MobiCom,systems,mobile,conference,ACM International Conference on Mobile Computing and Networking,https://dblp.uni-trier.de/db/conf/mobicom/
 mobihoc,MobiHoc,systems,"mobile,networks",conference,ACM Symposium of Mobile and Ad Hoc Computing,https://dblp.uni-trier.de/db/conf/mobihoc/
