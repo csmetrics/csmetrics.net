@@ -31,6 +31,22 @@ def get_instituion(instname):
     return normalized_name
 
 
+def replaceParentGrid():
+    old_inst_file = os.path.join(cur_path, "data/inst_fullname.csv")
+    new_inst_file = os.path.join(cur_path, "data/inst_fullname_grid.csv")
+    grid_rel_file = os.path.join(cur_path, "data/parent_relations.csv")
+
+    reader = csv.reader(open(grid_rel_file))
+    next(reader) # skip the first line
+    grid_relations = {r[0]:r[2] for r in reader}
+
+    reader = csv.reader(open(old_inst_file))
+    writer = csv.writer(open(new_inst_file, "w"))
+
+    for r in reader:
+        writer.writerow([r[0], r[1], grid_relations[r[2]] if r[2] in grid_relations else r[2], r[3], r[4]])
+
+
 def merge_grid_institutions():
     gridMap = dict()
     reader = csv.reader(open("data/grid.csv"))
@@ -42,10 +58,10 @@ def merge_grid_institutions():
     gridType = {r[0]:r[1] for r in reader}
 
     instInfo = {}
-    csvfile = open('inst_full_clean.csv', 'w', newline='')
+    csvfile = open('data/inst_full_clean.csv', 'w', newline='')
     spamwriter = csv.writer(csvfile, delimiter=',')
 
-    reader = csv.reader(open("data/inst_fullname.csv"))
+    reader = csv.reader(open("data/inst_fullname_grid.csv"))
     next(reader)
     for r in reader:
         instInfo[r[0]] = {
@@ -109,4 +125,5 @@ def gen_inst_alias(instName):
 
 
 if __name__ == '__main__':
+    # replaceParentGrid()
     merge_grid_institutions()
