@@ -1,6 +1,7 @@
 import os, json, requests, time, csv
 import http.client, urllib.request, urllib.parse, urllib.error, base64
 
+cur_path = os.path.dirname(os.path.abspath(__file__))
 MAS_URL_PREFIX = "https://api.labs.cognitive.microsoft.com"
 headers = {
     # Request headers
@@ -44,7 +45,11 @@ def replaceParentGrid():
     writer = csv.writer(open(new_inst_file, "w"))
 
     for r in reader:
-        writer.writerow([r[0], r[1], grid_relations[r[2]] if r[2] in grid_relations else r[2], r[3], r[4]])
+        print(r, len(r))
+        if len(r) < 3:
+            writer.writerow([r[0], r[1], "", "", ""])
+        else:
+            writer.writerow([r[0], r[1], grid_relations[r[2]] if r[2] in grid_relations else r[2], r[3] if len(r) > 3 else "", r[4] if len(r) > 4 else ""])
 
 
 def merge_grid_institutions():
@@ -93,9 +98,9 @@ def clean_inst():
     #             spamwriter.writerow([r[0], "{}".format(','.join(r[1:]))])
 
     # change csv format for inst_fullname
-    instfile = open("inst_fullname")
+    instfile = open("data/inst_fullname")
     reader = csv.reader(instfile, delimiter='\t')
-    with open('inst_full_clean.csv', 'w', newline='') as csvfile:
+    with open('data/inst_fullname.csv', 'w', newline='') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=',')
         for r in reader:
             spamwriter.writerow(r)
@@ -125,5 +130,6 @@ def gen_inst_alias(instName):
 
 
 if __name__ == '__main__':
-    # replaceParentGrid()
+    # clean_inst()
+    replaceParentGrid()
     merge_grid_institutions()
