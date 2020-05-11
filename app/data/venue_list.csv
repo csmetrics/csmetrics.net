@@ -36,7 +36,7 @@ cgf,CGF,graphics,,journal,Computer Graphics Forum,https://dblp.uni-trier.de/db/j
 cgo,CGO,systems,programming languages,conference,International Symposium on Code Generation and Optimization,https://dblp.uni-trier.de/db/conf/cgo/
 chi,CHI,human computer interaction,,conference,International Conference on Human Factors in Computing Systems,https://dblp.uni-trier.de/db/conf/chi/
 cikm,CIKM,information retrieval,databases,conference,ACM International Conference on Information and Knowledge Management,https://dblp.uni-trier.de/db/conf/cikm/
-civr,CIVR,information retrieval,vision,conference,International Conference on Image and Video Retrieval,https://dblp.uni-trier.de/db/conf/civr/
+civr,CIVR,information retrieval,"vision,multimedia",conference,International Conference on Image and Video Retrieval,https://dblp.uni-trier.de/db/conf/civr/
 cluster,CLUSTER,systems,"high performance computing,distributed systems",conference,IEEE International Conference on Cluster Computing,https://dblp.uni-trier.de/db/conf/cluster/
 coling,COLING,natural language processing,,conference,International Conference on Computational Linguistics,https://dblp.uni-trier.de/db/conf/coling/
 colt,COLT,artificial intelligence,"theory,machine learning",conference,Annual Conference on Computational Learning Theory,https://dblp.uni-trier.de/db/conf/colt/
@@ -110,6 +110,7 @@ icgse,ICGSE,software engineering,,conference,IEEE International Conference on Gl
 icis,ICIS,other,,conference,International Conference on Information Systems,https://dblp.uni-trier.de/db/conf/icis/
 iclp,ICLP,theory,,conference,International Conference on Logic Programming,https://dblp.uni-trier.de/db/conf/iclp/
 icml,ICML,artificial intelligence,"machine learning, data mining,theory",conference,International Conference on Machine Learning,https://dblp.uni-trier.de/db/conf/icml/
+icmr,ICMR,multimedia,information retrieval,conference,International Conference on Multimedia Retrieval,https://dblp.uni-trier.de/db/conf/mir/
 icnp,ICNP,systems,networks,conference,International Conference on Network Protocols,https://dblp.uni-trier.de/db/conf/icnp/
 icpp,ICPP,systems,parallel computing,conference,International Conference on Parallel Processing,https://dblp.uni-trier.de/db/conf/icpp/
 icpr,ICPR,artificial intelligence,vision,conference,International Conference on Pattern Recognition,https://dblp.uni-trier.de/db/conf/icpr/
@@ -176,7 +177,7 @@ mdm,MDM,databases,mobile,conference,IEEE International Conference on Mobile Data
 miccai,MICCAI,vision,,conference,Medical Image Computing and Computer Assisted Interventions,https://dblp.uni-trier.de/db/conf/miccai/
 micro,MICRO,systems,architecture,conference,International Symposium on Microarchitecture,https://dblp.uni-trier.de/db/conf/micro/
 ml,ML,machine learning,artificial intelligence,journal,Machine Learning,https://dblp.uni-trier.de/db/journals/ml/
-mm,MM,human computer interaction,,conference,ACM Multimedia Conference,https://dblp.uni-trier.de/db/conf/mm/
+mm,MM,human computer interaction,multimedia,conference,ACM Multimedia Conference,https://dblp.uni-trier.de/db/conf/mm/
 mmas,MMAS,performance analysis,,journal,Multiscale Modeling & Simulation,https://dblp.uni-trier.de/db/journals/mmas/
 mobicom,MobiCom,systems,mobile,conference,ACM International Conference on Mobile Computing and Networking,https://dblp.uni-trier.de/db/conf/mobicom/
 mobihoc,MobiHoc,systems,"mobile,networks",conference,ACM Symposium of Mobile and Ad Hoc Computing,https://dblp.uni-trier.de/db/conf/mobihoc/
@@ -184,7 +185,7 @@ mobisec,Mobisec,systems,"mobile,security",conference,International ICST Conferen
 mobisys,MobiSys,systems,mobile,conference,"ACM SIGMOBILE International Conference on Mobile Systems, Applications and Services",https://dblp.uni-trier.de/db/conf/mobisys/
 naacl,NAACL/HLT,artificial intelligence,"natural language processing,human computer interaction",conference,Human Language Technologies: Conference of the North American Chapter of the Association for Computational Linguistics,https://dblp.uni-trier.de/db/conf/naacl/
 ndss,NDSS,systems,"networks,security,distributed systems",conference,Usenix Network and Distributed System Security Symposium,https://dblp.uni-trier.de/db/conf/ndss/
-nfm,NFM,software verification,,conference,NASA Formal Methods,https://dblp.uni-trier.de/db/conf/nfm/
+nfm,NFM,verification,,conference,NASA Formal Methods,https://dblp.uni-trier.de/db/conf/nfm/
 nips,NIPS,artificial intelligence,"machine learning, data mining",conference,Advances in Neural Information Processing Systems,https://dblp.uni-trier.de/db/conf/nips/
 noms,NOMS,systems,networks,conference,Network Operations and Management Symposium,https://dblp.uni-trier.de/db/conf/noms/
 nsdi,NSDI,systems,networks,conference,Symposium on Networked Systems Design and Implementation,https://dblp.uni-trier.de/db/conf/nsdi/
@@ -242,7 +243,7 @@ software,SOFTWARE,software engineering,,journal,IEEE Software,https://dblp.uni-t
 sosp,SOSP,systems,operating systems,conference,ACM SIGOPS Symposium on Operating Systems Principles,https://dblp.uni-trier.de/db/conf/sosp/
 sp,S&P,systems,security,conference,IEEE Symposium on Security & Privacy,https://dblp.uni-trier.de/db/conf/sp/
 spaa,SPAA,theory,"algorithms,architecture,parallel computing",conference,Symposium on Parallelism in Algorithms and Architectures,https://dblp.uni-trier.de/db/conf/spaa/
-spin,SPIN,software verification,,conference,SPIN Symposium / Workshop,https://dblp.uni-trier.de/db/conf/spin/
+spin,SPIN,verification,,conference,SPIN Symposium / Workshop,https://dblp.uni-trier.de/db/conf/spin/
 srds,SRDS,systems,"operating systems, distributed systems",conference,Symposium on Reliable Distributed Systems,https://dblp.uni-trier.de/db/conf/srds/
 ssd,SSTD,databases,,conference,Symposium on Spatial and Temporal Databases,https://dblp.uni-trier.de/db/conf/ssd/
 ssdbm,SSDBM,databases,data mining,conference,International Conference on Scientific and Statistical Data Base Management,https://dblp.uni-trier.de/db/conf/ssdbm/
@@ -250,11 +251,11 @@ stacs,STACS,theory,"algorithms, verification",conference,International Symposium
 stoc,STOC,theory,algorithms,conference,ACM Symposium on Theory of Computing,https://dblp.uni-trier.de/db/conf/stoc/
 sysose,SOSE,systems,,conference,IEEE International Conference on Sytem of Systems Engineering,https://dblp.uni-trier.de/db/conf/sysose/
 taas,TAAS,systems,,journal,ACM Transactions on Autonomous and Adaptive Systems,https://dblp.uni-trier.de/db/journals/taas/
-tacas,TACAS,software verification,,conference,International Conference on Tools and Algorithms for Construction and Analysis of Systems ,https://dblp.uni-trier.de/db/conf/tacas/
+tacas,TACAS,verification,,conference,International Conference on Tools and Algorithms for Construction and Analysis of Systems ,https://dblp.uni-trier.de/db/conf/tacas/
 taccess,TACCESS,other,,journal,ACM Transactions on Accessible Computing,https://dblp.uni-trier.de/db/journals/taccess/
 taco,TACO,programming languages,"architecture, systems",journal,ACM Transactions on Architecture and Code Optimization,https://dblp.uni-trier.de/db/journals/taco/
 talg,TALG,algorithms,theory,journal,ACM Transactions on Algorithms,https://dblp.uni-trier.de/db/journals/talg/
-talip,TALIP,,,journal,ACM Transactions on Asian Language Information Processing,https://dblp.uni-trier.de/db/journals/talip/
+talip,TALIP,natural language processing,,journal,ACM Transactions on Asian Language Information Processing,https://dblp.uni-trier.de/db/journals/talip/
 tap,TAP,vision,artificial intelligence,journal,ACM Transactions on Applied Perception,https://dblp.uni-trier.de/db/journals/tap/
 tc,TC,other,,journal,IEEE Transactions on Computers,https://dblp.uni-trier.de/db/journals/tc/
 tcbb,TCBB,bioinformatics,,journal,IEEE/ACM Transactions on Computational Biology and Bioinformatics,https://dblp.uni-trier.de/db/journals/tcbb/
