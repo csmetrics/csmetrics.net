@@ -350,12 +350,13 @@ function inputChanged() {
 }
 
 var selectedVenueList = [];
-function updateInfoConf(){
+function updateInfoConf(changeType=false){
   // console.log("updateInfoConf");
   selectedVenueList = [];
   var rows_selected = conftable.column(0).checkboxes.selected();
   $.each(rows_selected, function(index, rowId){
-     selectedVenueList.push(conftable.row(rowId).data()[1])
+     if (changeType) selectedVenueList.push(conftable.row(index).data()[1])
+     else selectedVenueList.push(conftable.row(rowId).data()[1])
   });
   // console.log("selectedVenueList", selectedVenueList);
   inputChanged();
@@ -401,7 +402,7 @@ function updateConfList(){
         conftable.draw();
         // console.log("venue table loaded");
         conftableUpdating = false;
-        updateInfoConf();
+        updateInfoConf(changeType=true);
       },
       error: function (result) {
         console.log("error");
