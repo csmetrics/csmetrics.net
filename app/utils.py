@@ -102,7 +102,7 @@ def loadInstData():
             "type": r[2].strip(),
             "continent": r[3].strip(),
             "country": r[4].strip(),
-            "url": r[4].strip()
+            "url": r[5].strip()
         }
     for key in set(instMap.values()):
         if key not in instInfo:

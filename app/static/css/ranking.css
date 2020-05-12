@@ -164,3 +164,32 @@ td.details-control {
 tr.shown td.details-control {
     background: url('../images/details_close.png') no-repeat center center;
 }
+
+table.dataTable thead th.index,
+table.dataTable tbody td.index {
+  padding-left: 5;
+  padding-right: 5;
+}
+table.dataTable thead th.institution {
+  padding-left: 9;
+}
+table.dataTable thead th.score,
+table.dataTable thead td.score,
+table.dataTable tbody td.score {
+  padding-left: 3;
+  padding-right: 15;
+}
+table.dataTable thead th.inst-type,
+table.dataTable thead td.inst-type,
+table.dataTable tbody td.inst-type,
+table.dataTable thead th.inst-country,
+table.dataTable thead td.inst-country,
+table.dataTable tbody td.inst-country {
+  padding-left: 5px 10px;
+}
+
+table.dataTable tbody td.score,
+table.dataTable tbody td.inst-type,
+table.dataTable tbody td.inst-country {
+  font-size: 12px;
+}
