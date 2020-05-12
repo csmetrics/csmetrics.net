@@ -13,7 +13,7 @@ var ranktable = $('#rtable').DataTable({
           "<'row'<'col-sm-6'l><'col-sm-6'<'alphasliderdiv'>>>" +
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-12'p>>",
-  "pageLength": 20, // default page
+  "pageLength": 50, // default page
   "lengthMenu": [[ 10, 20, 50, 100, -1 ], [ 10, 20, 50, 100, "All" ]], // page options
   "lengthChange": true,
   "columns": [
@@ -38,7 +38,12 @@ var ranktable = $('#rtable').DataTable({
       "searchable": true,
     },
     {
-      "targets": [5,6,7],
+      "targets": 6,
+      "visible": false,
+      "sortable": false,
+    },
+    {
+      "targets": [5,7],
       "visible": true,
       "sortable": false,
     }
@@ -57,9 +62,9 @@ var ranktable = $('#rtable').DataTable({
 });
 
 $("div.inst_selector_div").html(
-  '<b>Institution Type</b> <select id="inst_type_selector"></select> '+
-  '<b>Region</b> <select id="inst_region_selector"></select> '+
-  '<b>Country</b> <select id="inst_country_selector"></select>'+
+  '<b>Institution Type</b> <select id="inst_type_selector" class="inst_selector"></select> '+
+  '<b>Region</b> <select id="inst_region_selector" class="inst_selector"></select> '+
+  '<b>Country</b> <select id="inst_country_selector" class="inst_selector"></select>'+
   '<div class="rtable_divider"></div>'
 );
 
@@ -93,6 +98,8 @@ alphaSlider.noUiSlider.on('change', function (values) {
 var instCountrySelector = document.getElementById("inst_country_selector");
 instCountrySelector.addEventListener("change", function() {
   // console.log("type_onchange", instRegionSelector.value, instRegionSelector.selectedIndex)
+  ranktable.columns('.inst-continent').search('');
+  instRegionSelector.value = "all";
   var val = $(this).val();
   if (val == "all") {
     ranktable.columns('.inst-country').search('').draw();
@@ -142,6 +149,8 @@ for (var i in select_inst_regions) {
 }
 instRegionSelector.addEventListener("change", function() {
   // console.log("type_onchange", instRegionSelector.value, instRegionSelector.selectedIndex)
+  ranktable.columns('.inst-country').search('');
+  instCountrySelector.value = "";
   var val = $(this).val();
   if (val == "all") {
     ranktable.columns('.inst-continent').search('').draw();

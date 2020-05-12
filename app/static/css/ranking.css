@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-    padding: 20px;
+    padding: 0 20px;
 }
 .header {
     padding-bottom: 10px;
@@ -38,7 +38,7 @@ body {
 .mycontainer {
     margin-right: auto;
     margin-left: auto;
-    max-width: 1200px;
+    max-width: 1298px;
 }
 
 #collapse-button {
@@ -74,6 +74,10 @@ body {
 /*#regionselector {
     margin-left: 5px;
 }*/
+
+.inst_selector {
+  margin-right: 10px;
+}
 
 #rtablecurtain {
     position: absolute;
