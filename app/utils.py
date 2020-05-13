@@ -26,6 +26,17 @@ venueWeight = None
 paperData = None
 citationData = None
 
+ContinentName = {
+    "all":"All",
+    "NA":"North America",
+    "SA":"South America",
+    "AS":"Asia",
+    "AF":"Africa",
+    "EU":"Europe",
+    "OC":"Oceania",
+    "No data":"Other"
+}
+
 
 def readVenueName():
     global venueName
@@ -100,8 +111,8 @@ def loadInstData():
         instInfo[r[0]] = {
             "fullname": r[1].strip(),
             "type": r[2].strip(),
-            "continent": r[3].strip(),
-            "country": r[4].strip(),
+            "continent": ContinentName[r[3].strip()],
+            "country": r[4].strip() if r[4].strip() != "No data" else "",
             "url": r[5].strip()
         }
     for key in set(instMap.values()):

@@ -108,7 +108,25 @@ Please see the              <b><a
           {% include 'rtable.html' with words=words %}
         </div>
       </div>
-
+      <div id="reportError" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h4><b>Error report</b></h4>
+          <p style="padding:10px 15px 0 15px">
+            Please select the corret <i><span id="error-type"></span></i> for <b><span id="error-instname"></span></b>.
+          </p>
+          <div align="center">
+            <select id="error-country-selector" class="error-selector" style="display:none"></select>
+            <select id="error-type-selector" class="error-selector" style="display:none"></select>
+          </div>
+          <div align="center" style="padding-top: 10px">
+            <button type="button" class="btn btn-default report-button" id="report-github">
+              <i class="fa fa-github-alt" aria-hidden="true"></i> Create a github issue</button>
+            <button type="button" class="btn btn-default report-button" id="report-email">
+              <i class="fa fa-envelope" aria-hidden="true"></i> Send a report by email</button>
+          </div>
+        </div>
+      </div>
       <footer class="footer">
         <p>
           <a href="http://csmetrics.org/acks">CS metrics team</a>, available under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
@@ -119,6 +137,13 @@ Please see the              <b><a
   </body>
 </html>
 <script>
+var modal = document.getElementById("reportError");
+var span = document.getElementsByClassName("close-modal")[0];
+var reportInstname = document.getElementById("error-instname");
+var reportInsttype = document.getElementById("error-type");
+var reportTypeSelect = document.getElementById("error-type-selector");
+var reportCountrySelect = document.getElementById("error-country-selector");
+
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
     $('#selectall').click();
@@ -135,4 +160,62 @@ $("#collapse-button").on("click", function() {
     $this.html("more");
   }
 });
+
+function reportError_Country(entity) {
+  $('#error-country-selector').empty();
+  var countries = $("#inst_country_selector")[0].options;
+  for (var i = 1; i < countries.length; i++) {
+    var option = document.createElement("option");
+    option.text = option.value = countries[i].value;
+    if (option.value == entity[7]) option.selected="selected";
+    reportCountrySelect.appendChild(option);
+  }
+  reportCountrySelect.style.display = "block";
+  reportTypeSelect.style.display = "none";
+  modal.style.display = "block";
+  reportInsttype.innerHTML = "country";
+  reportInstname.innerHTML = entity[1];
+}
+function reportError_Type(entity) {
+  $('#error-type-selector').empty();
+  for (var i = 1; i < select_inst_types.length; i++) {
+    var option = document.createElement("option");
+    option.text = option.value = select_inst_types[i];
+    if (option.value == entity[5]) option.selected="selected";
+    reportTypeSelect.appendChild(option);
+  }
+  reportCountrySelect.style.display = "none";
+  reportTypeSelect.style.display = "block";
+  modal.style.display = "block";
+  reportInsttype.innerHTML = "type";
+  reportInstname.innerHTML = entity[1];
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function generateErrorMsg() {
+  var title = "ErrorReport";
+  title += ":"+reportInstname.innerText;
+  title += ":"+reportInsttype.innerText;
+  if (reportInsttype.innerText == "country")
+    title += ":"+reportCountrySelect.options[reportCountrySelect.selectedIndex].text;
+  else if (reportInsttype.innerText == "type")
+    title += ":"+reportTypeSelect.options[reportTypeSelect.selectedIndex].text;
+  return title;
+}
+
+document.getElementById("report-email").onclick = function () {
+  window.open("mailto:csmetrics.org@gmail.com?subject="+generateErrorMsg());
+};
+
+document.getElementById("report-github").onclick = function () {
+  location.href = "https://github.com/csmetrics/csmetrics.org/issues/new?title="+generateErrorMsg();
+};
+
 </script>

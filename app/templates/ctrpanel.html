@@ -1,9 +1,9 @@
 {% load staticfiles%}
 <div class="row" style="padding-bottom: 10px;">
-  <div class="col-lg-2 col-md-2 col-sm-2">
+  <div class="col-lg-2 col-md-12 col-sm-2">
     <h4><span class="label label-default">{{ words.label_year }}</span></h4>
   </div>
-  <div class="col-lg-10 col-md-10 col-sm-10" >
+  <div class="col-lg-10 col-md-12 col-sm-10" style="padding-left:0">
     <table>
       <tr>
         <td style="width: 80px"></td>
@@ -65,10 +65,10 @@
   </div> -->
 </div>
 <div class="row" style="padding-bottom: 10px;">
-  <div class="col-lg-2 col-md-2 col-sm-2">
+  <div class="col-lg-2 col-md-12 col-sm-2">
     <h4><span class="label label-default">{{ words.label_category }}</span></h4>
   </div>
-  <div class="col-lg-10 col-md-10 col-sm-10">
+  <div class="col-lg-10 col-md-12 col-sm-10">
     <div style="float:left; padding: 5px 0 0 15px;">
       Select/Deselect All <input id="selectall" type="checkbox" style="margin: 5px 0 0 3px;"></input>
     </div>
@@ -86,16 +86,16 @@
   </div>
 </div>
 <div class="row" style="padding-bottom: 10px;">
-  <div class="col-sm-3">
+  <div class="col-lg-3 col-md-12 col-sm-3">
     <h4><span class="label label-default">{{ words.label_venueweight }}</span></h4>
   </div>
-  <div class="col-sm-9" style="padding: 7px 5px 0 5px; min-width:350px">
+  <div class="col-lg-9 col-md-12 col-sm-9" style="padding:10px 10px 0 10px;">
     <div>
       <select id="weightselector">
         <option value="geomean">{{ words.select_weight_option_geo }}</option>
         <option value="equal">{{ words.select_weight_option_equal }}</option>
       </select>
-      <small id="weightselector-text" class="text-muted" style="padding-left: 15px;"></small>
+      <small id="weightselector-text" class="text-muted" style="padding-left: 10px;"></small>
     </div>
     <div style="margin-top:5px">
       <select id="typeselector">
@@ -103,7 +103,7 @@
         <option value="conference">Conference</option>
         <option value="journal">Journal</option>
       </select>
-      <small class="text-muted" style="padding-left: 15px;">Select Venue Type</small>
+      <small class="text-muted" style="padding-left: 10px;">Select Venue Type</small>
     </div>
   </div>
 </div>
@@ -459,7 +459,7 @@ function dorank() {
         newRow[2] = result[i]["cite"].toFixed(0); // Measured
         newRow[3] = result[i]["wpub"].toFixed(0); // Estimated
         newRow[4] = 0 // Combined -- will be calculated later
-        newRow[5] = result[i]["type"] // type
+        newRow[5] = result[i]["type"]; // type
         newRow[6] = result[i]["continent"];
         newRow[7] = result[i]["country"];
         newrows.push(newRow)

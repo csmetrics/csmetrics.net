@@ -99,9 +99,9 @@ var instCountrySelector = document.getElementById("inst_country_selector");
 instCountrySelector.addEventListener("change", function() {
   // console.log("type_onchange", instRegionSelector.value, instRegionSelector.selectedIndex)
   ranktable.columns('.inst-continent').search('');
-  instRegionSelector.value = "all";
+  instRegionSelector.value = "All";
   var val = $(this).val();
-  if (val == "all") {
+  if (val == "All") {
     ranktable.columns('.inst-country').search('').draw();
   } else {
     ranktable.columns('.inst-country').search(val).draw();
@@ -125,7 +125,7 @@ ranktable.on( 'order.dt', function () {
 
 var instTypeSelector = document.getElementById("inst_type_selector");
 var select_inst_types = {{ words.select_inst_types|safe }};
-for (var i in select_inst_types) {
+for (var i = 0; i < select_inst_types.length; i++) {
   var option = document.createElement("option");
   option.text = option.value = select_inst_types[i];
   instTypeSelector.appendChild(option);
@@ -133,7 +133,7 @@ for (var i in select_inst_types) {
 instTypeSelector.addEventListener("change", function() {
   // console.log("type_onchange", instTypeSelector.value, instTypeSelector.selectedIndex)
   var val = $(this).val();
-  if (val == "all") {
+  if (val == "All") {
     ranktable.columns('.inst-type').search('').draw();
   } else {
     ranktable.columns('.inst-type').search(val).draw();
@@ -152,7 +152,7 @@ instRegionSelector.addEventListener("change", function() {
   ranktable.columns('.inst-country').search('');
   instCountrySelector.value = "";
   var val = $(this).val();
-  if (val == "all") {
+  if (val == "All") {
     ranktable.columns('.inst-continent').search('').draw();
   } else {
     ranktable.columns('.inst-continent').search(val).draw();
@@ -209,6 +209,19 @@ $('#rtable tbody').on('click', 'td.details-control', function () {
         row.child(format(row.data()[2])).show();
         tr.addClass('shown');
     }
+} );
+
+$('#rtable tbody').on( 'click', 'td.inst-type', function () {
+    var idx = ranktable.cell( this ).index();
+    var title = ranktable.column(idx.column).header().innerText;
+    // console.log(title, ranktable.row( this ).data());
+    reportError_Type(ranktable.row( this ).data());
+} );
+$('#rtable tbody').on( 'click', 'td.inst-country', function () {
+    var idx = ranktable.cell( this ).index();
+    var title = ranktable.column(idx.column).header().innerText;
+    // console.log(title, ranktable.row( this ).data());
+    reportError_Country(ranktable.row( this ).data());
 } );
 
 </script>
