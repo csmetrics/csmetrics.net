@@ -211,11 +211,11 @@ function generateErrorMsg() {
 }
 
 document.getElementById("report-email").onclick = function () {
-  window.open("mailto:csmetrics.org@gmail.com?subject="+generateErrorMsg());
+  window.open("mailto:csmetrics.org@gmail.com?subject="+generateErrorMsg(), "_blank");
 };
 
 document.getElementById("report-github").onclick = function () {
-  location.href = "https://github.com/csmetrics/csmetrics.org/issues/new?title="+generateErrorMsg();
+  window.open("https://github.com/csmetrics/csmetrics.org/issues/new?title="+generateErrorMsg(), "_blank");
 };
 
 </script>
