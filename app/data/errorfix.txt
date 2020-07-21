@@ -1,0 +1,7 @@
+This is example file
+autoupdate.sh reads the lines starting with errorreport
+ErrorReport:eBay:country:United States
+#35 opened now by shinminjeong
+
+ErrorReport:University of New Mexico:type:Education
+#34 opened 35 minutes ago by shinminjeong
