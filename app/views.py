@@ -82,7 +82,7 @@ def main(request):
             "rank_button": "Go",
             "default_alpha": 0.3,
             "select_inst_types": ["All", "Education", "Company", "Government", "Facility", "Nonprofit", "Healthcare", "Archive", "Other"],
-            "select_inst_regions": list(ContinentName.values()),
+            "select_inst_regions": ContinentOrdered,
             "msg_empty_table": "Configure parameters and select Go button",
             "rtable_label_0": "Rank",
             "rtable_label_1": "Institution",

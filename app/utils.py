@@ -36,6 +36,16 @@ ContinentName = {
     "OC":"Oceania",
     "No data":"Other"
 }
+ContinentOrdered = [
+    "All",
+    "Asia",
+    "Africa",
+    "Europe",
+    "North America",
+    "South America",
+    "Oceania",
+    "Other"
+]
 
 
 def readVenueName():
