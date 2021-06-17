@@ -1,3 +1,7 @@
 django==2.2.10
+elasticsearch
+elasticsearch_dsl
+pandas
+beautifulsoup4
 numpy
 requests
