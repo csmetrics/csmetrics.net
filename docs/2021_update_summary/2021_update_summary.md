@@ -8,7 +8,7 @@
 ### 1. Paper filters for DBLP
 
 [Current: June 2021]
-* 2007 to 2020 appearing in 229 conferences and 90 journals from 6791 institutions.
+* 2007 to 2020 appearing in 229 conferences and 90 journals from 6793 institutions.
 * Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']` (same as previous ver.)
 * Filters for journals: `['editor', 'special issue','state of the journal', 'in memory']`
 (same as previous ver.)
@@ -35,9 +35,9 @@ MAG data now support multiple affiliations per author.
 
 Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv)
 
-Duplicated keys fixed:
-* acsac: [ACSAC](https://dblp.uni-trier.de/db/conf/acsac/index.html) Annual Computer Security Applications Conference
-* aPcsac: [ACSAC](https://dblp.uni-trier.de/db/conf/aPcsac/index.html) Asia-Pacific Computer Systems Architecture Conference
+Duplicated name fixed:
+* fixed the full name of [ACSAC](https://dblp.uni-trier.de/db/conf/acsac/index.html) to `Annual Computer Security Applications Conference`
+(from the incorrect name `Asia-Pacific Computer Systems Architecture Conference`)
 
 Type fixed:
 * [FSE](https://dblp.uni-trier.de/db/conf/sigsoft/index.html): journal --> conference
