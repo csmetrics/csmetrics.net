@@ -47,10 +47,10 @@ Select all checkbox is added to the venue list (left).
 
 [Current - July 2019]
 <p align="center">
-<img width="85%" src="extra/snapshot_2019.png" />
+<img width="85%" src="../extra/snapshot_2019.png" />
 </p>
 
 [Previous - Sep 2017]
 <p align="center">
-<img width="85%" src="extra/snapshot_2017.png" />
+<img width="85%" src="../extra/snapshot_2017.png" />
 </p>

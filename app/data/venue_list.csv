@@ -318,5 +318,5 @@ soups,SOUPS,security,,conference,Symposium On Usable Privacy and Security,https:
 wisec,WiSec,security,,conference,Wireless Network Security,https://dblp.uni-trier.de/db/conf/wisec,2021
 popets,PoPETs,security,,journal,Proceedings on Privacy Enhancing Technologies,https://dblp.uni-trier.de/db/journals/popets/,2021
 dsn,DSN,systems,networks,conference,Dependable Systems and Networks,https://dblp.uni-trier.de/db/conf/dsn/,2021
-aistats,AISTATS,artificial intelligence,,conference,International Conference on Artificial Intelligence and Statistics,https://dblp.uni-trier.de/db/conf/aistats/,2021
-iclr,ICLR,artificial intelligence,,conference,International Conference on Learning Representations,https://dblp.uni-trier.de/db/conf/iclr/,2021
+aistats,AISTATS,artificial intelligence,machine learning,conference,International Conference on Artificial Intelligence and Statistics,https://dblp.uni-trier.de/db/conf/aistats/,2021
+iclr,ICLR,artificial intelligence,machine learning,conference,International Conference on Learning Representations,https://dblp.uni-trier.de/db/conf/iclr/,2021
