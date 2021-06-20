@@ -8,7 +8,7 @@
 ### 1. Paper filters for DBLP
 
 [Current: June 2021]
-* 2007 to 2020 appearing in 230 conferences and 91 journals from 6466 institutions.
+* 2007 to 2020 appearing in 229 conferences and 90 journals from 6791 institutions.
 * Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']` (same as previous ver.)
 * Filters for journals: `['editor', 'special issue','state of the journal', 'in memory']`
 (same as previous ver.)
@@ -25,7 +25,7 @@
 [Current: June 2021]
 * We use MAG data dump (2021-02-15 version) to query paper titles.
 2.87% of the papers did not match from title search.
-MAG data now support multiple affiliations per author. 
+MAG data now support multiple affiliations per author.
 
 [Previous: July 2019]
 * We use MAG data dump (2019-01-01 version) to query paper titles.
@@ -35,13 +35,16 @@ MAG data now support multiple affiliations per author.
 
 Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv)
 
+Duplicated keys fixed:
+* acsac: [ACSAC](https://dblp.uni-trier.de/db/conf/acsac/index.html) Annual Computer Security Applications Conference
+* aPcsac: [ACSAC](https://dblp.uni-trier.de/db/conf/aPcsac/index.html) Asia-Pacific Computer Systems Architecture Conference
+
 Type fixed:
 * [FSE](https://dblp.uni-trier.de/db/conf/sigsoft/index.html): journal --> conference
 
 New venues added:
 * [TPLP](https://dblp.org/db/journals/tplp/): Theory and Practice of Logic Programming (journal)
 * [TACL](https://dblp.org/db/journals/tacl/): Transactions of the Association for Computational Linguistics (journal)
-* [TOIS](https://dblp.org/db/journals/tois/): ACM Transactions on Information Systems (journal)
 * [PoPETs](https://dblp.uni-trier.de/db/journals/popets/): Proceedings on Privacy Enhancing Technologies (journal)
 
 * [AsiaCCS](https://dblp.org/db/conf/asiaccs/): ACM Asia Conference on Computer and Communications Security (conference)

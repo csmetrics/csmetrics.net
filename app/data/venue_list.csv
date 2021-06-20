@@ -3,7 +3,7 @@ KEY,Venue,Topic Area/s 1,Topic Area/s 2,Type,Title,dblp URL,Added
 aaai,AAAI,artificial intelligence,,conference,AAAI Conference on Artificial Intelligence,https://dblp.uni-trier.de/db/conf/aaai/,2019
 aamas,AAMAS,artificial intelligence,robotics,conference,International Joint Conference on Autonomous Agents and Multiagent Systems,https://dblp.org/db/conf/atal/,2019
 acl,ACL,artificial intelligence,natural language processing,conference,Association for Computational Linguistics,https://dblp.uni-trier.de/db/conf/acl/,2019
-acsac,ACSAC,systems,architecture,conference,Asia-Pacific Computer Systems Architecture Conference,https://dblp.uni-trier.de/db/conf/acsac/,2019
+aPcsac,ACSAC,systems,architecture,conference,Asia-Pacific Computer Systems Architecture Conference,https://dblp.uni-trier.de/db/conf/aPcsac/index.html,2019
 ai,AI,artificial intelligence,,journal,Artificial Intelligence,https://dblp.uni-trier.de/db/journals/ai/,2019
 aiccsa,AICCSA,systems,,conference,ACS/IEEE International Conference on Computer Systems and Applications,https://dblp.uni-trier.de/db/conf/aiccsa/,2019
 aim,AIM,artificial intelligence,,journal,AI Magazine,https://dblp.uni-trier.de/db/journals/aim/,2019
@@ -276,7 +276,7 @@ toct,TOCT,theory,,journal,ACM Transactions on Computation Theory,https://dblp.un
 todaes,TODAES,circuits,"architecture, systems",journal,ACM Transactions on Design Automation of Electronic Systems,https://dblp.uni-trier.de/db/journals/todaes/,2019
 tods,TODS,databases,,journal,ACM Transactions on Database Systems,https://dblp.uni-trier.de/db/journals/tods/,2019
 tog,TOG,graphics,,journal,ACM Transactions on Graphics,https://dblp.uni-trier.de/db/journals/tog/,2019
-tois,TOIS,systems,,journal,ACM Transactions on Information Systems,https://dblp.uni-trier.de/db/journals/tois/,2019
+tois,TOIS,information retrieval,,journal,ACM Transactions on Information Systems,https://dblp.uni-trier.de/db/journals/tois/,2019
 toit,TOIT,systems,,journal,ACM Transactions on Internet Technology,https://dblp.uni-trier.de/db/journals/toit/,2019
 tomacs,TOMACS,theory,performance analysis,journal,ACM Transactions on Modeling and Computer Simulation,https://dblp.uni-trier.de/db/journals/tomacs/,2019
 tomccap,TOMCCAP,multimedia,,journal,"ACM Transactions on Multimedia Computing, Communications, and Applications",https://dblp.uni-trier.de/db/journals/tomccap/,2019
@@ -310,7 +310,6 @@ wsdm,WSDM,artificial intelligence,"databases, data mining",conference,ACM Intern
 www,WWW,web technologies,information retrieval,conference,International World Wide Web Conference,https://dblp.uni-trier.de/db/conf/www/,2019
 tplp,TPLP,theory,,journal,Theory and Practice of Logic Programming,https://dblp.org/db/journals/tplp/,2021
 tacl,TACL,natural language processing,,journal,Transactions of the Association for Computational Linguistics,https://dblp.org/db/journals/tacl/,2021
-tois,TOIS,information retrieval,,journal,ACM Transactions on Information Systems,https://dblp.org/db/journals/tois/,2021
 asiaccs,AsiaCCS,security,,conference,ACM Asia Conference on Computer and Communications Security,https://dblp.org/db/conf/asiaccs/,2021
 eurosp,EuroS&P,security,,conference,European Symposium on Security and Privacy,https://dblp.org/db/conf/eurosp/,2021
 acsac,ACSAC,security,,conference,Annual Computer Security Applications Conference,https://dblp.org/db/conf/acsac/,2021
