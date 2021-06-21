@@ -1,20 +1,22 @@
-# CS Metrics 202 Edition
+# CS Metrics 2021 Edition
 
 > Last updated 20 June 2021
 
-## A. Summary of main system and data changes
+A summary of institution rank changes (across all CS areas/venues) between the 2019 and 2021 version is [here](https://github.com/csmetrics/csmetrics.org/blob/master/docs/2021_update_summary/2021_update_report.pdf).
+
+## Summary of main system and data changes
 
 
 ### 1. Paper filters for DBLP
 
 [Current: June 2021]
-* 2007 to 2020 appearing in 229 conferences and 90 journals from 6793 institutions.
-* Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']` (same as previous ver.)
+* Rankings are generated using papers published from 2007 to 2020, appearing in 229 conferences and 90 journals from 6793 institutions.
+* Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']` (same as previous version.)
 * Filters for journals: `['editor', 'special issue','state of the journal', 'in memory']`
-(same as previous ver.)
+(same as previous version.)
 
 [Previous: July 2019]
-* 2007 to 2018 appearing in 221 conferences and 87 journals from 6466 institutions.
+* Rankings are generated using papers published from 2007 to 2018, appearing in 221 conferences and 87 journals from 6466 institutions.
 * Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']`
 (Note: Short, Poster and Oral keywords are removed)
 * We use the page numbers to filter short papers -- see [here](https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md#filtering) for more details. Among the five options, we choose 'Header + Page Num (k)' filter. The minimum page length is 4.
