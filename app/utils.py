@@ -56,7 +56,6 @@ def readVenueName():
     venueName = dict((r[0], {"abbr": r[1], "full": r[5], "link": r[6]}) for r in reader if r[0] != "")
 
 
-# confconf = {}
 def readPaperCount():
     global paperData, instName, citationData
     if paperData != None:
@@ -68,24 +67,16 @@ def readPaperCount():
             confname, year, type = os.path.splitext(cfile)[0].split('_')
             if type == "author": # only considr affil for now
                 continue
-            # if confname in confconf:
-            #     confconf[confname].append(year)
-            # else:
-            #     confconf[confname] = []
-            #     confconf[confname].append(year)
             cflist = json.load(open(os.path.join(DIR_RAW_DATA, cfile), "r"))
             for k, v in cflist.items():
                 # inst, confname, year
-                if k in paperData:
-                    paperData[k].append({"conf": confname, "year": int(year), "pubCount": v["Publication Count"]})
-                else:
-                    paperData[k] = [{"conf": confname, "year": int(year), "pubCount": v["Publication Count"]}]
-                if k in citationData:
-                    citationData[k].append({"conf": confname, "year": int(year), "citeCount": v["Citation Count"]})
-                else:
-                    citationData[k] = [{"conf": confname, "year": int(year), "citeCount": v["Citation Count"]}]
-                # paperData[(confname, k, int(year))] = v["Publication Count"]
-                # citationData[(confname, k, int(year))] = v["Citation Count"]
+                if k not in paperData:
+                    paperData[k] = []
+                paperData[k].append({"conf": confname, "year": int(year), "pubCount": v["Publication Count"],
+                                    "wPubCount": venueWeight[confname]*v["Publication Count"]})
+                if k not in citationData:
+                    citationData[k] = []
+                citationData[k].append({"conf": confname, "year": int(year), "citeCount": v["Citation Count"]})
                 instName.add(k)
 
         # gen_inst_alias(instName)
@@ -152,9 +143,9 @@ def loadVenueWeight():
     #         print (k, ":", "No Data")
 
 def loadData():
+    loadVenueWeight()
     readPaperCount()
     loadInstData()
-    loadVenueWeight()
 
 
 def getVenueWeight(venue):
@@ -226,7 +217,7 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
     cityears = range(citrange[0], citrange[1]+1, 1)
 
     for inst in list(instName):
-        wpub[inst] = sum([p["pubCount"]*(venueWeight[p["conf"]] if weight and p["conf"] in venueWeight else 1)\
+        wpub[inst] = sum([p["wPubCount"] if weight else p["pubCount"]\
                         for p in paperData[inst] if p["conf"] in conflist and p["year"] in pubyears])
         cite[inst] = sum([c["citeCount"] for c in citationData[inst] if c["conf"] in conflist and c["year"] in cityears])
 
