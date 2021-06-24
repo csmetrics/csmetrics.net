@@ -4,7 +4,6 @@ import itertools
 from operator import itemgetter
 from random import randint
 from datetime import datetime
-from multiprocessing import Pool
 from .mag_search import gen_inst_alias, clean_inst
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
@@ -207,41 +206,20 @@ def getVenueList(keywords):
                 for v in keyword_vlist]
     return vlist
 
-use_geomean = True
-conflist = []
-pubyears = []
-cityears = []
-def calculateInstScore(instNames):
-    global use_geomean, conflist, pubyears, cityears
-    wpub = {}
-    cite = {}
-    for inst in instNames:
-        wpub[inst] = sum([p["wPubCount"] if use_geomean else p["pubCount"]\
-                        for p in paperData[inst] if p["conf"] in conflist and p["year"] in pubyears])
-        cite[inst] = sum([c["citeCount"] for c in citationData[inst] if c["conf"] in conflist and c["year"] in cityears])
-    return wpub, cite
-
-def chunks(lst, n):
-    """Yield successive n-sized chunks from lst."""
-    for i in range(0, len(lst), n):
-        yield lst[i:i + n]
 
 def getPaperScore(conflistname, pubrange, citrange, weight):
     global instName, venueName, venueCategory, paperData, citationData
-    global cite, wpub, use_geomean, conflist, pubyears, cityears
 
-    use_geomean = weight
+    cite = {}
+    wpub = {}
+    conflist = [k for k,v in venueName.items() if v["abbr"] in conflistname]
     pubyears = range(pubrange[0], pubrange[1]+1, 1)
     cityears = range(citrange[0], citrange[1]+1, 1)
-    conflist = [k for k,v in venueName.items() if v["abbr"] in conflistname]
 
-    wpub = {}
-    cite = {}
-    with Pool(8) as p:
-        res = p.map(calculateInstScore, chunks(list(instName), 80))
-        for w, c in res:
-            wpub.update(w)
-            cite.update(c)
+    for inst in list(instName):
+        wpub[inst] = sum([p["wPubCount"] if weight else p["pubCount"]\
+                        for p in paperData[inst] if p["conf"] in conflist and p["year"] in pubyears])
+        cite[inst] = sum([c["citeCount"] for c in citationData[inst] if c["conf"] in conflist and c["year"] in cityears])
 
     # sum by alias name
     rlist = {}
