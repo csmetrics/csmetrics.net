@@ -18,3 +18,13 @@ The csmetrics.org web app is available under [CC BY 4.0](https://creativecommons
 * Sean Stockwell, University of Michigan
 * Lexing Xie, ANU
 * Qiongkai Xu, ANU
+
+## We also thank
+
+following people for suggesting and reviewing venues.
+
+* Alwen Tiu, Australian National University (ANU)
+* [@wpzdm](https://github.com/wpzdm)
+* [@saurabhjha1](https://github.com/saurabhjha1)
+* [@bradreaves](https://github.com/bradreaves)
+* [@sceccarelli](https://github.com/sceccarelli)
