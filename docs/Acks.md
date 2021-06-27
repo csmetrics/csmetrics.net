@@ -6,7 +6,7 @@ We thank [Computer Research Association (CRA)](http://cra.org), [ANU College of 
 
 The csmetrics.org web app is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Data from [Microsoft Academic Search](http://academic.research.microsoft.com) and [DBLP](http://dblp.uni-trier.de) are under their respective licenses.
 
-## Contributors
+## Contributors 
 
 * Steve Blackburn, Australian National University (ANU)
 * Carla Brodley, Northeastern University
@@ -21,10 +21,11 @@ The csmetrics.org web app is available under [CC BY 4.0](https://creativecommons
 
 ## We also thank
 
-following people for suggesting and reviewing venues.
+following people for suggesting and reviewing publication venues.
 
 * Alwen Tiu, Australian National University (ANU)
 * [@wpzdm](https://github.com/wpzdm)
-* [@saurabhjha1](https://github.com/saurabhjha1)
-* [@bradreaves](https://github.com/bradreaves)
+* Saurabh Jha [@saurabhjha1](https://github.com/saurabhjha1)
+* Brad Reaves (NCSU) [@bradreaves](https://github.com/bradreaves)
 * [@sceccarelli](https://github.com/sceccarelli)
+* Tao Mei
