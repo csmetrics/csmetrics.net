@@ -24,8 +24,8 @@ The csmetrics.org web app is available under [CC BY 4.0](https://creativecommons
 following people for suggesting and reviewing publication venues.
 
 * Alwen Tiu, Australian National University (ANU)
+* Tao Mei, JD.COM
 * [@wpzdm](https://github.com/wpzdm)
 * Saurabh Jha [@saurabhjha1](https://github.com/saurabhjha1)
 * Brad Reaves (NCSU) [@bradreaves](https://github.com/bradreaves)
 * [@sceccarelli](https://github.com/sceccarelli)
-* Tao Mei
