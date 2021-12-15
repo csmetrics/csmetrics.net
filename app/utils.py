@@ -4,7 +4,7 @@ import itertools
 from operator import itemgetter
 from random import randint
 from datetime import datetime
-from .mag_search import gen_inst_alias, clean_inst
+# from .mag_search import gen_inst_alias, clean_inst
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
