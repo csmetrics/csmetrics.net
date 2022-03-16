@@ -169,7 +169,7 @@ def findInstitution(inst):
         return inst, 0
 
 
-def createCategorycloud():
+def createCategoryCloud():
     global venueCategory, categorySet
     readVenueName()
     venuesdata = open(FILE_VENUE)

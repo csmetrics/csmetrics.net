@@ -114,31 +114,60 @@
   </div>
 </div>
 <script>
-var yearrange = [2007, 2020];
-var pivotyear = 2018;
-var activeCategory = [];
+var defaultValues = {{ default|safe }};
+var yearRange = defaultValues['yearRange'];
+var pubYears = defaultValues['pubYears'];
+var citYears = defaultValues['citYears'];
+var lockedState = defaultValues['lockedState'] == 'True'; // slider is locked when pubYears and citYears are continuous
+var weight = defaultValues['weight'];
+var activeCategory = defaultValues['keywords'];
+var selectedVenueList = defaultValues['venues'];
+
+// set default categories
+function setDefaultCategories() {
+  var selectall = document.getElementById('selectall');
+  selectall.checked = true;
+  $('.btn-venue').each(function (index, item) {
+    var keyword = $("span", this).text();
+    var btn = $(this);
+    // console.log(keyword, activeCategory.includes(keyword));
+    if (activeCategory.includes(keyword)) {
+      btn.addClass('active');
+      btn.addClass('btn-primary');
+      btn.removeClass('btn-default');
+    } else {
+      btn.removeClass('active');
+      btn.removeClass('btn-primary');
+      btn.addClass('btn-default');
+      selectall.checked = false;
+    }
+  });
+  getActiveCategories();
+}
+
+
 var pubSlider = document.getElementById('publication');
 noUiSlider.create(pubSlider, {
   connect: true,
   behaviour: 'tap',
-  start: [ pivotyear, yearrange[1] ],
+  start: [ pubYears[0], pubYears[1] ],
   step: 1,
   animate: false,
   range: {
-    'min': [ yearrange[0] ],
-    'max': [ yearrange[1] ]
+    'min': [ yearRange[0] ],
+    'max': [ yearRange[1] ]
   }
 });
 var citSlider = document.getElementById('citation');
 noUiSlider.create(citSlider, {
   connect: true,
   behaviour: 'tap',
-  start: [ yearrange[0], pivotyear-1 ],
+  start: [ citYears[0], citYears[1] ],
   step: 1,
   animate: false,
   range: {
-    'min': [ yearrange[0] ],
-    'max': [ yearrange[1] ]
+    'min': [ yearRange[0] ],
+    'max': [ yearRange[1] ]
   }
 });
 var pubLowerHandle = pubSlider.getElementsByClassName('noUi-handle-lower')[0];
@@ -189,7 +218,9 @@ var conftable = $('#conflist').DataTable({
         "selectRow": true
       },
       'createdCell':  function (td, cellData, rowData, row, col){
-        this.api().cell(td).checkboxes.select();
+        if (selectedVenueList.includes(rowData[1])) {
+          this.api().cell(td).checkboxes.select();
+        }
       }
     },
     {
@@ -234,11 +265,15 @@ conftable.on("deselect", function ( e, dt, type, indexes ) {
   if (!conftableUpdating) updateInfoConf();
 });
 
-var lockedState = true;
 var sliding = false; //
 var lastMovedSlider = 0; // 1:pubSlider, 2:citSlider
-pubLowerHandle.classList.add("noUi-handle-primary");
-citUpperHandle.classList.add("noUi-handle-primary");
+if (lockedState) {
+  pubLowerHandle.classList.add("noUi-handle-primary");
+  citUpperHandle.classList.add("noUi-handle-primary");
+} else {
+  pubLowerHandle.classList.remove("noUi-handle-primary");
+  citUpperHandle.classList.remove("noUi-handle-primary");
+}
 function lockHandle(lastMovedSlider){
   if (sliding) {
     sliding = false;
@@ -250,14 +285,14 @@ function lockHandle(lastMovedSlider){
     pubLowerHandle.classList.add("noUi-handle-primary");
     citUpperHandle.classList.add("noUi-handle-primary");
     if (lastMovedSlider == 1) { // publication slider
-      if (parseInt(nodes[0].innerText) == yearrange[0]) {
-        pubSlider.noUiSlider.set([yearrange[0]+1, nodes[1].innerText]);
+      if (parseInt(nodes[0].innerText) == yearRange[0]) {
+        pubSlider.noUiSlider.set([yearRange[0]+1, nodes[1].innerText]);
       }
       nodes[3].innerText = parseInt(nodes[0].innerText)-1;
       citSlider.noUiSlider.set([nodes[2].innerText,nodes[3].innerText]);
     } else { // citation slider
-      if (parseInt(nodes[3].innerText) == yearrange[1]) {
-        citSlider.noUiSlider.set([nodes[2].innerText, yearrange[1]-1]);
+      if (parseInt(nodes[3].innerText) == yearRange[1]) {
+        citSlider.noUiSlider.set([nodes[2].innerText, yearRange[1]-1]);
       }
       nodes[0].innerText = parseInt(nodes[3].innerText)+1;
       pubSlider.noUiSlider.set([nodes[0].innerText,nodes[1].innerText]);
@@ -292,8 +327,8 @@ function crossUpdate ( value, slider ) {
 pubSlider.noUiSlider.on('slide', function( values, handle ){
   // console.log("pubSlider slider slide", handle);
   if (handle == 0) {
-    if ( lockedState && values[handle] <= yearrange[0] ) {
-      pubSlider.noUiSlider.set([yearrange[0]+1, values[1]]);
+    if ( lockedState && values[handle] <= yearRange[0] ) {
+      pubSlider.noUiSlider.set([yearRange[0]+1, values[1]]);
     }
     sliding = true;
     crossUpdate(values[handle], 1);
@@ -302,8 +337,8 @@ pubSlider.noUiSlider.on('slide', function( values, handle ){
 citSlider.noUiSlider.on('slide', function( values, handle ){
   // console.log("citSlider slider slide", handle);
   if (handle == 1) {
-    if ( lockedState && values[handle] >= yearrange[1] ) {
-  		citSlider.noUiSlider.set([values[0], yearrange[1]-1]);
+    if ( lockedState && values[handle] >= yearRange[1] ) {
+      citSlider.noUiSlider.set([values[0], yearRange[1]-1]);
     }
     sliding = true;
     crossUpdate(values[handle], 0);
@@ -320,6 +355,7 @@ weighttext.innerHTML = "{{ words.rtable_label_3 }} = "
 
 // venue weight selector
 var weightselector = document.getElementById('weightselector');
+weightselector.value = weight;
 weightselector.addEventListener("change", function(e) {
   console.log(weightselector.value);
   if (weightselector.value == "equal") {
@@ -349,7 +385,6 @@ function inputChanged() {
     dorank();
 }
 
-var selectedVenueList = [];
 function updateInfoConf(changeType=false){
   // console.log("updateInfoConf");
   selectedVenueList = [];
@@ -478,7 +513,6 @@ function dorank() {
 
 
 // selectall checkbox listener
-var selectall = document.getElementById('selectall');
 selectall.addEventListener("click", function(e) {
   if (selectall.checked) {
     $('.btn-venue').addClass('active');

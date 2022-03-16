@@ -13,6 +13,7 @@
         </nav> -->
         <h3>{{ words.title }}</h3>
       <!-- </div> -->
+      {% include 'message.html' %}
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="well well-md">
@@ -102,10 +103,10 @@ Please see the              <b><a
       </div>
       <div class="row">
         <div class="col-lg-5 col-md-5" style="border-right: 1px solid #e5e5e5">
-          {% include 'ctrpanel.html' with words=words tags=tags %}
+          {% include 'ctrpanel.html' with words=words default=default tags=tags %}
         </div>
         <div class="col-lg-7 col-md-7">
-          {% include 'rtable.html' with words=words %}
+          {% include 'rtable.html' with words=words default=default %}
         </div>
       </div>
       <div id="reportError" class="modal">
@@ -146,7 +147,8 @@ var reportCountrySelect = document.getElementById("error-country-selector");
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
-    $('#selectall').click();
+    // $('#selectall').click();
+    setDefaultCategories();
     //setTimeout(function(){ dorank(); }, 1000);
     updateTable();
 });

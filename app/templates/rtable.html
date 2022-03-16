@@ -71,7 +71,7 @@ $("div.inst_selector_div").html(
 // alpha slider
 $("div.alphasliderdiv").html(
   '<table><tr><td style="padding-right: 10px"><span class="label-as-badge">'+
-  '&alpha; = <span class="text-primary" id="alphaValue">{{ words.default_alpha }}'+
+  '&alpha; = <span class="text-primary" id="alphaValue">{{ default.alpha }}'+
   '</span></span></td>'+
   '<td>0.0</td>'+
   '<td style="padding: 0 5px"><div id="alphaslider"></div></td>'+
@@ -81,7 +81,7 @@ $("div.alphasliderdiv").html(
 );
 var alphaSlider = document.getElementById('alphaslider');
 noUiSlider.create(alphaSlider, {
-  start: parseFloat("{{ words.default_alpha }}"),
+  start: parseFloat("{{ default.alpha }}"),
 	step: 0.1,
   // tooltips: [wNumb({ decimals: 1 })],
 	range: {
@@ -161,7 +161,7 @@ instRegionSelector.addEventListener("change", function() {
 
 // update combined value using alpha
 function updateTable(){
-  // console.log("updateTable");
+  console.log("updateTable");
   var alpha = parseFloat(document.getElementById("alphaValue").innerText);
   var alphatext = document.getElementById("alphaslider-text");
   alphatext.innerHTML = "{{ words.rtable_label_4 }} = "
