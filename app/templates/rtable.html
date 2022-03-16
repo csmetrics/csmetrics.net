@@ -184,6 +184,31 @@ function changeValue(newValue) {
     updateTable(newValue);
 };
 
+function setDefaultFilters() {
+  instTypeSelector.value = "{{ default.inst_type }}";
+  if (instTypeSelector.value == "All") {
+    ranktable.columns('.inst-type').search('').draw();
+  } else {
+    ranktable.columns('.inst-type').search(instTypeSelector.value).draw();
+  }
+
+  instRegionSelector.value = "{{ default.inst_region }}";
+  if (instRegionSelector.value == "All") {
+    ranktable.columns('.inst-continent').search('').draw();
+  } else {
+    ranktable.columns('.inst-continent').search(instRegionSelector.value).draw();
+  }
+
+  instCountrySelector.value = "{{ default.inst_country }}";
+  console.log("instCountrySelector.value", "{{ default.inst_country }}");
+  if (instCountrySelector.value == "") {
+    ranktable.columns('.inst-country').search('').draw();
+  } else {
+    ranktable.columns('.inst-continent').search('');
+    ranktable.columns('.inst-country').search(instCountrySelector.value).draw();
+  }
+}
+
 // more option - disabled for now
 function format (d) {
     // `d` is the original data object for the row

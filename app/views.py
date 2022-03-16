@@ -102,6 +102,9 @@ def shareable(request):
         alpha = request.GET.get("alpha")
         keywords = request.GET.get("keywords")
         conflist = request.GET.get("venues")
+        instType = request.GET.get("type")
+        instRegion = request.GET.get("region")
+        instCountry = request.GET.get("country")
 
         pub_s = int(pub[0])
         pub_e = int(pub[1])
@@ -116,6 +119,9 @@ def shareable(request):
             "alpha": alpha,
             "keywords": keywords.split(',') if keywords != '' else [],
             "venues": conflist.split(',') if conflist != '' else [],
+            "inst_type": instType if instType != None else "All",
+            "inst_region": instRegion if instRegion != None else "All",
+            "inst_country": instCountry if instCountry != None else "",
         }
         print(values)
 
@@ -138,6 +144,9 @@ def shareable(request):
                 "alpha": str(0.3),
                 "keywords": tags,
                 "venues": [t[0] for t in getVenueListFromKeywords(tags)],
+                "inst_type": "All",
+                "inst_region": "All",
+                "inst_country": "",
             },
             "words": labels,
             "tags": tags
@@ -156,6 +165,9 @@ def main(request):
         "alpha": str(0.3),
         "keywords": tags,
         "venues": [t[0] for t in getVenueListFromKeywords(tags)],
+        "inst_type": "All",
+        "inst_region": "All",
+        "inst_country": "",
     }
     return render(request, "main.html", {
         "default": defaultValues,
