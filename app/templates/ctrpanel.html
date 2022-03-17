@@ -379,6 +379,7 @@ typeselector.addEventListener("change", function(e) {
 function rankFinished() {
   $('#alphaslider').removeAttr('disabled');
   $('#rtablecurtain').addClass('invisible');
+  setDefaultFilters();
 }
 function inputChanged() {
   $('#alphaslider').attr('disabled', 'disabled');
