@@ -218,6 +218,7 @@ var conftable = $('#conflist').DataTable({
         "selectRow": true
       },
       'createdCell':  function (td, cellData, rowData, row, col){
+        // console.log(rowData[1], selectedVenueList.includes(rowData[1]));
         if (selectedVenueList.includes(rowData[1])) {
           this.api().cell(td).checkboxes.select();
         }
@@ -376,13 +377,14 @@ typeselector.addEventListener("change", function(e) {
 });
 
 function rankFinished() {
-    $('#alphaslider').removeAttr('disabled');
-    $('#rtablecurtain').addClass('invisible');
+  $('#alphaslider').removeAttr('disabled');
+  $('#rtablecurtain').addClass('invisible');
 }
 function inputChanged() {
-    $('#alphaslider').attr('disabled', 'disabled');
-    $('#rtablecurtain').removeClass('invisible');
-    dorank();
+  $('#alphaslider').attr('disabled', 'disabled');
+  $('#rtablecurtain').removeClass('invisible');
+  dorank();
+  generateShareableLink();
 }
 
 function updateInfoConf(changeType=false){
@@ -454,7 +456,7 @@ function getActiveCategories() {
   for (var i = 0; i < buttons.length; i++) {
     var button = buttons[i];
     if (button.classList.contains('active')) {
-      activeCategory.push(button.innerText);
+      activeCategory.push(button.innerText.toLowerCase());
     }
   }
   if (activeCategory.length == 0) {

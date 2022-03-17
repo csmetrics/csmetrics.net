@@ -1,4 +1,12 @@
 {% load static %}
+<div class="row" style="padding-bottom:0px">
+  <div class="col-sm-8" style="padding-right:0">
+    <input style="width:100%;height:26px;" type="text" value="{{ words.url_base }}" id="configuration">
+  </div>
+  <div class="col-sm-4">
+    <button style="width:100%;height:26px;" onclick="copyConfig()">Copy Sharable Link</button>
+  </div>
+</div>
 <table id="rtable" class="row-border hover order-column" cellspacing="0" width="100%">
 </table>
 <div id="spinner" class="invisible" style="padding: 10px 15px 0 15px">
@@ -6,6 +14,25 @@
 </div>
 <div id="rtablecurtain" class="invisible"></div>
 <script type="text/javascript">
+var copyText = document.getElementById("configuration");
+function copyConfig() {
+  copyText.select();
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+  alert("Copied current configuration");
+}
+function generateShareableLink() {
+  params = {
+    "pub": [nodes[0].innerHTML, nodes[1].innerHTML].join(),
+    "cit": [nodes[2].innerHTML, nodes[3].innerHTML].join(),
+    "weight": weightselector.value,
+    "alpha": document.getElementById("alphaValue").innerHTML,
+    "keywords": activeCategory.join(),
+    "venues": selectedVenueList.join(),
+  }
+  copyText.value = "{{ words.url_base }}?" + new URLSearchParams(params);
+}
+
 var spinner = document.getElementById("spinner");
 // ranking table
 var ranktable = $('#rtable').DataTable({
@@ -62,6 +89,7 @@ var ranktable = $('#rtable').DataTable({
 });
 
 $("div.inst_selector_div").html(
+  '<div class="rtable_divider"></div>'+
   '<b>Institution Type</b> <select id="inst_type_selector" class="inst_selector"></select> '+
   '<b>Region</b> <select id="inst_region_selector" class="inst_selector"></select> '+
   '<b>Country</b> <select id="inst_country_selector" class="inst_selector"></select>'+

@@ -3,11 +3,14 @@ from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django import template
 from django.contrib import messages
+from urllib.parse import unquote
 from operator import itemgetter
 from .utils import *
 
+URL_BASE = "http://csmetrics.org/shareable"
 TITLE = "Institutional Publication Metrics for Computer Science"
 labels = {
+    "url_base": URL_BASE,
     "title": TITLE,
     "label_year": "Year",
     "label_category": "Category",
@@ -96,20 +99,19 @@ def shareable(request):
     tags = createCategoryCloud()
     yearRange = [2007, 2020]
     try:
-        pub = request.GET.get("pub").split(",")
-        cit = request.GET.get("cit").split(",")
+        pub = unquote(request.GET.get("pub"))
+        cit = unquote(request.GET.get("cit"))
         weight = request.GET.get("weight")
         alpha = request.GET.get("alpha")
-        keywords = request.GET.get("keywords")
-        conflist = request.GET.get("venues")
+        keywords = unquote(request.GET.get("keywords"))
+        conflist = unquote(request.GET.get("venues"))
         instType = request.GET.get("type")
         instRegion = request.GET.get("region")
         instCountry = request.GET.get("country")
 
-        pub_s = int(pub[0])
-        pub_e = int(pub[1])
-        cit_s = int(cit[0])
-        cit_e = int(cit[1])
+        pub_s, pub_e = [int(x) for x in pub.split(',')]
+        cit_s, cit_e = [int(x) for x in cit.split(',')]
+
         values = {
             "yearRange": yearRange,
             "pubYears": [max(yearRange[0], pub_s), min(yearRange[1], pub_e)],
