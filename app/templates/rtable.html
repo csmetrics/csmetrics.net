@@ -29,7 +29,13 @@ function generateShareableLink() {
     "alpha": document.getElementById("alphaValue").innerHTML,
     "keywords": activeCategory.join(),
     "venues": selectedVenueList.join(),
-  }
+  };
+  type = document.getElementById("inst_type_selector").value;
+  region = document.getElementById("inst_region_selector").value;
+  country = document.getElementById("inst_country_selector").value;
+  if (type != "All") params["type"] = type;
+  if (region != "All") params["region"] = region;
+  if (country != "") params["country"] = country;
   copyText.value = "{{ words.url_base }}?" + new URLSearchParams(params);
 }
 
@@ -134,6 +140,7 @@ instCountrySelector.addEventListener("change", function() {
   } else {
     ranktable.columns('.inst-country').search(val).draw();
   }
+  generateShareableLink();
 });
 
 // update rank index
@@ -166,6 +173,7 @@ instTypeSelector.addEventListener("change", function() {
   } else {
     ranktable.columns('.inst-type').search(val).draw();
   }
+  generateShareableLink();
 });
 
 var instRegionSelector = document.getElementById("inst_region_selector");
@@ -185,6 +193,7 @@ instRegionSelector.addEventListener("change", function() {
   } else {
     ranktable.columns('.inst-continent').search(val).draw();
   }
+  generateShareableLink();
 });
 
 // update combined value using alpha
