@@ -237,7 +237,6 @@ function setDefaultFilters() {
   }
 
   instCountrySelector.value = "{{ default.inst_country }}";
-  console.log("instCountrySelector.value", "{{ default.inst_country }}");
   if (instCountrySelector.value == "") {
     ranktable.columns('.inst-country').search('').draw();
   } else {
