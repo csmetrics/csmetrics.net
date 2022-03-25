@@ -122,6 +122,7 @@ var lockedState = defaultValues['lockedState'] == 'True'; // slider is locked wh
 var weight = defaultValues['weight'];
 var activeCategory = defaultValues['keywords'];
 var selectedVenueList = defaultValues['venues'];
+var defaultVenueFlag = true;
 
 // set default categories
 function setDefaultCategories() {
@@ -142,7 +143,7 @@ function setDefaultCategories() {
       selectall.checked = false;
     }
   });
-  getActiveCategories();
+  updateConfList();
 }
 
 
@@ -218,8 +219,12 @@ var conftable = $('#conflist').DataTable({
         "selectRow": true
       },
       'createdCell':  function (td, cellData, rowData, row, col){
-        // console.log(rowData[1], selectedVenueList.includes(rowData[1]));
-        if (selectedVenueList.includes(rowData[1])) {
+        if (defaultVenueFlag) {
+          if (selectedVenueList.includes(rowData[1]))
+            this.api().cell(td).checkboxes.select();
+          else
+            this.api().cell(td).checkboxes.deselect();
+        } else {
           this.api().cell(td).checkboxes.select();
         }
       }
@@ -382,6 +387,7 @@ function rankFinished() {
   setDefaultFilters();
 }
 function inputChanged() {
+  defaultVenueFlag = false;
   $('#alphaslider').attr('disabled', 'disabled');
   $('#rtablecurtain').removeClass('invisible');
   dorank();
@@ -430,6 +436,7 @@ function updateConfList(){
           newrows.push(newRow);
         }
         conftable.rows.add(newrows);
+
         if (weightselector.value == "equal") {
           conftable.column(5).visible(false);
           conftable.column(4).visible(true);
