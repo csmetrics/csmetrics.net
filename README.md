@@ -11,12 +11,8 @@
 * [Frequently asked questions](docs/FAQ.md) -- opens a separate document
 
 * [List of ideas](docs/ideas.md)
-  CSmetrics is an open source project, we are waiting new developers to contribute ...
-
-* [Instructions for reproducing the ranking]  (**TODO**)
-  * document weighting scheme of venues
-  * document+link to raw scores and how they are used
-  * document curation of categories
+  CSmetrics is an open source project, we are waiting new developers to contribute.
+  Also check [open issues](https://github.com/csmetrics/csmetrics.org/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement) for the system enhancement.
 
 * [Site developer instructions](#pushreq)
 
