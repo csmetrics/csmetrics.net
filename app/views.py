@@ -97,7 +97,7 @@ def faq(request):
 def shareable(request):
     loadData()
     tags = createCategoryCloud()
-    yearRange = [2007, 2020]
+    yearRange = [2007, 2021]
     try:
         pub = unquote(request.GET.get("pub"))
         cit = unquote(request.GET.get("cit"))
@@ -139,8 +139,8 @@ def shareable(request):
         return render(request, "main.html", {
             "default": {
                 "yearRange": yearRange,
-                "pubYears": [2018, 2020],
-                "citYears": [2007, 2017],
+                "pubYears": [2019, 2021],
+                "citYears": [2007, 2018],
                 "lockedState": "True",
                 "weight": "geomean", # or equal
                 "alpha": str(0.3),
@@ -157,11 +157,11 @@ def shareable(request):
 def main(request):
     loadData()
     tags = createCategoryCloud()
-    yearRange = [2007, 2020]
+    yearRange = [2007, 2021]
     defaultValues = {
         "yearRange": yearRange,
-        "pubYears": [2018, 2020],
-        "citYears": [2007, 2017],
+        "pubYears": [2019, 2021],
+        "citYears": [2007, 2018],
         "lockedState": "True",
         "weight": "geomean", # or equal
         "alpha": str(0.3),
