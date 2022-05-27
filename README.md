@@ -20,7 +20,7 @@
 
 ## <a name="quickstart"></a>Quick start guide for CSmetrics.org
 
-**Defaults** Load the page and then wait for the institutional metrics to update a combined aggregated metric (both measured and predicted) for 7302 institutions (academic and industry) for papers published in 2007 to 2021 at 229 conferences and 91 journals.
+**Defaults** Load the page and then wait for the institutional metrics to update a combined aggregated metric (both measured and predicted) for 7315 institutions (academic and industry) for papers published in 2007 to 2021 at 229 conferences and 92 journals.
 
 <p align="center">
 <img width="90%" src="docs/extra/user_guide_2019.png" />
