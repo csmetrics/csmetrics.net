@@ -53,11 +53,9 @@ def updateTable(request): # /update
 
 
 @csrf_exempt
-def selectKeyword(request): # /select
-    keywords = request.POST.get("keyword")
+def venueList(request):  # /venue
     # print(keywords)
-    sorted_conf = getVenueListFromKeywords(keywords.split(','))
-    return JsonResponse(sorted_conf, safe=False)
+    return JsonResponse(getVenueList(), safe=False)
 
 
 def getVenueListFromKeywords(keywords):

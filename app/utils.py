@@ -53,7 +53,19 @@ def readVenueName():
     venuefullname = open(FILE_VENUE)
     reader = csv.reader(venuefullname, delimiter=',')
     next(reader) # skip the first line
-    venueName = dict((r[0], {"abbr": r[1], "full": r[5], "link": r[6]}) for r in reader if r[0] != "")
+    for r in reader:
+        if not r[0]:
+            continue
+        topic_list = list({
+            *[token.strip() for token in r[2].split(',') if token],
+            *[token.strip() for token in r[3].split(',') if token]
+        })
+        venueName[r[0]] = dict(
+            abbr=r[1],
+            full=r[5],
+            link=r[6],
+            topic=topic_list if topic_list else ['other']
+        )
 
 
 def readPaperCount():
@@ -197,13 +209,29 @@ def createCategoryCloud():
     return wordset+["other"]
 
 
-def getVenueList(keywords):
+def getVenueList(keywords=None):
     global venueName, categorySet
-    keyword_vlist = set()
-    for k in keywords:
-        keyword_vlist.update(set(categorySet[k.lower()]))
-    vlist = [(venueName[v]["abbr"], venueName[v]["full"], getVenueWeight(v), getVenueType(v), venueName[v]["link"],)\
-                for v in keyword_vlist]
+    if keywords:
+        keyword_vlist = set()
+        for k in keywords:
+            keyword_vlist.update(set(categorySet[k.lower()]))
+        vlist = [(
+            venueName[v]["abbr"],
+            venueName[v]["full"],
+            getVenueWeight(v),
+            getVenueType(v),
+            venueName[v]["link"],
+            venueName[v]["topic"]) for v in keyword_vlist
+        ]
+    else:
+        vlist = [(
+            venueName[v]["abbr"],
+            venueName[v]["full"],
+            getVenueWeight(v),
+            getVenueType(v),
+            venueName[v]["link"],
+            venueName[v]["topic"]) for v in venueName
+        ]
     return vlist
 
 

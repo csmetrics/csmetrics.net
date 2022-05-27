@@ -406,17 +406,44 @@ function updateInfoConf(changeType=false){
   inputChanged();
 }
 
-function updateConfList(){
-  // console.log(activeCategory.join());
-  if (activeCategory.length > 0) {
+let rawVenueList = [];
+
+function getVenueList({success, error}) {
+  if (rawVenueList.length === 0) {
     $.ajax({
-      type: "POST",
-      url: "/select",
-      data: {
-        keyword: activeCategory.join()
-      },
+      type: "GET",
+      url: "/venue",
       success: function (result) {
-        console.log("success");
+        rawVenueList = result;
+        success(rawVenueList);
+      },
+      error: function (result) {
+        error(result);
+      }
+    })
+  } else {
+    success(rawVenueList)
+  }
+}
+
+function filterVenueList(venueList) {
+  const filteredVenueList = []
+  for (let venue of venueList) {
+    for (let topic of venue[5]) {
+      if (activeCategory.includes(topic)) {
+        filteredVenueList.push(venue);
+        break;
+      }
+    }
+  }
+  return filteredVenueList;
+}
+
+function updateConfList(){
+  if (activeCategory.length > 0) {
+    getVenueList({
+      success: function (result) {
+        result = filterVenueList(result);
         conftableUpdating = true;
         // $("#conflist").removeClass("invisible");
         conftable.clear();
