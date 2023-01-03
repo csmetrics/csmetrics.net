@@ -7,7 +7,7 @@ from urllib.parse import unquote
 from operator import itemgetter
 from .utils import *
 
-URL_BASE = "http://csmetrics.org/shareable"
+URL_BASE = "http://csmetrics.net/shareable"
 TITLE = "Institutional Publication Metrics for Computer Science"
 labels = {
     "url_base": URL_BASE,
