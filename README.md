@@ -1,6 +1,6 @@
-# csmetrics.org
+# csmetrics.net
 
-> This repository hosts documentation and code for the webapp behind csmetrics.org.
+> This repository hosts documentation and code for the webapp behind csmetrics.net.
 > Last updated on 2022 May 27.
 
 # Table of Contents
@@ -13,12 +13,12 @@
 
 * [List of ideas](docs/ideas.md)
   CSmetrics is an open source project, we are waiting new developers to contribute.
-  Also check [open issues](https://github.com/csmetrics/csmetrics.org/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement) for the system enhancement.
+  Also check [open issues](https://github.com/csmetrics/csmetrics.net/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement) for the system enhancement.
 
 * [Site developer instructions](#pushreq)
 
 
-## <a name="quickstart"></a>Quick start guide for CSmetrics.org
+## <a name="quickstart"></a>Quick start guide for CSmetrics.net
 
 **Defaults** Load the page and then wait for the institutional metrics to update a combined aggregated metric (both measured and predicted) for 7315 institutions (academic and industry) for papers published in 2007 to 2021 at 229 conferences and 92 journals.
 
@@ -31,17 +31,17 @@ Figure 1. Quick Start User Guide.
 
 1. **Year slider** Use this slider to change the year range of the measured (citations, retrospective) and predicted (prospective) metrics. By default the two ranges are mutually exclusive, click the slider to unlock and adjust the two year ranges independently.
 
-2. **Venue selection** Click each area keyword to toggle inclusion/exclusion of conferences in the corresponding area. The list of conferences on the lower left and the list of acronyms on the right will update correspondingly. Use the check boxes on the left to select or deselect individual conferences.  We have currated [a list of CS conference/journal venues and their categories](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv).  Submit a pull request to propose edits to the venues.
+2. **Venue selection** Click each area keyword to toggle inclusion/exclusion of conferences in the corresponding area. The list of conferences on the lower left and the list of acronyms on the right will update correspondingly. Use the check boxes on the left to select or deselect individual conferences.  We have currated [a list of CS conference/journal venues and their categories](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/venue_list.csv).  Submit a pull request to propose edits to the venues.
 
-3. **Venue weighting** The default venue weight is the [geometric mean of the citations for all papers in the venue from 2007 to 2020](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venueWeightNote.md). You can change the weight to equal (i.e., each conference has a weight of 1.0) with the “Venue weight” dropdown box on the right.
+3. **Venue weighting** The default venue weight is the [geometric mean of the citations for all papers in the venue from 2007 to 2020](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/venueWeightNote.md). You can change the weight to equal (i.e., each conference has a weight of 1.0) with the “Venue weight” dropdown box on the right.
 
 4. **Combining metrics** The α slider changes the relative geometric weighting of the measured versus predicted metric. We add a small constant ε to prevent invalid values when an institution has zero publications in a venue.
 
 5. **Navigating the institution list** The webpage updates instantly when you: change the venues, years, or  α, change the list of institutions being ranked, change the entries per page, and flip pages.
 
-6. **List of institutions**  Because authors do not identify their institutions uniformly, we use [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/cleaningNote.md).
+6. **List of institutions**  Because authors do not identify their institutions uniformly, we use [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/cleaningNote.md).
 
-7. **Contributions and Feedback** This version is a pre-release and we welcome feedback. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as [github issue](https://github.com/csmetrics/csmetrics.org/issues)
+7. **Contributions and Feedback** This version is a pre-release and we welcome feedback. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as [github issue](https://github.com/csmetrics/csmetrics.net/issues)
 
 
 ## <a name="pushreq"></a>Instructions for making edits
