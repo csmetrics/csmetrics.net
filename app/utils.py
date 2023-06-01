@@ -8,7 +8,6 @@ from datetime import datetime
 
 cur_path = os.path.dirname(os.path.abspath(__file__))
 FILE_VENUE_WEIGHT = os.path.join(cur_path, "data/venue_weight.csv")
-FILE_INST_ALIAS = os.path.join(cur_path, "data/inst_alias.csv")
 FILE_INST_FULL = os.path.join(cur_path, "data/inst_full_clean.csv")
 
 FILE_VENUE = os.path.join(cur_path, "data/venue_list.csv")
@@ -20,22 +19,11 @@ categorySet = {}
 instName = set()
 
 # only load once
-instMap = None
 instInfo = None
 venueWeight = None
 paperData = None
 citationData = None
 
-ContinentName = {
-    "all":"All",
-    "NA":"North America",
-    "SA":"South America",
-    "AS":"Asia",
-    "AF":"Africa",
-    "EU":"Europe",
-    "OC":"Oceania",
-    "No data":"Other"
-}
 ContinentOrdered = [
     "All",
     "Asia",
@@ -97,21 +85,7 @@ def readPaperCount():
 
 
 def loadInstData():
-    global instMap, instInfo
-
-    #load inst_alias
-    if instMap != None:
-        return
-    instMap = dict()
-    aliaslist = open(FILE_INST_ALIAS)
-    reader = csv.reader(aliaslist)
-    next(reader) # skip the first line
-    for r in reader:
-        for alias in r[1].split(','):
-            instMap[alias] = r[0].strip()
-    # print([name for name in instName if name not in instMap]) # unregistered name
-    for name in [n for n in instName if n not in instMap]:
-        instMap[name] = name
+    global instInfo
 
     # load inst_fullname
     if instInfo != None:
@@ -121,22 +95,13 @@ def loadInstData():
     reader = csv.reader(infolist)
     next(reader) # skip the first line
     for r in reader:
-        instInfo[r[0]] = {
+        instInfo[r[1].strip()] = {
             "fullname": r[1].strip(),
             "type": r[2].strip(),
-            "continent": ContinentName[r[3].strip()],
+            "continent": r[3].strip(),
             "country": r[4].strip() if r[4].strip() != "No data" else "",
             "url": r[5].strip()
         }
-    for key in set(instMap.values()):
-        if key not in instInfo:
-            instInfo[key] = {
-                "fullname": key,
-                "type": "Other",
-                "continent": "Other",
-                "country": "",
-                "url": ""
-            }
 
 
 def loadVenueWeight():
@@ -172,13 +137,6 @@ def getVenueType(venue):
     global venueCategory
     return venueCategory[venue]["type"]
 
-
-def findInstitution(inst):
-    global instMap
-    if inst in instMap:
-        return instMap[inst], 0
-    else:
-        return inst, 0
 
 
 def createCategoryCloud():
@@ -249,11 +207,14 @@ def getPaperScore(conflistname, pubrange, citrange, weight):
                         for p in paperData[inst] if p["conf"] in conflist and p["year"] in pubyears])
         cite[inst] = sum([c["citeCount"] for c in citationData[inst] if c["conf"] in conflist and c["year"] in cityears])
 
-    # sum by alias name
+    # sum by openalex key
     rlist = {}
     for v in instName:
+        if v not in instInfo:
+            continue
         if wpub[v] > 0 or cite[v] > 0:
-            name, type = findInstitution(v)
+            name = v
+            type = instInfo[v]["type"]
             if name in rlist:
                 rlist[name][0] += wpub[v]
                 rlist[name][1] += cite[v]
