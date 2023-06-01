@@ -320,5 +320,5 @@ aistats,AISTATS,artificial intelligence,machine learning,conference,Internationa
 iclr,ICLR,artificial intelligence,machine learning,conference,International Conference on Learning Representations,https://dblp.uni-trier.de/db/conf/iclr/,2021
 tmi,TMI,other,,journal,IEEE Transactions on Medical Imaging,https://dblp.org/db/journals/tmi/,2022
 pacmhci,PACMHCI,human computer interaction,,journal,Proceedings of the ACM on Human-Computer Interaction,https://dblp.uni-trier.de/db/journals/pacmhci/,2022
-ucc,UCC,distributed systems,systems,conference,International Conference on Utility and Cloud Computing,https://dblp.org/db/conf/ucc/,2023
-bdc,BDCAT,distributed systems,other,conference,International Conference on Big Data Computing, Applications and Technologies,https://dblp.org/db/conf/bdc/,2023
+ucc,UCC,systems,other,conference,International Conference on Utility and Cloud Computing,https://dblp.org/db/conf/ucc/,2023
+bdc,BDCAT,systems,other,conference,International Conference on Big Data Computing, Applications and Technologies,https://dblp.org/db/conf/bdc/,2023
