@@ -39,7 +39,7 @@ Figure 1. Quick Start User Guide.
 
 5. **Navigating the institution list** The webpage updates instantly when you: change the venues, years, or  α, change the list of institutions being ranked, change the entries per page, and flip pages.
 
-6. **List of institutions**  Because authors do not identify their institutions uniformly, we use [OpenAlex]([https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/](https://docs.openalex.org/) for cleaning institution names and aliases.
+6. **List of institutions**  Because authors do not identify their institutions uniformly, we use [OpenAlex](https://docs.openalex.org/) for cleaning institution names and aliases.
 
 7. **Contributions and Feedback** This version is a pre-release and we welcome feedback. Changes are gladly reviewed and accepted via pull requests, other discussions and feature requests should be submitted as [github issue](https://github.com/csmetrics/csmetrics.net/issues)
 
