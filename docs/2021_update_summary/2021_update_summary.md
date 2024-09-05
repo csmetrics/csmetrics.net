@@ -2,7 +2,7 @@
 
 > Last updated 20 June 2021
 
-A summary of institution rank changes (across all CS areas/venues) between the 2019 and 2021 version is [here](https://github.com/csmetrics/csmetrics.org/blob/master/docs/2021_update_summary/2021_update_report.pdf).
+A summary of institution rank changes (across all CS areas/venues) between the 2019 and 2021 version is [here](https://github.com/csmetrics/csmetrics.net/blob/master/docs/2021_update_summary/2021_update_report.pdf).
 
 ## Summary of main system and data changes
 
@@ -19,7 +19,7 @@ A summary of institution rank changes (across all CS areas/venues) between the 2
 * Rankings are generated using papers published from 2007 to 2018, appearing in 221 conferences and 87 journals from 6466 institutions.
 * Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']`
 (Note: Short, Poster and Oral keywords are removed)
-* We use the page numbers to filter short papers -- see [here](https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md#filtering) for more details. Among the five options, we choose 'Header + Page Num (k)' filter. The minimum page length is 4.
+* We use the page numbers to filter short papers -- see [here](https://github.com/csmetrics/csmetrics.net/blob/master/docs/Overview.md#filtering) for more details. Among the five options, we choose 'Header + Page Num (k)' filter. The minimum page length is 4.
 * Filters for journals: `['editor', 'special issue','state of the journal', 'in memory']`
 
 ### 2. Method for querying for citations
@@ -35,7 +35,7 @@ MAG data now support multiple affiliations per author.
 
 ### 3. Added new venues and categories
 
-Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv)
+Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/venue_list.csv)
 
 Duplicated name fixed:
 * fixed the full name of [ACSAC](https://dblp.uni-trier.de/db/conf/acsac/index.html) to `Annual Computer Security Applications Conference`

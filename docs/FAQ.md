@@ -27,7 +27,7 @@ You can individually toggle each venue, to include or exclude it.  To make this 
 
 ### 5. You are missing venues I think should be counted.  What can I do?
 
-Please [submit a request](https://github.com/csmetrics/csmetrics.org/issues).  If we can, we will include this venue, and the data associated, at the next release of our tool.
+Please [submit a request](https://github.com/csmetrics/csmetrics.net/issues).  If we can, we will include this venue, and the data associated, at the next release of our tool.
 
 
 ### 6. Why are we combining measured and predicted scores?

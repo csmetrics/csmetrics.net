@@ -41,7 +41,7 @@ Publication data is available from many sources, including [DBLP](http://dblp.un
 
 We chose to include 221 conferences and 87 journal venues. Computing research topics, publication practices, and citations practices are changing rapidly.  For instance, new areas are emerging as interdisciplinary and computing research evolves and flourishes.  Including new venues and small research areas to encourage and help emerging topics flourish is critical to rewarding interdisciplinary work and accelerating innovation.  We thus chose an inclusive list of venues, all of which use a rigorous peer-review process with 3 or more reviews for each submitted paper.  
 
-In other words, our complete set of venues may be larger than many users would like.  As such, we give users the option to leave out any venues that they would prefer not to include.  Note that adding new venues will require  cleaning and processing the data, but we welcome these additions using a [github pull request](https://github.com/csmetrics/csmetrics.org).
+In other words, our complete set of venues may be larger than many users would like.  As such, we give users the option to leave out any venues that they would prefer not to include.  Note that adding new venues will require  cleaning and processing the data, but we welcome these additions using a [github pull request](https://github.com/csmetrics/csmetrics.net).
 
 #### Cleaning publication to venue mapping
 
@@ -77,18 +77,18 @@ Figure 1. Filtering count comparison
 
 #### Extra scraping for missed papers
 Papers for some venues were not accurately retrieved in the scraping process for a number of different reasons.
-We investigated the venues with many years of zero paper counts, and did the extra scraping for the missed papers. See this [notebook](https://github.com/csmetrics/csmetrics.org/blob/master/data/get_and_clean_DBLP_papers.ipynb) for more details.
+We investigated the venues with many years of zero paper counts, and did the extra scraping for the missed papers. See this [notebook](https://github.com/csmetrics/csmetrics.net/blob/master/data/get_and_clean_DBLP_papers.ipynb) for more details.
 
 * **Case 1) Venues with different keys used in our database compared to the key used by DBLP.**
-A list of venues where the keys contained in [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv) are not the same as the key used by DBLP to represent the same venue is contained in [venues_with_different_dblp_keys](https://github.com/csmetrics/csmetrics.org/blob/master/data/venues_with_different_dblp_keys.csv).
+A list of venues where the keys contained in [venue_list](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/venue_list.csv) are not the same as the key used by DBLP to represent the same venue is contained in [venues_with_different_dblp_keys](https://github.com/csmetrics/csmetrics.net/blob/master/data/venues_with_different_dblp_keys.csv).
 
 * **Case 2) Venues that did not fit the general DBLP url template.**
-A list of conferences* where the url for the DBLP data did not fit the simple format matched by most conferences, that is `https://dblp.org/db/conf/{key}/{key}{year}.html`, can be found at [venues_with_different_dblp_baseurls](https://github.com/csmetrics/csmetrics.org/blob/master/data/venues_with_different_dblp_baseurls.csv). Generally this occurs where DBLP has group multiple conferences/workshops together under one group key and then use the conference key to specify after that, i.e. `https://dblp.org/db/conf/{groupkey}/{conferencekey}{year}.html`.
+A list of conferences* where the url for the DBLP data did not fit the simple format matched by most conferences, that is `https://dblp.org/db/conf/{key}/{key}{year}.html`, can be found at [venues_with_different_dblp_baseurls](https://github.com/csmetrics/csmetrics.net/blob/master/data/venues_with_different_dblp_baseurls.csv). Generally this occurs where DBLP has group multiple conferences/workshops together under one group key and then use the conference key to specify after that, i.e. `https://dblp.org/db/conf/{groupkey}/{conferencekey}{year}.html`.
 
   (\*) This list only contains conferences because the method used to scrape the journals makes this problem unique to the conferences. More specifically, the method for journals does not use a set template for each (venue, year) tuple because the journals are stored by volume number rather than year.
 
 * **Case 3) Journals that needed to be retrieved through an alternative scraping method.**
-A list of journals where that needed to be scraped using an alternative method is at [journals_to_use_alternative_scraping_method](https://github.com/csmetrics/csmetrics.org/blob/master/data/journals_to_use_alternative_scraping_method.csv). The webpages for these journals listed the volumes in a different way and therefore were not picked up by the standard scraping method used for most journals.
+A list of journals where that needed to be scraped using an alternative method is at [journals_to_use_alternative_scraping_method](https://github.com/csmetrics/csmetrics.net/blob/master/data/journals_to_use_alternative_scraping_method.csv). The webpages for these journals listed the volumes in a different way and therefore were not picked up by the standard scraping method used for most journals.
 
 * **Case 4) Papers that have single page number in DBLP.**
 
@@ -97,7 +97,7 @@ We used a script to send this list of papers titles to the [Microsoft Academic S
 
 #### Cleaning author to institution mapping
 
-Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 6231 institutions world-wide. To clean this data, we used a script to send this list of institutional names to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned formatted interpretations. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/cleaningNote.md).
+Because sometimes the same author or authors from the same institution do not record the name of their department, University or other institute consistently, there are many institution names that should map to the same place.  These aliases deflate the publication statistics for an institution.  When we simply mine the publication data for institutional names, we get over 6231 institutions world-wide. To clean this data, we used a script to send this list of institutional names to the [Microsoft Academic Search](http://academic.research.microsoft.com) which returned formatted interpretations. More details on how we cleaned the data are [here](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/cleaningNote.md).
 
 #### Choice of research topics
 
@@ -128,7 +128,7 @@ More people obviously can get more done.  When we score numbers of publications,
 
 A better way to address this problem might be to compute a score individually for faculty affiliated with an institution.  We could then report the score for the kth most-cited  professor for different values of k, and then adjusted by year of publication and years the faculty has been active.  The higher this score, and the deeper the bench of faculty with highly cited publications, the more likely the  institution is stronger.  
 
-The publications data we have obtained and cleaned is only for selected publications, of necessity.  For publications related to computing, we have tried to include most international forums.  Depending on your perspective, you may choose to leave out some of these in your analysis, and the tool supports leaving venues out, to create custom lists of the venues according to your personal criteria.  If venues you care about are missing, please give us <a href="https://github.com/csmetrics/csmetrics.org/issues">feedback</a>
+The publications data we have obtained and cleaned is only for selected publications, of necessity.  For publications related to computing, we have tried to include most international forums.  Depending on your perspective, you may choose to leave out some of these in your analysis, and the tool supports leaving venues out, to create custom lists of the venues according to your personal criteria.  If venues you care about are missing, please give us <a href="https://github.com/csmetrics/csmetrics.net/issues">feedback</a>
                 via github pull requests and issues.
 
 Interdisciplinary work is to be applauded and  encouraged,  yet, it is difficult to measure well.  With our methodology, popular venues outside the core of computing are included, to cover some amount of broadening.  However, venues completely outside Computing are not included, even if very prestigious.  Thus, for example, publications in Nature do not count.  The reason is that most publications in Nature have nothing to do with Computing.  So including Nature in our statistics will primarily reflect work by people unrelated to Computing.  If an analysis were to first identify Computing faculty and students, and then find venues from the people, it would be possible to include a  wider range of venues to better identify interdisciplinary work.

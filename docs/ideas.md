@@ -4,9 +4,9 @@
 
 ### Backend
 
-To generate [csmetrics.org](http://csmetrics.org/), we downloaded a full list of papers from [DBLP](https://dblp.org/search/) over the past 12 years (2007-2018) . We cleaned publication venue, citations, and institutional data for over 221 conferences and 87 journals. We used [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. See [data cleaning section](https://github.com/csmetrics/csmetrics.org/blob/8761f3bed6592db9a45a8fd9056327b67a7ed61c/docs/Overview.md#data-cleaning)  for detail.
+To generate [csmetrics.net](http://csmetrics.net/), we downloaded a full list of papers from [DBLP](https://dblp.org/search/) over the past 12 years (2007-2018) . We cleaned publication venue, citations, and institutional data for over 221 conferences and 87 journals. We used [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) for cleaning institution names and aliases. See [data cleaning section](https://github.com/csmetrics/csmetrics.net/blob/8761f3bed6592db9a45a8fd9056327b67a7ed61c/docs/Overview.md#data-cleaning)  for detail.
 
-For each venue, we identified [major topics it covers](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_category.csv). In the future, it may be possible to develop a methodology for grouping and analyzing sub-areas.
+For each venue, we identified [major topics it covers](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/venue_category.csv). In the future, it may be possible to develop a methodology for grouping and analyzing sub-areas.
 
 In the future, we plan to use  [Microsoft Academic Graph](https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/) which contains scientific publication records, citation relationships between those publications, as well as authors, institutions, journals, conferences, and fields of study. We have a full data dump indexed in [ElasticSearch](https://www.elastic.co/) every 6 months including over 200M papers, 250M authors 1.4B citations, and 25K institutions.
 
@@ -29,7 +29,7 @@ Here is the list of ideas for backend development:
 **(Goal) Add new conferences and journals to the venue list**
 
     1. Workout a workflow to add new conferences/journals to the ranking
-    2. (Done) Start by addressing [the issues list](https://github.com/csmetrics/csmetrics.org/issues)
+    2. (Done) Start by addressing [the issues list](https://github.com/csmetrics/csmetrics.net/issues)
     3. Compare the venue weight metric with other sources such as Google Scholar Metrics
 
 **(Stretch goal) Better categorization of venues using field of study**
@@ -41,7 +41,7 @@ Here is the list of ideas for backend development:
 
 ### Front end
 
-[csmetrics.org](http://csmetrics.org/) is developed by a few researchers who are not professional web developers or designers. It is informative and useful, but also has too much text at the same time.  Especially, as the number of venues, categories, and institutions increases, we maybe need to provide a better way to present the hierarchy of categories, or create a searchable venue list or institution list by their features.
+[csmetrics.net](http://csmetrics.net/) is developed by a few researchers who are not professional web developers or designers. It is informative and useful, but also has too much text at the same time.  Especially, as the number of venues, categories, and institutions increases, we maybe need to provide a better way to present the hierarchy of categories, or create a searchable venue list or institution list by their features.
 
 Here is the list of ideas for front-end development:
 
@@ -65,9 +65,9 @@ Here is the list of ideas for front-end development:
 
 ### Community engagement and process
 
-We are keep getting [suggestions](https://github.com/csmetrics/csmetrics.org/issues) of adding new conferences/journals or creating new categories.
+We are keep getting [suggestions](https://github.com/csmetrics/csmetrics.net/issues) of adding new conferences/journals or creating new categories.
 
-(more - we cannot open the database to public but maybe provide its statistics or provide [unregisterd aliases](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/cleaningNote.md#1-searching-aliases-using-mag-interpret-api) for human curation)
+(more - we cannot open the database to public but maybe provide its statistics or provide [unregisterd aliases](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/cleaningNote.md#1-searching-aliases-using-mag-interpret-api) for human curation)
 
 Here is the list of ideas for community engagement and process:
 

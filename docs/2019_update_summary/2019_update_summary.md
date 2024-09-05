@@ -11,7 +11,7 @@
 * 2007 to 2018 appearing in 221 conferences and 87 journals from 6466 institutions.
 * Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']`
 (Note: Short, Poster and Oral keywords are removed)
-* We use the page numbers to filter short papers -- see [here](https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md#filtering) for more details. Among the five options, we choose 'Header + Page Num (k)' filter. The minimum page length is 4.
+* We use the page numbers to filter short papers -- see [here](https://github.com/csmetrics/csmetrics.net/blob/master/docs/Overview.md#filtering) for more details. Among the five options, we choose 'Header + Page Num (k)' filter. The minimum page length is 4.
 * Filters for journals: `['editor', 'special issue','state of the journal', 'in memory']`
 
 [Previous - Sep 2017]
@@ -33,7 +33,7 @@ Microsoft Academic did not match about 2.5% of our title searches.
 
 ### 3. Added new venues and categories
 
-Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv)
+Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/venue_list.csv)
 
 New categories added:
 * COMPUTATIONAL ECONOMiCS

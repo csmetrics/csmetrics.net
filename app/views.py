@@ -78,17 +78,17 @@ def openMDDocs(request, html, alt_link, alt_title):
 
 def overview(request):
     return openMDDocs(request, "overview_generated.html",
-        "https://github.com/csmetrics/csmetrics.org/blob/master/docs/Overview.md",
+        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/Overview.md",
         "motivation and methodology")
 
 def acks(request):
     return openMDDocs(request, "acks_generated.html",
-        "https://github.com/csmetrics/csmetrics.org/blob/master/docs/Acks.md",
+        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/Acks.md",
         "Acknowledgements")
 
 def faq(request):
     return openMDDocs(request, "faq_generated.html",
-        "https://github.com/csmetrics/csmetrics.org/blob/master/docs/FAQ.md",
+        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/FAQ.md",
         "FAQ")
 
 

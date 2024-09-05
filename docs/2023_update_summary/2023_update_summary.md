@@ -2,7 +2,7 @@
 
 > Last updated 31 May 2023
 
-A summary of institution rank changes (across all CS areas/venues) between the 2022 and 2023 version is [here](https://github.com/csmetrics/csmetrics.org/blob/master/docs/2023_update_summary/2023_update_report.pdf).
+A summary of institution rank changes (across all CS areas/venues) between the 2022 and 2023 version is [here](https://github.com/csmetrics/csmetrics.net/blob/master/docs/2023_update_summary/2023_update_report.pdf).
 
 ## Summary of main system and data changes
 
@@ -35,7 +35,7 @@ A summary of institution rank changes (across all CS areas/venues) between the 2
 
 ### 3. Added new venues and categories
 
-Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.org/blob/master/app/data/venue_list.csv)
+Updated venue list: [venue_list](https://github.com/csmetrics/csmetrics.net/blob/master/app/data/venue_list.csv)
 
 New venues added:
 * [UCC](https://dblp.org/db/conf/ucc/): International Conference on Utility and Cloud Computing (conference)
