@@ -1,14 +1,14 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django import template
 from django.contrib import messages
 from urllib.parse import unquote
-from operator import itemgetter
 from .utils import *
 
 URL_BASE = "http://csmetrics.net/shareable"
 TITLE = "Institutional Publication Metrics for Computer Science"
+
 labels = {
     "url_base": URL_BASE,
     "title": TITLE,
@@ -20,7 +20,7 @@ labels = {
     "forward": "Predicted",
     "forward_tooltip": "The prediction metric counts papers in the year range.",
     "backward": "Measured",
-    "backward_tooltip": "The measured metric uses citation counts and includes all citations at anytime to papers published in the year range.",
+    "backward_tooltip": "The measured metric uses citation counts and includes all citations at any time to papers published in the year range.",
     "ctable_label_0": "Abbr.",
     "ctable_label_1": "Type",
     "ctable_label_2": "Fullname",
@@ -30,7 +30,7 @@ labels = {
     "select_weight_option_geo": "Geo Mean",
     "rank_button": "Go",
     "select_inst_types": ["All", "Education", "Company", "Government", "Facility", "Nonprofit", "Healthcare", "Archive", "Other"],
-    "select_inst_regions": ContinentOrdered,
+    "select_inst_regions": continent_ordered,
     "msg_empty_table": "Calculating the Ranking...",
     "rtable_label_0": "Rank",
     "rtable_label_1": "Institution",
@@ -39,63 +39,64 @@ labels = {
     "rtable_label_4": "Combined",
 }
 
+
 @csrf_exempt
-def updateTable(request): # /update
+def update_table(request):  # /update
     pub_s = int(request.POST.get("pub_syear"))
     pub_e = int(request.POST.get("pub_eyear"))
     cit_s = int(request.POST.get("cit_syear"))
     cit_e = int(request.POST.get("cit_eyear"))
     weight = request.POST.get("weight")
     conflist = request.POST.get("conflist")
-    # print(conflist.split(','), [pub_s, pub_e], [cit_s, cit_e], weight)
-    data = getPaperScore(conflist.split(','), [pub_s, pub_e], [cit_s, cit_e], weight!="equal")
+    
+    data = get_paper_score(conflist.split(','), [pub_s, pub_e], [cit_s, cit_e], weight != "equal")
     return JsonResponse(data, safe=False)
 
 
 @csrf_exempt
-def venueList(request):  # /venue
-    # print(keywords)
-    return JsonResponse(getVenueList(), safe=False)
+def venue_list(request):  # /venue
+    return JsonResponse(get_venue_list(), safe=False)
 
 
-def getVenueListFromKeywords(keywords):
-    conf = getVenueList(keywords)
+def get_venue_list_from_keywords(keywords):
+    conf = get_venue_list(keywords)
     sorted_conf = sorted(conf, key=lambda s: s[0].lower(), reverse=False)
     return sorted_conf
 
 
 register = template.Library()
+
 @register.simple_tag
-def openMDDocs(request, html, alt_link, alt_title):
+def open_md_docs(request, html, alt_link, alt_title):
     try:
         template.loader.get_template(html)
-        return render(request, "doc.html", {"exist":True,
-            "template":html, "words":{"title":TITLE}})
+        return render(request, "doc.html", {"exist": True, "template": html, "words": {"title": TITLE}})
     except template.TemplateDoesNotExist:
-        return render(request, "doc.html", {"exist":False,
-            "alt_link":alt_link, "alt_title":alt_title, "words":{"title":TITLE}})
+        return render(request, "doc.html", {"exist": False, "alt_link": alt_link, "alt_title": alt_title, "words": {"title": TITLE}})
 
 
 def overview(request):
-    return openMDDocs(request, "overview_generated.html",
-        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/Overview.md",
-        "motivation and methodology")
+    return open_md_docs(request, "overview_generated.html", 
+                        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/Overview.md", 
+                        "motivation and methodology")
+
 
 def acks(request):
-    return openMDDocs(request, "acks_generated.html",
-        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/Acks.md",
-        "Acknowledgements")
+    return open_md_docs(request, "acks_generated.html",
+                        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/Acks.md",
+                        "Acknowledgements")
+
 
 def faq(request):
-    return openMDDocs(request, "faq_generated.html",
-        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/FAQ.md",
-        "FAQ")
+    return open_md_docs(request, "faq_generated.html",
+                        "https://github.com/csmetrics/csmetrics.net/blob/master/docs/FAQ.md",
+                        "FAQ")
 
 
 def shareable(request):
-    loadData()
-    tags = createCategoryCloud()
-    yearRange = [2007, 2022]
+    load_data()
+    tags = create_category_cloud()
+    year_range = [2007, 2022]
     try:
         pub = unquote(request.GET.get("pub"))
         cit = unquote(request.GET.get("cit"))
@@ -103,29 +104,28 @@ def shareable(request):
         alpha = request.GET.get("alpha")
         keywords = unquote(request.GET.get("keywords"))
         conflist = unquote(request.GET.get("venues"))
-        instType = request.GET.get("type")
-        instRegion = request.GET.get("region")
-        instCountry = request.GET.get("country")
+        inst_type = request.GET.get("type")
+        inst_region = request.GET.get("region")
+        inst_country = request.GET.get("country")
 
         pub_s, pub_e = [int(x) for x in pub.split(',')]
         cit_s, cit_e = [int(x) for x in cit.split(',')]
 
         values = {
-            "yearRange": yearRange,
-            "pubYears": [max(yearRange[0], pub_s), min(yearRange[1], pub_e)],
-            "citYears": [max(yearRange[0], cit_s), min(yearRange[1], cit_e)],
-            "lockedState": str(pub_s-1 == cit_e),
+            "yearRange": year_range,
+            "pubYears": [max(year_range[0], pub_s), min(year_range[1], pub_e)],
+            "citYears": [max(year_range[0], cit_s), min(year_range[1], cit_e)],
+            "lockedState": str(pub_s - 1 == cit_e),
             "weight": weight,
             "alpha": alpha,
-            "keywords": keywords.split(',') if keywords != '' else [],
-            "venues": conflist.split(',') if conflist != '' else [],
-            "inst_type": instType if instType != None else "All",
-            "inst_region": instRegion if instRegion != None else "All",
-            "inst_country": instCountry if instCountry != None else "",
+            "keywords": keywords.split(',') if keywords else [],
+            "venues": conflist.split(',') if conflist else [],
+            "inst_type": inst_type if inst_type else "All",
+            "inst_region": inst_region if inst_region else "All",
+            "inst_country": inst_country if inst_country else "",
         }
-        print(values)
 
-        messages.info(request, "Ranking generated from sharable link.")
+        messages.info(request, "Ranking generated from shareable link.")
         return render(request, "main.html", {
             "default": values,
             "words": labels,
@@ -133,17 +133,17 @@ def shareable(request):
         })
 
     except Exception as e:
-        messages.error(request, "Invalid link. Return to default settings.")
+        messages.error(request, "Invalid link. Returning to default settings.")
         return render(request, "main.html", {
             "default": {
-                "yearRange": yearRange,
+                "yearRange": year_range,
                 "pubYears": [2020, 2022],
                 "citYears": [2007, 2019],
                 "lockedState": "True",
-                "weight": "geomean", # or equal
+                "weight": "geomean",
                 "alpha": str(0.3),
                 "keywords": tags,
-                "venues": [t[0] for t in getVenueListFromKeywords(tags)],
+                "venues": [t[0] for t in get_venue_list_from_keywords(tags)],
                 "inst_type": "All",
                 "inst_region": "All",
                 "inst_country": "",
@@ -152,25 +152,26 @@ def shareable(request):
             "tags": tags
         })
 
+
 def main(request):
-    loadData()
-    tags = createCategoryCloud()
-    yearRange = [2007, 2022]
-    defaultValues = {
-        "yearRange": yearRange,
+    load_data()
+    tags = create_category_cloud()
+    year_range = [2007, 2022]
+    default_values = {
+        "yearRange": year_range,
         "pubYears": [2020, 2022],
         "citYears": [2007, 2019],
         "lockedState": "True",
-        "weight": "geomean", # or equal
+        "weight": "geomean",
         "alpha": str(0.3),
         "keywords": tags,
-        "venues": [t[0] for t in getVenueListFromKeywords(tags)],
+        "venues": [t[0] for t in get_venue_list_from_keywords(tags)],
         "inst_type": "All",
         "inst_region": "All",
         "inst_country": "",
     }
     return render(request, "main.html", {
-        "default": defaultValues,
+        "default": default_values,
         "words": labels,
         "tags": tags
     })

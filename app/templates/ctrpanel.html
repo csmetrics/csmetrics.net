@@ -504,7 +504,9 @@ function getActiveCategories() {
 
 // rank button listener
 function dorank() {
+  // console.time("AJAX request time");  // Start timer for AJAX request
   spinner.classList.remove("invisible");
+
   $.ajax({
     type: "POST",
     url: "/update",
@@ -517,33 +519,43 @@ function dorank() {
       conflist: selectedVenueList.join()
     },
     success: function (result) {
-      ranktable.search('');
-      ranktable.clear();
-      newrows = []
-      for(var i in result) {
-        // console.log(result[i]);
-        // result["name"]: institution name
-        // result["wpub"]: w. paper count
-        // result["cite"]: citation count
-        var newRow = {};
-        newRow[0] = null;
-        newRow[1] = "<a href='"+result[i]["url"]+"' target='_blank'>"+result[i]["name"]+"</a>";
-        newRow[2] = result[i]["cite"].toFixed(0); // Measured
-        newRow[3] = result[i]["wpub"].toFixed(0); // Estimated
-        newRow[4] = 0 // Combined -- will be calculated later
-        newRow[5] = result[i]["type"]; // type
-        newRow[6] = result[i]["continent"];
-        newRow[7] = result[i]["country"];
-        newrows.push(newRow)
-      }
-      ranktable.rows.add(newrows);
-      updateTable();
+      // console.timeEnd("AJAX request time");  // End timer for AJAX request
+      // console.time("Rank table update time");  // Start timer for ranktable update
+
+      let newrows = result.map(function (res) {
+        return [
+          null,
+          `<a href="${res.url}" target="_blank">${res.name}</a>`,
+          res.cite.toFixed(0),  // Measured
+          res.wpub.toFixed(0),  // Estimated
+          0,                    // Combined (will be calculated later)
+          res.type,
+          res.continent,
+          res.country
+        ];
+      });
+
+      // Update the table in one batch (instead of row by row)
+      ranktable.clear().rows.add(newrows).draw();
+
+      // Update combined column after the data is added, if needed
+      updateTable();  // Assuming this recalculates and updates the table as required
+
       console.log("Rank updated");
       spinner.classList.add("invisible");
       rankFinished();
+
+      // console.timeEnd("Rank table update time");  // End timer for ranktable update
+    },
+    error: function () {
+      spinner.classList.add("invisible");
+      console.error("Failed to fetch ranking data.");
     }
   });
-};
+}
+
+
+
 // $('#rankbutton').click(function(e) {
 //   dorank();
 // });
