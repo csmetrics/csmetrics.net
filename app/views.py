@@ -137,8 +137,8 @@ def shareable(request):
         return render(request, "main.html", {
             "default": {
                 "yearRange": year_range,
-                "pubYears": [2020, 2022],
-                "citYears": [2007, 2019],
+                "pubYears": [2021, 2023],
+                "citYears": [2007, 2020],
                 "lockedState": "True",
                 "weight": "geomean",
                 "alpha": str(0.3),
@@ -156,11 +156,11 @@ def shareable(request):
 def main(request):
     load_data()
     tags = create_category_cloud()
-    year_range = [2007, 2022]
+    year_range = [2007, 2023]
     default_values = {
         "yearRange": year_range,
-        "pubYears": [2020, 2022],
-        "citYears": [2007, 2019],
+        "pubYears": [2021, 2023],
+        "citYears": [2007, 2020],
         "lockedState": "True",
         "weight": "geomean",
         "alpha": str(0.3),
