@@ -10,7 +10,7 @@ A summary of the institution rank changes (across all CS areas/venues) between t
 ### 1. Paper filters for DBLP
 
 [Current: Oct 2024]
-* Rankings are generated using papers published from 2007 to 2023, appearing in 232 conferences and 92 journals from 15498 institutions.
+* Rankings are generated using papers published from 2007 to 2023, appearing in 232 conferences and 92 journals from 15499 institutions.
 * Filters for conferences: `['senior member',"what's hot", "invited", 'doctoral', 'demo', 'demonstration', 'keynote', 'student','speaker', 'tutorial', 'workshop', 'panel','competition', 'challenge']` (same as previous version.)
 * Filters for journals: `['editor', 'special issue','state of the journal', 'in memory']`
 (same as previous version.
