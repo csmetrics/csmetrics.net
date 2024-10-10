@@ -96,7 +96,7 @@ def faq(request):
 def shareable(request):
     load_data()
     tags = create_category_cloud()
-    year_range = [2007, 2022]
+    year_range = [2007, 2023]
     try:
         pub = unquote(request.GET.get("pub"))
         cit = unquote(request.GET.get("cit"))
