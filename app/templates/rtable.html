@@ -218,6 +218,7 @@ function updateTable(){
 function changeValue(newValue) {
     document.getElementById("alphaValue").innerHTML = parseFloat(newValue).toFixed(1);
     updateTable(newValue);
+    generateShareableLink();
 };
 
 function setDefaultFilters() {
