@@ -1,4 +1,4 @@
-Country,"ISO 3166-1 alpha2","ISO 3166-1 alpha3","ISO 3166-1 numeric",Continent
+Country,ISO 3166-1 alpha2,ISO 3166-1 alpha3,ISO 3166-1 numeric,Continent
 Afghanistan,AF,AFG,4,Asia
 Åland Islands,AX,ALA,248,Europe
 Albania,AL,ALB,8,Europe
@@ -25,21 +25,21 @@ Belize,BZ,BLZ,84,North America
 Benin,BJ,BEN,204,Africa
 Bermuda,BM,BMU,60,North America
 Bhutan,BT,BTN,64,Asia
-Bolivia,BO,BOL,68,Asia
+Bolivia,BO,BOL,68,South America
 Bosnia and Herzegovina,BA,BIH,70,Europe
 Botswana,BW,BWA,72,Africa
 Bouvet Island,BV,BVT,74,South America
 Brazil,BR,BRA,76,South America
 British Indian Ocean Territory,IO,IOT,86,Africa
 British Virgin Islands,VG,VGB,92,North America
-Brunei,BN,BRN,96,North America
+Brunei,BN,BRN,96,Asia
 Bulgaria,BG,BGR,100,Europe
 Burkina Faso,BF,BFA,854,Africa
 Burundi,BI,BDI,108,Africa
 Cambodia,KH,KHM,116,Asia
 Cameroon,CM,CMR,120,Africa
 Canada,CA,CAN,124,North America
-Cape Verde,CV,CPV,132,North America
+Cape Verde,CV,CPV,132,Africa
 Caribbean Netherlands,BQ,BES,535,North America
 Cayman Islands,KY,CYM,136,North America
 Central African Republic,CF,CAF,140,Africa
@@ -71,9 +71,9 @@ Eritrea,ER,ERI,232,Africa
 Estonia,EE,EST,233,Europe
 Eswatini,SZ,SWZ,748,Africa
 Ethiopia,ET,ETH,231,Africa
-Falkland Islands,FK,FLK,238,Africa
+Falkland Islands,FK,FLK,238,South America
 Faroe Islands,FO,FRO,234,Europe
-Federated States of Micronesia,FM,FSM,583,Europe
+Federated States of Micronesia,FM,FSM,583,Oceania
 Fiji,FJ,FJI,242,Oceania
 Finland,FI,FIN,246,Europe
 France,FR,FRA,250,Europe
@@ -99,7 +99,7 @@ Guyana,GY,GUY,328,South America
 Haiti,HT,HTI,332,North America
 Heard Island and McDonald Islands,HM,HMD,334,Oceania
 Honduras,HN,HND,340,North America
-Hong Kong,HK,HKG,344,North America
+Hong Kong,HK,HKG,344,Asia
 Hungary,HU,HUN,348,Europe
 Iceland,IS,ISL,352,Europe
 India,IN,IND,356,Asia
@@ -110,7 +110,7 @@ Ireland,IE,IRL,372,Europe
 Isle of Man,IM,IMN,833,Europe
 Israel,IL,ISR,376,Asia
 Italy,IT,ITA,380,Europe
-Ivory Coast,CI,CIV,384,Europe
+Ivory Coast,CI,CIV,384,Africa
 Jamaica,JM,JAM,388,North America
 Japan,JP,JPN,392,Asia
 Jersey,JE,JEY,832,Europe
@@ -118,7 +118,7 @@ Jordan,JO,JOR,400,Asia
 Kazakhstan,KZ,KAZ,398,Asia
 Kenya,KE,KEN,404,Africa
 Kiribati,KI,KIR,296,Oceania
-Kosovo,XK,XKX,412,Oceania
+Kosovo,XK,XKX,412,Europe
 Kuwait,KW,KWT,414,Asia
 Kyrgyzstan,KG,KGZ,417,Asia
 Laos,LA,LAO,418,Asia
@@ -130,7 +130,7 @@ Libya,LY,LBY,434,Africa
 Liechtenstein,LI,LIE,438,Europe
 Lithuania,LT,LTU,440,Europe
 Luxembourg,LU,LUX,442,Europe
-Macao,MO,MAC,446,Europe
+Macao,MO,MAC,446,Asia
 Madagascar,MG,MDG,450,Africa
 Malawi,MW,MWI,454,Africa
 Malaysia,MY,MYS,458,Asia
@@ -143,7 +143,7 @@ Mauritania,MR,MRT,478,Africa
 Mauritius,MU,MUS,480,Africa
 Mayotte,YT,MYT,175,Africa
 Mexico,MX,MEX,484,North America
-Moldova,MD,MDA,498,Oceania
+Moldova,MD,MDA,498,Europe
 Mongolia,MN,MNG,496,Asia
 Montenegro,ME,MNE,499,Europe
 Montserrat,MS,MSR,500,North America
@@ -161,14 +161,14 @@ Niger,NE,NER,562,Africa
 Nigeria,NG,NGA,566,Africa
 Niue,NU,NIU,570,Oceania
 Norfolk Island,NF,NFK,574,Oceania
-North Korea,KP,PRK,408,Oceania
+North Korea,KP,PRK,408,Asia
 North Macedonia,MK,MKD,807,Europe
 Northern Mariana Islands,MP,MNP,580,Oceania
 Norway,NO,NOR,578,Europe
 Oman,OM,OMN,512,Asia
 Pakistan,PK,PAK,586,Asia
 Palau,PW,PLW,585,Oceania
-Palestine,PS,PSE,275,Oceania
+Palestine,PS,PSE,275,Asia
 Panama,PA,PAN,591,North America
 Papua New Guinea,PG,PNG,598,Oceania
 Paraguay,PY,PRY,600,South America
@@ -180,8 +180,8 @@ Portugal,PT,PRT,620,Europe
 Principality of Monaco,MC,MCO,492,Europe
 Puerto Rico,PR,PRI,630,North America
 Qatar,QA,QAT,634,Asia
-Republic of the Congo,CG,COG,178,Europe
-Reunion,RE,REU,638,Europe
+Republic of the Congo,CG,COG,178,Africa
+Reunion,RE,REU,638,Africa
 Romania,RO,ROU,642,Europe
 Russia,RU,RUS,643,Europe
 Rwanda,RW,RWA,646,Africa
@@ -201,26 +201,26 @@ Serbia,RS,SRB,688,Europe
 Seychelles,SC,SYC,690,Africa
 Sierra Leone,SL,SLE,694,Africa
 Singapore,SG,SGP,702,Asia
-Sint Maarten,SX,SXM,534,Asia
+Sint Maarten,SX,SXM,534,North America
 Slovakia,SK,SVK,703,Europe
 Slovenia,SI,SVN,705,Europe
 Solomon Islands,SB,SLB,90,Oceania
 Somalia,SO,SOM,706,Africa
 South Africa,ZA,ZAF,710,Africa
-South Georgia and South Sandwich Islands,GS,SGS,239,Africa
-South Korea,KR,KOR,410,South America
+South Georgia and South Sandwich Islands,GS,SGS,239,South America
+South Korea,KR,KOR,410,Asia
 South Sudan,SS,SSD,728,Africa
 Spain,ES,ESP,724,Europe
 Sri Lanka,LK,LKA,144,Asia
 Sudan,SD,SDN,729,Africa
 Suriname,SR,SUR,740,South America
-Svalbard,SJ,SJM,744,South America
+Svalbard,SJ,SJM,744,Europe
 Sweden,SE,SWE,752,Europe
 Switzerland,CH,CHE,756,Europe
 Syria,SY,SYR,760,Europe
 Taiwan,TW,TWN,158,Asia
 Tajikistan,TJ,TJK,762,Asia
-Tanzania,TZ,TZA,834,Asia
+Tanzania,TZ,TZA,834,Africa
 Thailand,TH,THA,764,Asia
 Togo,TG,TGO,768,Africa
 Tokelau,TK,TKL,772,Oceania
@@ -234,17 +234,17 @@ Tuvalu,TV,TUV,798,Oceania
 Uganda,UG,UGA,800,Africa
 Ukraine,UA,UKR,804,Europe
 United Arab Emirates,AE,ARE,784,Asia
-United Kingdom,GB,GBR,826,Asia
+United Kingdom,GB,GBR,826,Europe
 United States Minor Outlying Islands,UM,UMI,581,Oceania
 United States of America,US,USA,840,North America
 Uruguay,UY,URY,858,South America
 Uzbekistan,UZ,UZB,860,Asia
 Vanuatu,VU,VUT,548,Oceania
-Vatican City,VA,VAT,336,Oceania
-Venezuela,VE,VEN,862,Oceania
+Vatican City,VA,VAT,336,Europe
+Venezuela,VE,VEN,862,South America
 Vietnam,VN,VNM,704,Asia
-Virgin Islands,VI,VIR,850,Asia
-Wallis and Futuna,WF,WLF,876,Asia
+Virgin Islands,VI,VIR,850,North America
+Wallis and Futuna,WF,WLF,876,Oceania
 Western Sahara,EH,ESH,732,Africa
 Yemen,YE,YEM,887,Asia
 Zambia,ZM,ZMB,894,Africa
