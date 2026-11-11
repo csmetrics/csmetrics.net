@@ -18,7 +18,6 @@ inst_name = set()
 inst_info = None
 venue_weight = None
 paper_data = None
-citation_data = None
 
 continent_ordered = [
     "All",
@@ -53,27 +52,27 @@ def read_venue_name():
 
 
 def read_paper_count():
-    global paper_data, inst_name, citation_data
+    # Index records by venue so a request only touches the selected venues:
+    # paper_data[conf] = [(inst, year, pubCount, wPubCount, citeCount), ...]
+    global paper_data
     if paper_data is not None:
         return
     try:
-        paper_data = {}
-        citation_data = {}
+        data = {}
         for cfile in os.listdir(dir_raw_data):
             conf_name, year, file_type = os.path.splitext(cfile)[0].split('_')
             if file_type == "author":  # only consider affil for now
                 continue
-            cf_list = json.load(open(os.path.join(dir_raw_data, cfile), "r"))
+            year = int(year)
+            weight = venue_weight[conf_name]
+            records = data.setdefault(conf_name, [])
+            with open(os.path.join(dir_raw_data, cfile), "r") as f:
+                cf_list = json.load(f)
             for k, v in cf_list.items():
-                # inst, conf_name, year
-                if k not in paper_data:
-                    paper_data[k] = []
-                paper_data[k].append({"conf": conf_name, "year": int(year), "pubCount": v["Publication Count"],
-                                      "wPubCount": venue_weight[conf_name] * v["Publication Count"]})
-                if k not in citation_data:
-                    citation_data[k] = []
-                citation_data[k].append({"conf": conf_name, "year": int(year), "citeCount": v["Citation Count"]})
+                pub = v["Publication Count"]
+                records.append((k, year, pub, weight * pub, v["Citation Count"]))
                 inst_name.add(k)
+        paper_data = data
     except Exception as e:
         print(e)
 
@@ -86,8 +85,7 @@ def load_inst_data():
         return
     inst_info = dict()
     info_list = open(file_inst_full)
-    reader = csv.reader(info_list)
-    next(reader)  # skip the first line
+    reader = csv.reader(info_list)  # no header row (see get_institution_openalex.ipynb)
     for r in reader:
         inst_info[r[1].strip()] = {
             "fullname": r[1].strip(),
@@ -131,6 +129,7 @@ def get_venue_type(venue):
 def create_category_cloud():
     global venue_category, category_set
     read_venue_name()
+    category_set = {}  # rebuilt on every call; don't accumulate duplicates
     venues_data = open(file_venue)
     reader = csv.reader(venues_data, delimiter=',')
     next(reader)  # skip the first line
@@ -183,51 +182,34 @@ def get_venue_list(keywords=None):
 
 
 def get_paper_score(conflist_name, pub_range, cit_range, weight):
-    global inst_name, venue_name, venue_category, paper_data, citation_data
+    selected = set(conflist_name)
+    conf_list = [k for k, v in venue_name.items() if v["abbr"] in selected]
+    pub_s, pub_e = pub_range
+    cit_s, cit_e = cit_range
+    count_idx = 3 if weight else 2  # wPubCount or pubCount
 
-    cite = {}
     wpub = {}
-    conf_list = [k for k, v in venue_name.items() if v["abbr"] in conflist_name]
-    pub_years = range(pub_range[0], pub_range[1] + 1, 1)
-    cit_years = range(cit_range[0], cit_range[1] + 1, 1)
+    cite = {}
+    for conf in conf_list:
+        for rec in paper_data.get(conf, ()):
+            inst, year = rec[0], rec[1]
+            if pub_s <= year <= pub_e:
+                wpub[inst] = wpub.get(inst, 0) + rec[count_idx]
+            if cit_s <= year <= cit_e:
+                cite[inst] = cite.get(inst, 0) + rec[4]
 
-    for inst in inst_name:
-        paper_list = paper_data.get(inst, [])
-        citation_list = citation_data.get(inst, [])
-
-        # Calculate weighted publication count
-        wpub[inst] = sum(
-            p["wPubCount"] if weight else p["pubCount"]
-            for p in paper_list
-            if p["conf"] in conf_list and p["year"] in pub_years
-        )
-
-        # Calculate citation count
-        cite[inst] = sum(
-            c["citeCount"]
-            for c in citation_list
-            if c["conf"] in conf_list and c["year"] in cit_years
-        )
-
-    # sum by openalex key
-    rlist = {}
-    for v in inst_name:
-        if v not in inst_info:
+    result = []
+    for inst in wpub.keys() | cite.keys():
+        info = inst_info.get(inst)
+        if info is None:
             continue
-
-        if wpub[v] > 0 or cite[v] > 0:
-            name = v
-            inst_type = inst_info[v]["type"]
-            if name in rlist:
-                rlist[name][0] += wpub[v]
-                rlist[name][1] += cite[v]
-            else:
-                rlist[name] = [wpub[v], cite[v], inst_type]
-
-    return [{"name": inst_info[k]["fullname"],
-             "type": inst_info[k]["type"],
-             "continent": inst_info[k]["continent"],
-             "country": inst_info[k]["country"],
-             "wpub": v[0], "cite": v[1],
-             "url": inst_info[k]["url"]
-             } for k, v in rlist.items()]
+        w = wpub.get(inst, 0)
+        c = cite.get(inst, 0)
+        if w > 0 or c > 0:
+            result.append({"name": info["fullname"],
+                           "type": info["type"],
+                           "continent": info["continent"],
+                           "country": info["country"],
+                           "wpub": w, "cite": c,
+                           "url": info["url"]})
+    return result
